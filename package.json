@@ -1,0 +1,19 @@
+{
+  "name": "ingo-steinke.de",
+  "version": "2.0.0",
+  "description": "website about web developer Ingo Steinke",
+  "main": "index.html",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/openmindculture/ingo-steinke.de.git"
+  },
+  "author": "Ingo Steinke",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/openmindculture/ingo-steinke.de/issues"
+  },
+  "homepage": "https://github.com/openmindculture/ingo-steinke.de#readme"
+}
