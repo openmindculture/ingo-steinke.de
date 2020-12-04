@@ -9,9 +9,9 @@ see [changelog](./CHANGELOG.md)
 * [x] to-do list
 * [ ] description
 * [x] link to changelog
-* [ ] set up local preview server
-* [ ] set up deployment using [scp](https://www.ssh.com/ssh/scp/)?
-* [ ] set up css bundling using [https://github.com/addyosmani/critical](critical)
+* [x] set up local preview
+* [x] set up deployment (JAMStack)
+* [ ] set up css bundling (using [https://github.com/addyosmani/critical](critical)?)
 * [ ] set up local testing
 * [ ] add more content
 * [ ] add demo, design, more fancy css stuff ...
