@@ -4,6 +4,10 @@
 - modern design using latest CSS features
 - add english language content and language switcher
 
+## [1.9.3] - 2020-12-04
+### Fixed
+- fix images 404 on netlify 8-107 #9
+
 ## [1.9.2] - 2020-12-03
 ### Added
 - add eleventy to dev dependencies for netlify deployment
