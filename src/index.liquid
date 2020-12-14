@@ -8,41 +8,12 @@
 <meta name="p:domain_verify" content="4c4296e5835f4a47eb2c2e5488a99d71"/>
 <meta name=robots content="index,follow">
 <meta name=viewport content="width=device-width,initial-scale=1.0">
-<style type="text/css">
-body,html{font-size:14px; font-family:Verdana,Helvetica,sans-serif; line-height:1.325em; color:#191970; background-color:#fff; margin:0; padding:0}
-body {display:grid; align-items:center; justify-items:center; min-height: 100vh}
-h1,h2,h3{font-size: 1.125em; color: #191970}
-h1{margin:5px 0 0 0; padding: 0 0 0 1em; float:left}
-h2{margin:4px auto 10px auto}
-h3{margin:14px auto 10px auto}
-p{color: #002;}
-.clr{clear:both}
-.flr{float:right}
-a:link{color:#191980; text-decoration:none}
-a:visited{color:#191980; text-decoration:none}
-a:active{color:#00f; text-decoration:none}
-a:hover{color:#00f; text-decoration:underline}
-.outercontainer{margin:0 auto .5em; padding:0.5em 0 0 0; min-width:220px; text-align:left}
-.innercontainer{padding:1em; margin-bottom:.5em; position:relative; border:solid 1px #ccf; clear:both; border-radius:.25em}
-.innercontainer section{display:block; margin-bottom:1.75em}
-.innercontainer ul{padding: 0 0 0 1.5em}
-.visuallyhidden {display:none}
-.right{float:right; position:relative; right:0; top:0; text-align:right}
-img.photo{border-radius:50%}
-a.tw-btn{background-color:#0c7abf; color:#fff; display:inline-block; border-radius:.25em; margin: .0325em .25em .25em 0; padding: .2em .5em .2em .25em}
-a.gh-btn{background-color:#24292E; color:#fff; display:inline-block; border-radius:.25em; margin: .0325em .25em .25em 0; padding: .15em .5em .25em .2em}
-.social-btn svg{margin: 0 .25em 0 .25em}
-@media only screen and (max-width:600px){
- .outercontainer{margin:0 2px 5px 2px}
- .innercontainer{padding:5px}
- h1{margin:5px 5px 8px 0}
- .social-btn svg{margin:0 1em}
- .social-btn span{display:none;}
-}
-@media only screen and (min-width:640px){
- .outercontainer{width:640px;}
-}
+<style>
+  {%- postcss -%}
+    {% include _includes/above-the-fold.css %}
+  {%- endpostcss -%}
 </style>
+<link rel="stylsheet" type="text/css" src="styles.css"/>
 <meta property="og:title" content="Ingo Steinke - Web-Entwickler, Berater und Vertreter von Frischekosmetik und Supplements">
 <meta property="og:description" content="Ingo Steinke ist Web-Entwickler, Berater und Vertreter von Frischekosmetik und Supplements.">
 <meta property="og:image" content="https://www.ingo-steinke.de/ingo-steinke-face-bw.jpg">
