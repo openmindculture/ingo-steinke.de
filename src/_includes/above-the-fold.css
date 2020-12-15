@@ -1,0 +1,154 @@
+body,
+html {
+  font-size: 14px;
+  font-family: Verdana, Helvetica, sans-serif;
+  line-height: 1.325em;
+  color: #191970;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  font-size: 1.125em;
+  color: #191970;
+}
+
+h1 {
+  margin: 5px 0 0 0;
+  padding: 0 0 0 1em;
+  float: left;
+}
+
+h2 {
+  margin: 4px auto 10px auto;
+}
+
+h3 {
+  margin: 14px auto 10px auto;
+}
+
+p {
+  color: #002;
+}
+
+.clr {
+  clear: both;
+}
+
+.flr {
+  float: right;
+}
+
+a:link {
+  color: #191980;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #191980;
+  text-decoration: none;
+}
+
+a:active {
+  color: #00f;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00f;
+  text-decoration: underline;
+}
+
+.outercontainer {
+  margin: 0 auto 0.5em;
+  padding: 0.5em 0 0 0;
+  min-width: 220px;
+  text-align: left;
+}
+
+.innercontainer {
+  padding: 1em;
+  margin-bottom: 0.5em;
+  position: relative;
+  border: solid 1px #ccf;
+  clear: both;
+  border-radius: 0.25em;
+}
+
+.innercontainer section {
+  display: block;
+  margin-bottom: 1.75em;
+}
+
+.innercontainer ul {
+  padding: 0 0 0 1.5em;
+}
+
+.visuallyhidden {
+  display: none;
+}
+
+.right {
+  float: right;
+  position: relative;
+  right: 0;
+  top: 0;
+  text-align: right;
+}
+
+img.photo {
+  border-radius: 50%;
+}
+
+a.tw-btn {
+  background-color: #0c7abf;
+  color: #fff;
+  display: inline-block;
+  border-radius: 0.25em;
+  margin: 0.0325em 0.25em 0.25em 0;
+  padding: 0.2em 0.5em 0.2em 0.25em;
+}
+
+a.xi-btn {
+  background-color: #00605e;
+  color: #fff;
+  display: inline-block;
+  border-radius: 0.25em;
+  margin: 0.0325em 0 0.25em 0;
+  padding: 0.2em 0.5em 0.2em 0.2em;
+}
+
+a.gh-btn {
+  background-color: #24292e;
+  color: #fff;
+  display: inline-block;
+  border-radius: 0.25em;
+  margin: 0.0325em 0.25em 0.25em 0;
+  padding: 0.15em 0.5em 0.25em 0.2em;
+}
+
+.social-btn svg {
+  margin: 0 0.25em 0 0.25em;
+}
+
+@media only screen and (max-width: 600px) {
+  .outercontainer { margin: 0 2px 5px 2px; }
+  .innercontainer { padding: 5px; }
+  h1 { margin: 5px 5px 8px 0; }
+  .social-btn svg { margin: 0 1em; }
+  .social-btn span { display: none; }
+}
+
+@media only screen and (min-width: 640px) {
+  .outercontainer { width: 640px; }
+}

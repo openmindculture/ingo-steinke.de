@@ -4,6 +4,12 @@
 
 see [changelog](./CHANGELOG.md)
 
+## Linter
+
+```
+npx stylelint "**/*.css" --fix
+```
+
 ## TODO
 
 * [x] to-do list
