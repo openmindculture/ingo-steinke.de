@@ -4,6 +4,11 @@
 - modern design using latest CSS features
 - add english language content and language switcher
 
+## [1.9.4] - 2020-12-15
+### Added
+- Performance: add html + css minify to build 107, 120
+- Security, Performance: add explicit netlify configuration for http headers 107
+
 ## [1.9.3] - 2020-12-04
 ### Fixed
 - fix images 404 on netlify 8-107 #9
