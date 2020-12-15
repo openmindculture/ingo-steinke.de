@@ -20,5 +20,5 @@
 	cache-control = '''
 	public,
 	max-age=2419200,
-	must-revalidate''',
+	must-revalidate'''
 	strict-transport-security = "max-age=31536000"
