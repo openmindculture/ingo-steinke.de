@@ -8,7 +8,6 @@ module.exports = function(eleventyConfig) {
    */
 
   // explicit + fast way to copy certain files
-  eleventyConfig.addPassthroughCopy("toml"); // for netlify.toml deploy configurations
   // copy images, later we might want to optimize before deployment
   eleventyConfig.addPassthroughCopy("jpg");
   eleventyConfig.addPassthroughCopy("png");
