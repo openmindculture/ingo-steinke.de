@@ -6,8 +6,6 @@ module.exports = async code => {
   return postcss([
     require("precss"),
     require("postcss-import"),
-    require("postcss-custom-selectors"),
-    require("autoprefixer"),
     require("cssnano")
   ])
     .process(code, { from: rawFilepath })

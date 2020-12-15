@@ -4,7 +4,8 @@
   "description": "website about web developer Ingo Steinke",
   "main": "index.html",
   "scripts": {
-    "test": "make test"
+    "test": "make test",
+    "build": "eleventy && node_modules/postcss-cli/bin/postcss src/styles.css > dist/styles.css"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
     "cssnano": "^4.1.10",
     "html-minifier": "^4.0.0",
     "postcss": "^8.2.1",
+    "postcss-cli": "^8.3.1",
     "postcss-custom-selectors": "^5.1.2",
     "postcss-import": "^14.0.0",
     "precss": "^4.0.0",
