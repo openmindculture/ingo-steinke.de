@@ -25,6 +25,6 @@ module.exports = function(eleventyConfig) {
       input: "src",
       output: "dist"
     },
-    templateFormats: ["liquid", "jpg", "png", "svg", "webp", "ico"]
+    templateFormats: ["liquid", "jpg", "png", "svg", "webp", "ico", "toml"]
   }
 };
