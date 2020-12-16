@@ -1,64 +1,68 @@
 ## [2.0.0] unreleased
-### Added
+### added
 - more content and web development showcases
 - modern design using latest CSS features
 - add english language content and language switcher
 
+## [1.9.5] unreleased
+### added
+- rwd, webspeed: responsive images with srcset
+- webspeed: lazy loading for deferred image loading below the fold
+- ux: typography, web fonts 101:1
+
 ## [1.9.4] - 2020-12-15
-### Added
-- Performance: add html + css minify to build 107, 120
-- Security, Performance: add explicit netlify configuration for http headers 107
+### added
+- webspeed: add html + css minify to build 107, 120
+- security, webspeed: add explicit netlify configuration for http headers 107
 
 ## [1.9.3] - 2020-12-04
-### Fixed
+### fixed
 - fix images 404 on netlify 8-107 #9
 
 ## [1.9.2] - 2020-12-03
-### Added
+### added
 - add eleventy to dev dependencies for netlify deployment
 - eleventy site generator setup
-### Fixed
-- Security: ensure external links suppress opener
-- Ensure img width,height to avoid layout shift
+### fixed
+- security: ensure external links suppress opener
+- ux, a11y, webspeed: ensure img width,height to avoid layout shift
 - a11y: ensure all content within landmarks
 
 ## [1.9.1] - 2020-09-19
-### Changed
+### changed
 - remove public gitlab link
 
 ## [1.9.0] - 2020-09-19
-### Fixed
+### fixed
 - update local config and build stack
 
 ## [1.1.4] - 2020-09-13
-### Changed
-- Update links
+### changed
+- update links
 
 ## [1.1.3] - 2020-06-02
-### Changed
-- Shorten and update German description
+### changed
+- shorten and update German description
 
 ## [1.1.2] - 2019-05-01
-### Changed
-- Referenzen: wao.io, kleiderordnung-duesseldorf.de
-- center vertically using css grid
-- Update Texte und Meta-Angaben
+### changed
+- testimonials: wao.io, kleiderordnung-duesseldorf.de
+- update text and meta information
+- ux: center vertically using css grid
 - add images
-- SVG Titles
-- Formatting, attribut minification
-- Button mit RINGANA-Logo
-- Text aktualisieren
+- add svg titles
+- code style: formatting, attribute minification
+- add button with ringana logo
 
 ## [1.1.1] - 2019-02-05
-### Added
-- add image styles, add text and links:
+### added
 - add image styles: rounded avatar-style,
 - add text and links: sustainability, nature protection natural cosmetics and nutrition
 
 ## [1.1.0] - 2012-06-19
-### Changed
-- updated information continuously over the years
+### changed
+- update information continuously over the years
 
 ## [1.0.0] - 2010-04-17
-### Added
-- static HTML website about me
+### ddded
+- static html website about me
