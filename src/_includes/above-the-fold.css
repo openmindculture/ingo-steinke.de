@@ -1,8 +1,47 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local(''),
+    url('fonts/montserrat-v15-latin-ext_latin-regular.woff2') format('woff2'),
+    url('fonts/montserrat-v15-latin-ext_latin-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  src:
+    local(''),
+    url('fonts/montserrat-v15-latin-ext_latin-800.woff2') format('woff2'),
+    url('fonts/montserrat-v15-latin-ext_latin-800.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local(''),
+    url('fonts/raleway-v18-latin-regular.woff2') format('woff2'),
+    url('fonts/raleway-v18-latin-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 400;
+  src:
+    local(''),
+    url('fonts/raleway-v18-latin-italic.woff2') format('woff2'),
+    url('fonts/raleway-v18-latin-italic.woff') format('woff');
+}
+
 body,
 html {
   font-size: 14px;
-  font-family: Verdana, Helvetica, sans-serif;
-  line-height: 1.325em;
+  font-family: Montserrat, Helvetica, sans-serif;
   color: #191970;
   background-color: #fff;
   margin: 0;
@@ -21,6 +60,7 @@ h2,
 h3 {
   font-size: 1.125em;
   color: #191970;
+  font-family: Raleway, Helvetica, sans-serif;
 }
 
 h1 {
