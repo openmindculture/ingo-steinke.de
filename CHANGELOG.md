@@ -4,11 +4,16 @@
 - modern design using latest CSS features
 - add english language content and language switcher
 
-## [1.9.5] unreleased
+## [1.9.6] unreleased
 ### added
 - rwd, webspeed: responsive images with srcset
 - webspeed: lazy loading for deferred image loading below the fold
+
+## [1.9.5] - 2020-12-15
+### added
 - ux: typography, web fonts 101:1
+### fixed
+- devops: fix netlify copy settings
 
 ## [1.9.4] - 2020-12-15
 ### added
