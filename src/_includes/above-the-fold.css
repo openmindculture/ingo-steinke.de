@@ -24,8 +24,8 @@
   font-weight: 400;
   src:
     local(''),
-    url('fonts/raleway-v18-latin-regular.woff2') format('woff2'),
-    url('fonts/raleway-v18-latin-regular.woff') format('woff');
+    url('fonts/raleway-v18-latin-ext-regular.woff2') format('woff2'),
+    url('fonts/raleway-v18-latin-ext-regular.woff') format('woff');
 }
 
 @font-face {
@@ -34,8 +34,8 @@
   font-weight: 400;
   src:
     local(''),
-    url('fonts/raleway-v18-latin-italic.woff2') format('woff2'),
-    url('fonts/raleway-v18-latin-italic.woff') format('woff');
+    url('fonts/raleway-v18-latin-ext-italic.woff2') format('woff2'),
+    url('fonts/raleway-v18-latin-ext-italic.woff') format('woff');
 }
 
 body,
