@@ -10,6 +10,18 @@ see [changelog](./CHANGELOG.md)
 npx stylelint "**/*.css" --fix
 ```
 
+## Build
+
+```
+npm run build
+```
+
+### check, fix, and build manually
+
+```
+npx stylelint "**/*.css" --fix && eleventy && node_modules/postcss-cli/bin/postcss src/styles.css > dist/styles.css
+```
+
 ## TODO
 
 * [x] to-do list
