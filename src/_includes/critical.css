@@ -64,9 +64,7 @@ h3 {
 }
 
 h1 {
-  margin: 5px 0 0 0;
-  padding: 0 0 0 1em;
-  float: left;
+  text-align: center;
 }
 
 h2 {
@@ -120,7 +118,7 @@ a:hover {
   padding: 1em;
   margin-bottom: 0.5em;
   position: relative;
-  border: solid 1px #ccf;
+  border: solid 0 #ccf;
   clear: both;
   border-radius: 0.25em;
 }
@@ -132,6 +130,37 @@ a:hover {
 
 .innercontainer ul {
   padding: 0 0 0 1.5em;
+}
+
+.posrel {
+  position: relative;
+}
+
+/* hacky preview */
+.menu-circle {
+  position: absolute;
+  background: #fff;
+  border: solid 1px silver;
+  border-radius: 50%;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  text-align: center;
+}
+
+.menu-circle.m1 {
+  bottom: 30%;
+  right: -10%;
+}
+
+.menu-circle.m2 {
+  bottom: 10%;
+  right: 5%;
+}
+
+.menu-circle.m3 {
+  bottom: -5%;
+  right: 25%;
 }
 
 .visuallyhidden {

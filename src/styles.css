@@ -1,3 +1,5 @@
-ul {
-  list-style-type: disc;
+body {
+  background-image: url(img/work.jpg);
+  background-size: cover;
+  height: 100vh;
 }
