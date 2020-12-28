@@ -1,11 +1,60 @@
 @import '_includes/variables.css';
 
-body {
-  background-image: url(img/work.jpg);
-  background-size: cover;
-  height: 100vh;
+p,
+section {
+  background-color: var(--primary-background);
 }
 
-.alternate {
-  background-color: var(alternate-background);
+p.alternate,
+section.alternate {
+  background-color: var(--alternate-background);
+}
+
+a:link,
+a:visited,
+a:active,
+a:hover {
+  transition: text-decoration 0.35s;
+  text-decoration-color: var(--color-main-text);
+  text-decoration-thickness: from-font;
+  text-decoration-style: solid;
+}
+
+a:link {
+  color: var(--primary-color);
+  text-decoration-line: underline;
+  text-decoration-color: var(--primary-color);
+}
+
+a:visited {
+  color: var(--primary-color);
+  text-decoration-line: underline;
+}
+
+a:active {
+  text-decoration-line: underline;
+}
+
+a:hover {
+  color: var(--link-hover);
+  text-decoration-style: dotted;
+}
+
+.hashtag {
+  font-size: 0.75rem;
+  background-color: var(--trendy-beige);
+  border-radius: 10%;
+  padding: 0.5em;
+  margin-right: 0.125em;
+  white-space: nowrap;
+}
+
+.hashtag.php {
+  background-color: var(--sea-green);
+  color: #fff;
+}
+
+.hashtag.wp {
+  background-color: var(--uxdesign-blue);
+  color: #fff;
 }

@@ -19,7 +19,7 @@
   --fashion-balance-blue: #366579;
   --organic-fashion-blue: #6b8aa9;
   --classof-green: #3cb87a;
-  --see-green: #018675;
+  --sea-green: #018675;
   --ringana-blouse-green: #6b868f;
   --wetell-orange: #b4641f;
   --trendy-beige: #f3db6d;
@@ -32,16 +32,19 @@
   --exuberant-orange-pantone: #ff582d;
   --bogart-red: #d04339;
   --ringana-omega-purple: #623144;
-  --brava-merino-light: #bbbfc2;
   --brava-merino-dark: #78797b;
+  --brava-merino-light: #bbbfc2;
+  --brava-merino-lighter: #ebeff2;
   --hazel-sweater-purple: #3d2945;
   --hazel-sweater-brown: #a07161;
 
   /* export theme colors */
-  --primary-color: var(--surftheweb-pantone);
+  --primary-color: var(--brava-shirt-blue);
   --secondary-color: var(--vintage-indigo);
+  --primary-heading: var(--surftheweb-pantone);
+  --link-hover: var(--surftheweb-pantone);
   --primary-background: #fff;
-  --alternate-background: var(--palo-rose);
+  --alternate-background: var(--brava-merino-lighter);
   --confirm-color: var(--deep-green);
   --warning-color: var(--uxdesign-yellow);
   --error-color: var(--oxy-fire);

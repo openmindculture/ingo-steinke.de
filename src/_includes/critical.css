@@ -62,8 +62,12 @@ h1,
 h2,
 h3 {
   font-size: 1.5rem;
-  color: #191970;
+  color: var(--primary-heading);
   font-family: Raleway, Helvetica, sans-serif;
+}
+
+aside {
+  font-size: 0.75rem;
 }
 
 h1 {
@@ -78,43 +82,12 @@ h3 {
   margin: 14px auto 10px auto;
 }
 
-p {
-  color: #002;
-}
-
 .clr {
   clear: both;
 }
 
 .flr {
   float: right;
-}
-
-a:link {
-  color: #191980;
-  text-decoration: none;
-}
-
-a:visited {
-  color: #191980;
-  text-decoration: none;
-}
-
-a:active {
-  color: #00f;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #00f;
-  text-decoration: underline;
-}
-
-.outercontainer {
-  margin: 0 auto 0.5em;
-  padding: 0.5em 0 0 0;
-  min-width: 220px;
-  text-align: left;
 }
 
 .innercontainer {
@@ -129,6 +102,8 @@ a:hover {
 .innercontainer section {
   display: block;
   margin-bottom: 1.75em;
+  padding: 0.5em 0 0 0;
+  text-align: left;
 }
 
 .innercontainer ul {
@@ -182,31 +157,32 @@ img.photo {
   border-radius: 50%;
 }
 
-a.tw-btn {
+a.tw-btn,
+a.tw-btn:link,
+a.tw-btn:visited,
+a.tw-btn:active,
+a.tw-btn:hover {
   background-color: #0c7abf;
   color: #fff;
   display: inline-block;
   border-radius: 0.25em;
   margin: 0.0325em 0.25em 0.25em 0;
   padding: 0.2em 0.5em 0.2em 0.25em;
+  text-decoration: none;
 }
 
-a.xi-btn {
-  background-color: #00605e;
-  color: #fff;
-  display: inline-block;
-  border-radius: 0.25em;
-  margin: 0.0325em 0 0.25em 0;
-  padding: 0.2em 0.5em 0.2em 0.2em;
-}
-
-a.gh-btn {
+a.gh-btn,
+a.gh-btn:link,
+a.gh-btn:visited,
+a.gh-btn:active,
+a.gh-btn:hover {
   background-color: #24292e;
   color: #fff;
   display: inline-block;
   border-radius: 0.25em;
   margin: 0.0325em 0.25em 0.25em 0;
   padding: 0.15em 0.5em 0.25em 0.2em;
+  text-decoration: none;
 }
 
 .social-btn svg {
@@ -222,5 +198,9 @@ a.gh-btn {
 }
 
 @media only screen and (min-width: 640px) {
-  .outercontainer { width: 640px; }
+  .innercontainer section {
+    /* fallback to override by grid styling */
+    max-width: 640px;
+    margin: 0 auto;
+  }
 }
