@@ -22,6 +22,11 @@ npm run build
 npx stylelint "**/*.css" --fix && eleventy && node_modules/postcss-cli/bin/postcss src/styles.css > dist/styles.css
 ```
 
+## Deployment
+
+- Commits to the master branch will trigger a production deployment by netlify.
+- Commits to pull requests will trigger preview builds to `branch.ingo-steinke.netlify.app`
+
 ## TODO
 
 * [x] to-do list
