@@ -40,17 +40,18 @@
     url('fonts/raleway-v18-latin-ext_latin-italic.woff') format('woff');
 }
 
-body,
 html {
-  font-size: 14px;
+  font-size: 100%;
+}
+
+body {
+  line-height: 1.75;
   font-family: Montserrat, Helvetica, sans-serif;
+  font-weight: 400;
   color: var(--primary-color);
   background-color: var(--primary-background);
   margin: 0;
   padding: 0;
-}
-
-body {
   display: grid;
   align-items: center;
   justify-items: center;
@@ -60,7 +61,7 @@ body {
 h1,
 h2,
 h3 {
-  font-size: 1.125em;
+  font-size: 1.5rem;
   color: #191970;
   font-family: Raleway, Helvetica, sans-serif;
 }
