@@ -21,7 +21,7 @@
     public,
     max-age=2419200,
     must-revalidate'''
-    strict-transport-security = "max-age=31536000"
+    strict-transport-security = "max-age=0"
 
 [context.deploy-preview]
   [[headers]]
