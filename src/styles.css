@@ -1,5 +1,11 @@
+@import '_includes/variables.css';
+
 body {
   background-image: url(img/work.jpg);
   background-size: cover;
   height: 100vh;
+}
+
+.color-primary {
+  color: var(--primary-color);
 }
