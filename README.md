@@ -25,7 +25,8 @@ npx stylelint "**/*.css" --fix && eleventy && node_modules/postcss-cli/bin/postc
 ## Deployment
 
 - Commits to the master branch will trigger a production deployment by netlify.
-- Commits to pull requests will trigger preview builds to `branch.ingo-steinke.netlify.app`
+- Commits to pull requests will trigger preview builds to a preview domain, e.g.
+https://5fea0b9e2742820007364391--ingo-steinke.netlify.app
 
 ## TODO
 
