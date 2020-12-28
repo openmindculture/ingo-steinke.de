@@ -1,4 +1,49 @@
 :root {
-  --primary-color: rgb(15, 157, 88);
-  --secondary-color: rgb(255, 255, 255);
+  /* define possible colors,
+   * we will only export variables that are actually used
+   * using postcss-custom-properties with preserve: false
+   */
+  --ai-aqua2021: #01a6ba;
+  --ethereal-blue: #008eb4;
+  --ayodele-blue: #114791;
+  --uxdesign-blue: #6440fa;
+  --surftheweb-pantone: #203c7f;
+  --vintage-indigo: #4a556b;
+  --stormy-weather-pantone: #58646d;
+  --interior-wall: #436163;
+  --odyssey-gray: #393846;
+  --brava-shirt-blue: #122836;
+  --midnight-blue: #060a34;
+  --deep-green: #017d63;
+  --ringana-spermidine-green: #1d4950;
+  --fashion-balance-blue: #366579;
+  --organic-fashion-blue: #6b8aa9;
+  --classof-green: #3cb87a;
+  --see-green: #018675;
+  --ringana-blouse-green: #6b868f;
+  --wetell-orange: #b4641f;
+  --trendy-beige: #f3db6d;
+  --dirty-orange: #cf7626;
+  --brava-orange: #df814b;
+  --apairandaspare2021: #b86323;
+  --interior-rose: #c78b69;
+  --palo-rose: #fedbbd;
+  --oxy-fire: #dc4942;
+  --exuberant-orange-pantone: #ff582d;
+  --bogart-red: #d04339;
+  --ringana-omega-purple: #623144;
+  --brava-merino-light: #bbbfc2;
+  --brava-merino-dark: #78797b;
+  --hazel-sweater-purple: #3d2945;
+  --hazel-sweater-brown: #a07161;
+
+  /* export theme colors */
+  --primary-color: var(--surftheweb-pantone);
+  --secondary-color: var(--vintage-indigo);
+  --primary-background: #fff;
+  --alternate-background: var(--palo-rose);
+  --confirm-color: var(--deep-green);
+  --warning-color: var(--uxdesign-yellow);
+  --error-color: var(--oxy-fire);
+  --border-base: var(--apairandaspare2021);
 }

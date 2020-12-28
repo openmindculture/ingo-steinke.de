@@ -44,8 +44,8 @@ body,
 html {
   font-size: 14px;
   font-family: Montserrat, Helvetica, sans-serif;
-  color: #191970;
-  background-color: #fff;
+  color: var(--primary-color);
+  background-color: var(--primary-background);
   margin: 0;
   padding: 0;
 }

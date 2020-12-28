@@ -6,6 +6,6 @@ body {
   height: 100vh;
 }
 
-.color-primary {
-  color: var(--primary-color);
+.alternate {
+  background-color: var(alternate-background);
 }
