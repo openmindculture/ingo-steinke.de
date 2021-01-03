@@ -1,15 +1,5 @@
 @import '_includes/design-tokens.css';
 
-p,
-section {
-  background-color: var(--primary-background);
-}
-
-p.alternate,
-section.alternate {
-  background-color: var(--alternate-background);
-}
-
 a:link,
 a:visited,
 a:active,

@@ -1,5 +1,8 @@
 @import 'design-tokens.css';
 
+/* TODO use locally if better than Raleway */
+@import url('https://fonts.googleapis.com/css2?family=Kadwa:wght@700&display=swap');
+
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
@@ -21,23 +24,13 @@
 }
 
 @font-face {
-  font-family: 'Raleway';
+  font-family: 'Kadwa';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   src:
     local(''),
-    url('fonts/raleway-v18-latin-ext_latin-regular.woff2') format('woff2'),
-    url('fonts/raleway-v18-latin-ext_latin-regular.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Raleway';
-  font-style: italic;
-  font-weight: 400;
-  src:
-    local(''),
-    url('fonts/raleway-v18-latin-ext_latin-italic.woff2') format('woff2'),
-    url('fonts/raleway-v18-latin-ext_latin-italic.woff') format('woff');
+    url('../fonts/kadwa-v4-latin-700.woff2') format('woff2'),
+    url('../fonts/kadwa-v4-latin-700.woff') format('woff');
 }
 
 html {
@@ -46,32 +39,79 @@ html {
 
 body {
   line-height: 1.75;
-  font-family: Montserrat, Helvetica, sans-serif;
-  font-weight: 400;
+  font-family: var(--body-font-family);
+  font-weight: var(--body-font-weight);
   color: var(--primary-color);
   background-color: var(--primary-background);
   margin: 0;
   padding: 0;
-  display: grid;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.page-header {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
   align-items: center;
-  justify-items: center;
-  min-height: 100vh;
+  width: 100%;
+  height: 100vh;
+}
+
+.page-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.page-content section {
+  background-color: var(--secondary-background);
+  padding: 0.5em 0 1em 1em;
+  margin: 0 1em 2em 0;
 }
 
 h1,
 h2,
-h3 {
-  font-size: 1.5rem;
+h3,
+h4 {
+  font-family: var(--heading-font-family);
+  font-weight: var(--heading-font-weight);
   color: var(--primary-heading);
-  font-family: Raleway, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 5rem;
+  letter-spacing: 0.125rem;
+  text-align: center;
+  color: var(--secondary-background);
+}
+
+h1 > span {
+  display: block;
+  font-size: 2.325rem;
+  font-family: var(--body-font);
+  font-weight: var(--body-font-weight);
+}
+
+h2,
+h3,
+h4 {
+  font-size: 1.5rem;
+}
+
+.page-navigation {
+  position: relative;
+}
+
+.page-navigation a > * {
+  color: var(--secondary-background);
 }
 
 aside {
   font-size: 0.75rem;
-}
-
-h1 {
-  text-align: center;
 }
 
 h2 {
@@ -82,75 +122,8 @@ h3 {
   margin: 14px auto 10px auto;
 }
 
-.clr {
-  clear: both;
-}
-
-.flr {
-  float: right;
-}
-
-.innercontainer {
-  padding: 1em;
-  margin-bottom: 0.5em;
-  position: relative;
-  border: solid 0 #ccf;
-  clear: both;
-  border-radius: 0.25em;
-}
-
-.innercontainer section {
-  display: block;
-  margin-bottom: 1.75em;
-  padding: 0.5em 0 0 0;
-  text-align: left;
-}
-
-.innercontainer ul {
-  padding: 0 0 0 1.5em;
-}
-
-.posrel {
-  position: relative;
-}
-
-/* hacky preview */
-.menu-circle {
-  position: absolute;
-  background: #fff;
-  border: solid 1px silver;
-  border-radius: 50%;
-  width: 2em;
-  height: 2em;
-  line-height: 2em;
-  text-align: center;
-}
-
-.menu-circle.m1 {
-  bottom: 30%;
-  right: -10%;
-}
-
-.menu-circle.m2 {
-  bottom: 10%;
-  right: 5%;
-}
-
-.menu-circle.m3 {
-  bottom: -5%;
-  right: 25%;
-}
-
 .visuallyhidden {
   display: none;
-}
-
-.right {
-  float: right;
-  position: relative;
-  right: 0;
-  top: 0;
-  text-align: right;
 }
 
 img.photo {
@@ -190,11 +163,22 @@ a.gh-btn:hover {
 }
 
 @media only screen and (max-width: 600px) {
-  .outercontainer { margin: 0 2px 5px 2px; }
-  .innercontainer { padding: 5px; }
-  h1 { margin: 5px 5px 8px 0; }
-  .social-btn svg { margin: 0 1em; }
-  .social-btn span { display: none; }
+  .nav-list {
+    display: none;
+  }
+
+  .nav-btn > span {
+    display: none;
+  }
+
+  .nav-btn > svg {
+    display: inline;
+  }
+
+  .nav-btn:active + .nav-list {
+    display: block;
+    position: absolute;
+  }
 }
 
 @media only screen and (min-width: 640px) {

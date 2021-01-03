@@ -44,14 +44,19 @@
   --odyssey-gray: #393846;
 
   /* export theme colors */
-  --primary-color: var(--brava-shirt-blue);
-  --secondary-color: var(--vintage-indigo);
-  --primary-heading: var(--surftheweb-pantone);
+  --primary-color: #000;
+  --primary-heading: var(--recolution-greenish-blue);
   --link-hover: var(--surftheweb-pantone);
-  --primary-background: #fff;
-  --alternate-background: var(--brava-merino-lighter);
+  --primary-background: var(--ringana-spermidine-green);
+  --secondary-background: var(--brava-merino-lighter);
   --confirm-color: var(--deep-green);
   --warning-color: var(--uxdesign-yellow);
   --error-color: var(--oxy-fire);
   --border-base: var(--apairandaspare2021);
+
+  /* export typography */
+  --body-font-family: 'Montserrat', 'Helvetica', sans-serif;
+  --body-font-weight: 400;
+  --heading-font-family: 'Kadwa', serif;
+  --heading-font-weight: 700;
 }
