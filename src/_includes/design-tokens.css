@@ -1,27 +1,30 @@
 :root {
   /* define possible colors,
-   * we will only export variables that are actually used
-   * using postcss-custom-properties with preserve: false
+   * postcss-custom-properties : preserve: false
+   * => only export properties that are actually used
    */
+  --rrrevolve-light-green: #b3e2c2;
+  --classof-green: #3cb87a;
+  --deep-green: #017d63;
+  --sea-green: #018675;
   --ai-aqua2021: #01a6ba;
   --ethereal-blue: #008eb4;
-  --ayodele-blue: #114791;
   --uxdesign-blue: #6440fa;
+  --ayodele-blue: #114791;
   --surftheweb-pantone: #203c7f;
   --vintage-indigo: #4a556b;
-  --stormy-weather-pantone: #58646d;
   --interior-wall: #436163;
-  --odyssey-gray: #393846;
   --brava-shirt-blue: #122836;
-  --midnight-blue: #060a34;
-  --deep-green: #017d63;
+  --recolution-greenish-blue: #053245;
+  --recolution-greenish-blue-darker: #11232d;
   --ringana-spermidine-green: #1d4950;
   --fashion-balance-blue: #366579;
   --organic-fashion-blue: #6b8aa9;
-  --classof-green: #3cb87a;
-  --sea-green: #018675;
+  --midnight-blue: #060a34;
   --ringana-blouse-green: #6b868f;
   --wetell-orange: #b4641f;
+  --orangedrippalette-yellow: #f8bc24;
+  --rippedpalette-yellow: #f4d83d;
   --trendy-beige: #f3db6d;
   --dirty-orange: #cf7626;
   --brava-orange: #df814b;
@@ -32,11 +35,13 @@
   --exuberant-orange-pantone: #ff582d;
   --bogart-red: #d04339;
   --ringana-omega-purple: #623144;
-  --brava-merino-dark: #78797b;
-  --brava-merino-light: #bbbfc2;
-  --brava-merino-lighter: #ebeff2;
   --hazel-sweater-purple: #3d2945;
   --hazel-sweater-brown: #a07161;
+  --brava-merino-lighter: #ebeff2;
+  --brava-merino-light: #bbbfc2;
+  --brava-merino-dark: #78797b;
+  --stormy-weather-pantone: #58646d;
+  --odyssey-gray: #393846;
 
   /* export theme colors */
   --primary-color: var(--brava-shirt-blue);
