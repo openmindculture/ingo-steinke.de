@@ -28,11 +28,12 @@ a:active {
 a:hover {
   color: var(--link-hover);
   text-decoration-style: dotted;
+  text-decoration-thickness: 0.1em;
 }
 
 .hashtag {
   font-size: 0.75rem;
-  background-color: var(--trendy-beige);
+  background-color: var(--hashtag-default);
   border-radius: 10%;
   padding: 0.5em;
   margin-right: 0.125em;
@@ -40,11 +41,17 @@ a:hover {
 }
 
 .hashtag.php {
-  background-color: var(--sea-green);
+  background-color: var(--hashtag-green);
   color: #fff;
 }
 
 .hashtag.wp {
-  background-color: var(--uxdesign-blue);
+  background-color: var(--hashtag-blue);
   color: #fff;
+}
+
+.page-footer {
+  color: #fff;
+  line-height: 1;
+  padding-bottom: 1vh;
 }

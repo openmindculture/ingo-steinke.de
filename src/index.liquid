@@ -92,12 +92,6 @@
 
       <div class="page-content">
         <header class="page-header">
-          <h1>
-            Ingo Steinke
-            <span>
-              Creative Web Developer
-            </span>
-          </h1>
           <!-- fixed width image with retina srcset -->
           <!-- use sizes for responsive images -->
           <!-- loading=lazy issues: images not printing -->
@@ -110,18 +104,22 @@
                     */
           -->
           <img
-            src="img/ingo-steinke-blurred-plants.jpg"
-            src="img/Ingo-Steinke-portrait.jpg"
-            srcset="img/Ingo-Steinke-portrait-496.jpg 2x"
+            src="img/Ingo-Steinke-portrait-2020.jpg"
+            srcset="img/Ingo-Steinke-portrait-2020-496.jpg 2x,
+                    img/Ingo-Steinke-portrait-2020-992.jpg 4x"
             width=248
             height=248
             alt="Foto von Ingo Steinke"
             class=photo
           >
+          <h1>
+            Ingo Steinke
+          </h1>
+          <p class="tagline">Creative Web Developer</p>
         </header>
 
-        <main role=main>
-          <section>
+        <main>
+          <section class="text-content">
             <h2>
               Introduction
             </h2>
@@ -150,96 +148,98 @@
             </article>
           </section>
 
-          <section>
+          <section class="tiled-section">
             <h2>
               Work
             </h2>
-            <article>
-              <header>
-                <h3>Shopware Plugin</h3>
-              </header>
-              <p>Cache Control for your existing site at wao.io, a platform, that continually optimizes
-                the security and performance (page size, images and code structure) of your online shop.
-                This free plugin for Shopware 6 was developed for wao.io by Ingo Steinke, Senior Software
-                Developer at Avenga Germany at the time of writing.</p>
-              <p>
-                <span class="hashtag php">PHP</span>
-                <span class="hashtag js">JavaScript</span>
-                <span class="hashtag vuejs">Vue.js</span>
-                <span class="hashtag symfony">Symfony</span>
-                <span class="hashtag shopware">Shopware</span>
-                <span class="hashtag docker">Docker-compose</span>
-              </p>
-            </article>
-            <article>
-              <header>
-                <h3>WordPress Plugin</h3>
-              </header>
-              <p>Cache Control for your existing site at wao.io, a platform, that continually optimizes
-                the security and performance (page size, images and code structure) of your online shop.
-                This free plugin for Shopware 6 was developed for wao.io by Ingo Steinke, Senior Software
-                Developer at Avenga Germany at the time of writing.</p>
-              <p>
-              <p>
-                <span class="hashtag php">PHP</span>
-                <span class="hashtag js">JavaScript</span>
-                <span class="hashtag html">HTML</span>
-                <span class="hashtag css">CSS</span>
-                <span class="hashtag wp">WordPress</span>
-              </p>
-            </article>
-            <article>
-              <header>
-                <h3>Portfolio Website Relaunch</h3>
-              </header>
-              <p></p>
-              <p>
-                <span class="hashtag jamstack">JAMStack</span>
-                <span class="hashtag 11ty" title=eleventy>11ty</span>
-                <span class="hashtag netlify">netlify</span>
-                <span class="hashtag css">CSS</span>
-                <span class="hashtag html">HTML</span>
-                <span class="hashtag js">JavaScript</span>
-              </p>
-            </article>
+            <div class="grid-container">
+              <article class="tile">
+                <header>
+                  <h3>Shopware Plugin ↗</h3>
+                </header>
+                <p>Cache Control for your existing site at wao.io, a platform, that continually optimizes
+                  the security and performance (page size, images and code structure) of your online shop.
+                  This free plugin for Shopware 6 was developed for wao.io by Ingo Steinke, Senior Software
+                  Developer at Avenga Germany at the time of writing.</p>
+                <p>
+                  <span class="hashtag php">PHP</span>
+                  <span class="hashtag js">JavaScript</span>
+                  <span class="hashtag vuejs">Vue.js</span>
+                  <span class="hashtag symfony">Symfony</span>
+                  <span class="hashtag shopware">Shopware</span>
+                  <span class="hashtag docker">Docker-compose</span>
+                </p>
+              </article>
+              <article class="tile">
+                <header>
+                  <h3>WordPress Plugin ↗</h3>
+                </header>
+                <p>Cache Control for your existing site at wao.io, a platform, that continually optimizes
+                  the security and performance (page size, images and code structure) of your online shop.
+                  This free plugin for Shopware 6 was developed for wao.io by Ingo Steinke, Senior Software
+                  Developer at Avenga Germany at the time of writing.</p>
+                <p>
+                <p>
+                  <span class="hashtag php">PHP</span>
+                  <span class="hashtag js">JavaScript</span>
+                  <span class="hashtag html">HTML</span>
+                  <span class="hashtag css">CSS</span>
+                  <span class="hashtag wp">WordPress</span>
+                </p>
+              </article>
+              <article class="tile">
+                <header>
+                  <h3>Portfolio Website Relaunch</h3>
+                </header>
+                <p></p>
+                <p>
+                  <span class="hashtag jamstack">JAMStack</span>
+                  <span class="hashtag 11ty" title=eleventy>11ty</span>
+                  <span class="hashtag netlify">netlify</span>
+                  <span class="hashtag css">CSS</span>
+                  <span class="hashtag html">HTML</span>
+                  <span class="hashtag js">JavaScript</span>
+                </p>
+              </article>
 
-            <article>
-              <header>
-                <h3>React Frontend</h3>
-              </header>
-              <p></p>
-              <p>
-                <span class="hashtag reactjs">ReactJS</span>
-                <span class="hashtag reactjs">React-Router</span>
-                <span class="hashtag js">JavaScript</span>
-                <span class="hashtag css">CSS-in-JSS</span>
-                <span class="hashtag css">CSS</span>
-                <span class="hashtag css">Styled Components</span>
-                <span class="hashtag couper">couper.io</span>
-                <span class="hashtag couper">wao.io</span>
-              </p>
-            </article>
+              <article class="tile">
+                <header>
+                  <h3>React Frontend</h3>
+                </header>
+                <p></p>
+                <p>
+                  <span class="hashtag reactjs">ReactJS</span>
+                  <span class="hashtag reactjs">React-Router</span>
+                  <span class="hashtag js">JavaScript</span>
+                  <span class="hashtag css">CSS-in-JSS</span>
+                  <span class="hashtag css">CSS</span>
+                  <span class="hashtag css">Styled Components</span>
+                  <span class="hashtag couper">couper.io</span>
+                  <span class="hashtag couper">wao.io</span>
+                </p>
+              </article>
 
-            <article>
-              <header>
-                <h3>Meetup with Pat</h3>
-              </header>
-              <p></p>
-            </article>
+              <article class="tile">
+                <header>
+                  <h3>Meetup with Pat</h3>
+                </header>
+                <p></p>
+              </article>
 
-            <article>
-              <header>
-                <h3>Kleiderordnung Düsseldorf</h3>
-              </header>
-              <p></p>
-            </article>
+              <article class="tile">
+                <header>
+                  <h3>Kleiderordnung Düsseldorf ↗</h3>
+                </header>
+                <p></p>
+              </article>
+            </div>
           </section>
 
-          <section>
+          <section class="tiled-section">
             <h2>
               Skills / Tools
             </h2>
-            <article>
+            <article class="tile">
               <header>
                 <h3>
                   CSS: 20+
@@ -249,7 +249,7 @@
                 Stylesheets, CSS, CSS3, CSSnext, SASS, SCSS, PostCSS, OOCSS, ITCSS, BEM, CSS-in-JS, atomic css, utitlity first css, styled components, you name it css
               </p>
             </article>
-            <article>
+            <article class="tile">
               <header>
                 <h3>
                   JavaScript: 25+
@@ -261,7 +261,7 @@
             </article>
           </section>
 
-          <section>
+          <section class="text-content">
             <h2>
               Links, Netzwerkprofile
             </h2>
@@ -333,7 +333,7 @@
             </div>
           </section>
 
-          <section>
+          <section class="text-content">
             <h2>
               Kontakt, Impressum, Datenschutz
             </h2>
