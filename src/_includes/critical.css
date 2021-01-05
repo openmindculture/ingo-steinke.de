@@ -85,6 +85,8 @@ h4 {
     letter-spacing: 0.125rem;
     padding: 0;
     margin: 0;
+
+    /* gradient on text */
     background: -webkit-linear-gradient(var(--gradient-heading), var(--primary-heading));
     background-clip: unset;
     -webkit-background-clip: text;
@@ -109,18 +111,31 @@ h4 {
 
   .text-content {
     background-color: var(--secondary-background);
+    background-image: linear-gradient(#eee, var(--light-yellowish));
     border-radius: 0.5em;
     padding: 0.5em 0 1em 1em;
     margin: 0 1em 2em 0;
   }
 
   .text-content h2,
-  .text-content h3 {
+  .text-content h3,
+  .text-content h4 {
     color: var(--secondary-heading);
   }
 
-  .tiled-section {
+  .capitalized::first-letter {
+    float: left;
+    font-size: 3.25rem;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+  }
+
+  /* TODO alle Elementselektoren durch Klassennamen ersetzen */
+
+  .tiled-content {
     background-color: var(--primary-background);
+    margin: 0 1em 2em 0;
   }
 
   .grid-container {
@@ -133,6 +148,7 @@ h4 {
   .tile {
     color: var(--primary-heading);
     background-color: var(--primary-background);
+    background-image: linear-gradient(var(--primary-background), var(--midnight-blue));
     border: solid 1px var(--secondary-background);
     border-radius: 0.5em;
     padding: 1em 2em;
@@ -147,12 +163,23 @@ h4 {
     color: var(--secondary-background);
   }
 
-  aside {
+  .credits,
+  .decoration {
     font-size: 0.75rem;
   }
 
-  .visuallyhidden {
+  .visually-hidden {
     display: none;
+  }
+
+  @supports selector(*:target) {
+    .initially-hidden {
+      display: none;
+    }
+
+    .initially-hidden:target {
+      display: initial;
+    }
   }
 
   img.photo {
@@ -216,5 +243,9 @@ h4 {
     /* fallback to override by grid styling */
     max-width: 640px;
     margin: 0 auto;
+  }
+
+  .page-navigation {
+    min-width: 1em;
   }
 }

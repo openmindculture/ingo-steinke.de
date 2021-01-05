@@ -27,6 +27,7 @@
   --orangedrippalette-yellow: #f8bc24;
   --rippedpalette-yellow: #f4d83d;
   --pantone-illuminating: #f5df4d; /* Pantone 13-0647 TCX Spring Summer 2021 */
+  --light-yellowish: #fffcf0;
   --monolith-yellow: #fddc03;
   --trendy-beige: #f3db6d;
   --dirty-orange: #cf7626;
@@ -56,7 +57,7 @@
   /* export theme colors */
   --primary-color: #000;
   --primary-heading: var(--brava-merino-lighter);
-  --gradient-heading: var(--pantone-illuminating);
+  --gradient-heading: var(--brava-merino-light);
   --secondary-heading: var(--recolution-greenish-blue);
   --link-hover: var(--surftheweb-pantone);
   --primary-background: var(--ringana-spermidine-green);
@@ -65,7 +66,7 @@
   --warning-color: var(--uxdesign-yellow);
   --error-color: var(--oxy-fire);
   --border-base: var(--apairandaspare2021);
-  --hashtag-default: var(--trendy-beige);
+  --hashtag-default: var(--surftheweb-pantone);
   --hashtag-green: var(--ringana-spermidine-green);
   --hashtag-blue: var(--uxdesign-blue);
 

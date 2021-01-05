@@ -50,6 +50,41 @@ a:hover {
   color: #fff;
 }
 
+.contactform {
+  margin: 0.5em auto 1em auto;
+  width: 90%;
+  text-align: center;
+}
+
+.contactform label {
+  display: block;
+  width: 90%;
+}
+
+.contactform textarea {
+  height: 5em;
+}
+
+.contactform input,
+.contactform textarea,
+.contactform .submit {
+  border: solid 1px silver;
+  border-radius: 0.5em;
+  padding: 0.25em 0.5em 0.25em 0.5em;
+  margin: 0 0 0.25em -0.5em;
+  width: 90%;
+  line-height: 1.75;
+  font-family: var(--body-font-family);
+  font-weight: var(--body-font-weight);
+}
+
+.contactform .submit {
+  background-color: #283583;
+  border: none;
+  color: #fff;
+  padding: 0.5em;
+}
+
 .page-footer {
   color: #fff;
   line-height: 1;
