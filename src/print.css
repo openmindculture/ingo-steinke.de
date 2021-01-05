@@ -1,0 +1,38 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4 {
+  background: #fff;
+  color: #000;
+  font-size: 12pt;
+}
+
+h2 {
+  font-size: 24pt;
+}
+
+.page-navigation {
+  display: none;
+}
+
+.page-header {
+  text-align: center;
+  break-after: page;
+  margin-top: 25%;
+}
+
+.page-header h1 {
+  font-size: 60pt;
+  margin: 0;
+}
+
+.page-header p {
+  font-size: 30pt;
+  margin: 0;
+}
+
+img.photo {
+  border-radius: 50%;
+}

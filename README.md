@@ -19,7 +19,7 @@ npm run build
 ### check, fix, and build manually
 
 ```
-npx stylelint "**/*.css" --fix && eleventy && node_modules/postcss-cli/bin/postcss src/styles.css > dist/styles.css
+npx stylelint "**/*.css" --fix && eleventy && node_modules/postcss-cli/bin/postcss src/*.css --dir dist/
 ```
 
 ## Deployment
