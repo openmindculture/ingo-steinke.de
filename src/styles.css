@@ -1,5 +1,9 @@
 @import '_includes/design-tokens.css';
 
+.pl1 {
+  padding-left: 1em;
+}
+
 a:link,
 a:visited,
 a:active,
@@ -89,4 +93,92 @@ a:hover {
   color: #fff;
   line-height: 1;
   padding-bottom: 1vh;
+}
+
+.tile .flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+a.iconlink.iconlink {
+  position: absolute;
+  width: 1.5em;
+  height: 1.5em;
+  color: transparent;
+  text-decoration: none;
+  top: 1em;
+  background-repeat: no-repeat;
+}
+
+.iconlink.arrow {
+  right: 1em;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' viewBox='0 0 200 200'%3E%3Cpath fill='%23ffffff' d='M80.277,0l94.896,17.111l-48.313,86.232L115.5,77.734C66.917,99.693,31.992,145.298,30.964,200 C10.941,135.259,42.145,68.341,92.149,26.201L80.277,0z'/%3E%3C/svg%3E");
+}
+
+.iconlink.github {
+  right: 3.25em;
+  background-size: 90%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='14' viewBox='0 0 16 15' width='14'%3E%3Cpath fill='%23ffffff' fill-rule='evenodd' d='M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z'/%3E%3C/svg%3E");
+}
+
+.bg-img {
+  color: var(--primary-heading);
+  background-color: var(--primary-background);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-peel {
+  background: linear-gradient(135deg, transparent 0%, var(--peel-gradient-semitrans) 15%, var(--peel-gradient) 60%);
+  height: 100%;
+  border-radius: 0.5rem;
+}
+
+.bg-peel:hover {
+  background-image: none;
+}
+
+/* TODO Textkürzung aber was passiert mit dem abgeschnittenen Teil???? */
+
+/* on click lightboxmässig vergrößern? */
+
+/* print ungekürzt? */
+
+/* Der Verlauf ist einerseits schön, andererseist mit dme dunkelblau zu "bunt",
+    zu metallisch, zu unharmonisch mit dem Hipsterhintergrund der Seite.
+    Auch das Rosé gefällt mir noch nicht wirklich.
+    Eventuell doch auf Gelbtöne wechseln?
+*/
+
+.img-ingotron {
+  background-image: url(img/ingotron.jpg);
+}
+
+.img-meetup {
+  background-image: url(img/meetup-angelina-farsch-ingo-steinke-2020.jpg);
+}
+
+.img-sw-plugin {
+  background-image: url(img/shopware-plugin-for-wao-io.jpg);
+}
+
+.img-wp-plugin {
+  background-image: url(img/wordpress-plugin-for-wao-io.jpg);
+}
+
+.img-react-app {
+  background-image: url(img/react-app-wao-io.jpg);
+}
+
+.img-kleiderordnung {
+  background-image: url(img/kleiderordnung-website.jpg);
+}
+
+.img-wp-theme {
+  background-image: url(img/wordpress-theme-open-mind-culture.jpg);
+}
+
+.img-woodhack {
+  background-image: url(img/woodhack-hackathon-2019-teamwork-arduino-green-wall-e.jpg);
 }

@@ -64,6 +64,7 @@ h2,
 h3,
 h4 {
   font-size: 1.5rem;
+  line-height: 1.5;
 }
 
 @media screen {
@@ -171,33 +172,16 @@ h4 {
   .tile {
     border: solid 1px var(--secondary-background);
     border-radius: 0.5em;
-    padding: 1em 2em;
-    padding: 1vh 2vw;
+    padding: 0;
+    position: relative;
   }
 
-  .dark {
-    color: var(--primary-heading);
-    background-color: var(--primary-background);
-    background-image: linear-gradient(var(--primary-background), var(--midnight-blue));
+  .tile h3 {
+    margin: 0.5rem 0 0 0;
   }
 
-  /* TODO remove prototyping mock */
-
-  /* die beiden Kacheln zu SW+WP Plugins sehen harmonisch aus, die anderen nicht */
-  .tile.dark {
+  .tile-height {
     max-height: 380px;
-
-    /* TODO Textkürzung aber was passiert mit dem abgeschnittenen Teil???? */
-
-    /* on click lightboxmässig vergrößern? */
-
-    /* print ungekürzt? */
-
-    /* Der Verlauf ist einerseits schön, andererseist mit dme dunkelblau zu "bunt",
-       zu metallisch, zu unharmonisch mit dem Hipsterhintergrund der Seite.
-       Auch das Rosé gefällt mir noch nicht wirklich.
-       Eventuell doch auf Gelbtöne wechseln?
-    */
   }
 
   .row {
