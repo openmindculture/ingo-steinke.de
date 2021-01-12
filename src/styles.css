@@ -95,6 +95,24 @@ a:hover {
   padding-bottom: 1vh;
 }
 
+/* zusätzlicher coolerer Style für die Tiles,
+-* und auch deren Boerder hätte nichts im critical verloren, bloß die Höhe */
+.flow-grid > * {
+  border: dashed 1px var(--secondary-background);
+  border-top-style: none;
+  border-left-style: none;
+  border-radius: none;
+}
+
+.tile {
+  padding: 0;
+  position: relative;
+}
+
+.tile h3 {
+  margin: 0.5rem 0 0 0;
+}
+
 .tile .flex {
   display: flex;
   flex-direction: column;
@@ -137,6 +155,10 @@ a.iconlink.iconlink {
 
 .bg-peel:hover {
   background-image: none;
+}
+
+.bg-peel:hover span.text-line {
+  background: green;
 }
 
 /* TODO Textkürzung aber was passiert mit dem abgeschnittenen Teil???? */
