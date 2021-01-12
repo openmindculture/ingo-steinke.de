@@ -64,6 +64,7 @@
   --secondary-background: var(--pantone-buttercream);
   --peel-gradient: var(--recolution-greenish-blue);
   --peel-gradient-semitrans: rgba(5, 50, 69, 0.75);
+  --peel-text-line-bg: rgba(0, 128, 0, 0.75);
   --confirm-color: var(--deep-green);
   --warning-color: var(--uxdesign-yellow);
   --error-color: var(--oxy-fire);

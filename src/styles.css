@@ -158,7 +158,7 @@ a.iconlink.iconlink {
 }
 
 .bg-peel:hover span.text-line {
-  background: green;
+  background: var(--peel-text-line-bg);
 }
 
 /* TODO Textkürzung aber was passiert mit dem abgeschnittenen Teil???? */
