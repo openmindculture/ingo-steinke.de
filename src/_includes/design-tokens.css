@@ -52,7 +52,10 @@
   --brava-merino-dark: #78797b;
   --stormy-weather-pantone: #58646d;
   --odyssey-gray: #393846;
+  --odyssey-gray-darker: #292836;
+  --odyssey-gray-darkest: #191826;
   --pantone-inkwell: #363945; /* spring summer 2021 */
+  --deep-pink: #ff1493;
 
   /* export theme colors */
   --primary-color: #000;
@@ -61,10 +64,10 @@
   --secondary-heading: var(--recolution-greenish-blue);
   --link-hover: var(--surftheweb-pantone);
   --primary-background: var(--ringana-spermidine-green);
-  --secondary-background: var(--pantone-buttercream);
+  --secondary-background: var(--brava-merino-light);
   --peel-gradient: var(--recolution-greenish-blue);
-  --peel-gradient-semitrans: rgba(5, 50, 69, 0.75);
-  --peel-text-line-bg: rgba(0, 128, 0, 0.75);
+  --peel-gradient-semitrans: rgba(5, 50, 69, 0.5);
+  --peel-text-line-bg: rgba(0, 128, 0, 0.5);
   --confirm-color: var(--deep-green);
   --warning-color: var(--uxdesign-yellow);
   --error-color: var(--oxy-fire);
@@ -72,6 +75,24 @@
   --hashtag-default: var(--surftheweb-pantone);
   --hashtag-green: var(--ringana-spermidine-green);
   --hashtag-blue: var(--uxdesign-blue);
+
+  /* colors to alternate by position */
+  --hashtag-bg1: var(--oxy-fire);
+  --hashtag-bg2: var(--ringana-omega-purple);
+  --hashtag-bg3: var(--ringana-spermidine-green);
+  --hashtag-bg4: var(--deep-green);
+  --hashtag-bg5: var(--pantone-illuminating);
+  --hashtag-bg6: var(--stormy-weather-pantone);
+  --hashtag-bg7: var(--brava-orange);
+  --hashtag-bg8: var(--pantone-inkwell);
+  --hashtag-fg1: var(--brava-merino-lighter);
+  --hashtag-fg2: var(--brava-merino-lighter);
+  --hashtag-fg3: var(--brava-merino-lighter);
+  --hashtag-fg4: var(--brava-merino-lighter);
+  --hashtag-fg5: var(--odyssey-gray-darkest);
+  --hashtag-fg6: var(--brava-merino-lighter);
+  --hashtag-fg7: var(--brava-merino-lighter);
+  --hashtag-fg8: var(--brava-merino-lighter);
 
   /* export typography */
   --body-font-family: 'Montserrat', 'Helvetica', sans-serif;

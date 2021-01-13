@@ -95,15 +95,6 @@ a:hover {
   padding-bottom: 1vh;
 }
 
-/* zusätzlicher coolerer Style für die Tiles,
--* und auch deren Boerder hätte nichts im critical verloren, bloß die Höhe */
-.flow-grid > * {
-  border: dashed 1px var(--secondary-background);
-  border-top-style: none;
-  border-left-style: none;
-  border-radius: none;
-}
-
 .tile {
   padding: 0;
   position: relative;
@@ -117,6 +108,21 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+/* zusätzlicher coolerer Style für die Tiles,
+-* und auch deren Boerder hätte nichts im critical verloren, bloß die Höhe */
+
+.flow-grid {
+  background-image: url(img/flow-grid.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.flow-grid .tile {
+  font-size: 0.95em;
+  line-height: 1.5;
 }
 
 a.iconlink.iconlink {
@@ -142,7 +148,8 @@ a.iconlink.iconlink {
 
 .bg-img {
   color: var(--primary-heading);
-  background-color: var(--primary-background);
+
+  /* background-color: var(--primary-background); */
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -150,15 +157,18 @@ a.iconlink.iconlink {
 .bg-peel {
   background: linear-gradient(135deg, transparent 0%, var(--peel-gradient-semitrans) 15%, var(--peel-gradient) 60%);
   height: 100%;
-  border-radius: 0.5rem;
 }
 
 .bg-peel:hover {
   background-image: none;
 }
 
+.bg-peel span.text-line {
+  background-color: var(--primary-background);
+}
+
 .bg-peel:hover span.text-line {
-  background: var(--peel-text-line-bg);
+  background-color: var(--peel-text-line-bg);
 }
 
 /* TODO Textkürzung aber was passiert mit dem abgeschnittenen Teil???? */
@@ -173,11 +183,7 @@ a.iconlink.iconlink {
     Eventuell doch auf Gelbtöne wechseln?
 */
 
-.img-ingotron {
-  background-image: url(img/ingotron.jpg);
-}
-
-.img-meetup {
+/* .img-meetup {
   background-image: url(img/meetup-angelina-farsch-ingo-steinke-2020.jpg);
 }
 
@@ -199,8 +205,74 @@ a.iconlink.iconlink {
 
 .img-wp-theme {
   background-image: url(img/wordpress-theme-open-mind-culture.jpg);
-}
+} */
 
 .img-woodhack {
   background-image: url(img/woodhack-hackathon-2019-teamwork-arduino-green-wall-e.jpg);
+}
+
+.hashtags {
+  display: flex;
+}
+
+ul.grid-container.skills {
+  margin-bottom: 2em;
+}
+
+.skills > .tile {
+  background-color: var(--exuberant-orange-pantone);
+}
+
+.skills > .tile li {
+  background: white;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+.skills > .tile ul {
+  list-style-type: none;
+}
+
+.skills .hashtag {
+  color: white;
+}
+
+.skills .hashtag:first-child {
+  background-color: var(--hashtag-bg1);
+  color: var(--hashtag-fg1);
+}
+
+.skills .hashtag:nth-child(2) {
+  background-color: var(--hashtag-bg2);
+  color: var(--hashtag-fg2);
+}
+
+.skills .hashtag:nth-child(3) {
+  background-color: var(--hashtag-bg3);
+  color: var(--hashtag-fg3);
+}
+
+.skills .hashtag:nth-child(4) {
+  background-color: var(--hashtag-bg4);
+  color: var(--hashtag-fg4);
+}
+
+.skills .hashtag:nth-child(5) {
+  background-color: var(--hashtag-bg5);
+  color: var(--hashtag-fg5);
+}
+
+.skills .hashtag:nth-child(6) {
+  background-color: var(--hashtag-bg6);
+  color: var(--hashtag-fg6);
+}
+
+.skills .hashtag:nth-child(7) {
+  background-color: var(--hashtag-bg7);
+  color: var(--hashtag-fg7);
+}
+
+.skills .hashtag:nth-child(8) {
+  background-color: var(--hashtag-bg8);
+  color: var(--hashtag-fg8);
 }
