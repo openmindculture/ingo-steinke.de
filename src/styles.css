@@ -219,6 +219,31 @@ a.iconlink.iconlink {
   display: flex;
 }
 
+.vcard {
+  padding: 1em;
+  background-color: white;
+  color: black;
+  max-width: 490px;
+  margin: 1em auto 0 auto;
+  text-align: center;
+}
+
+.vcard h4 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  list-style: none;
+}
+
+.social-links li {
+  padding: 0 1em;
+}
+
 ul.grid-container.skills {
   margin-bottom: 2em;
 }
