@@ -125,6 +125,10 @@ a:hover {
   line-height: 1.5;
 }
 
+.flow-grid .hashtag {
+  font-size: 0.95em;
+}
+
 a.iconlink.iconlink {
   position: absolute;
   width: 1.5em;

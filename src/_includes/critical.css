@@ -4,9 +4,6 @@
 
 /* viel viel mehr in die styles.css zumal wenn es mehrere Seiten geben können soll */
 
-/* TODO use locally if better than Raleway */
-@import url('https://fonts.googleapis.com/css2?family=Kadwa:wght@700&display=swap');
-
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
@@ -28,13 +25,13 @@
 }
 
 @font-face {
-  font-family: '';
+  font-family: 'Bitter';
   font-style: normal;
   font-weight: 700;
   src:
     local(''),
-    url('../fonts/kadwa-v4-latin-700.woff2') format('woff2'),
-    url('../fonts/kadwa-v4-latin-700.woff') format('woff');
+    url('../fonts/fonts/bitter-v16-latin-700.woff2') format('woff2'),
+    url('../fonts/fonts/bitter-v16-latin-700.woff') format('woff');
 }
 
 html {

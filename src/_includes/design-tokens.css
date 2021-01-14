@@ -40,6 +40,7 @@
   --oxy-fire: #dc4942;
   --exuberant-orange-pantone: #ff582d;
   --bogart-red: #d04339;
+  --period-intimina-pantone: #d3000b;
   --ringana-omega-purple: #623144;
   --hazel-sweater-purple: #3d2945;
   --hazel-sweater-brown: #a07161;
@@ -50,12 +51,12 @@
   --brava-merino-lighter: #ebeff2;
   --brava-merino-light: #bbbfc2;
   --brava-merino-dark: #78797b;
+  --ultimate-pantone: #97919d; /* color of the year 2021 zusammen mit illuminating */
   --stormy-weather-pantone: #58646d;
   --odyssey-gray: #393846;
   --odyssey-gray-darker: #292836;
   --odyssey-gray-darkest: #191826;
   --pantone-inkwell: #363945; /* spring summer 2021 */
-  --deep-pink: #ff1493;
 
   /* export theme colors */
   --primary-color: #000;
@@ -68,10 +69,6 @@
   --peel-gradient: var(--recolution-greenish-blue);
   --peel-gradient-semitrans: rgba(5, 50, 69, 0.5);
   --peel-text-line-bg: rgba(0, 128, 0, 0.5);
-  --confirm-color: var(--deep-green);
-  --warning-color: var(--uxdesign-yellow);
-  --error-color: var(--oxy-fire);
-  --border-base: var(--apairandaspare2021);
   --hashtag-default: var(--surftheweb-pantone);
   --hashtag-green: var(--ringana-spermidine-green);
   --hashtag-blue: var(--uxdesign-blue);
@@ -97,6 +94,6 @@
   /* export typography */
   --body-font-family: 'Montserrat', 'Helvetica', sans-serif;
   --body-font-weight: 400;
-  --heading-font-family: 'Kadwa', serif;
+  --heading-font-family: 'Bitter', serif;
   --heading-font-weight: 700;
 }
