@@ -15,34 +15,31 @@
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 800;
-  src:
-    local(''),
-    url('fonts/montserrat-v15-latin-ext_latin-800.woff2') format('woff2'),
-    url('fonts/montserrat-v15-latin-ext_latin-800.woff') format('woff');
-}
-
-@font-face {
   font-family: 'Bitter';
   font-style: normal;
   font-weight: 700;
   src:
     local(''),
-    url('../fonts/fonts/bitter-v16-latin-700.woff2') format('woff2'),
-    url('../fonts/fonts/bitter-v16-latin-700.woff') format('woff');
+    url('fonts/bitter-v16-latin-700.woff2') format('woff2'),
+    url('fonts/bitter-v16-latin-700.woff') format('woff');
 }
 
 html {
   font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 body {
   line-height: 1.75;
-  font-family: var(--body-font-family);
+  font-family: var(--sans-font-family);
   font-weight: var(--body-font-weight);
-  color: var(--primary-color);
+  color: var(--primary-foreground);
   background-color: var(--primary-background);
   margin: 0;
   padding: 0;
@@ -54,6 +51,7 @@ h3,
 h4 {
   font-family: var(--heading-font-family);
   font-weight: var(--heading-font-weight);
+  letter-spacing: 0.0125rem;
   color: var(--primary-heading);
 }
 
@@ -68,6 +66,7 @@ h4 {
   .page-container {
     display: flex;
     flex-direction: row;
+    width: 100%;
   }
 
   .page-header {
@@ -76,7 +75,7 @@ h4 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 
     /* Das Foto ist auf großen Bildschirmen (test in devtools simuliert)
@@ -123,17 +122,22 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 100%;
   }
 
-  .text-content {
-    background-color: var(--secondary-background);
+  .text-content-layout {
     padding: 0.5em 0 1em 1em;
-    margin: 0 1em 2em 0;
+    margin: 0 0 2em 0;
   }
 
-  .text-content h2,
-  .text-content h3,
-  .text-content h4 {
+  .text-content-color {
+    background-color: var(--secondary-background);
+    color: #000;
+  }
+
+  .text-content-color h2,
+  .text-content-color h3,
+  .text-content-color h4 {
     color: var(--secondary-heading);
   }
 
@@ -152,11 +156,25 @@ h4 {
     margin: 0 1em 2em 0;
   }
 
+  section,
+  .clear {
+    clear: both;
+  }
+
   .grid-container {
+    display: -ms-grid;
     display: grid;
+    clear: both;
     grid-template-columns: repeat(auto-fit, 350px);
+    -ms-grid-columns: 1fr (350px)[3];
     grid-column-gap: 5vw;
     grid-row-gap: 5vh;
+  }
+
+  /* float fallback does not apply inside grid layout */
+  .grid-container > * {
+    display: block;
+    float: left;
   }
 
   ul.grid-container {
@@ -176,12 +194,19 @@ h4 {
   }
 
   .row {
+    display: block;
     display: flex;
     flex-direction: row;
   }
 
+  /* float fallback does not apply to flex children */
+  .row > * {
+    float: left;
+  }
+
   .page-navigation {
     position: relative;
+    display: none;
   }
 
   .page-navigation a > * {
@@ -270,7 +295,7 @@ h4 {
     margin: 0 auto;
   }
 
-  .page-navigation {
+  /* .page-navigation {
     min-width: 1em;
-  }
+  } */
 }
