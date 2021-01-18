@@ -19,18 +19,18 @@ h2 {
   display: none;
 }
 
-.page-header {
+.hero-header {
   text-align: center;
   break-after: page;
   margin-top: 25%;
 }
 
-.page-header h1 {
+.hero-header h1 {
   font-size: 60pt;
   margin: 0;
 }
 
-.page-header p {
+.hero-header p {
   font-size: 30pt;
   margin: 0;
 }
