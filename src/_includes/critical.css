@@ -69,7 +69,7 @@ h4 {
     width: 100%;
   }
 
-  .page-header {
+  .hero-header {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,7 +88,7 @@ h4 {
     */
   }
 
-  .page-header h1 {
+  .hero-header h1 {
     font-size: 5rem;
     font-size: 13vh;
     line-height: 1.25;
@@ -103,7 +103,7 @@ h4 {
     -webkit-text-fill-color: transparent;
   }
 
-  .page-header p {
+  .hero-header p {
     font-size: 2.325rem;
     font-size: 6vh;
     font-family: var(--body-font);
@@ -111,6 +111,29 @@ h4 {
     color: var(--primary-heading);
     padding: 0;
     margin: 0;
+  }
+
+  .sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    /* optional decorative styles */
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    background-color: rgba(100, 100, 100, 90%);
+  }
+
+  /* Don’t Headbutt The Browser Window by Chris Coyer
+  /*https://css-tricks.com/hash-tag-links-padding/ */
+  .target-offset::before {
+    display: block;
+    content: " ";
+    margin-top: -45px;
+    height: 45px;
+    visibility: hidden;
+    pointer-events: none;
   }
 
   main {
