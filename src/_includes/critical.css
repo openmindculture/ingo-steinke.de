@@ -35,15 +35,6 @@ html {
   box-sizing: inherit;
 }
 
-body,
-html {
-  font-size: 14px;
-  font-family: Montserrat, Helvetica, sans-serif;
-  line-height: 1.5;
-  color: #191970;
-  background-color: #fff;
-}
-
 body {
   line-height: 1.75;
   font-family: var(--sans-font-family);
