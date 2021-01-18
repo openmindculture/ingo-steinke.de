@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="../src/_includes/design-tokens.css">
+    <link rel="stylesheet" href="../src/_includes/critical.css">
+    <link rel="stylesheet" href="../src/styles.css">
+  </head>
+  <body>
+    <div class="page-container">
+      <header class="page-header">
+        <!-- fixed width image with retina srcset -->
+        <!-- use sizes for responsive images -->
+        <!-- loading=lazy issues: images not printing -->
+        <!-- lazysizes / vanilla-lazyload only use data- attributes, so no native html fallback? -->
+        <!-- img/Ingo-Steinke-portrait.jpg -->
+        <!--             /*
+          src="img/Foto-Ingo-Steinke-Woodhack-150.jpg"
+          srcset="img/Foto-Ingo-Steinke-Woodhack-300.jpg 2x,
+                  img/Foto-Ingo-Steinke-Woodhack.jpg 2.5x"
+                  */
+        -->
+        <img
+          src="img/Ingo-Steinke-portrait-2020.jpg"
+          srcset="img/Ingo-Steinke-portrait-2020-496.jpg 2x,
+                  img/Ingo-Steinke-portrait-2020-992.jpg 4x"
+          width=248
+          height=248
+          alt="Foto von Ingo Steinke"
+          class=photo
+        >
+        <h1>
+          Ingo Steinke
+        </h1>
+        <p class="tagline">Creative Web Developer</p>
+      </header>
+    </div>
+  </body>
+</html>

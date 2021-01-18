@@ -2,3 +2,7 @@
 docker-compose.override.yml
 node_modules
 .vscode
+Thumbs.db
+Thumbs.db:encryptable
+Desktop.ini
+.DS_Store

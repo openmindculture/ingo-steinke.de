@@ -1,50 +1,43 @@
 <!doctype html>
 <html lang=de>
   <head>
-    <meta
-      http-equiv="content-type"
-      content="text/html; charset=utf-8"
-    >
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <!-- TODO use variables instead of repeating meta values -->
     <title>
-      Ingo Steinke - Web-Entwickler und Berater in Düsseldorf
+      Ingo Steinke, Ihr kreativer Web-Entwickler in Düsseldorf
     </title>
-    <meta name=author content="Ingo Steinke">
     <meta name=language content=de>
-    <meta name=description content="Ingo Steinke">
-    <meta name=keywords content="Ingo,Steinke,Web-Entwickler,Berater,Medienkompetenz,Events,Frischekosmetik,Nahrungseränzung,Düsseldorf">
-    <meta name="p:domain_verify" content="4c4296e5835f4a47eb2c2e5488a99d71"/>
-    <meta name=robots content="index,follow">
     <meta name=viewport content="width=device-width,initial-scale=1.0">
     <style>
       {%- postcss -%}
         {% include _includes/critical.css %}
       {%- endpostcss -%}
     </style>
-    <link src="styles.css" rel="stylsheet" type="text/css"/>
+    <link rel="stylesheet" media="screen" href="styles.css" type="text/css" />
+    <link rel="stylesheet" media="print" href="print.css">
+    <meta name=author content="Ingo Steinke">
     <meta
       property="og:title"
-      content="Ingo Steinke - Web-Entwickler und Berater in Düsseldorf"
+      content="Ingo Steinke, Ihr kreativer Web-Entwickler in Düsseldorf"
     >
     <meta
       property="og:description"
-      content="Ingo Steinke ist Web-Entwickler und Berater in Düsseldorf."
+      content="Ingo Steinke ist ein kreativer Web-Entwickler in Düsseldorf mit über 20 Jahren Beruferfahrung."
     >
+    <meta name=description content="Ingo Steinke ist ein kreativer Web-Entwickler in Düsseldorf mit über 20 Jahren Beruferfahrung.">
+    <meta name=keywords content="Ingo,Steinke,Web-Entwickler,Berater,Düsseldorf">
+    <meta name="p:domain_verify" content="4c4296e5835f4a47eb2c2e5488a99d71"/>
+    <meta name=robots content="index,follow">
     <meta
       property="og:image"
       content="https://www.ingo-steinke.de/ingo-steinke-face-bw.jpg"
     >
     <meta
       name="twitter:card"
-      content="Ingo Steinke ist Web-Entwickler und Berater in Düsseldorf."
+      content="Ingo Steinke is a creative frontend web developer and does green ethical business."
     >
-    <meta
-      name="twitter:site"
-      content="@fraktalisman"
-    >
-    <meta
-      name="twitter:creator"
-      content="@fraktalisman"
-    >
+    <meta name="twitter:site" content="@fraktalisman">
+    <meta name="twitter:creator" content="@fraktalisman">
     <meta
       property="og:url"
       content="https://www.ingo-steinke.de/"
@@ -53,131 +46,847 @@
       rel=canonical
       href="https://www.ingo-steinke.de/"
     >
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
   </head>
   <body>
-    <div class=outercontainer>
-      <h1 role=banner>Ingo Steinke</h1>
-      <aside>
-        <section class=right>
-          <a class="social-btn gh-btn" href="https://github.com/openmindculture" target="_blank" rel="noopener">
-            <svg height=14 viewBox="0 0 16 15" width=14>
-              <title>GitHub</title>
-              <path
-                fill="#fff"
-                fill-rule=evenodd
-                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-            </svg><span>openmindculture</span>
-          </a>
-        </section>
-        <section class=right>
-          <a class="social-btn tw-btn" href="https://twitter.com/fraktalisman" target="_blank" rel="noopener">
-            <svg viewBox="0 0 61 61" height=14 width=14>
-              <title>Twitter</title>
-              <path fill=none d="M0 0h72v72H0z"/>
-              <path
-                class=icon
-                fill="#fff"
-                d="M68.812 15.14c-2.348 1.04-4.87 1.744-7.52 2.06 2.704-1.62 4.78-4.186 5.757-7.243-2.53 1.5-5.33 2.592-8.314 3.176C56.35 10.59 52.948 9 49.182 9c-7.23 0-13.092 5.86-13.092 13.093 0 1.026.118 2.02.338 2.98C25.543 24.527 15.9 19.318 9.44 11.396c-1.125 1.936-1.77 4.184-1.77 6.58 0 4.543 2.312 8.552 5.824 10.9-2.146-.07-4.165-.658-5.93-1.64-.002.056-.002.11-.002.163 0 6.345 4.513 11.638 10.504 12.84-1.1.298-2.256.457-3.45.457-.845 0-1.666-.078-2.464-.23 1.667 5.2 6.5 8.985 12.23 9.09-4.482 3.51-10.13 5.605-16.26 5.605-1.055 0-2.096-.06-3.122-.184 5.794 3.717 12.676 5.882 20.067 5.882 24.083 0 37.25-19.95 37.25-37.25 0-.565-.013-1.133-.038-1.693 2.558-1.847 4.778-4.15 6.532-6.774z"
-              />
-            </svg><span>@fraktalisman</span>
-          </a>
-        </section>
-      </aside>
-      <main class=innercontainer>
-        <section>
-          <div class=flr>
-            <img
-              src="img/Foto-Ingo-Steinke-Woodhack-150.jpg"
-              srcset="img/Foto-Ingo-Steinke-Woodhack-300.jpg 2x,
-                      img/Foto-Ingo-Steinke-Woodhack.jpg 2.5x"
-              width=150
-              height=150
-              alt="Foto von Ingo Steinke"
-              class=photo
-            >
-          </div>
-          <p>
-            Herzlich Willkommen auf meiner Homepage! Ich bin Ingo Steinke, kreativer Webentwickler aus Düsseldorf mit über 20 Jahren Berufserfahrung.
-          </p>
-          <p>
-            Sie möchten Ihre Webseite überarbeiten? Ihr Team braucht Verstärkung durch einen Frontend-Entwickler mit Full-Stack-Erfahrung? Rufen Sie mich an oder hinterlassen Sie mir eine Nachricht!
-          </p>
-        </section>
-        <section>
-          <h2>Web-Entwicklung</h2>
-          <p>
-            Schön, schnell und barrierefrei präsentiere ich Ihre Dienstleistungen und Produkte. Ich erstelle, pflege und optimiere Internetseiten und Web-Anwendungen mit den Schwerpunkten
-            Web-Performance, Geschwindigkeit und Benutzerfreundlichkeit. Gern erstelle ich Ihnen ein individuelles Angebot.
-          </p>
-          <p>
-            Ihre Layouts realisiere ich plattformübergreifend, auf Wunsch auch pixelgenau. Modulare Komponenten, Themes und CSS-Frameworks erleichtern die Zusammenarbeit und Weiterentwicklung. Kontinuiertliches Testen ermöglicht es mir, Fehler frühzeitig zu entdecken und zu beheben.
-          </p>
-          <h3>Full-Stack-Erfahrung</h3>
-          <p>
-            Bei der Weiterentwicklung bestehenden Codes kommt mir meine Berufserfahrung und meine pragmatische Einstellung zugute.
-            Mit meinen Erfahrungen im Backend- und DevOps-Bereich und meinre hohen Lernbereitschaft übernehme ich bei Bedarf auch Aufgaben, die sich rund um die Frontend-Entwicklung ergeben.
-          </p>
-          <h3 id="plugin-programmierung">Plugin-Programmierung</h3>
-          <p>
-            Schnittstellen zum Backend implementiere ich vorzugsweise als unabhängige Module.
-            Für den Web-Performance-Service <a href="https://wao.io" rel="noopener noreferrer nofollow" target="_blank">wao.io</a> entwickelte ich jeweils ein Plugin für <a href="https://www.shopware.com/" rel="noopener noreferrer nofollow" target="_blank">Shopware 6</a> und für das CMS <a href="https://www.wordpress.org/" rel="noopener noreferrer nofollow" target="_blank">WordPress</a>.
-            Beide Plugins wurden nach erfolgreicher Prüfung in die offiziellen Verzeichnisse aufgenommen.
-            <ul>
-              <li>
-                <a href="https://store.shopware.com/waoio62482995391f/wao.io-cache-control.html" target="_blank" rel="noopener">Shopware-Plugin "wao.io Cache Control"</a>
-              </li>
-              <li>
-                <a href="https://de.wordpress.org/plugins/wao-io-cache-control/" target="_blank" rel="noopener">WordPress-Plugin "wao.io Cache Control"</a>
-              </li>
-            </ul>.
-          </p>
+    <div class="page-container">
+      <nav id="nav" class="page-navigation">
+        <a href="#nav" class="nav-btn initially-hidden">
+          <span>Inhalt</span>
+          <svg viewBox="0 0 100 80" width="40" height="40">
+            <rect width="100" height="20"></rect>
+            <rect y="30" width="100" height="20"></rect>
+            <rect y="60" width="100" height="20"></rect>
+          </svg>
+        </a>
+        <ul class="nav-list initially-hidden">
+          <li>
+            <a href="#nav" title="Navigation...">
+              &hellip;
+            </a>
+          </li>
+          <li>
+            <a href="#contact" title="Kontakt">
+              &#x2709;
+            </a>
+          </li>
+          <li>
+            <a href="#imprint" title="Impressum">
+              §
+            </a>
+          </li>
+        </ul>
+      </nav>
 
-          <h3>Vorträge und Veranstaltungen</h3>
-          <ul>
-            <li>
-              <a href="https://www2.slideshare.net/IngoSteinke/meetups-in-zeiten-von-corona-juni-2020-238451425" target="_blank" rel="noopener">
-                Meetups in Zeiten von Corona
-              </a> , Juni 2020
-            </li>
-            <li>
-              <a href="https://www.meetup.com/cologne-germany-high-performance-website-optimization-group/events/268706480/" target="_blank" rel="noopener">
-                Performance-Optimierung ohne Code-Änderung
-              </a> mit Angelina Farsch, April 2020
-            </li>
-            <li>
-              <a href="https://www.meetup.com/cologne-germany-high-performance-website-optimization-group/events/255856182/" target="_blank" rel="noopener">
-                HSTS: Mehr Sicherheit ohne Performanceverlust
-              </a>, Dezember 2018
-            </li>
-            <li>
-              <a href="https://www.meetup.com/cologne-germany-high-performance-website-optimization-group/events/zdnjlmywhbgb/" target="_blank" rel="noopener">
-                Infrastruktur für bessere Web Performance
-              </a>, Mai 2017
-            </li>
-            <li>
-              <a href="https://meinjobdeinjob.de/donnerstag-26-januar-2017" target="_blank" rel="noopener">
-                Berufsorientierung: Mein Job! Dein Job?
-              </a>, Januar 2017
-            </li>
-          </ul>
-        </section>
-        <h2>Impressum / Kontakt</h2>
-        <div id=profile>
-          <h3>Ingo Steinke</h3>
+      <div class="page-content">
+        <header class="page-header">
+          <img
+            src="img/Ingo-Steinke-portrait-2020.jpg"
+            srcset="img/Ingo-Steinke-portrait-2020-496.jpg 2x,
+                    img/Ingo-Steinke-portrait-2020-992.jpg 4x"
+            width=248
+            height=248
+            alt="Foto von Ingo Steinke"
+            class=photo
+          >
+          <h1>
+            Ingo Steinke
+          </h1>
+          <p class="tagline">Creative Web Developer</p>
+        </header>
+
+        <main>
+          <section class="text-content-layout text-content-color">
+            <h2>Begeistern Sie Ihre Kunden im Internet!</h2>
+            <article class="text-width">
+              <!-- article lacks heading -->
+              <p>
+                Schön, schnell und barrierefrei präsentiere ich Ihre Dienstleistungen und Produkte.
+              </p>
+              <p>
+                Ich bin Ingo Steinke, begeisterter kreativer Webentwickler aus Düsseldorf mit über 20 Jahren Berufserfahrung. Von meiner Arbeit profitierten unter anderem die Frankfurter Allgemeine Zeitung, die ZEIT, HDI, Avenga und zahlreiche Online-Shops und Versandapotheken.
+              </p>
+
+              <h3>Mit mir können Sie arbeiten!</h3>
+
+              <p>
+                Sie möchten Ihre Webseite überarbeiten? Ihr Team braucht Verstärkung durch einen Frontend-Entwickler mit Full-Stack-Erfahrung? <a href="#contact">Rufen Sie mich an oder hinterlassen Sie mir eine Nachricht!</a> Gerne können wir uns auch in Düsseldorf oder Köln bei einer Tasse Kaffee unverbindlich über Ihr Projekt unterhalten.
+              </p>
+
+            </article>
+          </section>
+
+          <section class="text-content-layout text-content-color">
+            <h2 id="work">
+              Langlebige Lösungen
+            </h2>
+            <article class="text-width">
+              <p>
+                Ihre Layouts realisiere ich plattformübergreifend, auf Wunsch auch pixelgenau. Mein Ziel sind langlebige Lösungen, elegant, verständlich und pflegeleicht.
+              </p>
+              <p>
+                Als Teamplayer mit Full-Stack-Erfahrung und hoher Lernbereitschaft übernehme ich bei Bedarf auch andere Aufgaben, die sich rund um die Frontend-Entwicklung ergeben. Klare, verbindliche und freundliche Kommunikation auf Deutsch und Englisch erleichtert mir die Zusammenarbeit mit Kunden, Kollegen und Dienstleistern. Neue Technologien lerne ich schnell.
+              </p>
+
+            </article>
+          </section>
+
+          <section class="text-content-layout">
+            <h3 id="skills" class="font-sans">Kenntnisse</h3>
+            <ul class="grid-container skills">
+              <li class="tile">
+                <h4 class="font-sans">Web-Entwicklung</h4>
+                <ul>
+                  <li>HTML</li>
+                  <li>
+                    CSS
+                    <div class="hashtags">
+                      <span class="hashtag">CSS</span>
+                      <span class="hashtag">CSS 3</span>
+                      <span class="hashtag">SCSS</span>
+                      <span class="hashtag">PostCSS</span>
+                      <span class="hashtag">CSS-in-JS</span>
+                    </div>
+                  </li>
+                  <li>
+                    JavaScript
+                    <div class="hashtags">
+                      <span class="hashtag">JavaScript</span>
+                      <span class="hashtag">ES6</span>
+                      <span class="hashtag">node.js</span>
+                      <span class="hashtag">Vue.js</span>
+                      <span class="hashtag">ReactJS</span>
+                    </div>
+                  </li>
+
+                  <li>
+                    PHP
+                    <div class="hashtags">
+                      <span class="hashtag">PHP</span>
+                      <span class="hashtag">PHP 7</span>
+                      <span class="hashtag">Composer</span>
+                      <span class="hashtag">PHPStan</span>
+                    </div>
+                  </li>
+                  <li>XML
+                    <div class="hashtags">
+                      <span class="hashtag">XML</span>
+                      <span class="hashtag">XPath</span>
+                      <span class="hashtag">XSLT</span>
+                      <span class="hashtag">SOAP</span>
+                      <span class="hashtag">UBL</span>
+                    </div>
+                  </li>
+
+                  <li>
+                    Datenbanken
+                    <div class="hashtags">
+                      <span class="hashtag">MySQL</span>
+                      <span class="hashtag">MariaDB</span>
+                      <span class="hashtag">Oracle SQL</span>
+                      <span class="hashtag">MongoDB</span>
+                    </div>
+                  </li>
+
+                </ul>
+              </li>
+              <li class="tile">
+                <h4 class="font-sans">Frameworks und CMS</h4>
+                <ul>
+                  <li>ReactJS</li>
+                  <li>WordPress</li>
+                  <li>Eleventy</span>
+                  <li>Symfony</li>
+                  <li>jQuery</li>
+                  <li>Vue.js</li>
+                  </ul>
+              </li>
+
+              <li class="tile">
+                <h4 class="font-sans">Methoden</h4>
+                <ul>
+                  <li>Pragmatismus</li>
+                  <li>Progressive Enhancement</li>
+                  <li>Agile Softwareentwicklung</li>
+                  <li>Test Driven Development</li>
+                  <li>Code Review, 4-Augen-Prinzip</li>
+                  <li>Pair Programming</li>
+                </ul>
+              </li>
+
+              <li class="tile">
+                <h4 class="font-sans">Sonstige Tools</h4>
+                <ul>
+                  <li>
+                    Qualitätssicherung
+                    <div class="hashtags">
+                      <span class="hashtag">Jest</span>
+                      <span class="hashtag">Storybook</span>
+                      <span class="hashtag">Lighthouse</span>
+                      <span class="hashtag">Cypress</span>
+                    </div>
+                  </li>
+                  <li>
+                    Codegenerierung
+                    <div class="hashtags">
+                      <span class="hashtag">Babel</span>
+                      <span class="hashtag">PostCSS</span>
+                      <span class="hashtag">Stylelint</span>
+                      <span class="hashtag">eslint</span>
+                    </div>
+                  </li>
+                  <li>
+                    DevOps
+                    <div class="hashtags">
+                      <span class="hashtag">Docker</span>
+                      <span class="hashtag">Jenkins</span>
+                      <span class="hashtag">npm</span>
+                      <span class="hashtag">yarn</span>
+                      <span class="hashtag">Composer</span>
+                    </div>
+                  </li>
+                  <li>
+                    Versionierung
+                    <div class="hashtags">
+                      <span class="hashtag">Git</span>
+                      <span class="hashtag">GitLab</span>
+                      <span class="hashtag">GitHub</span>
+                      <span class="hashtag">SVN</span>
+                    </div>
+                  </li>
+                  <li>
+                    Bildbearbeitung
+                    <div class="hashtags">
+                      <span class="hashtag">GIMP</span>
+                      <span class="hashtag">ImageMagick</span>
+                      <span class="hashtag">Inkscape</span>
+                    </div>
+                  </li>
+                  <li>
+                    Coding
+                    <div class="hashtags">
+                      <span class="hashtag">PHPStorm</span>
+                      <span class="hashtag">vi</span>
+                      <span class="hashtag">Visual Studio Code</span>
+                      </div>
+                  </li>
+                </ul>
+              </li>
+
+            </ul>
+          </section>
+
+          <section class="tiled-content">
+            <div class="pl1">
+              <h2>Projekte</h2>
+              <p>Überzeugen Sie sich selbst von meiner Arbeit! Eine Auswahl meiner bisherigen Projekte:</p>
+            </div>
+
+            <div class="grid-container flow-grid">
+              <!-- TODO article tile aus loop ausgelagerter fragmente -->
+
+              <article class="tile tile-height bg-img">
+                <div class="flex pl1">
+                  <header>
+                    <h3><span class="text-line">Portfolio Relaunch</span></h3>
+                  </header>
+                  <p>
+
+                    <span class="text-line">
+                      Ingo-Steinke.de zeigt meine Arbeit als Web-Entwickler.
+                      Minimalistisches Design, moderne Farben, aktuelle Technologie und umfangreiche textliche Überarbeitung prägen den Relaunch meines beruflichen Portfolios.
+
+                      <a
+                        class="iconlink github"
+                        href="https://github.com/openmindculture/ingo-steinke.de"
+                        title="github.com/openmindculture/ingo-steinke.de"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        github.com/openmindculture/ingo-steinke.de
+                      </a>
+
+                      <a
+                        class="iconlink arrow"
+                        href="https://www.ingo-steinke.de/"
+                        title="www.ingo-steinke.de"
+                      >
+                        ingo-steinke.de
+                      </a>
+                    </span>
+                  </p>
+
+                  <p>
+                    <span class="hashtag jamstack">JAMStack</span>
+                    <span class="hashtag 11ty" title=eleventy>11ty</span>
+                    <span class="hashtag netlify">netlify</span>
+                    <span class="hashtag css">CSS</span>
+                    <span class="hashtag html">HTML</span>
+                    <span class="hashtag js">JavaScript</span>
+                    <span class="hashtag js">liquid</span>
+                    <span class="hashtag js">PostCSS</span>
+                  </p>
+                </div>
+
+              </article>
+
+              <article class="tile tile-height bg-img img-meetup">
+                <div class="flex pl1">
+                  <header>
+                    <h3><span class="text-line">Vortrag: Performance-Optimierung ohne Code-Änderung</span></h3>
+                  </header>
+                  <p>
+                    <img
+                      src="img/meetup-angelina-farsch-ingo-steinke-2020.jpg"
+                      width="800" height="632"
+                      style="width:100px;height:auto;"
+                      alt=""
+                    />
+                    <span class="text-line">
+                      Wie mache ich meine Seite schneller? Angelina Farsch und ich erläuterten beim Kölner Web-Performance Meetup, wie Betreiber von Webseiten herausfinden, ob ihre Seite zu den Sprintern oder Schnecken gehört und mit Welchen Mitteln wir die Performance erhöhen können.
+
+                      <a
+                        class="iconlink arrow"
+                        href="https://www.meetup.com/cologne-germany-high-performance-website-optimization-group/events/268706480/"
+                        title="meetup.com/cologne-germany-high-performance-website-optimization-group/events/268706480/"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        meetup.com/cologne-germany-high-performance-website-optimization-group/events/268706480/
+                      </a>
+                    </span>
+                  </p>
+                </div>
+              </article>
+
+              <article class="tile tile-height bg-img img-wp-plugin">
+                <div class="flex pl1">
+                  <header>
+                    <h3><span class="text-line">WordPress-Plugin</span></h3>
+                  </header>
+                  <p>
+                    <img
+                      src="img/shopware-plugin-for-wao-io.jpg"
+                      width="800" height="632"
+                      style="width:100px;height:auto;"
+                      alt="Ingo Steinke vor einem Bildschirm mit der Plugin-Seite und einem Laptop mit dem Quellcode des Plugins"
+                    />
+                    <span class="text-line">
+                      Um den Redakteuren unserer Kunden vermeidbare Arbeit zu ersparen, entwickelte ich ein WordPress-Plugin, das bei jeder Veröffentlichung automatisch den externen Cache bereinigt. Dazu wird im Hintergrund die API-Schnittstelle von wao.io aufgerufen. Das kostenlose Plugin wurde 2020 im offiziellen WordPress.org Plugin-Verzeichnis veröffentlicht.
+
+                      <a
+                        class="iconlink arrow"
+                        href="https://de.wordpress.org/plugins/wao-io-cache-control/"
+                        title="de.wordpress.org/plugins/wao-io-cache-control"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        de.wordpress.org/plugins/wao-io-cache-control
+                      </a>
+                    </span>
+
+                  </p>
+                  <p>
+                    <span class="hashtag php">PHP</span>
+                    <span class="hashtag js">JavaScript</span>
+                    <span class="hashtag css">CSS</span>
+                    <span class="hashtag wp">WordPress</span>
+                    <span class="hashtag wp">Docker</span>
+                    <span class="hashtag wp">eslint</span>
+                  </p>
+                </div>
+              </article>
+
+              <article class="tile tile-height bg-img img-sw-plugin">
+                <div class="flex pl1">
+                  <header>
+                    <h3><span class="text-line">Shopware-Plugin</span></h3>
+                  </header>
+                  <p>
+                    <img
+                      src="img/wordpress-plugin-for-wao-io.jpg"
+                      width="800" height="632"
+                      style="width:100px;height:auto;"
+                      alt=""
+                    />
+                    <span class="text-line">
+                      Der Aufruf einer externen API aus dem Shopware-Backend heraus war mein erstes Projekt mit Shopware 6. Shopbetreibern, die wao.io zur Optimierung der Web-Performance verwenden, wird dadurch die Arbeit erleichtert. Das kostenlose Plugin wurde 2020 im offiziellen Shopware Store veröffentlicht.
+
+                      <a
+                        class="iconlink arrow"
+                        href="https://store.shopware.com/waoio62482995391f/wao.io-cache-control.html"
+                        title="store.shopware.com/waoio62482995391f/wao.io-cache-control.html"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        store.shopware.com/waoio62482995391f/wao.io-cache-control.html
+                      </a>
+                    </span>
+                  </p>
+
+                  <p>
+                    <span class="hashtag shopware">Shopware 6</span>
+                    <span class="hashtag symfony">Symfony</span>
+                    <span class="hashtag php">PHP</span>
+                    <span class="hashtag php">PHPStan</span>
+                    <span class="hashtag vuejs">Vue.js</span>
+                    <span class="hashtag js">JavaScript</span>
+                    <span class="hashtag vuejs">twig</span>
+                    <span class="hashtag vuejs">REST</span>
+                    <span class="hashtag docker">Docker</span>
+                  </p>
+                </div>
+              </article>
+
+              <article class="tile tile-height bg-img img-react-app">
+                <div class="flex pl1">
+                  <header>
+                    <h3><span class="text-line">React-Web-App</span></h3>
+                  </header>
+                  <p>
+                    <img
+                      src="img/react-app-wao-io.jpg"
+                      width="800" height="632"
+                      style="width:100px;height:auto;"
+                      alt=""
+                    />
+                    <span class="text-line">
+                      Die grafischen Oberfläche von wao.io visualisiert technische Daten und lässt Webmaster die Optimierung ihrer Webseiten selbst einstellen. Von 2017 bis 2020 entwickelte und aktualisierte ich Komponenten der Web-App als Frontend-Entwickler in einem agilen Team.
+
+                      <a
+                        class="iconlink arrow"
+                        href="https://wao.io/"
+                        title="wao.io"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        wao.io
+                      </a>
+                    </span>
+
+                  </p>
+                  <p>
+                    <span class="hashtag reactjs">ReactJS</span>
+                    <span class="hashtag js">JavaScript</span>
+                    <span class="hashtag css">Styled Components</span>
+                    <span class="hashtag reactjs">Storybook</span>
+                    <span class="hashtag css">CSS</span>
+                    <span class="hashtag couper">Webpack</span>
+                    <span class="hashtag reactjs">Jest</span>
+                    <span class="hashtag couper">Auth0</span>
+                    <span class="hashtag couper">node.js</span>
+                    <span class="hashtag couper">Git</span>
+                  </p>
+                </div>
+              </article>
+
+              <article class="tile tile-height bg-img img-kleiderordnung">
+                <div class="flex pl1">
+                  <header>
+                    <h3><span class="text-line">Kleiderordnung Düsseldorf</span></h3>
+                  </header>
+                  <p>
+                    <img
+                      src="img/kleiderordnung-website.jpg"
+                      width="800" height="632"
+                      style="width:100px;height:auto;"
+                      alt=""
+                    />
+                    <span class="text-line">
+                      Für meine Mode- und Stilberaterin Martina Steinke entwarf die Grafik-Designerin Vivien Kruggel Visitenkarten und Flyer. Die passende Web-Visitenkarte erstellte ich 2016 als One-Pager mit Reiternavigation, Bildergalerie und Kontaktformular.
+
+                      <a
+                        class="iconlink github"
+                        href="https://github.com/openmindculture/kleiderordnung"
+                        title="github.com/openmindculture/kleiderordnung"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        github.com/openmindculture/kleiderordnung
+                      </a>
+
+                      <a
+                        class="iconlink arrow"
+                        href="https://www.kleiderordnung-duesseldorf.de"
+                        title="www.kleiderordnung-duesseldorf.de"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        www.kleiderordnung-duesseldorf.de
+                      </a>
+                    </span>
+                  </p>
+                  <p>
+                    <span class="hashtag reactjs">HTML</span>
+                    <span class="hashtag js">JavaScript</span>
+                    <span class="hashtag reactjs">CSS</span>
+                    <span class="hashtag js">SCSS</span>
+                    <span class="hashtag js">SVG</span>
+                    <span class="hashtag js">Babel</span>
+                    <span class="hashtag js">PHP</span>
+                  </p>
+                </div>
+              </article>
+
+              <article class="tile tile-height bg-img img-woodhack">
+                <div class="flex bg-peel pl1">
+                  <header>
+                    <h3><span class="text-line">Green Wall-E</span></h3>
+                  </header>
+                  <p>
+                    <span class="text-line">
+                      Unsere interaktive Upcycling-Installation "Green Wall-E" wurde 2019 Sieger beim Hackathon "Sevenval Woodhack". Das Gerät aus Arduino-Hardware und Fundstücken eines Waldspaziergangs reagiert auf Trockenheit und Blumengießen mit farbiger Animation seines LED-Leuchtstreifens.
+                      <a
+                        class="iconlink github"
+                        href="https://github.com/openmindculture/arduino"
+                        title="github.com/openmindculture/arduino"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        github.com/openmindculture/arduino
+                      </a>
+
+                      <a
+                          class="iconlink arrow"
+                          href="https://www.sevenval.com/blog/culture/woodhack-2019-projekt-green-wall-e/"
+                          title="www.sevenval.com/blog/culture/woodhack-2019-projekt-green-wall-e"
+                          target="_blank"
+                          rel="noopener"
+                        >
+                          www.sevenval.com/blog/culture/woodhack-2019-projekt-green-wall-e/
+                        </a>
+                    </span>
+                  </p>
+                  <p>
+                    <span class="hashtag reactjs">Arduino</span>
+                    <span class="hashtag reactjs">C++</span>
+                    <span class="hashtag js">cpp</span>
+                  </p>
+                </div>
+
+              </article>
+
+              <article class="tile tile-height bg-img img-wp-theme">
+                <div class="flex pl1">
+                  <header>
+                    <h3><span class="text-line">WordPress-Theme</span></h3>
+                  </header>
+                  <p>
+                    <img
+                      src="img/wordpress-theme-open-mind-culture.jpg"
+                      width="800" height="632"
+                      style="width:100px;height:auto;"
+                      alt=""
+                    />
+                    <span class="text-line">
+                      Mein Freizeitprojekt Open-Mind-Culture dient auch als Spielwiese zum Experimentieren mit WordPress. Die optische Gestaltung konnte ich mit sehr überschaubarem Aufwand als Child-Theme des offiziellen WordPress-Themes TwentyTwenty erstellen und vor dem Upload im lokalen Docker-Container testen.
+
+                      <a
+                        class="iconlink github"
+                        href="https://github.com/openmindculture/open-mind-culture-org"
+                        title="github.com/openmindculture/open-mind-culture-org"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        github.com/openmindculture/open-mind-culture-org
+                      </a>
+
+                      <a
+                        class="iconlink arrow"
+                        href="https://www.open-mind-culture.org/"
+                        title="www.open-mind-culture.org"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        www.open-mind-culture.org
+                      </a>
+                    </span>
+                  </p>
+                  <p>
+                    <span class="hashtag reactjs">WordPress</span>
+                    <span class="hashtag reactjs">WP-Child-Theme</span>
+                    <span class="hashtag js">CSS</span>
+                    <span class="hashtag js">PHP</span>
+                    <span class="hashtag js">Docker</span>
+                  </p>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="text-content-layout text-content-color">
+            <h2 id="about">
+              Beruf und Leidenschaft
+            </h2>
+            <article>
+              <header>
+                <h3>
+                  Was mich immer noch fasziniert
+                </h3>
+              </header>
+              <p class="capitalized"><!-- overcapitalize first letter -->
+                World Wide Web, das weltweite Netzwerk, ermöglichet einen offenen und kreativen Austausch mithilfe robuster und dezentraler Technologie. Schöne, schnelle und zugängliche Webseiten sollen allen Menschen Zugang zu diesem Netzwerk bieten. Mit meiner Arbeit kann ich dazu beitragen, diesen Traum zu verwirklichen.
+              </p>
+
+              <h3>Werdegang</h3>
+              <p>
+                Erste Erfahrungen mit Programmierung und Computergrafik machte ich als Schüler am heimischen Computer. Der Speicherplatz war knapp. Software tippte ich zunächst aus gedruckten Büchern ab. Schnell begann ich, selbst zu programmieren.
+              </p>
+              <p>
+                Nach meinem Zivildienst als Pflegediensthelfer studierte ich Psychologie und Kommunikationswissenschaften an der Uni Münster. Nebenbei lernte ich das Internet und die Programmiersprache HTML kennen. Musiker und Veranstalter erkannten mein Talent. Aus dem Hobby wurde ein Job und schließlich mein Beruf.
+              </p>
+              <p>
+                Mit Flash, CSS und schnellerer Datenübertragen gewann das Internet eine Dynamik, die die Gründung eines Startups nahelegte. Mit meinem Geschäftspartner entwickelte ich zunächst interaktive Webseiten und Browserspiele in Flash. Suchmaschinenoptimierung und unsere selbst entwickelte CMS- und Shop-Software prägten später unser Geschäft. 2010 verließ ich das eigene Unternehmen und zog der Familie wegen nach Düsseldorf.
+              </p>
+              <p>
+                Online-Shops und Web-Apps optimierte und erweiterte ich nun als angestellter Web- und Softwareentwickler. Responsives Layout und beschleunigte Ladezeiten sollten bestehende Kundensysteme auch von Unterwegs aus nutzbar machen. Unseren Erfolg konnte ich als Berufspendler täglich selbst verifizieren.
+              </p>
+
+              <h4>Zukunftsthemen</h4>
+              <p>
+                "Open Mind Culture" ist nicht nur der Titel meines privaten Weblogs.
+                Ich bin offen für Inpspiration und neue Ideen, sofern sie einer kritischen Prüfung standhalten.
+              </p>
+              <p>
+                Innovation bedeutet in meiner Branche oft nur technischer Fortschritt. Gesellschaftliche Herausforderungen ignoriert unsere Branche seit Jahren erfolgreich, von wenigen Ausnahmen abgesehen. Ökologie, Inklusion, Gleichstellung, Datenschutz und Sicherheit fehlt oft die nötige Priorität.
+              </p>
+              <p>
+                Digitalisierung und die ökologische Verkehrs- und Energiewende, Green IT, Wind- und Solarenergie, umweltfreundliche Mode und Arbeit aus dem Homeoffice sind Zukunftsthemen neuer Startups und Geschäftszweige. Solche ethischen und ökologischen Unternehmen möchte ich mit meiner Arbeit bevorzugt unterstützen.
+              </p>
+
+
+              <h4>Weiterbildung</h4>
+              <p>
+                Durch Recherche und praktische Anwendung gewinne ich täglich neue Erkenntnisse. Zur Vertiefung lese ich Fachliteratur und besuche Veranstaltungen. Weiteres Wissen erhalte ich in Foren und Online-Kursen.
+              </p>
+
+            <h3>Vorträge und Veranstaltungen</h3>
+            <p>
+              Auf Fachveranstaltungen teile ich dieses Wissen mit anderen. Meetups, Konferenzen, Foren und firmeninterne Fortbildungen nutze ich regelmäßig und gern.<br>
+              In den letzten Jahren hielt ich unter anderem diese Vorträge:
+              <ul>
+                <li>
+                  <a
+                    href="https://www2.slideshare.net/IngoSteinke/meetups-in-zeiten-von-corona-juni-2020-238451425"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Meetups in Zeiten von Corona
+                  </a>
+                  , Juni 2020
+                </li>
+                <li>
+                  <a
+                    href="https://www.meetup.com/cologne-germany-high-performance-website-optimization-group/events/268706480/"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Performance-Optimierung ohne Code-Änderung
+                  </a>
+                  mit Angelina Farsch, April 2020
+                </li>
+                <li>
+                  <a
+                    href="https://www.meetup.com/cologne-germany-high-performance-website-optimization-group/events/255856182/"
+                    target="_blank"
+                    rel="noopener"
+                    >
+                    HSTS: Mehr Sicherheit ohne Performanceverlust
+                  </a>
+                  , Dezember 2018
+                </li>
+                <li>
+                  <a
+                    href="https://www.meetup.com/cologne-germany-high-performance-website-optimization-group/events/zdnjlmywhbgb/"
+                    target="_blank"
+                    rel="noopener"
+                    >
+                    Infrastruktur für bessere Web Performance
+                  </a>
+                  , Mai 2017
+                </li>
+                <li>
+                  <a
+                    href="https://meinjobdeinjob.de/donnerstag-26-januar-2017"
+                    target="_blank"
+                    rel="noopener"
+                    >
+                    Berufsorientierung: Mein Job! Dein Job?
+                  </a>
+                  , Januar 2017
+                </li>
+
+              </ul>
+            </p>
+          </section>
+
+          <section>
+            <h2 id="imprint" class="center">
+              Impressum
+            </h2>
+            <article id="contact">
+              <div class="vcard">
+
+                <h3 class="fn">Ingo Steinke</h3>
+                <br>
+
+                <span class="adr">
+                  <span class="street-address">Neunzigstraße 6a</span><br>
+                  <span class="postal-code">40625</span> Düsseldorf<br>
+                  <span class="country-name">Deutschland</span><br>
+                </span><br>
+                <span class="tel">+49 (0) 163 46 84 08 0</span><br>
+                <span><a href="mailto:kontakt@ingo-steinke.de">kontakt@ingo-steinke.de</a></span><br>
+                <a class="url" rel="author" href="https://www.ingo-steinke.de/">www.ingo-steinke.de</a>
+              </div>
+
+              <ul class="row social-links">
+
+                <li>
+                  <a rel="noopener nofollow" href="https://www.linkedin.com/in/ingosteinke" target="_blank" title="LinkedIn-Profil von Ingo Steinke">
+                    <img src="img/logo-linkedin.svg" width="25" height="25" alt="LinkedIn Logo">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://github.com/openmindculture" target="_blank" rel="noopener" title="GitHub-Profil (openmindculture)">
+                    <img src="img/logo-github.svg" width="25" height="25" alt="GitHub Logo">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/fraktalisman" target="_blank" rel="noopener" title="Ingo Steinke bei Twitter (@fraktalisman)">
+                    <img src="img/logo-twitter.svg" width="25" height="25" alt="Twitter Logo">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://stackoverflow.com/users/5069530/ingo-steinke"
+                    target="_blank"
+                    rel="noopener"
+                    title="Ingo Steinke bei Stack Overflow"
+                  >
+                    <img src="img/logo-stackoverflow.svg" width="25" height="25" alt="StackOverflow Logo">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.xing.com/profile/Ingo_Steinke2/cv"
+                    target="_blank"
+                    rel="noopener nofollow"
+                    title="Ingo Steinke bei Xing"
+                  >
+                    <img src="img/logo-xing.svg" width="25" height="25" alt="Xing Logo">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.meetup.com/members/219315449/"
+                    target="_blank"
+                    rel="noopener"
+                    title="Ingo Steinke bei Meetup"
+                  >
+                    <img src="img/logo-meetup.svg" width="25" height="25" alt="Meetup Logo">
+                  </a>
+                </li>
+              </ul>
+
+              <!-- h4>Bankverbindung</h4>
+              <p class="text-content-color">
+               <span>Zahlungsempfänger: Ingo Steinke</span><br>
+                <span>Kontonummer (IBAN): DE86 1203 0000 1057 5854 14</span><br>
+                <span>Bank: Deutsche Kreditbank (DKB) Berlin (BIC: BYLADEM1001)</span><br>
+                <span>Bitte geben Sie als Verwendungszweck die Rechnungsnummer an.</span><br>
+                <br>
+                <span>Steuernummer: 133 / 5315 / 3587</span><br>
+                <span>Finanzamt: Düsseldorf-Mitte</span><br>
+                <span>Angemeldetes Gewerbe: Software-Entwicklung, Web-Entwicklung, Beratung.</span><br>
+              </p -->
+
+            </article>
+
+            <aside id="privacy" class="privacy initially-hidden clear">
+              <header>
+                <h3>
+                  Datenschutzerklärung
+                </h3>
+              </header>
+              <p>
+                Die Regeln des Bundesdatenschutzgesetzes (BDSG) und der europäischen Datenschutzgrundverordnung (DSGVO) sind Anlass zu dieser Datenschutzerklärung. Das <a href="#imprint">Impressum</a> nennt den verantworlichen Anbieter und Ihre Möglichkeiten zur Kontaktaufnahme.
+              </p>
+              <h4>Ihr gutes Recht: Auskunft, Korrektur, Löschung, Widerruf</h4>
+              <p>
+                Sie haben das Recht, eine Einwilligung in die Verarbeitung Ihrer Daten zu verweigern oder nachträglich zu widerrufen, sowie das Recht auf Auskunft hinsichtlich der über Ihre Person gespeicherten Daten und können eine Löschung dieser Daten oder eine Korrektur unzutreffender Daten verlangen. Ausgenommen von der Löschung sind gespeicherte Daten, die der gesetzlichen Aufbewahrungspflicht bzw. der steuerlichen Abgabenordnung oder einer anderweitig vorgeschriebenen Datenspeicherung zur Geschäftsabwicklung unterliegen.
+              </p>
+              <h4>Umfang der Verarbeitung personenbezogener Daten</h4>
+              <p>
+                Personenbezogene Daten meiner Nutzer verarbeite ich grundsätzlich nur soweit, wie dies zur Vertragserfüllung, zu konkreten vorvertraglichen Vereinbarungen, sowie zur Bereitstellung einer funktionsfähigen Webseite erforderlich ist. Die Verarbeitung personenbezogener Daten meiner Nutzer erfolgt nur nach Einwilligung der Nutzerin bzw. des Nutzers, außer in solchen Fällen, in denen eine vorherige Einholung einer Einwilligung aus tatsächlichen Gründen nicht möglich ist und die Verarbeitung der Daten durch gesetzliche Vorschriften ausdrücklich gestattet oder gefordert ist.
+              </p>
+              <h4>Rechtsgrundlage für die Verarbeitung personenbezogener Daten</h4>
+              <p>
+                Bei der Verarbeitung von personenbezogenen Daten, die zur Erfüllung eines Vertrages mit der betroffenen Person als Vertragspartei erforderlich ist, dient Art. 6 Abs. 1 Bst. b DSGVO als Rechtsgrundlage. Dies gilt auch für Verarbeitungsvorgänge, die zur Durchführung vorvertraglicher Maßnahmen erforderlich sind.
+              </p>
+              <p>
+                Soweit eine Verarbeitung personenbezogener Daten zur Erfüllung einer rechtlichen Verpflichtung erforderlich ist, dient Art. 6 Abs. 1 Bst. c DSGVO als Rechtsgrundlage.
+              </p>
+              <h4>Datensparsamkeit und Datenminimierung</h4>
+              <p>
+                Personenbezogene Daten speichere ich gemäß den Grundsätzen der Datenvermeidung und Datensparsamkeit nur so lange, wie es erforderlich ist oder vom Gesetzgeber her vorgeschrieben wird (gesetzliche Speicherfrist). Entfällt der Zweck der erhobenen Informationen oder endet die Speicherfrist, veranlasse ich die Sperrung bzw. Löschung der Daten.
+              </p>
+              <p>
+                Diese Website verwendet lediglich die für den technischen Betrieb notwendigen Cookies.
+              </p>
+              <p>
+                Verweise zu sozialen und beruflichen Netzwerken sind lediglich Links zu externen Anbietern. Anzeigen und Ansehen der dieser Verweise führt zu keiner Datenübertragung an Drittanbieter.
+              </p>
+              <p>
+                Schriftarten, Grafiken und Scriptdateien werden ausschließlich von unseren Servern geladen, es findet kein Abruf von externen Dienstleistern statt. Auf dieser Webseite verzichte ich zudem auf Auswertungs- und Werbefunktionen externer Anbieter. Daher werden auch keinerlei Daten mit Google Analytics, Facebook oder ähnlichen Drittanbietern ausgetauscht.
+              </p>
+              <h4>Kontaktformular und elektronische Kommunikation</h4>
+              <p>
+                Wenn Sie mich über ein Kontaktformular, per E-Mail oder auf anderem elektronischen Wege (z.B. Messenger) kontaktieren, speichere ich die von Ihnen gemachten Angaben, um Ihre Anfrage beantworten und mögliche Anschlussfragen stellen zu können. Im Falle eines konkreten Beratungswunsches oder einer Terminvereinbarung werden Ihre Angaben zur Durchführung vorvertraglicher Maßnahmen und ggf. zur Vertragserfüllung verwendet.
+              </p>
+              <p>
+                Über ein Kontaktformular können Sie gegebenenfalls Ihren Namen, Ihre E-Mail-Adresse, Ihre Telefonnummer und eine frei formulierte Nachricht übermitteln. Zudem werden Datum und Uhrzeit der Kontaktaufnahme sowie Ihre IP-Adresse gespeichert. Dies wird im folgenden Abschnitt "Bereitstellung der Website und Auswertung technischer Daten" näher erläutert.
+              </p>
+              <p>
+                Ich weise Sie darauf hin, dass jegliche Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Bitte achten Sie daher auch bei Ihrer eigenen Kommunikation stets auf Datensparsamkeit und verwenden Sie möglichst aktuelle Software mit aktuellen Sicherheitsupdates!
+              </p>
+              <h4>Bereitstellung der Website und Auswertung technischer Daten (Logfiles)</h4>
+              <p>
+                Mit jedem Zugriff auf dieses Angebot werden durch mich beziehungsweise die von mir beauftragten Web-Provider (<a href="https://www.goneo.de" target="_blank" rel="noopener">goneo</a>, <a href="https://www.netlify.com" target="_blank" rel="noopener">netlify</a>) und deren Dienstleister automatisch Informationen erfasst, die zur technischen Bereitstellung der Webseite erforderlich sind. Erfasst werden die Adresse der besuchten Webseite, Datum und Uhrzeit, übertragene Datenmenge, Webbrowserkennung, IP-Adresse und gegebenenfalls auf die aufgerufene Website verweisende Websites. Die Daten werden in den Logfiles der EDV gespeichert. Eine Speicherung dieser Daten zusammen mit anderen personenbezogenen Daten der Nutzer findet nicht statt. Eine Auswertung der Daten zu Marketingzwecken findet in diesem Zusammenhang ebenfalls nicht statt.
+              </p>
+              <p>
+                Rechtsgrundlage für die vorübergehende Speicherung dieser Daten und der Logfiles ist Art. 6 Abs. 1 Bst. f DSGVO. Die Speicherung in Logfiles erfolgt, um die Funktionsfähigkeit der Website sicherzustellen. Zudem dienen diese Daten zur Gewährleistung der Sicherheit unserer informationstechnischen Systeme.
+              </p>
+              <p>
+                Ich behalte mir das Recht vor, die Server-Logfiles bei Verdacht auf eine rechtswidrige Nutzung meines Angebotes nachträglich zu kontrollieren.
+              </p>
+              <h4>Änderung dieser Datenschutzerklärung</h4>
+              <p>
+                Um zu gewährleisten, dass diese Datenschutzerklärung stets den aktuellen gesetzlichen Vorgaben entspricht, behalte ich mir jederzeit Änderungen vor. Das gilt auch für den Fall, dass die Datenschutzerklärung aufgrund neuer oder überarbeiteter Leistungen, zum Beispiel neuer Serviceleistungen, angepasst werden muss. Die neue Datenschutzerklärung greift dann bei Ihrem nächsten Besuch auf meinem Angebot.
+              </p>
+            </aside>
+
+          </section>
+        </main>
+
+        <footer class="page-footer">
           <p>
-            Neunzigstraße 6a<br>
-            40625 Düsseldorf<br>
-            Deutschland<br>
-            <a href="tel:+491634684080">+49 (0) 163 46 84 08 0</a><br>
-            <a href="mailto:kontakt@ingo-steinke.de">kontakt@ingo-steinke.de</a><br>
-            <a href="https://www.ingo-steinke.de/">www.ingo-steinke.de</a><br>
+            <a href="#contact">Kontakt</a>
+            <a href="#imprint">Impressum</a>
+            <a href="#privacy">Datenschutz</a>
           </p>
-          <div class=clr></div>
-          <p>
-            &copy; Ingo Steinke
-          </p>
-        </div>
-      </main>
+          &copy; 2021 Ingo Steinke
+        </footer>
+      </div>
+
+
+
+      <aside class="decoration">
+        <!-- some nice graphics for users with large screen i.e. plant -->
+      </aside>
     </div>
   </body>
 </html>
