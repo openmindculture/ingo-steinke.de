@@ -25,6 +25,7 @@
     "html-minifier": "^4.0.0",
     "postcss": "^8.2.4",
     "postcss-cli": "^8.3.1",
+    "postcss-custom-properties": "^11.0.0",
     "postcss-custom-selectors": "^6.0.0",
     "postcss-import": "^14.0.0",
     "precss": "^4.0.0",
