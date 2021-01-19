@@ -4,10 +4,9 @@
 - modern design using latest CSS features
 - add english language content and language switcher
 
-## [1.9.6] unreleased
+## [1.9.6] - 2021-01-19
 ### added
-- rwd, webspeed: responsive images with srcset
-- webspeed: lazy loading for deferred image loading below the fold
+- ux: add contact information, update description
 
 ## [1.9.5] - 2020-12-15
 ### added
