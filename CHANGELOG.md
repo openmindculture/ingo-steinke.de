@@ -13,6 +13,7 @@
 - a11y, seo: accessible semantic markup; 120
 - content: add showcases and skills; 110
 - content: updated German description; 110
+- content: relaunch refinements after external review; 101, 110
 
 ## [1.9.8] - 2021-01-27
 ### fixed

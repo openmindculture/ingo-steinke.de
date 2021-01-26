@@ -1,10 +1,16 @@
+---
+page-title: Ingo Steinke, Ihr kreativer Web-Entwickler in Düsseldorf
+page-description: Ingo Steinke ist ein kreativer Web-Entwickler in Düsseldorf mit über 20 Jahren Beruferfahrung.
+page-description-en: Ingo Steinke is a creative frontend web developer in Düsseldorf.
+page-keywords: Ingo,Steinke,Web-Entwickler,Berater,Düsseldorf
+domain-verify: 4c4296e5835f4a47eb2c2e5488a99d71
+---
 <!doctype html>
 <html lang=de>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <!-- TODO use variables instead of repeating meta values -->
     <title>
-      Ingo Steinke, Ihr kreativer Web-Entwickler in Düsseldorf
+      {{ page-title }}
     </title>
     <meta name=language content=de>
     <meta name=viewport content="width=device-width,initial-scale=1.0">
@@ -18,15 +24,15 @@
     <meta name=author content="Ingo Steinke">
     <meta
       property="og:title"
-      content="Ingo Steinke, Ihr kreativer Web-Entwickler in Düsseldorf"
+      content="{{ page-title }}"
     >
     <meta
       property="og:description"
-      content="Ingo Steinke ist ein kreativer Web-Entwickler in Düsseldorf mit über 20 Jahren Beruferfahrung."
+      content="{{ page-description }}"
     >
-    <meta name=description content="Ingo Steinke ist ein kreativer Web-Entwickler in Düsseldorf mit über 20 Jahren Beruferfahrung.">
-    <meta name=keywords content="Ingo,Steinke,Web-Entwickler,Berater,Düsseldorf">
-    <meta name="p:domain_verify" content="4c4296e5835f4a47eb2c2e5488a99d71"/>
+    <meta name=description content="{{ page-description }}">
+    <meta name=keywords content="{{ page-keywords }}">
+    <meta name="p:domain_verify" content="{{ domain-verify }}"/>
     <meta name=robots content="index,follow">
     <meta
       property="og:image"
@@ -34,7 +40,7 @@
     >
     <meta
       name="twitter:card"
-      content="Ingo Steinke is a creative frontend web developer and does green ethical business."
+      content="{{ page-description-en }}"
     >
     <meta name="twitter:site" content="@fraktalisman">
     <meta name="twitter:creator" content="@fraktalisman">
@@ -54,7 +60,7 @@
     <meta name="theme-color" content="#ffffff">
   </head>
   <body>
-    <div class="page-container">
+    <div class="page-container" id="top">
       <nav id="nav" class="page-navigation">
         <a href="#nav" class="nav-btn initially-hidden">
           <span>Inhalt</span>
@@ -89,8 +95,8 @@
             src="img/Ingo-Steinke-portrait-2020.jpg"
             srcset="img/Ingo-Steinke-portrait-2020-496.jpg 2x,
                     img/Ingo-Steinke-portrait-2020-992.jpg 4x"
-            width=248
-            height=248
+            width="248"
+            height="248"
             alt="Foto von Ingo Steinke"
             class=photo
           >
@@ -100,33 +106,360 @@
           <p class="tagline">Creative Web Developer</p>
         </header>
         <div class="sticky-header">
-          <img
+          <span class="scripted hideable" id="sticky-headline">
+            <img
               src="img/Ingo-Steinke-portrait-2020.jpg"
-              width=25
-              height=25
-              />
-          Ingo Steinke, Creative Web Developer
+              width="25"
+              height="25"
+              alt="Ingo Steinke"
+            />
+          </span>
+
+          <a href="#contact">Kontakt / Impressum</a>
+          <a href="#content-top" title="zum Seitenanfang">^</a>
         </div>
 
-        <main>
+        <main id="content-top">
           <section class="text-content-layout text-content-color">
-            <h2>Begeistern Sie Ihre Kunden im Internet!</h2>
+            <h2>Begeistern Sie Ihre Kunden im Internet</h2>
             <article class="text-width">
               <!-- article lacks heading -->
               <p>
-                Schön, schnell und barrierefrei präsentiere ich Ihre Dienstleistungen und Produkte.
+                Schön, schnell und barrierefrei präsentiere ich Sie und Ihr Angebot.
               </p>
               <p>
-                Ich bin Ingo Steinke, begeisterter kreativer Webentwickler aus Düsseldorf mit über 20 Jahren Berufserfahrung. Von meiner Arbeit profitierten unter anderem die Frankfurter Allgemeine Zeitung, die ZEIT, HDI, Avenga und zahlreiche Online-Shops und Versandapotheken.
+                Ich bin Ingo Steinke, begeisterter kreativer Webentwickler aus Düsseldorf mit über 20 Jahren Berufserfahrung. Von meiner Arbeit profitierten unter anderem die Frankfurter Allgemeine Zeitung, die ZEIT, HDI, Avenga und wao.io.
               </p>
 
               <h3>Mit mir können Sie arbeiten!</h3>
 
               <p>
-                Sie möchten Ihre Webseite überarbeiten? Ihr Team braucht Verstärkung durch einen Frontend-Entwickler mit Full-Stack-Erfahrung? <a href="#contact">Rufen Sie mich an oder hinterlassen Sie mir eine Nachricht!</a> Gerne können wir uns auch in Düsseldorf oder Köln bei einer Tasse Kaffee unverbindlich über Ihr Projekt unterhalten.
+                Sie möchten Ihre Webseite überarbeiten? Ihr Team braucht Verstärkung durch einen Frontend-Entwickler mit Full-Stack-Erfahrung? <a href="#contact">Rufen Sie mich an oder hinterlassen Sie mir eine Nachricht!</a> Gern können wir uns bei einem Kaffee unverbindlich über ihr Projekt unterhalten.
               </p>
 
             </article>
+          </section>
+
+          <section class="tiled-content" id="projects">
+            <div class="pl1">
+              <h2>Projekte</h2>
+              <p>Überzeugen Sie sich selbst von meiner Arbeit! Eine Auswahl meiner bisherigen Projekte:</p>
+            </div>
+
+            <div class="grid-container flow-grid">
+              <!-- TODO article tile aus loop ausgelagerter fragmente -->
+
+              <article class="tile tile-height" id="project-portfolio-relaunch">
+                <div class="flex bg-peel  pl1">
+                  <header>
+                    <h3><span class="text-line">Portfolio Relaunch</span></h3>
+                  </header>
+                  <p>
+
+                    <span class="text-line">
+                      Ingo-Steinke.de zeigt meine Arbeit als Web-Entwickler.
+                      Minimalistisches Design, moderne Farben, aktuelle Technologie und umfangreiche textliche Überarbeitung prägen den Relaunch meines beruflichen Portfolios.
+
+                      <a
+                        class="iconlink github"
+                        href="https://github.com/openmindculture/ingo-steinke.de"
+                        title="github.com/openmindculture/ingo-steinke.de"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        github.com/openmindculture/ingo-steinke.de
+                      </a>
+
+                      <a
+                        class="iconlink arrow"
+                        href="https://www.ingo-steinke.de/"
+                        title="www.ingo-steinke.de"
+                      >
+                        ingo-steinke.de
+                      </a>
+                    </span>
+                  </p>
+
+                  <p>
+                    <span class="hashtag">JAMStack</span>
+                    <span class="hashtag" title=eleventy>11ty</span>
+                    <span class="hashtag">netlify</span>
+                    <span class="hashtag">CSS</span>
+                    <span class="hashtag">HTML</span>
+                    <span class="hashtag">JavaScript</span>
+                    <span class="hashtag">liquid</span>
+                    <span class="hashtag">PostCSS</span>
+                  </p>
+                </div>
+
+              </article>
+
+              <article class="tile tile-height">
+                <div class="flex bg-peel  pl1">
+                  <header>
+                    <h3><span class="text-line">Vortrag: Performance-Optimierung ohne Code-Änderung</span></h3>
+                  </header>
+                  <p>
+                    <img
+                      src="img/meetup-angelina-farsch-ingo-steinke-2020.jpg"
+                      width="800" height="632"
+                      class="project-thumb"
+                      alt="Event-Ankündigung mit Portraitfotos von Angelina Farsch und Ingo Steinke"
+                    />
+                    <span class="text-line">
+                      Wie mache ich meine Seite schneller? Angelina Farsch und ich erläuterten beim Kölner Web-Performance Meetup, wie Betreiber von Webseiten herausfinden, ob ihre Seite zu den Sprintern oder Schnecken gehört und mit Welchen Mitteln wir die Performance erhöhen können.
+
+                      <a
+                        class="iconlink arrow"
+                        href="https://www.meetup.com/cologne-germany-high-performance-website-optimization-group/events/268706480/"
+                        title="meetup.com/cologne-germany-high-performance-website-optimization-group/events/268706480/"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        meetup.com/cologne-germany-high-performance-website-optimization-group/events/268706480/
+                      </a>
+                    </span>
+                  </p>
+                </div>
+              </article>
+
+              <article class="tile tile-height" id="project-wordpress-plugin">
+                <div class="flex bg-peel  pl1">
+                  <header>
+                    <h3><span class="text-line">WordPress-Plugin</span></h3>
+                  </header>
+                  <p>
+                    <img
+                      src="img/shopware-plugin-for-wao-io.jpg"
+                      width="800" height="632"
+                      class="project-thumb"
+                      alt="Ingo Steinke vor einem Bildschirm mit der Plugin-Seite und einem Laptop mit dem Quellcode des Plugins"
+
+                    />
+                    <span class="text-line">
+                      Um den Redakteuren unserer Kunden vermeidbare Arbeit zu ersparen, entwickelte ich ein WordPress-Plugin, das bei jeder Veröffentlichung automatisch den externen Cache bereinigt. Dazu wird im Hintergrund die API-Schnittstelle von wao.io aufgerufen. Das kostenlose Plugin wurde 2020 im offiziellen WordPress.org Plugin-Verzeichnis veröffentlicht.
+
+                      <a
+                        class="iconlink arrow"
+                        href="https://de.wordpress.org/plugins/wao-io-cache-control/"
+                        title="de.wordpress.org/plugins/wao-io-cache-control"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        de.wordpress.org/plugins/wao-io-cache-control
+                      </a>
+                    </span>
+
+                  </p>
+                  <p>
+                    <span class="hashtag">PHP</span>
+                    <span class="hashtag">JavaScript</span>
+                    <span class="hashtag">CSS</span>
+                    <span class="hashtag">WordPress</span>
+                    <span class="hashtag">Docker</span>
+                    <span class="hashtag">eslint</span>
+                  </p>
+                </div>
+              </article>
+
+              <article class="tile tile-height" id="project-shopware-plugin">
+                <div class="flex bg-peel  pl1">
+                  <header>
+                    <h3><span class="text-line">Shopware-Plugin</span></h3>
+                  </header>
+                  <p>
+                    <img
+                      src="img/wordpress-plugin-for-wao-io.jpg"
+                      width="800" height="632"
+                      class="project-thumb"
+                      alt="Screenshot der Plugin-Beschreibung"
+                    />
+                    <span class="text-line">
+                      Der Aufruf einer externen API aus dem Shopware-Backend heraus war mein erstes Projekt mit Shopware 6. Shopbetreibern, die wao.io zur Optimierung der Web-Performance verwenden, wird dadurch die Arbeit erleichtert. Das kostenlose Plugin wurde 2020 im offiziellen Shopware Store veröffentlicht.
+
+                      <a
+                        class="iconlink arrow"
+                        href="https://store.shopware.com/waoio62482995391f/wao.io-cache-control.html"
+                        title="store.shopware.com/waoio62482995391f/wao.io-cache-control.html"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        store.shopware.com/waoio62482995391f/wao.io-cache-control.html
+                      </a>
+                    </span>
+                  </p>
+
+                  <p>
+                    <span class="hashtag">Shopware 6</span>
+                    <span class="hashtag">Symfony</span>
+                    <span class="hashtag">PHP</span>
+                    <span class="hashtag">PHPStan</span>
+                    <span class="hashtag">Vue.js</span>
+                    <span class="hashtag">JavaScript</span>
+                    <span class="hashtag">twig</span>
+                    <span class="hashtag">REST</span>
+                    <span class="hashtag">Docker</span>
+                  </p>
+                </div>
+              </article>
+
+              <article class="tile tile-height" id="project-react-app">
+                <div class="flex bg-peel  pl1">
+                  <header>
+                    <h3><span class="text-line">React-Web-App</span></h3>
+                  </header>
+                  <p>
+                    <img
+                      src="img/react-app-wao-io.jpg"
+                      width="800" height="632"
+                      class="project-thumb"
+                      alt="Screenshot der Web-App"
+                    />
+                    <span class="text-line">
+                      Die grafischen Oberfläche von wao.io visualisiert technische Daten und lässt Webmaster die Optimierung ihrer Webseiten selbst einstellen. Von 2017 bis 2020 entwickelte und aktualisierte ich Komponenten der Web-App als Frontend-Entwickler in einem agilen Team.
+
+                      <a
+                        class="iconlink arrow"
+                        href="https://wao.io/"
+                        title="wao.io"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        wao.io
+                      </a>
+                    </span>
+
+                  </p>
+                  <p>
+                    <span class="hashtag">ReactJS</span>
+                    <span class="hashtag">JavaScript</span>
+                    <span class="hashtag">Styled Components</span>
+                    <span class="hashtag">Storybook</span>
+                    <span class="hashtag">CSS</span>
+                    <span class="hashtag">Webpack</span>
+                    <span class="hashtag">Jest</span>
+                    <span class="hashtag">Auth0</span>
+                    <span class="hashtag">node.js</span>
+                    <span class="hashtag">Git</span>
+                  </p>
+                </div>
+              </article>
+
+              <article class="tile tile-height" id="project-kleiderordnung">
+                <div class="flex bg-peel  pl1">
+                  <header>
+                    <h3><span class="text-line">Kleiderordnung Düsseldorf</span></h3>
+                  </header>
+                  <p>
+                    <img
+                      src="img/kleiderordnung-website.jpg"
+                      width="800" height="632"
+                      class="project-thumb"
+                      alt="Screenshot der Webseite"
+                    />
+                    <span class="text-line">
+                      Diese Web-Visitenkarte erstellte ich 2016 als One-Pager mit Reiternavigation, Bildergalerie und Kontaktformular auf Grundlage des Designs für die gedruckten Flyer und Visitenkarten.
+
+                      <a
+                        class="iconlink github"
+                        href="https://github.com/openmindculture/kleiderordnung"
+                        title="github.com/openmindculture/kleiderordnung"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        github.com/openmindculture/kleiderordnung
+                      </a>
+
+                      <a
+                        class="iconlink arrow"
+                        href="https://www.kleiderordnung-duesseldorf.de"
+                        title="www.kleiderordnung-duesseldorf.de"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        www.kleiderordnung-duesseldorf.de
+                      </a>
+                    </span>
+                  </p>
+                  <p>
+                    <span class="hashtag">HTML</span>
+                    <span class="hashtag">JavaScript</span>
+                    <span class="hashtag">CSS</span>
+                    <span class="hashtag">SCSS</span>
+                    <span class="hashtag">SVG</span>
+                    <span class="hashtag">Babel</span>
+                    <span class="hashtag">PHP</span>
+                  </p>
+                </div>
+              </article>
+
+              <article class="tile tile-height" id="project-hackathon-2019">
+                <div class="flex bg-peel pl1">
+                  <header>
+                    <h3><span class="text-line">Green Wall-E</span></h3>
+                  </header>
+                  <p>
+                    <span class="text-line">
+                      Unsere interaktive Upcycling-Installation "Green Wall-E" wurde 2019 Sieger beim Hackathon "Sevenval Woodhack". Das Gerät aus Arduino-Hardware und Fundstücken eines Waldspaziergangs reagiert auf Trockenheit und Blumengießen mit farbiger Animation seines LED-Leuchtstreifens.
+                      <a
+                        class="iconlink github"
+                        href="https://github.com/openmindculture/arduino"
+                        title="github.com/openmindculture/arduino"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        github.com/openmindculture/arduino
+                      </a>
+
+                      <a
+                          class="iconlink arrow"
+                          href="https://www.sevenval.com/blog/culture/woodhack-2019-projekt-green-wall-e/"
+                          title="www.sevenval.com/blog/culture/woodhack-2019-projekt-green-wall-e"
+                          target="_blank"
+                          rel="noopener"
+                        >
+                          www.sevenval.com/blog/culture/woodhack-2019-projekt-green-wall-e/
+                        </a>
+                    </span>
+                  </p>
+                  <p>
+                    <span class="hashtag">Arduino</span>
+                    <span class="hashtag">C++</span>
+                    <span class="hashtag">cpp</span>
+                  </p>
+                </div>
+
+              </article>
+
+              <article class="tile tile-height" id="meetup-webperf-orga">
+                <div class="flex bg-peel  pl1">
+                  <header>
+                    <h3><span class="text-line">Meetup-Organisation</span></h3>
+                  </header>
+                  <p>
+                    <span class="text-line">
+                      Anfang 2020 übernahm ich die fachliche Leitung des Kölner Web-Performance-Meetups. Diverse internationale Vorträge, unter anderem von Patrick Meenan, Andrew Petryk, Anna Backs und Christina Zenzes begeisterten das Publikum über die Grenzen der Region hinaus.
+
+                      <a
+                        class="iconlink arrow"
+                        href="https://www.meetup.com/cologne-germany-high-performance-website-optimization-group/"
+                        title="www.meetup.com/cologne-germany-high-performance-website-optimization-group"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                      www.meetup.com/cologne-germany-high-performance-website-optimization-group
+                      </a>
+                    </span>
+                  </p>
+                  <p>
+                    <span class="hashtag">Meetup</span>
+                    <span class="hashtag">Event-Management</span>
+                    <span class="hashtag">Web-Performance</span>
+                    <span class="hashtag">Zoom-Meeting</span>
+                  </p>
+                </div>
+              </article>
+            </div>
           </section>
 
           <section class="text-content-layout text-content-color">
@@ -135,10 +468,18 @@
             </h2>
             <article class="text-width">
               <p>
-                Ihre Layouts realisiere ich plattformübergreifend, auf Wunsch auch pixelgenau. Mein Ziel sind langlebige Lösungen, elegant, verständlich und pflegeleicht.
+                Ihre Layouts realisiere ich plattformübergreifend, auf Wunsch auch pixelgenau. Mein Ziel sind langlebige Lösungen, elegant, verständlich und pflegeleicht. Modulare Komponenten, Themes und CSS-Frameworks erleichtern die Zusammenarbeit und Weiterentwicklung. Kontinuiertliches Testen ermöglicht es mir, Fehler frühzeitig zu entdecken und zu beheben.
               </p>
+              <h3>Full-Stack-Erfahrung</h3>
               <p>
-                Als Teamplayer mit Full-Stack-Erfahrung und hoher Lernbereitschaft übernehme ich bei Bedarf auch andere Aufgaben, die sich rund um die Frontend-Entwicklung ergeben. Klare, verbindliche und freundliche Kommunikation auf Deutsch und Englisch erleichtert mir die Zusammenarbeit mit Kunden, Kollegen und Dienstleistern. Neue Technologien lerne ich schnell.
+                Bei der Weiterentwicklung bestehenden Codes kommt mir meine Berufserfahrung und meine pragmatische Einstellung zugute.
+                Mit meinen Erfahrungen im Backend- und DevOps-Bereich und meinre hohen Lernbereitschaft übernehme ich bei Bedarf auch Aufgaben, die sich rund um die Frontend-Entwicklung ergeben.
+              </p>
+              <h3 id="plugin-programmierung">Plugin-Programmierung</h3>
+              <p>
+                Schnittstellen zum Backend implementiere ich vorzugsweise als unabhängige Module.
+                Für den Web-Performance-Servive wao.io entwickelte ich jeweils ein <a href="#project-shopware-plugin">Plugin für Shopware 6</a> und <a href="#project-wordpress-plugin">für das CMS WordPress</a>.
+                Beide Plugins wurden nach erfolgreicher Prüfung in die <a href="https://store.shopware.com/waoio62482995391f/wao.io-cache-control.html" target="_blank" rel="noopener" title="Shopware-Store-Seite für das Plugin wao.io Cache Control">offiziellen Verzeichnisse </a>aufgenommen.
               </p>
 
             </article>
@@ -216,18 +557,6 @@
               </li>
 
               <li class="tile">
-                <h4 class="font-sans">Methoden</h4>
-                <ul>
-                  <li>Pragmatismus</li>
-                  <li>Progressive Enhancement</li>
-                  <li>Agile Softwareentwicklung</li>
-                  <li>Test Driven Development</li>
-                  <li>Code Review, 4-Augen-Prinzip</li>
-                  <li>Pair Programming</li>
-                </ul>
-              </li>
-
-              <li class="tile">
                 <h4 class="font-sans">Sonstige Tools</h4>
                 <ul>
                   <li>
@@ -275,356 +604,10 @@
                       <span class="hashtag">Inkscape</span>
                     </div>
                   </li>
-                  <li>
-                    Coding
-                    <div class="hashtags">
-                      <span class="hashtag">PHPStorm</span>
-                      <span class="hashtag">vi</span>
-                      <span class="hashtag">Visual Studio Code</span>
-                      </div>
-                  </li>
                 </ul>
               </li>
 
             </ul>
-          </section>
-
-          <section class="tiled-content">
-            <div class="pl1">
-              <h2>Projekte</h2>
-              <p>Überzeugen Sie sich selbst von meiner Arbeit! Eine Auswahl meiner bisherigen Projekte:</p>
-            </div>
-
-            <div class="grid-container flow-grid">
-              <!-- TODO article tile aus loop ausgelagerter fragmente -->
-
-              <article class="tile tile-height bg-img">
-                <div class="flex pl1">
-                  <header>
-                    <h3><span class="text-line">Portfolio Relaunch</span></h3>
-                  </header>
-                  <p>
-
-                    <span class="text-line">
-                      Ingo-Steinke.de zeigt meine Arbeit als Web-Entwickler.
-                      Minimalistisches Design, moderne Farben, aktuelle Technologie und umfangreiche textliche Überarbeitung prägen den Relaunch meines beruflichen Portfolios.
-
-                      <a
-                        class="iconlink github"
-                        href="https://github.com/openmindculture/ingo-steinke.de"
-                        title="github.com/openmindculture/ingo-steinke.de"
-                        target="_blank"
-                        rel="noopener"
-                      >
-                        github.com/openmindculture/ingo-steinke.de
-                      </a>
-
-                      <a
-                        class="iconlink arrow"
-                        href="https://www.ingo-steinke.de/"
-                        title="www.ingo-steinke.de"
-                      >
-                        ingo-steinke.de
-                      </a>
-                    </span>
-                  </p>
-
-                  <p>
-                    <span class="hashtag jamstack">JAMStack</span>
-                    <span class="hashtag 11ty" title=eleventy>11ty</span>
-                    <span class="hashtag netlify">netlify</span>
-                    <span class="hashtag css">CSS</span>
-                    <span class="hashtag html">HTML</span>
-                    <span class="hashtag js">JavaScript</span>
-                    <span class="hashtag js">liquid</span>
-                    <span class="hashtag js">PostCSS</span>
-                  </p>
-                </div>
-
-              </article>
-
-              <article class="tile tile-height bg-img img-meetup">
-                <div class="flex pl1">
-                  <header>
-                    <h3><span class="text-line">Vortrag: Performance-Optimierung ohne Code-Änderung</span></h3>
-                  </header>
-                  <p>
-                    <img
-                      src="img/meetup-angelina-farsch-ingo-steinke-2020.jpg"
-                      width="800" height="632"
-                      style="width:100px;height:auto;"
-                      alt=""
-                    />
-                    <span class="text-line">
-                      Wie mache ich meine Seite schneller? Angelina Farsch und ich erläuterten beim Kölner Web-Performance Meetup, wie Betreiber von Webseiten herausfinden, ob ihre Seite zu den Sprintern oder Schnecken gehört und mit Welchen Mitteln wir die Performance erhöhen können.
-
-                      <a
-                        class="iconlink arrow"
-                        href="https://www.meetup.com/cologne-germany-high-performance-website-optimization-group/events/268706480/"
-                        title="meetup.com/cologne-germany-high-performance-website-optimization-group/events/268706480/"
-                        target="_blank"
-                        rel="noopener"
-                      >
-                        meetup.com/cologne-germany-high-performance-website-optimization-group/events/268706480/
-                      </a>
-                    </span>
-                  </p>
-                </div>
-              </article>
-
-              <article class="tile tile-height bg-img img-wp-plugin">
-                <div class="flex pl1">
-                  <header>
-                    <h3><span class="text-line">WordPress-Plugin</span></h3>
-                  </header>
-                  <p>
-                    <img
-                      src="img/shopware-plugin-for-wao-io.jpg"
-                      width="800" height="632"
-                      style="width:100px;height:auto;"
-                      alt="Ingo Steinke vor einem Bildschirm mit der Plugin-Seite und einem Laptop mit dem Quellcode des Plugins"
-                    />
-                    <span class="text-line">
-                      Um den Redakteuren unserer Kunden vermeidbare Arbeit zu ersparen, entwickelte ich ein WordPress-Plugin, das bei jeder Veröffentlichung automatisch den externen Cache bereinigt. Dazu wird im Hintergrund die API-Schnittstelle von wao.io aufgerufen. Das kostenlose Plugin wurde 2020 im offiziellen WordPress.org Plugin-Verzeichnis veröffentlicht.
-
-                      <a
-                        class="iconlink arrow"
-                        href="https://de.wordpress.org/plugins/wao-io-cache-control/"
-                        title="de.wordpress.org/plugins/wao-io-cache-control"
-                        target="_blank"
-                        rel="noopener"
-                      >
-                        de.wordpress.org/plugins/wao-io-cache-control
-                      </a>
-                    </span>
-
-                  </p>
-                  <p>
-                    <span class="hashtag php">PHP</span>
-                    <span class="hashtag js">JavaScript</span>
-                    <span class="hashtag css">CSS</span>
-                    <span class="hashtag wp">WordPress</span>
-                    <span class="hashtag wp">Docker</span>
-                    <span class="hashtag wp">eslint</span>
-                  </p>
-                </div>
-              </article>
-
-              <article class="tile tile-height bg-img img-sw-plugin">
-                <div class="flex pl1">
-                  <header>
-                    <h3><span class="text-line">Shopware-Plugin</span></h3>
-                  </header>
-                  <p>
-                    <img
-                      src="img/wordpress-plugin-for-wao-io.jpg"
-                      width="800" height="632"
-                      style="width:100px;height:auto;"
-                      alt=""
-                    />
-                    <span class="text-line">
-                      Der Aufruf einer externen API aus dem Shopware-Backend heraus war mein erstes Projekt mit Shopware 6. Shopbetreibern, die wao.io zur Optimierung der Web-Performance verwenden, wird dadurch die Arbeit erleichtert. Das kostenlose Plugin wurde 2020 im offiziellen Shopware Store veröffentlicht.
-
-                      <a
-                        class="iconlink arrow"
-                        href="https://store.shopware.com/waoio62482995391f/wao.io-cache-control.html"
-                        title="store.shopware.com/waoio62482995391f/wao.io-cache-control.html"
-                        target="_blank"
-                        rel="noopener"
-                      >
-                        store.shopware.com/waoio62482995391f/wao.io-cache-control.html
-                      </a>
-                    </span>
-                  </p>
-
-                  <p>
-                    <span class="hashtag shopware">Shopware 6</span>
-                    <span class="hashtag symfony">Symfony</span>
-                    <span class="hashtag php">PHP</span>
-                    <span class="hashtag php">PHPStan</span>
-                    <span class="hashtag vuejs">Vue.js</span>
-                    <span class="hashtag js">JavaScript</span>
-                    <span class="hashtag vuejs">twig</span>
-                    <span class="hashtag vuejs">REST</span>
-                    <span class="hashtag docker">Docker</span>
-                  </p>
-                </div>
-              </article>
-
-              <article class="tile tile-height bg-img img-react-app">
-                <div class="flex pl1">
-                  <header>
-                    <h3><span class="text-line">React-Web-App</span></h3>
-                  </header>
-                  <p>
-                    <img
-                      src="img/react-app-wao-io.jpg"
-                      width="800" height="632"
-                      style="width:100px;height:auto;"
-                      alt=""
-                    />
-                    <span class="text-line">
-                      Die grafischen Oberfläche von wao.io visualisiert technische Daten und lässt Webmaster die Optimierung ihrer Webseiten selbst einstellen. Von 2017 bis 2020 entwickelte und aktualisierte ich Komponenten der Web-App als Frontend-Entwickler in einem agilen Team.
-
-                      <a
-                        class="iconlink arrow"
-                        href="https://wao.io/"
-                        title="wao.io"
-                        target="_blank"
-                        rel="noopener"
-                      >
-                        wao.io
-                      </a>
-                    </span>
-
-                  </p>
-                  <p>
-                    <span class="hashtag reactjs">ReactJS</span>
-                    <span class="hashtag js">JavaScript</span>
-                    <span class="hashtag css">Styled Components</span>
-                    <span class="hashtag reactjs">Storybook</span>
-                    <span class="hashtag css">CSS</span>
-                    <span class="hashtag couper">Webpack</span>
-                    <span class="hashtag reactjs">Jest</span>
-                    <span class="hashtag couper">Auth0</span>
-                    <span class="hashtag couper">node.js</span>
-                    <span class="hashtag couper">Git</span>
-                  </p>
-                </div>
-              </article>
-
-              <article class="tile tile-height bg-img img-kleiderordnung">
-                <div class="flex pl1">
-                  <header>
-                    <h3><span class="text-line">Kleiderordnung Düsseldorf</span></h3>
-                  </header>
-                  <p>
-                    <img
-                      src="img/kleiderordnung-website.jpg"
-                      width="800" height="632"
-                      style="width:100px;height:auto;"
-                      alt=""
-                    />
-                    <span class="text-line">
-                      Für meine Mode- und Stilberaterin Martina Steinke entwarf die Grafik-Designerin Vivien Kruggel Visitenkarten und Flyer. Die passende Web-Visitenkarte erstellte ich 2016 als One-Pager mit Reiternavigation, Bildergalerie und Kontaktformular.
-
-                      <a
-                        class="iconlink github"
-                        href="https://github.com/openmindculture/kleiderordnung"
-                        title="github.com/openmindculture/kleiderordnung"
-                        target="_blank"
-                        rel="noopener"
-                      >
-                        github.com/openmindculture/kleiderordnung
-                      </a>
-
-                      <a
-                        class="iconlink arrow"
-                        href="https://www.kleiderordnung-duesseldorf.de"
-                        title="www.kleiderordnung-duesseldorf.de"
-                        target="_blank"
-                        rel="noopener"
-                      >
-                        www.kleiderordnung-duesseldorf.de
-                      </a>
-                    </span>
-                  </p>
-                  <p>
-                    <span class="hashtag reactjs">HTML</span>
-                    <span class="hashtag js">JavaScript</span>
-                    <span class="hashtag reactjs">CSS</span>
-                    <span class="hashtag js">SCSS</span>
-                    <span class="hashtag js">SVG</span>
-                    <span class="hashtag js">Babel</span>
-                    <span class="hashtag js">PHP</span>
-                  </p>
-                </div>
-              </article>
-
-              <article class="tile tile-height bg-img img-woodhack">
-                <div class="flex bg-peel pl1">
-                  <header>
-                    <h3><span class="text-line">Green Wall-E</span></h3>
-                  </header>
-                  <p>
-                    <span class="text-line">
-                      Unsere interaktive Upcycling-Installation "Green Wall-E" wurde 2019 Sieger beim Hackathon "Sevenval Woodhack". Das Gerät aus Arduino-Hardware und Fundstücken eines Waldspaziergangs reagiert auf Trockenheit und Blumengießen mit farbiger Animation seines LED-Leuchtstreifens.
-                      <a
-                        class="iconlink github"
-                        href="https://github.com/openmindculture/arduino"
-                        title="github.com/openmindculture/arduino"
-                        target="_blank"
-                        rel="noopener"
-                      >
-                        github.com/openmindculture/arduino
-                      </a>
-
-                      <a
-                          class="iconlink arrow"
-                          href="https://www.sevenval.com/blog/culture/woodhack-2019-projekt-green-wall-e/"
-                          title="www.sevenval.com/blog/culture/woodhack-2019-projekt-green-wall-e"
-                          target="_blank"
-                          rel="noopener"
-                        >
-                          www.sevenval.com/blog/culture/woodhack-2019-projekt-green-wall-e/
-                        </a>
-                    </span>
-                  </p>
-                  <p>
-                    <span class="hashtag reactjs">Arduino</span>
-                    <span class="hashtag reactjs">C++</span>
-                    <span class="hashtag js">cpp</span>
-                  </p>
-                </div>
-
-              </article>
-
-              <article class="tile tile-height bg-img img-wp-theme">
-                <div class="flex pl1">
-                  <header>
-                    <h3><span class="text-line">WordPress-Theme</span></h3>
-                  </header>
-                  <p>
-                    <img
-                      src="img/wordpress-theme-open-mind-culture.jpg"
-                      width="800" height="632"
-                      style="width:100px;height:auto;"
-                      alt=""
-                    />
-                    <span class="text-line">
-                      Mein Freizeitprojekt Open-Mind-Culture dient auch als Spielwiese zum Experimentieren mit WordPress. Die optische Gestaltung konnte ich mit sehr überschaubarem Aufwand als Child-Theme des offiziellen WordPress-Themes TwentyTwenty erstellen und vor dem Upload im lokalen Docker-Container testen.
-
-                      <a
-                        class="iconlink github"
-                        href="https://github.com/openmindculture/open-mind-culture-org"
-                        title="github.com/openmindculture/open-mind-culture-org"
-                        target="_blank"
-                        rel="noopener"
-                      >
-                        github.com/openmindculture/open-mind-culture-org
-                      </a>
-
-                      <a
-                        class="iconlink arrow"
-                        href="https://www.open-mind-culture.org/"
-                        title="www.open-mind-culture.org"
-                        target="_blank"
-                        rel="noopener"
-                      >
-                        www.open-mind-culture.org
-                      </a>
-                    </span>
-                  </p>
-                  <p>
-                    <span class="hashtag reactjs">WordPress</span>
-                    <span class="hashtag reactjs">WP-Child-Theme</span>
-                    <span class="hashtag js">CSS</span>
-                    <span class="hashtag js">PHP</span>
-                    <span class="hashtag js">Docker</span>
-                  </p>
-                </div>
-              </article>
-            </div>
           </section>
 
           <section class="text-content-layout text-content-color">
@@ -886,7 +869,7 @@
             <a href="#imprint">Impressum</a>
             <a href="#privacy">Datenschutz</a>
           </p>
-          &copy; 2021 Ingo Steinke
+          &copy; {{ "now" | date: "%Y" }} Ingo Steinke
         </footer>
       </div>
 

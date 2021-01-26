@@ -216,6 +216,12 @@ h4 {
     line-height: 2;
   }
 
+  .tile img.project-thumb {
+    width: 100px;
+    height: auto;
+    float: right;
+  }
+
   .row {
     display: block;
     display: flex;
