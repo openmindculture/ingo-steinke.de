@@ -4,6 +4,10 @@
 - modern design using latest CSS features
 - add english language content and language switcher
 
+## [1.9.8] - 2021-01-27
+### fixed
+- content, ux: text typo and readability
+
 ## [1.9.7] - 2021-01-27
 ### added
 - content: describe backend / full stack experience

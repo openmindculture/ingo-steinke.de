@@ -42,6 +42,7 @@ body,
 html {
   font-size: 14px;
   font-family: Montserrat, Helvetica, sans-serif;
+  line-height: 1.5;
   color: #191970;
   background-color: #fff;
   margin: 0;
