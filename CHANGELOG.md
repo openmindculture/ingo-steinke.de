@@ -4,6 +4,10 @@
 - modern design using latest CSS features
 - add english language content and language switcher
 
+## [1.9.7] - 2021-01-27
+### added
+- content: describe backend / full stack experience
+
 ## [1.9.6] - 2021-01-19
 ### added
 - ux: add contact information, update description
