@@ -25,13 +25,12 @@ npx stylelint "**/*.css" --fix && eleventy && node_modules/postcss-cli/bin/postc
 ## TODO
 
 * [x] to-do list
-* [ ] description
+* [x] description
 * [x] link to changelog
 * [x] set up local preview
 * [x] set up deployment (JAMStack)
-* [ ] set up css bundling (using [https://github.com/addyosmani/critical](critical)?)
+* [x] set up css optimization
 * [ ] set up local testing
-* [ ] add more content
+* [x] add more content
 * [ ] add demo, design, more fancy css stuff ...
-* [ ] like dark theme switcher with system default
 * [ ] language switcher with system default
