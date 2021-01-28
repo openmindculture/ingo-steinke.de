@@ -115,7 +115,7 @@ h4 {
 
   .sticky-header {
     position: sticky;
-    top: 0;
+    top: -1px;
     z-index: 10;
 
     /* optional decorative styles */
@@ -123,6 +123,11 @@ h4 {
     height: 30px;
     text-align: center;
     background-color: rgba(100, 100, 100, 90%);
+  }
+
+  /* styles for when the header is in sticky mode */
+  .sticky-header.is-pinned {
+    border: solid 2px red;
   }
 
   /* Don’t Headbutt The Browser Window by Chris Coyer
