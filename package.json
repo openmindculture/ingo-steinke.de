@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "test": "make test",
-    "build": "eleventy && node_modules/postcss-cli/bin/postcss src/styles.css > dist/styles.css && babel src/js -d dist/js"
+    "build": "eleventy && node_modules/postcss-cli/bin/postcss src/*.css --dir dist && babel src/js -d dist/js"
   },
   "repository": {
     "type": "git",

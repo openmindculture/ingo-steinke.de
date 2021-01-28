@@ -15,14 +15,39 @@ h2 {
   font-size: 24pt;
 }
 
-.page-navigation {
+h3 {
+  font-size: 18pt;
+}
+
+body,
+.tiled-content,
+.text-content-color,
+.text-content-color h2,
+.text-content-color h3,
+.text-content-color h4,
+a,
+a:link,
+a:visited,
+a:active {
+  color: #000;
+  background-color: #fff;
+  text-decoration: none;
+}
+
+.page-navigation.page-navigation,
+.sticky-header {
   display: none;
+}
+
+.page-container {
+  padding: 0 24pt;
 }
 
 .hero-header {
   text-align: center;
   break-after: page;
   margin-top: 25%;
+  margin-bottom: 25%;
 }
 
 .hero-header h1 {
@@ -37,6 +62,44 @@ h2 {
 
 img.photo {
   border-radius: 50%;
+}
+
+.iconlink {
+  display: block;
+  font-family: monospace;
+}
+
+.hashtag {
+  border: solid 1px #aaa;
+  padding: 4pt;
+  margin-right: 4pt;
+  line-height: 28pt;
+}
+
+.tile {
+  margin-bottom: 24pt;
+}
+
+.tile p img {
+  max-width: 25%;
+  height: auto;
+  float: right;
+  margin-left: 12pt;
+  border: solid 1px #aaa;
+}
+
+.social-links {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.social-links a {
+  font-family: monospace;
+}
+
+.social-links a img {
+  background-color: #aaa;
+  padding: 4pt;
 }
 
 .privacy {
