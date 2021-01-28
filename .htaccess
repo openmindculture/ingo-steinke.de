@@ -1,4 +1,6 @@
-# https://www.df.eu/blog/performanceoptimierung/
+# Apache server settings
+# rewrite to canonical https://www.ingo-steinke.de
+# optimize caching and compression
 
 <IfModule mod_expires.c>
 ExpiresActive on
@@ -46,4 +48,4 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 # Now, rewrite any request to the wrong domain to use www.
 # [NC] is a case-insensitive match
 RewriteCond %{HTTP_HOST} !^www\. [NC]
-RewriteRule .* https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteRule .* https://www.ingo-steinke.de%{REQUEST_URI} [L,R=301]
