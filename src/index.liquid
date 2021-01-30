@@ -62,34 +62,6 @@ domain-verify: 4c4296e5835f4a47eb2c2e5488a99d71
   </head>
   <body>
     <div class="page-container" id="top">
-      <nav id="nav" class="page-navigation">
-        <a href="#nav" class="nav-btn initially-hidden">
-          <span>Inhalt</span>
-          <svg viewBox="0 0 100 80" width="40" height="40">
-            <rect width="100" height="20"></rect>
-            <rect y="30" width="100" height="20"></rect>
-            <rect y="60" width="100" height="20"></rect>
-          </svg>
-        </a>
-        <ul class="nav-list initially-hidden">
-          <li>
-            <a href="#nav" title="Navigation...">
-              &hellip;
-            </a>
-          </li>
-          <li>
-            <a href="#contact" title="Kontakt">
-              &#x2709;
-            </a>
-          </li>
-          <li>
-            <a href="#imprint" title="Impressum">
-              §
-            </a>
-          </li>
-        </ul>
-      </nav>
-
       <div class="page-content">
         <header class="hero-header" id="hero-header">
           <img
@@ -99,7 +71,7 @@ domain-verify: 4c4296e5835f4a47eb2c2e5488a99d71
             width="248"
             height="248"
             alt="Foto von Ingo Steinke"
-            class=photo
+            class="avatar"
           >
           <h1>
             Ingo Steinke
@@ -107,18 +79,27 @@ domain-verify: 4c4296e5835f4a47eb2c2e5488a99d71
           <p class="tagline">Creative Web Developer</p>
         </header>
         <div class="sticky-header" id="sticky-header">
-          <span class="scripted hideable" id="sticky-headline">
-            <img
-              src="img/Ingo-Steinke-portrait-2020.jpg"
-              width="25"
-              height="25"
-              alt=""
-            />
-            Ingo Steinke
-          </span>
+          <div class="wrapper">
+            <span class="temporary-left-side-flex-child">
+              <span class="scripted hideable" id="sticky-headline">
+                <a href="#top">
+                  <img
+                    src="img/Ingo-Steinke-portrait-2020.jpg"
+                    width="25"
+                    height="25"
+                    alt=""
+                    class="avatar"
+                  />
+                  Ingo Steinke
+                </a>
+              </span>
+            </span>
 
-          <a href="#contact">Kontakt / Impressum</a>
-          <a href="#content-top" title="zum Seitenanfang">^</a>
+            <span class="todo-nav">
+            </span>
+
+            </div>
+
         </div>
 
         <main id="content-top">
@@ -133,10 +114,12 @@ domain-verify: 4c4296e5835f4a47eb2c2e5488a99d71
                 Ich bin Ingo Steinke, begeisterter kreativer Webentwickler aus Düsseldorf mit über 20 Jahren Berufserfahrung. Von meiner Arbeit profitierten unter anderem die Frankfurter Allgemeine Zeitung, die ZEIT, HDI, Avenga und wao.io.
               </p>
 
-              <h3>Mit mir können Sie arbeiten!</h3>
+              <h3>Mit mir können Sie arbeiten</h3>
 
               <p>
-                Sie möchten Ihre Webseite überarbeiten? Ihr Team braucht Verstärkung durch einen Frontend-Entwickler mit Full-Stack-Erfahrung? <a href="#contact">Rufen Sie mich an oder hinterlassen Sie mir eine Nachricht!</a> Gern können wir uns bei einem Kaffee unverbindlich über ihr Projekt unterhalten.
+                Sie möchten Ihre Webseite überarbeiten? Ihr Team braucht Verstärkung durch einen Frontend-Entwickler mit Full-Stack-Erfahrung? <a href="#contact">Rufen Sie mich an oder hinterlassen Sie mir eine Nachricht!</a>
+                <br>
+                Gern können wir uns bei einem Kaffee unverbindlich über ihr Projekt unterhalten.
               </p>
 
             </article>
@@ -149,15 +132,19 @@ domain-verify: 4c4296e5835f4a47eb2c2e5488a99d71
             </div>
 
             <div class="grid-container flow-grid">
-              <!-- TODO article tile aus loop ausgelagerter fragmente -->
 
-              <article class="tile tile-height" id="project-portfolio-relaunch">
+              <article class="tile" id="project-portfolio-relaunch">
                 <div class="flex bg-peel  pl1">
                   <header>
-                    <h3><span class="text-line">Portfolio Relaunch</span></h3>
+                    <h3>Portfolio Relaunch</h3>
                   </header>
                   <p>
-
+                    <img
+                      src="img/icon-varnish.svg"
+                      width="512" height="512"
+                      class="project-thumb"
+                      alt=""
+                    />
                     <span class="text-line">
                       Ingo-Steinke.de zeigt meine Arbeit als Web-Entwickler.
                       Minimalistisches Design, moderne Farben, aktuelle Technologie und umfangreiche textliche Überarbeitung prägen den Relaunch meines beruflichen Portfolios.
@@ -183,63 +170,63 @@ domain-verify: 4c4296e5835f4a47eb2c2e5488a99d71
                   </p>
 
                   <p>
-                    <span class="hashtag">JAMStack</span>
-                    <span class="hashtag" title=eleventy>11ty</span>
-                    <span class="hashtag">netlify</span>
-                    <span class="hashtag">CSS</span>
-                    <span class="hashtag">HTML</span>
-                    <span class="hashtag">JavaScript</span>
-                    <span class="hashtag">liquid</span>
-                    <span class="hashtag">PostCSS</span>
+                    <span class="hashtag">HTML 5</span>
+                    <span class="hashtag">CSS 3</span>
+                    <span class="hashtag">ES 2021</span>
+                    <span class="hashtag">Liquid</span>
+                    <span class="hashtag">Eleventy</span>
                   </p>
                 </div>
 
               </article>
 
-              <article class="tile tile-height">
+              <article class="tile" id="project-webperf-meetup">
                 <div class="flex bg-peel  pl1">
                   <header>
-                    <h3><span class="text-line">Vortrag: Performance-Optimierung ohne Code-Änderung</span></h3>
+                    <h3>Meetup-Organisation</h3>
                   </header>
                   <p>
                     <img
-                      src="img/meetup-angelina-farsch-ingo-steinke-2020.jpg"
-                      width="800" height="632"
+                      src="img/logo-meetup.svg"
+                      width="25" height="25"
                       class="project-thumb"
-                      alt="Event-Ankündigung mit Portraitfotos von Angelina Farsch und Ingo Steinke"
+                      alt=""
                     />
                     <span class="text-line">
-                      Wie mache ich meine Seite schneller? Angelina Farsch und ich erläuterten beim Kölner Web-Performance Meetup, wie Betreiber von Webseiten herausfinden, ob ihre Seite zu den Sprintern oder Schnecken gehört und mit Welchen Mitteln wir die Performance erhöhen können.
+                      Anfang 2020 übernahm ich die fachliche Leitung des Kölner Web-Performance-Meetups. Diverse internationale Vorträge, unter anderem von Patrick Meenan, Andrew Petryk, Anna Backs und Christina Zenzes begeisterten das Publikum über die Grenzen der Region hinaus.
 
                       <a
                         class="iconlink arrow"
-                        href="https://www.meetup.com/cologne-germany-high-performance-website-optimization-group/events/268706480/"
-                        title="meetup.com/cologne-germany-high-performance-website-optimization-group/events/268706480/"
+                        href="https://www.meetup.com/cologne-germany-high-performance-website-optimization-group/"
+                        title="www.meetup.com/cologne-germany-high-performance-website-optimization-group"
                         target="_blank"
                         rel="noopener"
                       >
-                        meetup.com/cologne-germany-high-performance-website-optimization-group/events/268706480/
+                      www.meetup.com/cologne-germany-high-performance-website-optimization-group
                       </a>
                     </span>
+                  </p>
+                  <p>
+                    <span class="hashtag">Event-Management</span>
+                    <span class="hashtag">Web-Performance</span>
                   </p>
                 </div>
               </article>
 
-              <article class="tile tile-height" id="project-wordpress-plugin">
+              <article class="tile" id="project-wordpress-plugin">
                 <div class="flex bg-peel  pl1">
                   <header>
-                    <h3><span class="text-line">WordPress-Plugin</span></h3>
+                    <h3>WordPress-Plugin</h3>
                   </header>
                   <p>
                     <img
-                      src="img/wordpress-plugin-for-wao-io.jpg"
-                      width="800" height="632"
+                      src="img/logo-wordpress.svg"
+                      width="452" height="452"
                       class="project-thumb"
-                      alt="Screenshot der Plugin-Beschreibung"
+                      alt=""
                     />
                     <span class="text-line">
-                      Um den Redakteuren unserer Kunden vermeidbare Arbeit zu ersparen, entwickelte ich ein WordPress-Plugin, das bei jeder Veröffentlichung automatisch den externen Cache bereinigt. Dazu wird im Hintergrund die API-Schnittstelle von wao.io aufgerufen. Das kostenlose Plugin wurde 2020 im offiziellen WordPress.org Plugin-Verzeichnis veröffentlicht.
-
+                      Als Arbeitserleichterung für die Reakteure unserer Kunden bereinigt ein WordPress-Plugin vollautomatisch den Cache-Speicher des Servers, auf dem wao.io die Performance der WordPress-Seite optimiert. Das Plugin wurde 2020 auf WordPress.org veröffentlicht.
                       <a
                         class="iconlink arrow"
                         href="https://de.wordpress.org/plugins/wao-io-cache-control/"
@@ -255,29 +242,26 @@ domain-verify: 4c4296e5835f4a47eb2c2e5488a99d71
                   <p>
                     <span class="hashtag">PHP</span>
                     <span class="hashtag">JavaScript</span>
-                    <span class="hashtag">CSS</span>
-                    <span class="hashtag">WordPress</span>
                     <span class="hashtag">Docker</span>
-                    <span class="hashtag">eslint</span>
+                    <span class="hashtag">Localization</span>
                   </p>
                 </div>
               </article>
 
-              <article class="tile tile-height" id="project-shopware-plugin">
+              <article class="tile" id="project-shopware-plugin">
                 <div class="flex bg-peel  pl1">
                   <header>
-                    <h3><span class="text-line">Shopware-Plugin</span></h3>
+                    <h3>Shopware-Plugin</h3>
                   </header>
                   <p>
                     <img
-                      src="img/shopware-plugin-for-wao-io.jpg"
-                      width="800" height="632"
+                      src="img/logo-shopware.svg"
+                      width="512" height="512"
                       class="project-thumb"
-                      alt="Screenshot der Plugin-Beschreibung"
+                      alt=""
                     />
                     <span class="text-line">
-                      Der Aufruf einer externen API aus dem Shopware-Backend heraus war mein erstes Projekt mit Shopware 6. Shopbetreibern, die wao.io zur Optimierung der Web-Performance verwenden, wird dadurch die Arbeit erleichtert. Das kostenlose Plugin wurde 2020 im offiziellen Shopware Store veröffentlicht.
-
+                      Shopbetreibern wird durch eine API-Schnittstelle die Performanc-Optimierung erleichtert. Dieses Backend-Plugin war mein erstes Projekt mit Shopware 6 und wurde 2020 im offiziellen Shopware Store veröffentlicht.
                       <a
                         class="iconlink arrow"
                         href="https://store.shopware.com/waoio62482995391f/wao.io-cache-control.html"
@@ -294,73 +278,95 @@ domain-verify: 4c4296e5835f4a47eb2c2e5488a99d71
                     <span class="hashtag">Shopware 6</span>
                     <span class="hashtag">Symfony</span>
                     <span class="hashtag">PHP</span>
-                    <span class="hashtag">PHPStan</span>
                     <span class="hashtag">Vue.js</span>
-                    <span class="hashtag">JavaScript</span>
-                    <span class="hashtag">twig</span>
-                    <span class="hashtag">REST</span>
-                    <span class="hashtag">Docker</span>
                   </p>
                 </div>
               </article>
 
-              <article class="tile tile-height" id="project-react-app">
+              <article class="tile" id="project-react-app">
                 <div class="flex bg-peel  pl1">
                   <header>
-                    <h3><span class="text-line">React-Web-App</span></h3>
+                    <h3>React-Web-App</h3>
                   </header>
                   <p>
                     <img
-                      src="img/react-app-wao-io.jpg"
-                      width="800" height="632"
+                      src="img/logo-react.svg"
+                      width="512" height="512"
                       class="project-thumb"
-                      alt="Screenshot der Web-App"
+                      alt=""
                     />
                     <span class="text-line">
-                      Die grafischen Oberfläche von wao.io visualisiert technische Daten und lässt Webmaster die Optimierung ihrer Webseiten selbst einstellen. Von 2017 bis 2020 entwickelte und aktualisierte ich Komponenten der Web-App als Frontend-Entwickler in einem agilen Team.
-
+                      Die grafischen Oberfläche von wao.io visualisiert technische Daten und lässt Webmaster die Optimierung ihrer Webseiten selbst einstellen. Ich entwickelte und aktualisierte Komponenten der Web-App als Teil des Frontend- und Support-Teams.
                       <a
                         class="iconlink arrow"
-                        href="https://wao.io/"
-                        title="wao.io"
+                        href="https://wao.io/de/about-us/experts/ingo-steinke/"
+                        title="wao.io/de/about-us/experts/ingo-steinke"
                         target="_blank"
                         rel="noopener"
                       >
-                        wao.io
+                        wao.io/de/about-us/experts/ingo-steinke
                       </a>
                     </span>
 
                   </p>
                   <p>
-                    <span class="hashtag">ReactJS</span>
-                    <span class="hashtag">JavaScript</span>
-                    <span class="hashtag">Styled Components</span>
+                    <span class="hashtag">React</span>
+                    <span class="hashtag">JSX</span>
+                    <span class="hashtag">ES6</span>
+                    <span class="hashtag">CSS-in-JS</span>
                     <span class="hashtag">Storybook</span>
-                    <span class="hashtag">CSS</span>
-                    <span class="hashtag">Webpack</span>
-                    <span class="hashtag">Jest</span>
-                    <span class="hashtag">Auth0</span>
-                    <span class="hashtag">node.js</span>
-                    <span class="hashtag">Git</span>
                   </p>
                 </div>
               </article>
 
-              <article class="tile tile-height" id="project-kleiderordnung">
+              <article class="tile" id="project-webperf-talk">
+                <div class="flex bg-peel  pl1">
+                  <header>
+                    <h3>Performance-Vortrag</h3>
+                  </header>
+                  <p>
+                    <img
+                      src="img/icon-teaching.svg"
+                      width="512" height="512"
+                      class="project-thumb"
+                      alt=""
+                    />
+                    <span class="text-line">
+                      Wie beschleunige ich meine Website? Angelina Farsch und ich erläuterten beim Kölner Web-Performance Meetup, wie Betreiber von Webseiten herausfinden, ob ihre Seite zu den Sprintern oder Schnecken gehört und mit Welchen Mitteln wir die Performance erhöhen können.
+
+                      <a
+                        class="iconlink arrow"
+                        href="https://www.meetup.com/cologne-germany-high-performance-website-optimization-group/events/268706480/"
+                        title="meetup.com/cologne-germany-high-performance-website-optimization-group/events/268706480/"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        meetup.com/cologne-germany-high-performance-website-optimization-group/events/268706480/
+                      </a>
+                    </span>
+                  </p>
+                  <p>
+                    <span class="hashtag">Meetup</span>
+                    <span class="hashtag">Vortrag</span>
+                    <span class="hashtag">Jitsi</span>
+                  </p>
+                </div>
+              </article>
+
+              <article class="tile" id="project-kleiderordnung">
                 <div class="flex bg-peel  pl1">
                   <header>
                     <h3><span class="text-line">Kleiderordnung Düsseldorf</span></h3>
                   </header>
                   <p>
                     <img
-                      src="img/kleiderordnung-website.jpg"
-                      width="800" height="632"
+                      src="img/icon-hanger.svg"
+                      width="24" height="24"
                       class="project-thumb"
-                      alt="Screenshot der Webseite"
+                      alt=""
                     />
                     <span class="text-line">
-                      Diese Web-Visitenkarte erstellte ich 2016 als One-Pager mit Reiternavigation, Bildergalerie und Kontaktformular auf Grundlage des Designs für die gedruckten Flyer und Visitenkarten.
-
+                      Diese Web-Visitenkarte erstellte ich 2016 als One-Pager mit Reiternavigation. Grafische Grundlage war das vorliegende Design der gedruckten Flyer und Visitenkarten, das ich in Absprache mit der Designerin für die Website adaptierte.
                       <a
                         class="iconlink github"
                         href="https://github.com/openmindculture/kleiderordnung"
@@ -383,29 +389,32 @@ domain-verify: 4c4296e5835f4a47eb2c2e5488a99d71
                     </span>
                   </p>
                   <p>
-                    <span class="hashtag">HTML</span>
+                    <span class="hashtag">HTML 5</span>
+                    <span class="hashtag">CSS 3</span>
                     <span class="hashtag">JavaScript</span>
-                    <span class="hashtag">CSS</span>
-                    <span class="hashtag">SCSS</span>
-                    <span class="hashtag">SVG</span>
-                    <span class="hashtag">Babel</span>
                     <span class="hashtag">PHP</span>
                   </p>
                 </div>
               </article>
 
-              <article class="tile tile-height" id="project-hackathon-2019">
+              <article class="tile" id="project-maker-hackathon">
                 <div class="flex bg-peel pl1">
                   <header>
-                    <h3><span class="text-line">Green Wall-E</span></h3>
+                    <h3>Maker-Projekt</h3>
                   </header>
                   <p>
+                    <img
+                      src="img/icon-tree-branch.svg"
+                      width="512" height="512"
+                      class="project-thumb"
+                      alt=""
+                    />
                     <span class="text-line">
-                      Unsere interaktive Upcycling-Installation "Green Wall-E" wurde 2019 Sieger beim Hackathon "Sevenval Woodhack". Das Gerät aus Arduino-Hardware und Fundstücken eines Waldspaziergangs reagiert auf Trockenheit und Blumengießen mit farbiger Animation seines LED-Leuchtstreifens.
+                      Die interaktive Upcycling-Installation "Green Wall-E" entstand aus Arduino-Hardware, Holz und Abfall. Auf Trockenheit und Gießewasser reagierte sie mit bunter Lichtanimation und wurde 2019 Sieger beim Sevenval-Hackathon.
                       <a
                         class="iconlink github"
-                        href="https://github.com/openmindculture/arduino"
-                        title="github.com/openmindculture/arduino"
+                        href="https://github.com/openmindculture/arduino-woodhack"
+                        title="github.com/openmindculture/arduino-woodhack"
                         target="_blank"
                         rel="noopener"
                       >
@@ -426,40 +435,12 @@ domain-verify: 4c4296e5835f4a47eb2c2e5488a99d71
                   <p>
                     <span class="hashtag">Arduino</span>
                     <span class="hashtag">C++</span>
-                    <span class="hashtag">cpp</span>
+                    <span class="hashtag">Hackathon</span>
                   </p>
                 </div>
 
               </article>
 
-              <article class="tile tile-height" id="meetup-webperf-orga">
-                <div class="flex bg-peel  pl1">
-                  <header>
-                    <h3><span class="text-line">Meetup-Organisation</span></h3>
-                  </header>
-                  <p>
-                    <span class="text-line">
-                      Anfang 2020 übernahm ich die fachliche Leitung des Kölner Web-Performance-Meetups. Diverse internationale Vorträge, unter anderem von Patrick Meenan, Andrew Petryk, Anna Backs und Christina Zenzes begeisterten das Publikum über die Grenzen der Region hinaus.
-
-                      <a
-                        class="iconlink arrow"
-                        href="https://www.meetup.com/cologne-germany-high-performance-website-optimization-group/"
-                        title="www.meetup.com/cologne-germany-high-performance-website-optimization-group"
-                        target="_blank"
-                        rel="noopener"
-                      >
-                      www.meetup.com/cologne-germany-high-performance-website-optimization-group
-                      </a>
-                    </span>
-                  </p>
-                  <p>
-                    <span class="hashtag">Meetup</span>
-                    <span class="hashtag">Event-Management</span>
-                    <span class="hashtag">Web-Performance</span>
-                    <span class="hashtag">Zoom-Meeting</span>
-                  </p>
-                </div>
-              </article>
             </div>
           </section>
 
@@ -487,16 +468,22 @@ domain-verify: 4c4296e5835f4a47eb2c2e5488a99d71
           </section>
 
           <section class="text-content-layout">
-            <h3 id="skills" class="font-sans">Kenntnisse</h3>
+            <h3 id="skills" class="font-sans">Fachkenntnisse</h3>
             <ul class="grid-container skills">
               <li class="tile">
                 <h4 class="font-sans">Web-Entwicklung</h4>
                 <ul>
-                  <li>HTML</li>
+                  <li>
+                    HTML
+                    <div class="hashtags">
+                     <span class="hashtag">HTML 5</span>
+                      <span class="hashtag">Accessibility</span>
+                      <span class="hashtag">SEO</span>
+                    </div>
+                  </li>
                   <li>
                     CSS
                     <div class="hashtags">
-                      <span class="hashtag">CSS</span>
                       <span class="hashtag">CSS 3</span>
                       <span class="hashtag">SCSS</span>
                       <span class="hashtag">PostCSS</span>
@@ -506,18 +493,17 @@ domain-verify: 4c4296e5835f4a47eb2c2e5488a99d71
                   <li>
                     JavaScript
                     <div class="hashtags">
-                      <span class="hashtag">JavaScript</span>
                       <span class="hashtag">ES6</span>
-                      <span class="hashtag">node.js</span>
+                      <span class="hashtag">ES 2021</span>
+                      <span class="hashtag">React</span>
                       <span class="hashtag">Vue.js</span>
-                      <span class="hashtag">ReactJS</span>
+                      <span class="hashtag">node.js</span>
                     </div>
                   </li>
 
                   <li>
                     PHP
                     <div class="hashtags">
-                      <span class="hashtag">PHP</span>
                       <span class="hashtag">PHP 7</span>
                       <span class="hashtag">Composer</span>
                       <span class="hashtag">PHPStan</span>
@@ -525,7 +511,6 @@ domain-verify: 4c4296e5835f4a47eb2c2e5488a99d71
                   </li>
                   <li>XML
                     <div class="hashtags">
-                      <span class="hashtag">XML</span>
                       <span class="hashtag">XPath</span>
                       <span class="hashtag">XSLT</span>
                       <span class="hashtag">SOAP</span>
@@ -538,7 +523,7 @@ domain-verify: 4c4296e5835f4a47eb2c2e5488a99d71
                     <div class="hashtags">
                       <span class="hashtag">MySQL</span>
                       <span class="hashtag">MariaDB</span>
-                      <span class="hashtag">Oracle SQL</span>
+                      <span class="hashtag">Oracle</span>
                       <span class="hashtag">MongoDB</span>
                     </div>
                   </li>
@@ -546,14 +531,14 @@ domain-verify: 4c4296e5835f4a47eb2c2e5488a99d71
                 </ul>
               </li>
               <li class="tile">
-                <h4 class="font-sans">Frameworks und CMS</h4>
+                <h4 class="font-sans">Frameworks, Libraries</h4>
                 <ul>
                   <li>ReactJS</li>
-                  <li>WordPress</li>
-                  <li>Eleventy</span>
-                  <li>Symfony</li>
-                  <li>jQuery</li>
                   <li>Vue.js</li>
+                  <li>node.js</li>
+                  <li>Symfony</li>
+                  <li>Eleventy</span>
+                  <li>jQuery</li>
                   </ul>
               </li>
 
@@ -564,13 +549,22 @@ domain-verify: 4c4296e5835f4a47eb2c2e5488a99d71
                     Qualitätssicherung
                     <div class="hashtags">
                       <span class="hashtag">Jest</span>
-                      <span class="hashtag">Storybook</span>
-                      <span class="hashtag">Lighthouse</span>
                       <span class="hashtag">Cypress</span>
+                      <span class="hashtag">Lighthouse</span>
+                      <span class="hashtag">Storybook</span>
                     </div>
                   </li>
                   <li>
-                    Codegenerierung
+                    Codeverwaltung
+                    <div class="hashtags">
+                      <span class="hashtag">Git</span>
+                      <span class="hashtag">GitHub</span>
+                      <span class="hashtag">GitLab</span>
+                      <span class="hashtag">SVN</span>
+                    </div>
+                  </li>
+                  <li>
+                    Linter, Transpiler
                     <div class="hashtags">
                       <span class="hashtag">Babel</span>
                       <span class="hashtag">PostCSS</span>
@@ -585,24 +579,24 @@ domain-verify: 4c4296e5835f4a47eb2c2e5488a99d71
                       <span class="hashtag">Jenkins</span>
                       <span class="hashtag">npm</span>
                       <span class="hashtag">yarn</span>
-                      <span class="hashtag">Composer</span>
-                    </div>
-                  </li>
-                  <li>
-                    Versionierung
-                    <div class="hashtags">
-                      <span class="hashtag">Git</span>
-                      <span class="hashtag">GitLab</span>
-                      <span class="hashtag">GitHub</span>
-                      <span class="hashtag">SVN</span>
+                      <span class="hashtag">Netlify</span>
                     </div>
                   </li>
                   <li>
                     Bildbearbeitung
                     <div class="hashtags">
                       <span class="hashtag">GIMP</span>
-                      <span class="hashtag">ImageMagick</span>
                       <span class="hashtag">Inkscape</span>
+                      <span class="hashtag">ImageMagick</span>
+                    </div>
+                  </li>
+                  <li>
+                    Webdesign, Kollaboration
+                    <div class="hashtags">
+                      <span class="hashtag">Zeplin</span>
+                      <span class="hashtag">Webflow</span>
+                      <span class="hashtag">Trello</span>
+                      <span class="hashtag">Jira</span>
                     </div>
                   </li>
                 </ul>
@@ -612,7 +606,7 @@ domain-verify: 4c4296e5835f4a47eb2c2e5488a99d71
           </section>
 
           <section class="text-content-layout text-content-color">
-            <h2 id="about">
+            <h2 id="about-me">
               Beruf und Leidenschaft
             </h2>
             <article>
@@ -630,7 +624,7 @@ domain-verify: 4c4296e5835f4a47eb2c2e5488a99d71
                 Erste Erfahrungen mit Programmierung und Computergrafik machte ich als Schüler am heimischen Computer. Der Speicherplatz war knapp. Software tippte ich zunächst aus gedruckten Büchern ab. Schnell begann ich, selbst zu programmieren.
               </p>
               <p>
-                Nach meinem Zivildienst als Pflegediensthelfer studierte ich Psychologie und Kommunikationswissenschaften an der Uni Münster. Nebenbei lernte ich das Internet und die Programmiersprache HTML kennen. Musiker und Veranstalter erkannten mein Talent. Aus dem Hobby wurde ein Job und schließlich mein Beruf.
+                Nach meinem Zivildienst studierte ich Psychologie und Kommunikationswissenschaften an der Uni Münster. Nebenbei lernte ich das Internet und die Programmiersprache HTML kennen. Musiker und Veranstalter erkannten mein Talent. Aus dem Hobby wurde ein Job und schließlich mein Beruf.
               </p>
               <p>
                 Mit Flash, CSS und schnellerer Datenübertragen gewann das Internet eine Dynamik, die die Gründung eines Startups nahelegte. Mit meinem Geschäftspartner entwickelte ich zunächst interaktive Webseiten und Browserspiele in Flash. Suchmaschinenoptimierung und unsere selbst entwickelte CMS- und Shop-Software prägten später unser Geschäft. 2010 verließ ich das eigene Unternehmen und zog der Familie wegen nach Düsseldorf.
@@ -654,12 +648,16 @@ domain-verify: 4c4296e5835f4a47eb2c2e5488a99d71
 
               <h4>Weiterbildung</h4>
               <p>
-                Durch Recherche und praktische Anwendung gewinne ich täglich neue Erkenntnisse. Zur Vertiefung lese ich Fachliteratur und besuche Veranstaltungen. Weiteres Wissen erhalte ich in Foren und Online-Kursen.
+                Durch Recherche und praktische Anwendung gewinne ich täglich neue Erkenntnisse.
+                <br>
+                Zur Vertiefung lese ich Fachliteratur und besuche Kurse und Veranstaltungen.
               </p>
 
-            <h3>Vorträge und Veranstaltungen</h3>
+            <h3 id="talks-events">Vorträge und Veranstaltungen</h3>
             <p>
-              Auf Fachveranstaltungen teile ich dieses Wissen mit anderen. Meetups, Konferenzen, Foren und firmeninterne Fortbildungen nutze ich regelmäßig und gern.<br>
+              Auf Fachveranstaltungen teile ich mein Wissen mit anderen.
+              <br>
+              Meetups, Konferenzen, Foren und Fortbildungen nutze ich regelmäßig und gern.<br>
               In den letzten Jahren hielt ich unter anderem diese Vorträge:
               <ul>
                 <li>

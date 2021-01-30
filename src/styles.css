@@ -61,78 +61,35 @@ a:hover {
 
 .hashtag:first-child {
   background-color: var(--hashtag-bg1);
-  color: var(--hashtag-fg1);
 }
 
 .hashtag:nth-child(2) {
   background-color: var(--hashtag-bg2);
-  color: var(--hashtag-fg2);
 }
 
 .hashtag:nth-child(3) {
   background-color: var(--hashtag-bg3);
-  color: var(--hashtag-fg3);
 }
 
 .hashtag:nth-child(4) {
   background-color: var(--hashtag-bg4);
-  color: var(--hashtag-fg4);
 }
 
 .hashtag:nth-child(5) {
   background-color: var(--hashtag-bg5);
-  color: var(--hashtag-fg5);
 }
 
 .hashtag:nth-child(6) {
   background-color: var(--hashtag-bg6);
-  color: var(--hashtag-fg6);
 }
 
 .hashtag:nth-child(7) {
   background-color: var(--hashtag-bg7);
-  color: var(--hashtag-fg7);
 }
 
 .hashtag:nth-child(8) {
   background-color: var(--hashtag-bg8);
-  color: var(--hashtag-fg8);
 }
-
-/* .contactform {
-  margin: 0.5em auto 1em auto;
-  width: 90%;
-  text-align: center;
-}
-
-.contactform label {
-  display: block;
-  width: 90%;
-}
-
-.contactform textarea {
-  height: 5em;
-}
-
-.contactform input,
-.contactform textarea,
-.contactform .submit {
-  border: solid 1px silver;
-  border-radius: 0.5em;
-  padding: 0.25em 0.5em 0.25em 0.5em;
-  margin: 0 0 0.25em -0.5em;
-  width: 90%;
-  line-height: 1.75;
-  font-family: var(--sans-font-family);
-  font-weight: var(--body-font-weight);
-}
-
-.contactform .submit {
-  background-color: #283583;
-  border: none;
-  color: #fff;
-  padding: 0.5em;
-} */
 
 .page-footer {
   color: #fff;
@@ -167,7 +124,6 @@ a:hover {
 -* und auch deren Boerder hätte nichts im critical verloren, bloß die Höhe */
 
 .flow-grid {
-  /* background-image: url(img/flow-grid.svg); */
   background-size: auto;
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -175,9 +131,7 @@ a:hover {
 }
 
 .flow-grid .tile {
-  font-size: 0.95em;
-  line-height: 1.5;
-  max-height: 333px;
+  line-height: 2;
   border: dashed 1px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -214,14 +168,6 @@ a.iconlink.iconlink {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='14' viewBox='0 0 16 15' width='14'%3E%3Cpath fill='%23ffffff' fill-rule='evenodd' d='M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z'/%3E%3C/svg%3E");
 }
 
-.bg-img {
-  color: var(--primary-heading);
-
-  /* background-color: var(--primary-background); */
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .bg-peel {
   background: linear-gradient(135deg, transparent 0%, var(--peel-gradient-semitrans) 15%, var(--peel-gradient) 60%);
   height: 100%;
@@ -229,54 +175,6 @@ a.iconlink.iconlink {
 
 .bg-peel:hover {
   background-image: none;
-}
-
-.bg-peel span.text-line {
-  background-color: var(--primary-background);
-}
-
-.bg-peel:hover span.text-line {
-  background-color: var(--peel-text-line-bg);
-}
-
-/* TODO Textkürzung aber was passiert mit dem abgeschnittenen Teil???? */
-
-/* on click lightboxmässig vergrößern? */
-
-/* print ungekürzt? */
-
-/* Der Verlauf ist einerseits schön, andererseist mit dme dunkelblau zu "bunt",
-    zu metallisch, zu unharmonisch mit dem Hipsterhintergrund der Seite.
-    Auch das Rosé gefällt mir noch nicht wirklich.
-    Eventuell doch auf Gelbtöne wechseln?
-*/
-
-/* .img-meetup {
-  background-image: url(img/meetup-angelina-farsch-ingo-steinke-2020.jpg);
-}
-
-.img-sw-plugin {
-  background-image: url(img/shopware-plugin-for-wao-io.jpg);
-}
-
-.img-wp-plugin {
-  background-image: url(img/wordpress-plugin-for-wao-io.jpg);
-}
-
-.img-react-app {
-  background-image: url(img/react-app-wao-io.jpg);
-}
-
-.img-kleiderordnung {
-  background-image: url(img/kleiderordnung-website.jpg);
-}
-
-.img-wp-theme {
-  background-image: url(img/wordpress-theme-open-mind-culture.jpg);
-} */
-
-.img-woodhack {
-  background-image: url(img/woodhack-hackathon-2019-teamwork-arduino-green-wall-e.jpg);
 }
 
 .hashtags {
@@ -320,20 +218,27 @@ ul.grid-container.skills {
 
 .skills h4 {
   color: #fff;
+  font-size: 1.25em;
 }
 
 .skills > .tile {
-  background-color: var(--exuberant-orange-pantone);
+  background-color: var(--skills-tile-background);
   color: #000;
   padding-left: 1em;
 }
 
-.skills > .tile li {
-  background: #fff;
-  padding: 1em;
-  margin-bottom: 1em;
-}
-
 .skills > .tile ul {
   list-style-type: none;
+  padding: 0 1em 0 0;
+}
+
+.skills > .tile li {
+  background: #fff;
+  padding: 0.75em 1em 0.75em 1em;
+  margin-bottom: 1em;
+  min-height: 5.5em;
+}
+
+.skills .tile .hashtag {
+  border-radius: 0;
 }

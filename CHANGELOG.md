@@ -1,8 +1,7 @@
-## [2.0.1] unreleased (scheduled for January 2021)
+## [2.0.1] unreleased (scheduled for February 2021)
 ### added
-- ux: navigation menu; 101
-- ux: animations and other optional details; 101
-- ux: contact form; 101
+- content: english language version
+- qa: automated testing
 ### fixes
 - various fixes after live testing 2.0.0
 
@@ -10,6 +9,8 @@
 ### added
 - ux: responsive grid layout; 101
 - ux: new theme and typography; 101
+- ux: navigation menu; 101
+- ux: animations and other optional details; 101
 - a11y, seo: accessible semantic markup; 120
 - content: add showcases and skills; 110
 - content: updated German description; 110
