@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="../src/_includes/design-tokens.css">
+    <link rel="stylesheet" href="../src/_includes/critical.css">
+    <link rel="stylesheet" href="../src/styles.css">
+    <style type="text/css">
+      .contactform {
+        margin: 0.5em auto 1em auto;
+        width: 90%;
+        text-align: center;
+      }
+
+      .contactform label {
+        display: block;
+        width: 90%;
+      }
+
+      .contactform textarea {
+        height: 5em;
+      }
+
+      .contactform input,
+      .contactform textarea,
+      .contactform .submit {
+        border: solid 1px silver;
+        border-radius: 0.5em;
+        padding: 0.25em 0.5em 0.25em 0.5em;
+        margin: 0 0 0.25em -0.5em;
+        width: 90%;
+        line-height: 1.75;
+        font-family: var(--sans-font-family);
+        font-weight: var(--body-font-weight);
+      }
+
+      .contactform .submit {
+        background-color: #283583;
+        border: none;
+        color: #fff;
+        padding: 0.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <form
+      name="contact-isd"
+      method="POST"
+      data-netlify="true"
+      id="contactform"
+      class="contactform"
+      action="//ingo-steinke.de/#contact-submitted"
+    >
+      <label for="Name">
+        <input type="text" required="" name="Name" id="Name" placeholder="Mein Name" label="Name">
+      </label>
+
+      <label for="E-Mail">
+        <input type="email" name="E-Mail" id="E-Mail" placeholder="Meine E-Mail-Adresse" label="E-Mail">
+      </label>
+
+      <label for="Telefon">
+        <input type="tel" name="Telefon" id="Telefon" placeholder="Meine Telefonnummer" label="Telefon">
+      </label>
+
+      <label for="Nachricht">
+        <textarea
+          name="Nachricht"
+          id="Nachricht"
+          placeholder="Meine Nachricht an Ingo Steinke"
+          label="Meine Nachricht an Ingo Steinke"
+        ></textarea>
+      </label>
+      <label for="Datenschutzerklaerung_zur_Kenntnis genommen">
+        <textarea
+          name="Datenschutzhinweis"
+          id="Datenschutzhinweis"
+          readonly="readonly"
+          placeholder="Meine Kontaktdaten werden zwecks eventueller vorvertraglicher Maßnahmen übermittelt und gespeichert. Die Datenschutzerklärung informiert über Rechtsgrundlage, Art der Datenverarbeitung, Lösch- und Widerrufsmöglichkeit."
+        ></textarea>
+      </label>
+
+      <input type="submit" class="submit" value="absenden">
+    </form>
+  </body>
+</html>

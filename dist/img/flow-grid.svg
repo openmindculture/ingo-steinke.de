@@ -1,0 +1,132 @@
+<svg
+  version="1.1"
+  xmlns="http://www.w3.org/2000/svg"
+  x="0px"
+  y="0px"
+	width="1224px"
+  height="1584px"
+  viewBox="0 0 612 792"
+>
+
+  <style>
+    .dashed,
+    .dashed-smaller,
+    .dashed-larger {
+      fill: none;
+      stroke: #1d4950;
+      stroke-width: 4;
+    }
+
+    .dashed {
+      stroke-dasharray: 10;
+    }
+
+    .dashed-smaller {
+      stroke-dasharray: 7;
+    }
+
+    .dashed-larger {
+      stroke-dasharray: 12;
+    }
+
+    .path {
+      fill: none;
+      stroke: #fff;
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation: dash 5s linear infinite;
+    }
+
+    @keyframes dash {
+      from {
+        stroke-dashoffset: 1000;
+      }
+
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+  </style>
+
+  <!-- first path with very large dash array offset gives the illusion of the path being drawn, caused by animating the giant dashing along the path -->
+  <path
+    class="path"
+    stroke-linejoin="round"
+    stroke-miterlimit="10"
+    d="M 225 0 C 227.5 75 232.5 175 227.5 225 C 225 250 227.5 275 227.5 300 L 227.5 450"
+  />
+  <!-- background-coloured dashed same shape always there, dives the smaller dashes look -->
+  <path
+    class="dashed"
+    stroke-linejoin="round"
+    stroke-miterlimit="10"
+    d="M 225 0 C 227.5 75 232.5 175 227.5 225 C 225 250 227.5 275 227.5 300 L 227.5 450"
+  />
+
+  <!-- repeat above technique for the rest of our grid,
+    and modify the pseudo randomness
+  -->
+
+  <!-- Second Gutter Column: -->
+
+  <path
+    class="path"
+    stroke-linejoin="round"
+    stroke-miterlimit="10"
+    d="M 445 0 v 1000"
+  />
+
+  <path
+    class="dashed-smaller"
+    stroke-linejoin="round"
+    stroke-miterlimit="10"
+    d="M 445 0 v 1000"
+  />
+
+    <!-- Third Gutter Column: -->
+
+  <path
+    class="path"
+    stroke-linejoin="round"
+    stroke-miterlimit="10"
+    d="M 665 0 l 5 1000"
+  />
+
+  <path
+    class="dashed"
+    stroke-linejoin="round"
+    stroke-miterlimit="10"
+    d="M 665 0 l 5 1000"
+  />
+
+  <!-- first horizontal -->
+  <path
+    class="path"
+    stroke-linejoin="round"
+    stroke-miterlimit="10"
+    d="M 0 175 l 400 -4"
+  />
+
+  <path
+    class="dashed-larger"
+    stroke-linejoin="round"
+    stroke-miterlimit="10"
+    d="M 0 175 l 400 -4"
+  />
+
+    <!-- second horizontal -->
+  <path
+    class="path"
+    stroke-linejoin="round"
+    stroke-miterlimit="10"
+    d="M 0 345 l 400 5"
+  />
+
+  <path
+    class="dashed-smaller"
+    stroke-linejoin="round"
+    stroke-miterlimit="10"
+    d="M 0 345 l 400 5"
+  />
+
+</svg>

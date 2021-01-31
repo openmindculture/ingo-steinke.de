@@ -1,3 +1,9 @@
+@import 'design-tokens.css';
+
+/* TODO hier nur above the fold und wichtige layout gegen CLS */
+
+/* viel viel mehr in die styles.css zumal wenn es mehrere Seiten geben können soll */
+
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
@@ -9,187 +15,315 @@
 }
 
 @font-face {
-  font-family: 'Montserrat';
+  font-family: 'Bitter';
   font-style: normal;
-  font-weight: 800;
+  font-weight: 700;
   src:
     local(''),
-    url('fonts/montserrat-v15-latin-ext_latin-800.woff2') format('woff2'),
-    url('fonts/montserrat-v15-latin-ext_latin-800.woff') format('woff');
+    url('fonts/bitter-v16-latin-700.woff2') format('woff2'),
+    url('fonts/bitter-v16-latin-700.woff') format('woff');
 }
 
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 400;
-  src:
-    local(''),
-    url('fonts/raleway-v18-latin-ext_latin-regular.woff2') format('woff2'),
-    url('fonts/raleway-v18-latin-ext_latin-regular.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Raleway';
-  font-style: italic;
-  font-weight: 400;
-  src:
-    local(''),
-    url('fonts/raleway-v18-latin-ext_latin-italic.woff2') format('woff2'),
-    url('fonts/raleway-v18-latin-ext_latin-italic.woff') format('woff');
-}
-
-body,
 html {
-  font-size: 14px;
-  font-family: Montserrat, Helvetica, sans-serif;
-  line-height: 1.5;
-  color: #191970;
-  background-color: #fff;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  line-height: 1.75;
+  font-family: var(--sans-font-family);
+  font-weight: var(--body-font-weight);
+  color: var(--primary-foreground);
+  background-color: var(--primary-background);
   margin: 0;
   padding: 0;
 }
 
-body {
-  display: grid;
-  align-items: center;
-  justify-items: center;
-  min-height: 100vh;
-}
-
 h1,
 h2,
-h3 {
-  font-size: 1.125em;
-  color: #191970;
-  font-family: Raleway, Helvetica, sans-serif;
+h3,
+h4,
+#sticky-headline,
+#sticky-headline a {
+  font-family: var(--heading-font-family);
+  font-weight: var(--heading-font-weight);
+  letter-spacing: 0.0125rem;
+  color: var(--primary-heading);
 }
 
-h1 {
-  margin: 5px 0 0 0;
-  padding: 0 0 0 1em;
-  float: left;
+h2,
+h3,
+h4 {
+  font-size: 1.5rem;
+  line-height: 1.5;
 }
 
-h2 {
-  margin: 4px auto 10px auto;
-}
+@media screen {
+  .only-print {
+    display: none;
+  }
 
-h3 {
-  margin: 14px auto 10px auto;
-}
+  .page-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
 
-p {
-  color: #002;
-}
+  .hero-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
 
-.clr {
-  clear: both;
-}
+    /* Das Foto ist auf großen Bildschirmen (test in devtools simuliert)
+       zu klein, weil es, anders als der Text, nicht mehr mitwächst,
+       könnte es aber noch ein bisschen (responsive picture element).
+       Mobil landscape ist zuwenig auf dem Schirm zu sehen, hier ist entweder zu
+       früzh kein 100vh oder gerade der ist verkehrt,
+       entweder den Breakpoint verschieben, opder noch besser eine glaobele Lösung.
+       Auf querförmigen Riesenbildschirmen funktioniert die Textgröße super.
+    */
+  }
 
-.flr {
-  float: right;
-}
+  .hero-header h1 {
+    font-size: 5rem;
+    font-size: 13vh;
+    line-height: 1.25;
+    letter-spacing: 0.125rem;
+    padding: 0;
+    margin: 0;
 
-a:link {
-  color: #191980;
-  text-decoration: none;
-}
+    /* gradient on text */
+    background: -webkit-linear-gradient(var(--gradient-heading), var(--primary-heading));
+    background-clip: unset;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
-a:visited {
-  color: #191980;
-  text-decoration: none;
-}
+  .hero-header p {
+    font-size: 2.325rem;
+    font-size: 6vh;
+    font-family: var(--body-font);
+    font-weight: var(--body-font-weight);
+    color: var(--primary-heading);
+    padding: 0;
+    margin: 0;
+  }
 
-a:active {
-  color: #00f;
-  text-decoration: none;
-}
+  .sticky-header {
+    position: sticky;
+    top: -1px;
+    z-index: 10;
 
-a:hover {
-  color: #00f;
-  text-decoration: underline;
-}
+    /* optional decorative styles */
+    width: 100%;
+    height: 2.25em;
+    text-align: center;
+    background-color: var(--primary-background);
+  }
 
-.outercontainer {
-  margin: 0 auto 0.5em;
-  padding: 0.5em 0 0 0;
-  min-width: 220px;
-  text-align: left;
-}
+  .sticky-header > .wrapper {
+    box-shadow: 0 7px 14px 0 rgba(29, 73, 80, 0.75);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-.innercontainer {
-  padding: 1em;
-  margin-bottom: 0.5em;
-  position: relative;
-  border: solid 1px #ccf;
-  clear: both;
-  border-radius: 0.25em;
-}
+  .sticky-header > .wrapper img.avatar {
+    margin: 6px 6px -6px 6px;
+  }
 
-.innercontainer section {
-  display: block;
-  margin-bottom: 1.75em;
-}
+  .sticky-header .temporary-nav-wrapper {
+    margin: 6px 1em -6px 6px;
+  }
 
-.innercontainer ul {
-  padding: 0 0 0 1.5em;
-}
+  /* Don’t Headbutt The Browser Window by Chris Coyer
+  /*https://css-tricks.com/hash-tag-links-padding/ */
+  .target-offset::before {
+    display: block;
+    content: " ";
+    margin-top: -45px;
+    height: 45px;
+    visibility: hidden;
+    pointer-events: none;
+  }
 
-.visuallyhidden {
-  display: none;
-}
+  main {
+    max-width: 1500px;
+    margin: 0 auto;
+  }
 
-.right {
-  float: right;
-  position: relative;
-  right: 0;
-  top: 0;
-  text-align: right;
-}
+  .page-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
 
-img.photo {
-  border-radius: 50%;
-}
+  .text-content-layout {
+    padding: 0.5em 0 1em 1em;
+    margin: 0 0 2em 0;
+  }
 
-a.tw-btn {
-  background-color: #0c7abf;
-  color: #fff;
-  display: inline-block;
-  border-radius: 0.25em;
-  margin: 0.0325em 0.25em 0.25em 0;
-  padding: 0.2em 0.5em 0.2em 0.25em;
-}
+  .text-content-color {
+    background-color: var(--secondary-background);
+    color: #000;
+  }
 
-a.xi-btn {
-  background-color: #00605e;
-  color: #fff;
-  display: inline-block;
-  border-radius: 0.25em;
-  margin: 0.0325em 0 0.25em 0;
-  padding: 0.2em 0.5em 0.2em 0.2em;
-}
+  .text-content-color h2,
+  .text-content-color h3,
+  .text-content-color h4 {
+    color: var(--secondary-heading);
+  }
 
-a.gh-btn {
-  background-color: #24292e;
-  color: #fff;
-  display: inline-block;
-  border-radius: 0.25em;
-  margin: 0.0325em 0.25em 0.25em 0;
-  padding: 0.15em 0.5em 0.25em 0.2em;
-}
+  .capitalized::first-letter {
+    float: left;
+    font-size: 3.25rem;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+  }
 
-.social-btn svg {
-  margin: 0 0.25em 0 0.25em;
-}
+  /* TODO alle Elementselektoren durch Klassennamen ersetzen */
 
-@media only screen and (max-width: 600px) {
-  .outercontainer { margin: 0 2px 5px 2px; }
-  .innercontainer { padding: 5px; }
-  h1 { margin: 5px 5px 8px 0; }
-  .social-btn svg { margin: 0 1em; }
-  .social-btn span { display: none; }
-}
+  .tiled-content {
+    background-color: var(--primary-background);
+    margin: 0 1em 2em 0;
+  }
 
-@media only screen and (min-width: 640px) {
-  .outercontainer { width: 640px; }
+  section,
+  .clear {
+    clear: both;
+  }
+
+  .grid-container {
+    display: -ms-grid;
+    display: grid;
+    clear: both;
+    grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+    -ms-grid-columns: 1fr (440px)[3];
+    grid-column-gap: 3em;
+    grid-row-gap: 2em;
+  }
+
+  /* float fallback does not apply inside grid layout */
+  .grid-container > * {
+    display: block;
+    float: left;
+  }
+
+  ul.grid-container {
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
+    list-style-type: none;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    -ms-grid-columns: 1fr (266px)[3];
+    grid-column-gap: 1em;
+  }
+
+  .text-width {
+    max-width: 1300px;
+  }
+
+  .tile img.project-thumb {
+    width: 4em;
+    height: auto;
+    float: right;
+    margin: 1em;
+  }
+
+  .row {
+    display: block;
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* float fallback does not apply to flex children */
+  .row > * {
+    float: left;
+  }
+
+  .page-navigation {
+    position: relative;
+    display: none;
+  }
+
+  .credits,
+  .decoration {
+    font-size: 0.75rem;
+  }
+
+  .visually-hidden {
+    display: none;
+  }
+
+  @supports selector(*:target) {
+    .initially-hidden {
+      display: none;
+    }
+
+    .initially-hidden:target {
+      display: initial;
+    }
+  }
+
+  img.avatar {
+    border-radius: 50%;
+  }
+
+  a.tw-btn,
+  a.tw-btn:link,
+  a.tw-btn:visited,
+  a.tw-btn:active,
+  a.tw-btn:hover {
+    background-color: #0c7abf;
+    color: #fff;
+    display: inline-block;
+    border-radius: 0.25em;
+    margin: 0.0325em 0.25em 0.25em 0;
+    padding: 0.2em 0.5em 0.2em 0.25em;
+    text-decoration: none;
+  }
+
+  a.gh-btn,
+  a.gh-btn:link,
+  a.gh-btn:visited,
+  a.gh-btn:active,
+  a.gh-btn:hover {
+    background-color: #24292e;
+    color: #fff;
+    display: inline-block;
+    border-radius: 0.25em;
+    margin: 0.0325em 0.25em 0.25em 0;
+    padding: 0.15em 0.5em 0.25em 0.2em;
+    text-decoration: none;
+  }
+
+  .social-btn svg {
+    margin: 0 0.25em 0 0.25em;
+  }
+
+  .sticky-header a:link,
+  .sticky-header a:visited,
+  .sticky-header a:active,
+  .page-navigation a:link,
+  .page-navigation a:visited,
+  .page-navigation a:active {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  @media only screen and (max-width: 600px) {
+    /* in case we need viewport based queries */
+  }
 }
