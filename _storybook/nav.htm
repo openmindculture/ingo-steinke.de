@@ -10,23 +10,7 @@
     <link rel="stylesheet" href="../src/styles.css">
     <style>
 nav {
-  display: block !important;
-}
-
-a,
-a:link,
-a:visited,
-a:active,
-a:hover {
-  color: #fff;
-  text-decoration: none;
-}
-
-/* emulate font-awful and bootstrap classes from example code */
-.fa-close::after {
-  content: "X";
-  width: 1em;
-  height: 1em;
+  /* display: block !important; */
 }
 
 /* Screen reader only */
@@ -46,15 +30,6 @@ a:hover {
 /* Button styling */
 .menu-toggle {
   display: inline-block;
-  padding: 0.75em 15px;
-  line-height: 1em;
-  font-size: 1em;
-  color: #333;
-}
-
-.menu-toggle:hover,
-.menu-toggle:focus {
-  color: #c00;
 }
 
 /*
@@ -67,7 +42,7 @@ Offscreen menu style
   left: -200px;
   top: 0;
   height: 100%;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: visible;
   transition:
     left 0.3s ease,
@@ -162,11 +137,48 @@ Offscreen menu style
   cursor: default;
 }
 
-@supports (position: fixed) {
-  .main-menu,
-  .main-menu:target + .backdrop,
-  .main-menu[aria-expanded="true"] + .backdrop {
-    position: fixed;
+/*
+ Larger screen styling
+ Horizontal menu
+*/
+@media (min-width: 678px) {
+  .menu-toggle,
+  .main-menu .menu-close {
+    display: none;
+  }
+
+  /* Undo positioning of off-canvas menu */
+  .main-menu {
+    position: relative;
+    left: auto;
+    top: auto;
+    height: auto;
+    display: block;
+  }
+
+  .main-menu ul {
+    display: flex;
+
+    /* Undo off-canvas styling */
+    padding: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    height: auto;
+    width: auto;
+    background: none;
+  }
+
+  .main-menu a {
+    color: #06c;
+    border: 0 !important; /* Remove borders from off-canvas styling */
+    white-space: nowrap;
+  }
+
+  .main-menu a:hover,
+  .main-menu a:focus {
+    background: none; /* Remove background from off-canvas styling */
+    color: #c00;
   }
 }
     </style>
@@ -205,12 +217,11 @@ Offscreen menu style
           class="menu-close"
           aria-label="Inhaltsverzeichnis schließen"
         >
-          <span class="fa fa-close"></span>
+          <span class="fa fa-close">X</span>
         </a>
         <ul>
-          <li><a href="#top" title="Seitenanfang">Ingo Steinke</a></li>
           <li><a href="#projects">Projekte</a></li>
-          <li><a href="#skills">Kenntnisse</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#about-me">Über mich</a></li>
           <li><a href="#talks-events">Vorträge</a></li>
           <li><a href="#contact">Kontakt</a></li>

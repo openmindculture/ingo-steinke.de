@@ -1,9 +1,6 @@
-## [2.0.1] unreleased (scheduled for February 2021)
+## [2.0.1] - 2021-01-31
 ### added
-- content: english language version
-- qa: automated testing
-### fixes
-- various fixes after live testing 2.0.0
+- ux: responsive navigation menu; 131
 
 ## [2.0.0] - 2021-01-31 - Relaunch Release
 ### added
