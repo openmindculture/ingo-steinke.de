@@ -47,5 +47,5 @@ RewriteCond %{HTTPS} off
 RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 # Now, rewrite any request to the wrong domain to use www.
 # [NC] is a case-insensitive match
-RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteCond %{HTTP_HOST} !^www\.ingo-steinke [NC]
 RewriteRule .* https://www.ingo-steinke.de%{REQUEST_URI} [L,R=301]

@@ -35,15 +35,6 @@ html {
   box-sizing: inherit;
 }
 
-body,
-html {
-  font-size: 14px;
-  font-family: Montserrat, Helvetica, sans-serif;
-  line-height: 1.5;
-  color: #191970;
-  background-color: #fff;
-}
-
 body {
   line-height: 1.75;
   font-family: var(--sans-font-family);
@@ -57,7 +48,9 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+#sticky-headline,
+#sticky-headline a {
   font-family: var(--heading-font-family);
   font-weight: var(--heading-font-weight);
   letter-spacing: 0.0125rem;
@@ -72,6 +65,10 @@ h4 {
 }
 
 @media screen {
+  .only-print {
+    display: none;
+  }
+
   .page-container {
     display: flex;
     flex-direction: row;
@@ -124,14 +121,29 @@ h4 {
 
   .sticky-header {
     position: sticky;
-    top: 0;
+    top: -1px;
     z-index: 10;
 
     /* optional decorative styles */
     width: 100%;
-    height: 30px;
+    height: 2.25em;
     text-align: center;
-    background-color: rgba(100, 100, 100, 90%);
+    background-color: var(--primary-background);
+  }
+
+  .sticky-header > .wrapper {
+    box-shadow: 0 7px 14px 0 rgba(29, 73, 80, 0.75);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .sticky-header > .wrapper img.avatar {
+    margin: 6px 6px -6px 6px;
+  }
+
+  .sticky-header .temporary-nav-wrapper {
+    margin: 6px 1em -6px 6px;
   }
 
   /* Don’t Headbutt The Browser Window by Chris Coyer
@@ -197,10 +209,10 @@ h4 {
     display: -ms-grid;
     display: grid;
     clear: both;
-    grid-template-columns: repeat(auto-fit, 350px);
-    -ms-grid-columns: 1fr (350px)[3];
-    grid-column-gap: 5vw;
-    grid-row-gap: 5vh;
+    grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+    -ms-grid-columns: 1fr (440px)[3];
+    grid-column-gap: 3em;
+    grid-row-gap: 2em;
   }
 
   /* float fallback does not apply inside grid layout */
@@ -214,15 +226,20 @@ h4 {
     padding: 0;
     text-indent: 0;
     list-style-type: none;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    -ms-grid-columns: 1fr (266px)[3];
+    grid-column-gap: 1em;
   }
 
   .text-width {
     max-width: 1300px;
   }
 
-  .tile-height {
-    max-height: 380px;
-    line-height: 2;
+  .tile img.project-thumb {
+    width: 4em;
+    height: auto;
+    float: right;
+    margin: 1em;
   }
 
   .row {
@@ -239,10 +256,6 @@ h4 {
   .page-navigation {
     position: relative;
     display: none;
-  }
-
-  .page-navigation a > * {
-    color: var(--secondary-background);
   }
 
   .credits,
@@ -264,7 +277,7 @@ h4 {
     }
   }
 
-  img.photo {
+  img.avatar {
     border-radius: 50%;
   }
 
@@ -300,34 +313,17 @@ h4 {
     margin: 0 0.25em 0 0.25em;
   }
 
+  .sticky-header a:link,
+  .sticky-header a:visited,
+  .sticky-header a:active,
+  .page-navigation a:link,
+  .page-navigation a:visited,
+  .page-navigation a:active {
+    color: #fff;
+    text-decoration: none;
+  }
+
   @media only screen and (max-width: 600px) {
-    .nav-list {
-      display: none;
-    }
-
-    .nav-btn > span {
-      display: none;
-    }
-
-    .nav-btn > svg {
-      display: inline;
-    }
-
-    .nav-btn:active + .nav-list {
-      display: block;
-      position: absolute;
-    }
+    /* in case we need viewport based queries */
   }
-}
-
-@media only screen and (min-width: 640px) {
-  .innercontainer section {
-    /* fallback to override by grid styling */
-    max-width: 640px;
-    margin: 0 auto;
-  }
-
-  /* .page-navigation {
-    min-width: 1em;
-  } */
 }

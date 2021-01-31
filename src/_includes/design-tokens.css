@@ -30,8 +30,9 @@
   --light-yellowish: #fffcf0;
   --monolith-yellow: #fddc03;
   --trendy-beige: #f3db6d;
-  --dirty-orange: #cf7626;
+  --nougat-beige: #c97d43;
   --brava-orange: #df814b;
+  --dirty-orange: #cf7626;
   --apairandaspare2021: #b86323;
   --wetell-orange: #b4641f;
   --interior-rose: #c78b69;
@@ -69,28 +70,20 @@
   --secondary-background: var(--brava-merino-light);
   --peel-gradient: var(--recolution-greenish-blue);
   --peel-gradient-semitrans: rgba(5, 50, 69, 0.5);
-  --peel-text-line-bg: rgba(0, 128, 0, 0.5);
   --hashtag-default: var(--surftheweb-pantone);
   --hashtag-green: var(--ringana-spermidine-green);
   --hashtag-blue: var(--uxdesign-blue);
+  --skills-tile-background: var(--ringana-omega-purple);
 
   /* colors to alternate by position */
   --hashtag-bg1: var(--oxy-fire);
   --hashtag-bg2: var(--ringana-omega-purple);
   --hashtag-bg3: var(--ringana-spermidine-green);
   --hashtag-bg4: var(--deep-green);
-  --hashtag-bg5: var(--pantone-illuminating);
+  --hashtag-bg5: var(--nougat-beige);
   --hashtag-bg6: var(--stormy-weather-pantone);
   --hashtag-bg7: var(--brava-orange);
   --hashtag-bg8: var(--pantone-inkwell);
-  --hashtag-fg1: #fff;
-  --hashtag-fg2: #fff;
-  --hashtag-fg3: #fff;
-  --hashtag-fg4: #fff;
-  --hashtag-fg5: #000;
-  --hashtag-fg6: #fff;
-  --hashtag-fg7: #fff;
-  --hashtag-fg8: #fff;
 
   /* export typography */
   --sans-font-family: 'Montserrat', 'Helvetica', sans-serif;
