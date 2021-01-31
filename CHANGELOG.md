@@ -5,7 +5,7 @@
 ### fixes
 - various fixes after live testing 2.0.0
 
-## [2.0.0] unreleased (scheduled for January 2021)
+## [2.0.0] - 2021-01-31 - Relaunch Release
 ### added
 - ux: responsive grid layout; 101
 - ux: new theme and typography; 101
