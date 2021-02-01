@@ -136,6 +136,8 @@ h4 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    max-width: 1500px;
+    margin: 0 auto;
   }
 
   .sticky-header > .wrapper img.avatar {
@@ -144,6 +146,15 @@ h4 {
 
   .sticky-header .temporary-nav-wrapper {
     margin: 6px 1em -6px 6px;
+  }
+
+  .sticky-header.is-unstuck .unsticky-hidden {
+    display: none;
+  }
+
+  /* prevent hideable part to disappear underneath menu */
+  .raised-layer {
+    z-index: 2000;
   }
 
   /* Don’t Headbutt The Browser Window by Chris Coyer
