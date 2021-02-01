@@ -357,6 +357,13 @@ Offscreen menu style
     background: none;
   }
 
+  /* horizontal inline fallback will be ignored by flex-able browsers */
+  .main-menu ul li,
+  .sticky-header > .wrapper > .raised-layer {
+    display: inline-block;
+    float: left;
+  }
+
   .main-menu a {
     white-space: nowrap;
   }
