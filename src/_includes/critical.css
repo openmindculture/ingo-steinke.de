@@ -237,8 +237,8 @@ h4 {
     padding: 0;
     text-indent: 0;
     list-style-type: none;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    -ms-grid-columns: 1fr (266px)[3];
+    grid-template-columns: repeat(auto-fit, minmax(328px, 1fr));
+    -ms-grid-columns: 1fr (328px)[3];
     grid-column-gap: 1em;
   }
 
