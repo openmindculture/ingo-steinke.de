@@ -1,3 +1,7 @@
+## [2.0.1] - 2021-02-01
+### fixed
+- ux: nicer hashtag colors; 101:2
+
 ## [2.0.1] - 2021-01-31
 ### added
 - ux: responsive navigation menu; 131

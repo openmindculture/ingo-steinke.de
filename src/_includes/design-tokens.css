@@ -36,6 +36,7 @@
   --apairandaspare2021: #b86323;
   --wetell-orange: #b4641f;
   --interior-rose: #c78b69;
+  --interior-rose-lighter: #f6b692;
 
   /* rottöne und violett */
   --oxy-fire: #dc4942;
@@ -77,14 +78,16 @@
   --skills-tile-background: var(--ringana-omega-purple);
 
   /* colors to alternate by position */
-  --hashtag-bg1: var(--oxy-fire);
-  --hashtag-bg2: var(--ringana-omega-purple);
-  --hashtag-bg3: var(--ringana-spermidine-green);
-  --hashtag-bg4: var(--deep-green);
-  --hashtag-bg5: var(--nougat-beige);
-  --hashtag-bg6: var(--stormy-weather-pantone);
-  --hashtag-bg7: var(--brava-orange);
-  --hashtag-bg8: var(--pantone-inkwell);
+  --hashtag-bg-autumn-1: var(--deep-green);
+  --hashtag-bg-autumn-2: var(--stormy-weather-pantone);
+  --hashtag-bg-autumn-3: var(--pantone-inkwell);
+  --hashtag-bg-autumn-4: var(--ringana-spermidine-green);
+  --hashtag-bg-autumn-5: var(--surftheweb-pantone);
+  --hashtag-bg-spring-1: var(--pantone-illuminating);
+  --hashtag-bg-spring-2: var(--trendy-beige);
+  --hashtag-bg-spring-3: var(--interior-rose-lighter);
+  --hashtag-bg-spring-4: var(--palo-rose);
+  --hashtag-bg-spring-5: var(--brava-orange);
 
   /* export typography */
   --sans-font-family: 'Montserrat', 'Helvetica', sans-serif;
