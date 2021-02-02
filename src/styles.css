@@ -194,7 +194,7 @@ a.iconlink.iconlink {
   background:
     linear-gradient(
       135deg,
-      transparent 0%,
+      var(--primary-background) 0%,
       var(--peel-gradient-semitrans) 15%,
       var(--peel-gradient) 60%
     );
