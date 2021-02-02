@@ -3,7 +3,7 @@ const postcss = require("postcss");
 const postcssCustomProperties = require('postcss-custom-properties');
 
 module.exports = async code => {
-  const rawFilepath = path.join(__dirname, `../src/_includes/above-the-fold.css`);
+  const rawFilepath = path.join(__dirname, `../src/_includes/critical.css`);
   return postcss([
     require("precss"),
     require("postcss-import"),
