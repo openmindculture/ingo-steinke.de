@@ -85,7 +85,7 @@ img.avatar {
   height: auto;
   float: right;
   margin-left: 12pt;
-  border: solid 1px #aaa;
+  border: none;
 }
 
 .grid-container.skills {
