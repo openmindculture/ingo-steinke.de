@@ -8,180 +8,6 @@
     <link rel="stylesheet" href="../src/_includes/design-tokens.css">
     <link rel="stylesheet" href="../src/_includes/critical.css">
     <link rel="stylesheet" href="../src/styles.css">
-    <style>
-nav {
-  /* display: block !important; */
-}
-
-/* Screen reader only */
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-}
-
-/* more style from Mark Caron's demo */
-
-/* Button styling */
-.menu-toggle {
-  display: inline-block;
-}
-
-/*
-Default styles + Mobile first
-Offscreen menu style
-*/
-.main-menu {
-  position: absolute;
-  display: none;
-  left: -200px;
-  top: 0;
-  height: 100%;
-  overflow-y: auto;
-  overflow-x: visible;
-  transition:
-    left 0.3s ease,
-    box-shadow 0.3s ease;
-  z-index: 999;
-}
-
-.main-menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 2.5em 0 0;
-
-  /* Hide shadow w/ -8px while 'closed' */
-  -webkit-box-shadow: -8px 0 8px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: -8px 0 8px rgba(0, 0, 0, 0.5);
-  box-shadow: -8px 0 8px rgba(0, 0, 0, 0.5);
-  min-height: 100%;
-  width: 200px;
-  background: #1a1a1a;
-}
-
-.main-menu a {
-  display: block;
-  padding: 0.75em 15px;
-  line-height: 1em;
-  font-size: 1em;
-  color: #fff;
-  text-decoration: none;
-  border-bottom: 1px solid #383838;
-}
-
-.main-menu a:hover,
-.main-menu a:focus {
-  background: #333;
-  text-decoration: underline;
-}
-
-.main-menu li:first-child a {
-  border-top: 1px solid #383838;
-}
-
-.main-menu .menu-close {
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-/*
-  On small devices, allow it to toggle...
-  */
-
-/*
- :target for non-JavaScript
- [aria-expanded] will be used if/when JavaScript is added to improve interaction, though it's completely optional.
-*/
-.main-menu:target,
-.main-menu[aria-expanded="true"] {
-  display: block;
-  left: 0;
-  outline: none;
-  -moz-box-shadow: 3px 0 12px rgba(0, 0, 0, 0.25);
-  -webkit-box-shadow: 3px 0 12px rgba(0, 0, 0, 0.25);
-  box-shadow: 3px 0 12px rgba(0, 0, 0, 0.25);
-}
-
-.main-menu:target .menu-close,
-.main-menu[aria-expanded="true"] .menu-close {
-  z-index: 1001;
-}
-
-.main-menu:target ul,
-.main-menu[aria-expanded="true"] ul {
-  position: relative;
-  z-index: 1000;
-}
-
-/*
- We could us `.main-menu:target:after`, but
- it wouldn't be clickable.
-*/
-.main-menu:target + .backdrop,
-.main-menu[aria-expanded="true"] + .backdrop {
-  position: absolute;
-  display: block;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 998;
-  background: #000;
-  background: rgba(0, 0, 0, 0.85);
-  cursor: default;
-}
-
-/*
- Larger screen styling
- Horizontal menu
-*/
-@media (min-width: 678px) {
-  .menu-toggle,
-  .main-menu .menu-close {
-    display: none;
-  }
-
-  /* Undo positioning of off-canvas menu */
-  .main-menu {
-    position: relative;
-    left: auto;
-    top: auto;
-    height: auto;
-    display: block;
-  }
-
-  .main-menu ul {
-    display: flex;
-
-    /* Undo off-canvas styling */
-    padding: 0;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-    height: auto;
-    width: auto;
-    background: none;
-  }
-
-  .main-menu a {
-    color: #06c;
-    border: 0 !important; /* Remove borders from off-canvas styling */
-    white-space: nowrap;
-  }
-
-  .main-menu a:hover,
-  .main-menu a:focus {
-    background: none; /* Remove background from off-canvas styling */
-    color: #c00;
-  }
-}
-    </style>
   </head>
   <body>
     <h1>
@@ -198,44 +24,51 @@ Offscreen menu style
     </p>
 
     <div class="some-wrapper">
-      <a href="#main-menu"
-        id="main-menu-toggle"
-        class="menu-toggle"
-        aria-label="Inhaltsverzeichnis öffnen">
-      <span class="sr-only">Inhaltsverzeichnis öffnen</span>
-      Inhalt
-    </a>
-
-      <nav
-        id="main-menu"
-        class="main-menu page-navigation"
-        aria-label="Inhaltsverzeichnis"
-      ><!-- 1 class name would be enough -->
-        <a
-          href="#main-menu-toggle"
-          id="main-menu-close"
-          class="menu-close"
-          aria-label="Inhaltsverzeichnis schließen"
-        >
-          <span class="fa fa-close">X</span>
+      <span class="nav-wrapper">
+        <a href="#main-menu"
+          id="main-menu-toggle"
+          class="menu-toggle"
+          aria-label="Inhaltsverzeichnis öffnen">
+          <span class="sr-only">Inhaltsverzeichnis öffnen</span>
+          Inhalt
         </a>
-        <ul>
-          <li><a href="#projects">Projekte</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#about-me">Über mich</a></li>
-          <li><a href="#talks-events">Vorträge</a></li>
-          <li><a href="#contact">Kontakt</a></li>
-          <li><a href="#imprint">Impressum</a></li>
-          <li><a href="#privacy">Datenschutz</a></li>
-        </ul>
-      </nav>
 
-      <a href="#main-menu-toggle"
-        class="backdrop"
-        tabindex="-1"
-        aria-hidden="true"
-        hidden>
-      </a>
+        <nav
+          id="main-menu"
+          class="main-menu page-navigation"
+          aria-label="Inhaltsverzeichnis"
+        >
+          <a
+            href="#main-menu-toggle"
+            id="main-menu-close"
+            class="menu-close"
+            aria-label="Inhaltsverzeichnis schließen"
+          >
+            <svg viewBox="0 0 512 512" width="16" height="16">
+              <g>
+                <path d="m25 512a25 25 0 0 1 -17.68-42.68l462-462a25 25 0 0 1 35.36 35.36l-462 462a24.93 24.93 0 0 1 -17.68 7.32z" fill="currentColor"/>
+                <path d="m487 512a24.93 24.93 0 0 1 -17.68-7.32l-462-462a25 25 0 0 1 35.36-35.36l462 462a25 25 0 0 1 -17.68 42.68z" fill="currentColor"/>
+              </g>
+            </svg>
+          </a>
+          <ul>
+            <li><a href="#projects">Projekte</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#about-me">Über mich</a></li>
+            <li><a href="#talks-events">Vorträge</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+            <li><a href="#imprint">Impressum</a></li>
+            <li><a href="#privacy">Datenschutz</a></li>
+          </ul>
+        </nav>
+
+        <a href="#main-menu-toggle"
+          class="backdrop"
+          tabindex="-1"
+          aria-hidden="true"
+          hidden>
+        </a>
+      </span>
     </div>
   </body>
 </html>

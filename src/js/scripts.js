@@ -38,7 +38,7 @@ window.addEventListener('DOMContentLoaded', () => {
     e.preventDefault();
     navMenu.setAttribute('aria-expanded', 'true')
     document.addEventListener('click', (e) => {
-      const isClickInside = navMenu.contains(e.target) || navOpener.contains(e.target);
+      const isClickInside = navOpener.contains(e.target);
       if (!isClickInside) {
         navMenu.setAttribute('aria-expanded', 'false');
         document.onclick = null;

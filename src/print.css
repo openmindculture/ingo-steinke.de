@@ -9,8 +9,6 @@ h4 {
   font-size: 12pt;
 }
 
-/* TODO etwas mehr Stil auch hier, beispielsweise Gridkacheln-Mehrspaltigkeit */
-
 h2 {
   font-size: 24pt;
 }
@@ -85,7 +83,7 @@ img.avatar {
   height: auto;
   float: right;
   margin-left: 12pt;
-  border: solid 1px #aaa;
+  border: none;
 }
 
 .grid-container.skills {
