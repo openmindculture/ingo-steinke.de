@@ -22,7 +22,7 @@
 - ux: add nice color animation to weblinks; 133
 - qa: add automated tests; 300
 ### fixed
-- ux: close menu on any click; 131
+- ux: close menu on click; 131
 - ux: refine link colors in privacy; 101:3
 - ux: fix mobile width bugs; 101:4
 - ux: fix svg display, legacy internet explorer bugs; 101:6
