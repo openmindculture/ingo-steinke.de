@@ -1,32 +1,32 @@
-## [2.2.0] - unreleased - English Version
+## [2.1.0] - unreleased - English Version
 ### added
 - internationalize project; 220
 - content: add english version; 221
 - ux: add language switcher; 222
 
-## [2.1.1] - unreleased - Maintenance and Bugfixing
+## [2.0.6] - unreleased - Maintenance and Bugfixing
 ### added
-- qa: add more tests; 300
+- qa: add automated tests; 300
 ### fixed
 - ux: refine website after user feedback
-- qa: fix reported bugs
+- qa: fix reported and leftover bugs and ux issues
 - clean up and refactor code for better maintainability
 
-## [2.1.0] - unreleased - Flatfish Flounder Decoration
+## [2.0.5] - unreleased - Flatfish Flounder Decoration
 ### added
 - ux: add decorative liquid animations; 134
 
-## [2.0.3] - 2021-02-02
+## [2.0.4] - unreleased - Text Decoration
 ### added
 - ux: add headline gradient animation; 132
 - ux: add nice color animation to weblinks; 133
-- qa: add automated tests; 300
+
+## [2.0.3] - 2021-02-02
 ### fixed
 - ux: close menu on click; 131
 - ux: refine link colors in privacy; 101:3
 - ux: fix mobile width bugs; 101:4
 - ux: fix svg display, legacy internet explorer bugs; 101:6
-- a11y: improve color contrast and markup
 
 ## [2.0.2] - 2021-02-01
 ### fixed
