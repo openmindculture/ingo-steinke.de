@@ -184,19 +184,27 @@ h4 {
     width: 100%;
   }
 
-  .text-content-layout {
+  .text-content-layout,
+  .privacy {
     padding: 0.5em 0 1em 1em;
     margin: 0 0 2em 0;
   }
 
-  .text-content-color {
+  .privacy {
+    display: block;
+  }
+
+  .text-content-color,
+  .privacy {
     background-color: var(--secondary-background);
     color: #000;
   }
 
   .text-content-color h2,
   .text-content-color h3,
-  .text-content-color h4 {
+  .text-content-color h4,
+  .privacy h3,
+  .privacy h4 {
     color: var(--secondary-heading);
   }
 
@@ -207,8 +215,6 @@ h4 {
     margin: 0;
     line-height: 1;
   }
-
-  /* TODO alle Elementselektoren durch Klassennamen ersetzen */
 
   .tiled-content {
     background-color: var(--primary-background);
@@ -221,19 +227,23 @@ h4 {
   }
 
   .grid-container {
-    display: -ms-grid;
+    display: flex;
     display: grid;
     clear: both;
     grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
-    -ms-grid-columns: 1fr (440px)[3];
     grid-column-gap: 3em;
     grid-row-gap: 2em;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
-  /* float fallback does not apply inside grid layout */
   .grid-container > * {
-    display: block;
-    float: left;
+    flex-basis: 49%;
+    margin-bottom: 2em;
+
+    @supports (display: grid) {
+      margin-bottom: 0;
+    }
   }
 
   ul.grid-container {
@@ -242,7 +252,6 @@ h4 {
     text-indent: 0;
     list-style-type: none;
     grid-template-columns: repeat(auto-fit, minmax(328px, 1fr));
-    -ms-grid-columns: 1fr (328px)[3];
     grid-column-gap: 1em;
   }
 
@@ -252,7 +261,7 @@ h4 {
 
   .tile img.project-thumb {
     width: 4em;
-    height: auto;
+    height: 4em;
     float: right;
     margin: 1em;
   }
@@ -288,7 +297,7 @@ h4 {
     }
 
     .initially-hidden:target {
-      display: initial;
+      display: block;
     }
   }
 

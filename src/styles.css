@@ -103,6 +103,7 @@ a:hover {
 .flow-grid .tile {
   line-height: 2;
   border: dashed 1px;
+  margin-left: 2px;
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-line-clamp: 3;
