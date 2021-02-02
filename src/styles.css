@@ -345,6 +345,29 @@ Offscreen menu style
   }
 }
 
+.hero-header h1 {
+  background: var(--primary-heading);
+  background:
+    -webkit-linear-gradient(
+      var(--gradient-heading-dark-side),
+      var(--gradient-heading),
+      var(--primary-heading),
+      var(--gradient-heading-bright-side)
+    );
+  background-clip: unset;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 100% 150%;
+  animation: AnimateTextGradient 7s ease infinite;
+  animation-delay: 1s;
+}
+
+@keyframes AnimateTextGradient {
+  0% { background-position: 50% 0%; }
+  50% { background-position: 50% 100%; }
+  100% { background-position: 50% 0%; }
+}
+
 /* skills grid */
 
 ul.grid-container.skills {

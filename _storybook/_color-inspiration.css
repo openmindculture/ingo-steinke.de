@@ -52,7 +52,7 @@
   --brava-merino-light: #bbbfc2;
   --brava-merino-dark: #78797b;
   --ultimate-pantone: #97919d; /* color of the year 2021 zusammen mit illuminating */
-  --stormy-weather-pantone: #58646d;
+  --pantone-stormy-weather: #58646d;
   --odyssey-gray: #393846;
   --odyssey-gray-darker: #292836;
   --odyssey-gray-darkest: #191826;
@@ -79,7 +79,7 @@
   --hashtag-bg3: var(--ringana-spermidine-green);
   --hashtag-bg4: var(--deep-green);
   --hashtag-bg5: var(--pantone-illuminating);
-  --hashtag-bg6: var(--stormy-weather-pantone);
+  --hashtag-bg6: var(--pantone-stormy-weather);
   --hashtag-bg7: var(--brava-orange);
   --hashtag-bg8: var(--pantone-inkwell);
   --hashtag-fg1: #fff;
