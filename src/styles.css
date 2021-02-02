@@ -90,9 +90,6 @@ a:hover {
   justify-content: space-between;
 }
 
-/* zusätzlicher coolerer Style für die Tiles,
--* und auch deren Border hätte nichts im critical verloren, bloß die Höhe */
-
 .flow-grid {
   background-size: auto;
   background-repeat: no-repeat;
@@ -251,10 +248,6 @@ Offscreen menu style
   top: 0;
 }
 
-/*
- :target for non-JavaScript
- [aria-expanded] will be used if/when JavaScript is added to improve interaction, though it's completely optional.
-*/
 .main-menu:target,
 .main-menu[aria-expanded="true"] {
   display: block;
@@ -277,10 +270,6 @@ Offscreen menu style
   z-index: 1000;
 }
 
-/*
- We could us `.main-menu:target:after`, but
- it wouldn't be clickable.
-*/
 .main-menu:target + .backdrop,
 .main-menu[aria-expanded="true"] + .backdrop {
   position: absolute;
