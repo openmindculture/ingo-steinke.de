@@ -32,3 +32,33 @@
       no-cache,
       must-revalidate'''
       strict-transport-security = "max-age=0"
+
+[[redirects]]
+  from = "/ingo-steinke.jpg"
+  to = "/img/ingo-steinke.jpg"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/Foto-Ingo-Steinke-Woodhack.jpg"
+  to = "/img/Foto-Ingo-Steinke-Woodhack.jpg"
+  status = 301
+  force = true
+
+[[redirects]]
+from = "/ingo-steinke-face-bw.jpg"
+to = "/img/ingo-steinke-face-bw.jpg"
+status = 301
+force = true
+
+[[redirects]]
+from = "/ingo-steinke-avenga-grayscale.jpg"
+to = "/img/ingo-steinke-face-bw.jpg"
+status = 301
+force = true
+
+[[redirects]]
+from = "/ingo-steinke-schwarzweissportrait-profilbild.jpg"
+to = "/img/ingo-steinke-schwarzweissportrait-profilbild.jpg"
+status = 301
+force = true

@@ -16,10 +16,14 @@
 ### added
 - ux: add decorative liquid animations; 134
 
-## [2.0.4] - unreleased - Text Decoration
+## [2.0.4] - unreleased
 ### added
 - ux: add headline gradient animation; 132
 - ux: add nice color animation to weblinks; 133
+### fixed
+- webperf: add native lazy image loading (again)
+- seo: add sitemap.xml, static robots.txt
+- seo: add redirects for image urls
 
 ## [2.0.3] - 2021-02-02
 ### fixed
