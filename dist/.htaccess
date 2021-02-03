@@ -49,3 +49,9 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 # [NC] is a case-insensitive match
 RewriteCond %{HTTP_HOST} !^www\.ingo-steinke [NC]
 RewriteRule .* https://www.ingo-steinke.de%{REQUEST_URI} [L,R=301]
+# Map legacy urls to current location
+RewriteRule ^/ingo-steinke.jpg$ https://www.ingo-steinke.de/img/ingo-steinke.jpg [L,R=301]
+RewriteRule ^/Foto-Ingo-Steinke-Woodhack.jpg$ https://www.ingo-steinke.de/img/Foto-Ingo-Steinke-Woodhack.jpg [L,R=301]
+RewriteRule ^/ingo-steinke-face-bw.jpg$ https://www.ingo-steinke.de/img/ingo-steinke-face-bw.jpg [L,R=301]
+RewriteRule ^/ingo-steinke-avenga-grayscale.jpg$ https://www.ingo-steinke.de/img/ingo-steinke-face-bw.jpg [L,R=301]
+RewriteRule ^/ingo-steinke-schwarzweissportrait-profilbild.jpg$ https://www.ingo-steinke.de/img/ingo-steinke-schwarzweissportrait-profilbild.jpg [L,R=301]
