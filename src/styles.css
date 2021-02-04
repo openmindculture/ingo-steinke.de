@@ -18,13 +18,14 @@ img {
   font-weight: var(--body-font-weight: 400);
 }
 
+a,
 a:link,
 a:visited,
 a:active,
 a:hover {
-  transition: text-decoration 0.35s;
   text-decoration-color: var(--color-main-text);
   text-decoration-thickness: from-font;
+  text-underline-offset: 4px;
   text-decoration-style: solid;
 }
 
@@ -43,10 +44,44 @@ a:active {
   text-decoration-line: underline;
 }
 
-a:hover {
-  color: var(--link-hover);
+a:hover,
+a:focus {
   text-decoration-style: dotted;
   text-decoration-thickness: 0.1em;
+}
+
+@supports (background-image: linear-gradient(#222b40, #222b40)) and (transition: all 2s linear) {
+  a,
+  a:link,
+  a:visited,
+  a:active,
+  a:hover,
+  a:focus {
+    background-image:
+      linear-gradient(var(--secondary-background), var(--secondary-background)),
+      linear-gradient(var(--secondary-background), var(--secondary-background)),
+      linear-gradient(var(--link-hover-background), var(--link-hover-background));
+    background-position:
+      left top,
+      right top,
+      left top;
+    background-size:
+      70% 100%,
+      40% 100%,
+      100% 100%;
+    background-repeat: no-repeat;
+    transition:
+      background-size 0.25s ease-in,
+      color 0.25s ease-in;
+  }
+
+  a:hover,
+  a:focus {
+    background-size:
+      0 100%,
+      0 100%,
+      100% 100%;
+  }
 }
 
 .hashtag {
@@ -59,6 +94,10 @@ a:hover {
   margin-right: 0.125em;
   margin-bottom: 0.5em;
   white-space: nowrap;
+}
+
+.social-links a {
+  background-image: none;
 }
 
 .page-footer {
@@ -120,9 +159,13 @@ a.iconlink.iconlink {
   width: 1.5em;
   height: 1.5em;
   color: transparent;
+  overflow: hidden;
   text-decoration: none;
   top: 1em;
   background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 0 0;
+  transition: none;
 }
 
 .iconlink.arrow {
@@ -136,13 +179,26 @@ a.iconlink.iconlink {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='14' viewBox='0 0 16 15' width='14'%3E%3Cpath fill='%23ffffff' fill-rule='evenodd' d='M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z'/%3E%3C/svg%3E");
 }
 
-.bg-peel {
-  background: linear-gradient(135deg, transparent 0%, var(--peel-gradient-semitrans) 15%, var(--peel-gradient) 60%);
-  height: 100%;
+.iconlink.iconlink:hover {
+  width: 1.75em;
+  height: 1.75em;
 }
 
-.bg-peel:hover {
-  background-image: none;
+.iconlink.iconlink:focus,
+.social-links a:focus,
+.social-links a:hover {
+  outline: 1px solid var(--link-hover-background);
+}
+
+.bg-peel {
+  background:
+    linear-gradient(
+      135deg,
+      transparent 0%,
+      var(--peel-gradient-semitrans) 15%,
+      var(--peel-gradient) 60%
+    );
+  height: 100%;
 }
 
 .hashtags {
@@ -328,25 +384,118 @@ Offscreen menu style
     white-space: nowrap;
   }
 
-  .main-menu a:hover,
-  .main-menu a:focus {
-    background: none; /* Remove background from off-canvas styling */
-  }
-
   /* fix sticky header limited height and special shadow */
   .sticky-header a:link,
   .sticky-header a:visited,
   .sticky-header a:active,
+  .sticky-header a:focus,
+  .sticky-header a:hover,
   .page-navigation a:link,
   .page-navigation a:visited,
-  .page-navigation a:active {
+  .page-navigation a:active,
+  .page-navigation a:focus,
+  .page-navigation a:hover {
     line-height: 1;
     margin-bottom: -8px;
+    background-image:
+      linear-gradient(var(--primary-background), var(--primary-background)),
+      linear-gradient(var(--primary-background), var(--primary-background)),
+      linear-gradient(var(--link-hover-background), var(--link-hover-background));
+    background-position:
+      0 0,
+      100% 0,
+      0 0;
+    background-size:
+      70% 100%,
+      40% 100%,
+      100% 100%;
+  }
+
+  .page-navigation a:focus,
+  .page-navigation a:hover {
+    color: #000;
+    background-size:
+      0 100%,
+      0 100%,
+      100% 100%;
+    outline: none;
   }
 }
 
+/* TODO refactor alternate colors to modifier classes */
+
+.vcard a:link,
+.vcard a:visited,
+.vcard a:active,
+.vcard a:focus,
+.vcard a:hover,
+.page-footer a:link,
+.page-footer a:visited,
+.page-footer a:active,
+.page-footer a:focus,
+.page-footer a:hover,
+a.menu-toggle:link,
+a.menu-toggle:visited,
+a.menu-toggle:active,
+a.menu-toggle:focus,
+a.menu-toggle:hover {
+  /* line-height: 1; */
+  margin-bottom: -8px;
+  background-image:
+    linear-gradient(var(--primary-background), var(--primary-background)),
+    linear-gradient(var(--primary-background), var(--primary-background)),
+    linear-gradient(var(--link-hover-background), var(--link-hover-background));
+  background-position:
+    0 0,
+    100% 0,
+    0 0;
+  background-size:
+    70% 100%,
+    40% 100%,
+    100% 100%;
+}
+
+.vcard a:link,
+.vcard a:visited,
+.vcard a:active,
+.vcard a:focus,
+.vcard a:hover {
+  background-image:
+    linear-gradient(#fff, #fff),
+    linear-gradient(#fff, #fff),
+    linear-gradient(var(--link-hover-background), var(--link-hover-background));
+}
+
+.vcard a:focus,
+.vcard a:hover,
+.page-footer a:focus,
+.page-footer a:hover,
+a.menu-toggle:focus,
+a.menu-toggle:hover {
+  color: #000;
+  background-size:
+    0 100%,
+    0 100%,
+    100% 100%;
+  outline: none;
+}
+
+/* reset link styles and animation for sticky headline avatar */
+#sticky-headline a {
+  background: none;
+  text-decoration: none;
+}
+
+#sticky-headline a:focus,
+#sticky-headline a:hover,
+a.menu-toggle:hover,
+a.menu-toggle:hover {
+  color: #000;
+  background-color: var(--link-hover-background);
+  outline: none;
+}
+
 .hero-header h1 {
-  background: var(--primary-heading);
   background:
     -webkit-linear-gradient(
       var(--gradient-heading-dark-side),
