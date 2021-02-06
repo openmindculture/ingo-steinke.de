@@ -38,6 +38,7 @@
   --link-hover: var(--surftheweb-pantone);
   --primary-background: var(--spermidine-green);
   --secondary-background: var(--merino-light);
+  --link-hover-background: var(--pantone-illuminating);
   --nav-menu-background: var(--greenish-blue);
   --peel-gradient: var(--greenish-blue);
   --peel-gradient-semitrans: rgba(5, 50, 69, 0.5);

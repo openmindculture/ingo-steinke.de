@@ -18,8 +18,8 @@
 
 ## [2.0.4] - unreleased
 ### added
-- ux: add headline gradient animation; 132
-- ux: add nice color animation to weblinks; 133
+- ux: animate headline gradient; 132
+- ux: animate weblink decoration; 133
 ### fixed
 - webperf: add native lazy image loading (again)
 - seo: add sitemap.xml, static robots.txt
