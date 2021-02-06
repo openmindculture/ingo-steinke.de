@@ -3,10 +3,183 @@
     <link rel="stylesheet" href="../src/_includes/design-tokens.css">
     <link rel="stylesheet" href="../src/_includes/critical.css">
     <link rel="stylesheet" href="../src/styles.css">
+    <style>
+/* inspired by
+ * https://codepad.co/snippet/svg-liquid-animation
+ * translated from SCSS to modern CSS:
+ * https://codepen/ingo/TODO TODO TODO
+ *
+ * (we'll see what postCSS might make out of this)
+ * one working example to understand what liquid animation is all about
+ * doing some math in css on vector shapes in svg
+ * like flash but less proprietary
+ * visualizing one aspect of my fascination as a web developer
+ * turning numbers and letters into beautiful imagery
+ * => there should be some more transparency in the "about me" section
+ *    which is the story that is actually visualized by the animation
+ */
+:root {
+  --radius: 60px;
+  --primary-color: #2ecc71;
+  --secondary-color: purple;
+}
+
+.decoration {
+  z-index: -1;
+}
+
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: url('#filter');
+}
+
+.ball {
+  width: var(--radius);
+  height: var(--radius);
+  position: absolute;
+  top: calc(50% - (var(--radius)/2));
+  left: calc(50% - (var(--radius)/2));
+}
+
+.ball::before {
+  background: var(--primary-color);
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+}
+
+.ball:nth-child(1) {
+  transform: translate(calc(var(--radius) * -1.1));
+  animation: x-axis-lateral 2s infinite alternate ease-in-out;
+}
+
+.ball:nth-child(1)::before {
+  animation: y-axis-lateral 1s infinite 0.1s alternate ease-in-out;
+}
+
+.ball:nth-child(2) {
+  animation: x-axis 2s infinite alternate ease-in-out;
+}
+
+.ball:nth-child(2)::before {
+  animation: y-axis 1s infinite 0.5s alternate ease-in-out;
+}
+
+.ball:nth-child(3) {
+  transform: translate(calc(var(--radius) * 1.1), calc(var(--radius) * 1.3));
+  animation: x-axis-lateral 2s infinite alternate ease;
+}
+
+.ball:nth-child(3)::before {
+  animation: y-axis-lateral 1s infinite 0.4s alternate ease-in-out;
+}
+
+@keyframes x-axis {
+  0% {
+    transform: translate(calc(var(--radius) * -1.6));
+  }
+
+  100% {
+    transform: translate(calc(var(--radius) * 1.6));
+  }
+}
+
+@keyframes y-axis {
+  0% {
+    transform: translateY(calc(var(--radius) * 0.7));
+  }
+
+  100% {
+    transform: translateY(calc(var(--radius) * -1.1)) scale(0.8);
+    /* background: var(--primary-color); */
+  }
+}
+
+@keyframes x-axis-lateral {
+  0% {
+    transform: translate(calc(var(--radius) * -0.6));
+  }
+
+  100% {
+    transform: translate(calc(var(--radius) * 0.6));
+  }
+}
+
+@keyframes y-axis-lateral {
+  0% {
+    transform: translateY(calc(var(--radius) / 5));
+  }
+
+  100% {
+    transform: translateY(calc(var(--radius) * -1));
+    /* background: var(--primary-color); */
+  }
+}
+
+.wrapper.secondary {
+  top: -200px;
+  left: -200px;
+}
+
+.wrapper.secondary .ball::before {
+  background: purple;
+}
+    </style>
   </head>
   <body>
     <div class="page-container">
-      <!-- TODO -->
+
+      <div class="page-content">
+        <h1>Liquid Animation</h1>
+        <p>
+          Lorenz aus Issum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla.<br>
+          Lorem ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla. Lorem ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla. Lorem ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla.<br>
+          Lorem ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla. Lorem ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla.
+        </p>
+
+        <p style="background-color: rgba(100, 100, 100, 95%);">
+          Mit Hintergrund Lorem ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla.<br>
+
+          Lorem ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla. Lorem ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla. Lorem ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla. Lorem ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla. Lorem ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla. Lorem ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla. Lorem ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla.<br>
+
+          Lorem ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla. Lorem ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla. Lorem ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla. Lorem ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla. Lorem ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla. Lorem ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla. Lorem ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla.
+        </p>
+      </div>
+
+      <aside class="decoration">
+        <div class="wrapper">
+          <div class="ball">EINS</div>
+          <div class="ball">ZWO</div>
+          <div class="ball">DREI</div>
+        </div>
+
+        <div class="wrapper secondary">
+          <div class="ball">ALTER</div>
+          <div class="ball">ALTER</div>
+          <div class="ball">ALTER</div>
+        </div>
+
+        <svg>
+          <defs>
+            <filter id="filter">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="18" result="blur" />
+              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 28 -10" result="filter" />
+              <feComposite in="SourceGraphic" in2="filter" operator="atop" />
+            </filter>
+          </defs>
+        </svg>
+      </aside>
+
+
+
     </div>
   </body>
 </html>
