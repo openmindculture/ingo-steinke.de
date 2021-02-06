@@ -4,6 +4,7 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src:
     local(''),
     url('fonts/montserrat-v15-latin-ext_latin-regular.woff2') format('woff2'),
@@ -14,6 +15,7 @@
   font-family: 'Bitter';
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
   src:
     local(''),
     url('fonts/bitter-v16-latin-700.woff2') format('woff2'),
