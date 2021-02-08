@@ -12,7 +12,7 @@
 - qa: fix reported and leftover bugs and ux issues
 - clean up and refactor code for better maintainability
 
-## [2.0.5] - unreleased - Flatfish Flounder Decoration
+## [2.0.5] - 2021-02-08 - Flatfish Flounder Decoration
 ### added
 - ux: add decorative liquid animations; 134
 
