@@ -1,5 +1,18 @@
 @import '_includes/design-tokens.css';
 
+/* decoration layer is styled in critical.css */
+
+/* extra transparency for below-the-fold paragraphs */
+.text-content-color.semitransparent {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(187, 191, 194, 1),
+      rgba(187, 191, 194, 0.25)
+    );
+}
+
+/* decoration content */
 .animation-wrapper {
   position: absolute;
   top: 25%;
