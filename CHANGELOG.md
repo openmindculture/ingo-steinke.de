@@ -4,13 +4,14 @@
 - content: add english version; 221
 - ux: add language switcher; 222
 
-## [2.0.6] - unreleased - Maintenance and Bugfixing
-### added
-- qa: add automated tests; 300
+## [2.0.6] - 2021-02-08
 ### fixed
-- ux: refine website after user feedback
-- qa: fix reported and leftover bugs and ux issues
-- clean up and refactor code for better maintainability
+- ux: transparency and readability
+- orthography: fix misspellings
+- address readers informally
+- improve wording
+- replace disharmonic project links
+- document dns setup
 
 ## [2.0.5] - 2021-02-08 - Flatfish Flounder Decoration
 ### added
