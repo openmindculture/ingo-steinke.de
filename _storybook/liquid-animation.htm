@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="../src/_includes/design-tokens.css">
+    <link rel="stylesheet" href="../src/_includes/critical.css">
+    <link rel="stylesheet" href="../src/styles.css">
+    <link rel="stylesheet" href="../src/decoration.css">
+  </head>
+  <body>
+    <div class="page-container">
+
+      <div class="page-content">
+        <h1>Liquid Animation</h1>
+        <p>
+          Lorenz aus Issum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla.<br>
+          Lorem ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla. Lorem ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla. Lorem ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla.<br>
+          Lorem ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla. Lorem ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla.
+        </p>
+
+        <p style="background-color: rgba(100, 100, 100, 95%);">
+          Mit Hintergrund Lorem ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla.<br>
+
+          Lorem ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla. Lorem ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla. Lorem ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla. Lorem ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla. Lorem ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla. Lorem ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla. Lorem ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla.<br>
+
+          Lorem ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla. Lorem ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla. Lorem ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla. Lorem ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla. Lorem ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla. Lorem ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla. Lorem ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla ipsum bla bla bla.
+        </p>
+      </div>
+
+      <aside class="decoration">
+        <div class="animation-wrapper">
+          <div class="flounder"></div>
+          <div class="flounder"></div>
+          <div class="flounder"></div>
+        </div>
+
+        <div class="animation-wrapper secondary">
+          <div class="flounder"></div>
+          <div class="flounder"></div>
+          <div class="flounder"></div>
+        </div>
+
+        <svg>
+          <defs>
+            <filter id="filter">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="18" result="blur" />
+              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 28 -10" result="filter" />
+              <feComposite in="SourceGraphic" in2="filter" operator="atop" />
+            </filter>
+          </defs>
+        </svg>
+      </aside>
+
+
+
+    </div>
+  </body>
+</html>
