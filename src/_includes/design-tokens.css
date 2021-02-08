@@ -45,7 +45,6 @@
   --hashtag-default: var(--surftheweb-pantone);
   --hashtag-green: var(--spermidine-green);
   --hashtag-blue: var(--fresh-blue);
-  --skills-tile-background: var(--omega-purple);
 
   /* colors to alternate by position */
   --hashtag-bg-autumn-1: var(--deep-green);
@@ -58,6 +57,11 @@
   --hashtag-bg-spring-3: var(--interior-rose);
   --hashtag-bg-spring-4: var(--palo-rose);
   --hashtag-bg-spring-5: var(--orange-tag);
+
+  /* animation */
+  --radius: 100%;
+  --primary-animation-color: var(--deep-green);
+  --secondary-animation-color: var(--omega-purple);
 
   /* export typography */
   --sans-font-family: 'Montserrat', 'Helvetica', sans-serif;

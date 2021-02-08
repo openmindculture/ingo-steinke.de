@@ -529,7 +529,7 @@ ul.grid-container.skills {
 }
 
 .skills > .tile {
-  background-color: var(--skills-tile-background);
+  background-color: rgba(98, 49, 68, 0.75);
   color: #000;
   padding-left: 1em;
 }

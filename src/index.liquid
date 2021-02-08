@@ -20,9 +20,10 @@ g-domain-verify: Qs1p7JgqPLOGD3BYCMGe9EbyNJJEswyala44hnkO6d4
         {% include _includes/critical.css %}
       {%- endpostcss -%}
     </style>
-    <link rel="stylesheet" media="screen" href="styles.css" type="text/css" />
-    <link rel="stylesheet" media="print" href="print.css">
+    <link rel="stylesheet" media="screen" href="styles.css">
     <script src="js/scripts.js"></script>
+    <link rel="stylesheet" media="none" onload="this.media='all'" href="decoration.css">
+    <link rel="stylesheet" media="print" href="print.css">
     <meta name=author content="Ingo Steinke">
     <meta
       property="og:title"
@@ -930,7 +931,27 @@ g-domain-verify: Qs1p7JgqPLOGD3BYCMGe9EbyNJJEswyala44hnkO6d4
       </div>
 
       <aside class="decoration">
-        <!-- some nice graphics for users with large screen i.e. plant -->
+        <div class="animation-wrapper">
+          <div class="flounder"></div>
+          <div class="flounder"></div>
+          <div class="flounder"></div>
+        </div>
+
+        <div class="animation-wrapper secondary">
+          <div class="flounder"></div>
+          <div class="flounder"></div>
+          <div class="flounder"></div>
+        </div>
+
+        <svg>
+          <defs>
+            <filter id="filter">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="18" result="blur" />
+              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 28 -10" result="filter" />
+              <feComposite in="SourceGraphic" in2="filter" operator="atop" />
+            </filter>
+          </defs>
+        </svg>
       </aside>
     </div>
   </body>

@@ -1,0 +1,105 @@
+@import '_includes/design-tokens.css';
+
+.animation-wrapper {
+  position: absolute;
+  top: 25%;
+  left: 80%;
+  width: 100%;
+  height: 100%;
+  filter: url('#filter');
+}
+
+.flounder {
+  width: var(--radius);
+  height: var(--radius);
+  position: absolute;
+  top: calc(50% - (var(--radius)/2));
+  left: calc(50% - (var(--radius)/2));
+}
+
+.flounder::before {
+  background: var(--primary-animation-color);
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+}
+
+.flounder:nth-child(1) {
+  transform: translate(calc(var(--radius) * -1.1));
+  animation: x-axis-lateral 20s infinite alternate ease-in-out;
+}
+
+.flounder:nth-child(1)::before {
+  animation: y-axis-lateral 20s infinite 5s alternate ease-in-out;
+}
+
+.flounder:nth-child(2) {
+  animation: x-axis 40s infinite alternate ease-in-out;
+}
+
+.flounder:nth-child(2)::before {
+  animation: y-axis 4s infinite 0.5s alternate ease-in-out;
+}
+
+.flounder:nth-child(3) {
+  transform: translate(calc(var(--radius) * 1.1), calc(var(--radius) * 1.3));
+  animation: x-axis-lateral 80s infinite alternate ease;
+}
+
+.flounder:nth-child(3)::before {
+  animation: y-axis-lateral 80s infinite 0.4s alternate ease-in-out;
+}
+
+@keyframes x-axis {
+  0% {
+    transform: translate(calc(var(--radius) * -1.6));
+  }
+
+  100% {
+    transform: translate(calc(var(--radius) * 1.6));
+  }
+}
+
+@keyframes y-axis {
+  0% {
+    transform: translateY(calc(var(--radius) * 0.7));
+  }
+
+  100% {
+    transform: translateY(calc(var(--radius) * -1.1)) scale(0.8);
+  }
+}
+
+@keyframes x-axis-lateral {
+  0% {
+    transform: translate(calc(var(--radius) * -0.6));
+  }
+
+  100% {
+    transform: translate(calc(var(--radius) * 0.6));
+  }
+}
+
+@keyframes y-axis-lateral {
+  0% {
+    transform: translateY(calc(var(--radius) / 5));
+  }
+
+  100% {
+    transform: translateY(calc(var(--radius) * -0.5));
+  }
+}
+
+.animation-wrapper.secondary {
+  top: 100%;
+  left: 0;
+  transform: rotate(56deg);
+}
+
+.animation-wrapper.secondary .flounder::before {
+  background: var(--secondary-animation-color);
+}
