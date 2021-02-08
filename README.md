@@ -18,6 +18,11 @@ npm run build
 - Commits to pull requests will trigger preview builds to a preview domain, e.g.
 https://5fea0b9e2742820007364391--ingo-steinke.netlify.app
 
+## DNS setup for netlify
+
+ingo-steinke.de.  IN  A     104.198.14.52
+www           IN  CNAME ingo-steinke.netlify.app
+
 ## Roadmap / TODO
 
 https://trello.com/b/vhYtCj88/isd20-relaunch
