@@ -98,6 +98,7 @@ a:focus {
 
 .social-links a {
   background-image: none;
+  padding: 1em;
 }
 
 .page-footer {
@@ -190,13 +191,14 @@ a:focus {
 
 .social-links {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: row;
   list-style: none;
-}
-
-.social-links li {
-  padding: 0 1em;
+  max-width: 490px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
 .social-links svg {
