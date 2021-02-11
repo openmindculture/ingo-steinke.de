@@ -357,6 +357,11 @@ h4 {
   /* no min-width on small screens,
    * reduce fixed spacing
    */
+
+  .tiled-content {
+    margin-right: 2px;
+  }
+
   .grid-container {
     grid-template-columns: 1fr;
     -ms-grid-columns: 1fr;
@@ -392,6 +397,17 @@ h4 {
   .text-content-layout {
     padding-left: 0.5em;
     margin-bottom: 1em;
+  }
+
+  .text-width,
+  .semitransparent .text-width {
+    width: 95%;
+  }
+
+  ul.social-links {
+    max-width: 100vw;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   ul.social-links li {
