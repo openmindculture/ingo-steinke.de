@@ -204,7 +204,7 @@ h4 {
   .text-content-color,
   .privacy {
     background-color: var(--secondary-background);
-    color: #000;
+    color: var(--secondary-foreground);
   }
 
   .text-content-color h2,

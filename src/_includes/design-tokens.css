@@ -28,17 +28,16 @@
   --pantone-inkwell: #363945; /* spring summer 2021 */
 
   /* export theme colors */
-  --primary-color: #000;
   --primary-foreground: var(--merino-lighter);
+  --secondary-foreground: #000;
   --primary-heading: var(--merino-lighter);
   --gradient-heading-bright-side: var(--light-yellowish);
   --gradient-heading: var(--merino-light);
   --gradient-heading-dark-side: var(--merino-dark);
   --secondary-heading: var(--greenish-blue);
-  --link-hover: var(--surftheweb-pantone);
+  --link-hover-background: var(--pantone-illuminating);
   --primary-background: var(--spermidine-green);
   --secondary-background: var(--merino-light);
-  --link-hover-background: var(--pantone-illuminating);
   --nav-menu-background: var(--greenish-blue);
   --peel-gradient: var(--greenish-blue);
   --peel-gradient-semitrans: rgba(5, 50, 69, 0.5);
