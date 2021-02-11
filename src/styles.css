@@ -22,32 +22,44 @@ a,
 a:link,
 a:visited,
 a:active,
-a:hover {
-  text-decoration-color: var(--color-main-text);
+a:hover,
+a:focus {
+  color: var(--primary-foreground);
+  text-decoration-color: var(--primary-foreground);
+  text-decoration-line: underline;
   text-decoration-thickness: from-font;
   text-underline-offset: 4px;
   text-decoration-style: solid;
 }
 
-a:link {
-  color: var(--primary-color);
-  text-decoration-line: underline;
-  text-decoration-color: var(--primary-color);
-}
-
-a:visited {
-  color: var(--primary-color);
-  text-decoration-line: underline;
-}
-
-a:active {
-  text-decoration-line: underline;
-}
-
 a:hover,
 a:focus {
+  color: var(--link-hover-foreground);
+  text-decoration-color: var(--link-hover-background);
   text-decoration-style: dotted;
   text-decoration-thickness: 0.1em;
+}
+
+.social-links a {
+  padding: 1em;
+}
+
+.text-content-color a,
+.text-content-color a:link,
+.text-content-color a:visited,
+.text-content-color a:active {
+  color: var(--secondary-foreground);
+  text-decoration-color: var(--secondary-foreground);
+}
+
+.text-content-color a:hover,
+.text-content-color a:focus {
+  color: var(--link-hover-foreground);
+  text-decoration-color: var(--link-hover-background);
+}
+
+.social-links a:not(a:hover) {
+  background: none;
 }
 
 @supports (background-image: linear-gradient(#222b40, #222b40)) and (transition: all 2s linear) {
@@ -58,8 +70,8 @@ a:focus {
   a:hover,
   a:focus {
     background-image:
-      linear-gradient(var(--secondary-background), var(--secondary-background)),
-      linear-gradient(var(--secondary-background), var(--secondary-background)),
+      linear-gradient(var(--primary-background), var(--primary-background)),
+      linear-gradient(var(--primary-background), var(--primary-background)),
       linear-gradient(var(--link-hover-background), var(--link-hover-background));
     background-position:
       left top,
@@ -82,6 +94,18 @@ a:focus {
       0 100%,
       100% 100%;
   }
+
+  .text-content-color a,
+  .text-content-color a:link,
+  .text-content-color a:visited,
+  .text-content-color a:active,
+  .text-content-color a:hover,
+  .text-content-color a:focus {
+    background-image:
+      linear-gradient(var(--secondary-background), var(--secondary-background)),
+      linear-gradient(var(--secondary-background), var(--secondary-background)),
+      linear-gradient(var(--link-hover-background), var(--link-hover-background));
+  }
 }
 
 .hashtag {
@@ -96,12 +120,8 @@ a:focus {
   white-space: nowrap;
 }
 
-.social-links a {
-  background-image: none;
-}
-
 .page-footer {
-  color: #fff;
+  color: var(--primary-foreground);
   line-height: 1;
   padding: 0 0 1vh 1em;
   margin: 0 auto;
@@ -111,7 +131,7 @@ a:focus {
 .page-footer a:link,
 .page-footer a:visited,
 .page-footer a:active {
-  color: #fff;
+  /* color: var(--primary-foreground); */
 }
 
 .tile {
@@ -190,13 +210,14 @@ a:focus {
 
 .social-links {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: row;
   list-style: none;
-}
-
-.social-links li {
-  padding: 0 1em;
+  max-width: 490px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .social-links svg {
@@ -431,6 +452,8 @@ a.menu-toggle:hover {
     linear-gradient(#fff, #fff),
     linear-gradient(#fff, #fff),
     linear-gradient(var(--link-hover-background), var(--link-hover-background));
+  color: var(--secondary-foreground);
+  text-decoration-color: var(--secondary-foreground);
 }
 
 .vcard a:focus,
@@ -464,8 +487,8 @@ a.menu-toggle:hover {
 .grid-container .tile a:focus,
 .grid-container .tile a:hover {
   background-image:
-    linear-gradient(var(--peel-gradient:), var(--peel-gradient:)),
-    linear-gradient(var(--peel-gradient:), var(--peel-gradient:)),
+    linear-gradient(var(--peel-gradient), var(--peel-gradient)),
+    linear-gradient(var(--peel-gradient), var(--peel-gradient)),
     linear-gradient(var(--link-hover-background), var(--link-hover-background));
 }
 

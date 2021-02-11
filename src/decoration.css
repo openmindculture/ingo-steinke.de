@@ -3,13 +3,15 @@
 /* decoration layer is styled in critical.css */
 
 /* extra transparency for below-the-fold paragraphs */
-.text-content-color.semitransparent {
-  background:
-    linear-gradient(
-      90deg,
-      rgba(187, 191, 194, 1),
-      rgba(187, 191, 194, 0.25)
-    );
+@media only screen and (min-width: 950px) {
+  .text-content-color.semitransparent {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(187, 191, 194, 1),
+        rgba(187, 191, 194, 0.25)
+      );
+  }
 }
 
 /* decoration content */
@@ -28,6 +30,8 @@
   position: absolute;
   top: calc(50% - (var(--radius)/2));
   left: calc(50% - (var(--radius)/2));
+  transform: translate(0);
+  will-change: transform;
 }
 
 .flounder::before {
@@ -39,6 +43,8 @@
   width: 100%;
   height: 100%;
   content: '';
+  transform: translate(0);
+  will-change: transform;
 }
 
 .flounder:nth-child(1) {
@@ -110,6 +116,7 @@
 .animation-wrapper.secondary {
   top: 100%;
   left: 0;
+  will-change: transform;
   transform: rotate(56deg);
 }
 

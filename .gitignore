@@ -2,6 +2,7 @@
 docker-compose.override.yml
 node_modules
 .vscode
+.idea
 Thumbs.db
 Thumbs.db:encryptable
 Desktop.ini
