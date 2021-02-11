@@ -3,6 +3,16 @@
 - internationalize project; 220
 - content: add english version; 221
 - ux: add language switcher; 222
+## [2.0.7] - 2021-02-11
+### fixed
+  - ux: optimize animation performance; #43
+  - ux: optimize web font loading; #43
+  - ux: fix and refactor link styles; #43
+  - ux: reduce paragraph with for readability; #43
+  - ux: optimize social links for mobile touch; #43
+  - ux: fix mobile width and readability; #43
+  - ux: improve print layout; #43
+  - content: fix typo
 
 ## [2.0.6] - 2021-02-08
 ### fixed
