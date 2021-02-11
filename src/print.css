@@ -32,7 +32,7 @@ a:active {
   text-decoration: none;
 }
 
-.page-navigation.page-navigation,
+.navigation.page-navigation,
 .sticky-header {
   display: none;
 }
@@ -107,4 +107,9 @@ img.avatar {
 
 .privacy {
   font-size: 10pt;
+}
+
+article,
+.avoid-page-break {
+  page-break-inside: avoid;
 }
