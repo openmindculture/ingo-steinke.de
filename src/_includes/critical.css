@@ -263,11 +263,11 @@ h4 {
 
   .text-width {
     max-width: 1300px;
-    width: 95%;
+    width: 90%;
   }
 
   .semitransparent .text-width {
-    width: 88%;
+    width: 80%;
   }
 
   .tile img.project-thumb {
