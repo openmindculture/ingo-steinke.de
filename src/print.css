@@ -107,9 +107,14 @@ img.avatar {
 
 .privacy {
   font-size: 10pt;
+  page-break-before: always;
 }
 
 article,
 .avoid-page-break {
   page-break-inside: avoid;
+}
+
+.avoid-page-break > article {
+  page-break-inside: initial;
 }
