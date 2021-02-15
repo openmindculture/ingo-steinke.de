@@ -75,7 +75,7 @@ h4 {
     width: 100%;
   }
 
-  .hero-header {
+  .jumbotronHeader {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -86,7 +86,7 @@ h4 {
     background-color: rgba(29, 73, 80, 0.75);
   }
 
-  .hero-header h1 {
+  .jumbotronHeader h1 {
     font-size: 5rem;
     font-size: 13vh;
     line-height: 1.25;
@@ -95,7 +95,7 @@ h4 {
     margin: 0;
   }
 
-  .hero-header p {
+  .jumbotronHeader p {
     font-size: 2.325rem;
     font-size: 6vh;
     font-family: var(--body-font);
@@ -380,7 +380,7 @@ h4 {
     height: auto;
   }
 
-  .hero-header h1 {
+  .jumbotronHeader h1 {
     font-size: 3.75em;
   }
 

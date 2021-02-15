@@ -287,7 +287,7 @@ Offscreen menu style
   background: var(--nav-menu-background);
 }
 
-.main-menu .menu-close {
+.main-menu .menuClose {
   position: absolute;
   right: 0;
   top: 0;
@@ -301,8 +301,8 @@ Offscreen menu style
   box-shadow: 3px 0 12px rgba(0, 0, 0, 0.75);
 }
 
-.main-menu:target .menu-close,
-.main-menu[aria-expanded="true"] .menu-close {
+.main-menu:target .menuClose,
+.main-menu[aria-expanded="true"] .menuClose {
   z-index: 1001;
   text-decoration: none;
   border: none;
@@ -334,7 +334,7 @@ Offscreen menu style
 */
 @media (min-width: 950px) {
   .menu-toggle,
-  .main-menu .menu-close {
+  .main-menu .menuClose {
     display: none;
   }
 
@@ -507,7 +507,7 @@ a.menu-toggle:hover {
   outline: none;
 }
 
-.hero-header h1 {
+.jumbotronHeader h1 {
   background:
     -webkit-linear-gradient(
       var(--gradient-heading-dark-side),

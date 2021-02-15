@@ -41,19 +41,19 @@ a:active {
   padding: 0 24pt;
 }
 
-.hero-header {
+.jumbotronHeader {
   text-align: center;
   break-after: page;
   margin-top: 25%;
   margin-bottom: 25%;
 }
 
-.hero-header h1 {
+.jumbotronHeader h1 {
   font-size: 60pt;
   margin: 0;
 }
 
-.hero-header p {
+.jumbotronHeader p {
   font-size: 30pt;
   margin: 0;
 }

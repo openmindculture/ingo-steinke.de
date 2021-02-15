@@ -15,8 +15,22 @@ npm run build
 ## Deployment
 
 - Commits to the master branch will trigger a production deployment by netlify.
-- Commits to pull requests will trigger preview builds to a preview domain, e.g.
-https://5fea0b9e2742820007364391--ingo-steinke.netlify.app
+- Commits to pull requests will trigger preview builds to a preview domain.
+
+## Content / localization
+
+Text content can be edited in
+
+```src/_data/{{ content.language }}/content.js```
+
+to be used in liquid variables with the `content.` prefix.
+
+My localization setup does not match eleventy's front matter handling,
+but this proved a quick and maintainable way to get things done.
+
+At the time of writing, in January 2021, I was not able to find an official documentation
+how to internationalize eleventy projects, and anything else I found seemed even more
+counter-intuitive to me, so here we go.
 
 ## DNS setup for netlify
 
