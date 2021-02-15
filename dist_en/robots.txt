@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.ingo-steinke.de/sitemap.xml

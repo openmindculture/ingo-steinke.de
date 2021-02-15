@@ -5,7 +5,9 @@
   "main": "index.html",
   "scripts": {
     "test": "make test",
-    "build": "eleventy && node_modules/postcss-cli/bin/postcss src/*.css --dir dist && babel src/js -d dist/js"
+    "build": "npm run build:de && npm run build:en",
+    "build:de": "eleventy --config .eleventy.de.js && node_modules/postcss-cli/bin/postcss src/*.css --dir dist && babel src/js -d dist/js",
+    "build:en": "eleventy --config .eleventy.en.js && node_modules/postcss-cli/bin/postcss src/*.css --dir dist_en && babel src/js -d dist_en/js"
   },
   "repository": {
     "type": "git",

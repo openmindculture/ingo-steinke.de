@@ -1,19 +1,11 @@
----
-page-title: Ingo Steinke, dein kreativer Webentwickler in Düsseldorf
-page-description: Ingo Steinke ist ein kreativer Webentwickler in Düsseldorf mit über 20 Jahren Beruferfahrung.
-page-description-en: Ingo Steinke is a creative Frontend web developer in Düsseldorf.
-page-keywords: Ingo,Steinke,Webentwickler,Berater,Düsseldorf
-p-domain-verify: 4c4296e5835f4a47eb2c2e5488a99d71
-g-domain-verify: Qs1p7JgqPLOGD3BYCMGe9EbyNJJEswyala44hnkO6d4
----
 <!doctype html>
-<html lang=de>
+<html lang={{ content.language }}>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <title>
-      {{ page-title }}
+      {{ content.page-title }}
     </title>
-    <meta name=language content=de>
+    <meta name=language content={{ content.language }}>
     <meta name=viewport content="width=device-width,initial-scale=1.0">
     <style>
       {%- postcss -%}
@@ -29,16 +21,16 @@ g-domain-verify: Qs1p7JgqPLOGD3BYCMGe9EbyNJJEswyala44hnkO6d4
     <meta name=author content="Ingo Steinke">
     <meta
       property="og:title"
-      content="{{ page-title }}"
+      content="{{ content.page-title }}"
     >
     <meta
       property="og:description"
-      content="{{ page-description }}"
+      content="{{ content.page-description }}"
     >
-    <meta name=description content="{{ page-description }}">
-    <meta name=keywords content="{{ page-keywords }}">
-    <meta name="p:domain_verify" content="{{ p-domain-verify }}"/>
-    <meta name="google-site-verification" content="{{ g-domain-verify }}"/>
+    <meta name=description content="{{ content.page-description }}">
+    <meta name=keywords content="{{ content.page-keywords }}">
+    <meta name="p:domain_verify" content="{{ content.p-domain-verify }}"/>
+    <meta name="google-site-verification" content="{{ content.google-site-verification }}"/>
     <meta name=robots content="index,follow">
     <meta
       property="og:image"
@@ -46,17 +38,17 @@ g-domain-verify: Qs1p7JgqPLOGD3BYCMGe9EbyNJJEswyala44hnkO6d4
     >
     <meta
       name="twitter:card"
-      content="{{ page-description-en }}"
+      content="{{ content.page-description-en }}"
     >
     <meta name="twitter:site" content="@fraktalisman">
     <meta name="twitter:creator" content="@fraktalisman">
     <meta
       property="og:url"
-      content="https://www.ingo-steinke.de/"
+      content="{{ content.canonical-href }}"
     >
     <link
       rel=canonical
-      href="https://www.ingo-steinke.de/"
+      href="{{ content.canonical-href }}"
     >
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -75,7 +67,7 @@ g-domain-verify: Qs1p7JgqPLOGD3BYCMGe9EbyNJJEswyala44hnkO6d4
                     img/Ingo-Steinke-portrait-2020-992.jpg 4x"
             width="248"
             height="248"
-            alt="Foto von Ingo Steinke"
+            alt="{{ content.hero-alt }}"
             class="avatar"
           >
           <h1>
