@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" clip-rule="evenodd" fill-rule="evenodd" image-rendering="optimizeQuality" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" viewBox="0 0 333.333 333.333">
+  <title>StackOverflow</title>
+  <path d="M 322.831 117.669 l -25.376 33.059 l -0.002 -0.002 l -17.596 37.756 l -0.004 -0.002 l -9.02 40.667 l -203.391 -45.092 l -0.002 0.002 l 9.02 -40.681 l 203.308 45.065 l -188.724 -88 v -0.002 l 17.606 -37.772 l 188.714 87.992 L 132.16 23.894 L 150.493 0 h 18.967 l 153.372 117.669 z M 62.501 229.173 h 208.33 v 41.665 l -208.33 -0.004 v -41.661 z" fill="#ebeff2"></path>
+  <path d="M 333.333 208.338 v 124.995 H 0 V 208.338 h 41.665 v 83.33 h 250.003 v -83.33 z" fill="#ebeff2"></path>
+</svg>

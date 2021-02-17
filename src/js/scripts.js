@@ -4,7 +4,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const stickyHeader = document.getElementById('sticky-header');
   const hideableHeadline = document.getElementById('sticky-headline');
   const navOpener = document.getElementById('main-menu-toggle');
-  const navCloser = document.getElementById('main-menu-close');
+  const navCloser = document.getElementById('main-menuClose');
   const navMenu = document.getElementById('main-menu');
 
   /* elements with visibility controlled by script, like sticky-header,

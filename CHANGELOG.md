@@ -1,8 +1,9 @@
-## [2.1.0] - unreleased - English Version
+## [2.1.0] - 2021-02-17 - English Version
 ### added
 - internationalize project; 220
 - content: add english version; 221
 - ux: add language switcher; 222
+
 ## [2.0.7] - 2021-02-11
 ### fixed
   - ux: optimize animation performance; #43

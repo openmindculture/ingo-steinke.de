@@ -1,12 +1,5 @@
-const postcss = require("postcss");
 const htmlmin = require("html-minifier");
 module.exports = function(eleventyConfig) {
-  /*
-   each file will be filtered by each transform
-   TODO add linters to 'eleventy' build, add JS/ES lint
-   TODO add frontend test after build
-   */
-
   // explicit + fast way to copy certain files and folders
   eleventyConfig.addPassthroughCopy("src/fonts");
   eleventyConfig.addPassthroughCopy("src/img");
@@ -42,6 +35,7 @@ module.exports = function(eleventyConfig) {
   return {
     dir: {
       input: "src",
+      data: "_data/de",
       output: "dist"
     },
     templateFormats: ["liquid"]

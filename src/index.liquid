@@ -1,19 +1,11 @@
----
-page-title: Ingo Steinke, dein kreativer Webentwickler in Düsseldorf
-page-description: Ingo Steinke ist ein kreativer Webentwickler in Düsseldorf mit über 20 Jahren Beruferfahrung.
-page-description-en: Ingo Steinke is a creative Frontend web developer in Düsseldorf.
-page-keywords: Ingo,Steinke,Webentwickler,Berater,Düsseldorf
-p-domain-verify: 4c4296e5835f4a47eb2c2e5488a99d71
-g-domain-verify: Qs1p7JgqPLOGD3BYCMGe9EbyNJJEswyala44hnkO6d4
----
 <!doctype html>
-<html lang=de>
+<html lang={{ content.language }}>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <title>
-      {{ page-title }}
+      {{ content.pageTitle }}
     </title>
-    <meta name=language content=de>
+    <meta name=language content={{ content.language }}>
     <meta name=viewport content="width=device-width,initial-scale=1.0">
     <style>
       {%- postcss -%}
@@ -26,37 +18,42 @@ g-domain-verify: Qs1p7JgqPLOGD3BYCMGe9EbyNJJEswyala44hnkO6d4
     <script src="js/scripts.js"></script>
     <link rel="stylesheet" media="none" onload="this.media='screen'" href="decoration.css">
     <link rel="stylesheet" media="print" href="print.css">
-    <meta name=author content="Ingo Steinke">
+    <meta name=author content="{{ content.metaAuthor }}">
     <meta
       property="og:title"
-      content="{{ page-title }}"
+      content="{{ content.pageTitle }}"
     >
     <meta
       property="og:description"
-      content="{{ page-description }}"
+      content="{{ content.pageDescription }}"
     >
-    <meta name=description content="{{ page-description }}">
-    <meta name=keywords content="{{ page-keywords }}">
-    <meta name="p:domain_verify" content="{{ p-domain-verify }}"/>
-    <meta name="google-site-verification" content="{{ g-domain-verify }}"/>
+    <meta name=description content="{{ content.pageDescription }}">
+    <meta name=keywords content="{{ content.pageKeywords }}">
+    <meta name="p:domain_verify" content="{{ content.pDomainVerify }}"/>
+    <meta name="googleSiteVerification" content="{{ content.googleSiteVerification }}"/>
     <meta name=robots content="index,follow">
     <meta
       property="og:image"
-      content="https://www.ingo-steinke.de/ingo-steinke-face-bw.jpg"
+      content="{{ content.canonicalHref }}img/Ingo-Steinke-portrait-2020.jpg"
     >
     <meta
       name="twitter:card"
-      content="{{ page-description-en }}"
+      content="{{ content.pageDescription-en }}"
     >
     <meta name="twitter:site" content="@fraktalisman">
     <meta name="twitter:creator" content="@fraktalisman">
     <meta
       property="og:url"
-      content="https://www.ingo-steinke.de/"
+      content="{{ content.canonicalHref }}"
     >
     <link
-      rel=canonical
-      href="https://www.ingo-steinke.de/"
+      rel="canonical"
+      href="{{ content.canonicalHref }}"
+    >
+    <link
+      rel="alternate"
+      hreflang="{{ content.alternateHreflang }}"
+      href="{{ content.alternateHref }}"
     >
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -68,20 +65,18 @@ g-domain-verify: Qs1p7JgqPLOGD3BYCMGe9EbyNJJEswyala44hnkO6d4
   <body>
     <div class="page-container" id="top">
       <div class="page-content">
-        <header class="hero-header" id="hero-header">
+        <header class="jumbotronHeader" id="jumbotronHeader">
           <img
             src="img/Ingo-Steinke-portrait-2020.jpg"
             srcset="img/Ingo-Steinke-portrait-2020-496.jpg 2x,
                     img/Ingo-Steinke-portrait-2020-992.jpg 4x"
             width="248"
             height="248"
-            alt="Foto von Ingo Steinke"
+            alt="{{ content.jumbotronImageAlt }}"
             class="avatar"
           >
-          <h1>
-            Ingo Steinke
-          </h1>
-          <p class="tagline">Creative Web Developer</p>
+          <h1>{{ content.jumbotronHeader }}</h1>
+          <p class="tagline">{{ content.jumbotronTagline }}</p>
         </header>
         <div class="sticky-header is-nav-closed" id="sticky-header">
           <div class="wrapper">
@@ -92,10 +87,10 @@ g-domain-verify: Qs1p7JgqPLOGD3BYCMGe9EbyNJJEswyala44hnkO6d4
                     src="img/Ingo-Steinke-portrait-2020.jpg"
                     width="25"
                     height="25"
-                    alt="Zum Seitenanfang"
+                    alt="{{ content.linkToTop }}"
                     class="avatar"
                   />
-                  Ingo Steinke
+                  {{ content.jumbotronHeader }}
                 </a>
               </span>
             </span>
@@ -104,21 +99,21 @@ g-domain-verify: Qs1p7JgqPLOGD3BYCMGe9EbyNJJEswyala44hnkO6d4
               <a href="#main-menu"
                 id="main-menu-toggle"
                 class="menu-toggle"
-                aria-label="Inhaltsverzeichnis öffnen">
-                <span class="sr-only">Inhaltsverzeichnis öffnen</span>
-                Inhalt
+                aria-label="{{ content.menuOpen }}">
+                <span class="sr-only">{{ content.menuOpen }}</span>
+                {{ content.menuButton }}
               </a>
 
               <nav
                 id="main-menu"
                 class="main-menu page-navigation"
-                aria-label="Inhaltsverzeichnis"
+                aria-label="{{ content.menuLabel }}"
               >
                 <a
                   href="#main-menu-toggle"
-                  id="main-menu-close"
-                  class="menu-close"
-                  aria-label="Inhaltsverzeichnis schließen"
+                  id="main-menuClose"
+                  class="menuClose"
+                  aria-label="{{ content.menuClose }}"
                 >
                   <svg viewBox="0 0 512 512" width="16" height="16">
                     <g>
@@ -128,13 +123,21 @@ g-domain-verify: Qs1p7JgqPLOGD3BYCMGe9EbyNJJEswyala44hnkO6d4
                   </svg>
                 </a>
                 <ul>
-                  <li><a href="#projects">Projekte</a></li>
-                  <li><a href="#skills">Skills</a></li>
-                  <li><a href="#about-me">Über mich</a></li>
-                  <li><a href="#talks-events">Vorträge</a></li>
-                  <li><a href="#contact">Kontakt</a></li>
-                  <li><a href="#imprint">Impressum</a></li>
-                  <li><a href="#privacy">Datenschutz</a></li>
+                  <li><a href="#projects">{{ content.targetProjects }}</a></li>
+                  <li><a href="#skills">{{ content.targetSkills }}</a></li>
+                  <li><a href="#about-me">{{ content.targetAboutMe }}</a></li>
+                  <li><a href="#talks-events">{{ content.targetTalksEvents }}</a></li>
+                  <li><a href="#contact">{{ content.targetContact }}</a></li>
+                  <li><a href="#imprint">{{ content.targetImprint }}</a></li>
+                  <li><a href="#privacy">{{ content.targetPrivacy }}</a></li>
+                  <li>
+                    <a
+                      href="{{ content.alternateHref }}"
+                      hreflang="{{ content.alternateHreflang }}"
+                      lang="{{ content.alternateHreflang }}"
+                      title="{{ content.targetOtherLanguageTitle }}"
+                    >{{ content.targetOtherLanguage }}</a>
+                  </li>
                 </ul>
               </nav>
 
@@ -152,20 +155,20 @@ g-domain-verify: Qs1p7JgqPLOGD3BYCMGe9EbyNJJEswyala44hnkO6d4
 
         <main id="content-top">
           <section class="text-content-layout text-content-color">
-            <h2>Begeistere deine Kunden im Internet</h2>
+            <h2>{{ content.introHeading }}</h2>
             <article class="text-width">
               <!-- article lacks heading -->
               <p>
-                Ich bin Ingo Steinke, begeisterter kreativer Webentwickler aus Düsseldorf mit über 20 Jahren Berufserfahrung. Von meiner Arbeit profitierten unter anderem die Frankfurter Allgemeine Zeitung, die ZEIT, HDI und wao.io.
+                {{ content.intro }}
               </p>
 
-              <h3>Mit mir kannst du arbeiten</h3>
+              <h3>{{ content.workWithMeHeading }}</h3>
 
               <p>
-                Du möchtest deine Website überarbeiten? Dein Team braucht Verstärkung durch einen Frontend-Entwickler mit Fullstack-Erfahrung?<br>
-                <a href="#contact">Ruf mich an oder hinterlasse mir eine Nachricht!</a>
+                {{ content.workWithMe }}<br>
+                <a href="#contact">{{ content.ctaContact }}</a>
                 <br>
-                Gern können wir uns bei einem Kaffee unverbindlich über dein Projekt unterhalten.
+                {{ content.workWithMe2 }}
               </p>
 
             </article>
@@ -173,8 +176,8 @@ g-domain-verify: Qs1p7JgqPLOGD3BYCMGe9EbyNJJEswyala44hnkO6d4
 
           <section class="tiled-content" id="projects">
             <div class="pl1">
-              <h2>Projekte</h2>
-              <p>Überzeuge dich selbst von meiner Arbeit! Eine Auswahl meiner bisherigen Projekte:</p>
+              <h2>{{ content.projectsHeading }}</h2>
+              <p>{{ content.projects }}</p>
             </div>
 
             <div class="grid-container flow-grid">
@@ -182,7 +185,7 @@ g-domain-verify: Qs1p7JgqPLOGD3BYCMGe9EbyNJJEswyala44hnkO6d4
               <article class="tile" id="project-portfolio-relaunch">
                 <div class="flex bg-peel  pl1">
                   <header>
-                    <h3>Portfolio Relaunch</h3>
+                    <h3>{{ content.projectPortfolioRelaunchHeading }}</h3>
                   </header>
                   <p>
                     <img
@@ -193,8 +196,8 @@ g-domain-verify: Qs1p7JgqPLOGD3BYCMGe9EbyNJJEswyala44hnkO6d4
                       alt=""
                     />
                     <span class="text-line">
-                      <a href="https://www.ingo-steinke.de/">Ingo-Steinke.de</a> zeigt meine Arbeit als Webentwickler.
-                      Modernes Design und Typographie, aktuelle Technologie und umfangreiche textliche Überarbeitung prägen den Relaunch meines beruflichen Portfolios. Code:<br>
+                      {{ content.projectPortfolioRelaunch1 }}
+                      <a href="{{ content.canonicalHref }}">{{ content.projectPortfolioRelaunch2 }}</a> {{ content.projectPortfolioRelaunch3 }}<br>
                       <a
                         class="code-link"
                         href="https://github.com/openmindculture/ingo-steinke.de"
@@ -202,17 +205,17 @@ g-domain-verify: Qs1p7JgqPLOGD3BYCMGe9EbyNJJEswyala44hnkO6d4
                         target="_blank"
                         rel="noopener"
                       >
-                        github.com/openmindculture/ingo-steinke.de
+                        {{ content.projectPortfolioRelaunch4 }}
                       </a>
                     </span>
                   </p>
 
                   <p>
-                    <span class="hashtag">HTML 5</span>
-                    <span class="hashtag">CSS 3</span>
-                    <span class="hashtag">JavaScript</span>
-                    <span class="hashtag">Liquid</span>
-                    <span class="hashtag">Eleventy</span>
+                    <span class="hashtag">{{ content.projectPortfolioRelaunchHashtag1 }}</span>
+                    <span class="hashtag">{{ content.projectPortfolioRelaunchHashtag2 }}</span>
+                    <span class="hashtag">{{ content.projectPortfolioRelaunchHashtag3 }}</span>
+                    <span class="hashtag">{{ content.projectPortfolioRelaunchHashtag4 }}</span>
+                    <span class="hashtag">{{ content.projectPortfolioRelaunchHashtag5 }}</span>
                   </p>
                 </div>
 
@@ -221,7 +224,7 @@ g-domain-verify: Qs1p7JgqPLOGD3BYCMGe9EbyNJJEswyala44hnkO6d4
               <article class="tile" id="project-webperf-meetup">
                 <div class="flex bg-peel  pl1">
                   <header>
-                    <h3>Meetup-Organisation</h3>
+                    <h3>{{ content.projectWebperfMeetupHeading }}</h3>
                   </header>
                   <p>
                     <img
@@ -232,19 +235,19 @@ g-domain-verify: Qs1p7JgqPLOGD3BYCMGe9EbyNJJEswyala44hnkO6d4
                       alt=""
                     />
                     <span class="text-line">
-                      Anfang 2020 übernahm ich die fachliche Leitung des
+                      {{ content.projectWebperfMeetup1 }}
                       <a
                         href="https://www.meetup.com/cologne-germany-high-performance-website-optimization-group/"
                         title="www.meetup.com/cologne-germany-high-performance-website-optimization-group"
                         target="_blank"
                         rel="noopener"
-                      >Kölner Web-Performance-Meetups</a>.
-                      Diverse internationale Vorträge, unter anderem von Patrick Meenan, Andrew Petryk, Anna Backs und Christina Zenzes begeisterten das Publikum über die Grenzen der Region hinaus.
+                      >{{ content.projectWebperfMeetup2 }}</a>.
+                      {{ content.projectWebperfMeetup3 }}
                     </span>
                   </p>
                   <p>
-                    <span class="hashtag">Event-Management</span>
-                    <span class="hashtag">Web-Performance</span>
+                    <span class="hashtag">{{ content.projectWebperfMeetupHashtag1 }}</span>
+                    <span class="hashtag">{{ content.projectWebperfMeetupHashtag2 }}</span>
                   </p>
                 </div>
               </article>
@@ -252,7 +255,7 @@ g-domain-verify: Qs1p7JgqPLOGD3BYCMGe9EbyNJJEswyala44hnkO6d4
               <article class="tile" id="project-wordpress-plugin">
                 <div class="flex bg-peel  pl1">
                   <header>
-                    <h3>WordPress-Plugin</h3>
+                    <h3>{{ content.projectWordpressPluginHeading }}</h3>
                   </header>
                   <p>
                     <img
@@ -263,21 +266,21 @@ g-domain-verify: Qs1p7JgqPLOGD3BYCMGe9EbyNJJEswyala44hnkO6d4
                       alt=""
                     />
                     <span class="text-line">
-                      Als Arbeitserleichterung für die Redakteure unserer Kunden bereinigt ein WordPress-Plugin vollautomatisch den Cache-Speicher des Servers, auf dem wao.io die Ladezeit der WordPress-Seite optimiert. Das Plugin wurde 2020
+                      {{ content.projectWordpressPlugin1 }}
                       <a
                         href="https://de.wordpress.org/plugins/wao-io-cache-control/"
                         title="de.wordpress.org/plugins/wao-io-cache-control"
                         target="_blank"
                         rel="noopener"
-                      > auf WordPress.org</a> veröffentlicht.
+                      >{{ content.projectWordpressPlugin2 }}</a> {{ content.projectWordpressPlugin3 }}
                     </span>
 
                   </p>
                   <p>
-                    <span class="hashtag">PHP</span>
-                    <span class="hashtag">JavaScript</span>
-                    <span class="hashtag">Docker</span>
-                    <span class="hashtag">Localization</span>
+                    <span class="hashtag">{{ content.projectWordpressPluginHashtag1 }}</span>
+                    <span class="hashtag">{{ content.projectWordpressPluginHashtag2 }}</span>
+                    <span class="hashtag">{{ content.projectWordpressPluginHashtag3 }}</span>
+                    <span class="hashtag">{{ content.projectWordpressPluginHashtag4 }}</span>
                   </p>
                 </div>
               </article>
@@ -285,7 +288,7 @@ g-domain-verify: Qs1p7JgqPLOGD3BYCMGe9EbyNJJEswyala44hnkO6d4
               <article class="tile" id="project-shopware-plugin">
                 <div class="flex bg-peel  pl1">
                   <header>
-                    <h3>Shopware-Plugin</h3>
+                    <h3>{{ content.projectShopwarePluginHeading }}</h3>
                   </header>
                   <p>
                     <img
@@ -296,21 +299,21 @@ g-domain-verify: Qs1p7JgqPLOGD3BYCMGe9EbyNJJEswyala44hnkO6d4
                       alt=""
                     />
                     <span class="text-line">
-                      Shopbetreibern wird durch eine API-Schnittstelle die Ladezeit-Optimierung erleichtert. Dieses Administration-Plugin war mein erstes Projekt mit Shopware 6 und wurde 2020
+                      {{ content.projectShopwarePlugin1 }}
                       <a
                         href="https://store.shopware.com/waoio62482995391f/wao.io-cache-control.html"
                         title="store.shopware.com/waoio62482995391f/wao.io-cache-control.html"
                         target="_blank"
                         rel="noopener"
-                      >im offiziellen Shopware-Store</a> veröffentlicht.
+                      >{{ content.projectShopwarePlugin2 }}</a> {{ content.projectShopwarePlugin3 }}
                     </span>
                   </p>
 
                   <p>
-                    <span class="hashtag">Shopware 6</span>
-                    <span class="hashtag">Symfony</span>
-                    <span class="hashtag">PHP</span>
-                    <span class="hashtag">Vue.js</span>
+                    <span class="hashtag">{{ content.projectShopwarePluginHashtag1 }}</span>
+                    <span class="hashtag">{{ content.projectShopwarePluginHashtag2 }}</span>
+                    <span class="hashtag">{{ content.projectShopwarePluginHashtag3 }}</span>
+                    <span class="hashtag">{{ content.projectShopwarePluginHashtag4 }}</span>
                   </p>
                 </div>
               </article>
@@ -318,7 +321,7 @@ g-domain-verify: Qs1p7JgqPLOGD3BYCMGe9EbyNJJEswyala44hnkO6d4
               <article class="tile" id="project-react-app">
                 <div class="flex bg-peel  pl1">
                   <header>
-                    <h3>React-Web-App</h3>
+                    <h3>{{ content.projectReatAppHeading }}</h3>
                   </header>
                   <p>
                     <img
@@ -329,22 +332,22 @@ g-domain-verify: Qs1p7JgqPLOGD3BYCMGe9EbyNJJEswyala44hnkO6d4
                       alt=""
                     />
                     <span class="text-line">
-                      Die grafischen Oberfläche von wao.io visualisiert technische Daten und lässt Webmaster die Optimierung deiner Website selbst einstellen. Ich entwickelte und aktualisierte Komponenten der Web-App
+                      {{ content.projectReatApp1 }}
                       <a
                         href="https://wao.io/de/about-us/experts/ingo-steinke/"
                         title="wao.io/de/about-us/experts/ingo-steinke"
                         target="_blank"
                         rel="noopener"
-                      >als Teil des Frontend- und Support-Teams</a>.
+                      >{{ content.projectReatApp2 }}</a>.
                     </span>
-
+                    {{ content.projectReatApp3 }}
                   </p>
                   <p>
-                    <span class="hashtag">React</span>
-                    <span class="hashtag">JSX</span>
-                    <span class="hashtag">ES6</span>
-                    <span class="hashtag">CSS-in-JS</span>
-                    <span class="hashtag">Storybook</span>
+                    <span class="hashtag">{{ content.projectReatAppHashtag1 }}</span>
+                    <span class="hashtag">{{ content.projectReatAppHashtag2 }}</span>
+                    <span class="hashtag">{{ content.projectReatAppHashtag3 }}</span>
+                    <span class="hashtag">{{ content.projectReatAppHashtag4 }}</span>
+                    <span class="hashtag">{{ content.projectReatAppHashtag5 }}</span>
                   </p>
                 </div>
               </article>
@@ -352,7 +355,7 @@ g-domain-verify: Qs1p7JgqPLOGD3BYCMGe9EbyNJJEswyala44hnkO6d4
               <article class="tile" id="project-webperf-talk">
                 <div class="flex bg-peel  pl1">
                   <header>
-                    <h3>Performance-Vortrag</h3>
+                    <h3>{{ content.projectWebperfTalkHeading }}</h3>
                   </header>
                   <p>
                     <img
@@ -363,19 +366,19 @@ g-domain-verify: Qs1p7JgqPLOGD3BYCMGe9EbyNJJEswyala44hnkO6d4
                       alt=""
                     />
                     <span class="text-line">
-                      Wie beschleunige ich meine Website? Angelina Farsch und ich
+                      {{ content.projectWebperfTalk1 }}
                       <a
                         href="https://www.meetup.com/cologne-germany-high-performance-website-optimization-group/events/268706480/"
                         title="meetup.com/cologne-germany-high-performance-website-optimization-group/events/268706480/"
                         target="_blank"
                         rel="noopener"
-                      >erläuterten beim Kölner Web-Performance-Meetup</a>, wie Betreiber von Webseiten herausfinden, ob ihre Seite zu den Sprintern oder Schnecken gehört und mit Welchen Mitteln wir die Performance erhöhen können.
+                      >{{ content.projectWebperfTalk2 }}</a>{{ content.projectWebperfTalk3 }}
                     </span>
                   </p>
                   <p>
-                    <span class="hashtag">Meetup</span>
-                    <span class="hashtag">Vortrag</span>
-                    <span class="hashtag">Jitsi</span>
+                    <span class="hashtag">{{ content.projectWebperfTalkHashtag1 }}</span>
+                    <span class="hashtag">{{ content.projectWebperfTalkHashtag2 }}</span>
+                    <span class="hashtag">{{ content.projectWebperfTalkHashtag3 }}</span>
                   </p>
                 </div>
               </article>
@@ -383,7 +386,7 @@ g-domain-verify: Qs1p7JgqPLOGD3BYCMGe9EbyNJJEswyala44hnkO6d4
               <article class="tile" id="project-kleiderordnung">
                 <div class="flex bg-peel  pl1">
                   <header>
-                    <h3>Web-Visitenkarte</h3>
+                    <h3>{{ content.projectKleiderordnungHeading }}</h3>
                   </header>
                   <p>
                     <img
@@ -394,20 +397,21 @@ g-domain-verify: Qs1p7JgqPLOGD3BYCMGe9EbyNJJEswyala44hnkO6d4
                       alt=""
                     />
                     <span class="text-line">
+                      {{ content.projectKleiderordnung1 }}
                        <a
                         href="https://www.kleiderordnung-duesseldorf.de"
                         title="www.kleiderordnung-duesseldorf.de"
                         target="_blank"
                         rel="noopener"
-                      >Kleiderordnung-Duesseldorf.de</a>
-                      entwickelte ich 2016 als One-Pager mit Reiternavigation. Grafische Grundlage war das vorliegende Design der gedruckten Flyer und Visitenkarten, das ich in Absprache mit der Designerin für die Website adaptierte.
+                      >{{ content.projectKleiderordnung2 }}</a>
+                      {{ content.projectKleiderordnung3 }}
                     </span>
                   </p>
                   <p>
-                    <span class="hashtag">HTML 5</span>
-                    <span class="hashtag">CSS 3</span>
-                    <span class="hashtag">JavaScript</span>
-                    <span class="hashtag">PHP</span>
+                    <span class="hashtag">{{ content.projectKleiderordnungHashtag1 }}</span>
+                    <span class="hashtag">{{ content.projectKleiderordnungHashtag2 }}</span>
+                    <span class="hashtag">{{ content.projectKleiderordnungHashtag3 }}</span>
+                    <span class="hashtag">{{ content.projectKleiderordnungHashtag4 }}</span>
                   </p>
                 </div>
               </article>
@@ -415,7 +419,7 @@ g-domain-verify: Qs1p7JgqPLOGD3BYCMGe9EbyNJJEswyala44hnkO6d4
               <article class="tile" id="project-maker-hackathon">
                 <div class="flex bg-peel pl1">
                   <header>
-                    <h3>Maker-Projekt</h3>
+                    <h3>{{ content.projectMakerHackathonHeading }}</h3>
                   </header>
                   <p>
                     <img
@@ -426,20 +430,20 @@ g-domain-verify: Qs1p7JgqPLOGD3BYCMGe9EbyNJJEswyala44hnkO6d4
                       alt=""
                     />
                     <span class="text-line">
-                      Die interaktive Upcycling-Installation
+                      {{ content.projectMakerHackathon1 }}
                       <a
                         href="https://github.com/openmindculture/arduino-woodhack"
                         title="github.com/openmindculture/arduino-woodhack"
                         target="_blank"
                         rel="noopener"
-                      >"Green Wall-E"</a>
-                      entstand aus Arduino-Hardware, Holz und Abfall. Auf Trockenheit und Gießwasser reagierte sie mit bunter Lichtanimation und wurde 2019 Sieger beim Sevenval-Hackathon.
+                      >{{ content.projectMakerHackathon2 }}</a>
+                      {{ content.projectMakerHackathon3 }}
                     </span>
                   </p>
                   <p>
-                    <span class="hashtag">Arduino</span>
-                    <span class="hashtag">C++</span>
-                    <span class="hashtag">Hackathon</span>
+                    <span class="hashtag">{{ content.projectMakerHackathonHashtag1 }}</span>
+                    <span class="hashtag">{{ content.projectMakerHackathonHashtag2 }}</span>
+                    <span class="hashtag">{{ content.projectMakerHackathonHashtag3 }}</span>
                   </p>
                 </div>
 
@@ -450,158 +454,154 @@ g-domain-verify: Qs1p7JgqPLOGD3BYCMGe9EbyNJJEswyala44hnkO6d4
 
           <section class="text-content-layout text-content-color">
             <h2 id="work">
-              Langlebige Lösungen
+              {{ content.workHeading }}
             </h2>
             <article class="text-width">
               <p>
-                Deine Layouts realisiere ich plattformübergreifend, auf Wunsch auch pixelgenau. Mein Ziel sind langlebige Lösungen, elegant, verständlich und pflegeleicht. Modulare Komponenten, Themes und CSS-Frameworks erleichtern die Zusammenarbeit und Weiterentwicklung. Kontinuierliches Testen ermöglicht es mir, Fehler frühzeitig zu entdecken und zu beheben.
+                {{ content.work }}
               </p>
-              <h3>Full-Stack-Erfahrung</h3>
+              <h3>{{ content.workFullstackHeading }}</h3>
               <p>
-                Bei der Weiterentwicklung bestehenden Codes kommt mir meine Berufserfahrung und meine pragmatische Einstellung zugute.
-                Mit meinen Erfahrungen im Backend- und DevOps-Bereich und meiner hohen Lernbereitschaft übernehme ich bei Bedarf auch Aufgaben, die sich rund um die Frontend-Entwicklung ergeben.
+                {{ content.workFullstack }}
               </p>
-              <h3 id="plugin-programmierung">Plugin-Programmierung</h3>
+              <h3 id="plugin-programmierung">{{ content.workPluginsHeading }}</h3>
               <p>
-                Schnittstellen zum Backend implementiere ich vorzugsweise als unabhängige Module.
-                Für den Web-Performance-Servive wao.io entwickelte ich jeweils ein <a href="#project-shopware-plugin">Plugin für Shopware 6</a> und <a href="#project-wordpress-plugin">für das CMS WordPress</a>.
-                Beide Plugins wurden nach erfolgreicher Prüfung in die <a href="https://store.shopware.com/waoio62482995391f/wao.io-cache-control.html" target="_blank" rel="noopener" title="Shopware-Store-Seite für das Plugin wao.io Cache Control">offiziellen Verzeichnisse </a>aufgenommen.
+                {{ content.workPlugins1 }} <a href="#project-shopware-plugin">{{ content.workSwLink1Text }}</a> {{ content.workPlugins2 }} <a href="#project-wordpress-plugin">{{ content.workWpLinkText }}</a>{{ content.workPlugins3 }} <a href="https://store.shopware.com/waoio62482995391f/wao.io-cache-control.html" target="_blank" rel="noopener" title="{{ content.workSwLink2Title }}">{{ content.workSwLink2Text }}</a>{{ content.workPlugins4 }}
               </p>
 
             </article>
           </section>
 
           <section class="text-content-layout skills-wrapper avoid-page-break">
-            <h3 id="skills" class="font-sans">Fachkenntnisse</h3>
+            <h3 id="skills" class="font-sans">{{ content.SkillsHeading }}</h3>
             <ul class="grid-container skills">
               <li class="tile">
-                <h4 class="font-sans">Webentwicklung</h4>
+                <h4 class="font-sans">{{ content.SkillsWebdevHeading }}</h4>
                 <ul>
                   <li>
-                    HTML
+                    {{ content.SkillsWebdevHtml }}
                     <div class="hashtags">
-                     <span class="hashtag">HTML 5</span>
-                      <span class="hashtag">SEO</span>
+                      <span class="hashtag">{{ content.SkillsWebdevHtmlHashtag1 }}</span>
+                      <span class="hashtag">{{ content.SkillsWebdevHtmlHashtag2 }}</span>
                     </div>
                   </li>
                   <li>
-                    CSS
+                    {{ content.SkillsWebdevCss }}
                     <div class="hashtags">
-                      <span class="hashtag">CSS 3</span>
-                      <span class="hashtag">SCSS</span>
-                      <span class="hashtag">PostCSS</span>
-                      <span class="hashtag">CSS-in-JS</span>
+                      <span class="hashtag">{{ content.SkillsWebdevCssHashtag1 }}</span>
+                      <span class="hashtag">{{ content.SkillsWebdevCssHashtag2 }}</span>
+                      <span class="hashtag">{{ content.SkillsWebdevCssHashtag3 }}</span>
+                      <span class="hashtag">{{ content.SkillsWebdevCssHashtag4 }}</span>
                     </div>
                   </li>
                   <li>
-                    JavaScript
+                    {{ content.SkillsWebdevJs }}
                     <div class="hashtags">
-                      <span class="hashtag">ES6</span>
-                      <span class="hashtag">React</span>
-                      <span class="hashtag">Vue.js</span>
-                      <span class="hashtag">node.js</span>
+                      <span class="hashtag">{{ content.SkillsWebdevJsHashtag1 }}</span>
+                      <span class="hashtag">{{ content.SkillsWebdevJsHashtag2 }}</span>
+                      <span class="hashtag">{{ content.SkillsWebdevJsHashtag3 }}</span>
+                      <span class="hashtag">{{ content.SkillsWebdevJsHashtag4 }}</span>
                     </div>
                   </li>
 
                   <li>
-                    PHP
+                    {{ content.SkillsWebdevPhp }}
                     <div class="hashtags">
-                      <span class="hashtag">PHP 7</span>
-                      <span class="hashtag">Composer</span>
-                      <span class="hashtag">PHPStan</span>
+                      <span class="hashtag">{{ content.SkillsWebdevPhpHashtag1 }}</span>
+                      <span class="hashtag">{{ content.SkillsWebdevPhpHashtag2 }}</span>
+                      <span class="hashtag">{{ content.SkillsWebdevPhpHashtag3 }}</span>
                     </div>
                   </li>
-                  <li>XML
+                  <li>
+                    {{ content.SkillsWebdevXml }}
                     <div class="hashtags">
-                      <span class="hashtag">XPath</span>
-                      <span class="hashtag">XSLT</span>
-                      <span class="hashtag">SOAP</span>
-                      <span class="hashtag">UBL</span>
+                      <span class="hashtag">{{ content.SkillsWebdevXmlHashtag1 }}</span>
+                      <span class="hashtag">{{ content.SkillsWebdevXmlHashtag2 }}</span>
+                      <span class="hashtag">{{ content.SkillsWebdevXmlHashtag3 }}</span>
+                      <span class="hashtag">{{ content.SkillsWebdevXmlHashtag4 }}</span>
                     </div>
                   </li>
 
                   <li>
-                    Datenbanken
+                    {{ content.SkillsWebdevDb }}
                     <div class="hashtags">
-                      <span class="hashtag">MySQL</span>
-                      <span class="hashtag">MariaDB</span>
-                      <span class="hashtag">Oracle</span>
-                      <span class="hashtag">MongoDB</span>
+                      <span class="hashtag">{{ content.SkillsWebdevDbHashtag1 }}</span>
+                      <span class="hashtag">{{ content.SkillsWebdevDbHashtag2 }}</span>
+                      <span class="hashtag">{{ content.SkillsWebdevDbHashtag3 }}</span>
+                      <span class="hashtag">{{ content.SkillsWebdevDbHashtag4 }}</span>
                     </div>
                   </li>
 
                 </ul>
               </li>
               <li class="tile">
-                <h4 class="font-sans">Frameworks, Libraries</h4>
+                <h4 class="font-sans">{{ content.SkillsLib }}</h4>
                 <ul>
-                  <li>ReactJS</li>
-                  <li>Vue.js</li>
-                  <li>node.js</li>
-                  <li>Symfony</li>
-                  <li>Eleventy</span>
-                  <li>jQuery</li>
+                  <li>{{ content.SkillsLibReact }}</li>
+                  <li>{{ content.SkillsLibVue }}</li>
+                  <li>{{ content.SkillsLibNode }}</li>
+                  <li>{{ content.SkillsLibSymfony }}</li>
+                  <li>{{ content.SkillsLibEleventy }}</span>
+                  <li>{{ content.SkillsLibJquery }}</li>
                   </ul>
               </li>
 
               <li class="tile">
-                <h4 class="font-sans">Sonstige Tools</h4>
+                <h4 class="font-sans">{{ content.SkillsOther }}</h4>
                 <ul>
                   <li>
-                    Qualitätssicherung
+                    {{ content.SkillsOtherQa }}
                     <div class="hashtags">
-                      <span class="hashtag">Jest</span>
-                      <span class="hashtag">Cypress</span>
-                      <span class="hashtag">Lighthouse</span>
-                      <span class="hashtag">Storybook</span>
+                      <span class="hashtag">{{ content.SkillsOtherQaHashtag1 }}</span>
+                      <span class="hashtag">{{ content.SkillsOtherQaHashtag2 }}</span>
+                      <span class="hashtag">{{ content.SkillsOtherQaHashtag3 }}</span>
+                      <span class="hashtag">{{ content.SkillsOtherQaHashtag4 }}</span>
                     </div>
                   </li>
                   <li>
-                    Codeverwaltung
+                    {{ content.SkillsOtherVcs }}
                     <div class="hashtags">
-                      <span class="hashtag">Git</span>
-                      <span class="hashtag">GitHub</span>
-                      <span class="hashtag">GitLab</span>
-                      <span class="hashtag">SVN</span>
+                      <span class="hashtag">{{ content.SkillsOtherVcsHashtag1 }}</span>
+                      <span class="hashtag">{{ content.SkillsOtherVcsHashtag2 }}</span>
+                      <span class="hashtag">{{ content.SkillsOtherVcsHashtag3 }}</span>
+                      <span class="hashtag">{{ content.SkillsOtherVcsHashtag4 }}</span>
                     </div>
                   </li>
                   <li>
-                    Linter, Transpiler
+                    {{ content.SkillsOtherLinter }}
                     <div class="hashtags">
-                      <span class="hashtag">Babel</span>
-                      <span class="hashtag">PostCSS</span>
-                      <span class="hashtag">Stylelint</span>
-                      <span class="hashtag">eslint</span>
+                      <span class="hashtag">{{ content.SkillsOtherLinterHashtag1 }}</span>
+                      <span class="hashtag">{{ content.SkillsOtherLinterHashtag2 }}</span>
+                      <span class="hashtag">{{ content.SkillsOtherLinterHashtag3 }}</span>
+                      <span class="hashtag">{{ content.SkillsOtherLinterHashtag4 }}</span>
                     </div>
                   </li>
                   <li>
-                    DevOps
+                    {{ content.SkillsOtherDevops }}
                     <div class="hashtags">
-                      <span class="hashtag">Docker</span>
-                      <span class="hashtag">Jenkins</span>
-                      <span class="hashtag">npm</span>
-                      <span class="hashtag">yarn</span>
-                      <span class="hashtag">Netlify</span>
+                      <span class="hashtag">{{ content.SkillsOtherDevopsHashtag1 }}</span>
+                      <span class="hashtag">{{ content.SkillsOtherDevopsHashtag2 }}</span>
+                      <span class="hashtag">{{ content.SkillsOtherDevopsHashtag3 }}</span>
+                      <span class="hashtag">{{ content.SkillsOtherDevopsHashtag4 }}</span>
+                      <span class="hashtag">{{ content.SkillsOtherDevopsHashtag5 }}</span>
                     </div>
                   </li>
                   <li>
-                    Bildbearbeitung
+                    {{ content.SkillsOtherImg }}
                     <div class="hashtags">
-                      <span class="hashtag">GIMP</span>
-                      <span class="hashtag">Inkscape</span>
-                      <span class="hashtag">ImageMagick</span>
-                      <!-- Krita -->
+                      <span class="hashtag">{{ content.SkillsOtherImgHashtag1 }}</span>
+                      <span class="hashtag">{{ content.SkillsOtherImgHashtag2 }}</span>
+                      <span class="hashtag">{{ content.SkillsOtherImgHashtag3 }}</span>
                     </div>
                   </li>
                   <li>
-                    Webdesign, DevUX, Kollaboration
+                    {{ content.SkillsDevuxImg }}
                     <div class="hashtags">
-                      <span class="hashtag">Webflow</span>
-                      <!-- figma -->
-                      <span class="hashtag">InVision</span>
-                      <span class="hashtag">Zeplin</span>
-                      <span class="hashtag">Trello</span>
-                      <span class="hashtag">Jira</span>
+                      <span class="hashtag">{{ content.SkillsDevuxImgHashtag1 }}</span>
+                      <span class="hashtag">{{ content.SkillsDevuxImgHashtag2 }}</span>
+                      <span class="hashtag">{{ content.SkillsDevuxImgHashtag3 }}</span>
+                      <span class="hashtag">{{ content.SkillsDevuxImgHashtag4 }}</span>
+                      <span class="hashtag">{{ content.SkillsDevuxImgHashtag5 }}</span>
                     </div>
                   </li>
                 </ul>
@@ -612,86 +612,91 @@ g-domain-verify: Qs1p7JgqPLOGD3BYCMGe9EbyNJJEswyala44hnkO6d4
 
           <section class="text-content-layout text-content-color semitransparent avoid-page-break">
             <h2 id="about-me">
-              Beruf und Leidenschaft
+              {{ content.aboutMeHeading }}
             </h2>
             <article class="text-width">
               <header>
                 <h3>
-                  Was mich immer noch fasziniert
+                  {{ content.aboutMeIntroHeading }}
                 </h3>
               </header>
               <p class="capitalized"><!-- overcapitalize first letter -->
-                Weltweite Kommunikation und Inspiration: das World Wide Web verbindet die Menschen mithilfe robuster und dezentraler Technologie. Schöne, schnelle und zugängliche Websites sollen allen Menschen Zugang zu diesem Netzwerk bieten. Mit meiner Arbeit kann ich dazu beitragen, diesen Traum zu verwirklichen.
+                {{ content.aboutMeIntro }}
               </p>
 
-              <h3>Werdegang</h3>
+              <h3>{{ content.aboutMeCvHeading }}</h3>
 
               <p>
-                Interaktive Websites und Browserspiele waren die ersten Produkte meines 2000 gegründeten Startups. Suchmaschinenoptimierung und unsere CMS- und Shop-Software Active-Webshop bildeten später das Kerngeschäft.
+                {{ content.aboutMeCv1 }}
               </p>
               <p>
-                Als Angestellter E-Commerce-Engineer bei Xsite entwickelte ich von 2010 bis 2014 Online-Shops für Shop-Apotheke.com, den Kunstversand Ars mundi und andere Kunden. Als Technical Consultant bei Sevenval Technologies (später Avenga Germany) optimierte ich die Ladezeit und Handytauglichkeit von Apps und Websites der Frankfurter Allgemeinen Zeitung und erstellte Frontend-Anwendungen für wao.io und andere Kunden. Seit Ende 2020 bin ich selbstständiger Webentwickler.
-              </p>
-
-              <h4>Zukunftsthemen</h4>
-              <p>
-                Innovation, Transformation und Digitalisierung bedeuten in der IT-Branche oft nur technologischen Fortschritt. Gesellschaftlichen Herausforderungen in der Ökologie, Gleichberechtigung, Sicherheit und Datenschutz fehlt oft die nötige Priorität. Ethische und ökologische Projekte beispielsweise in der Verkehrswende, bei erneuerbaren Energien und umweltfreundlicher Mode möchte ich mit meiner Arbeit bevorzugt unterstützen.
+                {{ content.aboutMeCv2 }}
               </p>
 
-              <h3 id="talks-events">Vorträge und Veranstaltungen</h3>
+              <h4>{{ content.aboutMeEthicalHeading }}</h4>
               <p>
-                Konferenzen, Kurse und Meetups bieten gelegenheit zu fachlichem und persönlichem Austausch.<br>
-                In den letzten Jahren hielt ich unter anderem diese Vorträge:
+                {{ content.aboutMeEthical }}
+              </p>
+
+              <h3 id="talks-events">{{ content.talksHeading }}</h3>
+              <p>
+                {{ content.talks }}<br>
+                {{ content.talks2 }}
                 <ul>
                   <li>
                     <a
                       href="https://www2.slideshare.net/IngoSteinke/meetups-in-zeiten-von-corona-juni-2020-238451425"
+                      hreflang="de"
                       target="_blank"
                       rel="noopener"
                     >
-                      Meetups in Zeiten von Corona
+                      {{ content.talkMeetupsCorona }}
                     </a>
-                    , Juni 2020
+                    {{ content.talkMeetupsCorona2 }}
                   </li>
                   <li>
                     <a
                       href="https://www.meetup.com/cologne-germany-high-performance-website-optimization-group/events/268706480/"
+                      hreflang="de"
                       target="_blank"
                       rel="noopener"
                     >
-                      Performance-Optimierung ohne Code-Änderung
+                      {{ content.talkPerformanceNoCode }}
                     </a>
-                    mit Angelina Farsch, April 2020
+                    {{ content.talkPerformanceNoCode2 }}
                   </li>
                   <li>
                     <a
                       href="https://www.meetup.com/cologne-germany-high-performance-website-optimization-group/events/255856182/"
+                      hreflang="de"
                       target="_blank"
                       rel="noopener"
-                      >
-                      HSTS: Mehr Sicherheit ohne Performanceverlust
+                    >
+                      {{ content.talkHsts }}
                     </a>
-                    , Dezember 2018
+                    {{ content.talkHsts2 }}
                   </li>
                   <li>
                     <a
                       href="https://www.meetup.com/cologne-germany-high-performance-website-optimization-group/events/zdnjlmywhbgb/"
+                      hreflang="de"
                       target="_blank"
                       rel="noopener"
-                      >
-                      Infrastruktur für bessere Web Performance
+                    >
+                      {{ content.talkInfrastructure }}
                     </a>
-                    , Mai 2017
+                    {{ content.talkInfrastructure2 }}
                   </li>
                   <li>
                     <a
                       href="https://meinjobdeinjob.de/donnerstag-26-januar-2017"
                       target="_blank"
+                      hreflang="de"
                       rel="noopener"
                       >
-                      Berufsorientierung: Mein Job! Dein Job?
+                      {{ content.talkVocational }}
                     </a>
-                    , Januar 2017
+                    {{ content.talkVocational2 }}
                   </li>
                 </ul>
               </p>
@@ -700,39 +705,40 @@ g-domain-verify: Qs1p7JgqPLOGD3BYCMGe9EbyNJJEswyala44hnkO6d4
 
           <section class="imprint-contact">
             <h2 id="imprint" class="center">
-              Impressum
+              {{ content.imprintHeader }}
             </h2>
             <article id="contact">
               <div class="vcard">
-                <h3 class="fn">Ingo Steinke</h3>
+                <h3 class="fn">{{ content.imprintName }}</h3>
                 <br>
                 <span class="adr">
-                  <span class="street-address">Neunzigstraße 6a</span><br>
-                  <span class="postal-code">40625</span> Düsseldorf<br>
-                  <span class="country-name">Deutschland</span><br>
+                  <span class="street-address">
+                    {{ content.imprintStreetAddress }}</span><br>
+                  <span class="postal-code">{{ content.imprintPostalCode }}</span> {{ content.imprintCity }}<br>
+                  <span class="country-name">{{ content.imprintCountryName }}</span><br>
                 </span><br>
-                <span class="tel"><a href="tel:+491634684080">+49 (0) 163 46 84 08 0</a></span><br>
-                <span><a href="mailto:kontakt@ingo-steinke.de">kontakt@ingo-steinke.de</a></span><br>
-                <a class="url" rel="author" href="https://www.ingo-steinke.de/">www.ingo-steinke.de</a>
+                <span class="tel"><a href="tel:+491634684080">{{ content.imprintTel }}</a></span><br>
+                <span><a href="mailto:{{ content.contactEmail }}kontakt@ingo-steinke.de">{{ content.contactEmail }}</a></span><br>
+                <a class="url" rel="author" href="{{ content.canonicalHref }}https://www.ingo-steinke.de/">{{ content.shortHref }}</a>
               </div>
 
               <ul class="row social-links">
 
                 <li>
-                  <a rel="noopener nofollow" href="https://www.linkedin.com/in/ingosteinke" target="_blank" title="LinkedIn-Profil von Ingo Steinke">
+                  <a rel="noopener nofollow" href="https://www.linkedin.com/in/ingosteinke" target="_blank" title="LinkedIn-{{ content.profile }}: Ingo Steinke">
                     <img src="img/logo-linkedin.svg" width="25" height="25" loading="lazy" alt="LinkedIn Logo">
                     <span class="only-print">www.linkedin.com/in/ingosteinke</span>
                   </a>
                 </li>
 
                 <li>
-                  <a href="https://github.com/openmindculture" target="_blank" rel="noopener" title="GitHub-Profil (openmindculture)">
+                  <a href="https://github.com/openmindculture" target="_blank" rel="noopener" title="GitHub-{{ content.profile }}: openmindculture">
                     <img src="img/logo-github.svg" width="25" height="25" loading="lazy" loading="lazy" alt="GitHub Logo">
                     <span class="only-print">github.com/openmindculture</span>
                   </a>
                 </li>
                 <li>
-                  <a href="https://twitter.com/fraktalisman" target="_blank" rel="noopener" title="Ingo Steinke bei Twitter (@fraktalisman)">
+                  <a href="https://twitter.com/fraktalisman" target="_blank" rel="noopener" title="Twitter-{{ content.profile }}: fraktalisman">
                     <img src="img/logo-twitter.svg" width="25" height="25" loading="lazy" alt="Twitter Logo">
                     <span class="only-print">twitter.com/fraktalisman</span>
                   </a>
@@ -741,7 +747,7 @@ g-domain-verify: Qs1p7JgqPLOGD3BYCMGe9EbyNJJEswyala44hnkO6d4
                   <a href="https://stackoverflow.com/users/5069530/ingo-steinke"
                     target="_blank"
                     rel="noopener"
-                    title="Ingo Steinke bei Stack Overflow"
+                    title="Stack Overflow-{{ content.profile }}"
                   >
                     <img src="img/logo-stackoverflow.svg" width="25" height="25" loading="lazy" alt="StackOverflow Logo">
                     <span class="only-print">stackoverflow.com/users/5069530/ingo-steinke</span>
@@ -751,7 +757,7 @@ g-domain-verify: Qs1p7JgqPLOGD3BYCMGe9EbyNJJEswyala44hnkO6d4
                   <a href="https://www.xing.com/profile/Ingo_Steinke2/cv"
                     target="_blank"
                     rel="noopener nofollow"
-                    title="Ingo Steinke bei Xing"
+                    title="Xing-{{ content.profile }}"
                   >
                     <img src="img/logo-xing.svg" width="25" height="25" loading="lazy" alt="Xing Logo">
                     <span class="only-print">www.xing.com/profile/Ingo_Steinke2/cv</span>
@@ -761,7 +767,7 @@ g-domain-verify: Qs1p7JgqPLOGD3BYCMGe9EbyNJJEswyala44hnkO6d4
                   <a href="https://www.meetup.com/members/219315449/"
                     target="_blank"
                     rel="noopener"
-                    title="Ingo Steinke bei Meetup"
+                    title="Meetup-{{ content.profile }}"
                   >
                     <img src="img/logo-meetup.svg" width="25" height="25" loading="lazy" alt="Meetup Logo">
                     <span class="only-print">www.meetup.com/members/219315449</span>
@@ -769,80 +775,52 @@ g-domain-verify: Qs1p7JgqPLOGD3BYCMGe9EbyNJJEswyala44hnkO6d4
                 </li>
               </ul>
 
-              <!-- h4>Bankverbindung</h4>
-              <p class="text-content-color">
-               <span>Zahlungsempfänger: Ingo Steinke</span><br>
-                <span>Kontonummer (IBAN): DE86 1203 0000 1057 5854 14</span><br>
-                <span>Bank: Deutsche Kreditbank (DKB) Berlin (BIC: BYLADEM1001)</span><br>
-                <span>Bitte gib als Verwendungszweck die Rechnungsnummer an.</span><br>
-                <br>
-                <span>Steuernummer: 133 / 5315 / 3587</span><br>
-                <span>Finanzamt: Düsseldorf-Mitte</span><br>
-                <span>Angemeldetes Gewerbe: Software-Entwicklung, Webentwicklung, Beratung.</span><br>
-              </p -->
-
             </article>
 
             <aside id="privacy" class="privacy initially-hidden clear">
               <header>
                 <h3>
-                  Datenschutzerklärung
+                  {{ content.privacyHeading }}
                 </h3>
               </header>
               <p>
-                Die Regeln des Bundesdatenschutzgesetzes (BDSG) und der europäischen Datenschutzgrundverordnung (DSGVO) sind Anlass zu dieser Datenschutzerklärung. Das <a href="#imprint">Impressum</a> nennt den verantworlichen Anbieter und deine Möglichkeiten zur Kontaktaufnahme.
+                {{ content.privacyGdpr }} <a href="#imprint">{{ content.privacyGdprImprint }}</a> {{ content.privacyGdpr2 }}
               </p>
-              <h4>Dein gutes Recht: Auskunft, Korrektur, Löschung, Widerruf</h4>
+              <h4>{{ content.privacyYourRightsHeading }}</h4>
               <p>
-                Du hast das Recht, eine Einwilligung in die Verarbeitung deiner Daten zu verweigern oder nachträglich zu widerrufen, sowie das Recht auf Auskunft hinsichtlich der über deine Person gespeicherten Daten und können eine Löschung dieser Daten oder eine Korrektur unzutreffender Daten verlangen. Ausgenommen von der Löschung sind gespeicherte Daten, die der gesetzlichen Aufbewahrungspflicht bzw. der steuerlichen Abgabenordnung oder einer anderweitig vorgeschriebenen Datenspeicherung zur Geschäftsabwicklung unterliegen.
+                {{ content.privacyYourRights }}
               </p>
-              <h4>Umfang der Verarbeitung personenbezogener Daten</h4>
+              <h4>{{ content.privacyPersonalDataHeading }}</h4>
               <p>
-                Personenbezogene Daten meiner Nutzer verarbeite ich grundsätzlich nur soweit, wie dies zur Vertragserfüllung, zu konkreten vorvertraglichen Vereinbarungen, sowie zur Bereitstellung einer funktionsfähigen Website erforderlich ist. Die Verarbeitung personenbezogener Daten meiner Nutzer erfolgt nur nach Einwilligung der Nutzerin bzw. des Nutzers, außer in solchen Fällen, in denen eine vorherige Einholung einer Einwilligung aus tatsächlichen Gründen nicht möglich ist und die Verarbeitung der Daten durch gesetzliche Vorschriften ausdrücklich gestattet oder gefordert ist.
+                {{ content.privacyPersonalData }}
               </p>
-              <h4>Rechtsgrundlage für die Verarbeitung personenbezogener Daten</h4>
+              <h4>{{ content.privacyLawHeading }}</h4>
               <p>
-                Bei der Verarbeitung von personenbezogenen Daten, die zur Erfüllung eines Vertrages mit der betroffenen Person als Vertragspartei erforderlich ist, dient Art. 6 Abs. 1 Bst. b DSGVO als Rechtsgrundlage. Dies gilt auch für Verarbeitungsvorgänge, die zur Durchführung vorvertraglicher Maßnahmen erforderlich sind.
-              </p>
-              <p>
-                Soweit eine Verarbeitung personenbezogener Daten zur Erfüllung einer rechtlichen Verpflichtung erforderlich ist, dient Art. 6 Abs. 1 Bst. c DSGVO als Rechtsgrundlage.
-              </p>
-              <h4>Datensparsamkeit und Datenminimierung</h4>
-              <p>
-                Personenbezogene Daten speichere ich gemäß den Grundsätzen der Datenvermeidung und Datensparsamkeit nur so lange, wie es erforderlich ist oder vom Gesetzgeber her vorgeschrieben wird (gesetzliche Speicherfrist). Entfällt der Zweck der erhobenen Informationen oder endet die Speicherfrist, veranlasse ich die Sperrung bzw. Löschung der Daten.
+                {{ content.privacyLaw }}
               </p>
               <p>
-                Diese Website verwendet lediglich die für den technischen Betrieb notwendigen Cookies.
+                {{ content.privacyLaw2 }}
+              </p>
+              <h4>{{ content.privacyMinimalHeading }}</h4>
+              <p>
+                {{ content.privacyMinimal }}
               </p>
               <p>
-                Verweise zu sozialen und beruflichen Netzwerken sind lediglich Links zu externen Anbietern. Anzeigen und Ansehen der dieser Verweise führt zu keiner Datenübertragung an Drittanbieter.
+                {{ content.privacyNoCookies }}
               </p>
               <p>
-                Schriftarten, Grafiken und Scriptdateien werden ausschließlich von unseren Servern geladen, es findet kein Abruf von externen Dienstleistern statt. Auf dieser Website verzichte ich zudem auf Auswertungs- und Werbefunktionen externer Anbieter. Daher werden auch keinerlei Daten mit Google Analytics, Facebook oder ähnlichen Drittanbietern ausgetauscht.
+                {{ content.privacyLinkDisclaimer }}
               </p>
-              <h4>Kontaktformular und elektronische Kommunikation</h4>
+              <h4>{{ content.privacyLogfilesHeading }}</h4>
               <p>
-                Wenn du mich über ein Kontaktformular, per E-Mail oder auf anderem elektronischen Wege (z.B. Messenger) kontaktierst, speichere ich die von dir gemachten Angaben, um deine Anfrage beantworten und mögliche Anschlussfragen stellen zu können. Im Falle eines konkreten Beratungswunsches oder einer Terminvereinbarung werden deine Angaben zur Durchführung vorvertraglicher Maßnahmen und ggf. zur Vertragserfüllung verwendet.
-              </p>
-              <p>
-                Über ein Kontaktformular kannst du gegebenenfalls deinen Namen, deine E-Mail-Adresse, deine Telefonnummer und eine frei formulierte Nachricht übermitteln. Zudem werden Datum und Uhrzeit der Kontaktaufnahme sowie deine IP-Adresse gespeichert. Dies wird im folgenden Abschnitt "Bereitstellung der Website und Auswertung technischer Daten" näher erläutert.
+                {{ content.privacyLogfiles }}
               </p>
               <p>
-                Ich weise dich darauf hin, dass jegliche Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Bitte achte daher auch bei deiner eigenen Kommunikation stets auf Datensparsamkeit und verwende möglichst aktuelle Software mit aktuellen Sicherheitsupdates!
+                {{ content.privacyLogfilesLaw }}
               </p>
-              <h4>Bereitstellung der Website und Auswertung technischer Daten (Logfiles)</h4>
+              <h4>{{ content.privacyChangesHeading }}</h4>
               <p>
-                Mit jedem Zugriff auf dieses Angebot werden durch mich beziehungsweise die von mir beauftragten Web-Provider (<a href="https://www.goneo.de" target="_blank" rel="noopener">goneo</a>, <a href="https://www.netlify.com" target="_blank" rel="noopener">netlify</a>) und deren Dienstleister automatisch Informationen erfasst, die zur technischen Bereitstellung der Website erforderlich sind. Erfasst werden die Adresse der besuchten Website, Datum und Uhrzeit, übertragene Datenmenge, Webbrowserkennung, IP-Adresse und gegebenenfalls auf die aufgerufene Website verweisende Websites. Die Daten werden in den Logfiles der EDV gespeichert. Eine Speicherung dieser Daten zusammen mit anderen personenbezogenen Daten der Nutzer findet nicht statt. Eine Auswertung der Daten zu Marketingzwecken findet in diesem Zusammenhang ebenfalls nicht statt.
-              </p>
-              <p>
-                Rechtsgrundlage für die vorübergehende Speicherung dieser Daten und der Logfiles ist Art. 6 Abs. 1 Bst. f DSGVO. Die Speicherung in Logfiles erfolgt, um die Funktionsfähigkeit der Website sicherzustellen. Zudem dienen diese Daten zur Gewährleistung der Sicherheit unserer informationstechnischen Systeme.
-              </p>
-              <p>
-                Ich behalte mir das Recht vor, die Server-Logfiles bei Verdacht auf eine rechtswidrige Nutzung meines Angebotes nachträglich zu kontrollieren.
-              </p>
-              <h4>Änderung dieser Datenschutzerklärung</h4>
-              <p>
-                Um zu gewährleisten, dass diese Datenschutzerklärung stets den aktuellen gesetzlichen Vorgaben entspricht, behalte ich mir jederzeit Änderungen vor. Das gilt auch für den Fall, dass die Datenschutzerklärung aufgrund neuer oder überarbeiteter Leistungen, zum Beispiel neuer Serviceleistungen, angepasst werden muss. Die neue Datenschutzerklärung greift dann bei deinem nächsten Besuch auf meinem Angebot.
+                {{ content.privacyChanges }}
               </p>
             </aside>
 
@@ -851,11 +829,11 @@ g-domain-verify: Qs1p7JgqPLOGD3BYCMGe9EbyNJJEswyala44hnkO6d4
 
         <footer class="page-footer">
           <p>
-            <a href="#contact">Kontakt</a>
-            <a href="#imprint">Impressum</a>
-            <a href="#privacy">Datenschutz</a>
+            <a href="#contact">{{ content.targetContact }}</a>
+            <a href="#imprint">{{ content.targetImprint }}</a>
+            <a href="#privacy">{{ content.targetPrivacy }}</a>
           </p>
-          &copy; {{ "now" | date: "%Y" }} Ingo Steinke
+          &copy; {{ "now" | date: "%Y" }} {{ content.imprintName }}
         </footer>
       </div>
 
