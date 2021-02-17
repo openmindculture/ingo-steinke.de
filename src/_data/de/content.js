@@ -30,6 +30,8 @@ module.exports = {
   "targetContact": "Kontakt",
   "targetImprint": "Impressum",
   "targetPrivacy": "Datenschutz",
+  "targetOtherLanguage": "English",
+  "targetOtherLanguageTitle": "Change language to English",
   "introHeading": "Begeistere deine Kunden im Internet",
   "intro": "Ich bin Ingo Steinke, begeisterter kreativer Webentwickler aus Düsseldorf mit über 20 Jahren Berufserfahrung. Von meiner Arbeit profitierten unter anderem die Frankfurter Allgemeine Zeitung, die ZEIT, HDI und wao.io.",
   "workWithMeHeading": "Mit mir kannst du arbeiten",

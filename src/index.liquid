@@ -130,6 +130,14 @@
                   <li><a href="#contact">{{ content.targetContact }}</a></li>
                   <li><a href="#imprint">{{ content.targetImprint }}</a></li>
                   <li><a href="#privacy">{{ content.targetPrivacy }}</a></li>
+                  <li>
+                    <a
+                      href="{{ content.alternateHref }}"
+                      hreflang="{{ content.alternateHreflang }}"
+                      lang="{{ content.alternateHreflang }}"
+                      title="{{ content.targetOtherLanguageTitle }}"
+                    >{{ content.targetOtherLanguage }}</a>
+                  </li>
                 </ul>
               </nav>
 
