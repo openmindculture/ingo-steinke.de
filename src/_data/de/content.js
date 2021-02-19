@@ -118,7 +118,7 @@ module.exports = {
   "workSwLink2Text": "offiziellen Verzeichnisse ",
   "workPlugins4": "aufgenommen.",
   /* Skills */
-  "SkillsHeading": "Fachkenntnisse",
+  "SkillsHeading": "Fachkenntnisse (Skills)",
   "SkillsWebdevHeading": "Webentwicklung",
   "SkillsWebdevHtml": "HTML",
   "SkillsWebdevHtmlHashtag1": "HTML 5",

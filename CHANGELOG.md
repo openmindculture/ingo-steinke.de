@@ -4,6 +4,7 @@
 - netlify does not need to re-build artifacts
 - hide privacy text in default printout
 - navigation target offset to prevent hiding below sticky header
+- content: skill heading more consistent with navigation
 
 ## [2.1.0] - 2021-02-17 - English Version
 ### added
