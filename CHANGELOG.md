@@ -1,3 +1,11 @@
+## [2.1.1] - 2021-02-19
+### fixed
+- ux: keep location hash when switching language; 222
+- netlify does not need to re-build artifacts
+- hide privacy text in default printout
+- navigation target offset to prevent hiding below sticky header
+- content: skill heading more consistent with navigation
+
 ## [2.1.0] - 2021-02-17 - English Version
 ### added
 - internationalize project; 220
@@ -6,14 +14,14 @@
 
 ## [2.0.7] - 2021-02-11
 ### fixed
-  - ux: optimize animation performance; #43
-  - ux: optimize web font loading; #43
-  - ux: fix and refactor link styles; #43
-  - ux: reduce paragraph with for readability; #43
-  - ux: optimize social links for mobile touch; #43
-  - ux: fix mobile width and readability; #43
-  - ux: improve print layout; #43
-  - content: fix typo
+- ux: optimize animation performance; #43
+- ux: optimize web font loading; #43
+- ux: fix and refactor link styles; #43
+- ux: reduce paragraph with for readability; #43
+- ux: optimize social links for mobile touch; #43
+- ux: fix mobile width and readability; #43
+- ux: improve print layout; #43
+- content: fix typo
 
 ## [2.0.6] - 2021-02-08
 ### fixed

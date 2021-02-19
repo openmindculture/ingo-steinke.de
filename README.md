@@ -17,6 +17,12 @@ npm run build
 - Commits to the master branch will trigger a production deployment by netlify.
 - Commits to pull requests will trigger preview builds to a preview domain.
 
+### Distribution Directories
+
+Distribution directories (`dist`, `dist_en`) are pushed to GitHub.
+It is not necessary to re-build them on the "serverless" server,
+Netlify can deploy the distributed content without further modification.
+
 ## Content / localization
 
 Text content can be edited in

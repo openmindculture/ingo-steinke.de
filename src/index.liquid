@@ -6,7 +6,7 @@
       {{ content.pageTitle }}
     </title>
     <meta name=language content={{ content.language }}>
-    <meta name=viewport content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
       {%- postcss -%}
         {% include _includes/critical.css %}
@@ -136,6 +136,7 @@
                       hreflang="{{ content.alternateHreflang }}"
                       lang="{{ content.alternateHreflang }}"
                       title="{{ content.targetOtherLanguageTitle }}"
+                      id="language-switch"
                     >{{ content.targetOtherLanguage }}</a>
                   </li>
                 </ul>
@@ -153,7 +154,7 @@
 
         </div>
 
-        <main id="content-top">
+        <main id="content-top" class="target-offset">
           <section class="text-content-layout text-content-color">
             <h2>{{ content.introHeading }}</h2>
             <article class="text-width">
@@ -174,7 +175,7 @@
             </article>
           </section>
 
-          <section class="tiled-content" id="projects">
+          <section class="tiled-content target-offset" id="projects">
             <div class="pl1">
               <h2>{{ content.projectsHeading }}</h2>
               <p>{{ content.projects }}</p>
@@ -182,7 +183,7 @@
 
             <div class="grid-container flow-grid">
 
-              <article class="tile" id="project-portfolio-relaunch">
+              <article class="tile target-offset" id="project-portfolio-relaunch">
                 <div class="flex bg-peel  pl1">
                   <header>
                     <h3>{{ content.projectPortfolioRelaunchHeading }}</h3>
@@ -221,7 +222,7 @@
 
               </article>
 
-              <article class="tile" id="project-webperf-meetup">
+              <article class="tile target-offset" id="project-webperf-meetup">
                 <div class="flex bg-peel  pl1">
                   <header>
                     <h3>{{ content.projectWebperfMeetupHeading }}</h3>
@@ -252,7 +253,7 @@
                 </div>
               </article>
 
-              <article class="tile" id="project-wordpress-plugin">
+              <article class="tile target-offset" id="project-wordpress-plugin">
                 <div class="flex bg-peel  pl1">
                   <header>
                     <h3>{{ content.projectWordpressPluginHeading }}</h3>
@@ -285,7 +286,7 @@
                 </div>
               </article>
 
-              <article class="tile" id="project-shopware-plugin">
+              <article class="tile target-offset" id="project-shopware-plugin">
                 <div class="flex bg-peel  pl1">
                   <header>
                     <h3>{{ content.projectShopwarePluginHeading }}</h3>
@@ -318,7 +319,7 @@
                 </div>
               </article>
 
-              <article class="tile" id="project-react-app">
+              <article class="tile target-offset" id="project-react-app">
                 <div class="flex bg-peel  pl1">
                   <header>
                     <h3>{{ content.projectReatAppHeading }}</h3>
@@ -352,7 +353,7 @@
                 </div>
               </article>
 
-              <article class="tile" id="project-webperf-talk">
+              <article class="tile target-offset" id="project-webperf-talk">
                 <div class="flex bg-peel  pl1">
                   <header>
                     <h3>{{ content.projectWebperfTalkHeading }}</h3>
@@ -383,7 +384,7 @@
                 </div>
               </article>
 
-              <article class="tile" id="project-kleiderordnung">
+              <article class="tile target-offset" id="project-kleiderordnung">
                 <div class="flex bg-peel  pl1">
                   <header>
                     <h3>{{ content.projectKleiderordnungHeading }}</h3>
@@ -416,7 +417,7 @@
                 </div>
               </article>
 
-              <article class="tile" id="project-maker-hackathon">
+              <article class="tile target-offset" id="project-maker-hackathon">
                 <div class="flex bg-peel pl1">
                   <header>
                     <h3>{{ content.projectMakerHackathonHeading }}</h3>
@@ -453,7 +454,7 @@
           </section>
 
           <section class="text-content-layout text-content-color">
-            <h2 id="work">
+            <h2 class="target-offset" id="work">
               {{ content.workHeading }}
             </h2>
             <article class="text-width">
@@ -464,7 +465,7 @@
               <p>
                 {{ content.workFullstack }}
               </p>
-              <h3 id="plugin-programmierung">{{ content.workPluginsHeading }}</h3>
+              <h3 class="target-offset" id="plugin-programmierung">{{ content.workPluginsHeading }}</h3>
               <p>
                 {{ content.workPlugins1 }} <a href="#project-shopware-plugin">{{ content.workSwLink1Text }}</a> {{ content.workPlugins2 }} <a href="#project-wordpress-plugin">{{ content.workWpLinkText }}</a>{{ content.workPlugins3 }} <a href="https://store.shopware.com/waoio62482995391f/wao.io-cache-control.html" target="_blank" rel="noopener" title="{{ content.workSwLink2Title }}">{{ content.workSwLink2Text }}</a>{{ content.workPlugins4 }}
               </p>
@@ -473,7 +474,7 @@
           </section>
 
           <section class="text-content-layout skills-wrapper avoid-page-break">
-            <h3 id="skills" class="font-sans">{{ content.SkillsHeading }}</h3>
+            <h3 id="skills" class="font-sans target-offset">{{ content.SkillsHeading }}</h3>
             <ul class="grid-container skills">
               <li class="tile">
                 <h4 class="font-sans">{{ content.SkillsWebdevHeading }}</h4>
@@ -611,7 +612,7 @@
           </section>
 
           <section class="text-content-layout text-content-color semitransparent avoid-page-break">
-            <h2 id="about-me">
+            <h2 class="target-offset" id="about-me">
               {{ content.aboutMeHeading }}
             </h2>
             <article class="text-width">
@@ -638,7 +639,7 @@
                 {{ content.aboutMeEthical }}
               </p>
 
-              <h3 id="talks-events">{{ content.talksHeading }}</h3>
+              <h3 class="target-offset" id="talks-events">{{ content.talksHeading }}</h3>
               <p>
                 {{ content.talks }}<br>
                 {{ content.talks2 }}
@@ -704,7 +705,7 @@
           </section>
 
           <section class="imprint-contact">
-            <h2 id="imprint" class="center">
+            <h2 id="imprint" class="center target-offset">
               {{ content.imprintHeader }}
             </h2>
             <article id="contact">
@@ -777,7 +778,7 @@
 
             </article>
 
-            <aside id="privacy" class="privacy initially-hidden clear">
+            <aside id="privacy" class="privacy initially-hidden clear target-offset">
               <header>
                 <h3>
                   {{ content.privacyHeading }}

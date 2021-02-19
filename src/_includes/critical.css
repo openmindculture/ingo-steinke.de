@@ -148,7 +148,7 @@ h4 {
   }
 
   /* Don’t Headbutt The Browser Window by Chris Coyer
-  /*https://css-tricks.com/hash-tag-links-padding/ */
+  /* https://css-tricks.com/hash-tag-links-padding/ */
   .target-offset::before {
     display: block;
     content: " ";
