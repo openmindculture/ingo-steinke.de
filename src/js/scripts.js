@@ -6,6 +6,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const navOpener = document.getElementById('main-menu-toggle');
   const navCloser = document.getElementById('main-menuClose');
   const navMenu = document.getElementById('main-menu');
+  const languageSwitch = document.getElementById('language-switch');
 
   /* elements with visibility controlled by script, like sticky-header,
    * must always stay visible without javascript,
@@ -50,5 +51,9 @@ window.addEventListener('DOMContentLoaded', () => {
     e.preventDefault();
     navMenu.setAttribute('aria-expanded', 'false')
     document.onclick = null;
+  });
+
+  languageSwitch.addEventListener('click', () => {
+    languageSwitch.href += window.location.hash;
   });
 });
