@@ -106,8 +106,7 @@ img.avatar {
 }
 
 .privacy {
-  font-size: 10pt;
-  page-break-before: always;
+  display: none;
 }
 
 article,
