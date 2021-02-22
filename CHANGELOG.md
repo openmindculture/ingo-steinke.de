@@ -1,3 +1,12 @@
+## [2.1.2] - 2021-02-22
+ - animation fallback for reduced motion preference
+ - simplify animation for better performance
+### fixed
+- ux: keep location hash when switching language; 222
+- netlify does not need to re-build artifacts
+- hide privacy text in default printout
+- navigation target offset to prevent hiding below sticky header
+- content: skill heading more consistent with navigation
 ## [2.1.1] - 2021-02-19
 ### fixed
 - ux: keep location hash when switching language; 222
