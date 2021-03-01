@@ -34,7 +34,9 @@ module.exports = {
   "targetOtherLanguageTitle": "zur deutschen Sprache wechseln",
   /* page content */
   "introHeading": "Inspire Your Customers on the Internet",
-  "intro": "My name is Ingo Steinke. I am an enthusiastic and creative web developer from Düsseldorf with more than 20 years of professional experience. Customers who have benefited from my work include Frankfurter Allgemeine Zeitung, Die ZEIT, HDI, and wao.io.",
+  "intro": "My name is Ingo Steinke. I am an enthusiastic and creative web developer from Düsseldorf with more than 20 years of professional experience. Customers who have benefited from my work include Frankfurter Allgemeine Zeitung, Die ZEIT, HDI, and wao.io. Currently I am a freelancer for the startup",
+  "planted": "Planted",
+  "intro2": "from Cologne.",
   "workWithMeHeading": "I can Work for You",
   "workWithMe":"Do you want to overhaul your website? Does your team need support from a front-end developer with full-stack experience?",
   "ctaContact": "Call me or leave a message!",
