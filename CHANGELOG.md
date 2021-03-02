@@ -1,3 +1,8 @@
+## [2.1.3] - 2021-03-02
+### fixed
+- fix contact mailto link
+- add planted project to customer intro
+
 ## [2.1.2] - 2021-02-22
  - animation fallback for reduced motion preference
  - simplify animation for better performance
