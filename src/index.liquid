@@ -7,7 +7,7 @@
     </title>
     <meta name=language content={{ content.language }}>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
+    <style>.hero { background-size: cover; }
       {%- postcss -%}
         {% include _includes/critical.css %}
       {%- endpostcss -%}
@@ -646,6 +646,17 @@
                 {{ content.talks }}<br>
                 {{ content.talks2 }}
                 <ul>
+                  <li>
+                    <a
+                      href="https://www.meetup.com/cologne-germany-high-performance-website-optimization-group/events/274558354/"
+                      hreflang="de"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      {{ content.talkMeetupWebVitals }}
+                    </a>
+                    {{ content.talkMeetupWebVitals2 }}
+                  </li>
                   <li>
                     <a
                       href="https://www2.slideshare.net/IngoSteinke/meetups-in-zeiten-von-corona-juni-2020-238451425"
