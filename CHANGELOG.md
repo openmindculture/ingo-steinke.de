@@ -1,3 +1,11 @@
+## [2.1.5] - 2021-03-09
+### add
+- scroll smoothly unless user prefers reduced motion
+
+## [2.1.4] - 2021-03-03
+### add
+- add link to meetup talk
+
 ## [2.1.3] - 2021-03-02
 ### fixed
 - fix contact mailto link
