@@ -54,7 +54,7 @@ module.exports = {
   "projectWebperfMeetupHeading": "Meetup-Organisation",
   "projectWebperfMeetup1": "Anfang 2020 übernahm ich die fachliche Leitung des",
   "projectWebperfMeetup2": "Kölner Web-Performance-Meetups",
-  "projectWebperfMeetup3": ". Diverse internationale Vorträge, unter anderem von Patrick Meenan, Andrew Petryk, Anna Backs und Christina Zenzes begeisterten das Publikum über die Grenzen der Region hinaus.",
+  "projectWebperfMeetup3": "Diverse internationale Vorträge, unter anderem von Patrick Meenan, Andrew Petryk, Anna Backs und Christina Zenzes begeisterten das Publikum über die Grenzen der Region hinaus.",
   "projectWebperfMeetupHashtag1": "Event-Management",
   "projectWebperfMeetupHashtag2": "Web-Performance",
   "projectWordpressPluginHeading": "WordPress-Plugin",
