@@ -232,6 +232,8 @@ module.exports = {
   "imprintCountryName": "Germany",
   "imprintTel": "+49 (0) 163 46 84 08 0",
   "contactEmail": "contact@ingo-steinke.com",
+  "taxNo": "Tax No.",
+  "vatId": "VAT ID",
   "profile": "profile",
   "privacyGdpr": "Die Regeln des Bundesdatenschutzgesetzes (BDSG) und der europäischen Datenschutzgrundverordnung (DSGVO) sind Anlass zu dieser Datenschutzerklärung. Das",
   "privacyGdprImprint": "Impressum",

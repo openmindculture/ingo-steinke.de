@@ -1,3 +1,7 @@
+## [2.1.7] - 2021-03-25
+
+- add tax information to imprint
+
 ## [2.1.6] - 2021-03-23
 
 - content: update projects and skills, fix misspellings
