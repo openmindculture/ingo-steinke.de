@@ -1,6 +1,6 @@
 ## [2.1.6] - 2021-03-23
 
-- content: update projects and skills
+- content: update projects and skills, fix misspellings
 - security: upgrade node packages
 
 ## [2.1.5] - 2021-03-09
