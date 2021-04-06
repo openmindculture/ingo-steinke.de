@@ -1,3 +1,7 @@
+## [2.1.8] - 2021-04-06
+
+- fix and renew google site verification for search console
+
 ## [2.1.7] - 2021-03-25
 
 - add tax information to imprint

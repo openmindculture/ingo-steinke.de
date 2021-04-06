@@ -13,7 +13,7 @@ module.exports = {
   "pageDescription-en": "Ingo Steinke is a creative front-end web developer in Düsseldorf.",
   "pageKeywords": "Ingo,Steinke,web,developer,consultant,Düsseldorf",
   "pDomainVerify": "4c4296e5835f4a47eb2c2e5488a99d71",
-  "googleSiteVerification": "R5H91BAdY_j8cBLjNDdqQ8lqelkRQEJHoggIghgfyJU",
+  "googleSiteVerification": "rKw6ukUkdoGGTo5dFb1sv4HQXN5wy6GysuVCRkt1FTg",
   /* header */
   "jumbotronImageAlt": "Portrait of Ingo Steinke",
   "jumbotronHeader": "Ingo Steinke",
