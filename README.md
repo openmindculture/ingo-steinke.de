@@ -6,6 +6,11 @@ see [changelog](./CHANGELOG.md)
 
 ![screenshot](_screenshots/screenshot-ingo-steinke-de.jpg)
 
+## Requirements
+
+- [npm](https://www.npmjs.com)
+- [eleventy](https://www.11ty.dev/) (global path: `npm install -g @11ty/eleventy`)
+
 ## Build
 
 ```
