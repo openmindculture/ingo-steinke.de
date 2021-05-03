@@ -129,6 +129,7 @@ module.exports = {
   "workSwLink2Title": "Shopware store page of the plugin wao.io Cache Control",
   "workSwLink2Text": "official directories ",
   "workPlugins4": "after being successfully tested.",
+  "workPluginsOther": "I also developed themes for Shopware 5 and 6, for JetBrains-IDEs like PHPStorm and IntelliJ IDEA.",
   /* Skills */
   "SkillsHeading": "Professional Skills",
   "SkillsWebdevHeading": "Web Development",

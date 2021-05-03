@@ -1,3 +1,7 @@
+## [2.1.9] - 2021-05-03
+
+- add content about theme development
+
 ## [2.1.8] - 2021-04-06
 
 - fix and renew google site verification for search console
