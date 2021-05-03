@@ -11,6 +11,13 @@ see [changelog](./CHANGELOG.md)
 - [npm](https://www.npmjs.com)
 - [eleventy](https://www.11ty.dev/) (global path: `npm install -g @11ty/eleventy`)
 
+## Edit Content: Project Structure
+
+- `src/index.liquid` (site structure, image tags etc.)
+- `src/_data/**/content.js` (localized strings)
+- `img` (image files)
+- `styles.css`, `_includes/*.css`(styles: CSS + PostCSS)
+
 ## Build
 
 ```
