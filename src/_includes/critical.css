@@ -1,29 +1,5 @@
 @import 'design-tokens.css';
 
-/* heading font serif */
-@font-face {
-  font-family: 'Bitter';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src:
-    local(''),
-    url('fonts/bitter-v16-latin-700.woff2') format('woff2'),
-    url('fonts/bitter-v16-latin-700.woff') format('woff');
-}
-
-/* body font sans */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src:
-    local(''),
-    url('fonts/montserrat-v15-latin-ext_latin-regular.woff2') format('woff2'),
-    url('fonts/montserrat-v15-latin-ext_latin-regular.woff') format('woff');
-}
-
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -37,7 +13,7 @@ html {
 
 body {
   line-height: 1.75;
-  font-family: var(--sans-font-family);
+  font-family: var(--body-font-family);
   font-weight: var(--body-font-weight);
   color: var(--primary-foreground);
   background-color: var(--primary-background);
@@ -98,7 +74,7 @@ h4 {
   .jumbotronHeader p {
     font-size: 2.325rem;
     font-size: 6vh;
-    font-family: var(--body-font);
+    font-family: var(--body-font-family);
     font-weight: var(--body-font-weight);
     color: var(--primary-heading);
     padding: 0;
@@ -246,8 +222,10 @@ h4 {
   .grid-container > * {
     flex-basis: 49%;
     margin-bottom: 2em;
+  }
 
-    @supports (display: grid) {
+  @supports (display: grid) {
+    .grid-container > * {
       margin-bottom: 0;
     }
   }
@@ -257,7 +235,7 @@ h4 {
     padding: 0;
     text-indent: 0;
     list-style-type: none;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
     grid-column-gap: 1em;
   }
 
@@ -267,7 +245,7 @@ h4 {
   }
 
   .semitransparent .text-width {
-    width: 80%;
+    width: 70%;
   }
 
   .tile img.project-thumb {
@@ -300,14 +278,12 @@ h4 {
     display: none;
   }
 
-  @supports selector(*:target) {
-    .initially-hidden {
-      display: none;
-    }
+  .initially-hidden {
+    display: none;
+  }
 
-    .initially-hidden:target {
-      display: block;
-    }
+  .initially-hidden:target {
+    display: block;
   }
 
   a.tw-btn,

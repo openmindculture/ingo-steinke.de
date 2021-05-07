@@ -7,9 +7,32 @@
     </title>
     <meta name=language content={{ content.language }}>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>.hero { background-size: cover; }
+    <style>
+      /* heading font serif */
+      @font-face {
+        font-family: 'Bitter';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src:
+          local(''),
+          url('fonts/bitter-v16-latin-700.woff2') format('woff2'),
+          url('fonts/bitter-v16-latin-700.woff') format('woff');
+      }
+
+      /* body font sans */
+      @font-face {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src:
+          local(''),
+          url('fonts/montserrat-v15-latin-ext_latin-regular.woff2') format('woff2'),
+          url('fonts/montserrat-v15-latin-ext_latin-regular.woff') format('woff');
+      }
       {%- postcss -%}
-        {% include _includes/critical.css %}
+        {% include critical.css %}
       {%- endpostcss -%}
     </style>
     <link rel="preload" href="fonts/bitter-v16-latin-700.woff2" as="font" type="font/woff2" crossorigin>
@@ -497,56 +520,62 @@
                 <h4 class="font-sans">{{ content.SkillsWebdevHeading }}</h4>
                 <ul>
                   <li>
-                    {{ content.SkillsWebdevHtml }}
+                    Markup
                     <div class="hashtags">
-                      <span class="hashtag">{{ content.SkillsWebdevHtmlHashtag1 }}</span>
-                      <span class="hashtag">{{ content.SkillsWebdevHtmlHashtag2 }}</span>
+                      <span class="hashtag brand-orange">HTML 5</span>
+                      <span class="hashtag brand-blue-less">XML</span>
+                      <span class="hashtag brand-blue-liquid">Liquid</span>
+                      <span class="hashtag brand-green-twig">Twig</span>
+                      <span class="hashtag brand-yellow-dark">smarty</span>
                     </div>
                   </li>
                   <li>
-                    {{ content.SkillsWebdevCss }}
+                    CSS
                     <div class="hashtags">
-                      <span class="hashtag">{{ content.SkillsWebdevCssHashtag1 }}</span>
-                      <span class="hashtag">{{ content.SkillsWebdevCssHashtag2 }}</span>
-                      <span class="hashtag">{{ content.SkillsWebdevCssHashtag3 }}</span>
-                      <span class="hashtag">{{ content.SkillsWebdevCssHashtag4 }}</span>
+                      <span class="hashtag brand-green">CSS 3</span>
+                      <span class="hashtag brand-purple">SCSS</span>
+                      <span class="hashtag brand-red-light">PostCSS</span>
+                      <span class="hashtag brand-blue-light">tailwindcss</span>
+                      <span class="hashtag brand-blue-less">less</span>
                     </div>
                   </li>
                   <li>
-                    {{ content.SkillsWebdevJs }}
+                    JavaScript
                     <div class="hashtags">
-                      <span class="hashtag">{{ content.SkillsWebdevJsHashtag1 }}</span>
-                      <span class="hashtag">{{ content.SkillsWebdevJsHashtag2 }}</span>
-                      <span class="hashtag">{{ content.SkillsWebdevJsHashtag3 }}</span>
-                      <span class="hashtag">{{ content.SkillsWebdevJsHashtag4 }}</span>
+                      <span class="hashtag brand-yellow">ES6</span>
+                      <span class="hashtag brand-blue-light">React</span>
+                      <span class="hashtag brand-purple-dark">Preact</span>
+                      <span class="hashtag brand-blue">TypeScript</span>
+                      <span class="hashtag brand-green">Node.js</span>
+                      <span class="hashtag brand-blue">jQuery</span>
                     </div>
                   </li>
 
                   <li>
-                    {{ content.SkillsWebdevPhp }}
+                    PHP
                     <div class="hashtags">
-                      <span class="hashtag">{{ content.SkillsWebdevPhpHashtag1 }}</span>
-                      <span class="hashtag">{{ content.SkillsWebdevPhpHashtag2 }}</span>
-                      <span class="hashtag">{{ content.SkillsWebdevPhpHashtag3 }}</span>
+                      <span class="hashtag brand-blue-php">PHP 7</span>
+                      <span class="hashtag brand-blue-php8">PHP 8</span>
+                      <span class="hashtag brand-brown-light">Composer</span>
+                      <span class="hashtag brand-gray">PHPStan</span>
                     </div>
                   </li>
-                  <li>
-                    {{ content.SkillsWebdevXml }}
-                    <div class="hashtags">
-                      <span class="hashtag">{{ content.SkillsWebdevXmlHashtag1 }}</span>
-                      <span class="hashtag">{{ content.SkillsWebdevXmlHashtag2 }}</span>
-                      <span class="hashtag">{{ content.SkillsWebdevXmlHashtag3 }}</span>
-                      <span class="hashtag">{{ content.SkillsWebdevXmlHashtag4 }}</span>
-                    </div>
-                  </li>
-
                   <li>
                     {{ content.SkillsWebdevDb }}
                     <div class="hashtags">
-                      <span class="hashtag">{{ content.SkillsWebdevDbHashtag1 }}</span>
-                      <span class="hashtag">{{ content.SkillsWebdevDbHashtag2 }}</span>
-                      <span class="hashtag">{{ content.SkillsWebdevDbHashtag3 }}</span>
-                      <span class="hashtag">{{ content.SkillsWebdevDbHashtag4 }}</span>
+                      <span class="hashtag brand-yellow">MySQL</span>
+                      <span class="hashtag brand-red-dark">Oracle</span>
+                      <span class="hashtag brand-green">mongoDB</span>
+                      <span class="hashtag brand-gray-light">Mongoose</span>
+                    </div>
+                  </li>
+                  <li>
+                    XML
+                    <div class="hashtags">
+                      <span class="hashtag brand-yellow">XPath</span>
+                      <span class="hashtag brand-purple">XSLT</span>
+                      <span class="hashtag brand-red-dark">SOAP</span>
+                      <span class="hashtag brand-gray">UBL</span>
                     </div>
                   </li>
 
@@ -555,12 +584,65 @@
               <li class="tile">
                 <h4 class="font-sans">{{ content.SkillsLib }}</h4>
                 <ul>
-                  <li>{{ content.SkillsLibReact }}</li>
-                  <li>{{ content.SkillsLibVue }}</li>
-                  <li>{{ content.SkillsLibNode }}</li>
-                  <li>{{ content.SkillsLibSymfony }}</li>
-                  <li>{{ content.SkillsLibEleventy }}</span>
-                  <li>{{ content.SkillsLibLip }}</li>
+                  <li>
+                    Shopware 6
+                    <div class="hashtags">
+                      <span class="hashtag brand-blue-purplish">Shopware</span>
+                      <span class="hashtag brand-purple">Bootstrap</span>
+                      <span class="hashtag brand-purple">SCSS</span>
+                      <span class="hashtag brand-green-twig">Twig</span>
+                      <span class="hashtag brand-yellow">Symfony</span>
+                    </div>
+                  </li>
+                  <li>
+                    Shopware 5
+                    <div class="hashtags">
+                      <span class="hashtag brand-blue-shopware">Shopware</span>
+                      <span class="hashtag brand-blue">jQuery</span>
+                      <span class="hashtag brand-blue-less">less</span>
+                      <span class="hashtag brand-yellow-dark">smarty</span>
+                      <span class="hashtag brand-yellow">Symfony</span>
+                    </div>
+                  </li>
+                  <li>
+                    WordPress
+                    <div class="hashtags">
+                      <span class="hashtag brand-blue-less">WordPress</span>
+                      <span class="hashtag brand-blue-php">PHP</span>
+                      <span class="hashtag brand-orange">HTML</span>
+                      <span class="hashtag brand-green">CSS</span>
+                      <span class="hashtag brand-yellow">JavaScript</span>
+                    </div>
+                  </li>
+                  <li>
+                    LAMP Stack
+                    <div class="hashtags">
+                      <span class="hashtag brand-blue-less">Linux</span>
+                      <span class="hashtag brand-red-light">Apache</span>
+                      <span class="hashtag brand-yellow">MySQL</span>
+                      <span class="hashtag brand-blue-php">PHP</span>
+                    </div>
+                  </li>
+                  <li>
+                    JAM Stack
+                    <div class="hashtags">
+                      <span class="hashtag brand-yellow">JavaScript</span>
+                      <span class="hashtag brand-gray" title="11ty">Eleventy</span>
+                      <span class="hashtag brand-blue-less">Markdown</span>
+                      <span class="hashtag brand-blue-liquid">Liquid</span>
+                      <span class="hashtag brand-red-dark">npm</span>
+                    </div>
+                  </li>
+                  <li>
+                    MERN Stack
+                    <div class="hashtags">
+                      <span class="hashtag brand-green">mongoDB</span>
+                      <span class="hashtag brand-red-light">Express</span>
+                      <span class="hashtag brand-purple-dark">(P)react</span>
+                      <span class="hashtag brand-green">Node.js</span>
+                      <span class="hashtag brand-blue">yarn</span>
+                    </div>
+                  </li>
                   </ul>
               </li>
 
@@ -570,56 +652,59 @@
                   <li>
                     {{ content.SkillsOtherQa }}
                     <div class="hashtags">
-                      <span class="hashtag">{{ content.SkillsOtherQaHashtag1 }}</span>
-                      <span class="hashtag">{{ content.SkillsOtherQaHashtag2 }}</span>
-                      <span class="hashtag">{{ content.SkillsOtherQaHashtag3 }}</span>
-                      <span class="hashtag">{{ content.SkillsOtherQaHashtag4 }}</span>
+                      <span class="hashtag brand-blue">Jest</span>
+                      <span class="hashtag brand-blue-light">cypress</span>
+                      <span class="hashtag brand-coral">Lighthouse</span>
+                      <span class="hashtag brand-beige">Storybook</span>
+                      <span class="hashtag brand-blue">axe</span>
                     </div>
                   </li>
                   <li>
                     {{ content.SkillsOtherVcs }}
                     <div class="hashtags">
-                      <span class="hashtag">{{ content.SkillsOtherVcsHashtag1 }}</span>
-                      <span class="hashtag">{{ content.SkillsOtherVcsHashtag2 }}</span>
-                      <span class="hashtag">{{ content.SkillsOtherVcsHashtag3 }}</span>
-                      <span class="hashtag">{{ content.SkillsOtherVcsHashtag4 }}</span>
+                      <span class="hashtag brand-red-dark">Git</span>
+                      <span class="hashtag brand-red-light">GitLab</span>
+                      <span class="hashtag brand-gray-light">GitHub</span>
+                      <span class="hashtag brand-green">SVN</span>
                     </div>
                   </li>
                   <li>
                     {{ content.SkillsOtherLinter }}
                     <div class="hashtags">
-                      <span class="hashtag">{{ content.SkillsOtherLinterHashtag1 }}</span>
-                      <span class="hashtag">{{ content.SkillsOtherLinterHashtag2 }}</span>
-                      <span class="hashtag">{{ content.SkillsOtherLinterHashtag3 }}</span>
-                      <span class="hashtag">{{ content.SkillsOtherLinterHashtag4 }}</span>
+                      <span class="hashtag brand-blue">TypeScript</span>
+                      <span class="hashtag brand-yellow">Babel</span>
+                      <span class="hashtag brand-coral">Stylelint</span>
+                      <span class="hashtag brand-beige">eslint</span>
+                      <span class="hashtag brand-red-light">PostCSS</span>
                     </div>
                   </li>
                   <li>
                     {{ content.SkillsOtherDevops }}
                     <div class="hashtags">
-                      <span class="hashtag">{{ content.SkillsOtherDevopsHashtag1 }}</span>
-                      <span class="hashtag">{{ content.SkillsOtherDevopsHashtag2 }}</span>
-                      <span class="hashtag">{{ content.SkillsOtherDevopsHashtag3 }}</span>
-                      <span class="hashtag">{{ content.SkillsOtherDevopsHashtag4 }}</span>
-                      <span class="hashtag">{{ content.SkillsOtherDevopsHashtag5 }}</span>
-                    </div>
-                  </li>
-                  <li>
-                    {{ content.SkillsOtherImg }}
-                    <div class="hashtags">
-                      <span class="hashtag">{{ content.SkillsOtherImgHashtag1 }}</span>
-                      <span class="hashtag">{{ content.SkillsOtherImgHashtag2 }}</span>
-                      <span class="hashtag">{{ content.SkillsOtherImgHashtag3 }}</span>
+                      <span class="hashtag brand-blue">Docker</span>
+                      <span class="hashtag brand-red">Jenkins</span>
+                      <span class="hashtag brand-blue-php8">Snowpack</span>
+                      <span class="hashtag brand-green">Netlify</span>
+                      <span class="hashtag brand-orange">AWS</span>
                     </div>
                   </li>
                   <li>
                     {{ content.SkillsDevuxImg }}
                     <div class="hashtags">
-                      <span class="hashtag">{{ content.SkillsDevuxImgHashtag1 }}</span>
-                      <span class="hashtag">{{ content.SkillsDevuxImgHashtag2 }}</span>
-                      <span class="hashtag">{{ content.SkillsDevuxImgHashtag3 }}</span>
-                      <span class="hashtag">{{ content.SkillsDevuxImgHashtag4 }}</span>
-                      <span class="hashtag">{{ content.SkillsDevuxImgHashtag5 }}</span>
+                      <span class="hashtag brand-yellow-dark">Miro</span>
+                      <span class="hashtag brand-purple-dark">Figma</span>
+                      <span class="hashtag brand-blue-less">Jira</span>
+                      <span class="hashtag brand-red-dark">Trello</span>
+                      <span class="hashtag brand-orange">StackOverflow</span>
+                    </div>
+                  </li>
+                  <li>
+                    {{ content.SkillsOtherImg }}
+                    <div class="hashtags">
+                      <span class="hashtag brand-blue-less">GIMP</span>
+                      <span class="hashtag brand-gray-dark">Inkscape</span>
+                      <span class="hashtag brand-purple">Krita</span>
+                      <span class="hashtag brand-yellow">ImageMagick</span>
                     </div>
                   </li>
                 </ul>
