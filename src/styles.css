@@ -15,7 +15,7 @@ img {
 
 .font-sans {
   font-family: var(--sans-font-family);
-  font-weight: var(--body-font-weight: 400);
+  font-weight: var(--body-font-weight);
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -40,7 +40,6 @@ a:focus {
 
 a:hover,
 a:focus {
-  color: var(--link-hover-foreground);
   text-decoration-color: var(--link-hover-background);
   text-decoration-style: dotted;
   text-decoration-thickness: 0.1em;
@@ -48,6 +47,12 @@ a:focus {
 
 .social-links a {
   padding: 1em;
+}
+
+.main-menu a {
+  display: block;
+  padding: 0.75em 15px;
+  text-decoration: none;
 }
 
 .text-content-color a,
@@ -60,8 +65,71 @@ a:focus {
 
 .text-content-color a:hover,
 .text-content-color a:focus {
-  color: var(--link-hover-foreground);
   text-decoration-color: var(--link-hover-background);
+}
+
+.main-menu a:hover,
+.main-menu a:focus {
+  background: var(--nav-menu-background);
+}
+
+/* TODO refactor alternate colors to modifier classes */
+.vcard a:link,
+.vcard a:visited,
+.vcard a:active,
+.vcard a:focus,
+.vcard a:hover,
+.page-footer a:link,
+.page-footer a:visited,
+.page-footer a:active,
+.page-footer a:focus,
+.page-footer a:hover,
+a.menu-toggle:link,
+a.menu-toggle:visited,
+a.menu-toggle:active,
+a.menu-toggle:focus,
+a.menu-toggle:hover {
+  /* line-height: 1; */
+  margin-bottom: -8px;
+  background-image:
+    linear-gradient(var(--primary-background), var(--primary-background)),
+    linear-gradient(var(--primary-background), var(--primary-background)),
+    linear-gradient(var(--link-hover-background), var(--link-hover-background));
+  background-position:
+    0 0,
+    100% 0,
+    0 0;
+  background-size:
+    70% 100%,
+    50% 100%,
+    100% 100%;
+}
+
+.vcard a:link,
+.vcard a:visited,
+.vcard a:active,
+.vcard a:focus,
+.vcard a:hover {
+  background-image:
+    linear-gradient(#fff, #fff),
+    linear-gradient(#fff, #fff),
+    linear-gradient(var(--link-hover-background), var(--link-hover-background));
+  color: var(--secondary-foreground);
+  text-decoration-color: var(--secondary-foreground);
+}
+
+.vcard a:focus,
+.vcard a:hover,
+.page-footer a:focus,
+.page-footer a:hover,
+a.menu-toggle:focus,
+a.menu-toggle:hover {
+  color: #000;
+  background-size:
+    0 100%,
+    0 100%,
+    100% 100%;
+  outline: none;
 }
 
 .social-links a:not(a:hover) {
@@ -132,12 +200,6 @@ a:focus {
   padding: 0 0 1vh 1em;
   margin: 0 auto;
   text-align: center;
-}
-
-.page-footer a:link,
-.page-footer a:visited,
-.page-footer a:active {
-  /* color: var(--primary-foreground); */
 }
 
 .tile {
@@ -282,17 +344,6 @@ Offscreen menu style
   background: var(--primary-background);
 }
 
-.main-menu a {
-  display: block;
-  padding: 0.75em 15px;
-  text-decoration: none;
-}
-
-.main-menu a:hover,
-.main-menu a:focus {
-  background: var(--nav-menu-background);
-}
-
 .main-menu .menuClose {
   position: absolute;
   right: 0;
@@ -417,65 +468,6 @@ Offscreen menu style
   }
 }
 
-/* TODO refactor alternate colors to modifier classes */
-.vcard a:link,
-.vcard a:visited,
-.vcard a:active,
-.vcard a:focus,
-.vcard a:hover,
-.page-footer a:link,
-.page-footer a:visited,
-.page-footer a:active,
-.page-footer a:focus,
-.page-footer a:hover,
-a.menu-toggle:link,
-a.menu-toggle:visited,
-a.menu-toggle:active,
-a.menu-toggle:focus,
-a.menu-toggle:hover {
-  /* line-height: 1; */
-  margin-bottom: -8px;
-  background-image:
-    linear-gradient(var(--primary-background), var(--primary-background)),
-    linear-gradient(var(--primary-background), var(--primary-background)),
-    linear-gradient(var(--link-hover-background), var(--link-hover-background));
-  background-position:
-    0 0,
-    100% 0,
-    0 0;
-  background-size:
-    70% 100%,
-    50% 100%,
-    100% 100%;
-}
-
-.vcard a:link,
-.vcard a:visited,
-.vcard a:active,
-.vcard a:focus,
-.vcard a:hover {
-  background-image:
-    linear-gradient(#fff, #fff),
-    linear-gradient(#fff, #fff),
-    linear-gradient(var(--link-hover-background), var(--link-hover-background));
-  color: var(--secondary-foreground);
-  text-decoration-color: var(--secondary-foreground);
-}
-
-.vcard a:focus,
-.vcard a:hover,
-.page-footer a:focus,
-.page-footer a:hover,
-a.menu-toggle:focus,
-a.menu-toggle:hover {
-  color: #000;
-  background-size:
-    0 100%,
-    0 100%,
-    100% 100%;
-  outline: none;
-}
-
 .grid-container .tile a:link,
 .grid-container .tile a:visited,
 .grid-container .tile a:active {
@@ -506,7 +498,6 @@ a.menu-toggle:hover {
 
 #sticky-headline a:focus,
 #sticky-headline a:hover,
-a.menu-toggle:hover,
 a.menu-toggle:hover {
   color: #000;
   background-color: var(--link-hover-background);
@@ -530,9 +521,9 @@ a.menu-toggle:hover {
 }
 
 @keyframes AnimateTextGradient {
-  0% { background-position: 50% 0%; }
+  0% { background-position: 50% 0; }
   50% { background-position: 50% 100%; }
-  100% { background-position: 50% 0%; }
+  100% { background-position: 50% 0; }
 }
 
 /* skills grid */
@@ -570,46 +561,127 @@ ul.grid-container.skills {
   font-size: 0.8125em;
 }
 
-.skills .hashtag:first-child {
-  background-color: var(--hashtag-bg-autumn-1);
-}
-
-.skills .hashtag:nth-child(2) {
-  background-color: var(--hashtag-bg-autumn-2);
-}
-
-.skills .hashtag:nth-child(3) {
-  background-color: var(--hashtag-bg-autumn-3);
-}
-
-.skills .hashtag:nth-child(4) {
-  background-color: var(--hashtag-bg-autumn-4);
-}
-
-.skills .hashtag:nth-child(5) {
-  background-color: var(--hashtag-bg-autumn-5);
-}
-
-.skills li ul li:nth-child(odd) .hashtag {
+.brand-coral {
+  background-color: var(--hashtag-bg-spring-3);
   color: #000;
 }
 
-.skills li ul li:nth-child(odd) .hashtag:first-child {
-  background-color: var(--hashtag-bg-spring-1);
-}
-
-.skills li ul li:nth-child(odd) .hashtag:nth-child(2) {
-  background-color: var(--hashtag-bg-spring-2);
-}
-
-.skills li ul li:nth-child(odd) .hashtag:nth-child(3) {
-  background-color: var(--hashtag-bg-spring-3);
-}
-
-.skills li ul li:nth-child(odd) .hashtag:nth-child(4) {
+.brand-beige {
   background-color: var(--hashtag-bg-spring-4);
+  color: #000;
 }
 
-.skills li ul li:nth-child(odd) .hashtag:nth-child(5) {
-  background-color: var(--hashtag-bg-spring-5);
+.brand-yellow { /* JS, ES6, Symfony, ImageMagick */
+  background-color: var(--brand-yellow-js);
+  color: #000;
+}
+
+.brand-yellow-dark { /* miro, smarty */
+  background-color: var(--brand-yellow-miro);
+  color: #000;
+}
+
+.brand-orange { /* HTML */
+  background-color: var(--brand-orange-html);
+  color: #fff;
+}
+
+.brand-orange-light { /* MySQL */
+  background-color: var(--brand-orange-mysql);
+  color: #fff;
+}
+
+.brand-red-dark {
+  background-color: var(--brand-red-oracle-soap-npm);
+  color: #fff;
+}
+
+.brand-red-light {
+  background-color: var(--brand-red-express-post-apache);
+  color: #fff;
+}
+
+.brand-purple {
+  background-color: var(--brand-purple-scss);
+  color: #fff;
+}
+
+.brand-purple-dark {
+  background-color: var(--brand-purple-dark-preact);
+  color: #fff;
+}
+
+.brand-blue {
+  background-color: var(--brand-blue-typescript);
+  color: #fff;
+}
+
+.brand-blue-less {
+  background-color: var(--brand-blue-less);
+  color: #fff;
+}
+
+.brand-blue-light {
+  background-color: var(--brand-blue-tailwind-react);
+  color: #fff;
+}
+
+.brand-blue-liquid {
+  background-color: var(--brand-blue-liquid);
+  color: #fff;
+}
+
+.brand-blue-purplish {
+  background-color: var(--brand-blue-shopware6);
+  color: #fff;
+}
+
+.brand-blue-shopware {
+  background-color: var(--brand-blue-shopware5);
+  color: #fff;
+}
+
+.brand-blue-php {
+  background-color: var(--brand-blue-php7);
+  color: #fff;
+}
+
+.brand-blue-php8 {
+  background-color: var(--brand-blue-php8);
+  color: #fff;
+}
+
+.brand-green {
+  background-color: var(--brand-green-css-mongo);
+  color: #fff;
+}
+
+.brand-green-twig {
+  background-color: var(--brand-green-twig-bg);
+  color: var(--brand-green-twig-fg);
+}
+
+.brand-gray-light {
+  background-color: var(--brand-gray-mongoose);
+  color: #fff;
+}
+
+.brand-gray {
+  background-color: var(--brand-gray-eleventy);
+  color: #fff;
+}
+
+.brand-gray-dark {
+  background-color: var(--brand-black-inkscape);
+  color: #fff;
+}
+
+.brand-brown-light {
+  background-color: var(--brand-brown-composer);
+  color: #fff;
+}
+
+.brand-brown-dark {
+  background-color: var(--brand-gray-gimp);
+  color: #fff;
 }

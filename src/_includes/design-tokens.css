@@ -57,13 +57,39 @@
   --hashtag-bg-spring-4: var(--palo-rose);
   --hashtag-bg-spring-5: var(--orange-tag);
 
+  /* colors inspired by external brands */
+  --brand-yellow-js: #f5df4d;
+  --brand-yellow-miro: #f0c140; /* and smarty */
+  --brand-orange-html: #f26600;
+  --brand-orange-mysql: #f0931a;
+  --brand-brown-composer: #8a5428;
+  --brand-red-express-post-apache: #dd3808;
+  --brand-red-oracle-soap-npm: #cb3837;
+  --brand-purple-scss: #bf4080; /* and krita */
+  --brand-purple-dark-preact: #673ab8;
+  --brand-blue-tailwind-react: #55d0f4;
+  --brand-blue-shopware6: #5c60e1;
+  --brand-blue-shopware5: #3a9bf8;
+  --brand-blue-liquid: #3a9bcd;
+  --brand-blue-typescript: #3178c6;
+  --brand-blue-php7: #6482bc;
+  --brand-blue-php8: #4f5b93; /* and snowpack */
+  --brand-blue-less: #0769ad; /* and XML */
+  --brand-green-twig-bg: #e0e9a1;
+  --brand-green-twig-fg: #006f9f;
+  --brand-green-css-mongo: #017d63;
+  --brand-gray-mongoose: #58646d;
+  --brand-gray-eleventy: #1d4950;
+  --brand-gray-gimp: #514b3a;
+  --brand-black-inkscape: #24273c;
+
   /* animation */
   --radius: 100%;
   --primary-animation-color: var(--deep-green);
   --secondary-animation-color: var(--omega-purple);
 
   /* export typography */
-  --sans-font-family: 'Montserrat', 'Helvetica', sans-serif;
+  --body-font-family: 'Montserrat', 'Helvetica', sans-serif;
   --body-font-weight: 400;
   --heading-font-family: 'Bitter', serif;
   --heading-font-weight: 700;
