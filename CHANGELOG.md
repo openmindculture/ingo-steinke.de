@@ -1,3 +1,8 @@
+## [2.2.0] - 2021-05-10
+
+- update and redesign skill matrix
+- housekeeping: upgrade stylelint, update dependencies
+
 ## [2.1.9] - 2021-05-03
 
 - add content about theme development
