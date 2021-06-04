@@ -1,3 +1,8 @@
+## [2.2.3] - 2021-06-04
+
+- content: update skill matrix buzzwords
+- housekeeping: upgrade dependencies (still not fixing ReDoS "vulnerability")
+
 ## [2.2.2] - 2021-05-10
 
 - update and redesign skill matrix
