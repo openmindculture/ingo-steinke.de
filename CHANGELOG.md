@@ -1,3 +1,13 @@
+# Changelog
+
+## [2.2.5] - 2021-06-29
+
+- content: add local search keywords for Düsseldorf and Cologne
+- housekeeping: upgrade dependencies
+## [2.2.4] - 2021-06-21
+
+- housekeeping: upgrade dependencies
+
 ## [2.2.3] - 2021-06-04
 
 - content: update skill matrix buzzwords
