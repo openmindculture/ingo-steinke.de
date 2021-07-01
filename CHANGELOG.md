@@ -4,6 +4,7 @@
 
 - content: replace double "begeistert" by "nachhaltig"
 - content: replace link to meetup profile by link to dev.to profile
+- content: replace link to twitter by link to freelancermap.de
 ## [2.2.5] - 2021-06-29
 
 - content: add local search keywords for Düsseldorf and Cologne
