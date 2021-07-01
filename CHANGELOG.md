@@ -1,5 +1,9 @@
 # Changelog
 
+## [2.2.6] - 2021-07-01
+
+- content: replace double "begeistert" by "nachhaltig"
+- content: replace link to meetup profile by link to dev.to profile
 ## [2.2.5] - 2021-06-29
 
 - content: add local search keywords for Düsseldorf and Cologne

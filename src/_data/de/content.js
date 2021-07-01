@@ -33,7 +33,7 @@ module.exports = {
   "targetOtherLanguage": "English",
   "targetOtherLanguageTitle": "Change language to English",
   "introHeading": "Begeistere deine Kunden im Internet",
-  "intro": "Ich bin Ingo Steinke, begeisterter kreativer Webentwickler aus Düsseldorf mit über 20 Jahren Berufserfahrung. Von meiner Arbeit profitierten unter anderem die Frankfurter Allgemeine Zeitung, die ZEIT, HDI und das Kölner Startup", "planted": "Planted",
+  "intro": "Ich bin Ingo Steinke, nachhaltiger und kreativer Webentwickler aus Düsseldorf mit über 20 Jahren Berufserfahrung. Von meiner Arbeit profitierten unter anderem die Frankfurter Allgemeine Zeitung, die ZEIT, HDI und das Kölner Startup", "planted": "Planted",
   "workWithMeHeading": "Mit mir kannst du arbeiten",
   "workWithMe":"Du möchtest deine Website überarbeiten? Dein Team braucht Verstärkung durch einen Frontend-Entwickler mit Fullstack-Erfahrung?",
   "ctaContact": "Ruf mich an oder hinterlasse mir eine Nachricht!",
