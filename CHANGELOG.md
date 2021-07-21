@@ -1,5 +1,8 @@
 # Changelog
 
+## [2.2.7] - 2021-07-21
+- housekeeping: upgrade dependencies
+
 ## [2.2.6] - 2021-07-01
 
 - content: replace double "begeistert" by "nachhaltig"
