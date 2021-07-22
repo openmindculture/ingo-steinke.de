@@ -1,5 +1,7 @@
 # Changelog
 
+## [2.2.8] - 2021-07-22
+- fix a11y contrast; clickable elements gutter
 ## [2.2.7] - 2021-07-21
 - housekeeping: upgrade dependencies
 
