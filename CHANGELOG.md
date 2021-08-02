@@ -1,5 +1,8 @@
 # Changelog
 
+## [2.2.10] - 2021-08-02
+- housekeeping: upgrade dependencies, build, deploy
+
 ## [2.2.9] - 2021-07-26
 - fix "content wider than screen" (alleged UX problem claimed by Google Search Console)
 
