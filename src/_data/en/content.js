@@ -34,7 +34,7 @@ module.exports = {
   "targetOtherLanguageTitle": "zur deutschen Sprache wechseln",
   /* page content */
   "introHeading": "Inspire Your Customers on the Internet",
-  "intro": "My name is Ingo Steinke. I am a sustainable and creative web developer from Düsseldorf with more than 20 years of professional experience. Customers who have benefited from my work include Frankfurter Allgemeine Zeitung, Die ZEIT, HDI, and",
+  "intro": "My name is Ingo Steinke. I am a sustainable and creative web developer from Düsseldorf with more than 20 years of professional experience. Customers who have benefited from my work include Frankfurter Allgemeine Zeitung, Die ZEIT, Avenga, nexum, and",
   "planted": "Planted",
   "workWithMeHeading": "I can Work for You",
   "workWithMe":"Do you want to overhaul your website? Does your team need support from a front-end developer with full-stack experience?",
@@ -149,7 +149,7 @@ module.exports = {
   "aboutMeCvHeading": "Professional Background",
   "aboutMeCv1": "I founded a start-up in 2000 whose first products were interactive websites and browser games. Later, our core business transitioned to search engine optimization and our Active-Webshop software.",
   "aboutMeCv2": "While employed as an e-commerce engineer at Xsite in Düsseldorf from 2010 to 2014, I developed online shops for Shop-Apotheke.com, Ars mundi, and other customers. As a technical consultant at Sevenval Technologies (later Avenga Germany) in Cologne, I optimized the loading time and mobile phone compatibility of apps and websites for Frankfurter Allgemeine Zeitung and created front-end applications for wao.io and other customers. I have been a freelance web developer since late 2020.",
-  "aboutMeEthicalHeading": "Future Topics",
+  "aboutMeEthicalHeading": "Future Topics and Sustainable Development",
   "aboutMeEthical": "In the IT industry, innovation, transformation, and  digitalization often mean nothing but technological progress. In many cases, social challenges in ecology, equality, safety, and data protection do not receive the priority they deserve. I want to support ethical and ecological projects, for example the transition in the transport sector, renewable energies, or environmentally friendly fashion.",
   "talksHeading": "Talks and Events",
   "talks": "At conferences, courses, and meetups I like to exchange ideas on a professional and personal level.",
