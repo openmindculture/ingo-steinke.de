@@ -13,6 +13,14 @@ img {
   margin: 0 auto;
 }
 
+.transparent,
+a.transparent,
+a:link.transparent,
+a:visited.transparent {
+  background-color: transparent;
+  background-image: none;
+}
+
 .font-sans {
   font-family: var(--sans-font-family);
   font-weight: var(--body-font-weight);

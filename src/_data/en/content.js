@@ -178,6 +178,7 @@ module.exports = {
   "taxNo": "Tax No.",
   "vatId": "VAT ID",
   "profile": "profile",
+  "at": "at",
   "privacyGdpr": "Die Regeln des Bundesdatenschutzgesetzes (BDSG) und der europäischen Datenschutzgrundverordnung (DSGVO) sind Anlass zu dieser Datenschutzerklärung. Das",
   "privacyGdprImprint": "Impressum",
   "privacyGdpr2": "nennt den verantworlichen Anbieter und deine Möglichkeiten zur Kontaktaufnahme.",
