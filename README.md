@@ -55,6 +55,10 @@ counter-intuitive to me, so here we go.
 ingo-steinke.de.  IN  A     104.198.14.52
 www           IN  CNAME ingo-steinke.netlify.app
 
+## Test
+
+* TODO evaluate [codecept](https://codecept.io) as replacement for cypress, jest, storybook, storyshots
+
 ## Roadmap / TODO
 
 https://trello.com/b/vhYtCj88/isd20-relaunch
