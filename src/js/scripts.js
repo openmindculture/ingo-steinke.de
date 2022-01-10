@@ -1,5 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
 
+  /** @var {Array.<HTMLElement>} */
   const hideables = Array.from(document.getElementsByClassName('scripted hideable'));
   const stickyHeader = document.getElementById('sticky-header');
   const hideableHeadline = document.getElementById('sticky-headline');
@@ -8,12 +9,13 @@ window.addEventListener('DOMContentLoaded', () => {
   const navMenu = document.getElementById('main-menu');
   const languageSwitch = document.getElementById('language-switch');
 
-  /* elements with visibility controlled by script, like sticky-header,
+  /* Progressive enhancement:
+   * DOM elements with visibility controlled by script, like sticky-header,
    * must always stay visible without javascript,
    * so we hide them by script when the document is ready
    */
 
-  hideables.forEach( hideable => {
+  hideables.forEach(hideable => {
     hideable.className = hideable.className.replace(
       'hideable',
       'unsticky-hidden'
@@ -21,11 +23,10 @@ window.addEventListener('DOMContentLoaded', () => {
   })
 
   // display sticky headline when header stuck on top
-
   if (stickyHeader && hideableHeadline) {
     const observer = new IntersectionObserver(
       ([e]) => stickyHeader.classList.toggle(
-        "is-unstuck",
+        'is-unstuck',
         e.intersectionRatio >= 1
       ),
       {
