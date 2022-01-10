@@ -57,6 +57,10 @@ www           IN  CNAME ingo-steinke.netlify.app
 
 ## Test
 
+* npm run eslint
+
+* npm run stylelint
+
 * TODO evaluate [codecept](https://codecept.io) as replacement for cypress, jest, storybook, storyshots
 
 ## Roadmap / TODO
