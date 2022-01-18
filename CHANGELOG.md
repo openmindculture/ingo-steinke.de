@@ -1,14 +1,61 @@
 # Changelog
 
+## [2.3.6] - 2022-01-18
+
+    * update Changelog; add missing git tags
+
+## [2.3.5] - 2022-01-13
+
+Intro text update (#73)
+
+    * update customer list, remove hometown (#61)
+    * mention Berlin
+    * mention CodeceptJS
+    * demote LAMP stack priority
+    * mention BEM and Atomic Design; fix and build
+    * add green associations, fix markup; build;
+
+## [2.3.4] - 2022-01-10
+
+Linting, Formatting, Doucumentation (#71)
+
+    * javascript formatting and documentation
+    * setup eslint
+    * ad test tasks for linters
+
+## [2.3.3] - 2022-01-09
+
+Testing Tools #42 (#64)
+
+    * simplified test setup idea
+    * WIP: evaluate codecept vs cypress
+
+## [2.3.2] - 2021-10-22
+
+- content: fix reflecta link target
+
+## [2.3.1] - 2021-10-21
+
+- content: add reflecta banner link
+
+## [2.3.0] - 2021-10-19
+
+- content: update skills and customers
+
 ## [2.2.10] - 2021-08-02
+
 - housekeeping: upgrade dependencies, build, deploy
 
 ## [2.2.9] - 2021-07-26
+
 - fix "content wider than screen" (alleged UX problem claimed by Google Search Console)
 
 ## [2.2.8] - 2021-07-22
+
 - fix a11y contrast; clickable elements gutter
+
 ## [2.2.7] - 2021-07-21
+ 
 - housekeeping: upgrade dependencies
 
 ## [2.2.6] - 2021-07-01
