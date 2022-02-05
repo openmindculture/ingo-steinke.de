@@ -600,26 +600,6 @@
                     </div>
                   </li>
                   <li>
-                    Shopware 5
-                    <div class="hashtags">
-                      <span class="hashtag brand-blue-shopware">Shopware</span>
-                      <span class="hashtag brand-blue">jQuery</span>
-                      <span class="hashtag brand-blue-less">less</span>
-                      <span class="hashtag brand-yellow-dark">smarty</span>
-                      <span class="hashtag brand-yellow">Symfony</span>
-                    </div>
-                  </li>
-                  <li>
-                    WordPress
-                    <div class="hashtags">
-                      <span class="hashtag brand-blue-less">WordPress</span>
-                      <span class="hashtag brand-blue-php">PHP</span>
-                      <span class="hashtag brand-orange">HTML</span>
-                      <span class="hashtag brand-green">CSS</span>
-                      <span class="hashtag brand-yellow">JavaScript</span>
-                    </div>
-                  </li>
-                  <li>
                     JAM Stack
                     <div class="hashtags">
                       <span class="hashtag brand-yellow">JavaScript</span>
@@ -627,6 +607,16 @@
                       <span class="hashtag brand-blue-less">Markdown</span>
                       <span class="hashtag brand-blue-liquid">Liquid</span>
                       <span class="hashtag brand-red-dark">npm</span>
+                    </div>
+                  </li>
+                  <li>
+                    Fractal Stack
+                    <div class="hashtags">
+                      <span class="hashtag brand-blue-purplish">fractal</span>
+                      <span class="hashtag brand-purple">SCSS</span>
+                      <span class="hashtag brand-orange">Handlebars</span>
+                      <span class="hashtag brand-blue-liquid">Webpack</span>
+                      <span class="hashtag brand-yellow">CodeceptJS</span>
                     </div>
                   </li>
                   <li>
@@ -648,7 +638,17 @@
                       <span class="hashtag brand-blue-php">PHP</span>
                     </div>
                   </li>
-                  </ul>
+                  <li>
+                    WordPress
+                    <div class="hashtags">
+                      <span class="hashtag brand-blue-less">WordPress</span>
+                      <span class="hashtag brand-blue-php">PHP</span>
+                      <span class="hashtag brand-orange">HTML</span>
+                      <span class="hashtag brand-green">CSS</span>
+                      <span class="hashtag brand-yellow">JavaScript</span>
+                    </div>
+                  </li>
+                </ul>
               </li>
 
               <li class="tile">
@@ -757,9 +757,31 @@
               </p>
 
               <h3 class="target-offset" id="talks-events">{{ content.talksHeading }}</h3>
+
               <p>
-                {{ content.talks }}<br>
-                {{ content.talks2 }}
+                {{ content.talks }}
+              </p>
+
+              <figure class="content-image">
+                <img
+                  src="img/Ingo-Steinke-NCA-TV-2021-800x443.jpg"
+                  srcset="img/Ingo-Steinke-NCA-TV-2021-400x222.jpg 400w,
+                        img/Ingo-Steinke-NCA-TV-2021-800x443.jpg 800w"
+                  width="800"
+                  height="443"
+                  alt="{{ content.talksImageAlt }}"
+                  loading="lazy"
+                >
+                <figcaption>
+                  {{ content.talksImageCaption }}:
+                  <a href="https://blog.nevercodealone.de/php-testing-refactoring-nca-conference-duisburg/" target="_blank" rel="noopener">
+                    {{ content.talksImageLinkText }}
+                  </a>
+                </figcaption>
+              </figure>
+
+              <p>
+              {{ content.talks2 }}
                 <ul>
                   <li>
                     <a
