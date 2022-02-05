@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.7] - content update - 2022-03-05
+
+    * add photo "on TV" (from NCA conf 21)
+    * add "fractal" tech stack    
+    * remove "Shopware 5" tech stack
+    * demote "WordPress" tech stack 
+
 ## [2.3.6] - 2022-01-18
 
     * update Changelog; add missing git tags
