@@ -1,6 +1,10 @@
 # Changelog
 
-## [2.3.7] - content update - 2022-03-05
+## [2.4.0] - quality assurance - 2022-02-11
+
+    * add more front-end tests
+
+## [2.3.7] - content update - 2022-02-05
 
     * add photo "on TV" (from NCA conf 21)
     * add "fractal" tech stack    
