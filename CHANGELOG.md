@@ -1,19 +1,38 @@
 # Changelog
 
-## [2.4.0] - quality assurance - 2022-02-11
+## [2.5.0] - Content and Typography - 2022-03-04
 
-    * add more front-end tests
+### More individual Typography
 
-## [2.3.7] - content update - 2022-02-05
+* Replace the existing typeface [Montserrat](https://github.com/JulietaUla/Montserrat) by [Julieta Ulanovsky](http://www.zkysky.com.ar), used for the main sub headline and as the body with the more individual [Redtone](https://www.myfonts.com/fonts/38-lineart/redtone/) Light by [38-lineart](https://www.myfonts.com/foundry/38-lineart/).
 
-    * add photo "on TV" (from NCA conf 21)
-    * add "fractal" tech stack    
-    * remove "Shopware 5" tech stack
-    * demote "WordPress" tech stack 
+### Content Update
+
+* Replace [Lucom](https://www.lucom.com/) interaction platform testimonial by more recent work for [Wandelpunkt Consulting](http://www.wandelpunkt-consulting.de/) to emphasize my focus on sustainability and social impact for future projects and customers.
+
+* Replace the slightly outdated and less relevant testimonial "Performance Talk" by mentioning that I built a front-end design system based on [fractal](https://fractal.build/) for a large corporate customer.
+
+## [2.4.0] - Quality Assurance - 2022-02-11
+
+### Test the Testing Tools
+
+* Add more front-end tests evaluating [CodeceptJS](https://codecept.io) as a possible alternative to [cypress](https://www.cypress.io).
+
+## [2.3.7] - Content Update - 2022-02-05
+
+### Add another Image of myself 
+
+  * add photo "on TV" (from NCA conf 21)
+
+### Add and Update my Tech Stack
+
+  * add "fractal" tech stack    
+  * remove "Shopware 5" tech stack
+  * demote "WordPress" tech stack 
 
 ## [2.3.6] - 2022-01-18
 
-    * update Changelog; add missing git tags
+* update Changelog; add missing git tags
 
 ## [2.3.5] - 2022-01-13
 
