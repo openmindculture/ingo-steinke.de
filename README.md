@@ -4,12 +4,15 @@
 
 see [changelog](./CHANGELOG.md)
 
+This is a screenshot after the relaunch in 2021:
+
 ![screenshot](_screenshots/screenshot-ingo-steinke-de.jpg)
 
 ## Requirements
 
 - [npm](https://www.npmjs.com)
 - [eleventy](https://www.11ty.dev/) (global path: `npm install -g @11ty/eleventy`)
+- a computer with an internet connection
 
 ## Edit Content: Project Structure
 
@@ -46,14 +49,16 @@ to be used in liquid variables with the `content.` prefix.
 My localization setup does not match eleventy's front matter handling,
 but this proved a quick and maintainable way to get things done.
 
-At the time of writing, in January 2021, I was not able to find an official documentation
+When starting to work with eleventy, in January 2021, I had not been able to find an official documentation
 how to internationalize eleventy projects, and anything else I found seemed even more
 counter-intuitive to me, so here we go.
 
 ## DNS setup for netlify
 
+```
 ingo-steinke.de.  IN  A     104.198.14.52
 www           IN  CNAME ingo-steinke.netlify.app
+```
 
 ## Test
 
@@ -61,7 +66,7 @@ www           IN  CNAME ingo-steinke.netlify.app
 
 * npm run stylelint
 
-* TODO evaluate [codecept](https://codecept.io) as replacement for cypress, jest, storybook, storyshots
+* TODO evaluate [CodeceptJS](https://codecept.io/) as a replacement for cypress, jest, storybook, storyshots
 
 ## Roadmap / TODO
 
