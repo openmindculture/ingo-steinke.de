@@ -268,6 +268,17 @@ h4,
     margin: 1em;
   }
 
+  .tile img.project-thumb--shrink {
+    width: 3.5em;
+    height: 3.5em;
+  }
+
+  .tile img.project-thumb--grow {
+    height: 4.625em;
+    width: 4.625em;
+    margin-left: 0.5em;
+  }
+
   .row {
     display: block;
     display: flex;

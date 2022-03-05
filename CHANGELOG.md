@@ -1,16 +1,16 @@
 # Changelog
 
-## [2.5.0] - Content and Typography - 2022-03-04
-
-### More individual Typography
-
-* Replace the existing typeface [Montserrat](https://github.com/JulietaUla/Montserrat) by [Julieta Ulanovsky](http://www.zkysky.com.ar), used for the main sub headline and as the body with the more individual [Redtone](https://www.myfonts.com/fonts/38-lineart/redtone/) Light by [38-lineart](https://www.myfonts.com/foundry/38-lineart/).
+## [2.5.0] - Content Update - 2022-03-04
 
 ### Content Update
 
 * Replace [Lucom](https://www.lucom.com/) interaction platform testimonial by more recent work for [Wandelpunkt Consulting](http://www.wandelpunkt-consulting.de/) to emphasize my focus on sustainability and social impact for future projects and customers.
 
 * Replace the slightly outdated and less relevant testimonial "Performance Talk" by mentioning that I built a front-end design system based on [fractal](https://fractal.build/) for a large corporate customer.
+
+* Reorder the project tiles.
+
+* Mention my DEV blog between sustainability networks and conference talks.
 
 ## [2.4.0] - Quality Assurance - 2022-02-11
 
