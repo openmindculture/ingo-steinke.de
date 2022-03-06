@@ -56,7 +56,7 @@ module.exports = {
   "projectAtomicRelaunch1": "As a senior lead developer, of a team of front-end web developers, I developed a modular system for the relaunch of multiple websites of an international corporate customer.",
   "projectAtomicRelaunch2": "The",
   "projectAtomicRelaunch3": "Fractal",
-  "projectAtomicRelaunch4": "framework served as a technical basis.",
+  "projectAtomicRelaunch4": " framework served as a technical basis.",
   "projectAtomicRelaunchHashtag1": "HTML",
   "projectAtomicRelaunchHashtag2": "CSS",
   "projectAtomicRelaunchHashtag3": "Fractal",
