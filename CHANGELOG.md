@@ -1,5 +1,9 @@
 # Changelog
 
+## [2.5.1] - Content Update: Meta Data - 2022-03-12
+
+* Update title and description to focus more on sustainability and less on local customers no matter if Düsseldorf, Berlin, or anywhere else on this world.
+
 ## [2.5.0] - Content Update - 2022-03-04
 
 ### Content Update
