@@ -719,3 +719,15 @@ ul.grid-container.skills {
 #wcb #wcb_a, #wcb #wcb_g {
   --b2: #017d63;
 }
+
+#wcb #wcb_g {
+  color: #000;
+}
+
+#wcb #wcb_2 {
+  color: #ebeff2;
+  line-height: 1;
+  font-family: Montserrat,Helvetica,sans-serif;
+  font-size: 1rem;
+  padding: 0.25rem 0;
+}
