@@ -1,5 +1,9 @@
 # Changelog
 
+## [2.6.0] - add websitecarbon badge - 2022-04-07
+
+* Add badge displaying websitecarbon.com carbon emission footprint estimation badge on the page bottom.
+
 ## [2.5.2] - Content Update: Meta Data - 2022-03-12
 
 * Update title and description to focus more on sustainability and less on local customers no matter if Düsseldorf, Berlin, or anywhere else on this world.

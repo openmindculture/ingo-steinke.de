@@ -715,3 +715,7 @@ ul.grid-container.skills {
   background-color: var(--brand-gray-gimp);
   color: #fff;
 }
+
+#wcb #wcb_a, #wcb #wcb_g {
+  --b2: #017d63;
+}
