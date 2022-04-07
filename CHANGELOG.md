@@ -1,6 +1,6 @@
 # Changelog
 
-## [2.6.2] - add websitecarbon badge - 2022-04-07
+## [2.6.3] - add websitecarbon badge - 2022-04-07
 
 * Add badge displaying websitecarbon.com carbon emission footprint estimation badge on the page bottom.
 
