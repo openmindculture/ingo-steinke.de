@@ -1,5 +1,9 @@
 # Changelog
 
+## [2.6.4] - fix mobile page width - 2022-04-22
+
+* ensure skills hashtags wrap to new line if there is not enough space for single line display
+
 ## [2.6.3] - add websitecarbon badge - 2022-04-07
 
 * Add badge displaying websitecarbon.com carbon emission footprint estimation badge on the page bottom.
