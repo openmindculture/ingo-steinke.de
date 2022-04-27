@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.7.0] - add cleaner-web badge, bank and insurance info - 2022-04-27
+
+* add cleaner web badge
+* fix styling
+* add bank and insurance information
+
 ## [2.6.4] - fix mobile page width - 2022-04-22
 
 * ensure skills hashtags wrap to new line if there is not enough space for single line display
