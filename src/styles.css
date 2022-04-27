@@ -33,7 +33,13 @@ figure.content-image figcaption {
 .transparent,
 a.transparent,
 a:link.transparent,
-a:visited.transparent {
+a:visited.transparent,
+.transparent a,
+.transparent a:link,
+.transparent a:visited,
+.page-footer .transparent a,
+.page-footer .transparent a:link,
+.page-footer .transparent a:visited {
   background-color: transparent;
   background-image: none;
 }
