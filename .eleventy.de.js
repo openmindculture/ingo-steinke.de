@@ -12,6 +12,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/favicon-16x16.png');
   eleventyConfig.addPassthroughCopy('src/favicon-32x32.png');
   eleventyConfig.addPassthroughCopy('src/mstile-150x150.png');
+  eleventyConfig.addPassthroughCopy('src/2022-4-19-www.ingo-steinke.de-1793046390-report.pdf');
 
   // redirect rules and domain configuration for netlify
   eleventyConfig.addPassthroughCopy('src/netlify.toml');
