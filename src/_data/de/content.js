@@ -206,6 +206,8 @@ module.exports = {
   "insurance": "Berufshaftpflichtversicherung",
   "insuranceTitle": "Berufshaftpflichtversicherung: exali Media-Haftpflicht",
   "bankaccount": "Bankverbindung: GLS Gemeinschaftsbank eG",
+  "ecofriendlyWebsite": "Klimabewusste Website",
+  "cleanerWebBadge": "Siegel von Cleaner Web",
   "profile": "Profil",
   "at": "auf",
   "privacyGdpr": "Die Regeln des Bundesdatenschutzgesetzes (BDSG) und der europäischen Datenschutzgrundverordnung (DSGVO) sind Anlass zu dieser Datenschutzerklärung. Das",
