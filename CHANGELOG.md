@@ -1,6 +1,10 @@
 # Changelog
 
-## [2.7.0] - add cleaner-web badge, bank and insurance info - 2022-04-27
+## [2.7.1] - add Cleaner Web details, optimize print - 2022-04-29
+* add cleaner web details
+* optimize print styling
+
+## [2.7.0] - add Cleaner Web badge, bank and insurance info - 2022-04-27
 
 * add cleaner web badge
 * fix styling
