@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  line-height: 1.75;
+  line-height: var(--body-line-height);
   font-family: var(--body-font-family);
   font-weight: var(--body-font-weight);
   color: var(--primary-foreground);
@@ -184,6 +184,8 @@ h4,
   .privacy {
     padding: 0.5em 0 1em 1em;
     margin: 0 0 2em 0;
+    text-align: left;
+    line-height: var(--body-line-height);
   }
 
   .privacy {

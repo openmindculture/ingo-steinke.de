@@ -726,36 +726,40 @@
                 {{ content.aboutMeIntro }}
               </p>
 
-              <h3>{{ content.aboutMeCvHeading }}</h3>
+              <section class="avoid-page-break">
+                <h3>{{ content.aboutMeCvHeading }}</h3>
+                <p>
+                  {{ content.aboutMeCv1 }}
+                </p>
+                <p>
+                  {{ content.aboutMeCv2 }}
+                </p>
+              </section>
 
-              <p>
-                {{ content.aboutMeCv1 }}
-              </p>
-              <p>
-                {{ content.aboutMeCv2 }}
-              </p>
+              <section class="avoid-page-break">
+                <h4>{{ content.aboutMeEthicalHeading }}</h4>
+                <p>
+                  {{ content.aboutMeEthical }}
+                  {{ content.aboutMeEthicalImA }}
+                  <a href="https://fairantwortung.org/" target="_blank" rel="noopener">
+                    fairantworter</a>,
+                  {{ content.aboutMeEthicalA }}
+                  <a href="https://www.reflecta.network/changemaker/ingo-steinke?ref=f181cba6-ddc9-4791-b579-b02c3be47206" target="_blank" rel="noopener">
+                    reflecta Changemaker</a>{{ content.aboutMeEthicalandASignatory }}
 
-              <h4>{{ content.aboutMeEthicalHeading }}</h4>
-              <p>
-                {{ content.aboutMeEthical }}
-                {{ content.aboutMeEthicalImA }}
-                <a href="https://fairantwortung.org/" target="_blank" rel="noopener">
-                  fairantworter</a>,
-                {{ content.aboutMeEthicalA }}
-                <a href="https://www.reflecta.network/changemaker/ingo-steinke?ref=f181cba6-ddc9-4791-b579-b02c3be47206" target="_blank" rel="noopener">
-                  reflecta Changemaker</a>{{ content.aboutMeEthicalandASignatory }}
+                  <a href="https://www.sustainablewebmanifesto.com/" target="_blank" rel="noopener">
+                    Sustainable Web Manifesto</a>.
+                  <br><br>
+                  {{ content.aboutMeAtDev }} <a href="https://dev.to/ingosteinke" target="_blank" rel="noopener">{{ content.aboutMeDevBlog }}</a> {{ content.aboutMeIRegularly }}
+                </p>
+              </section>
 
-                <a href="https://www.sustainablewebmanifesto.com/" target="_blank" rel="noopener">
-                  Sustainable Web Manifesto</a>.
-                <br><br>
-                {{ content.aboutMeAtDev }} <a href="https://dev.to/ingosteinke" target="_blank" rel="noopener">{{ content.aboutMeDevBlog }}</a> {{ content.aboutMeIRegularly }}
-              </p>
-
-              <h3 class="target-offset" id="talks-events">{{ content.talksHeading }}</h3>
-
-              <p>
-                {{ content.talks }}
-              </p>
+              <section class="avoid-page-break">
+                <h3 class="target-offset" id="talks-events">{{ content.talksHeading }}</h3>
+                <p>
+                  {{ content.talks }}
+                </p>
+              </section>
 
               <figure class="content-image">
                 <img
@@ -867,15 +871,22 @@
                 <a class="url" rel="author" href="{{ content.canonicalHref }}https://www.ingo-steinke.de/">{{ content.shortHref }}</a>
                 <span>{{ content.vatId }} DE340489834</span>
                 <div title="{{ content.bankaccount }}">
+                  <span class="initially-hidden only-print inline">{{ content.bankaccount }}</span>
                   DE89 4306 0967 3029 8400 00<br>
                 </div>
                 <div>
-                  <a href="https://www.exali.de/siegel/Ingo-Steinke"
-                     target="_blank"
-                     title="{{ content.insuranceTitle }}"
+                  <a
+                    href="https://www.exali.de/siegel/Ingo-Steinke"
+                    target="_blank"
+                    title="{{ content.insuranceTitle }}"
+                    id="insuranceLink"
+                    class="no-print"
                   >
                     {{ content.insurance }}
                   </a>
+                  <span class="initially-hidden only-print inline">
+                    {{ content.insuranceTitle }} www.exali.de/siegel/Ingo-Steinke
+                  </span>
                 </div>
               </div>
 
@@ -989,85 +1000,6 @@
                 {{ content.privacyChanges }}
               </p>
             </aside>
-
-            <section id="ecofriendly" class="privacy initially-hidden clear target-offset text-content-color">
-              <header>
-                <h3>
-                  Erklärung zur klimabewussten Website
-                </h3>
-              </header>
-              <p>
-                Diese Website unter
-                <a href="https://www.ingo-steinke.de/">https://www.ingo-steinke.de/</a>
-                hält das °Cleaner-Web-Siegel für
-                klimabewusste Websites.
-              </p>
-              <p class="badge transparent">
-                <a
-                  href="https://cleaner-web.com"
-                  target="_blank"
-                >
-                  <img
-                    src="img/badge-cleaner-web.svg"
-                    alt="{{ content.cleanerWebBadge }}"
-                    width="300"
-                    height="92"
-                  >
-                </a>
-              </p>
-              <p>
-                <ul>
-                  <li>
-                    <a
-                      href="2022-4-19-www.ingo-steinke.de-1793046390-report.pdf"
-                      target="_blank"
-                    >
-                      Audit-Bericht (PDF)
-                    </a>
-                  </li>
-                  <li>Ausgestellt: 19.4.2022</li>
-                  <li>Gültig bis: 18.4.2023</li>
-                  <li>Geprüft von:
-                    <a
-                      href="https://cleaner-web.com"
-                      target="_blank"
-                    >
-                    °Cleaner Web - Klimabewusst im Internet
-                    </a>
-                  </li>
-                </ul>
-              </p>
-              <p>
-                Die Website erfüllt den °Cleaner-Web-Standard. Sie wurde anhand objektiv
-                messbarer Faktoren darauf geprüft, wie klimabewusst die Website ist.
-              </p>
-              <p>
-                Um auch digital einen Beitrag für den Klimaschutz zu leisten, haben wir diese
-                Website auf Gesichtspunkte der Carbon-Emission-Optimierung überprüfen lassen
-                und sind im dauerhaften Prozess, diese dahingehend weiter zu optimieren und
-                zukünftige Änderungen immer auch nach klimabewussten Gesichtspunkten zu
-                gestalten.
-              </p>
-              <h4>Prüf-Kategorien des °Cleaner-Web-Standards sind:</h4>
-              <p>
-                <ul>
-                  <li>Inhalte der Website</li>
-                  <li>Datenmenge</li>
-                  <li>Aufwand am Endgerät</li>
-                  <li>Green Hosting</li>
-                  <li>Server und Performance</li>
-                  <li>Datenübertragung</li>
-                </ul>
-              </p>
-              <h4>Fortlaufende Klima-Optimierung</h4>
-              <p>
-                Weiterhin ist unser Ziel, die Website kontinuierlich zu verbessern – wir sehen diese
-                Online-Maßnahme als einen von vielen Klimaschutz-Bausteinen, um aktiv zur
-                dauerhaften Senkung der CO2-Emissionen beizutragen. Bei größeren Änderungen
-                oder einem Relaunch werden wir die Website erneut prüfen lassen.
-              </p>
-            </section>
-
           </section>
         </main>
 
@@ -1087,9 +1019,12 @@
                 height="109"
               >
             </a>
+            <span class="initially-hidden only-print">
+              Changemaker {{ content.at }} reflecta.network: www.reflecta.network/changemaker/ingo-steinke
+            </span>
           </div>
 
-          <p class="badge transparent">
+          <p class="badge transparent no-print">
             <a
               href="#ecofriendly"
               title="{{ content.ecofriendlyWebsite }}"
@@ -1103,10 +1038,89 @@
             </a>
           </p>
 
+
+          <section id="ecofriendly" class="initially-hidden clear target-offset text-content-layout text-content-color text-width">
+            <header>
+              <h3>
+                Erklärung zur klimabewussten Website
+              </h3>
+            </header>
+            <p>
+              Diese Website unter
+              <a href="https://www.ingo-steinke.de/">https://www.ingo-steinke.de/</a>
+              hält das °Cleaner-Web-Siegel für
+              klimabewusste Websites.
+            </p>
+            <p class="badge transparent">
+              <a
+                href="https://cleaner-web.com"
+                target="_blank"
+              >
+                <img
+                  src="img/badge-cleaner-web.svg"
+                  alt="{{ content.cleanerWebBadge }}"
+                  width="300"
+                  height="92"
+                >
+              </a>
+            </p>
+            <p>
+            <ul>
+              <li>
+                <a
+                  href="2022-4-19-www.ingo-steinke.de-1793046390-report.pdf"
+                  target="_blank"
+                >
+                  Audit-Bericht (PDF)
+                </a>
+              </li>
+              <li>Ausgestellt: 19.4.2022</li>
+              <li>Gültig bis: 18.4.2023</li>
+              <li>Geprüft von:
+                <a
+                  href="https://cleaner-web.com"
+                  target="_blank"
+                >
+                  °Cleaner Web - Klimabewusst im Internet
+                </a>
+              </li>
+            </ul>
+            </p>
+            <p>
+              Die Website erfüllt den °Cleaner-Web-Standard. Sie wurde anhand objektiv
+              messbarer Faktoren darauf geprüft, wie klimabewusst die Website ist.
+            </p>
+            <p>
+              Um auch digital einen Beitrag für den Klimaschutz zu leisten, haben wir diese
+              Website auf Gesichtspunkte der Carbon-Emission-Optimierung überprüfen lassen
+              und sind im dauerhaften Prozess, diese dahingehend weiter zu optimieren und
+              zukünftige Änderungen immer auch nach klimabewussten Gesichtspunkten zu
+              gestalten.
+            </p>
+            <h4>Prüf-Kategorien des °Cleaner-Web-Standards sind:</h4>
+            <p>
+            <ul>
+              <li>Inhalte der Website</li>
+              <li>Datenmenge</li>
+              <li>Aufwand am Endgerät</li>
+              <li>Green Hosting</li>
+              <li>Server und Performance</li>
+              <li>Datenübertragung</li>
+            </ul>
+            </p>
+            <h4>Fortlaufende Klima-Optimierung</h4>
+            <p>
+              Weiterhin ist unser Ziel, die Website kontinuierlich zu verbessern – wir sehen diese
+              Online-Maßnahme als einen von vielen Klimaschutz-Bausteinen, um aktiv zur
+              dauerhaften Senkung der CO2-Emissionen beizutragen. Bei größeren Änderungen
+              oder einem Relaunch werden wir die Website erneut prüfen lassen.
+            </p>
+          </section>
+
           <div id="wcb" class="carbonbadge"></div>
           <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
 
-          <p>
+          <p class="no-print">
             <a href="#contact">{{ content.targetContact }}</a>
             <a href="#imprint">{{ content.targetImprint }}</a>
             <a href="#privacy">{{ content.targetPrivacy }}</a>

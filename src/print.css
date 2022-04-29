@@ -17,6 +17,10 @@ h3 {
   font-size: 18pt;
 }
 
+.vcard h3 {
+  margin: 0;
+}
+
 body,
 .tiled-content,
 .text-content-color,
@@ -92,17 +96,17 @@ img.avatar {
 }
 
 .social-links {
-  list-style-type: none;
-  padding-left: 0;
+  list-style-type: disc;
+  padding-left: 12pt;
 }
 
 .social-links a {
   font-family: monospace;
 }
 
-.social-links a img {
-  background-color: #aaa;
-  padding: 4pt;
+.social-links a img,
+.social-links a svg {
+  display: none;
 }
 
 .privacy {
@@ -110,10 +114,40 @@ img.avatar {
 }
 
 article,
+.tile,
+figure,
 .avoid-page-break {
   page-break-inside: avoid;
 }
 
 .avoid-page-break > article {
   page-break-inside: initial;
+}
+
+#talks-events,
+.imprint-contact {
+  page-break-before: always;
+}
+
+.initially-hidden.only-print {
+  display: block;
+}
+
+.initially-hidden.only-print.inline {
+  display: inline;
+}
+
+.no-print {
+  display: none;
+}
+
+/* website carbon badge */
+#wcb_p {
+  text-align: left;
+}
+
+#top #wcb #wcb_a,
+#wcb #wcb_g {
+  --b1: #000;
+  --b2: #000;
 }
