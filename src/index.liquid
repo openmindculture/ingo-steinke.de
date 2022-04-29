@@ -1042,14 +1042,13 @@
           <section id="ecofriendly" class="initially-hidden clear target-offset text-content-layout text-content-color text-width">
             <header>
               <h3>
-                Erklärung zur klimabewussten Website
+                {{ content.ecofriendlyHeading }}
               </h3>
             </header>
             <p>
-              Diese Website unter
+              {{ content.ecofriendlyThisWebsite }}
               <a href="https://www.ingo-steinke.de/">https://www.ingo-steinke.de/</a>
-              hält das °Cleaner-Web-Siegel für
-              klimabewusste Websites.
+              {{ content.ecofriendlyBearsTheSeal }}
             </p>
             <p class="badge transparent">
               <a
@@ -1071,49 +1070,41 @@
                   href="2022-4-19-www.ingo-steinke.de-1793046390-report.pdf"
                   target="_blank"
                 >
-                  Audit-Bericht (PDF)
+                  {{ content.ecofriendlyAudit }}
                 </a>
               </li>
-              <li>Ausgestellt: 19.4.2022</li>
-              <li>Gültig bis: 18.4.2023</li>
-              <li>Geprüft von:
+              <li>{{ content.ecofriendlyIssued }}: 19.4.2022</li>
+              <li>{{ content.ecofriendlyValidUntil }}: 18.4.2023</li>
+              <li>{{ content.ecofriendlyValidatedBy }}:
                 <a
                   href="https://cleaner-web.com"
                   target="_blank"
                 >
-                  °Cleaner Web - Klimabewusst im Internet
+                  {{ content.cleanerWebClaim }}
                 </a>
               </li>
             </ul>
             </p>
             <p>
-              Die Website erfüllt den °Cleaner-Web-Standard. Sie wurde anhand objektiv
-              messbarer Faktoren darauf geprüft, wie klimabewusst die Website ist.
+              {{ content.ecofriendlyComplies }}
             </p>
             <p>
-              Um auch digital einen Beitrag für den Klimaschutz zu leisten, haben wir diese
-              Website auf Gesichtspunkte der Carbon-Emission-Optimierung überprüfen lassen
-              und sind im dauerhaften Prozess, diese dahingehend weiter zu optimieren und
-              zukünftige Änderungen immer auch nach klimabewussten Gesichtspunkten zu
-              gestalten.
+              {{ content.ecofriendlyToContribute }}
             </p>
-            <h4>Prüf-Kategorien des °Cleaner-Web-Standards sind:</h4>
+            <h4>{{ content.ecofriendlyCriteriaHeading }}</h4>
             <p>
             <ul>
-              <li>Inhalte der Website</li>
-              <li>Datenmenge</li>
-              <li>Aufwand am Endgerät</li>
-              <li>Green Hosting</li>
-              <li>Server und Performance</li>
-              <li>Datenübertragung</li>
+              <li>{{ content.ecofriendlyCriteriaContent }}</li>
+              <li>{{ content.ecofriendlyCriteriaPayload }}</li>
+              <li>{{ content.ecofriendlyCriteriaClientPerf }}</li>
+              <li>{{ content.ecofriendlyCriteriaGreenHosting }}</li>
+              <li>{{ content.ecofriendlyCriteriaServerPerf }}</li>
+              <li>{{ content.ecofriendlyCriteriaTransfer }}</li>
             </ul>
             </p>
-            <h4>Fortlaufende Klima-Optimierung</h4>
+            <h4>{{ content.ecofriendlyContinuousHeading }}</h4>
             <p>
-              Weiterhin ist unser Ziel, die Website kontinuierlich zu verbessern – wir sehen diese
-              Online-Maßnahme als einen von vielen Klimaschutz-Bausteinen, um aktiv zur
-              dauerhaften Senkung der CO2-Emissionen beizutragen. Bei größeren Änderungen
-              oder einem Relaunch werden wir die Website erneut prüfen lassen.
+              {{ content.ecofriendlyContinuousParagraph }}
             </p>
           </section>
 

@@ -206,8 +206,6 @@ module.exports = {
   "insurance": "Berufshaftpflichtversicherung",
   "insuranceTitle": "Berufshaftpflichtversicherung: exali Media-Haftpflicht",
   "bankaccount": "Bankverbindung: GLS Gemeinschaftsbank eG",
-  "ecofriendlyWebsite": "Klimabewusste Website",
-  "cleanerWebBadge": "Siegel von Cleaner Web",
   "profile": "Profil",
   "at": "auf",
   "privacyGdpr": "Die Regeln des Bundesdatenschutzgesetzes (BDSG) und der europäischen Datenschutzgrundverordnung (DSGVO) sind Anlass zu dieser Datenschutzerklärung. Das",
@@ -228,7 +226,28 @@ module.exports = {
   "privacyLogfiles": "Mit jedem Zugriff auf dieses Angebot werden durch mich beziehungsweise die von mir beauftragten Web-Provider und deren Dienstleister automatisch Informationen erfasst, die zur technischen Bereitstellung der Website erforderlich sind. Erfasst werden die Adresse der besuchten Website, Datum und Uhrzeit, übertragene Datenmenge, Webbrowserkennung, IP-Adresse und gegebenenfalls auf die aufgerufene Website verweisende Websites. Die Daten werden in den Logfiles der EDV gespeichert. Eine Speicherung dieser Daten zusammen mit anderen personenbezogenen Daten der Nutzer findet nicht statt. Eine Auswertung der Daten zu Marketingzwecken findet in diesem Zusammenhang ebenfalls nicht statt.",
   "privacyLogfilesLaw": "Rechtsgrundlage für die vorübergehende Speicherung dieser Daten und der Logfiles ist Art. 6 Abs. 1 Bst. f DSGVO. Die Speicherung in Logfiles erfolgt, um die Funktionsfähigkeit der Website sicherzustellen. Zudem dienen diese Daten zur Gewährleistung der Sicherheit der informationstechnischen Systeme. Ich behalte mir das Recht vor, die Server-Logfiles bei Verdacht auf eine rechtswidrige Nutzung meines Angebotes nachträglich zu kontrollieren.",
   "privacyChangesHeading": "Änderung dieser Datenschutzerklärung",
-  "privacyChanges": "Um zu gewährleisten, dass diese Datenschutzerklärung stets den aktuellen gesetzlichen Vorgaben entspricht, behalte ich mir jederzeit Änderungen vor. Das gilt auch für den Fall, dass die Datenschutzerklärung aufgrund neuer oder überarbeiteter Leistungen, zum Beispiel neuer Serviceleistungen, angepasst werden muss. Die neue Datenschutzerklärung greift dann bei deinem nächsten Besuch auf meinem Angebot."
+  "privacyChanges": "Um zu gewährleisten, dass diese Datenschutzerklärung stets den aktuellen gesetzlichen Vorgaben entspricht, behalte ich mir jederzeit Änderungen vor. Das gilt auch für den Fall, dass die Datenschutzerklärung aufgrund neuer oder überarbeiteter Leistungen, zum Beispiel neuer Serviceleistungen, angepasst werden muss. Die neue Datenschutzerklärung greift dann bei deinem nächsten Besuch auf meinem Angebot.",
+  "ecofriendlyWebsite": "Klimabewusste Website",
+  "cleanerWebBadge": "Siegel von Cleaner Web",
+  "cleanerWebClaim": "°Cleaner Web - Klimabewusst im Internet",
+  "ecofriendlyHeading": "Erklärung zur klimabewussten Website",
+  "ecofriendlyThisWebsite": "Diese Website unter",
+  "ecofriendlyBearsTheSeal": "hält das °Cleaner-Web-Siegel für klimabewusste Websites.",
+  "ecofriendlyAudit": "Audit-Bericht (PDF)",
+  "ecofriendlyIssued": "Ausgestellt",
+  "ecofriendlyValidUntil": "Gültig bis",
+  "ecofriendlyValidatedBy": "Geprüft von",
+  "ecofriendlyComplies": "Die Website erfüllt den °Cleaner-Web-Standard. Sie wurde anhand objektiv messbarer Faktoren darauf geprüft, wie klimabewusst die Website ist.",
+  "ecofriendlyToContribute": "Um auch digital einen Beitrag für den Klimaschutz zu leisten, haben wir diese Website auf Gesichtspunkte der Carbon-Emission-Optimierung überprüfen lasse und sind im dauerhaften Prozess, diese dahingehend weiter zu optimieren und zukünftige Änderungen immer auch nach klimabewussten Gesichtspunkten zu gestalten.",
+  "ecofriendlyCriteriaHeading": "Prüf-Kategorien des °Cleaner-Web-Standards sind:",
+  "ecofriendlyCriteriaContent": "Inhalte der Website",
+  "ecofriendlyCriteriaPayload": "Datenmenge",
+  "ecofriendlyCriteriaClientPerf": "Aufwand am Endgerät",
+  "ecofriendlyCriteriaGreenHosting": "Green Hosting",
+  "ecofriendlyCriteriaServerPerf": "Server und Performance",
+  "ecofriendlyCriteriaTransfer": "Datenübertragung",
+  "ecofriendlyContinuousHeadin": "Fortlaufende Klima-Optimierung",
+  "ecofriendlyContinuousParagraph": "Weiterhin ist unser Ziel, die Website kontinuierlich zu verbessern – wir sehen diese   Online-Maßnahme als einen von vielen Klimaschutz-Bausteinen, um aktiv zur dauerhaften Senkung der CO2-Emissionen beizutragen. Bei größeren Änderungen oder einem Relaunch werden wir die Website erneut prüfen lassen."
 };
 
 
