@@ -34,12 +34,12 @@ figure.content-image figcaption {
 a.transparent,
 a:link.transparent,
 a:visited.transparent,
-.transparent a,
-.transparent a:link,
-.transparent a:visited,
-.page-footer .transparent a,
-.page-footer .transparent a:link,
-.page-footer .transparent a:visited {
+.transparent a:not(a:focus):not(a:hover),
+.transparent a:link:not(a:focus):not(a:hover),
+.transparent a:visited:not(a:focus):not(a:hover),
+.page-footer .transparent a:not(a:focus):not(a:hover),
+.page-footer .transparent a:link:not(a:focus):not(a:hover),
+.page-footer .transparent a:visited:not(a:focus):not(a:hover) {
   background-color: transparent;
   background-image: none;
 }
@@ -70,10 +70,17 @@ a:focus {
 }
 
 a:hover,
-a:focus {
+a:focus,
+#top #wcb #wcb_a:hover,
+#top #wcb #wcb_a:focus {
   text-decoration-color: var(--link-hover-background);
   text-decoration-style: dotted;
   text-decoration-thickness: 0.1em;
+}
+
+#top #wcb #wcb_a:hover,
+#top #wcb #wcb_a:focus {
+  background-color: var(--link-hover-background);
 }
 
 .social-links a {
@@ -168,7 +175,7 @@ a.menu-toggle:hover {
   outline: none;
 }
 
-.social-links a:not(a:hover) {
+.social-links a:not(a:hover):not(a:focus) {
   background: none;
 }
 
@@ -723,7 +730,8 @@ ul.grid-container.skills {
   color: #fff;
 }
 
-#top #wcb #wcb_a, #wcb #wcb_g {
+#top #wcb #wcb_a,
+#wcb #wcb_g {
   --b2: #017d63;
 }
 
