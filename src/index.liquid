@@ -866,13 +866,23 @@
                   <span class="postal-code">{{ content.imprintPostalCode }}</span> {{ content.imprintCity }}<br>
                   <span class="country-name">{{ content.imprintCountryName }}</span><br>
                 </span><br>
-                <span class="tel"><a href="tel:+491634684080">{{ content.imprintTel }}</a></span><br>
+                {% if content.contactInterimTel %}
+                  <small>{{ content.contactTelOfflineLabel }}:<br></small>
+                  <del>
+                    <span class="tel"><a href="tel:{{ content.contactTel }}">{{ content.contactTelFormatted }}</a></span><br>
+                  </del>
+                  <small>{{ content.contactInterimLabel }}:<br></small>
+                  <span class="tel"><a href="tel:{{ content.contactInterimTel }}">{{ content.contactInterimTelFormatted }}</a></span><br>
+                {% else %}
+                  <span class="tel"><a href="tel:{{ content.contactTel }}">{{ content.contactTelFormatted }}</a></span><br>
+                {% endif %}
+
                 <span><a href="mailto:{{ content.contactEmail }}">{{ content.contactEmail }}</a></span><br>
                 <a class="url" rel="author" href="{{ content.canonicalHref }}https://www.ingo-steinke.de/">{{ content.shortHref }}</a>
-                <span>{{ content.vatId }} DE340489834</span>
-                <div title="{{ content.bankaccount }}">
-                  <span class="initially-hidden only-print inline">{{ content.bankaccount }}</span>
-                  DE89 4306 0967 3029 8400 00<br>
+                <span>{{ content.vatIdLabel }} {{ content.vatIdNumber }}</span>
+                <div title="{{ content.bankaccountLabel }}">
+                  <span class="initially-hidden only-print inline">{{ content.bankaccountLabel }}</span>
+                  {{ content.bankaccountNumber }}<br>
                 </div>
                 <div>
                   <a

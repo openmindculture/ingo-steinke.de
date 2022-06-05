@@ -1,5 +1,8 @@
 # Changelog
 
+## [2.7.2] - add temporary contact phone - 2022-05-06
+* add temporary contact phone option, label, and phone number
+
 ## [2.7.1] - add Cleaner Web details, optimize print - 2022-04-29
 * add cleaner web details
 * optimize print styling
