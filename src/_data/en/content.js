@@ -266,5 +266,6 @@ module.exports = {
   "ecofriendlyContinuousParagraph": "Furthermore, our goal is to continuously improve the website - we see this online measure as one of many climate protection building blocks to actively contribute to the permanent reduction of CO2 emissions. In the event of major changes or a relaunch, we will have the website reviewed again.",
   "ecofriendlyReportDocumentFilename": "2022-5-27-www.ingo-steinke.com-1503125752-report.pdf",
   "ecofriendlyIssued": "5/27/2022",
-  "ecofriendlyValidUntil": "5/26/2023"
+  "ecofriendlyValidUntil": "5/26/2023",
+  "buttonStopAnimation": "hide animation"
 };
