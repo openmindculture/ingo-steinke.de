@@ -854,12 +854,13 @@
           </section>
 
           <section class="imprint-contact">
-            <h2 id="imprint" class="center target-offset">
+            <div class="aside-heading center" id="imprint" class="center target-offset">
               {{ content.imprintHeader }}
-            </h2>
+            </div>
             <article id="contact">
               <div class="vcard">
-                <h3 class="fn">{{ content.imprintName }}</h3>
+                <h2 class="fn">{{ content.imprintName }}</h2>
+                <span class="role">{{ content.imprintRole }}</span>
                 <br>
                 <span class="adr">
                   <span class="street-address">
@@ -966,48 +967,26 @@
             </article>
 
             <aside id="privacy" class="privacy initially-hidden clear target-offset text-content-color">
-              <div class="aside-heading">
-                {{ content.privacyHeading }}
-              </div>
+              <div class="aside-heading">{{ content.privacyHeading }}</div>
               <p>
                 {{ content.privacyGdpr }} <a href="#imprint">{{ content.privacyGdprImprint }}</a> {{ content.privacyGdpr2 }}
               </p>
-              <h4>{{ content.privacyYourRightsHeading }}</h4>
-              <p>
-                {{ content.privacyYourRights }}
-              </p>
-              <h4>{{ content.privacyPersonalDataHeading }}</h4>
-              <p>
-                {{ content.privacyPersonalData }}
-              </p>
-              <h4>{{ content.privacyLawHeading }}</h4>
-              <p>
-                {{ content.privacyLaw }}
-              </p>
-              <p>
-                {{ content.privacyLaw2 }}
-              </p>
-              <h4>{{ content.privacyMinimalHeading }}</h4>
-              <p>
-                {{ content.privacyMinimal }}
-              </p>
-              <p>
-                {{ content.privacyNoCookies }}
-              </p>
-              <p>
-                {{ content.privacyLinkDisclaimer }}
-              </p>
-              <h4>{{ content.privacyLogfilesHeading }}</h4>
-              <p>
-                {{ content.privacyLogfiles }}
-              </p>
-              <p>
-                {{ content.privacyLogfilesLaw }}
-              </p>
-              <h4>{{ content.privacyChangesHeading }}</h4>
-              <p>
-                {{ content.privacyChanges }}
-              </p>
+              <div class="aside-heading">{{ content.privacyYourRightsHeading }}</div>
+              <p>{{ content.privacyYourRights }}</p>
+              <div class="aside-heading">{{ content.privacyPersonalDataHeading }}</div>
+              <p>{{ content.privacyPersonalData }}</p>
+              <div class="aside-heading">{{ content.privacyLawHeading }}</div>
+              <p>{{ content.privacyLaw }}</p>
+              <p>{{ content.privacyLaw2 }}</p>
+              <div class="aside-heading">{{ content.privacyMinimalHeading }}</div>
+              <p>{{ content.privacyMinimal }}</p>
+              <p>{{ content.privacyNoCookies }}</p>
+              <p>{{ content.privacyLinkDisclaimer }}</p>
+              <div class="aside-heading">{{ content.privacyLogfilesHeading }}</div>
+              <p>{{ content.privacyLogfiles }}</p>
+              <p>{{ content.privacyLogfilesLaw }}</p>
+              <div class="aside-heading">{{ content.privacyChangesHeading }}</div>
+              <p>{{ content.privacyChanges }}</p>
             </aside>
           </section>
         </main>
@@ -1049,9 +1028,7 @@
 
 
           <section id="ecofriendly" class="initially-hidden clear target-offset text-content-layout text-content-color text-width text-center">
-            <div class="aside-heading">
-              {{ content.ecofriendlyHeading }}
-            </div>
+            <div class="aside-heading">{{ content.ecofriendlyHeading }}</div>
             <p>
               {{ content.ecofriendlyThisWebsite }}
               <a href="{{ content.ecofriendlyWebsiteUrl }}">{{ content.ecofriendlyWebsiteUrl }}</a>
@@ -1090,13 +1067,9 @@
                 </a>
               </li>
             </ul>
-            <p>
-              {{ content.ecofriendlyComplies }}
-            </p>
-            <p>
-              {{ content.ecofriendlyToContribute }}
-            </p>
-            <h4>{{ content.ecofriendlyCriteriaHeading }}</h4>
+            <p>{{ content.ecofriendlyComplies }}</p>
+            <p>{{ content.ecofriendlyToContribute }}</p>
+            <div class="aside-heading">{{ content.ecofriendlyCriteriaHeading }}</div>
             <ul>
               <li>{{ content.ecofriendlyCriteriaContent }}</li>
               <li>{{ content.ecofriendlyCriteriaPayload }}</li>
@@ -1105,7 +1078,7 @@
               <li>{{ content.ecofriendlyCriteriaServerPerf }}</li>
               <li>{{ content.ecofriendlyCriteriaTransfer }}</li>
             </ul>
-            <h4>{{ content.ecofriendlyContinuousHeading }}</h4>
+            <div class="aside-heading">{{ content.ecofriendlyContinuousHeading }}</div>
             <p>
               {{ content.ecofriendlyContinuousParagraph }}
             </p>

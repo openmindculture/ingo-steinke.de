@@ -1,7 +1,7 @@
 # Changelog
 
 ## [2.8.0] - usability improvements - unreleased, scheduled for June 2022
-* improve semantic headings for SEO and accessibility #84
+* reduce semantic headings to improve SEO and accessibility #84
 * fix validation errors #84
 * improve footer / imprint / contact layout
 * add control button to stop and restart background animation
