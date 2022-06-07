@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.8.0] - usability improvements - unreleased, scheduled for June 2022
+* improve semantic headings for SEO and accessibility #84
+* fix validation errors #84
+* improve footer / imprint / contact layout
+* add control button to stop and restart background animation
+* make bank account number (IBAN) easy to copy+paste while retaining spaced readability
+* fix domain alias / URL variations redirect / certificate errors #83
+* add english language version of cleaner web commitment
+
 ## [2.7.2] - add temporary contact phone - 2022-05-06
 * add temporary contact phone option, label, and phone number
 
