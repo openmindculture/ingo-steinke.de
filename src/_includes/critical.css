@@ -27,6 +27,7 @@ h1,
 h2,
 h3,
 h4,
+.aside-heading,
 #sticky-headline,
 #sticky-headline a {
   font-family: var(--heading-font-family);
@@ -37,7 +38,8 @@ h4,
 
 h2,
 h3,
-h4 {
+h4,
+.aside-heading {
   font-size: 1.5rem;
   line-height: 1.5;
 }
@@ -46,6 +48,7 @@ h1,
 h2,
 h3,
 h4,
+.aside-heading,
 .tagline,
 .tile,
 .hashtags {

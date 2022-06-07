@@ -253,7 +253,7 @@ module.exports = {
   "ecofriendlyCriteriaGreenHosting": "Green Hosting",
   "ecofriendlyCriteriaServerPerf": "Server und Performance",
   "ecofriendlyCriteriaTransfer": "Datenübertragung",
-  "ecofriendlyContinuousHeadin": "Fortlaufende Klima-Optimierung",
+  "ecofriendlyContinuousHeading": "Fortlaufende Klima-Optimierung",
   "ecofriendlyContinuousParagraph": "Weiterhin ist unser Ziel, die Website kontinuierlich zu verbessern – wir sehen diese   Online-Maßnahme als einen von vielen Klimaschutz-Bausteinen, um aktiv zur dauerhaften Senkung der CO2-Emissionen beizutragen. Bei größeren Änderungen oder einem Relaunch werden wir die Website erneut prüfen lassen."
 };
 
