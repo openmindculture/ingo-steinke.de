@@ -60,6 +60,10 @@ small {
   font-size: 0.75rem;
 }
 
+.nav-wrapper {
+  display: inline;
+}
+
 @media only screen {
   .only-print {
     display: none;
