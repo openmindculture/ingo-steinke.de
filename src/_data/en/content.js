@@ -212,7 +212,14 @@ module.exports = {
   "insurance": "Professional Liability Insurance",
   "insuranceTitle": "Professional Liability Insurance: exali Media-Haftpflicht",
   "bankaccountLabel": "Bank account: GLS Gemeinschaftsbank eG",
-  "bankaccountNumber": "DE89 4306 0967 3029 8400 00",
+  "bankaccountNumberChunks": [
+    "DE89",
+    "4306",
+    "0967",
+    "3029",
+    "8400",
+    "00"
+  ],
   "profile": "profile",
   "at": "at",
   "privacyGdpr": "This privacy notice is based on the rules set by the German Federal Data Protection Act (BDSG) and the European General Data Protection Regulation (GDPR). The",

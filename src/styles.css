@@ -351,6 +351,11 @@ a.menu-toggle:hover {
   border: 0;
 }
 
+/* visually spaced content that can be copied contiguously */
+.visually-spaced + .visually-spaced {
+  margin-left: 0.25rem;
+}
+
 /* Button styling */
 .menu-toggle {
   display: inline-block;

@@ -212,7 +212,14 @@ module.exports = {
   "insurance": "Berufshaftpflichtversicherung",
   "insuranceTitle": "Berufshaftpflichtversicherung: exali Media-Haftpflicht",
   "bankaccountLabel": "Bankverbindung: GLS Gemeinschaftsbank eG",
-  "bankaccountNumber": "DE89 4306 0967 3029 8400 00",
+  "bankaccountNumberChunks": [
+    "DE89",
+    "4306",
+    "0967",
+    "3029",
+    "8400",
+    "00"
+  ],
   "profile": "Profil",
   "at": "auf",
   "privacyGdpr": "Die Regeln des Bundesdatenschutzgesetzes (BDSG) und der europäischen Datenschutzgrundverordnung (DSGVO) sind Anlass zu dieser Datenschutzerklärung. Das",

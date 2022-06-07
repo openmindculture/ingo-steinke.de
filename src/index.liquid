@@ -883,7 +883,7 @@
                 <span>{{ content.vatIdLabel }} {{ content.vatIdNumber }}</span>
                 <div title="{{ content.bankaccountLabel }}">
                   <span class="initially-hidden only-print inline">{{ content.bankaccountLabel }}</span>
-                  {{ content.bankaccountNumber }}<br>
+                  {%- for chunk in content.bankaccountNumberChunks -%}<span class="visually-spaced">{{ chunk }}</span>{%- endfor -%}
                 </div>
                 <div>
                   <a
