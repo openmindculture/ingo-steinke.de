@@ -278,6 +278,11 @@ small {
     width: 90%;
   }
 
+  .text-center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .semitransparent .text-width {
     width: 70%;
   }
