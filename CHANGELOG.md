@@ -1,12 +1,10 @@
 # Changelog
 
-## [2.8.0] - usability improvements - unreleased, scheduled for June 2022
+## [2.8.1] - usability improvements - unreleased, scheduled for June 2022
 * reduce semantic headings to improve SEO and accessibility #84
 * fix validation errors #84
-* improve footer / imprint / contact layout
-* add control button to stop and restart background animation
+* add a control button to stop the background animation
 * make bank account number (IBAN) easy to copy+paste while retaining spaced readability
-* fix domain alias / URL variations redirect / certificate errors #83
 * add English language version of cleaner web commitment
 * add English language version of privacy statement
 
