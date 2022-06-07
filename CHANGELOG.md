@@ -1,6 +1,6 @@
 # Changelog
 
-## [2.8.1] - usability improvements - unreleased, scheduled for June 2022
+## [2.8.2] - usability improvements - unreleased, scheduled for June 2022
 * reduce semantic headings to improve SEO and accessibility #84
 * fix validation errors #84
 * add a control button to stop the background animation
