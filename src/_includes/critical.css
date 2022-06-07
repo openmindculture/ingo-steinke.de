@@ -42,6 +42,8 @@ h4,
 .aside-heading {
   font-size: 1.5rem;
   line-height: 1.5;
+  margin-block-start: 1.5rem;
+  margin-block-end: 1.5rem;
 }
 
 h1,
@@ -216,8 +218,10 @@ small {
   .text-content-color h2,
   .text-content-color h3,
   .text-content-color h4,
+  .text-content-color .aside-heading,
   .privacy h3,
-  .privacy h4 {
+  .privacy h4,
+  .privacy .aside-heading {
     color: var(--secondary-heading);
   }
 
