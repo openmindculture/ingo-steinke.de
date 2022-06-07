@@ -27,6 +27,7 @@ h1,
 h2,
 h3,
 h4,
+.aside-heading,
 #sticky-headline,
 #sticky-headline a {
   font-family: var(--heading-font-family);
@@ -37,15 +38,19 @@ h4,
 
 h2,
 h3,
-h4 {
+h4,
+.aside-heading {
   font-size: 1.5rem;
   line-height: 1.5;
+  margin-block-start: 1.5rem;
+  margin-block-end: 1.5rem;
 }
 
 h1,
 h2,
 h3,
 h4,
+.aside-heading,
 .tagline,
 .tile,
 .hashtags {
@@ -58,6 +63,10 @@ del {
 
 small {
   font-size: 0.75rem;
+}
+
+.nav-wrapper {
+  display: inline;
 }
 
 @media only screen {
@@ -209,8 +218,10 @@ small {
   .text-content-color h2,
   .text-content-color h3,
   .text-content-color h4,
+  .text-content-color .aside-heading,
   .privacy h3,
-  .privacy h4 {
+  .privacy h4,
+  .privacy .aside-heading {
     color: var(--secondary-heading);
   }
 
@@ -265,6 +276,11 @@ small {
   .text-width {
     max-width: 1300px;
     width: 90%;
+  }
+
+  .text-center {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .semitransparent .text-width {

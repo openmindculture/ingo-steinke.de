@@ -8,6 +8,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const navCloser = document.getElementById('main-menuClose');
   const navMenu = document.getElementById('main-menu');
   const languageSwitch = document.getElementById('language-switch');
+  const animationToggle = document.getElementById('animation-toggle');
 
   /* Progressive enhancement:
    * DOM elements with visibility controlled by script, like sticky-header,
@@ -56,5 +57,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
   languageSwitch.addEventListener('click', () => {
     languageSwitch.href += window.location.hash;
+  });
+
+  animationToggle.addEventListener('click', () => {
+    document.getElementById('decoration').style.display = 'none';
   });
 });

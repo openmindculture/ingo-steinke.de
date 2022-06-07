@@ -314,6 +314,7 @@ a.menu-toggle:hover {
   text-align: center;
 }
 
+.vcard h2,
 .vcard h3 {
   font-size: 2em;
   margin: 0;
@@ -349,6 +350,11 @@ a.menu-toggle:hover {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+
+/* visually spaced content that can be copied contiguously */
+.visually-spaced + .visually-spaced {
+  margin-left: 0.25rem;
 }
 
 /* Button styling */

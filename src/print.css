@@ -17,6 +17,7 @@ h3 {
   font-size: 18pt;
 }
 
+.vcard h2,
 .vcard h3 {
   margin: 0;
 }

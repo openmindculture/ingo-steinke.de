@@ -39,7 +39,7 @@ module.exports = {
   "workWithMe":"Du möchtest deine Website überarbeiten? Dein Team braucht Verstärkung durch einen Frontend-Entwickler mit Fullstack-Erfahrung?",
   "ctaContact": "Ruf mich an oder hinterlasse mir eine Nachricht!",
   "workWithMe2": "Gern können wir uns bei einem Kaffee unverbindlich über dein Projekt unterhalten.",
-  "projectsHeading": "Projekte",
+  "projectsHeading": "Web- und Software-Projekte",
   "projects": "Überzeuge dich selbst von meiner Arbeit! Eine Auswahl meiner bisherigen Projekte:",
   "projectPortfolioRelaunchHeading": "Portfolio Relaunch",
   "projectPortfolioRelaunch1": "",
@@ -193,8 +193,9 @@ module.exports = {
   "talkVocational": "Berufsorientierung: Mein Job! Dein Job?",
   "talkVocational2": ", Januar 2017 am Gymnasium Gerresheim in Düsseldorf",
   /* Imprint, Contact */
-  "imprintHeader": "Impressum",
+  "imprintHeader": "Impressum und Kontaktdaten",
   "imprintName": "Ingo Steinke",
+  "imprintRole": "Webentwickler",
   "imprintStreetAddress": "Neunzigstraße 6a",
   "imprintPostalCode": "40625",
   "imprintCity": "Düsseldorf",
@@ -212,7 +213,14 @@ module.exports = {
   "insurance": "Berufshaftpflichtversicherung",
   "insuranceTitle": "Berufshaftpflichtversicherung: exali Media-Haftpflicht",
   "bankaccountLabel": "Bankverbindung: GLS Gemeinschaftsbank eG",
-  "bankaccountNumber": "DE89 4306 0967 3029 8400 00",
+  "bankaccountNumberChunks": [
+    "DE89",
+    "4306",
+    "0967",
+    "3029",
+    "8400",
+    "00"
+  ],
   "profile": "Profil",
   "at": "auf",
   "privacyGdpr": "Die Regeln des Bundesdatenschutzgesetzes (BDSG) und der europäischen Datenschutzgrundverordnung (DSGVO) sind Anlass zu dieser Datenschutzerklärung. Das",
@@ -239,13 +247,14 @@ module.exports = {
   "cleanerWebClaim": "°Cleaner Web - Klimabewusst im Internet",
   "ecofriendlyHeading": "Erklärung zur klimabewussten Website",
   "ecofriendlyThisWebsite": "Diese Website unter",
+  "ecofriendlyWebsiteUrl": "https://www.ingo-steinke.de/",
   "ecofriendlyBearsTheSeal": "hält das °Cleaner-Web-Siegel für klimabewusste Websites.",
   "ecofriendlyAudit": "Audit-Bericht (PDF)",
-  "ecofriendlyIssued": "Ausgestellt",
-  "ecofriendlyValidUntil": "Gültig bis",
+  "ecofriendlyIssuedLabel": "Ausgestellt",
+  "ecofriendlyValidUntilLabel": "Gültig bis",
   "ecofriendlyValidatedBy": "Geprüft von",
   "ecofriendlyComplies": "Die Website erfüllt den °Cleaner-Web-Standard. Sie wurde anhand objektiv messbarer Faktoren darauf geprüft, wie klimabewusst die Website ist.",
-  "ecofriendlyToContribute": "Um auch digital einen Beitrag für den Klimaschutz zu leisten, haben wir diese Website auf Gesichtspunkte der Carbon-Emission-Optimierung überprüfen lasse und sind im dauerhaften Prozess, diese dahingehend weiter zu optimieren und zukünftige Änderungen immer auch nach klimabewussten Gesichtspunkten zu gestalten.",
+  "ecofriendlyToContribute": "Um auch digital einen Beitrag für den Klimaschutz zu leisten, haben wir diese Website auf Gesichtspunkte der Carbon-Emission-Optimierung überprüfen lassen und sind im dauerhaften Prozess, diese dahingehend weiter zu optimieren und zukünftige Änderungen immer auch nach klimabewussten Gesichtspunkten zu gestalten.",
   "ecofriendlyCriteriaHeading": "Prüf-Kategorien des °Cleaner-Web-Standards sind:",
   "ecofriendlyCriteriaContent": "Inhalte der Website",
   "ecofriendlyCriteriaPayload": "Datenmenge",
@@ -253,8 +262,12 @@ module.exports = {
   "ecofriendlyCriteriaGreenHosting": "Green Hosting",
   "ecofriendlyCriteriaServerPerf": "Server und Performance",
   "ecofriendlyCriteriaTransfer": "Datenübertragung",
-  "ecofriendlyContinuousHeadin": "Fortlaufende Klima-Optimierung",
-  "ecofriendlyContinuousParagraph": "Weiterhin ist unser Ziel, die Website kontinuierlich zu verbessern – wir sehen diese   Online-Maßnahme als einen von vielen Klimaschutz-Bausteinen, um aktiv zur dauerhaften Senkung der CO2-Emissionen beizutragen. Bei größeren Änderungen oder einem Relaunch werden wir die Website erneut prüfen lassen."
+  "ecofriendlyContinuousHeading": "Fortlaufende Klima-Optimierung",
+  "ecofriendlyContinuousParagraph": "Weiterhin ist unser Ziel, die Website kontinuierlich zu verbessern – wir sehen diese   Online-Maßnahme als einen von vielen Klimaschutz-Bausteinen, um aktiv zur dauerhaften Senkung der CO2-Emissionen beizutragen. Bei größeren Änderungen oder einem Relaunch werden wir die Website erneut prüfen lassen.",
+  "ecofriendlyReportDocumentFilename": "2022-4-19-www.ingo-steinke.de-1793046390-report.pdf",
+  "ecofriendlyIssued": "19.4.2022",
+  "ecofriendlyValidUntil": "18.4.2023",
+  "buttonStopAnimation": "Animation ausblenden"
 };
 
 

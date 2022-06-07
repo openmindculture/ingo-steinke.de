@@ -118,7 +118,7 @@
               </span>
             </span>
 
-            <span class="nav-wrapper">
+            <div class="nav-wrapper">
               <a href="#main-menu"
                 id="main-menu-toggle"
                 class="menu-toggle"
@@ -149,7 +149,6 @@
                   <li><a href="#projects">{{ content.targetProjects }}</a></li>
                   <li><a href="#skills">{{ content.targetSkills }}</a></li>
                   <li><a href="#about-me">{{ content.targetAboutMe }}</a></li>
-                  <li><a href="#talks-events">{{ content.targetTalksEvents }}</a></li>
                   <li><a href="#contact">{{ content.targetContact }}</a></li>
                   <li><a href="#imprint">{{ content.targetImprint }}</a></li>
                   <li><a href="#privacy">{{ content.targetPrivacy }}</a></li>
@@ -171,7 +170,7 @@
                 aria-hidden="true"
                 hidden>
               </a>
-            </span>
+            </div>
 
             </div>
 
@@ -765,7 +764,8 @@
                 <img
                   src="img/Ingo-Steinke-NCA-TV-2021-800x443.jpg"
                   srcset="img/Ingo-Steinke-NCA-TV-2021-400x222.jpg 400w,
-                        img/Ingo-Steinke-NCA-TV-2021-800x443.jpg 800w"
+                          img/Ingo-Steinke-NCA-TV-2021-800x443.jpg 800w"
+                  sizes="(min-width: 800px) 800px, 100vw"
                   width="800"
                   height="443"
                   alt="{{ content.talksImageAlt }}"
@@ -853,12 +853,13 @@
           </section>
 
           <section class="imprint-contact">
-            <h2 id="imprint" class="center target-offset">
+            <div class="aside-heading center" id="imprint" class="center target-offset">
               {{ content.imprintHeader }}
-            </h2>
+            </div>
             <article id="contact">
               <div class="vcard">
-                <h3 class="fn">{{ content.imprintName }}</h3>
+                <h2 class="fn">{{ content.imprintName }}</h2>
+                <span class="role">{{ content.imprintRole }}</span>
                 <br>
                 <span class="adr">
                   <span class="street-address">
@@ -882,7 +883,7 @@
                 <span>{{ content.vatIdLabel }} {{ content.vatIdNumber }}</span>
                 <div title="{{ content.bankaccountLabel }}">
                   <span class="initially-hidden only-print inline">{{ content.bankaccountLabel }}</span>
-                  {{ content.bankaccountNumber }}<br>
+                  {%- for chunk in content.bankaccountNumberChunks -%}<span class="visually-spaced">{{ chunk }}</span>{%- endfor -%}
                 </div>
                 <div>
                   <a
@@ -965,50 +966,26 @@
             </article>
 
             <aside id="privacy" class="privacy initially-hidden clear target-offset text-content-color">
-              <header>
-                <h3>
-                  {{ content.privacyHeading }}
-                </h3>
-              </header>
+              <div class="aside-heading">{{ content.privacyHeading }}</div>
               <p>
                 {{ content.privacyGdpr }} <a href="#imprint">{{ content.privacyGdprImprint }}</a> {{ content.privacyGdpr2 }}
               </p>
-              <h4>{{ content.privacyYourRightsHeading }}</h4>
-              <p>
-                {{ content.privacyYourRights }}
-              </p>
-              <h4>{{ content.privacyPersonalDataHeading }}</h4>
-              <p>
-                {{ content.privacyPersonalData }}
-              </p>
-              <h4>{{ content.privacyLawHeading }}</h4>
-              <p>
-                {{ content.privacyLaw }}
-              </p>
-              <p>
-                {{ content.privacyLaw2 }}
-              </p>
-              <h4>{{ content.privacyMinimalHeading }}</h4>
-              <p>
-                {{ content.privacyMinimal }}
-              </p>
-              <p>
-                {{ content.privacyNoCookies }}
-              </p>
-              <p>
-                {{ content.privacyLinkDisclaimer }}
-              </p>
-              <h4>{{ content.privacyLogfilesHeading }}</h4>
-              <p>
-                {{ content.privacyLogfiles }}
-              </p>
-              <p>
-                {{ content.privacyLogfilesLaw }}
-              </p>
-              <h4>{{ content.privacyChangesHeading }}</h4>
-              <p>
-                {{ content.privacyChanges }}
-              </p>
+              <div class="aside-heading">{{ content.privacyYourRightsHeading }}</div>
+              <p>{{ content.privacyYourRights }}</p>
+              <div class="aside-heading">{{ content.privacyPersonalDataHeading }}</div>
+              <p>{{ content.privacyPersonalData }}</p>
+              <div class="aside-heading">{{ content.privacyLawHeading }}</div>
+              <p>{{ content.privacyLaw }}</p>
+              <p>{{ content.privacyLaw2 }}</p>
+              <div class="aside-heading">{{ content.privacyMinimalHeading }}</div>
+              <p>{{ content.privacyMinimal }}</p>
+              <p>{{ content.privacyNoCookies }}</p>
+              <p>{{ content.privacyLinkDisclaimer }}</p>
+              <div class="aside-heading">{{ content.privacyLogfilesHeading }}</div>
+              <p>{{ content.privacyLogfiles }}</p>
+              <p>{{ content.privacyLogfilesLaw }}</p>
+              <div class="aside-heading">{{ content.privacyChangesHeading }}</div>
+              <p>{{ content.privacyChanges }}</p>
             </aside>
           </section>
         </main>
@@ -1049,15 +1026,11 @@
           </p>
 
 
-          <section id="ecofriendly" class="initially-hidden clear target-offset text-content-layout text-content-color text-width">
-            <header>
-              <h3>
-                {{ content.ecofriendlyHeading }}
-              </h3>
-            </header>
+          <section id="ecofriendly" class="initially-hidden clear target-offset text-content-layout text-content-color text-width text-center">
+            <div class="aside-heading">{{ content.ecofriendlyHeading }}</div>
             <p>
               {{ content.ecofriendlyThisWebsite }}
-              <a href="https://www.ingo-steinke.de/">https://www.ingo-steinke.de/</a>
+              <a href="{{ content.ecofriendlyWebsiteUrl }}">{{ content.ecofriendlyWebsiteUrl }}</a>
               {{ content.ecofriendlyBearsTheSeal }}
             </p>
             <p class="badge transparent">
@@ -1073,18 +1046,17 @@
                 >
               </a>
             </p>
-            <p>
             <ul>
               <li>
                 <a
-                  href="2022-4-19-www.ingo-steinke.de-1793046390-report.pdf"
+                  href="{{ content.ecofriendlyReportDocumentFilename }}"
                   target="_blank"
                 >
                   {{ content.ecofriendlyAudit }}
                 </a>
               </li>
-              <li>{{ content.ecofriendlyIssued }}: 19.4.2022</li>
-              <li>{{ content.ecofriendlyValidUntil }}: 18.4.2023</li>
+              <li>{{ content.ecofriendlyIssuedLabel }}: {{ content.ecofriendlyIssued }}</li>
+              <li>{{ content.ecofriendlyValidUntilLabel }}: {{ content.ecofriendlyValidUntil }}</li>
               <li>{{ content.ecofriendlyValidatedBy }}:
                 <a
                   href="https://cleaner-web.com"
@@ -1094,15 +1066,9 @@
                 </a>
               </li>
             </ul>
-            </p>
-            <p>
-              {{ content.ecofriendlyComplies }}
-            </p>
-            <p>
-              {{ content.ecofriendlyToContribute }}
-            </p>
-            <h4>{{ content.ecofriendlyCriteriaHeading }}</h4>
-            <p>
+            <p>{{ content.ecofriendlyComplies }}</p>
+            <p>{{ content.ecofriendlyToContribute }}</p>
+            <div class="aside-heading">{{ content.ecofriendlyCriteriaHeading }}</div>
             <ul>
               <li>{{ content.ecofriendlyCriteriaContent }}</li>
               <li>{{ content.ecofriendlyCriteriaPayload }}</li>
@@ -1111,8 +1077,7 @@
               <li>{{ content.ecofriendlyCriteriaServerPerf }}</li>
               <li>{{ content.ecofriendlyCriteriaTransfer }}</li>
             </ul>
-            </p>
-            <h4>{{ content.ecofriendlyContinuousHeading }}</h4>
+            <div class="aside-heading">{{ content.ecofriendlyContinuousHeading }}</div>
             <p>
               {{ content.ecofriendlyContinuousParagraph }}
             </p>
@@ -1120,6 +1085,10 @@
 
           <div id="wcb" class="carbonbadge"></div>
           <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
+
+          <p class="no-print">
+            <button id="animation-toggle">Animation abschalten</button>
+          </p>
 
           <p class="no-print">
             <a href="#contact">{{ content.targetContact }}</a>
@@ -1131,7 +1100,7 @@
         </footer>
       </div>
 
-      <aside class="decoration">
+      <aside class="decoration" id="decoration">
         <div class="animation-wrapper">
           <div class="flounder"></div>
           <div class="flounder"></div>
@@ -1146,7 +1115,7 @@
           <defs>
             <filter id="filter">
               <feGaussianBlur in="SourceGraphic" stdDeviation="18" result="blur" />
-              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 28 -10" result="filter" />
+              <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 28 -10" result="filter" />
               <feComposite in="SourceGraphic" in2="filter" operator="atop" />
             </filter>
           </defs>
