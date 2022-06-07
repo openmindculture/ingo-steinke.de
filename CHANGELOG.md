@@ -7,7 +7,8 @@
 * add control button to stop and restart background animation
 * make bank account number (IBAN) easy to copy+paste while retaining spaced readability
 * fix domain alias / URL variations redirect / certificate errors #83
-* add english language version of cleaner web commitment
+* add English language version of cleaner web commitment
+* add English language version of privacy statement
 
 ## [2.7.2] - add temporary contact phone - 2022-05-06
 * add temporary contact phone option, label, and phone number

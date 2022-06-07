@@ -239,13 +239,14 @@ module.exports = {
   "cleanerWebClaim": "°Cleaner Web - Klimabewusst im Internet",
   "ecofriendlyHeading": "Erklärung zur klimabewussten Website",
   "ecofriendlyThisWebsite": "Diese Website unter",
+  "ecofriendlyWebsiteUrl": "https://www.ingo-steinke.de/",
   "ecofriendlyBearsTheSeal": "hält das °Cleaner-Web-Siegel für klimabewusste Websites.",
   "ecofriendlyAudit": "Audit-Bericht (PDF)",
-  "ecofriendlyIssued": "Ausgestellt",
-  "ecofriendlyValidUntil": "Gültig bis",
+  "ecofriendlyIssuedLabel": "Ausgestellt",
+  "ecofriendlyValidUntilLabel": "Gültig bis",
   "ecofriendlyValidatedBy": "Geprüft von",
   "ecofriendlyComplies": "Die Website erfüllt den °Cleaner-Web-Standard. Sie wurde anhand objektiv messbarer Faktoren darauf geprüft, wie klimabewusst die Website ist.",
-  "ecofriendlyToContribute": "Um auch digital einen Beitrag für den Klimaschutz zu leisten, haben wir diese Website auf Gesichtspunkte der Carbon-Emission-Optimierung überprüfen lasse und sind im dauerhaften Prozess, diese dahingehend weiter zu optimieren und zukünftige Änderungen immer auch nach klimabewussten Gesichtspunkten zu gestalten.",
+  "ecofriendlyToContribute": "Um auch digital einen Beitrag für den Klimaschutz zu leisten, haben wir diese Website auf Gesichtspunkte der Carbon-Emission-Optimierung überprüfen lassen und sind im dauerhaften Prozess, diese dahingehend weiter zu optimieren und zukünftige Änderungen immer auch nach klimabewussten Gesichtspunkten zu gestalten.",
   "ecofriendlyCriteriaHeading": "Prüf-Kategorien des °Cleaner-Web-Standards sind:",
   "ecofriendlyCriteriaContent": "Inhalte der Website",
   "ecofriendlyCriteriaPayload": "Datenmenge",
@@ -254,7 +255,10 @@ module.exports = {
   "ecofriendlyCriteriaServerPerf": "Server und Performance",
   "ecofriendlyCriteriaTransfer": "Datenübertragung",
   "ecofriendlyContinuousHeading": "Fortlaufende Klima-Optimierung",
-  "ecofriendlyContinuousParagraph": "Weiterhin ist unser Ziel, die Website kontinuierlich zu verbessern – wir sehen diese   Online-Maßnahme als einen von vielen Klimaschutz-Bausteinen, um aktiv zur dauerhaften Senkung der CO2-Emissionen beizutragen. Bei größeren Änderungen oder einem Relaunch werden wir die Website erneut prüfen lassen."
+  "ecofriendlyContinuousParagraph": "Weiterhin ist unser Ziel, die Website kontinuierlich zu verbessern – wir sehen diese   Online-Maßnahme als einen von vielen Klimaschutz-Bausteinen, um aktiv zur dauerhaften Senkung der CO2-Emissionen beizutragen. Bei größeren Änderungen oder einem Relaunch werden wir die Website erneut prüfen lassen.",
+  "ecofriendlyReportDocumentFilename": "2022-4-19-www.ingo-steinke.de-1793046390-report.pdf",
+  "ecofriendlyIssued": "19.4.2022",
+  "ecofriendlyValidUntil": "18.4.2023"
 };
 
 

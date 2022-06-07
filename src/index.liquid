@@ -1054,7 +1054,7 @@
             </div>
             <p>
               {{ content.ecofriendlyThisWebsite }}
-              <a href="https://www.ingo-steinke.de/">https://www.ingo-steinke.de/</a>
+              <a href="{{ content.ecofriendlyWebsiteUrl }}">{{ content.ecofriendlyWebsiteUrl }}</a>
               {{ content.ecofriendlyBearsTheSeal }}
             </p>
             <p class="badge transparent">
@@ -1073,14 +1073,14 @@
             <ul>
               <li>
                 <a
-                  href="2022-4-19-www.ingo-steinke.de-1793046390-report.pdf"
+                  href="{{ content.ecofriendlyReportDocumentFilename }}"
                   target="_blank"
                 >
                   {{ content.ecofriendlyAudit }}
                 </a>
               </li>
-              <li>{{ content.ecofriendlyIssued }}: 19.4.2022</li>
-              <li>{{ content.ecofriendlyValidUntil }}: 18.4.2023</li>
+              <li>{{ content.ecofriendlyIssuedLabel }}: {{ content.ecofriendlyIssued }}</li>
+              <li>{{ content.ecofriendlyValidUntilLabel }}: {{ content.ecofriendlyValidUntil }}</li>
               <li>{{ content.ecofriendlyValidatedBy }}:
                 <a
                   href="https://cleaner-web.com"
