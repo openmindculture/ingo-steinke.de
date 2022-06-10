@@ -353,8 +353,9 @@ a.menu-toggle:hover {
 }
 
 /* visually spaced content that can be copied contiguously */
-.visually-spaced + .visually-spaced {
-  margin-left: 0.25rem;
+.visually-spaced + .visually-spaced::before {
+  content: " ";
+  letter-spacing: 0.25rem;
 }
 
 /* Button styling */
