@@ -65,6 +65,13 @@ small {
   font-size: 0.75rem;
 }
 
+/* prevent iPhone mobile safari zooming in if page contains text smaller than 16px */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  small {
+    font-size: 16px;
+  }
+}
+
 .nav-wrapper {
   display: inline;
 }

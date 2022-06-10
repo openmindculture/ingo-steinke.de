@@ -3,6 +3,7 @@
 ## [2.8.3] - uasbility improvements - 2022-06-10
 * make formatted phone numbers copyable without spaces
 * prevent visually-spaced chunks interrupting link decoration
+* prevent iPhone mobile safari zooming in due to small text
 
 ## [2.8.2] - usability improvements - 2022-06-07
 * reduce semantic headings to improve SEO and accessibility #84
