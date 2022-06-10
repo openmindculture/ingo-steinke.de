@@ -202,9 +202,23 @@ module.exports = {
   "imprintCity": "Düsseldorf",
   "imprintCountryName": "Germany",
   "contactTel": "+491634684080",
-  "contactTelFormatted": "+49 (0) 163 46 84 08 0",
+  "contactTelChunks": [
+    "+49",
+    "163",
+    "46",
+    "84",
+    "08",
+    "0"
+  ],
   "contactInterimTel": "+491634969949",
-  "contactInterimTelFormatted": "+49 (0) 163 49 69 94 9",
+  "contactInterimTelChunks": [
+    "+49",
+    "163",
+    "49",
+    "69",
+    "94",
+    "9"
+  ],
   "contactTelOfflineLabel": "Phone temporarily unavailable:",
   "contactInterimLabel": "use interim number instead",
   "contactEmail": "contact@ingo-steinke.com",

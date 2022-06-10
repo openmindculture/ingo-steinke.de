@@ -870,12 +870,24 @@
                 {% if content.contactInterimTel %}
                   <small>{{ content.contactTelOfflineLabel }}:<br></small>
                   <del>
-                    <span class="tel"><a href="tel:{{ content.contactTel }}">{{ content.contactTelFormatted }}</a></span><br>
+                    <span class="tel">
+                      <a href="tel:{{ content.contactTel }}">{%-
+                        for chunk in content.contactTelChunks -%}<span class="visually-spaced">{{ chunk }}</span>
+                        {%- endfor -%}</a>
+                    </span><br>
                   </del>
                   <small>{{ content.contactInterimLabel }}:<br></small>
-                  <span class="tel"><a href="tel:{{ content.contactInterimTel }}">{{ content.contactInterimTelFormatted }}</a></span><br>
+                  <span class="tel">
+                      <a href="tel:{{ content.contactInterimTel }}">{%-
+                          for chunk in content.contactInterimTelChunks -%}<span class="visually-spaced">{{ chunk }}</span>
+                        {%- endfor -%}</a>
+                    </span><br><br>
                 {% else %}
-                  <span class="tel"><a href="tel:{{ content.contactTel }}">{{ content.contactTelFormatted }}</a></span><br>
+                  <span class="tel">
+                      <a href="tel:{{ content.contactTel }}">{%-
+                          for chunk in content.contactTelChunks -%}<span class="visually-spaced">{{ chunk }}</span>
+                        {%- endfor -%}</a>
+                    </span><br>
                 {% endif %}
 
                 <span><a href="mailto:{{ content.contactEmail }}">{{ content.contactEmail }}</a></span><br>
