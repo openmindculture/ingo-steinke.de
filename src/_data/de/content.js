@@ -201,10 +201,24 @@ module.exports = {
   "imprintCity": "Düsseldorf",
   "imprintCountryName": "Deutschland",
   "contactTel": "+491634684080",
-  "contactTelFormatted": "+49 (0) 163 46 84 08 0",
+  "contactTelChunks": [
+    "+49",
+    "163",
+    "46",
+    "84",
+    "08",
+    "0"
+  ],
   "contactInterimTel": "+491634969949",
-  "contactInterimTelFormatted": "+49 (0) 163 49 69 94 9",
-  "contactTelOfflineLabel": "Telefon zeitweise nicht erreichbar:",
+  "contactInterimTelChunks": [
+    "+49",
+    "163",
+    "49",
+    "69",
+    "94",
+    "9"
+  ],
+  "contactTelOfflineLabel": "Telefon zeitweise nicht erreichbar",
   "contactInterimLabel": "übergangsweise stattdessen",
   "contactEmail": "kontakt@ingo-steinke.de",
   "taxNo": "Steuernr.",
