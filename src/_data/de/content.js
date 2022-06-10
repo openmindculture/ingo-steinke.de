@@ -218,7 +218,7 @@ module.exports = {
     "94",
     "9"
   ],
-  "contactTelOfflineLabel": "Telefon zeitweise nicht erreichbar:",
+  "contactTelOfflineLabel": "Telefon zeitweise nicht erreichbar",
   "contactInterimLabel": "übergangsweise stattdessen",
   "contactEmail": "kontakt@ingo-steinke.de",
   "taxNo": "Steuernr.",

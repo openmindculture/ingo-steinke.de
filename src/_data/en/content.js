@@ -219,7 +219,7 @@ module.exports = {
     "94",
     "9"
   ],
-  "contactTelOfflineLabel": "Phone temporarily unavailable:",
+  "contactTelOfflineLabel": "Phone temporarily unavailable",
   "contactInterimLabel": "use interim number instead",
   "contactEmail": "contact@ingo-steinke.com",
   "taxNo": "Tax No.",
