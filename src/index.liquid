@@ -866,6 +866,13 @@
                     {{ content.imprintStreetAddress }}</span><br>
                   <span class="postal-code">{{ content.imprintPostalCode }}</span> {{ content.imprintCity }}<br>
                   <span class="country-name">{{ content.imprintCountryName }}</span><br>
+                  <br>
+                  <small>
+                    {{ content.postalAddressLabel }} in Berlin:<br>
+                    Ingo Steinke c/o HeartSpace Members Club,<br>
+                    Urbanstraße 71, 10967 Berlin
+                  </small>
+                  <br>
                 </span><br>
                 {% if content.contactInterimTel %}
                   <small>{{ content.contactTelOfflineLabel }}:<br></small>
@@ -892,11 +899,13 @@
 
                 <span><a href="mailto:{{ content.contactEmail }}">{{ content.contactEmail }}</a></span><br>
                 <a class="url" rel="author" href="{{ content.canonicalHref }}https://www.ingo-steinke.de/">{{ content.shortHref }}</a>
+                <br>
                 <span>{{ content.vatIdLabel }} {{ content.vatIdNumber }}</span>
                 <div title="{{ content.bankaccountLabel }}">
                   <span class="initially-hidden only-print inline">{{ content.bankaccountLabel }}</span>
                   {%- for chunk in content.bankaccountNumberChunks -%}<span class="visually-spaced">{{ chunk }}</span>{%- endfor -%}
                 </div>
+                <br>
                 <div>
                   <a
                     href="https://www.exali.de/siegel/Ingo-Steinke"

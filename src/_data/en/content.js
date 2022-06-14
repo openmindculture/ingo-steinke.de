@@ -201,6 +201,7 @@ module.exports = {
   "imprintPostalCode": "40625",
   "imprintCity": "Düsseldorf",
   "imprintCountryName": "Germany",
+  "postalAddressLabel": "Postal address",
   "contactTel": "+491634684080",
   "contactTelChunks": [
     "+49",
