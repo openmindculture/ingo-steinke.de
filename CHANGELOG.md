@@ -1,6 +1,11 @@
 # Changelog
 
-## [2.8.3] - uasbility improvements - 2022-06-10
+## [2.8.4] - content update: add Berlin address - 2022-06-14
+* add postal address at HeartSpace Members Club coworking Berlin
+* fix style workaround for iPhone small font zoom problem
+* improve formatting: add newlines between information blocks
+
+## [2.8.3] - usability improvements - 2022-06-10
 * make formatted phone numbers copyable without spaces
 * prevent visually-spaced chunks interrupting link decoration
 * prevent iPhone mobile safari zooming in due to small text
