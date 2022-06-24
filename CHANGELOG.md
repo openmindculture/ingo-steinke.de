@@ -1,5 +1,8 @@
 # Changelog
 
+## [2.8.5] - remove temporary contact phone - 2022-06-24
+* remove temporary contact phone which has become obsolete
+
 ## [2.8.4] - content update: add Berlin address - 2022-06-14
 * add postal address at HeartSpace Members Club coworking Berlin
 * fix style workaround for iPhone small font zoom problem

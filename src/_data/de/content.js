@@ -210,15 +210,6 @@ module.exports = {
     "08",
     "0"
   ],
-  "contactInterimTel": "+491634969949",
-  "contactInterimTelChunks": [
-    "+49",
-    "163",
-    "49",
-    "69",
-    "94",
-    "9"
-  ],
   "contactTelOfflineLabel": "Telefon zeitweise nicht erreichbar",
   "contactInterimLabel": "übergangsweise stattdessen",
   "contactEmail": "kontakt@ingo-steinke.de",
