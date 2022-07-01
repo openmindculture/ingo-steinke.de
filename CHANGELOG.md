@@ -1,5 +1,8 @@
 # Changelog
 
+## [2.8.6] - rephrase tailwind skill - 2022-07-01
+* prefer "tailwind" over "tailwindcss" below "CSS" heading
+
 ## [2.8.5] - remove temporary contact phone - 2022-06-24
 * remove temporary contact phone which has become obsolete
 
