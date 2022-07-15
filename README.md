@@ -63,12 +63,41 @@ When starting to work with eleventy, in January 2021, I had not been able to fin
 how to internationalize eleventy projects, and anything else I found seemed even more
 counter-intuitive to me, so here we go.
 
-## DNS setup for netlify
+## DNS setup for Netlify
+
+We need to add DNS records for every domain not hosted directly on Netlify:
 
 ```
 ingo-steinke.de.  IN  A     104.198.14.52
 www           IN  CNAME ingo-steinke.netlify.app
 ```
+
+```
+ingo-steinke.com.  IN  A     104.198.14.52
+www           IN  CNAME ingo-steinke-com.netlify.app
+```
+
+```
+ingosteinke.de.  IN  A     104.198.14.52
+www           IN  CNAME ingo-steinke.netlify.app
+```
+
+```
+ingosteinke.com.  IN  A     104.198.14.52
+www           IN  CNAME ingo-steinke-com.netlify.app
+```
+
+We must configure every domain in Netlify's domain settings as "Custom domains":
+
+| pattern       | de                         | com                          |
+| ---               |----------------------------|------------------------------|
+| Default subdomain | `ingo-steinke.netlify.app` | `ingo-steinke-com.netlify.app` |
+| Primary domain | `www.ingo-steinke.de`      | `www.ingo-steinke.com`         |
+| Redirects automatically to primary domain | `ingo-steinke.de`          | `ingo-steinke.com`             |
+| Domain alias | `ingosteinke.de`             | `ingosteinke.com`              |
+| Domain alias | `www.ingosteinke.de`         | `www.ingosteinke.com`             |
+
+Note that Netlify does not respect `.htaccess` Apache configuration files, but needs a `_redirects` file instead ([see Redirects and rewrites](https://docs.netlify.com/routing/redirects/)).
 
 ## Test
 
