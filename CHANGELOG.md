@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.9.0] - upgrade outdated build tools - unreleased
+* improve testing to prevent regression bugs using Codecept, testomat
+* upgrade CodeceptJS 3 to latest stable major version 3
+* migrate Stylelint to latest stable major version 14 #68
+* upgrade PostCSS to latest stable major version 8 #68
+* upgrade eleventy to latest stable major version 1.0 #72
+
 ## [2.8.9] - add URLs to printable version - 2022-08-15
 * add verbose links to external references
 
