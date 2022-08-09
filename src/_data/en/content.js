@@ -216,8 +216,9 @@ module.exports = {
   "contactEmail": "contact@ingo-steinke.com",
   "taxNo": "Tax No.",
   "vatId": "VAT ID",
-  "insurance": "Professional Liability Insurance",
-  "insuranceTitle": "Professional Liability Insurance: exali Media-Haftpflicht",
+  "IHaveA": "I have a",
+  "insurance": "professional liability insurance",
+  "insuranceTitle": "Professional liability insurance: exali Media-Haftpflicht",
   "bankaccountLabel": "Bank account: GLS Gemeinschaftsbank eG",
   "bankaccountNumberChunks": [
     "DE89",

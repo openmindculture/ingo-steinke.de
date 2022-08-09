@@ -1,5 +1,8 @@
 # Changelog
 
+## [2.8.7] - improve insurance text - 2022-08-09
+* add "I have a" to display a complete sentence for improved readability
+
 ## [2.8.6] - rephrase tailwind skill - 2022-07-01
 * prefer "tailwind" over "tailwindcss" below "CSS" heading
 
