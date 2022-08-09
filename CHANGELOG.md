@@ -1,5 +1,10 @@
 # Changelog
 
+## [2.8.7] - improve readability - 2022-08-09
+* add "I have a" to display a complete sentence about liability insurance
+* improve color contrast of sustainability text headings on printed page
+* improve font sizes on printed page
+
 ## [2.8.6] - rephrase tailwind skill - 2022-07-01
 * prefer "tailwind" over "tailwindcss" below "CSS" heading
 

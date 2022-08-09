@@ -216,6 +216,7 @@ module.exports = {
   "taxNo": "Steuernr.",
   "vatIdLabel": "UStID",
   "vatIdNumber": "DE340489834",
+  "IHaveA": "Ich habe eine",
   "insurance": "Berufshaftpflichtversicherung",
   "insuranceTitle": "Berufshaftpflichtversicherung: exali Media-Haftpflicht",
   "bankaccountLabel": "Bankverbindung: GLS Gemeinschaftsbank eG",

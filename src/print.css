@@ -28,6 +28,7 @@ body,
 .text-content-color h2,
 .text-content-color h3,
 .text-content-color h4,
+.aside-heading,
 a,
 a:link,
 a:visited,
@@ -61,6 +62,10 @@ a:active {
 .jumbotronHeader p {
   font-size: 30pt;
   margin: 0;
+}
+
+small {
+  font-size: 10pt;
 }
 
 img.avatar {
