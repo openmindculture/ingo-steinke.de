@@ -45,7 +45,7 @@ module.exports = {
   "projectPortfolioRelaunchHeading": "Portfolio Relaunch",
   "projectPortfolioRelaunch1": "My relaunched portfolio",
   "projectPortfolioRelaunch2": "Ingo-Steinke.com",
-  "projectPortfolioRelaunch3": "illustrates my work as a web developer. Modern design and typography, cutting-edge technology, and extensive textual revisions characterize my updated professional portfolio. Code:",
+  "projectPortfolioRelaunch3": "illustrates my work as a web developer. Modern design and typography, cutting-edge technology, and extensive textual revisions characterize my updated professional portfolio. Source Code:",
   "projectPortfolioRelaunch4": "github.com/openmindculture/ingo-steinke.de",
   "projectPortfolioRelaunchHashtag1": "HTML 5",
   "projectPortfolioRelaunchHashtag2": "CSS 3",

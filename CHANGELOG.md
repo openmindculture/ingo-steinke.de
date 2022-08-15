@@ -1,5 +1,8 @@
 # Changelog
 
+## [2.8.9] - add URLs to printable version - 2022-08-15
+* add verbose links to external references
+
 ## [2.8.8] - update address and printable version - 2022-08-15
 * remove verbose eco-friendly details from print version
 * optimize printable text formatting
