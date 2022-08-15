@@ -1,5 +1,10 @@
 # Changelog
 
+## [2.8.8] - update address and printable version - 2022-08-15
+* remove verbose eco-friendly details from print version
+* optimize printable text formatting
+* update Berlin address
+
 ## [2.8.7] - improve readability - 2022-08-09
 * add "I have a" to display a complete sentence about liability insurance
 * improve color contrast of sustainability text headings on printed page

@@ -94,11 +94,31 @@ img.avatar {
   float: right;
   margin-left: 12pt;
   border: none;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
 }
 
 .grid-container.skills {
   padding-left: 0;
   list-style-type: none;
+}
+
+.skills li.tile ul li {
+  font-size: 12pt;
+  display: flex;
+  align-items: baseline;
+}
+
+.skills li.tile ul li > *:first-child {
+  min-width: 150px;
+}
+
+.skills li.tile ul li .hashtags {
+  margin-left: 12pt;
+}
+
+.skills li.tile ul li .hashtag {
+  font-size: 11pt;
 }
 
 .social-links {
