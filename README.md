@@ -9,6 +9,8 @@
 - Carbon aware website audit by °Cleaner Web - carbon aware on the Internet, last checked
   - [19 April 2022 for ingo-steinke.de](https://www.ingo-steinke.de/#ecofriendly)
   - [27 May 2022 for ingo-steinke.com](https://www.ingo-steinke.com/#ecofriendly)
+- Codecept Test Status: green
+- Testomat.io Test Status: green
 
 ## Description
 
@@ -101,11 +103,14 @@ Note that Netlify does not respect `.htaccess` Apache configuration files, but n
 
 ## Test
 
-* npm run eslint
+* `npm run eslint`
 
-* npm run stylelint
+* `npm run stylelint`
 
-* TODO evaluate [CodeceptJS](https://codecept.io/) as a replacement for cypress, jest, storybook, storyshots
+* `npm run codeceptjs` [CodeceptJS](https://codecept.io/) 
+
+### About Testing Tools and the War on Europe
+  🇺🇦 CodeceptJS and Testomat.io were created in Ukraine. #StandWithUkraine
 
 ## Roadmap / TODO
 
