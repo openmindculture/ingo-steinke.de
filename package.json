@@ -46,10 +46,12 @@
         "postcss-cli": "^8.3.1",
         "postcss-custom-properties": "^11.0.0",
         "postcss-custom-selectors": "^6.0.0",
+        "postcss-html": "^1.5.0",
         "postcss-import": "^14.0.2",
         "precss": "^4.0.0",
         "puppeteer": "^13.0.1",
-        "stylelint": "^13.13.1",
-        "stylelint-config-standard": "^22.0.0"
+        "stylelint": "^14.10.0",
+        "stylelint-config-html": "^1.1.0",
+        "stylelint-config-standard": "^27.0.0"
     }
 }
