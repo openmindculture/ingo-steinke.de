@@ -1,6 +1,12 @@
 # Changelog
 
-## [2.9.2] - extend JAM stack setup - unreleased
+# Changelog
+
+## [2.9.3] - extend JAM stack setup - unreleased
+* upgrade eleventy to latest stable major version 1.0 #72
+* prepare to make use of new features
+
+## [2.9.2] - clean code refactoring - unreleased
 * upgrade eleventy to latest stable major version 1.0 #72
 * prepare to make use of new features
 
