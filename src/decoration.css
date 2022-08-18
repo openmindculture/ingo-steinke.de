@@ -1,3 +1,6 @@
+---
+permalink: decoration.css
+---
 @import '_includes/design-tokens.css';
 
 /* decoration layer is styled in critical.css */

@@ -1,1 +1,182 @@
-body,h1,h2,h3,h4,html{background:#fff;color:#000;font-size:12pt}h2{font-size:24pt}h3{font-size:18pt}.vcard h2,.vcard h3{margin:0}.aside-heading,.text-content-color,.text-content-color h2,.text-content-color h3,.text-content-color h4,.tiled-content,a,a:active,a:link,a:visited,body{background-color:#fff;color:#000;text-decoration:none}.navigation.page-navigation,.sticky-header{display:none}.page-container{padding:0 24pt}.jumbotronHeader{-moz-column-break-after:page;break-after:page;margin-bottom:25%;margin-top:25%;page-break-after:always;text-align:center}.jumbotronHeader h1{font-size:60pt;margin:0}.jumbotronHeader p{font-size:30pt;margin:0}small{font-size:10pt}img.avatar{border-radius:50%}.code-link{display:block;font-family:monospace}.hashtag{border:1px solid #aaa;line-height:28pt;margin-right:4pt;padding:4pt}.tile{margin-bottom:24pt}.tile p img{border:none;filter:grayscale(1);float:right;height:auto;margin-left:12pt;max-width:25%}.grid-container.skills{list-style-type:none;padding-left:0}.skills li.tile ul li{align-items:baseline;display:flex;font-size:12pt}.skills li.tile ul li>:first-child{min-width:150px}.skills li.tile ul li .hashtags{margin-left:12pt}.skills li.tile ul li .hashtag{font-size:11pt}.social-links{list-style-type:disc;padding-left:12pt}.social-links a{font-family:monospace}.privacy,.social-links a img,.social-links a svg{display:none}.avoid-page-break,.tile,article,figure{page-break-inside:avoid}.avoid-page-break>article{page-break-inside:auto}#talks-events,#work,.imprint-contact{page-break-before:always}.initially-hidden.only-print{display:block}.initially-hidden.only-print.inline{display:inline}.no-print{display:none}#wcb_p{text-align:left}#top #wcb #wcb_a,#wcb #wcb_g{--b1:#000;--b2:#000}
+---
+
+html,
+body,
+h1,
+h2,
+h3,
+h4 {
+  background: #fff;
+  color: #000;
+  font-size: 12pt;
+}
+
+h2 {
+  font-size: 24pt;
+}
+
+h3 {
+  font-size: 18pt;
+}
+
+.vcard h2,
+.vcard h3 {
+  margin: 0;
+}
+
+body,
+.tiled-content,
+.text-content-color,
+.text-content-color h2,
+.text-content-color h3,
+.text-content-color h4,
+.aside-heading,
+a,
+a:link,
+a:visited,
+a:active {
+  color: #000;
+  background-color: #fff;
+  text-decoration: none;
+}
+
+.navigation.page-navigation,
+.sticky-header {
+  display: none;
+}
+
+.page-container {
+  padding: 0 24pt;
+}
+
+.jumbotronHeader {
+  text-align: center;
+  break-after: page;
+  margin-top: 25%;
+  margin-bottom: 25%;
+}
+
+.jumbotronHeader h1 {
+  font-size: 60pt;
+  margin: 0;
+}
+
+.jumbotronHeader p {
+  font-size: 30pt;
+  margin: 0;
+}
+
+small {
+  font-size: 10pt;
+}
+
+img.avatar {
+  border-radius: 50%;
+}
+
+.code-link {
+  display: block;
+  font-family: monospace;
+}
+
+.hashtag {
+  border: solid 1px #aaa;
+  padding: 4pt;
+  margin-right: 4pt;
+  line-height: 28pt;
+}
+
+.tile {
+  margin-bottom: 24pt;
+}
+
+.tile p img {
+  max-width: 25%;
+  height: auto;
+  float: right;
+  margin-left: 12pt;
+  border: none;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+.grid-container.skills {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.skills li.tile ul li {
+  font-size: 12pt;
+  display: flex;
+  align-items: baseline;
+}
+
+.skills li.tile ul li > *:first-child {
+  min-width: 150px;
+}
+
+.skills li.tile ul li .hashtags {
+  margin-left: 12pt;
+}
+
+.skills li.tile ul li .hashtag {
+  font-size: 11pt;
+}
+
+.social-links {
+  list-style-type: disc;
+  padding-left: 12pt;
+}
+
+.social-links a {
+  font-family: monospace;
+}
+
+.social-links a img,
+.social-links a svg {
+  display: none;
+}
+
+.privacy {
+  display: none;
+}
+
+article,
+.tile,
+figure,
+.avoid-page-break {
+  page-break-inside: avoid;
+}
+
+.avoid-page-break > article {
+  page-break-inside: initial;
+}
+
+#talks-events,
+#work,
+.imprint-contact {
+  page-break-before: always;
+}
+
+.initially-hidden.only-print {
+  display: block;
+}
+
+.initially-hidden.only-print.inline {
+  display: inline;
+}
+
+.no-print {
+  display: none;
+}
+
+/* website carbon badge */
+#wcb_p {
+  text-align: left;
+}
+
+#top #wcb #wcb_a,
+#wcb #wcb_g {
+  --b1: #000;
+  --b2: #000;
+}
