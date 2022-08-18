@@ -6,10 +6,10 @@ setWindowSize(1600, 1200);
 exports.config = {
   helpers: {
     Puppeteer: {
-      url: 'file:///home/ingo/Code/ingo-steinke.de/dist/index.html',
+      url: 'https://www.ingo-steinke.de',
     },
     Playwright: {
-      url: 'file:///home/ingo/Code/ingo-steinke.de/dist/index.html',
+      url: 'https://www.ingo-steinke.de',
     }
   }
 }

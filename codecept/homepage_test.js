@@ -1,9 +1,12 @@
 Feature('Homepage');
 
 Scenario('Test website content and navigation', ({ I }) => {
-  const url = 'file:///home/ingo/Code/ingo-steinke.de/dist/index.html';
-  I.amOnPage(url);
+
+  I.amOnPage('/');
   I.see('Ingo Steinke', 'h1');
+  I.see('Creative Web Developer');
+
+
   // I can "see" something below the fold (implicitly scrolling it into view?)
   // but then, how can we test links scrolling down to another one-pager section?
   I.seeElement('//a[contains(., "Datenschutz")]');
