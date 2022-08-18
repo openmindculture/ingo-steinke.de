@@ -27,7 +27,7 @@
     },
     "homepage": "https://github.com/openmindculture/ingo-steinke.de#readme",
     "devDependencies": {
-        "@11ty/eleventy": "^0.12.1",
+        "@11ty/eleventy": "^1.0.2",
         "@babel/cli": "^7.18.10",
         "@babel/core": "^7.18.10",
         "@babel/preset-env": "^7.18.10",
@@ -52,5 +52,8 @@
         "stylelint": "^14.10.0",
         "stylelint-config-html": "^1.1.0",
         "stylelint-config-standard": "^27.0.0"
+    },
+    "dependencies": {
+        "@11ty/eleventy-upgrade-help": "^1.0.1"
     }
 }

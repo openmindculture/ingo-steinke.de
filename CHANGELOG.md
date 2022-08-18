@@ -3,12 +3,11 @@
 # Changelog
 
 ## [2.9.3] - extend JAM stack setup - unreleased
-* upgrade eleventy to latest stable major version 1.0 #72
-* prepare to make use of new features
+* upgrade eleventy to latest stable major version 2.0 #72
+* prepare to make use of new features like dev server
 
 ## [2.9.2] - clean code refactoring - unreleased
-* upgrade eleventy to latest stable major version 1.0 #72
-* prepare to make use of new features
+* refactor CSS to comply to stricter rules to improve maintainability
 
 ## [2.9.1] - extend test automation - unreleased
 * improve testing to prevent regression bugs using Codecept

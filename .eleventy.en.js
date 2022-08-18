@@ -1,5 +1,12 @@
 const htmlmin = require('html-minifier');
 module.exports = function (eleventyConfig) {
+  // TODO refactor redundant code to include common config!
+
+  eleventyConfig.setLiquidOptions({
+    dynamicPartials: false,
+    strictFilters: false, // renamed from `strict_filters` in Eleventy 1.0
+  });
+
   // explicit + fast way to copy certain files and folders
   eleventyConfig.addPassthroughCopy('src/fonts');
   eleventyConfig.addPassthroughCopy('src/img');
