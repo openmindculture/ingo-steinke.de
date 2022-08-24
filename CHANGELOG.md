@@ -9,9 +9,12 @@
 ## [2.9.2] - clean code refactoring - unreleased
 * refactor CSS to comply to stricter rules to improve maintainability
 
-## [2.9.1] - extend test automation - unreleased
+## [2.9.5] - extend test automation - unreleased
 * improve testing to prevent regression bugs using Codecept
 * automate tests externally using Testomat
+
+## [2.9.4] - add local preview server - 2022-08-24
+* add simple preview server on localhost:1974
 
 ## [2.9.0] - upgrade outdated build tools - 2022-08-17
 * upgrade CodeceptJS 3 to latest stable major version 3
