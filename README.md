@@ -109,6 +109,10 @@ Note that Netlify does not respect `.htaccess` Apache configuration files, but n
 
 * `npm run codeceptjs` [CodeceptJS](https://codecept.io/) 
 
+### export / update local tests to Testomat.io
+
+* `TESTOMATIO=__$APIKEY__ npx check-tests@latest CodeceptJS "**/*{.,_}{test,spec}.js"`
+
 ### About Testing Tools and the War on Europe
   🇺🇦 CodeceptJS and Testomat.io were created in Ukraine. #StandWithUkraine
 

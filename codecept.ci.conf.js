@@ -5,6 +5,8 @@ setWindowSize(1600, 1200);
 
 exports.config = {
   helpers: {
-    Puppeteer: {}
+    Puppeteer: {
+      url: 'https://www.ingo-steinke.de',
+    }
   }
 }

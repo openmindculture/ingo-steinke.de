@@ -1,15 +1,17 @@
-const { setHeadlessWhen } = require('@codeceptjs/configure');
+const { setHeadlessWhen, setWindowSize } = require('@codeceptjs/configure');
 
 // turn on headless mode when running with HEADLESS=true environment variable
 // export HEADLESS=true && npx codeceptjs run
 setHeadlessWhen(process.env.HEADLESS);
+
+setWindowSize(1600, 1200);
 
 exports.config = {
   tests: './codecept/*_test.js',
   output: './codecept/output',
   helpers: {
     Puppeteer: {
-      url: '$PWD/dist',
+      url: 'file:///home/ingo/Code/ingo-steinke.de/dist/index.html',
       show: true,
       windowSize: '1200x900'
     }
