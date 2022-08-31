@@ -23,6 +23,11 @@ exports.config = {
   mocha: {},
   name: 'ingo-steinke.de',
   plugins: {
+    testomatio: {
+      enabled: true,
+      require: '@testomatio/reporter/lib/adapter/codecept',
+      apiKey: process.env.TESTOMATIO,
+    },
     pauseOnFail: {},
     retryFailedStep: {
       enabled: true
