@@ -11,7 +11,7 @@ exports.config = {
   output: './codecept/output',
   helpers: {
     Puppeteer: {
-      url: 'file:///home/ingo/Code/ingo-steinke.de/dist/index.html',
+      url: 'http://localhost:1974',
       show: true,
       windowSize: '1200x900'
     }
