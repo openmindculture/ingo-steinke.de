@@ -1,8 +1,6 @@
 # Changelog
 
-# Changelog
-
-## [2.9.5] - extend test automation - 2022-08-30
+## [2.9.5] - extend test automation - 2022-08-31
 * improve testing to prevent regression bugs using Codecept
 * integrate lint, build, and test locally
 * automate tests externally using Testomat.io
