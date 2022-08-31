@@ -14,6 +14,12 @@ exports.config = {
       url: 'http://localhost:1974',
       show: true,
       windowSize: '1200x900'
+    },
+    "ResembleHelper" : {
+      "require": "codeceptjs-resemblehelper",
+      "screenshotFolder" : "./codecept/output/",
+      "baseFolder": "./codecept/screenshots/base/",
+      "diffFolder": "./codecept/screenshots/diff/"
     }
   },
   include: {

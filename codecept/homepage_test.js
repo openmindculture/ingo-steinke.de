@@ -6,6 +6,11 @@ Scenario('Test website content and navigation', ({ I }) => {
   I.see('Ingo Steinke', 'h1');
   I.see('Creative Web Developer');
 
+  I.saveScreenshot('Homepage_Screenshot.png');
+  I.seeVisualDiff('Homepage_Screenshot.png', {
+    tolerance: 2,
+    prepareBaseImage: false
+  });
 
   // I can "see" something below the fold (implicitly scrolling it into view?)
   // but then, how can we test links scrolling down to another one-pager section?
@@ -22,5 +27,3 @@ Scenario('Test website content and navigation', ({ I }) => {
   // so the following would fail:
   // I.dontSee('Ingo');
 });
-
-// TODO test styles and visuals
