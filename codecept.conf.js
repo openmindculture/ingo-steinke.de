@@ -11,9 +11,15 @@ exports.config = {
   output: './codecept/output',
   helpers: {
     Puppeteer: {
-      url: 'file:///home/ingo/Code/ingo-steinke.de/dist/index.html',
+      url: 'http://localhost:1974',
       show: true,
       windowSize: '1200x900'
+    },
+    "ResembleHelper" : {
+      "require": "codeceptjs-resemblehelper",
+      "screenshotFolder" : "./codecept/output/",
+      "baseFolder": "./codecept/screenshots/base/",
+      "diffFolder": "./codecept/screenshots/diff/"
     }
   },
   include: {
@@ -23,6 +29,11 @@ exports.config = {
   mocha: {},
   name: 'ingo-steinke.de',
   plugins: {
+    testomatio: {
+      enabled: true,
+      require: '@testomatio/reporter/lib/adapter/codecept',
+      apiKey: process.env.TESTOMATIO,
+    },
     pauseOnFail: {},
     retryFailedStep: {
       enabled: true
