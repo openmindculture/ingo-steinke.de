@@ -4,7 +4,8 @@
 
 ## [2.9.5] - extend test automation - 2022-08-30
 * improve testing to prevent regression bugs using Codecept
-* automate tests externally using Testomat
+* integrate lint, build, and test locally
+* automate tests externally using Testomat.io
 
 ## [2.9.4] - add local preview server - 2022-08-24
 * add simple preview server on localhost:1974
