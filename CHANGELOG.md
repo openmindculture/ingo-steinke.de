@@ -1,5 +1,10 @@
 # Changelog
 
+## [2.9.6] - fix mobile width / layout issues - 2022-09-10
+* set explicit max width on sections,
+* allow social links to flex wrap,
+* reduce social links padding
+
 ## [2.9.5] - extend test automation - 2022-08-31
 * improve testing to prevent regression bugs using Codecept
 * integrate lint, build, and test locally
