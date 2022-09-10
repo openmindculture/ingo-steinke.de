@@ -447,6 +447,10 @@ small {
     padding: 0;
   }
 
+  ul.social-links a {
+    padding: 0.5em;
+  }
+
   .skills-wrapper {
     padding-left: 0;
   }

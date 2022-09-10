@@ -289,6 +289,15 @@ a.menu-toggle:hover {
   text-align: center;
 }
 
+@media only screen and (max-width: 490px) {
+  .vcard,
+  #contact,
+  main > section {
+    max-width: 100%;
+    max-width: 100vw;
+  }
+}
+
 .vcard h2,
 .vcard h3 {
   font-size: 2em;
@@ -501,6 +510,7 @@ Offscreen menu style
 
 .social-links {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   flex-direction: row;
   list-style: none;
