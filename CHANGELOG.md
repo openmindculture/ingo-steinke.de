@@ -1,5 +1,10 @@
 # Changelog
 
+## [3.0.0] - content update - unreleased
+* [Content Update: Testimonials, Technologies #110](https://github.com/openmindculture/ingo-steinke.de/issues/110)
+* update testimonials, customers' projects
+* update technological skills
+
 ## [2.9.7] - housekeeping - 2022-10-20
 * upgrade software dependencies
 * fix CSS syntax
