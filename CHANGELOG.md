@@ -1,5 +1,10 @@
 # Changelog
 
+## [2.9.7] - housekeeping - 2022-10-20
+* upgrade software dependencies
+* fix CSS syntax
+* rebuild project
+
 ## [2.9.6] - fix mobile width / layout issues - 2022-09-10
 * set explicit max width on sections,
 * allow social links to flex wrap,

@@ -1,4 +1,4 @@
-@import '_includes/design-tokens.css';
+@import url('_includes/design-tokens.css');
 
 /* decoration layer is styled in critical.css */
 

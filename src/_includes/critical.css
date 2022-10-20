@@ -1,4 +1,4 @@
-@import 'design-tokens.css';
+@import url('design-tokens.css');
 
 html {
   font-size: 100%;
