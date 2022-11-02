@@ -5,6 +5,11 @@
 * update testimonials, customers' projects
 * update technological skills
 
+## [2.9.8] - contact update - 2022-11-02
+* update postal address
+* remove link to xing business network
+* add link to fediverse (mastodon) profile
+
 ## [2.9.7] - housekeeping - 2022-10-20
 * upgrade software dependencies
 * fix CSS syntax
