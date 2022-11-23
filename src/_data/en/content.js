@@ -5,6 +5,7 @@ module.exports = {
   /* meta data */
   "language": "en",
   "canonicalHref": "https://www.ingo-steinke.com/",
+  "shortHref": "www.ingo-steinke.com",
   "alternateHreflang": "de",
   "alternateHref": "https://www.ingo-steinke.de/",
   "metaAuthor": "Ingo Steinke",

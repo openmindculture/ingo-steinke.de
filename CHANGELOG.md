@@ -10,6 +10,9 @@
 * remove link to xing business network
 * add link to fediverse (mastodon) profile
 
+## [2.9.8] - fix - 2022-11-23
+* fix contact url
+
 ## [2.9.7] - housekeeping - 2022-10-20
 * upgrade software dependencies
 * fix CSS syntax
