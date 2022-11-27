@@ -188,6 +188,12 @@
                 <a href="https://www.wandelpunkt-consulting.de/" target="_blank" rel="noopener">Wandelpunkt Consulting</a>
                 {{ content.and }}
                 <a href="https://planted.green" target="_blank" rel="noopener">Planted</a>.
+                {{ content.currentlyEcologicalIam }}
+                <a href="https://www.reflecta.network/changemaker/ingo-steinke?ref=f181cba6-ddc9-4791-b579-b02c3be47206" target="_blank" rel="noopener">
+                  Changemaker</a>,
+                <a href="https://fairantwortung.org/" target="_blank" rel="noopener">
+                  Fairantworter</a>{{ content.and }} {{ content.memberOf }}
+                <a href="" target="_blank" rel="noopener">Impact Hub Berlin</a>.
               </p>
 
               <h3>{{ content.workWithMeHeading }}</h3>
@@ -427,7 +433,7 @@
               <article class="tile target-offset" id="project-wordpress-plugin">
                 <div class="flex bg-peel  pl1">
                   <header>
-                    <h3>{{ content.projectWordpressPluginHeading }}</h3>
+                    <h3>{{ content.projectWordpressWooHeading }}</h3>
                   </header>
                   <p>
                     <img
@@ -438,22 +444,24 @@
                       alt=""
                     />
                     <span class="text-line">
-                      {{ content.projectWordpressPlugin1 }}
+                      {{ content.projectWordpressWoo1 }}
                       <a
-                        href="https://de.wordpress.org/plugins/wao-io-cache-control/"
-                        title="de.wordpress.org/plugins/wao-io-cache-control"
+                        href="https://foodtogether.de/"
                         target="_blank"
                         rel="noopener"
-                      >{{ content.projectWordpressPlugin2 }}</a> {{ content.projectWordpressPlugin3 }}
-                      <span class="only-print code-link">de.wordpress.org/plugins/wao-io-cache-control</span>
+                      >Food Together</a> {{ content.projectWordpressWoo2 }}.<br>
+                      <a
+                        href="https://foodtogether.de/wer-wir-sind/"
+                        target="_blank"
+                        rel="noopener"
+                      >foodtogether.de/wer-wir-sind</a>
                     </span>
-
                   </p>
                   <p>
-                    <span class="hashtag">{{ content.projectWordpressPluginHashtag1 }}</span>
-                    <span class="hashtag">{{ content.projectWordpressPluginHashtag2 }}</span>
-                    <span class="hashtag">{{ content.projectWordpressPluginHashtag3 }}</span>
-                    <span class="hashtag">{{ content.projectWordpressPluginHashtag4 }}</span>
+                    <span class="hashtag">{{ content.projectWordpressWooHashtag1 }}</span>
+                    <span class="hashtag">{{ content.projectWordpressWooHashtag2 }}</span>
+                    <span class="hashtag">{{ content.projectWordpressWooHashtag3 }}</span>
+                    <span class="hashtag">{{ content.projectWordpressWooHashtag4 }}</span>
                   </p>
                 </div>
               </article>
@@ -511,6 +519,7 @@
               <h3 class="target-offset" id="plugin-programmierung">{{ content.workPluginsHeading }}</h3>
               <p>
                 {{ content.workPlugins1 }} <a href="#project-shopware-plugin">{{ content.workSwLink1Text }}</a> {{ content.workPlugins2 }} <a href="#project-wordpress-plugin">{{ content.workWpLinkText }}</a>{{ content.workPlugins3 }} <a href="https://store.shopware.com/waoio62482995391f/wao.io-cache-control.html" target="_blank" rel="noopener" title="{{ content.workSwLink2Title }}">{{ content.workSwLink2Text }}</a>{{ content.workPlugins4 }}
+                {{ content.workPlugins5 }} <a href="https://de.wordpress.org/plugins/incompatibility-status/" target="_blank" rel="noopener">{{ content.workPlugins6 }}</a>.
                 {{ content.workPluginsOther }}
               </p>
               <p class="only-print">
@@ -528,21 +537,21 @@
                   <li>
                     <a
                       class="code-link"
-                      href="https://de.wordpress.org/plugins/wao-io-cache-control"
-                      target="_blank"
-                      rel="noopener"
-                    >
-                      de.wordpress.org/plugins/wao-io-cache-control
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      class="code-link"
                       href="https://store.shopware.com/waoio62482995391f/wao.io-cache-control.html"
                       target="_blank"
                       rel="noopener"
                     >
                       store.shopware.com/waoio62482995391f/wao.io-cache-control.html
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="code-link"
+                      href="https://de.wordpress.org/plugins/incompatibility-status/"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      wordpress.org/plugins/incompatibility-status/
                     </a>
                   </li>
                 </ul>
@@ -623,16 +632,6 @@
                 <h4 class="font-sans">{{ content.SkillsLib }}</h4>
                 <ul>
                   <li>
-                    <span>Shopware 6</span>
-                    <div class="hashtags">
-                      <span class="hashtag brand-blue-purplish">Shopware</span>
-                      <span class="hashtag brand-purple">Bootstrap</span>
-                      <span class="hashtag brand-purple">SCSS</span>
-                      <span class="hashtag brand-green-twig">Twig</span>
-                      <span class="hashtag brand-yellow">Symfony</span>
-                    </div>
-                  </li>
-                  <li>
                     <span>JAM Stack</span>
                     <div class="hashtags">
                       <span class="hashtag brand-yellow">JavaScript</span>
@@ -640,6 +639,17 @@
                       <span class="hashtag brand-blue-less">Markdown</span>
                       <span class="hashtag brand-blue-liquid">Liquid</span>
                       <span class="hashtag brand-red-dark">npm</span>
+                    </div>
+                  </li>
+                  <li>
+                    <span>WordPress</span>
+                    <div class="hashtags">
+                      <span class="hashtag brand-blue-less">WordPress</span>
+                      <span class="hashtag brand-blue-php">PHP</span>
+                      <span class="hashtag brand-orange">HTML</span>
+                      <span class="hashtag brand-green">CSS</span>
+                      <span class="hashtag brand-yellow">JavaScript</span>
+                      <span class="hashtag brand-coral">Gutenberg</span>
                     </div>
                   </li>
                   <li>
@@ -659,7 +669,8 @@
                       <span class="hashtag brand-red-light">Express</span>
                       <span class="hashtag brand-purple-dark">(P)react</span>
                       <span class="hashtag brand-green">Node.js</span>
-                      <span class="hashtag brand-blue">yarn</span>
+                      <span class="hashtag brand-blue">TypeScript</span>
+                      <span class="hashtag brand-blue-php8">yarn</span>
                     </div>
                   </li>
                   <li>
@@ -672,13 +683,13 @@
                     </div>
                   </li>
                   <li>
-                    <span>WordPress</span>
+                    <span>Shopware 6</span>
                     <div class="hashtags">
-                      <span class="hashtag brand-blue-less">WordPress</span>
-                      <span class="hashtag brand-blue-php">PHP</span>
-                      <span class="hashtag brand-orange">HTML</span>
-                      <span class="hashtag brand-green">CSS</span>
-                      <span class="hashtag brand-yellow">JavaScript</span>
+                      <span class="hashtag brand-blue-purplish">Shopware</span>
+                      <span class="hashtag brand-red-dark">Bootstrap</span>
+                      <span class="hashtag brand-purple">SCSS</span>
+                      <span class="hashtag brand-green-twig">Twig</span>
+                      <span class="hashtag brand-yellow">Symfony</span>
                     </div>
                   </li>
                 </ul>
@@ -690,22 +701,22 @@
                   <li>
                     <span>{{ content.SkillsOtherQa }}</span>
                     <div class="hashtags">
-                      <span class="hashtag brand-blue">Jest</span>
-                      <span class="hashtag brand-blue-light">cypress</span>
-                      <span class="hashtag brand-blue">axe</span>
+                      <span class="hashtag brand-orange">Axe</span>
                       <span class="hashtag brand-coral">Lighthouse</span>
                       <span class="hashtag brand-beige">Storybook</span>
                       <span class="hashtag brand-yellow">CodeceptJS</span>
+                      <span class="hashtag brand-yellow-dark">Browserstack</span>
                     </div>
                   </li>
                   <li>
                     <span>{{ content.SkillsDevuxImg }}</span>
                     <div class="hashtags">
-                      <span class="hashtag brand-yellow-dark">Scrum</span>
+                      <span class="hashtag brand-red">Scrum</span>
                       <span class="hashtag brand-purple-dark">Kanban</span>
                       <span class="hashtag brand-blue-less">Jira</span>
                       <span class="hashtag brand-red-dark">Trello</span>
                       <span class="hashtag brand-orange">fractal</span>
+                      <span class="hashtag brand-coral">asana</span>
                     </div>
                   </li>
                   <li>
@@ -724,6 +735,7 @@
                       <span class="hashtag brand-blue">Docker</span>
                       <span class="hashtag brand-red">Jenkins</span>
                       <span class="hashtag brand-blue-php8">Snowpack</span>
+                      <span class="hashtag brand-blue-liquid">Webpack</span>
                       <span class="hashtag brand-green">Netlify</span>
                       <span class="hashtag brand-orange">AWS</span>
                     </div>
@@ -742,8 +754,9 @@
                     <div class="hashtags">
                       <span class="hashtag brand-blue-less">GIMP</span>
                       <span class="hashtag brand-gray-dark">Inkscape</span>
-                      <span class="hashtag brand-purple">Krita</span>
                       <span class="hashtag brand-yellow">ImageMagick</span>
+                      <span class="hashtag brand-coral">SVG</span>
+                      <span class="hashtag brand-beige">webp</span>
                     </div>
                   </li>
                 </ul>
@@ -782,7 +795,7 @@
                   {{ content.aboutMeEthical }}
                   {{ content.aboutMeEthicalImA }}
                   <a href="https://fairantwortung.org/" target="_blank" rel="noopener">
-                    fairantworter</a>,
+                    Fairantworter</a>,
                   {{ content.aboutMeEthicalA }}
                   <a href="https://www.reflecta.network/changemaker/ingo-steinke?ref=f181cba6-ddc9-4791-b579-b02c3be47206" target="_blank" rel="noopener">
                     reflecta Changemaker</a>{{ content.aboutMeEthicalandASignatory }}
