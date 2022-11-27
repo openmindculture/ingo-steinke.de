@@ -3,18 +3,17 @@
 ## [3.0.0] - content update - unreleased
 * [Content Update: Testimonials, Technologies #110](https://github.com/openmindculture/ingo-steinke.de/issues/110)
 * update testimonials, customers' projects
+* mention Impact Hub Berlin membership
 * update technological skills
-
-## [2.9.8] - contact update - 2022-11-02
-* update postal address
-* remove link to xing business network
-* add link to fediverse (mastodon) profile
-
+ 
 ## [2.9.9] - fix certificate link - 2022-11-27
 * fix link to english/.com ecofriendly audit report document #115
 
-## [2.9.8] - fix - 2022-11-23
+## [2.9.8] - contact update - 2022-11-23
 * fix contact url
+* update postal address
+* remove link to xing business network
+* add link to fediverse (mastodon) profile
 
 ## [2.9.7] - housekeeping - 2022-10-20
 * upgrade software dependencies
