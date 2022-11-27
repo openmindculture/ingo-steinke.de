@@ -1,6 +1,6 @@
 # Changelog
 
-## [3.0.0] - content update - unreleased
+## [3.0.0] - content update - 2022-11-27
 * [Content Update: Testimonials, Technologies #110](https://github.com/openmindculture/ingo-steinke.de/issues/110)
 * update testimonials, customers' projects
 * mention Impact Hub Berlin membership
