@@ -10,6 +10,9 @@
 * remove link to xing business network
 * add link to fediverse (mastodon) profile
 
+## [2.9.9] - fix certificate link - 2022-11-27
+* fix link to english/.com ecofriendly audit report document #115
+
 ## [2.9.8] - fix - 2022-11-23
 * fix contact url
 
