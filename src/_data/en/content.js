@@ -37,6 +37,8 @@ module.exports = {
   "introHeading": "Inspire Your Customers on the Internet",
   "intro": "My name is Ingo Steinke. I am a sustainable and creative web developer with more than 20 years of professional experience. Customers who have benefited from my work include",
   "and": ", and",
+  "currentlyEcologicalIam": "I prefer working for customers with an ecological and ethical focus. I am a",
+  "memberOf": "a member of",
   "workWithMeHeading": "I can Work for You",
   "workWithMe":"Do you want to overhaul your website? Does your team need support from a front-end developer with full-stack experience?",
   "ctaContact": "Call me or leave a message!",

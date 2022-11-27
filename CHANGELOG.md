@@ -5,6 +5,7 @@
 * update testimonials, customers' projects
 * mention Impact Hub Berlin membership
 * update technological skills
+* link to own WordPress plugin
  
 ## [2.9.9] - fix certificate link - 2022-11-27
 * fix link to english/.com ecofriendly audit report document #115
