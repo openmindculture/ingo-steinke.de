@@ -1,5 +1,8 @@
 # Changelog
 
+## [3.1.0] - telephone SEO - 2022-12-14
+* add alternative phone number notation for search engine results
+
 ## [3.0.1] - content update fix - 2022-11-27
 * add missing link
 

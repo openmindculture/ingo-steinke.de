@@ -949,6 +949,7 @@
                         {%- endfor -%}</a>
                     </span><br>
                 {% endif %}
+                <div class="visually-hidden no-print">{{ content.contactTel }}</div>
 
                 <span><a href="mailto:{{ content.contactEmail }}">{{ content.contactEmail }}</a></span><br>
                 <a class="url" rel="author" href="{{ content.canonicalHref }}">{{ content.shortHref }}</a>
