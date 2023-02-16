@@ -1,5 +1,8 @@
 # Changelog
 
+## [3.1.1] - upgrade test framework
+* upgrade CodeceptJS and related dependencies
+
 ## [3.1.0] - telephone SEO - 2022-12-14
 * add alternative phone number notation for search engine results
 
