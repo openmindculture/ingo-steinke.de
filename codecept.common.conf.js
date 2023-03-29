@@ -5,7 +5,8 @@ module.exports = {
     Puppeteer: {
       url: '',
       show: true,
-      windowSize: '1200x900'
+      windowSize: '1728x1200',
+      fullPageScreenshots: true,
     },
     "ResembleHelper" : {
       "require": "codeceptjs-resemblehelper",
