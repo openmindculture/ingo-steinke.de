@@ -8,6 +8,10 @@
     "parserOptions": {
         "ecmaVersion": 13
     },
+  "ignorePatterns": [
+    "node_modules/**/*.js",
+    "plugins/**/*.js"
+  ],
     "rules": {
     }
 }
