@@ -1,16 +1,19 @@
 Feature('Homepage');
 
-Scenario('Test website content and navigation', ({ I }) => {
+Scenario('Test website content and navigation', async({ I }) => {
 
   I.amOnPage('/');
   I.see('Ingo Steinke', 'h1');
   I.see('Creative Web Developer');
 
-  I.saveScreenshot('Homepage_Screenshot.png');
-  I.seeVisualDiff('Homepage_Screenshot.png', {
+  // assume (default) "desktop" width as defined in codecept.conf.js
+  I.saveScreenshot('screenshot.png');
+  I.seeVisualDiff('screenshot.png', {
     tolerance: 2,
-    prepareBaseImage: true
+    prepareBaseImage: false // true: overwrite base images, false: compare
   });
+
+  
 
   // I can "see" something below the fold (implicitly scrolling it into view?)
   // but then, how can we test links actually scrolling down to another one-pager section?

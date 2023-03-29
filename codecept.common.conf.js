@@ -1,6 +1,6 @@
 module.exports = {
   tests: './codecept/*_test.js',
-  output: './codecept/output',
+  output: './codecept/output/default/',
   helpers: {
     Puppeteer: {
       url: '',
@@ -8,11 +8,11 @@ module.exports = {
       windowSize: '1728x1200',
       fullPageScreenshots: true,
     },
-    "ResembleHelper" : {
-      "require": "codeceptjs-resemblehelper",
-      "screenshotFolder" : "./codecept/output/",
-      "baseFolder": "./codecept/screenshots/base/",
-      "diffFolder": "./codecept/screenshots/diff/"
+    ResembleHelper : {
+      require: 'codeceptjs-resemblehelper',
+      screenshotFolder: './codecept/output/default/',
+      baseFolder: './codecept/screenshots/base/default/',
+      diffFolder: './codecept/screenshots/diff/default/',
     }
   },
   include: {
