@@ -221,7 +221,7 @@ module.exports = {
   "contactEmail": "contact@ingo-steinke.com",
   "taxNo": "Tax No.",
   "vatIdLabel": "VAT ID",
-  "vatIdNumber": "DE340489834",
+  "vatIdNumber": "DE337676808",
   "IHaveA": "I have a",
   "insurance": "professional liability insurance",
   "insuranceTitle": "Professional liability insurance: exali Media-Haftpflicht",
