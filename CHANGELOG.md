@@ -1,6 +1,6 @@
 # Changelog
 
-## [3.2.0] - update data
+## [3.2.1] - update data
 * update valid VAT tax number
 * update renewed clear web badge
 
