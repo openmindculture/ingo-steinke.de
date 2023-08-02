@@ -1,5 +1,9 @@
 # Changelog
 
+## [3.2.0] - update data
+* update valid VAT tax number
+* update renewed clear web badge
+
 ## [3.1.1] - upgrade test framework
 * upgrade CodeceptJS and related dependencies
 
