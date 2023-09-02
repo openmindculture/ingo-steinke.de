@@ -59,7 +59,9 @@ window.addEventListener('DOMContentLoaded', () => {
     languageSwitch.href += window.location.hash;
   });
 
-  animationToggle.addEventListener('click', () => {
-    document.getElementById('decoration').style.display = 'none';
-  });
+  if (animationToggle) {
+    animationToggle.addEventListener('click', () => {
+      document.getElementById('decoration').style.display = 'none';
+    });
+  }
 });

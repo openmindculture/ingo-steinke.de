@@ -764,3 +764,7 @@ ul.grid-container.skills {
   text-decoration-style: dotted;
   text-decoration-thickness: 0.1em;
 }
+
+#animation-toggle {
+  display: none;
+}
