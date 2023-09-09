@@ -113,7 +113,7 @@ module.exports = {
   "projectKleiderordnungHeading": "Sustainable Fashion Website",
   "projectKleiderordnung1": "",
   "projectKleiderordnung2": "KleiderOrdnung.Berlin",
-  "projectKleiderordnung3": "is a WordPress-website for the sustainable stylist Tina Steinke featuring an individual frontpage based on the graphic design by Ina Nixdorf.",
+  "projectKleiderordnung3": "is a WordPress-website for the sustainable stylist Tina Steinke featuring an individual frontpage based on the graphic design by Ina Nixdorf. Project code:",
   "projectKleiderordnungHashtag1": "HTML",
   "projectKleiderordnungHashtag2": "CSS",
   "projectKleiderordnungHashtag3": "JavaScript",
