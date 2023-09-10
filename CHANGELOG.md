@@ -1,5 +1,10 @@
 # Changelog
 
+## [3.2.2] - content update
+* update project list
+* remove old avatar image from header
+* make main navigation initially visible
+
 ## [3.2.1] - update data
 * update valid VAT tax number
 * update renewed clear web badge
