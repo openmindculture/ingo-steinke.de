@@ -32,7 +32,7 @@
           url('fonts/montserrat-v15-latin-ext_latin-regular.woff') format('woff');
       }
       {%- postcss -%}
-        {% include critical.css %}
+        {% include '_includes/critical.css' %}
       {%- endpostcss -%}
     </style>
     <link rel="preload" href="fonts/bitter-v16-latin-700.woff2" as="font" type="font/woff2" crossorigin>
@@ -216,6 +216,106 @@
 
             <div class="grid-container flow-grid">
 
+              <article class="tile target-offset" id="project-kleiderordnung">
+                <div class="flex bg-peel  pl1">
+                  <header>
+                    <h3>{{ content.projectKleiderordnungHeading }}</h3>
+                  </header>
+                  <p>
+                    <img
+                      src="img/icon-hanger.svg"
+                      width="24" height="24"
+                      class="project-thumb"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <span class="text-line">
+                      {{ content.projectKleiderordnung1 }}
+                       <a
+                         href="https://kleiderordnung.berlin/"
+                         title="www.kleiderordnung.berlin"
+                         target="_blank"
+                         rel="noopener"
+                       >{{ content.projectKleiderordnung2 }}</a>
+                      {{ content.projectKleiderordnung3 }}
+                      </span>
+                      <a
+                        class="code-link"
+                        href="https://github.com/openmindculture/kleiderordnung-berlin"
+                        title="github.com/openmindculture/kleiderordnung-berlin"
+                        target="_blank"
+                        rel="noopener"
+                      >github.com/openmindculture/kleiderordnung-berlin</a>
+                      <span class="only-print code-link">www.kleiderordnung.berlin</span>
+                  </p>
+                  <p>
+                    <span class="hashtag">{{ content.projectKleiderordnungHashtag1 }}</span>
+                    <span class="hashtag">{{ content.projectKleiderordnungHashtag2 }}</span>
+                    <span class="hashtag">{{ content.projectKleiderordnungHashtag3 }}</span>
+                    <span class="hashtag">{{ content.projectKleiderordnungHashtag4 }}</span>
+                    <span class="hashtag">{{ content.projectKleiderordnungHashtag5 }}</span>
+                  </p>
+                </div>
+              </article>
+
+              <article class="tile target-offset" id="atomic-design-system">
+                <div class="flex bg-peel pl1">
+                  <header>
+                    <h3>{{ content.projectAtomicRelaunchHeading }}</h3>
+                  </header>
+                  <p>
+                    <img src="img/logo-fractal.svg" width="512" height="512" class="project-thumb" loading="lazy" alt="" />
+                    <span class="text-line">
+                      {{ content.projectAtomicRelaunch1 }}
+                      <br>{{ content.projectAtomicRelaunch2 }} <a href="https://fractal.build/" target="_blank" rel="noopener">{{ content.projectAtomicRelaunch3 }}</a>{{ content.projectAtomicRelaunch4 }}
+                    </span>
+                  </p>
+                  <p>
+                    <span class="hashtag">{{ content.projectAtomicRelaunchHashtag1 }}</span>
+                    <span class="hashtag">{{ content.projectAtomicRelaunchHashtag2 }}</span>
+                    <span class="hashtag">{{ content.projectAtomicRelaunchHashtag3 }}</span>
+                    <span class="hashtag">{{ content.projectAtomicRelaunchHashtag4 }}</span>
+                    <span class="hashtag">{{ content.projectAtomicRelaunchHashtag5 }}</span>
+                  </p>
+                </div>
+              </article>
+
+              <article class="tile target-offset" id="project-wordpress-plugin">
+                <div class="flex bg-peel  pl1">
+                  <header>
+                    <h3>{{ content.projectWordpressWooHeading }}</h3>
+                  </header>
+                  <p>
+                    <img
+                      src="img/logo-wordpress.svg"
+                      width="452" height="452"
+                      class="project-thumb"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <span class="text-line">
+                      {{ content.projectWordpressWoo1 }}
+                      <a
+                        href="https://foodtogether.de/"
+                        target="_blank"
+                        rel="noopener"
+                      >Food Together</a> {{ content.projectWordpressWoo2 }}.<br>
+                      <a
+                        href="https://foodtogether.de/wer-wir-sind/"
+                        target="_blank"
+                        rel="noopener"
+                      >foodtogether.de/wer-wir-sind</a>
+                    </span>
+                  </p>
+                  <p>
+                    <span class="hashtag">{{ content.projectWordpressWooHashtag1 }}</span>
+                    <span class="hashtag">{{ content.projectWordpressWooHashtag2 }}</span>
+                    <span class="hashtag">{{ content.projectWordpressWooHashtag3 }}</span>
+                    <span class="hashtag">{{ content.projectWordpressWooHashtag4 }}</span>
+                  </p>
+                </div>
+              </article>
+
               <article class="tile target-offset" id="project-portfolio-relaunch">
                 <div class="flex bg-peel  pl1">
                   <header>
@@ -253,80 +353,6 @@
                   </p>
                 </div>
 
-              </article>
-
-              <article class="tile target-offset" id="atomic-design-system">
-                <div class="flex bg-peel pl1">
-                  <header>
-                    <h3>{{ content.projectAtomicRelaunchHeading }}</h3>
-                  </header>
-                  <p>
-                    <img src="img/logo-fractal.svg" width="512" height="512" class="project-thumb" loading="lazy" alt="" />
-                    <span class="text-line">
-                      {{ content.projectAtomicRelaunch1 }}
-                      <br>{{ content.projectAtomicRelaunch2 }} <a href="https://fractal.build/" target="_blank" rel="noopener">{{ content.projectAtomicRelaunch3 }}</a>{{ content.projectAtomicRelaunch4 }}
-                    </span>
-                  </p>
-                  <p>
-                    <span class="hashtag">{{ content.projectAtomicRelaunchHashtag1 }}</span>
-                    <span class="hashtag">{{ content.projectAtomicRelaunchHashtag2 }}</span>
-                    <span class="hashtag">{{ content.projectAtomicRelaunchHashtag3 }}</span>
-                    <span class="hashtag">{{ content.projectAtomicRelaunchHashtag4 }}</span>
-                    <span class="hashtag">{{ content.projectAtomicRelaunchHashtag5 }}</span>
-                  </p>
-                </div>
-              </article>
-
-              <article class="tile target-offset" id="wandelpunkt-consulting-semplice">
-                <div class="flex bg-peel pl1">
-                  <header>
-                    <h3>{{ content.projectWandelpunktHeading }}</h3>
-                  </header>
-                  <p>
-                    <img src="img/logo-wandelpunkt.svg" width="512" height="512" class="project-thumb project-thumb--grow" loading="lazy" alt="" />
-                    <span class="text-line">
-                      {{ content.projectWandelpunkt1 }}
-                      <a href="https://Wandelpunkt-Consulting.de"
-                         target="_blank" rel="noopener">{{ content.projectWandelpunkt2 }}</a>
-                      {{ content.projectWandelpunkt3 }}
-                      <span class="only-print code-link">Wandelpunkt-Consulting.de</span>
-                    </span>
-                  </p>
-                  <p>
-                    <span class="hashtag">{{ content.projectWandelpunktHashtag1 }}</span>
-                    <span class="hashtag">{{ content.projectWandelpunktHashtag2 }}</span>
-                    <span class="hashtag">{{ content.projectWandelpunktHashtag3 }}</span>
-                    <span class="hashtag">{{ content.projectWandelpunktHashtag4 }}</span>
-                  </p>
-                </div>
-              </article>
-
-              <article class="tile target-offset" id="project-planted">
-                <div class="flex bg-peel pl1">
-                  <header>
-                    <h3>{{ content.projectPlantedHeading }}</h3>
-                  </header>
-                  <p>
-                    <img src="img/icon-tree-branch.svg" width="512" height="512" class="project-thumb" loading="lazy" alt="" />
-                    <span class="text-line">
-                      {{ content.projectPlanted1 }}
-                      <a href="https://www.climatefounders.com/climate-hack" target="_blank" rel="noopener">{{
-                        content.projectPlanted2 }}</a>
-                      {{ content.projectPlanted3 }}
-                      <a href="https://planted.green"
-                         target="_blank" rel="noopener">{{
-                        content.projectPlanted4 }}</a>
-                      {{ content.projectPlanted5 }}
-                      <span class="only-print code-link">https://planted.green</span>
-                    </span>
-                  </p>
-                  <p>
-                    <span class="hashtag">{{ content.projectPlantedHashtag1 }}</span>
-                    <span class="hashtag">{{ content.projectPlantedHashtag2 }}</span>
-                    <span class="hashtag">{{ content.projectPlantedHashtag3 }}</span>
-                    <span class="hashtag">{{ content.projectPlantedHashtag4 }}</span>
-                  </p>
-                </div>
               </article>
 
               <article class="tile target-offset" id="project-shopware-plugin">
@@ -379,7 +405,7 @@
                     <span class="text-line">
                       {{ content.projectReactApp1 }}
                       <a
-                        href="https://wao.io/de/about-us/experts/ingo-steinke/"
+                        href="http://web.archive.org/web/20230129234614/https://wao.io/de/about-us/experts/ingo-steinke/"
                         title="wao.io/de/about-us/experts/ingo-steinke"
                         target="_blank"
                         rel="noopener"
@@ -394,6 +420,58 @@
                     <span class="hashtag">{{ content.projectReactAppHashtag3 }}</span>
                     <span class="hashtag">{{ content.projectReactAppHashtag4 }}</span>
                     <span class="hashtag">{{ content.projectReactAppHashtag5 }}</span>
+                  </p>
+                </div>
+              </article>
+
+              <article class="tile target-offset" id="wandelpunkt-consulting-semplice">
+                <div class="flex bg-peel pl1">
+                  <header>
+                    <h3>{{ content.projectWandelpunktHeading }}</h3>
+                  </header>
+                  <p>
+                    <img src="img/logo-wandelpunkt.svg" width="512" height="512" class="project-thumb project-thumb--grow" loading="lazy" alt="" />
+                    <span class="text-line">
+                      {{ content.projectWandelpunkt1 }}
+                      <a href="http://web.archive.org/web/20230401133238/https://www.wandelpunkt-consulting.de/"
+                         target="_blank" rel="noopener">{{ content.projectWandelpunkt2 }}</a>
+                      {{ content.projectWandelpunkt3 }}
+                      <span class="only-print code-link">Wandelpunkt-Consulting.de</span>
+                    </span>
+                  </p>
+                  <p>
+                    <span class="hashtag">{{ content.projectWandelpunktHashtag1 }}</span>
+                    <span class="hashtag">{{ content.projectWandelpunktHashtag2 }}</span>
+                    <span class="hashtag">{{ content.projectWandelpunktHashtag3 }}</span>
+                    <span class="hashtag">{{ content.projectWandelpunktHashtag4 }}</span>
+                  </p>
+                </div>
+              </article>
+
+              <article class="tile target-offset" id="project-planted">
+                <div class="flex bg-peel pl1">
+                  <header>
+                    <h3>{{ content.projectPlantedHeading }}</h3>
+                  </header>
+                  <p>
+                    <img src="img/icon-tree-branch.svg" width="512" height="512" class="project-thumb" loading="lazy" alt="" />
+                    <span class="text-line">
+                      {{ content.projectPlanted1 }}
+                      <a href="https://www.climatefounders.com/climate-hack" target="_blank" rel="noopener">{{
+                        content.projectPlanted2 }}</a>
+                      {{ content.projectPlanted3 }}
+                      <a href="https://planted.green"
+                         target="_blank" rel="noopener">{{
+                        content.projectPlanted4 }}</a>
+                      {{ content.projectPlanted5 }}
+                      <span class="only-print code-link">https://planted.green</span>
+                    </span>
+                  </p>
+                  <p>
+                    <span class="hashtag">{{ content.projectPlantedHashtag1 }}</span>
+                    <span class="hashtag">{{ content.projectPlantedHashtag2 }}</span>
+                    <span class="hashtag">{{ content.projectPlantedHashtag3 }}</span>
+                    <span class="hashtag">{{ content.projectPlantedHashtag4 }}</span>
                   </p>
                 </div>
               </article>
@@ -426,77 +504,6 @@
                   <p>
                     <span class="hashtag">{{ content.projectWebperfMeetupHashtag1 }}</span>
                     <span class="hashtag">{{ content.projectWebperfMeetupHashtag2 }}</span>
-                  </p>
-                </div>
-              </article>
-
-              <article class="tile target-offset" id="project-wordpress-plugin">
-                <div class="flex bg-peel  pl1">
-                  <header>
-                    <h3>{{ content.projectWordpressWooHeading }}</h3>
-                  </header>
-                  <p>
-                    <img
-                      src="img/logo-wordpress.svg"
-                      width="452" height="452"
-                      class="project-thumb"
-                      loading="lazy"
-                      alt=""
-                    />
-                    <span class="text-line">
-                      {{ content.projectWordpressWoo1 }}
-                      <a
-                        href="https://foodtogether.de/"
-                        target="_blank"
-                        rel="noopener"
-                      >Food Together</a> {{ content.projectWordpressWoo2 }}.<br>
-                      <a
-                        href="https://foodtogether.de/wer-wir-sind/"
-                        target="_blank"
-                        rel="noopener"
-                      >foodtogether.de/wer-wir-sind</a>
-                    </span>
-                  </p>
-                  <p>
-                    <span class="hashtag">{{ content.projectWordpressWooHashtag1 }}</span>
-                    <span class="hashtag">{{ content.projectWordpressWooHashtag2 }}</span>
-                    <span class="hashtag">{{ content.projectWordpressWooHashtag3 }}</span>
-                    <span class="hashtag">{{ content.projectWordpressWooHashtag4 }}</span>
-                  </p>
-                </div>
-              </article>
-
-
-              <article class="tile target-offset" id="project-kleiderordnung">
-                <div class="flex bg-peel  pl1">
-                  <header>
-                    <h3>{{ content.projectKleiderordnungHeading }}</h3>
-                  </header>
-                  <p>
-                    <img
-                      src="img/icon-hanger.svg"
-                      width="24" height="24"
-                      class="project-thumb"
-                      loading="lazy"
-                      alt=""
-                    />
-                    <span class="text-line">
-                      {{ content.projectKleiderordnung1 }}
-                       <a
-                        href="https://www.kleiderordnung-duesseldorf.de"
-                        title="www.kleiderordnung-duesseldorf.de"
-                        target="_blank"
-                        rel="noopener"
-                      >{{ content.projectKleiderordnung2 }}</a>
-                      {{ content.projectKleiderordnung3 }}
-                      <span class="only-print code-link">www.kleiderordnung-duesseldorf.de</span>
-                    </span>
-                  </p>
-                  <p>
-                    <span class="hashtag">{{ content.projectKleiderordnungHashtag1 }}</span>
-                    <span class="hashtag">{{ content.projectKleiderordnungHashtag2 }}</span>
-                    <span class="hashtag">{{ content.projectKleiderordnungHashtag3 }}</span>
-                    <span class="hashtag">{{ content.projectKleiderordnungHashtag4 }}</span>
                   </p>
                 </div>
               </article>
@@ -649,7 +656,7 @@
                       <span class="hashtag brand-orange">HTML</span>
                       <span class="hashtag brand-green">CSS</span>
                       <span class="hashtag brand-yellow">JavaScript</span>
-                      <span class="hashtag brand-coral">Gutenberg</span>
+                      <span class="hashtag brand-coral">WooCommerce</span>
                     </div>
                   </li>
                   <li>
@@ -726,6 +733,7 @@
                       <span class="hashtag brand-yellow">Babel</span>
                       <span class="hashtag brand-coral">Stylelint</span>
                       <span class="hashtag brand-beige">eslint</span>
+                      <span class="hashtag brand-green">esbuild</span>
                       <span class="hashtag brand-red-light">PostCSS</span>
                     </div>
                   </li>
