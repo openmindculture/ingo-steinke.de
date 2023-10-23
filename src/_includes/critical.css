@@ -387,6 +387,13 @@ small {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .text-width,
+  .semitransparent .text-width {
+    width: 90%;
+  }
+}
+
 @media only screen and (max-width: 440px) {
   /* no min-width on small screens,
    * reduce fixed spacing
