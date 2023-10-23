@@ -196,8 +196,6 @@ module.exports = {
   "talkHsts2": ", Dezember 2018 (German) at Cologne Web Performance Meetup",
   "talkInfrastructure": "Infrastructure for Improved Web Performance",
   "talkInfrastructure2": ", May 2017 (German) at Cologne Web Performance Meetup",
-  "talkVocational": "Vocational Guidance: My Job! Your Job?",
-  "talkVocational2": ", January 2017 (German) at Gymnasium Gerresheim in Düsseldorf",
   /* Imprint, Contact */
   "imprintHeader": "Imprint and Contact Information",
   "imprintName": "Ingo Steinke",
