@@ -95,7 +95,7 @@ module.exports = {
   "projectShopwarePluginHashtag3": "PHP",
   "projectShopwarePluginHashtag4": "Vue.js",
   "projectReactAppHeading": "React-Web-App",
-  "projectReactApp1": "Die grafischen Oberfläche von wao.io visualisiert technische Daten und lässt Webmaster die Optimierung deiner Website selbst einstellen. Ich entwickelte und aktualisierte Komponenten der Web-App",
+  "projectReactApp1": "Die grafischen Oberfläche von wao.io visualisierte technische Daten und ließ Webmaster die Optimierung ihrer Website selbst einstellen. Ich entwickelte und aktualisierte Komponenten der Web-App",
   "projectReactApp2": "als Teil des Frontend- und Support-Teams",
   "projectReactApp3": ".",
   "projectReactAppHashtag1": "React",
