@@ -230,7 +230,7 @@
                     <img
                       src="img/icon-hanger.svg"
                       width="24" height="24"
-                      class="project-thumb"
+                      class="project-thumb project-thumb--kleiderordnung"
                       loading="lazy"
                       alt=""
                     />
@@ -269,7 +269,14 @@
                     <h3>{{ content.projectAtomicRelaunchHeading }}</h3>
                   </header>
                   <p>
-                    <img src="img/logo-fractal.svg" width="512" height="512" class="project-thumb" loading="lazy" alt="" />
+                    <img
+                      src="img/logo-fractal.svg"
+                      width="512"
+                      height="512"
+                      class="project-thumb project-thumb--atomic-design-system"
+                      loading="lazy"
+                      alt=""
+                    />
                     <span class="text-line">
                       {{ content.projectAtomicRelaunch1 }}
                       <br>{{ content.projectAtomicRelaunch2 }} <a href="https://fractal.build/" target="_blank" rel="noopener">{{ content.projectAtomicRelaunch3 }}</a>{{ content.projectAtomicRelaunch4 }}
@@ -285,7 +292,7 @@
                 </div>
               </article>
 
-              <article class="tile target-offset" id="project-wordpress-plugin">
+              <article class="tile target-offset" id="project-wordpress-woo">
                 <div class="flex bg-peel  pl1">
                   <header>
                     <h3>{{ content.projectWordpressWooHeading }}</h3>
@@ -294,7 +301,7 @@
                     <img
                       src="img/logo-wordpress.svg"
                       width="452" height="452"
-                      class="project-thumb"
+                      class="project-thumb project-thumb--wordpress-woo"
                       loading="lazy"
                       alt=""
                     />
@@ -321,43 +328,48 @@
                 </div>
               </article>
 
-              <article class="tile target-offset" id="project-portfolio-relaunch">
+              <article class="tile target-offset" id="project-daskannstdutun">
                 <div class="flex bg-peel  pl1">
                   <header>
-                    <h3>{{ content.projectPortfolioRelaunchHeading }}</h3>
+                    <h3>{{ content.projectDaskannstdutunHeading }}</h3>
                   </header>
                   <p>
                     <img
-                      src="img/icon-varnish.svg"
-                      width="512" height="512"
-                      class="project-thumb"
+                      src="img/logo-hand.svg"
+                      width="286" height="290"
+                      class="project-thumb project-thumb--daskannstdutun"
                       loading="lazy"
                       alt=""
                     />
                     <span class="text-line">
-                      {{ content.projectPortfolioRelaunch1 }}
-                      <a href="{{ content.canonicalHref }}">{{ content.projectPortfolioRelaunch2 }}</a> {{ content.projectPortfolioRelaunch3 }}<br>
+                      {{ content.projectDaskannstdutun1 }}
                       <a
-                        class="code-link"
-                        href="https://github.com/openmindculture/ingo-steinke.de"
-                        title="github.com/openmindculture/ingo-steinke.de"
+                        href="https://creativesforfuture.de/"
                         target="_blank"
                         rel="noopener"
-                      >
-                        {{ content.projectPortfolioRelaunch4 }}
-                      </a>
+                      >Creatives for Future</a>
+                      {{ content.projectDaskannstdutunAnd }}
+                      <a
+                        href="https://www.psy4f.org/"
+                        target="_blank"
+                        rel="noopener"
+                      >Psychologists for Future</a>
+                      {{ content.projectDaskannstdutunCreated }}
+                      &quot;{{ content.projectDaskannstdutunDKDT }}&quot;
+                      {{ content.projectDaskannstdutunLast }}
+                      <a
+                        href="https://daskannstdutun.de/"
+                        target="_blank"
+                        rel="noopener"
+                      >daskannstdutun.de</a>
                     </span>
                   </p>
-
                   <p>
-                    <span class="hashtag">{{ content.projectPortfolioRelaunchHashtag1 }}</span>
-                    <span class="hashtag">{{ content.projectPortfolioRelaunchHashtag2 }}</span>
-                    <span class="hashtag">{{ content.projectPortfolioRelaunchHashtag3 }}</span>
-                    <span class="hashtag">{{ content.projectPortfolioRelaunchHashtag4 }}</span>
-                    <span class="hashtag">{{ content.projectPortfolioRelaunchHashtag5 }}</span>
+                    <span class="hashtag">{{ content.projectDaskannstdutunHashtag1 }}</span>
+                    <span class="hashtag">{{ content.projectDaskannstdutunHashtag2 }}</span>
+                    <span class="hashtag">{{ content.projectDaskannstdutunHashtag3 }}</span>
                   </p>
                 </div>
-
               </article>
 
               <article class="tile target-offset" id="project-shopware-plugin">
@@ -369,7 +381,7 @@
                     <img
                       src="img/logo-shopware.svg"
                       width="512" height="512"
-                      class="project-thumb project-thumb--minify"
+                      class="project-thumb project-thumb--minify project-thumb--shopware-plugin"
                       loading="lazy"
                       alt=""
                     />
@@ -453,30 +465,40 @@
                 </div>
               </article>
 
-              <article class="tile target-offset" id="project-planted">
-                <div class="flex bg-peel pl1">
+              <article class="tile target-offset" id="project-portfolio-relaunch">
+                <div class="flex bg-peel  pl1">
                   <header>
-                    <h3>{{ content.projectPlantedHeading }}</h3>
+                    <h3>{{ content.projectPortfolioRelaunchHeading }}</h3>
                   </header>
                   <p>
-                    <img src="img/icon-tree-branch.svg" width="512" height="512" class="project-thumb" loading="lazy" alt="" />
+                    <img
+                      src="img/icon-varnish.svg"
+                      width="512" height="512"
+                      class="project-thumb"
+                      loading="lazy"
+                      alt=""
+                    />
                     <span class="text-line">
-                      {{ content.projectPlanted1 }}
-                      <a href="https://www.climatefounders.com/climate-hack" target="_blank" rel="noopener">{{
-                        content.projectPlanted2 }}</a>
-                      {{ content.projectPlanted3 }}
-                      <a href="https://planted.green"
-                         target="_blank" rel="noopener">{{
-                        content.projectPlanted4 }}</a>
-                      {{ content.projectPlanted5 }}
-                      <span class="only-print code-link">https://planted.green</span>
+                      {{ content.projectPortfolioRelaunch1 }}
+                      <a href="{{ content.canonicalHref }}">{{ content.projectPortfolioRelaunch2 }}</a> {{ content.projectPortfolioRelaunch3 }}<br>
+                      <a
+                        class="code-link"
+                        href="https://github.com/openmindculture/ingo-steinke.de"
+                        title="github.com/openmindculture/ingo-steinke.de"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        {{ content.projectPortfolioRelaunch4 }}
+                      </a>
                     </span>
                   </p>
+
                   <p>
-                    <span class="hashtag">{{ content.projectPlantedHashtag1 }}</span>
-                    <span class="hashtag">{{ content.projectPlantedHashtag2 }}</span>
-                    <span class="hashtag">{{ content.projectPlantedHashtag3 }}</span>
-                    <span class="hashtag">{{ content.projectPlantedHashtag4 }}</span>
+                    <span class="hashtag">{{ content.projectPortfolioRelaunchHashtag1 }}</span>
+                    <span class="hashtag">{{ content.projectPortfolioRelaunchHashtag2 }}</span>
+                    <span class="hashtag">{{ content.projectPortfolioRelaunchHashtag3 }}</span>
+                    <span class="hashtag">{{ content.projectPortfolioRelaunchHashtag4 }}</span>
+                    <span class="hashtag">{{ content.projectPortfolioRelaunchHashtag5 }}</span>
                   </p>
                 </div>
               </article>

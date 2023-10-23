@@ -313,6 +313,28 @@ small {
     margin-left: 0.5em;
   }
 
+  .tile img.project-thumb--kleiderordnung {
+    margin: 3em 1.5em 1em 1em;
+  }
+
+  .tile img.project-thumb--atomic-design-system {
+    margin: 2em 1em 1em 1em;
+  }
+
+  .tile img.project-thumb--wordpress-woo {
+    margin: 0 1em 1em 1em;
+  }
+
+  .tile img.project-thumb--daskannstdutun {
+    width: 5em;
+    height: 5em;
+    margin: 1.5em 1em 0.5em 1em;
+  }
+
+  .tile img.project-thumb--shopware-plugin {
+    margin-right: 1.5em;
+  }
+
   .row {
     display: block;
     display: flex;
