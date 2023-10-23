@@ -202,7 +202,7 @@ module.exports = {
   "imprintHeader": "Imprint and Contact Information",
   "imprintName": "Ingo Steinke",
   "imprintRole": "Web Developer",
-  "imprintStreetAddress": "Donaustr. 83",
+  "imprintStreetAddress": "Donaustr. 83 II",
   "imprintPostalCode": "12043",
   "imprintCity": "Berlin",
   "imprintCountryName": "Germany",

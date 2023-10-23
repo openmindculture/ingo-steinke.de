@@ -202,7 +202,7 @@ module.exports = {
   "imprintHeader": "Impressum und Kontaktdaten",
   "imprintName": "Ingo Steinke",
   "imprintRole": "Webentwickler",
-  "imprintStreetAddress": "Donaustr. 83",
+  "imprintStreetAddress": "Donaustr. 83 II",
   "imprintPostalCode": "12043",
   "imprintCity": "Berlin",
   "imprintCountryName": "Deutschland",
