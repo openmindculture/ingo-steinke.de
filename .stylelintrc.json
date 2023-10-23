@@ -3,6 +3,7 @@
   "rules": {
     "alpha-value-notation": null,
     "color-function-notation": null,
+    "color-hex-length": null,
     "declaration-block-no-redundant-longhand-properties": null,
     "keyframes-name-pattern": null,
     "media-feature-name-no-vendor-prefix": null,
