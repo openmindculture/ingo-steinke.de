@@ -83,6 +83,13 @@
   --brand-gray-gimp: #514b3a;
   --brand-black-inkscape: #24273c;
 
+  /* marker selection web safe color and wide gamut variations */
+  --textmarker-blue: var(--brand-blue-tailwind-react);
+  --textmarker-blue-semitransparent: rgba(85, 208, 244, 0.5);
+  --slightly-neon-blue: color(display-p3 0.39 0.922 1); /* more "neon" than above */
+  --slightly-neon-blue-semitransparent: color(display-p3 0.39 0.922 1 / 0.5);
+  --extreme-neon-blue: color(display-p3 0 0.922 1); /* as far as it gets (currently unused) */
+
   /* animation */
   --radius: 100%;
   --primary-animation-color: var(--deep-green);

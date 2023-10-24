@@ -77,6 +77,19 @@ a:focus {
   }
 }
 
+::selection {
+  background-color: var(--textmarker-blue);
+  background-color: var(--slightly-neon-blue);
+  color: var(--secondary-foreground);
+}
+
+h1::selection,
+a::selection {
+  background-color: var(--textmarker-blue-semitransparent);
+  background-color: var(--slightly-neon-blue-semitransparent);
+  color: var(--secondary-foreground);
+}
+
 /* stylelint-disable-next-line no-descending-specificity */
 .text-content-color a,
 .text-content-color a:link,
