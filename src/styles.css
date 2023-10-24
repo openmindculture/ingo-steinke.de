@@ -1,5 +1,10 @@
 @import url('_includes/design-tokens.css');
 
+body {
+  voice-family: male;
+  voice-pitch: high;
+}
+
 img {
   border: none;
 }
