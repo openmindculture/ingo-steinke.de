@@ -271,5 +271,12 @@ module.exports = {
   "ecofriendlyReportDocumentFilename": "2022-5-27-www.ingo-steinke.com-1503125752-report.pdf",
   "ecofriendlyIssued": "5/27/2022",
   "ecofriendlyValidUntil": "5/26/2023",
+  "ecofriendlyGreenWebCheckUrl": "https://www.thegreenwebfoundation.org/green-web-check/?url=https%3A%2F%2Fwww.ingo-steinke.com",
+  "ecofriendlyGreenWebCheckImageFilename": "badge-greencheckimage-www.ingo-steinke.com-2023",
+  "ecofriendlyGreenWebCheckImageOriginalSrc": "https://api.thegreenwebfoundation.org/greencheckimage/www.ingo-steinke.com?nocache=true",
+  "ecofriendlyGreenWebCheckImageAlt": "This website is hosted Green by goneo Internet GmbH - checked by thegreenwebfoundation.org",
+  "ecofriendlyEcograderUrl": "https://ecograder.com/report/CTpDfqTWQquOGlqMr7RS6ZlC",
+  "ecofriendlyEcograderTitle": "In October 2023, this page scored better than 86% of all URLs crawled by Ecograder.",
+  "ecofriendlyEcograderScore": "Ecograder Score: 96/100 (0.06 g CO₂e)",
   "buttonStopAnimation": "hide animation"
 };

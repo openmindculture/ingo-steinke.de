@@ -1113,40 +1113,61 @@
 
         <footer class="page-footer">
 
-          <div class="center transparent no-print">
-            <a
-              href="https://www.reflecta.network/changemaker/ingo-steinke?ref=f181cba6-ddc9-4791-b579-b02c3be47206"
-              title="Changemaker {{ content.at }} reflecta.network"
-              class="transparent"
-              target="_blank"
-            >
-              <img
-                src="img/reflecta-network-changemaker.svg"
-                alt="Logo: change maker {{ content.at }} reflecta network"
-                width="300"
-                height="109"
-                class="rounded-rectangle"
-              >
-            </a>
-            <span class="initially-hidden only-print">
-              Changemaker {{ content.at }} reflecta.network: www.reflecta.network/changemaker/ingo-steinke
-            </span>
-          </div>
-
-          <p class="badge transparent no-print">
-            <a
-              href="#ecofriendly"
-              title="{{ content.ecofriendlyWebsite }}"
-            >
-              <img
-                src="img/badge-cleaner-web-2023.svg"
-                alt="{{ content.cleanerWebBadge }}"
-                width="300"
-                height="92"
-              >
-            </a>
+          <p class="legal legal--links no-print">
+            <a href="#contact">{{ content.targetContact }}</a>
+            <a href="#imprint">{{ content.targetImprint }}</a>
+            <a href="#privacy">{{ content.targetPrivacy }}</a>
           </p>
 
+          <div id="wcb" class="carbonbadge no-print"></div>
+          <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
+
+          <div class="center transparent no-print">
+            <p>
+              <a
+                href="{{ content.ecofriendlyEcograderUrl }}"
+                target="_blank"
+                rel="noopener"
+                title="{{ content.ecofriendlyEcograderTitle }}"
+              >
+                {{ content.ecofriendlyEcograderScore }}
+              </a>
+            </p>
+          </div>
+
+          <div class="badges">
+            <div class="badge badge--greenweb transparent no-print">
+              <a
+                href="{{ content.ecofriendlyGreenWebCheckUrl }}"
+                target="_blank"
+                rel="noopener"
+              >
+                <picture>
+                  <source srcset="img/{{ content.ecofriendlyGreenWebCheckImageFilename }}.webp" type="image/webp">
+                  <source srcset="img/{{ content.ecofriendlyGreenWebCheckImageFilename }}.png" type="image/png">
+                  <img
+                     src="img/{{ content.ecofriendlyGreenWebCheckImageFilename }}.png"
+                     data-original-src="{{ content.ecofriendlyGreenWebCheckImageOriginalSrc }}"
+                     alt="{{ content.ecofriendlyGreenWebCheckImageAlt }}"
+                  >
+                </picture>
+              </a>
+            </div>
+
+            <div class="badge bade--cleanerweb transparent no-print">
+              <a
+                href="#ecofriendly"
+                title="{{ content.ecofriendlyWebsite }}"
+              >
+                <img
+                  src="img/badge-cleaner-web-2023.svg"
+                  alt="{{ content.cleanerWebBadge }}"
+                  width="300"
+                  height="92"
+                >
+              </a>
+            </div>
+          </div>
 
           <section id="ecofriendly" class="initially-hidden no-print clear target-offset text-content-layout text-content-color text-width text-center">
             <div class="aside-heading">{{ content.ecofriendlyHeading }}</div>
@@ -1205,20 +1226,14 @@
             </p>
           </section>
 
-          <div id="wcb" class="carbonbadge no-print"></div>
-          <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
-
           <p class="no-print">
             <button id="animation-toggle">{{ content.buttonStopAnimation }}</button>
           </p>
 
-          <p class="no-print">
-            <a href="#contact">{{ content.targetContact }}</a>
-            <a href="#imprint">{{ content.targetImprint }}</a>
-            <a href="#privacy">{{ content.targetPrivacy }}</a>
-          </p>
+          <div class="legal legal--copyright">
+            &copy; {{ "now" | date: "%Y" }} {{ content.imprintName }}
+          </div>
 
-          &copy; {{ "now" | date: "%Y" }} {{ content.imprintName }}
         </footer>
       </div>
 
