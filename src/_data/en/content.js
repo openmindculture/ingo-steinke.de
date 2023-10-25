@@ -132,7 +132,7 @@ module.exports = {
   "workHeading": "Long-Lasting Solutions",
   "work": "I can implement your layouts across platforms, and pixel-perfectly if needed. My goal is to build long-lasting solutions that are elegant, transparent, and easy to maintain. Modular components, themes, as well as CSS frameworks and methodologies like BEM and Atomic Design help to simplify collaboration and further development. Continuous testing allows me to discover and eliminate errors at an early stage.",
   "workFullstackHeading": "Full-Stack Experience",
-  "workFullstack": "When enhancing existing code, I benefit from professional experience and a pragmatic approach. With back-end and DevOps experience and a high willingness to learn, I can also take charge of tasks that may arise besides front-end development.",
+  "workFullstack": "When enhancing existing code, I benefit from professional experience and a pragmatic approach. With back-end and DevOps experience and a high willingness to learn, I can take charge or find a suitable partner for all web development tasks. My focus is CSS based frontend development.",
   "workPluginsHeading": "Plugin Development",
   "workPlugins1": "My preferred approach is to implement back-end interfaces as independent modules. For the web performance service wao.io, I developed plugins",
   "workSwLink1Text": "for Shopware 6",

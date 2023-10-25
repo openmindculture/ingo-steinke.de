@@ -130,9 +130,9 @@ module.exports = {
   "projectDaskannstdutunHashtag3": "CSS",
   /* work */
   "workHeading": "Langlebige Lösungen",
-  "work": "Deine Layouts realisiere ich plattformübergreifend, auf Wunsch auch pixelgenau. Mein Ziel sind langlebige Lösungen, elegant, verständlich und pflegeleicht. Modulare Komponenten, Themes, sowie CSS-Frameworks und Methodiken wie BEM und Atomic Design erleichtern die Zusammenarbeit und Weiterentwicklung. Kontinuierliches Testen ermöglicht es mir, Fehler frühzeitig zu entdecken und zu beheben.",
+  "work": "Deine Layouts realisiere ich plattformübergreifend, auf Wunsch auch pixelgenau. Mein Ziel sind langlebige Lösungen, elegant, verständlich und pflegeleicht. Modulare Komponenten, Themes, sowie CSS-Frameworks und Methoden wie BEM und Atomic Design erleichtern die Zusammenarbeit und Weiterentwicklung. Kontinuierliches Testen ermöglicht mir, Fehler frühzeitig zu entdecken und zu beheben.",
   "workFullstackHeading": "Full-Stack-Erfahrung",
-  "workFullstack": "Bei der Weiterentwicklung bestehenden Codes kommt mir meine Berufserfahrung und meine pragmatische Einstellung zugute. Mit meinen Erfahrungen im Backend- und DevOps-Bereich und meiner hohen Lernbereitschaft übernehme ich bei Bedarf auch Aufgaben, die sich im Umfeld der Frontend-Entwicklung ergeben.",
+  "workFullstack": "Bei der Weiterentwicklung bestehenden Codes kommt mir meine Berufserfahrung und meine pragmatische Einstellung zugute. Mit meinen Erfahrungen im Backend- und DevOps-Bereich und meiner hohen Lernbereitschaft übernehme ich bei Bedarf alle Aufgaben, die sich bei der Webentwicklung ergeben oder finde geeignete Partner:innen für die Umsetzung. Mein Schwerpunkt ist die Frontend-Entwicklung mit CSS.",
   "workPluginsHeading": "Plugin-Programmierung",
   "workPlugins1": "Schnittstellen zum Backend implementiere ich vorzugsweise als unabhängige Module. Für den Web-Performance-Servive wao.io entwickelte ich jeweils ein",
   "workSwLink1Text": "Plugin für Shopware 6",
