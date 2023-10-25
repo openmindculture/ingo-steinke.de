@@ -1,13 +1,32 @@
 # Changelog
 
-## [3.2.2] - content update
+## [3.3.0] - content update - 2023-10
+* improve and extend text content
+* extend skills
+* improve project list layout
+* improve hero image layout
+* fix tab navigation
+
+## [3.2.1] - [3.2.2] - content update, tech improvements - 2023-10-24
+* new hero image photo
+* update project list
+* update intro text
+* fix security header
+* footer layout, eco badges
+* define speech sound
+* wide gamut selection color
+* prevent false positive pdf indexing errors
+* improve social links
+* remove obsolete talk
+* remove obsolete postal address
+* webp alternative images
+
+## [3.2.0] - update data
+* update valid VAT tax number
+* update renewed clear web badge
 * update project list
 * remove old avatar image from header
 * make main navigation initially visible
-
-## [3.2.1] - update data
-* update valid VAT tax number
-* update renewed clear web badge
 
 ## [3.1.1] - upgrade test framework
 * upgrade CodeceptJS and related dependencies
