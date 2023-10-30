@@ -522,6 +522,7 @@ Offscreen menu style
 .grid-container .tile a:visited,
 .grid-container .tile a:active {
   color: var(--primary-foreground);
+  font-size: 1em;
 }
 
 .grid-container .tile a:focus,
