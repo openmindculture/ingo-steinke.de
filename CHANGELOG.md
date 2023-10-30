@@ -1,10 +1,11 @@
 # Changelog
 
-## [3.3.0] - content update - 2023-10
-* improve and extend text content
+## [3.3.0] - content and style update - 2023-10
+* improve and extend text content #135 #150 #162
 * extend skills
-* improve project list layout
-* improve hero image layout
+* extend color spectrum beyond RGB #124 #130 #165
+* improve project list layout #135
+* improve hero and image layout #140 #155 #163
 * fix tab navigation
 
 ## [3.2.1] - [3.2.2] - content update, tech improvements - 2023-10-24
