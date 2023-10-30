@@ -439,7 +439,7 @@ small {
   }
 
   img.avatar {
-    max-width: 50%;
+    margin-bottom: 2em;
     height: auto;
   }
 
