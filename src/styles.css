@@ -669,16 +669,20 @@ ul.grid-container.skills {
 
 .brand-yellow { /* JS, ES6, Symfony, ImageMagick */
   background-color: var(--brand-yellow-js);
+  background-color: var(--brand-yellow-js-neon);
   color: #000;
 }
 
 .brand-yellow-dark { /* miro, smarty */
   background-color: var(--brand-yellow-miro);
+  background-color: var(--brand-yellow-miro-neon);
   color: #000;
 }
 
 .brand-orange { /* HTML */
+  background-color: orange;
   background-color: var(--brand-orange-html);
+  background-color: var(--brand-orange-html-neon);
   color: #fff;
 }
 
@@ -689,16 +693,19 @@ ul.grid-container.skills {
 
 .brand-red-dark {
   background-color: var(--brand-red-oracle-soap-npm);
+  background-color: var(--brand-red-oracle-soap-npm-neon);
   color: #fff;
 }
 
 .brand-red-light {
   background-color: var(--brand-red-express-post-apache);
+  background-color: var(--brand-red-express-post-apache-neon);
   color: #fff;
 }
 
 .brand-purple {
   background-color: var(--brand-purple-scss);
+  background-color: var(--brand-purple-scss-neon);
   color: #fff;
 }
 
@@ -709,21 +716,25 @@ ul.grid-container.skills {
 
 .brand-blue {
   background-color: var(--brand-blue-typescript);
+  background-color: var(--brand-blue-typescript-neon);
   color: #fff;
 }
 
 .brand-blue-less {
   background-color: var(--brand-blue-less);
+  background-color: var(--brand-blue-less-neon);
   color: #fff;
 }
 
 .brand-blue-light {
   background-color: var(--brand-blue-tailwind-react);
+  background-color: var(--brand-blue-tailwind-react-neon);
   color: #000;
 }
 
 .brand-blue-liquid {
   background-color: var(--brand-blue-liquid);
+  background-color: var(--brand-blue-liquid-neon);
   color: #fff;
 }
 
@@ -749,6 +760,7 @@ ul.grid-container.skills {
 
 .brand-green {
   background-color: var(--brand-green-css-mongo);
+  background-color: var(--brand-green-css-mongo-neon);
   color: #fff;
 }
 

@@ -59,25 +59,36 @@
 
   /* colors inspired by external brands */
   --brand-yellow-js: #f5df4d;
-  --brand-yellow-miro: #f0c140; /* and smarty */
+  --brand-yellow-js-neon: color(display-p3 0.96 0.87 0.30);
+  --brand-yellow-miro: #f0c140;
+  --brand-yellow-miro-neon: color(display-p3 0.94 0.76 0.25);
   --brand-orange-html: #f26600;
+  --brand-orange-html-neon: color(display-p3 0.95 0.40 0.00);
   --brand-orange-mysql: #f0931a;
   --brand-brown-composer: #8a5428;
   --brand-red-express-post-apache: #dd3808;
+  --brand-red-express-post-apache-neon: color(display-p3 0.87 0.22 0.03);
   --brand-red-oracle-soap-npm: #cb3837;
-  --brand-purple-scss: #bf4080; /* and krita */
+  --brand-red-oracle-soap-npm-neon: color(display-p3 0.80 0.22 0.22);
+  --brand-purple-scss: #bf4080;
+  --brand-purple-scss-neon: color(display-p3 0.75 0.25 0.50);
   --brand-purple-dark-preact: #673ab8;
   --brand-blue-tailwind-react: #55d0f4;
+  --brand-blue-tailwind-react-neon: color(display-p3 0.33 0.82 0.96);
   --brand-blue-shopware6: #5c60e1;
   --brand-blue-shopware5: #3a9bf8;
   --brand-blue-liquid: #3a9bcd;
+  --brand-blue-liquid-neon: color(display-p3 0.23 0.61 0.80);
   --brand-blue-typescript: #3178c6;
-  --brand-blue-php7: #6482bc;
-  --brand-blue-php8: #4f5b93; /* and snowpack */
-  --brand-blue-less: #0769ad; /* and XML */
+  --brand-blue-typescript-neon: color(display-p3 0.19 0.47 0.78);
+  --brand-blue-php7: #7994c9;
+  --brand-blue-php8: #4f5b93;
+  --brand-blue-less: #0769ad;
+  --brand-blue-less-neon: color(display-p3 0.03 0.41 0.68);
   --brand-green-twig-bg: #e0e9a1;
-  --brand-green-twig-fg: #006f9f;
+  --brand-green-twig-fg: #03354b;
   --brand-green-css-mongo: #017d63;
+  --brand-green-css-mongo-neon: color(display-p3 0.00 0.49 0.39);
   --brand-gray-mongoose: #58646d;
   --brand-gray-eleventy: #1d4950;
   --brand-gray-gimp: #514b3a;

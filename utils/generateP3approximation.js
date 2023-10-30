@@ -10,14 +10,14 @@ const generateP3Approximation = function() {
     }
     let definitionParts = colorDefinition.split('#');
     let hexColor  = definitionParts.pop();
-    let redPart   = parseInt('0x' + hexColor.substring(0,2));
-    let greenPart = parseInt('0x' + hexColor.substring(0,2));
-    let BluePart  = parseInt('0x' + hexColor.substring(0,2));
+    let redPart   = parseInt(hexColor.substring(0,2), 16);
+    let greenPart = parseInt(hexColor.substring(2,4), 16);
+    let bluePart  = parseInt(hexColor.substring(4,6), 16);
     let propertyPart =  (definitionParts[0].split(':'))[0];
     colorDefinition = 'color(display-p3';
     colorDefinition += ' ' + (redPart / 2.55).toFixed(2);
     colorDefinition += ' ' + (greenPart / 2.55).toFixed(2);
-    colorDefinition += ' ' + (BluePart / 2.55).toFixed(2);
+    colorDefinition += ' ' + (bluePart / 2.55).toFixed(2);
     colorDefinition += ')';
     output += propertyPart;
     if (propertyPart.startsWith('--')) {
