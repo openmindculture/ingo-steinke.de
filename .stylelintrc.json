@@ -9,6 +9,7 @@
     "media-feature-name-no-vendor-prefix": null,
     "number-no-trailing-zeros": null,
     "property-no-vendor-prefix": null,
+    "rule-empty-line-before": null,
     "selector-class-pattern": null,
     "selector-id-pattern": null,
     "selector-not-notation": null,

@@ -101,7 +101,6 @@ small {
 
   .jumbotronHeader h1 {
     font-size: 5rem;
-    font-size: 13vh;
     line-height: 1.25;
     letter-spacing: 0.125rem;
     padding: 0;
@@ -110,12 +109,20 @@ small {
 
   .jumbotronHeader p {
     font-size: 2.325rem;
-    font-size: 6vh;
     font-family: var(--body-font-family);
     font-weight: var(--body-font-weight);
     color: var(--primary-heading);
     padding: 0;
     margin: 0;
+  }
+
+  @media screen and (min-width: 950px) {
+    .jumbotronHeader h1 {
+      font-size: 13vh;
+    }
+    .jumbotronHeader p {
+      font-size: 6vh;
+    }
   }
 
   img.avatar {
