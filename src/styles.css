@@ -277,6 +277,10 @@ a.menu-toggle:hover {
   -webkit-box-orient: vertical;
 }
 
+.tile-content {
+  padding: 0 1em 0 1em;
+}
+
 .flow-grid .hashtag {
   font-size: 0.95em;
   background-color: var(--hashtag-default);

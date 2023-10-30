@@ -299,7 +299,7 @@ small {
     width: 4em;
     height: 4em;
     float: right;
-    margin: 1em;
+    margin: 1em 0 1em 1em;
   }
 
   .tile img.project-thumb--shrink {
@@ -314,25 +314,25 @@ small {
   }
 
   .tile img.project-thumb--kleiderordnung {
-    margin: 3em 1.5em 1em 1em;
+    margin: 3em 0.5em 1em 1em;
   }
 
   .tile img.project-thumb--atomic-design-system {
-    margin: 2em 1em 1em 1em;
+    margin: 2em 0 1em 1em;
   }
 
   .tile img.project-thumb--wordpress-woo {
-    margin: 0 1em 1em 1em;
+    margin: 0 0 1em 1em;
   }
 
   .tile img.project-thumb--daskannstdutun {
     width: 5em;
     height: 5em;
-    margin: 1.5em 1em 0.5em 1em;
+    margin: 1.5em 0 0.5em 1em;
   }
 
   .tile img.project-thumb--shopware-plugin {
-    margin-right: 1.5em;
+    margin-right: 0.5em;
   }
 
   .row {

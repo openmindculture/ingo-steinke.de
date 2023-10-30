@@ -97,7 +97,7 @@ module.exports = {
   "projectReactAppHeading": "React-Web-App",
   "projectReactApp1": "Die grafischen Oberfläche von wao.io visualisierte technische Daten und ließ Webmaster die Optimierung ihrer Website selbst einstellen. Ich entwickelte und aktualisierte Komponenten der Web-App",
   "projectReactApp2": "als Teil des Frontend- und Support-Teams",
-  "projectReactApp3": ".",
+  "projectReactApp3": "",
   "projectReactAppHashtag1": "React",
   "projectReactAppHashtag2": "JSX",
   "projectReactAppHashtag3": "ES6",
