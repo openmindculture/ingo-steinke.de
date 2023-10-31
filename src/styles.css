@@ -68,7 +68,9 @@ a:focus {
 
 .social-links a:hover,
 .social-links a:focus {
-  color: var(--secondary-foreground);
+  border-radius: 0.25em;
+  color: var(--primary-background);
+  padding: 1.25em 1em 0.75em 1em;
 }
 
 .font-sans {
@@ -797,6 +799,19 @@ ul.grid-container.skills {
 .brand-brown-dark {
   background-color: var(--brand-gray-gimp);
   color: #fff;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.badge--greenweb a:hover {
+  background-image: none;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.badge--greenweb a:hover img {
+  border-radius: 0.5em;
+  border: solid 2px var(--link-hover-background);
+  background: var(--link-hover-background);
+  margin: -2px 0 -2px 0;
 }
 
 #top #wcb #wcb_a,
