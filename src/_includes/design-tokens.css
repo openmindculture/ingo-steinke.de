@@ -22,6 +22,7 @@
   --omega-purple: #623144;
   --palo-rose: #fedbbd;
   --merino-lighter: #ebeff2;
+  --merino-slightly-lighter: #d1d4d6;
   --merino-light: #bbbfc2;
   --merino-dark: #83878a;
   --pantone-stormy-weather: #58646d;
@@ -38,6 +39,7 @@
   --link-hover-background: var(--pantone-illuminating);
   --primary-background: var(--spermidine-green);
   --secondary-background: var(--merino-light);
+  --secondary-lighter-background: var(--merino-slightly-lighter);
   --nav-menu-background: var(--greenish-blue);
   --peel-gradient: var(--greenish-blue);
   --peel-gradient-semitrans: rgba(5, 50, 69, 0.5);

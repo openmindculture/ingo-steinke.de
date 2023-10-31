@@ -220,8 +220,8 @@ a.menu-toggle:hover {
   .text-content-color a:hover,
   .text-content-color a:focus {
     background-image:
-      linear-gradient(var(--secondary-background), var(--secondary-background)),
-      linear-gradient(var(--secondary-background), var(--secondary-background)),
+      linear-gradient(var(--secondary-lighter-background), var(--secondary-lighter-background)),
+      linear-gradient(var(--secondary-lighter-background), var(--secondary-lighter-background)),
       linear-gradient(var(--link-hover-background), var(--link-hover-background));
   }
 }
