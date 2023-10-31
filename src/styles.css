@@ -274,8 +274,6 @@ a.menu-toggle:hover {
   margin-left: 2px;
   overflow: hidden;
   text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
 }
 
 .tile-content {
@@ -555,12 +553,19 @@ Offscreen menu style
   max-width: 490px;
   margin-left: auto;
   margin-right: auto;
-  padding: 1em 1em 0 1em;
+  padding: 0 1em 0 1em;
 }
 
 .social-links svg {
   width: 25px;
   height: auto;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.social-links a:not(.only-print) {
+  display: block;
+  min-width: 2.5em;
+  min-height: 2.5em;
 }
 
 .social-links a:not(a:hover):not(a:focus) {

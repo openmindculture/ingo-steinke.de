@@ -23,6 +23,14 @@ body {
   overflow-x: hidden;
 }
 
+@media screen and (min-width: 950px) {
+  html,
+  body {
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+  }
+}
+
 h1,
 h2,
 h3,
