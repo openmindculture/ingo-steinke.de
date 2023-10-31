@@ -16,7 +16,7 @@ figure.content-image {
 }
 
 figure.content-image img {
-  max-width: calc(100vw - 48px);
+  max-width: calc(100vw - 24px);
   width: 800px;
   height: auto;
 }
