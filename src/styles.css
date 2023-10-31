@@ -292,6 +292,7 @@ a.menu-toggle:hover {
 
 .code-link {
   font-family: monospace;
+  font-size: 1em;
 }
 
 .code-link:not(.only-print) {
