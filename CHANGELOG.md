@@ -1,8 +1,9 @@
 # Changelog
 
-## [3.3.0] - - [3.3.2] content and style update - 2023-10
+## [3.3.0] - - [3.3.2] content and style update - 2023-10-31
 * improve and extend skills and text content #135 #150 #162
 * extend color spectrum beyond RGB #124 #130 #165
+* improve color contrast #176
 * improve project list layout #135 #169
 * improve hero and image layout #140 #155 #163 #171
 * improve mobile photo layout size #173
@@ -10,6 +11,8 @@
 * fix social links and page widthh appearance #168 #174
 * fix navigation link style #139 #170
 * fix code link appearance #172
+* fix broken links #176
+* remove redundant title attributes #176
 
 ## [3.2.1] - [3.2.2] - content update, tech improvements - 2023-10-24
 * new hero image photo
