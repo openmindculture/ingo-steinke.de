@@ -1,6 +1,6 @@
 # Changelog
 
-## [3.3.0] - content and style update - 2023-10
+## [3.3.0] - - [3.3.2] content and style update - 2023-10
 * improve and extend text content #135 #150 #162
 * extend skills
 * extend color spectrum beyond RGB #124 #130 #165
