@@ -523,3 +523,14 @@ small {
     overflow-x: hidden;
   }
 }
+
+@media only screen and (max-width: 375px) {
+  .jumbotronHeader h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+  }
+  .jumbotronHeader p {
+    line-height: 1.5;
+    font-size: 2.25em;
+  }
+}
