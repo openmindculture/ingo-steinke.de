@@ -293,6 +293,9 @@ a.menu-toggle:hover {
 .code-link {
   font-family: monospace;
   font-size: 1em;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow-x: clip;
 }
 
 .code-link:not(.only-print) {
@@ -628,6 +631,18 @@ a.menu-toggle:hover {
   0% { background-position: 50% 0; }
   50% { background-position: 50% 100%; }
   100% { background-position: 50% 0; }
+}
+
+ul.code-links {
+  max-width: 100%;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+@media only screen and (max-width: 490px) {
+  ul.code-links {
+    padding-left: 1.25rem;
+  }
 }
 
 /* skills grid */
