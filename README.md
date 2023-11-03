@@ -27,16 +27,22 @@ This is a screenshot after the relaunch in 2021:
 npm run build
 ```
 
-## Deployment
+## Deployment: 
+
+### Netlify CI (optional, currently deactivated)
 
 - Commits to the master branch will trigger a production deployment by netlify.
 - Commits to pull requests will trigger preview builds to a preview domain.
 
-### Distribution Directories
+#### Distribution Directories
 
 Distribution directories (`dist`, `dist_en`) are pushed to GitHub.
 It is not necessary to re-build them on the "serverless" server,
 Netlify can deploy the distributed content without further modification.
+
+### Manual deployment: SFTP / SCP
+
+Upload `dist` content to `ingo-steinke.de` and `dist_en` content to `ingo-steinke.com`.
 
 ## Content / localization
 
