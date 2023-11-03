@@ -7,6 +7,7 @@
     "comment-empty-line-before": null,
     "declaration-block-no-redundant-longhand-properties": null,
     "keyframes-name-pattern": null,
+    "max-empty-lines": null,
     "media-feature-name-no-vendor-prefix": null,
     "number-no-trailing-zeros": null,
     "property-no-vendor-prefix": null,

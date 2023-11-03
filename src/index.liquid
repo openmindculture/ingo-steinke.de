@@ -39,7 +39,7 @@
     <link rel="preload" href="fonts/montserrat-v15-latin-ext_latin-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" media="screen" href="styles.css?v=3.3.2">
     <script src="js/scripts.js"></script>
-    <!-- link rel="stylesheet" media="none" onload="this.media='screen'" href="decoration.css" -->
+    <link rel="stylesheet" media="screen and (prefers-reduced-motion: no-preference)" href="decoration.css?v=3.3.2-poc-132-202311031654">
     <link rel="stylesheet" media="print" href="print.css">
     <meta name=author content="{{ content.metaAuthor }}">
     <meta
@@ -1206,24 +1206,10 @@
 
       <aside class="decoration" id="decoration">
         <div class="animation-wrapper">
-          <div class="flounder"></div>
-          <div class="flounder"></div>
+          <div class="flounder flounder--pie position position--bottom-left"></div>
+          <div class="flounder flounder--pie position position--top-right"></div>
+          <div class="flounder flounder--pie position position--bottom-right"></div>
         </div>
-
-        <div class="animation-wrapper secondary">
-          <div class="flounder"></div>
-          <div class="flounder"></div>
-        </div>
-
-        <svg>
-          <defs>
-            <filter id="filter">
-              <feGaussianBlur in="SourceGraphic" stdDeviation="18" result="blur" />
-              <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 28 -10" result="filter" />
-              <feComposite in="SourceGraphic" in2="filter" operator="atop" />
-            </filter>
-          </defs>
-        </svg>
       </aside>
     </div>
   </body>
