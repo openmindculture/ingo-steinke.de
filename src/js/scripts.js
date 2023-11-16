@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const navMenu = document.getElementById('main-menu');
   const languageSwitch = document.getElementById('language-switch');
   const animationToggle = document.getElementById('animation-toggle');
-
+console.log('boo d`nilreb!');
   /* Progressive enhancement:
    * DOM elements with visibility controlled by script, like sticky-header,
    * must always stay visible without javascript,
@@ -64,4 +64,23 @@ window.addEventListener('DOMContentLoaded', () => {
       document.getElementById('decoration').style.display = 'none';
     });
   }
+
+  var decorationElement = document.getElementById('decoration');
+  console.log(typeof decorationElement + ' decorationElement: ', decorationElement);
+  if (decorationElement) {
+    var randomProperties = [
+      '--random-factor-grow-max',
+      '--random-factor-grow-delay-top-right',
+      '--random-factor-grow-delay-bottom-right',
+      '--random-factor-grow-delay-bottom-left',
+      '--random-factor-bottom-delay-bottom-left',
+      '--random-factor-left-delay-bottom-left',
+      '--random-factor-position-left',
+      '--random-factor-position-bottom',
+    ];
+    for (var i=0; i<randomProperties.length; i++) {
+      decorationElement.style.setProperty(randomProperties[i], Math.random());}
+      console.log(`assigned random value to randomProperties[${i}]: ${randomProperties[i]}`)
+  }
+
 });
