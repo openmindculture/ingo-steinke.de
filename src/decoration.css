@@ -62,13 +62,13 @@
     bottom: auto;
     left: auto;
   }
-  /* TODO rename alternate is pulse */
+
   .position--top-right {
     top: -10%;
     right: -10%;
     animation:
-      pulse-resize-shrink 5s infinite alternate ease-in-out,
-      pulse-travel-top 7s infinite alternate ease-in-out;
+      resize-shrink 5s infinite alternate ease-in-out,
+      travel-top 7s infinite alternate ease-in-out;
   }
   .position--top-left {
     top: -10%;
@@ -78,21 +78,21 @@
     bottom: -10%;
     left: -10%;
     animation:
-      pulse-resize-grow 7s infinite alternate ease-in-out,
-      pulse-travel-bottom 5s infinite alternate ease-in-out,
-      pulse-travel-left 11s infinite alternate ease-in-out;
+      resize-grow 7s infinite alternate ease-in-out,
+      travel-bottom 5s infinite alternate ease-in-out,
+      travel-left 11s infinite alternate ease-in-out;
   }
   .position--bottom-right {
     bottom: -20%;
     right: -20%;
     transform: scale(1);
     animation:
-      pulse-resize-grow 7s infinite alternate ease-in-out,
-      pulse-travel-bottom 9s infinite alternate ease-in-out;
+      resize-grow 7s infinite alternate ease-in-out,
+      travel-bottom 9s infinite alternate ease-in-out;
   }
 
 
-  @keyframes pulse-resize-grow {
+  @keyframes resize-grow {
     0% {
       transform: scale(1);
     }
@@ -101,7 +101,7 @@
     }
   }
 
-  @keyframes pulse-resize-grow-slightly {
+  @keyframes resize-grow-slightly {
     0% {
       transform: scale(1);
     }
@@ -110,7 +110,7 @@
     }
   }
 
-  @keyframes pulse-resize-shrink {
+  @keyframes resize-shrink {
     0% {
       transform: scale(1);
     }
@@ -119,7 +119,7 @@
     }
   }
 
-  @keyframes pulse-travel-bottom {
+  @keyframes travel-bottom {
     0% {
       bottom: -20%;
     }
@@ -128,7 +128,7 @@
     }
   }
 
-  @keyframes pulse-travel-left {
+  @keyframes travel-left {
     0% {
       left: -10%;
     }
@@ -137,7 +137,7 @@
     }
   }
 
-  @keyframes pulse-travel-top {
+  @keyframes travel-top {
     0% {
       top: -10%;
     }
@@ -148,7 +148,7 @@
 
   @keyframes travel-top-left {
     0% {
-      top: 0%;
+      top: 0;
     }
     100% {
       top: 60%;
