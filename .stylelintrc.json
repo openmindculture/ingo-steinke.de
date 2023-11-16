@@ -5,6 +5,7 @@
     "color-function-notation": null,
     "color-hex-length": null,
     "comment-empty-line-before": null,
+    "custom-property-empty-line-before": null,
     "declaration-block-no-redundant-longhand-properties": null,
     "keyframes-name-pattern": null,
     "max-empty-lines": null,

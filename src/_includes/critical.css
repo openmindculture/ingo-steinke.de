@@ -534,3 +534,10 @@ small {
     font-size: 2.25em;
   }
 }
+
+@media screen and (prefers-reduced-motion) {
+  .decoration {
+    display: none;
+    animation: none;
+  }
+}
