@@ -75,12 +75,12 @@
     left: -10%;
   }
   .position--bottom-left {
-    bottom: -10%;
+    bottom: -20%;
     left: -10%;
     animation:
       resize-grow 7s infinite alternate ease-in-out,
       travel-bottom 5s infinite alternate ease-in-out,
-      travel-left 11s infinite alternate ease-in-out;
+      travel-left 8s infinite alternate ease-in-out;
   }
   .position--bottom-right {
     bottom: -20%;
