@@ -14,6 +14,13 @@
   }
 }
 
+@media (prefers-reduced-transparency) {
+  .text-content-color.semitransparent {
+    background-image: none;
+    background-color: var(--secondary-lighter-background);
+  }
+}
+
 #decoration {
   /*
    * random factors are optionally adjusted using JavaScript

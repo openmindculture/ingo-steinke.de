@@ -107,6 +107,10 @@ small {
     background-color: rgba(29, 73, 80, 0.75);
   }
 
+  @media (prefers-reduced-transparency) {
+    background-color: rgba(29, 73, 80, 1);
+  }
+
   .jumbotronHeader h1 {
     font-size: 5rem;
     line-height: 1.25;
@@ -156,6 +160,10 @@ small {
     justify-content: space-between;
     max-width: 1500px;
     margin: 0 auto;
+  }
+
+  @media (prefers-reduced-transparency) {
+    box-shadow: 0 7px 14px 0 rgba(29, 73, 80, 1);
   }
 
   .sticky-header > .wrapper img.avatar {
