@@ -1,5 +1,10 @@
 # Changelog
 
+## [3.3.3] style update - 2023-11-16
+* simplified animated decoration #132
+* randomize and asnychronize animated decoration objects #132
+* respect reduced transparency preference #179
+
 ## [3.3.0] - - [3.3.2] content and style update - 2023-10-31
 * improve and extend skills and text content #135 #150 #162
 * extend color spectrum beyond RGB #124 #130 #165
