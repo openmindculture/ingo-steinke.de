@@ -2,6 +2,7 @@
 
 ## [3.3.4] content update - 2023-11-28
 * improve and extend text content #162
+* improve stop animation button hover cursor #136
 
 ## [3.3.3] style update - 2023-11-16
 * simplified animated decoration #132
