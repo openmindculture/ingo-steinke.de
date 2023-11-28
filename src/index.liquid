@@ -37,9 +37,9 @@
     </style>
     <link rel="preload" href="fonts/bitter-v16-latin-700.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/montserrat-v15-latin-ext_latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" media="screen" href="styles.css?v=3.3.3">
-    <script src="js/scripts.js?v=3.3.3"></script>
-    <link rel="stylesheet" media="screen and (prefers-reduced-motion: no-preference)" href="decoration.css?v=3.3.3">
+    <link rel="stylesheet" media="screen" href="styles.css?v=3.3.4">
+    <script src="js/scripts.js?v=3.3.4"></script>
+    <link rel="stylesheet" media="screen and (prefers-reduced-motion: no-preference)" href="decoration.css?v=3.3.4">
     <link rel="stylesheet" media="print" href="print.css">
     <meta name=author content="{{ content.metaAuthor }}">
     <meta
@@ -208,6 +208,12 @@
                 <a href="#contact">{{ content.ctaContact }}</a>
                 <br>
                 {{ content.workWithMe2 }}
+              </p>
+
+              <h3>{{ content.pricingHeading }}</h3>
+
+              <p>
+                {{ content.pricing }}
               </p>
 
             </article>
@@ -544,16 +550,24 @@
               <p>
                 {{ content.work }}
               </p>
+              <h3>{{ content.workReliableHeading }}</h3>
+              <p>
+                {{ content.workRelaible }}
+              </p>
               <h3>{{ content.workFullstackHeading }}</h3>
               <p>
                 {{ content.workFullstack }}
+              </p>
+              <h3>{{ content.workTeamHeading }}</h3>
+              <p>
+                {{ content.workTeam }}
               </p>
               <h3 class="target-offset" id="plugin-programmierung">{{ content.workPluginsHeading }}</h3>
               <p>
                 {{ content.workPlugins1 }}
                 <a href="#project-shopware-plugin">{{ content.workSwLink1Text }}</a>
                 {{ content.workPlugins2 }}
-                {{ content.workWpLinkText }} {{ content.workPlugins3 }}
+                {{ content.workWpLinkText }}{{ content.workPlugins3 }}
                 <a
                   href="https://store.shopware.com/waoio62482995391f/wao.io-cache-control.html"
                   target="_blank"
@@ -571,10 +585,17 @@
                   href="https://github.com/openmindculture/wp-contact-form-inbox-report-mailer-plugin"
                   target="_blank"
                   rel="noopener"
-                >{{ content.workPlugins6 }}</a>.
+                >{{ content.workPlugins7 }}</a>.
                 {{ content.workPluginsOther }}
+                <a
+                  href="https://plugins.jetbrains.com/plugin/16721-cute-pink-light-theme"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Cute Pink Light Theme
+                </a>.
               </p>
-              <p class="only-print">
+              <div class="only-print">
                 <ul class="code-links">
                   <li>
                     <a
@@ -586,16 +607,7 @@
                       plugins.jetbrains.com/plugin/16721-cute-pink-light-theme
                     </a>
                   </li>
-                  <li>
-                    <a
-                      class="code-link"
-                      href="https://store.shopware.com/waoio62482995391f/wao.io-cache-control.html"
-                      target="_blank"
-                      rel="noopener"
-                    >
-                      store.shopware.com/waoio62482995391f/wao.io-cache-control.html
-                    </a>
-                  </li>
+
                   <li>
                     <a
                       class="code-link"
@@ -606,8 +618,19 @@
                       wordpress.org/plugins/incompatibility-status/
                     </a>
                   </li>
+
+                <li>
+                  <a
+                    class="code-link"
+                    href="https://store.shopware.com/waoio62482995391f/wao.io-cache-control.html"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    store.shopware.com/waoio62482995391f/wao.io-cache-control.html
+                  </a>
+                </li>
                 </ul>
-              </p>
+              </div>
 
             </article>
           </section>
@@ -967,6 +990,11 @@
                     {{ content.talkInfrastructure2 }}
                   </li>
                 </ul>
+
+                <h3 id="interested">{{ content.interestedHeading }}</h3>
+                <p>
+                  {{ content.interested }}
+                </p>
             </article>
           </section>
 
@@ -977,7 +1005,6 @@
             <article id="contact">
               <div class="vcard">
                 <h2 class="fn">{{ content.imprintName }}</h2>
-                <span class="role no-print">{{ content.imprintRole }}</span>
                 <br>
                 <span class="adr">
                   <span class="street-address">
@@ -1012,6 +1039,7 @@
                 <span><a href="mailto:{{ content.contactEmail }}">{{ content.contactEmail }}</a></span><br>
                 <a class="url" rel="author" href="{{ content.canonicalHref }}">{{ content.shortHref }}</a>
                 <br>
+                <br>
                 <span>{{ content.vatIdLabel }} {{ content.vatIdNumber }}</span>
                 <div class="only-print"><br></div>
                 <div title="{{ content.bankaccountLabel }}">
@@ -1027,7 +1055,6 @@
                 </div>
                 <br>
                 <div>
-                  <span class="no-print">{{ content.IHaveA }}</span>
                   <a
                     href="https://www.exali.de/siegel/Ingo-Steinke"
                     target="_blank"

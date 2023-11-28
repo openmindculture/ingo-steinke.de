@@ -1,6 +1,6 @@
 {
     "name": "ingo-steinke.de",
-    "version": "3.3.3",
+    "version": "3.3.4",
     "description": "website about web developer Ingo Steinke",
     "main": "index.html",
     "scripts": {
@@ -19,7 +19,8 @@
         "serve": "npx http-server dist -p 1974 --cors &",
         "pretest": "npm run build && npm run serve",
         "test": "npm run codeceptjs",
-        "posttest": "pkill -f http-server"
+        "posttest": "pkill -f http-server",
+        "unserve": "pkill -f http-server"
     },
     "repository": {
         "type": "git",

@@ -290,12 +290,12 @@ a.menu-toggle:hover {
 .code-link {
   font-family: monospace;
   font-size: 1em;
-  display: inline-block;
   text-overflow: ellipsis;
   overflow-x: clip;
 }
 
 .code-link:not(.only-print) {
+  display: inline-block;
   white-space: nowrap;
 }
 
