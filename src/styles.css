@@ -354,6 +354,10 @@ a.menu-toggle:hover {
   border: 0;
 }
 
+.price {
+  white-space: nowrap;
+}
+
 /* visually spaced content that can be copied contiguously */
 .visually-spaced + .visually-spaced::before {
   content: " ";

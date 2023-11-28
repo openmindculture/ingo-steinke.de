@@ -130,10 +130,10 @@ module.exports = {
   /* work */
   "workHeading": "Langlebige Lösungen",
   "work": "Deine Layouts realisiere ich plattformübergreifend, responsiv und barrierefrei, auf Wunsch auch pixelgenau. Mein Ziel sind langlebige Lösungen, elegant, verständlich und pflegeleicht. Modulare Komponenten, Themes, sowie CSS-Frameworks und Methoden wie BEM und Atomic Design erleichtern die Zusammenarbeit und Weiterentwicklung. Kontinuierliches Testen ermöglicht mir, Fehler frühzeitig zu entdecken und zu beheben.",
-  "workReliableHeading": "Verständlichkeit und Zuverlässigkeit",
-  "workRelaible": "Mir ist es wichtig, technische Themen einfach verständlich zu erklären, die Wünsche meiner Kundschaft zu verstehen, weiterzudenken und an schwierigen Themen dranzubleiben.",
+  "workReliableHeading": "Zuverlässig und verständlich",
+  "workReliable": "Mir ist es wichtig, technische Themen einfach verständlich zu erklären, die Wünsche meiner Kundschaft zu verstehen, weiterzudenken und nachhaltig umzusetzen.",
   "pricingHeading": "Preise",
-  "pricing": "Ich biete verschiedene Preismodelle an. Bei einer Abrechnung auf Stundenbasis gebe ich üblicherweise im Vorfeld eine Aufwandsschätzung ab. Festpreisangebote sind ebenfalls möglich. Mein Stundensatz richtet sich nach Art und Umfang der Tätigkeit und beginnt ab 85,- Euro (zzgl. 19% MWSt.) Gemeinnützige Organisationen und nachhaltige Startups können auf Anfrage vergünstigte Angebote erhalten.",
+  "pricing": "Ich biete verschiedene Preismodelle an. Bei einer Abrechnung auf Stundenbasis gebe ich üblicherweise im Vorfeld eine Aufwandsschätzung ab. Festpreisangebote sind ebenfalls möglich. Mein Stundensatz richtet sich nach Art und Umfang der Tätigkeit und beginnt ab <span class=price>85,- €</span> (zzgl. 19% MWSt.) Gemeinnützige Organisationen und nachhaltige Startups können auf Anfrage vergünstigte Angebote erhalten.",
   "workFullstackHeading": "Full-Stack-Erfahrung",
   "workFullstack": "Bei der Weiterentwicklung bestehenden Codes kommt mir meine Berufserfahrung und meine pragmatische Einstellung zugute. Mit meinen Erfahrungen im Backend- und DevOps-Bereich und meiner hohen Lernbereitschaft übernehme ich bei Bedarf alle Aufgaben, die sich bei der Webentwicklung ergeben oder finde geeignete Partner:innen für die Umsetzung. Mein Schwerpunkt ist die Frontend-Entwicklung mit CSS.",
   "workTeamHeading": "Team / Netzwerk",
@@ -150,7 +150,7 @@ module.exports = {
   "workPlugins5": "Aktuell arbeite ich an WordPress-Plugins zur",
   "workPlugins6": "vorzeitigen Erkennung von Plugin-Konflikten",
   "workPluginsAnd": "und",
-  "wordPlugins7": "zum automatischen Versand von Spamverdacht-Berichten für WordPress-Kontaktformulare",
+  "workPlugins7": "zum automatischen Versand von Spamverdacht-Berichten für WordPress-Kontaktformulare",
   "workPluginsOther": "Zudem entwickelte ich Themes für Shopware und für JetBrains-basierte IDEs wie PHPStorm und IntelliJ IDEA, unter anderem das kostenlos erhätliche",
   /* Skills */
   "SkillsHeading": "Fachkenntnisse (Skills)",
