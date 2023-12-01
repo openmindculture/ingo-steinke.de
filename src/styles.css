@@ -299,6 +299,14 @@ a.menu-toggle:hover {
   white-space: nowrap;
 }
 
+@media only screen and (max-width: 490px) {
+  .code-link:not(.only-print) {
+    max-width: 99vw;
+    white-space: normal;
+    word-break: break-all;
+  }
+}
+
 .bg-peel {
   background:
     linear-gradient(
