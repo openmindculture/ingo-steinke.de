@@ -1,5 +1,9 @@
 # Changelog
 
+## [3.3.5] mobile layout and usability - 2023-12-01
+* fix mobile link overflow
+* always show contact link #184
+
 ## [3.3.4] content update - 2023-11-28
 * improve and extend text content #162
 * improve stop animation button hover cursor #136

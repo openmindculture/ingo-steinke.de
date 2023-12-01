@@ -378,6 +378,12 @@ a.menu-toggle:hover {
   padding: 6px 8px 0 4px;
 }
 
+@media only screen and (min-width: 375px) {
+  .menu-toggle {
+    margin-right: 1.5rem;
+  }
+}
+
 /*
 Default styles + Mobile first
 Offscreen menu style
@@ -448,6 +454,21 @@ Offscreen menu style
   z-index: 998;
   background-color: var(--primary-background);
   cursor: default;
+}
+
+@media screen and (max-width: 949.999px) {
+  .extra-nav-link,
+  .extra-nav-link.initially-hidden {
+    display: inline-block;
+    margin-right: 1rem;
+    padding: 0 0.5rem 0 0.5rem;
+    text-decoration: none;
+  }
+  a.extra-nav-link:active,
+  a.extra-nav-link:hover,
+  a.extra-nav-link:focus {
+    color: #000;
+  }
 }
 
 /*
