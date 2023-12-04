@@ -1070,6 +1070,21 @@
                     www.exali.de/siegel/Ingo-Steinke
                   </span>
                 </div>
+                <div class="vcard-digital-wrapper">
+                  <img
+                    class="vcard-digital-qr"
+                    src="img/{{ content.vcardQrImgFilename }}"
+                    alt="{{ content.vcardQrImgAlt }}"
+                    width="2500"
+                    height="2500">
+                  <!-- TODO SVG statt PNG für QR-Code -->
+                  <!-- TODO landing zone on contact click -->
+                  <!-- TODO sub pixel line on mobile nav -->
+                  <img class="vcard-digital-arrow" src="img/curved-arrow-6-to-3.svg" alt="" width="500" height="800">
+                  <div
+                    class="vcard-digital-teaser-text"
+                  >{{ content.scanAndSaveContact1 }}<br>{{ content.scanAndSaveContact2 }}</div>
+                </div>
               </div>
 
               <div class="only-print">
