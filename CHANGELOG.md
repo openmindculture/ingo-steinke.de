@@ -1,9 +1,10 @@
 # Changelog
 
-## [3.3.6] scannable digital business card - 2023-12-04
+## [3.3.6] scannable digital business card - 2023-12-05
 * add QR code of vCard information #185
 * add teaser text and arrow #185
 * adapt contact layout #185
+* vCard download link #185
 
 ## [3.3.5] mobile layout and usability - 2023-12-01
 * fix mobile link overflow
