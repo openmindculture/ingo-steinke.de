@@ -1071,15 +1071,15 @@
                   </span>
                 </div>
                 <div class="vcard-digital-wrapper">
-                  <img
-                    class="vcard-digital-qr"
-                    src="img/{{ content.vcardQrImgFilename }}"
-                    alt="{{ content.vcardQrImgAlt }}"
-                    width="2500"
-                    height="2500">
-                  <!-- TODO SVG statt PNG für QR-Code -->
-                  <!-- TODO landing zone on contact click -->
-                  <!-- TODO sub pixel line on mobile nav -->
+                  <a class="vcard-digital-qr" href="vcard/" download="ingo-steinke.vcf" title="{{ content.vcardQrTitle }}">
+                    <img
+                      class="vcard-digital-qr-image"
+                      src="img/{{ content.vcardQrImgFilename }}"
+                      alt="{{ content.vcardQrImgAlt }}"
+                      width="2500"
+                      height="2500">
+                  </a>
+
                   <img class="vcard-digital-arrow" src="img/curved-arrow-6-to-3.svg" alt="" width="500" height="800">
                   <div
                     class="vcard-digital-teaser-text"
