@@ -324,12 +324,13 @@ a.menu-toggle:hover {
 }
 
 .vcard {
+  position: relative;
   padding: 1em;
   background-color: white;
   color: black;
   max-width: 490px;
   margin: 1em auto 0 auto;
-  text-align: center;
+  text-align: left;
 }
 
 @media only screen and (max-width: 490px) {
@@ -341,11 +342,94 @@ a.menu-toggle:hover {
   }
 }
 
+.vcard h2 {
+  text-align: center;
+}
+
 .vcard h2,
 .vcard h3 {
   font-size: 2em;
   margin: 0;
   color: black;
+}
+
+.vcard-digital-wrapper {
+  text-align: right;
+}
+
+.vcard-arrow-wrapper {
+  text-align: left;
+}
+
+.vcard-digital-qr {
+  display: inline-block;
+  margin: 1rem 0 0 auto;
+  text-align: right;
+  background: transparent;
+}
+
+a.vcard-digital-qr:link,
+a.vcard-digital-qr:visited,
+a.vcard-digital-qr:active,
+a.vcard-digital-qr:hover {
+  background: none;
+  background-image: none;
+}
+
+.vcard-digital-qr-image {
+  width: 8rem;
+  max-width: 40vw;
+  height: auto;
+}
+
+.vcard-digital-teaser-text {
+  margin-top: -4rem;
+  transform: rotate(19deg);
+  font-size: 1.125rem;
+  line-height: 1.625;
+}
+
+.vcard-digital-arrow {
+  display: block;
+  margin: 0.75rem 3rem 1rem auto;
+  max-width: 20vw;
+  width: 4rem;
+  height: auto;
+  transform: rotate(45deg);
+}
+
+@media (min-width: 360px) {
+  .vcard-digital-teaser-text {
+    margin-left: 20%;
+  }
+}
+
+@media (min-width: 440px) {
+  .vcard-digital-teaser-text {
+    margin-left: 0;
+  }
+
+  .vcard-digital-arrow {
+    margin-right: 0.5rem;
+    transform: rotate(338deg);
+  }
+
+  .vcard-arrow-wrapper {
+    text-align: right;
+  }
+
+  .vcard-digital-qr {
+    margin: 0 0 0 auto;
+  }
+
+  .vcard-digital-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 6rem 1rem 0 0;
+    height: min-content;
+    width: 100%;
+  }
 }
 
 /* responsive navigation burger menu */
@@ -456,7 +540,7 @@ Offscreen menu style
   cursor: default;
 }
 
-@media screen and (max-width: 949.999px) {
+@media screen and (min-width: 320px) and (max-width: 949.999px) {
   .extra-nav-link,
   .extra-nav-link.initially-hidden {
     display: inline-block;

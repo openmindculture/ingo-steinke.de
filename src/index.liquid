@@ -37,9 +37,9 @@
     </style>
     <link rel="preload" href="fonts/bitter-v16-latin-700.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/montserrat-v15-latin-ext_latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" media="screen" href="styles.css?v=3.3.5">
-    <script src="js/scripts.js?v=3.3.5"></script>
-    <link rel="stylesheet" media="screen and (prefers-reduced-motion: no-preference)" href="decoration.css?v=3.3.5">
+    <link rel="stylesheet" media="screen" href="styles.css?v=3.3.6">
+    <script src="js/scripts.js?v=3.3.6"></script>
+    <link rel="stylesheet" media="screen and (prefers-reduced-motion: no-preference)" href="decoration.css?v=3.3.6">
     <link rel="stylesheet" media="print" href="print.css">
     <meta name=author content="{{ content.metaAuthor }}">
     <meta
@@ -1003,7 +1003,7 @@
             <div class="aside-heading center target-offset" id="imprint">
               {{ content.imprintHeader }}
             </div>
-            <article id="contact">
+            <article id="contact" class="target-offset">
               <div class="vcard">
                 <h2 class="fn">{{ content.imprintName }}</h2>
                 <br>
@@ -1069,6 +1069,22 @@
                     <div>{{ content.insuranceTitle }}:</div>
                     www.exali.de/siegel/Ingo-Steinke
                   </span>
+                </div>
+                <div class="vcard-digital-wrapper">
+                  <a class="vcard-digital-qr" href="vcard/" download="ingo-steinke.vcf" title="{{ content.vcardQrTitle }}">
+                    <img
+                      class="vcard-digital-qr-image"
+                      src="img/{{ content.vcardQrImgFilename }}"
+                      alt="{{ content.vcardQrImgAlt }}"
+                      width="2500"
+                      height="2500">
+                  </a>
+                  <div class="vcard-arrow-wrapper">
+                    <img class="vcard-digital-arrow" src="img/curved-arrow-6-to-3.svg" alt="" width="500" height="800">
+                    <div
+                      class="vcard-digital-teaser-text"
+                    >{{ content.scanAndSaveContact1 }}<br>{{ content.scanAndSaveContact2 }}</div>
+                  </div>
                 </div>
               </div>
 
