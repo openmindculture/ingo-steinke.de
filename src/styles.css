@@ -353,11 +353,27 @@ a.menu-toggle:hover {
   color: black;
 }
 
+.vcard-digital-wrapper {
+  text-align: right;
+}
+
+.vcard-arrow-wrapper {
+  text-align: left;
+}
+
 .vcard-digital-qr {
   display: inline-block;
   margin: 1rem 0 0 auto;
   text-align: right;
   background: transparent;
+}
+
+a.vcard-digital-qr:link,
+a.vcard-digital-qr:visited,
+a.vcard-digital-qr:active,
+a.vcard-digital-qr:hover {
+  background: none;
+  background-image: none;
 }
 
 .vcard-digital-qr-image {
@@ -388,7 +404,7 @@ a.menu-toggle:hover {
   }
 }
 
-@media (min-width: 450px) {
+@media (min-width: 440px) {
   .vcard-digital-teaser-text {
     margin-left: 0;
   }
@@ -396,6 +412,10 @@ a.menu-toggle:hover {
   .vcard-digital-arrow {
     margin-right: 0.5rem;
     transform: rotate(338deg);
+  }
+
+  .vcard-arrow-wrapper {
+    text-align: right;
   }
 
   .vcard-digital-qr {
@@ -409,7 +429,6 @@ a.menu-toggle:hover {
     padding: 6rem 1rem 0 0;
     height: min-content;
     width: 100%;
-    text-align: right;
   }
 }
 

@@ -241,7 +241,7 @@ module.exports = {
   "profile": "Profil",
   "at": "auf",
   "vcardQrTitle": "Ingo-Steinke als Kontakt speichern",
-  "vcardQrImgAlt": "QR-Code mit Kontaktinformatioen von Ingo-Steinke",
+  "vcardQrImgAlt": "QR-Code: Kontakt zu Ingo-Steinke",
   "vcardQrImgFilename": "ingo-steinke-de-vcard-qr.svg",
   "scanAndSaveContact1": "Kontakt scannen",
   "scanAndSaveContact2": "und speichern",
