@@ -5,6 +5,7 @@ module.exports = function (eleventyConfig) {
   // explicit + fast way to copy certain files and folders
   eleventyConfig.addPassthroughCopy('src/fonts');
   eleventyConfig.addPassthroughCopy('src/img');
+  eleventyConfig.addPassthroughCopy('src/vcard');
   eleventyConfig.addPassthroughCopy('src/android-chrome-192x192.png');
   eleventyConfig.addPassthroughCopy('src/apple-touch-icon.png');
   eleventyConfig.addPassthroughCopy('src/browserconfig.xml');
