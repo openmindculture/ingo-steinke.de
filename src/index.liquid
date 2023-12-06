@@ -511,32 +511,38 @@
               <article class="tile target-offset" id="project-webperf-meetup">
                 <div class="tile-content flex bg-peel">
                   <header>
-                    <h3>{{ content.projectWebperfMeetupHeading }}</h3>
+                    <h3>{{ content.projectsScreenshots }}</h3>
                   </header>
-                  <p>
+                  <div class="screenshots">
                     <img
-                      src="img/logo-meetup.svg"
-                      width="25" height="25"
-                      class="project-thumb"
-                      loading="lazy"
-                      alt=""
-                    />
-                    <span class="text-line">
-                      {{ content.projectWebperfMeetup1 }}
-                      <a
-                        href="https://www.meetup.com/cologne-germany-high-performance-website-optimization-group/"
-                        title="www.meetup.com/cologne-germany-high-performance-website-optimization-group"
-                        target="_blank"
-                        rel="noopener"
-                      >{{ content.projectWebperfMeetup2 }}</a>.
-                      {{ content.projectWebperfMeetup3 }}
-                      <span class="only-print code-link">www.meetup.com/cologne-germany-high-performance-website-optimization-group</span>
-                    </span>
-                  </p>
-                  <p>
-                    <span class="hashtag">{{ content.projectWebperfMeetupHashtag1 }}</span>
-                    <span class="hashtag">{{ content.projectWebperfMeetupHashtag2 }}</span>
-                  </p>
+                      src="img/screenshot-foodtogether.png"
+                      alt="Screenshot: foodtogether.de"
+                      class="screenshot"
+                      width="1416"
+                      height="989"
+                    >
+                    <img
+                      src="img/screenshot-kleiderordnung.png"
+                      alt="Screenshot: kleiderordnung.berlin"
+                      class="screenshot"
+                      width="1416"
+                      height="989"
+                    >
+                    <img
+                      src="img/screenshot-psychologistsforfuture.png"
+                      alt="Screenshot: daskannstutun.de"
+                      class="screenshot"
+                      width="1416"
+                      height="989"
+                    >
+                    <img
+                      src="img/screenshot-waoio.png"
+                      alt="Screenshot: wao.io"
+                      class="screenshot"
+                      width="1548"
+                      height="989"
+                    >
+                  </div>
                 </div>
               </article>
 
@@ -991,6 +997,51 @@
                     {{ content.talkInfrastructure2 }}
                   </li>
                 </ul>
+                <p>
+                  {{ content.projectWebperfMeetup1 }}
+                  <a
+                    href="https://www.meetup.com/cologne-germany-high-performance-website-optimization-group/"
+                    title="www.meetup.com/cologne-germany-high-performance-website-optimization-group"
+                    target="_blank"
+                    rel="noopener"
+                  >{{ content.projectWebperfMeetup2 }}</a>.
+                  {{ content.projectWebperfMeetup3 }}
+                  <span class="only-print code-link">www.meetup.com/cologne-germany-high-performance-website-optimization-group</span>
+                </p>
+
+                <h3 id="testimonials">{{ content.testimonials }}</h3>
+                <div class="testimonials">
+                  <figure class="testimonial">
+                    <figcaption>
+                      <a href="{{ content.testimonialDanielaLinkUrl }}" target="_blank" rel="noopener">
+                        {{ content.testimonialDanielaAuthor }}:
+                      </a>
+                    </figcaption>
+                    <blockquote>{{ content.testimonialDanielaQuote }}</blockquote>
+                  </figure>
+                  <figure class="testimonial">
+                    <figcaption>
+                      <a href="{{ content.testimonialMalteLinkUrl }}" target="_blank" rel="noopener">
+                        {{ content.testimonialMalteAuthor }}:
+                      </a>
+                    </figcaption>
+                    <blockquote>{{ content.testimonialMalteQuote }}</blockquote>
+                  </figure>
+                  <figure class="testimonial">
+                    <figcaption>
+                      <a href="{{ content.testimonialPatriciaLinkUrl }}" target="_blank" rel="noopener">
+                        {{ content.testimonialPatriciaAuthor }}:
+                      </a>
+                    </figcaption>
+                    <blockquote>{{ content.testimonialPatriciaQuote }}</blockquote>
+                  </figure>
+                </div>
+
+                <p>
+                  <a href="{{ content.testimonialsReadMoreLinkUrl }}" target="_blank" rel="noopener">
+                    {{ content.testimonialsReadMoreText }}
+                  </a>
+                </p>
 
                 <h3 id="interested">{{ content.interestedHeading }}</h3>
                 <p>
