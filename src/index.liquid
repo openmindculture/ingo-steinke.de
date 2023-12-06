@@ -37,9 +37,9 @@
     </style>
     <link rel="preload" href="fonts/bitter-v16-latin-700.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/montserrat-v15-latin-ext_latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" media="screen" href="styles.css?v=3.3.6">
-    <script src="js/scripts.js?v=3.3.6"></script>
-    <link rel="stylesheet" media="screen and (prefers-reduced-motion: no-preference)" href="decoration.css?v=3.3.6">
+    <link rel="stylesheet" media="screen" href="styles.css?v=3.3.7">
+    <script src="js/scripts.js?v=3.3.7"></script>
+    <link rel="stylesheet" media="screen and (prefers-reduced-motion: no-preference)" href="decoration.css?v=3.3.7">
     <link rel="stylesheet" media="print" href="print.css">
     <meta name=author content="{{ content.metaAuthor }}">
     <meta
@@ -249,14 +249,17 @@
                          target="_blank"
                          rel="noopener"
                        >{{ content.projectKleiderordnung2 }}</a>
-                      {{ content.projectKleiderordnung3 }}
+                      {{ content.projectKleiderordnung3 }}<br>
+                      </span>
+                      <span class="text-line">
+                        {{ content.projectKleiderordnungCode }}<br>
                       </span>
                       <a
-                        class="code-link"
-                        href="https://github.com/openmindculture/kleiderordnung-berlin"
-                        target="_blank"
-                        rel="noopener"
-                      >github.com/openmindculture/kleiderordnung-berlin</a>
+                      class="code-link"
+                      href="https://github.com/openmindculture/kleiderordnung-berlin"
+                      target="_blank"
+                      rel="noopener"
+                    >github.com/openmindculture/kleiderordnung-berlin</a>
                       <span class="only-print code-link">www.kleiderordnung.berlin</span>
                   </p>
                   <p>
@@ -447,30 +450,6 @@
                 </div>
               </article>
 
-              <article class="tile target-offset" id="wandelpunkt-consulting-semplice">
-                <div class="tile-content flex bg-peel pl1">
-                  <header>
-                    <h3>{{ content.projectWandelpunktHeading }}</h3>
-                  </header>
-                  <p>
-                    <img src="img/logo-wandelpunkt.svg" width="512" height="512" class="project-thumb project-thumb--grow" loading="lazy" alt="" />
-                    <span class="text-line">
-                      {{ content.projectWandelpunkt1 }}
-                      <a href="http://web.archive.org/web/20230401133238/https://www.wandelpunkt-consulting.de/"
-                         target="_blank" rel="noopener">{{ content.projectWandelpunkt2 }}</a>
-                      {{ content.projectWandelpunkt3 }}
-                      <span class="only-print code-link">Wandelpunkt-Consulting.de</span>
-                    </span>
-                  </p>
-                  <p>
-                    <span class="hashtag">{{ content.projectWandelpunktHashtag1 }}</span>
-                    <span class="hashtag">{{ content.projectWandelpunktHashtag2 }}</span>
-                    <span class="hashtag">{{ content.projectWandelpunktHashtag3 }}</span>
-                    <span class="hashtag">{{ content.projectWandelpunktHashtag4 }}</span>
-                  </p>
-                </div>
-              </article>
-
               <article class="tile target-offset" id="project-portfolio-relaunch">
                 <div class="tile-content flex bg-peel">
                   <header>
@@ -508,34 +487,54 @@
                 </div>
               </article>
 
-              <article class="tile target-offset" id="project-webperf-meetup">
-                <div class="tile-content flex bg-peel">
+              <article class="tile target-offset" id="wandelpunkt-consulting-semplice">
+                <div class="tile-content flex bg-peel pl1">
                   <header>
-                    <h3>{{ content.projectWebperfMeetupHeading }}</h3>
+                    <h3>{{ content.projectWandelpunktHeading }}</h3>
                   </header>
                   <p>
-                    <img
-                      src="img/logo-meetup.svg"
-                      width="25" height="25"
-                      class="project-thumb"
-                      loading="lazy"
-                      alt=""
-                    />
+                    <img src="img/logo-wandelpunkt.svg" width="512" height="512" class="project-thumb project-thumb--grow" loading="lazy" alt="" />
                     <span class="text-line">
-                      {{ content.projectWebperfMeetup1 }}
-                      <a
-                        href="https://www.meetup.com/cologne-germany-high-performance-website-optimization-group/"
-                        title="www.meetup.com/cologne-germany-high-performance-website-optimization-group"
-                        target="_blank"
-                        rel="noopener"
-                      >{{ content.projectWebperfMeetup2 }}</a>.
-                      {{ content.projectWebperfMeetup3 }}
-                      <span class="only-print code-link">www.meetup.com/cologne-germany-high-performance-website-optimization-group</span>
+                      {{ content.projectWandelpunkt1 }}
+                      <a href="http://web.archive.org/web/20230401133238/https://www.wandelpunkt-consulting.de/"
+                         target="_blank" rel="noopener">{{ content.projectWandelpunkt2 }}</a>
+                      {{ content.projectWandelpunkt3 }}
+                      <span class="only-print code-link">Wandelpunkt-Consulting.de</span> .
                     </span>
                   </p>
                   <p>
-                    <span class="hashtag">{{ content.projectWebperfMeetupHashtag1 }}</span>
-                    <span class="hashtag">{{ content.projectWebperfMeetupHashtag2 }}</span>
+                    <span class="hashtag">{{ content.projectWandelpunktHashtag1 }}</span>
+                    <span class="hashtag">{{ content.projectWandelpunktHashtag2 }}</span>
+                    <span class="hashtag">{{ content.projectWandelpunktHashtag3 }}</span>
+                    <span class="hashtag">{{ content.projectWandelpunktHashtag4 }}</span>
+                  </p>
+                </div>
+              </article>
+
+              <article class="tile target-offset" id="project-planted">
+                <div class="flex bg-peel pl1">
+                  <header>
+                    <h3>{{ content.projectPlantedHeading }}</h3>
+                  </header>
+                  <p>
+                    <img src="img/icon-tree-branch.svg" width="512" height="512" class="project-thumb" loading="lazy" alt="" />
+                    <span class="text-line">
+                      {{ content.projectPlanted1 }}
+                      <a href="https://www.climatefounders.com/climate-hack" target="_blank" rel="noopener">{{
+                        content.projectPlanted2 }}</a>
+                      {{ content.projectPlanted3 }}
+                      <a href="https://planted.green"
+                         target="_blank" rel="noopener">{{
+                        content.projectPlanted4 }}</a>
+                      {{ content.projectPlanted5 }}
+                      <span class="only-print code-link">https://planted.green</span>
+                    </span>
+                  </p>
+                  <p>
+                    <span class="hashtag">{{ content.projectPlantedHashtag1 }}</span>
+                    <span class="hashtag">{{ content.projectPlantedHashtag2 }}</span>
+                    <span class="hashtag">{{ content.projectPlantedHashtag3 }}</span>
+                    <span class="hashtag">{{ content.projectPlantedHashtag4 }}</span>
                   </p>
                 </div>
               </article>
@@ -991,6 +990,51 @@
                     {{ content.talkInfrastructure2 }}
                   </li>
                 </ul>
+                <p>
+                  {{ content.projectWebperfMeetup1 }}
+                  <a
+                    href="https://www.meetup.com/cologne-germany-high-performance-website-optimization-group/"
+                    title="www.meetup.com/cologne-germany-high-performance-website-optimization-group"
+                    target="_blank"
+                    rel="noopener"
+                  >{{ content.projectWebperfMeetup2 }}</a>.
+                  {{ content.projectWebperfMeetup3 }}
+                  <span class="only-print code-link">www.meetup.com/cologne-germany-high-performance-website-optimization-group</span>
+                </p>
+
+                <h3 id="testimonials">{{ content.testimonials }}</h3>
+                <div class="testimonials">
+                  <figure class="testimonial">
+                    <figcaption>
+                      <a href="{{ content.testimonialDanielaLinkUrl }}" target="_blank" rel="noopener">
+                        {{ content.testimonialDanielaAuthor }}:
+                      </a>
+                    </figcaption>
+                    <blockquote>{{ content.testimonialDanielaQuote }}</blockquote>
+                  </figure>
+                  <figure class="testimonial">
+                    <figcaption>
+                      <a href="{{ content.testimonialMalteLinkUrl }}" target="_blank" rel="noopener">
+                        {{ content.testimonialMalteAuthor }}:
+                      </a>
+                    </figcaption>
+                    <blockquote>{{ content.testimonialMalteQuote }}</blockquote>
+                  </figure>
+                  <figure class="testimonial">
+                    <figcaption>
+                      <a href="{{ content.testimonialPatriciaLinkUrl }}" target="_blank" rel="noopener">
+                        {{ content.testimonialPatriciaAuthor }}:
+                      </a>
+                    </figcaption>
+                    <blockquote>{{ content.testimonialPatriciaQuote }}</blockquote>
+                  </figure>
+                </div>
+
+                <p>
+                  <a href="{{ content.testimonialsReadMoreLinkUrl }}" target="_blank" rel="noopener">
+                    {{ content.testimonialsReadMoreText }}
+                  </a>
+                </p>
 
                 <h3 id="interested">{{ content.interestedHeading }}</h3>
                 <p>

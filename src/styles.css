@@ -280,6 +280,27 @@ a.menu-toggle:hover {
   padding: 0 1em 0 1em;
 }
 
+.tile-content .screenshots {
+  position: relative;
+}
+
+.tile-content .screenshot {
+  position: relative;
+  display: inline-block;
+  width: 30%;
+  max-width: calc(100vw - 1rem);
+  height: auto;
+  z-index: 1;
+  transition:
+    width 0.25s ease-in,
+    height 0.25s ease-in;
+}
+
+.tile-content .screenshot:hover, {
+  z-index: 100;
+  width: 100%;
+}
+
 .flow-grid .hashtag {
   font-size: 0.95em;
   background-color: var(--hashtag-default);
@@ -936,6 +957,10 @@ ul.grid-container.skills {
 .brand-brown-dark {
   background-color: var(--brand-gray-gimp);
   color: #fff;
+}
+
+.testimonials {
+  margin-bottom: 2rem;
 }
 
 /* stylelint-disable-next-line no-descending-specificity */

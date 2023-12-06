@@ -1,5 +1,10 @@
 # Changelog
 
+## [3.3.7] content enhancement - 2023-12-06
+* add testimonials #152
+* update and rearrange various text parts #152
+* evaluate adding project screenshots: not helpful #152
+
 ## [3.3.6] scannable digital business card - 2023-12-05
 * add QR code of vCard information #185
 * add teaser text and arrow #185
