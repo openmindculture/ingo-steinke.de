@@ -1,5 +1,8 @@
 # Changelog
 
+## [3.3.8] scannable digital business card fix - 2023-12-08
+* fix vary header for proper cache handling #185
+
 ## [3.3.7] content enhancement - 2023-12-06
 * add testimonials #152
 * update and rearrange various text parts #152
