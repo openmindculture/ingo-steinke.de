@@ -376,6 +376,11 @@ a.menu-toggle:hover {
 
 .vcard-digital-wrapper {
   text-align: right;
+  pointer-events: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .vcard-arrow-wrapper {
