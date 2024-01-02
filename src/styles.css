@@ -296,7 +296,7 @@ a.menu-toggle:hover {
     height 0.25s ease-in;
 }
 
-.tile-content .screenshot:hover, {
+.tile-content .screenshot:hover {
   z-index: 100;
   width: 100%;
 }
