@@ -189,9 +189,10 @@
                 {{ content.intro }}
                 nexum,
                 Avenga,
-                Planted
-                {{ content.and }}
+                Planted{{ content.spacedAnd }}{% comment %} spacedAnd might start with a comma e.g. ", and" {% endcomment %}
                 Project Together.
+              </p>
+              <p>
                 {{ content.currentlyEcologicalIam }}
                 <a href="https://www.reflecta.network/changemaker/ingo-steinke?ref=f181cba6-ddc9-4791-b579-b02c3be47206" target="_blank" rel="noopener">
                   Changemaker</a>,
@@ -200,6 +201,9 @@
                 <a href="https://greencompanion.de/detail/web-entwicklung" target="_blank" rel="noopener">
                   Green Companion</a>{{ content.and }} {{ content.memberOf }}
                 <a href="https://berlin.impacthub.net" target="_blank" rel="noopener">Impact Hub Berlin</a>.
+              </p>
+              <p>
+                {{ content.careAboutGoingBeyond }}
               </p>
 
               <h3>{{ content.workWithMeHeading }}</h3>
@@ -288,7 +292,7 @@
                     />
                     <span class="text-line">
                       {{ content.projectAtomicRelaunch1 }}
-                      <br>{{ content.projectAtomicRelaunch2 }} <a href="https://fractal.build/" target="_blank" rel="noopener">{{ content.projectAtomicRelaunch3 }}</a>{{ content.projectAtomicRelaunch4 }}
+                      {{ content.projectAtomicRelaunch2 }} <a href="https://fractal.build/" target="_blank" rel="noopener">{{ content.projectAtomicRelaunch3 }}</a>{{ content.projectAtomicRelaunch4 }}
                     </span>
                   </p>
                   <p>
@@ -363,7 +367,7 @@
                         target="_blank"
                         rel="noopener"
                       >Psychologists for Future</a>
-                      {{ content.projectDaskannstdutunCreated }}
+                      {{ content.projectDaskannstdutunCreatedSpaced }}{% comment %} might start with a comma e.g. ", the..." {% endcomment %}
                       &quot;{{ content.projectDaskannstdutunDKDT }}&quot;
                       {{ content.projectDaskannstdutunLast }}
                       <a
@@ -497,8 +501,7 @@
                     <span class="text-line">
                       {{ content.projectWandelpunkt1 }}
                       <a href="http://web.archive.org/web/20230401133238/https://www.wandelpunkt-consulting.de/"
-                         target="_blank" rel="noopener">{{ content.projectWandelpunkt2 }}</a>
-                      {{ content.projectWandelpunkt3 }}
+                         target="_blank" rel="noopener">{{ content.projectWandelpunkt2 }}</a>{{ content.projectWandelpunkt3Spaced }}
                       <span class="only-print code-link">Wandelpunkt-Consulting.de</span> .
                     </span>
                   </p>
@@ -990,17 +993,6 @@
                     {{ content.talkInfrastructure2 }}
                   </li>
                 </ul>
-                <p>
-                  {{ content.projectWebperfMeetup1 }}
-                  <a
-                    href="https://www.meetup.com/cologne-germany-high-performance-website-optimization-group/"
-                    title="www.meetup.com/cologne-germany-high-performance-website-optimization-group"
-                    target="_blank"
-                    rel="noopener"
-                  >{{ content.projectWebperfMeetup2 }}</a>.
-                  {{ content.projectWebperfMeetup3 }}
-                  <span class="only-print code-link">www.meetup.com/cologne-germany-high-performance-website-optimization-group</span>
-                </p>
 
                 <h3 id="testimonials">{{ content.testimonials }}</h3>
                 <div class="testimonials">
