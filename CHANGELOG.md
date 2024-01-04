@@ -1,5 +1,10 @@
 # Changelog
 
+## [3.3.9] content enhancement, contact fix - 2024-01-04
+* improve content as suggested by proof reader #181
+* remove unhelpful CTA elements #188
+* remove obsolete meta keyword element
+
 ## [3.3.8] scannable digital business card fix - 2023-12-08
 * fix vary header for proper cache handling #185
 
