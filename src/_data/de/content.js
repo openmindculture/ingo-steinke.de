@@ -135,7 +135,7 @@ module.exports = {
   "projectPlantedHashtag4": "CSS",
   /* work */
   "workHeading": "Langlebige Lösungen",
-  "work": "Deine Layouts realisiere ich plattformübergreifend, responsiv und barrierefrei, auf Wunsch auch pixelgenau. Mein Ziel sind langlebige Lösungen, elegant, verständlich und pflegeleicht. Modulare Komponenten, Themes, sowie CSS-Frameworks und Methoden wie BEM und Atomic Design erleichtern die Zusammenarbeit und Weiterentwicklung. Kontinuierliches Testen ermöglicht mir, Fehler frühzeitig zu entdecken und zu beheben.",
+  "work": "Deine Layouts realisiere ich plattformübergreifend, responsiv und barrierefrei. Mein Ziel sind langlebige Lösungen, elegant, verständlich und pflegeleicht. Modulare Komponenten, Themes, sowie CSS-Frameworks und Methoden wie BEM und Atomic Design erleichtern die Zusammenarbeit und Weiterentwicklung. Kontinuierliches Testen ermöglicht mir, Fehler frühzeitig zu entdecken und zu beheben.",
   "workReliableHeading": "Zuverlässig und verständlich",
   "workReliable": "Mir ist es wichtig, technische Themen einfach verständlich zu erklären, die Wünsche meiner Kundschaft zu verstehen, weiterzudenken und nachhaltig umzusetzen.",
   "pricingHeading": "Preise",

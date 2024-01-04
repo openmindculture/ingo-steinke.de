@@ -135,7 +135,7 @@ module.exports = {
   "projectPlantedHashtag4": "CSS",
   /* work */
   "workHeading": "Long-Lasting Solutions",
-  "work": "I can implement your layouts across platforms, and pixel-perfectly if needed. My goal is to build long-lasting solutions that are elegant, transparent, and easy to maintain. Modular components, themes, as well as CSS frameworks and methodologies like BEM and Atomic Design help to simplify collaboration and further development. Continuous testing allows me to discover and eliminate errors at an early stage.",
+  "work": "I can implement your layouts across platforms in a responsive and accessible way. My goal is to build long-lasting solutions that are elegant, transparent, and easy to maintain. Modular components, themes, as well as CSS frameworks and methodologies like BEM and Atomic Design help to simplify collaboration and further development. Continuous testing allows me to discover and eliminate errors at an early stage.",
   "workReliableHeading": "Reliable and Easy to Understand",
   "workReliable": "For me, it's important to explain technological facts in simple words, to understand my customers' requirements, look ahead and implement sustainable solutions.",
   "pricingHeading": "Pricing",
@@ -219,7 +219,7 @@ module.exports = {
   "testimonialPatriciaLinkUrl": "https://www.moock-coaching.de",
   /* Interested CTA */
   "interestedHeading": "Interested?",
-  "interested": "Contact me to schedule a non-binding appointment! I will reply in a timely manner! You can reach my by phone, email, Signal or WhatsApp. If I can't take a call, feel free to leave me a voice message!",
+  "interested": "Contact me to schedule a non-binding appointment! I will reply in a timely manner! You can reach my by phone, email, Signal, or WhatsApp. If I can't take a call, feel free to leave me a voice message!",
   /* Imprint, Contact */
   "imprintHeader": "Imprint and Contact Information",
   "imprintName": "Ingo Steinke",
