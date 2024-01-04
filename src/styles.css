@@ -383,10 +383,6 @@ a.menu-toggle:hover {
   user-select: none;
 }
 
-.vcard-arrow-wrapper {
-  text-align: left;
-}
-
 .vcard-digital-qr {
   display: inline-block;
   margin: 1rem 0 0 auto;
@@ -438,10 +434,6 @@ a.vcard-digital-qr:hover {
   .vcard-digital-arrow {
     margin-right: 0.5rem;
     transform: rotate(338deg);
-  }
-
-  .vcard-arrow-wrapper {
-    text-align: right;
   }
 
   .vcard-digital-qr {
