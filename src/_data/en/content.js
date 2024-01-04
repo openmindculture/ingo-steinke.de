@@ -12,7 +12,6 @@ module.exports = {
   "pageTitle": "Ingo Steinke, Sustainable and Creative Web Developer",
   "pageDescription": "Ingo Steinke is a creative web developer focused on sustainable web development with more than 20 years of professional experience.",
   "pageDescription-en": "Ingo Steinke is a creative web developer focused on sustainable web development with more than 20 years of professional experience..",
-  "pageKeywords": "Ingo,Steinke,web,developer,webdeveloper,consultant,Düsseldorf,Berlin,creative,sustainable,sustainability,SDG,frontend,front-end,CSS,JavaScript,HTML",
   "pDomainVerify": "4c4296e5835f4a47eb2c2e5488a99d71",
   "googleSiteVerification": "rKw6ukUkdoGGTo5dFb1sv4HQXN5wy6GysuVCRkt1FTg",
   /* header */

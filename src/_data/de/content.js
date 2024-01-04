@@ -12,7 +12,6 @@ module.exports = {
   "pageTitle": "Ingo Steinke, nachhaltiger und kreativer Webentwickler",
   "pageDescription": "Ingo Steinke ist ein kreativer Webentwickler mit Schwerpunkt Frontend und Nachhaltigkeit, mit über 20 Jahren Beruferfahrung.",
   "pageDescription-en": "Ingo Steinke ist ein kreativer Webentwickler mit Schwerpunkt Frontend und Nachhaltigkeit, mit über 20 Jahren Beruferfahrung.",
-  "pageKeywords": "Ingo,Steinke,Webentwickler,Berater,Düsseldorf,Berlin,kreativ,nachhaltig,Nachhaltigkeit,SDG,Frontend,CSS,JavaScript,HTML",
   "pDomainVerify": "4c4296e5835f4a47eb2c2e5488a99d71",
   "googleSiteVerification": "Qs1p7JgqPLOGD3BYCMGe9EbyNJJEswyala44hnkO6d4",
   /* page content */
