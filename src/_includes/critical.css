@@ -354,6 +354,7 @@ small {
     margin: 1.5em 0 0.5em 1em;
   }
 
+  .tile img.project-thumb--planted,
   .tile img.project-thumb--shopware-plugin {
     margin-right: 0.5em;
   }
