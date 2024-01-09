@@ -1,6 +1,6 @@
 # Changelog
 
-## [3.4.0] content and print layout enhancement - 2024-01-09
+## [3.4.1] content and print layout enhancement - 2024-01-09
 * improve and extend content #189
 * fix and improve printable version #190
 
