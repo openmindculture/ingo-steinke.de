@@ -1,5 +1,9 @@
 # Changelog
 
+## [3.4.0] content and print layout enhancement - 2024-01-09
+* improve and extend content #189
+* fix and improve printable version #190
+
 ## [3.3.9] content enhancement, contact fix - 2024-01-04
 * improve content as suggested by proof reader #181
 * remove unhelpful CTA elements #188
