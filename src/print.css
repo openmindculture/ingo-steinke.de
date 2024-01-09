@@ -72,6 +72,15 @@ img.avatar {
   border-radius: 50%;
 }
 
+.content-image {
+  margin-left: 0;
+}
+
+.content-image img {
+  max-width: 100%;
+  height: auto;
+}
+
 .code-link {
   font-family: monospace;
 }
@@ -88,7 +97,7 @@ img.avatar {
 }
 
 .tile p img {
-  max-width: 25%;
+  max-width: 10%;
   height: auto;
   float: right;
   margin-left: 12pt;
@@ -134,6 +143,7 @@ img.avatar {
   display: none;
 }
 
+.vcard-digital-wrapper,
 .privacy {
   display: none;
 }
