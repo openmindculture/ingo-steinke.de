@@ -164,7 +164,7 @@ module.exports = {
   "SkillsWebdevHeading": "Webentwicklung",
   "SkillsWebdevDb": "Datenbanken",
   "SkillsLib": "Software Stacks",
-  "SkillsLibStaticSiteGenerators": "Static Site Generatoren",
+  "SkillsLibStaticSiteGenerators": "SSG",
   "SkillsLibDesignSystems": "Design-Systeme",
   "SkillsOther": "Sonstige Tools",
   "SkillsOtherQa": "Qualitätssicherung, Tests und Audits",

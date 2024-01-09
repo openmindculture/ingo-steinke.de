@@ -111,14 +111,22 @@ img.avatar {
   list-style-type: none;
 }
 
+.skills li.tile ul {
+  padding-left: 0;
+}
+
 .skills li.tile ul li {
   font-size: 12pt;
   display: flex;
   align-items: baseline;
 }
 
+.skills li.tile--verbose ul li {
+  margin-bottom: 8pt;
+}
+
 .skills li.tile ul li > *:first-child {
-  min-width: 150px;
+  width: 130pt;
 }
 
 .skills li.tile ul li .hashtags {
@@ -129,13 +137,13 @@ img.avatar {
   font-size: 11pt;
 }
 
+.testimonial {
+  margin-left: 0;
+}
+
 .social-links {
   list-style-type: disc;
   padding-left: 12pt;
-}
-
-.social-links a {
-  font-family: monospace;
 }
 
 .social-links a img,
@@ -143,7 +151,25 @@ img.avatar {
   display: none;
 }
 
-.vcard-digital-wrapper,
+#contact {
+  position: relative;
+}
+
+.vcard-digital-wrapper {
+  position: absolute;
+  top: 20pt;
+  right: 10pt;
+}
+
+.vcard-digital-qr-image {
+  width: 100pt;
+  height: auto;
+}
+
+h2.fn {
+  font-size: 14pt;
+}
+
 .privacy {
   display: none;
 }
@@ -159,10 +185,21 @@ figure,
   page-break-inside: initial;
 }
 
+#projects,
 #talks-events,
 #work,
+#plugin-programmierung,
+#testimonials,
+.page-break-before,
 .imprint-contact {
   page-break-before: always;
+}
+
+#projects .code-link,
+.print-display-block {
+  display: block;
+  font-size: 12pt;
+  font-weight: normal;
 }
 
 .initially-hidden.only-print {

@@ -254,6 +254,7 @@
                        >{{ content.projectKleiderordnung2 }}</a>
                       {{ content.projectKleiderordnung3 }}<br>
                       </span>
+                      <span class="only-print code-link">www.kleiderordnung.berlin<br></span>
                       <span class="text-line">
                         {{ content.projectKleiderordnungCode }}<br>
                       </span>
@@ -263,7 +264,6 @@
                       target="_blank"
                       rel="noopener"
                     >github.com/openmindculture/kleiderordnung-berlin</a>
-                      <span class="only-print code-link">www.kleiderordnung.berlin</span>
                   </p>
                   <p>
                     <span class="hashtag">{{ content.projectKleiderordnungHashtag1 }}</span>
@@ -373,6 +373,7 @@
                         href="https://daskannstdutun.de/"
                         target="_blank"
                         rel="noopener"
+                        class="print-display-block"
                       >daskannstdutun.de</a>
                     </span>
                   </p>
@@ -404,6 +405,7 @@
                         title="store.shopware.com/waoio62482995391f/wao.io-cache-control.html"
                         target="_blank"
                         rel="noopener"
+                        class="print-display-block"
                       >{{ content.projectShopwarePlugin2 }}</a> {{ content.projectShopwarePlugin3 }}
                       <span class="only-print code-link">store.shopware.com/waoio62482995391f/wao.io-cache-control.html</span>
                     </span>
@@ -536,7 +538,7 @@
                          target="_blank" rel="noopener">{{
                         content.projectPlanted4 }}</a>
                       {{ content.projectPlanted5 }}
-                      <span class="only-print code-link">https://planted.green</span>
+                      <span class="only-print code-link">planted.green</span>
                     </span>
                   </p>
                   <p>
@@ -551,7 +553,7 @@
             </div>
           </section>
 
-          <section class="text-content-layout text-content-color">
+          <section class="text-content-layout text-content-color avoid-page-break">
             <h2 class="target-offset" id="work">
               {{ content.workHeading }}
             </h2>
@@ -652,7 +654,7 @@
                 <h4 class="font-sans">{{ content.SkillsWebdevHeading }}</h4>
                 <ul>
                   <li>
-                    <span>Markup, Markdown, Template Engines</span>
+                    <span>Markup, Templating</span>
                     <div class="hashtags">
                       <span class="hashtag brand-orange">HTML 5</span>
                       <span class="hashtag brand-green">Markdown</span>
@@ -730,7 +732,7 @@
                     </div>
                   </li>
                   <li>
-                    <span>Fractal Stack, {{ content.SkillsLibDesignSystems }}</span>
+                    <span>{{ content.SkillsLibDesignSystems }}</span>
                     <div class="hashtags">
                       <span class="hashtag brand-blue-purplish">fractal</span>
                       <span class="hashtag brand-purple">SCSS</span>
@@ -784,7 +786,7 @@
                 </ul>
               </li>
 
-              <li class="tile">
+              <li class="tile tile--verbose">
                 <h4 class="font-sans">{{ content.SkillsOther }}</h4>
                 <ul>
                   <li>
@@ -1029,11 +1031,13 @@
                   </figure>
                 </div>
 
-                <p>
+                <p class="no-print">
                   <a href="{{ content.testimonialsReadMoreLinkUrl }}" target="_blank" rel="noopener">
                     {{ content.testimonialsReadMoreText }}
                   </a>
                 </p>
+
+              <div class="only-print"><br></div>
 
                 <h3 id="interested">{{ content.interestedHeading }}</h3>
                 <p>
@@ -1125,11 +1129,7 @@
                 </div>
               </div>
 
-              <div class="only-print">
-                <br>Social Media:
-              </div>
-
-              <ul class="row social-links">
+              <ul class="row social-links no-print">
                 <li>
                   <a rel="noopener nofollow" href="https://www.linkedin.com/in/ingosteinke" target="_blank" title="LinkedIn-{{ content.profile }}: Ingo Steinke">
                     <svg width="25" height="25" viewBox="0 0 1200 1200">
@@ -1277,6 +1277,8 @@
           <p class="no-print">
             <button id="animation-toggle">{{ content.buttonStopAnimation }}</button>
           </p>
+
+          <div class="only-print"><br></div>
 
           <div class="legal legal--copyright">
             &copy; {{ "now" | date: "%Y" }} {{ content.imprintName }}
