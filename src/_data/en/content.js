@@ -268,7 +268,7 @@ module.exports = {
   "privacyGdpr": "This privacy notice is based on the rules set by the German Federal Data Protection Act (BDSG) and the European General Data Protection Regulation (GDPR). The",
   "privacyGdprImprint": "imprint",
   "privacyGdpr2": "informs how to contact the responsible content provider.",
-  "privacyYourRightsHeading": "Your legal rights: Access, Rectification, Erasure, Objection",
+  "privacyYourRightsHeading": "Your legal rights: access, rectification, erasure, objection",
   "privacyYourRights": "You have the right to object to the processing of your personal data, the right to request copies of your personal data, and the right to request that we erase or rectify your personal data, unless this data is necessary for complying with a statutory retention obligation.",
   "privacyPersonalDataHeading": "What data is collected and processed?",
   "privacyPersonalData": "Personal identification information will only be collected, as far as this is necessary for accounting, customer services and fulfilment of a contract. Personal data will not be processed prior to the users' consent, unless this is impossible for legal reasons or reasons of technological impracticability.",
