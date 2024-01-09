@@ -38,7 +38,7 @@ module.exports = {
   "commaEnglishOnly": "",
   "currentlyEcologicalIam": "Aktuell arbeite ich vorrangig für Kund:innen mit ökologischem und ethischem Fokus. Ich bin",
   "memberOf": "Mitglied im",
-  "careAboutGoingBeyond": "I care about going beyond mere technical competence in my personal and work life. Creativity, flexibility, and thoughtfulness are the values I live and work by. I am deeply interested in how sustainability, culture, and art come together, and I strive to bring what I learn into my work every day.",
+  "careAboutGoingBeyond": "Kreativität, Flexibilität und Bedachtheit sind mir beruflich und privat sehr wichtig. Ich möchte Nachhaltigkeit, Kultur und Kunst verbinden und meine Erfahrungen in meine tägliche Arbeit einbringen.",
   "workWithMeHeading": "Mit mir kannst du arbeiten.",
   "workWithMe":"Du möchtest deine Website überarbeiten? Dein Team braucht Verstärkung durch einen Frontend-Entwickler mit Fullstack-Erfahrung?",
   "ctaContact": "Ruf mich an oder hinterlasse mir eine Nachricht!",

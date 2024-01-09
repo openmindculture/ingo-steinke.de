@@ -38,7 +38,7 @@ module.exports = {
   "spacedAnd": ", and",
   "currentlyEcologicalIam": "I enjoy working for customers with an ecological and ethical focus in their work! I'm a",
   "memberOf": "a member of",
-  "careAboutGoingBeyond": "I care about going beyond mere technical competence in my personal and work life. Creativity, flexibility, and thoughtfulness are the values I live and work by. I am deeply interested in how sustainability, culture, and art come together, and I strive to bring what I learn into my work every day.",
+  "careAboutGoingBeyond": "Creativity, flexibility, and thoughtfulness are the main values that guide my work and personal lives. I am deeply interested in how sustainability, culture, and art come together, and I strive to bring what I learn into my work every day.",
   "workWithMeHeading": "I'm Here For You",
   "workWithMe":"Do you want to overhaul your website? Does your team need support from a front-end developer with full-stack experience?",
   "ctaContact": "Call me or leave a message!",
