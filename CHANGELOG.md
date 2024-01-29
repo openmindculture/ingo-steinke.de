@@ -1,5 +1,8 @@
 # Changelog
 
+## [3.4.2] content update - 2024-01-29
+* improve German wording (danke, Jutta!)
+
 ## [3.4.1] content and print layout enhancement - 2024-01-09
 * improve and extend content #189
 * fix and improve printable version #190
