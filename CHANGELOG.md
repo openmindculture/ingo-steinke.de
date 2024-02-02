@@ -1,5 +1,9 @@
 # Changelog
 
+## [3.4.3] content update - 2024-02-...
+* further improve wording and introduction (TODO)
+* add skills aspects
+
 ## [3.4.2] content update - 2024-01-29
 * improve German wording (danke, Jutta!)
 
