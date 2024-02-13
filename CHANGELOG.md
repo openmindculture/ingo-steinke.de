@@ -1,7 +1,13 @@
 # Changelog
 
-## [3.4.3] content update - 2024-02-...
-* further improve wording and introduction (TODO)
+## [3.4.4] content update - 2024-02-13
+* further improve wording and introduction
+* remove older project from introduction
+* add Shopware Certification files
+* upgrade project dependencies
+
+## [3.4.3] content update - 2024-02-09
+* further improve wording and introduction
 * add skills aspects
 
 ## [3.4.2] content update - 2024-01-29
