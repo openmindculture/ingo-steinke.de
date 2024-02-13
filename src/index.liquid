@@ -187,8 +187,7 @@
               <p>
                 {{ content.intro }}
                 nexum,
-                Avenga,
-                Planted{{ content.spacedAnd }}{% comment %} spacedAnd might start with a comma e.g. ", and" {% endcomment %}
+                Avenga{{ content.spacedAnd }}{% comment %} spacedAnd might start with a comma e.g. ", and" {% endcomment %}
                 Project Together.
               </p>
               <p>
@@ -559,22 +558,32 @@
               <p>
                 {{ content.work }}
               </p>
+
+              <h3>{{ content.workTeamHeading }}</h3>
+              <p>
+                {{ content.workTeam }}
+              </p>
+
               <h3>{{ content.workReliableHeading }}</h3>
               <p>
                 {{ content.workReliable }}
                 {{ content.workClientsBenefit }}
               </p>
-              <h3>{{ content.workFullstackHeading }}</h3>
+
+              <h3 class="target-offset" id="zertifizierter-shopware-entwickler">{{ content.workCertifiedHeading }}</h3>
               <p>
-                {{ content.workFullstack }}
+                {{ content.workCertifiedIam }}
+                <a
+                  href="{{ content.workCertifiedPdfUrl }}"
+                  target="_blank"
+                  rel="noopener"
+                >{{ content.workCertifiedSWDev }}</a>
+                {{ content.workCertifiedAnd }}
+                {{ content.workCertifiedExtensionPartner }}.
               </p>
 
               <h3 class="target-offset" id="plugin-programmierung">{{ content.workPluginsHeading }}</h3>
               <p>
-                {{ content.workPlugins1 }}
-                {{ content.workSwLink1Text }}
-                {{ content.workPlugins2 }}
-                {{ content.workWpLinkText }}.
                 {{ content.workPlugins5 }}
                 <a
                   href="https://de.wordpress.org/plugins/incompatibility-status/"
@@ -597,9 +606,9 @@
                 </a>.
               </p>
 
-              <h3>{{ content.workTeamHeading }}</h3>
+              <h3>{{ content.workFullstackHeading }}</h3>
               <p>
-                {{ content.workTeam }}
+                {{ content.workFullstack }}
               </p>
             </article>
           </section>
@@ -853,7 +862,11 @@
 
                   <a href="https://www.sustainablewebmanifesto.com/" target="_blank" rel="noopener">
                     Sustainable Web Manifesto</a>.
-                  <br><br>
+                </p>
+                <p>
+                  {{ content.careAboutGoingBeyond }}
+                </p>
+                <p>
                   {{ content.aboutMeAtDev }} <a
                     href="https://dev.to/ingosteinke"
                     target="_blank"
