@@ -17,6 +17,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/mstile-150x150.png');
   eleventyConfig.addPassthroughCopy('src/2022-4-19-www.ingo-steinke.de-1793046390-report.pdf');
   eleventyConfig.addPassthroughCopy('src/2022-5-27-www.ingo-steinke.com-1503125752-report.pdf');
+  eleventyConfig.addPassthroughCopy('src/Shopware-6-Certified-Developer-Ingo-Steinke.pdf');
+  eleventyConfig.addPassthroughCopy('src/Shopware-6-Certified-Developer-Ingo-Steinke-de.pdf');
 
   // redirect rules and domain configuration for netlify
   eleventyConfig.addPassthroughCopy('src/netlify.toml');

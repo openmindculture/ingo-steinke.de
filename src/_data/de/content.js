@@ -142,7 +142,8 @@ module.exports = {
   "pricingHeading": "Preise",
   "pricing": "Ich biete verschiedene Preismodelle an. Bei einer Abrechnung auf Stundenbasis gebe ich üblicherweise im Vorfeld eine Aufwandsschätzung ab. Festpreisangebote sind ebenfalls möglich. Mein Stundensatz richtet sich nach Art und Umfang der Tätigkeit und beginnt ab <span class=price>85,- €</span> (zzgl. 19% MWSt.) Gemeinnützige Organisationen und nachhaltige Startups können auf Anfrage vergünstigte Angebote erhalten.",
   "workFullstackHeading": "Full-Stack-Erfahrung und Frontend-Fokus",
-  "workFullstack": "Bei der Weiterentwicklung bestehenden Codes kommt mir meine Berufserfahrung und meine pragmatische Einstellung zugute. Mit meinen Erfahrungen im Backend- und DevOps-Bereich und meiner hohen Lernbereitschaft übernehme ich bei Bedarf alle Aufgaben, die sich bei der Webentwicklung ergeben oder finde geeignete Partner:innen für die Umsetzung. Mein Schwerpunkt ist die Frontend-Entwicklung mit CSS.",
+  "workFullstack": "Bei der Weiterentwicklung bestehenden Codes kommt mir meine Berufserfahrung und meine pragmatische Einstellung zugute. Mit meinen Erfahrungen im Backend- und DevOps-Bereich und meiner hohen Lernbereitschaft übernehme ich bei Bedarf alle Aufgaben, die sich bei der Webentwicklung ergeben oder finde geeignete Partner:innen für die Umsetzung.",
+  "workOwnFocus": "Mein Schwerpunkt ist die Frontend-Entwicklung mit CSS.",
   "workCertifiedHeading": "Zertifizierte E-Commerce-Entwicklung",
   "workCertifiedIam": "Ich bin",
   "workCertifiedSWDev": "zertifizierter Shopware 6 Developer",
@@ -156,7 +157,7 @@ module.exports = {
   "workPlugins5": "Aktuell arbeite ich an WordPress-Plugins zur",
   "workPlugins6": "vorzeitigen Erkennung von Plugin-Konflikten",
   "workPluginsAnd": "und",
-  "workPlugins7": "zum automatischen Versand von Spamverdacht-Berichten für WordPress-Kontaktformulare",
+  "workPlugins7": "zum Spam-Bericht für WordPress-Kontaktformulare",
   "workPluginsOther": "Zudem entwickelte ich Erweiterungen und Themes für Shopware, WebStorm und IntelliJ IDEA, unter anderem das kostenlos erhätliche",
   /* Skills */
   "SkillsHeading": "Fachkenntnisse (Skills)",
