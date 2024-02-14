@@ -139,6 +139,9 @@ progressive enhancement: content first, keep the site readable and usable withou
 test tab-navigation, screen reader; use static code analysis (eslint, stylelint), automated audits
 (axe, wave, lighthouse); run and update automated test scenarios!
 
+Stylelint and eslint and/or transpilation tools should be configured for maximum backward compatibility!
+Some default rules like `declaration-block-no-duplicate-properties` have been disabled for this reason.
+
 The website should be fully functional and beautifully styled, including animation and interactivity,
 using only HTML and CSS without any scripts or images. Saving the website as a PDF using the print dialog
 should generate a printable document that resembles the website's style, contains all important information,
