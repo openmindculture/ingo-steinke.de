@@ -37,10 +37,10 @@
     </style>
     <link rel="preload" href="fonts/bitter-v16-latin-700.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/montserrat-v15-latin-ext_latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" media="screen" href="styles.css?v=3.4.4">
-    <script src="js/scripts.js?v=3.4.4"></script>
-    <link rel="stylesheet" media="screen and (prefers-reduced-motion: no-preference)" href="decoration.css?v=3.4.4">
-    <link rel="stylesheet" media="print" href="print.css?v=3.4.4">
+    <link rel="stylesheet" media="screen" href="styles.css?v=3.5.0">
+    <script src="js/scripts.js?v=3.5.0"></script>
+    <link rel="stylesheet" media="screen and (prefers-reduced-motion: no-preference)" href="decoration.css?v=3.5.0">
+    <link rel="stylesheet" media="print" href="print.css?v=3.5.0">
     <meta name=author content="{{ content.metaAuthor }}">
     <meta
       property="og:title"
@@ -402,7 +402,6 @@
                         title="store.shopware.com/waoio62482995391f/wao.io-cache-control.html"
                         target="_blank"
                         rel="noopener"
-                        class="print-display-block"
                       >{{ content.projectShopwarePlugin2 }}</a> {{ content.projectShopwarePlugin3 }}
                       <span class="only-print code-link">store.shopware.com/waoio62482995391f/wao.io-cache-control.html</span>
                     </span>
@@ -499,8 +498,7 @@
                     <span class="text-line">
                       {{ content.projectWandelpunkt1 }}
                       <a href="http://web.archive.org/web/20230401133238/https://www.wandelpunkt-consulting.de/"
-                         target="_blank" rel="noopener">{{ content.projectWandelpunkt2 }}</a>{{ content.projectWandelpunkt3Spaced }}
-                      <span class="only-print code-link">Wandelpunkt-Consulting.de</span> .
+                         target="_blank" rel="noopener">{{ content.projectWandelpunkt2 }}</a>{{ content.projectWandelpunkt3Spaced }}.
                     </span>
                   </p>
                   <p>
@@ -535,7 +533,7 @@
                          target="_blank" rel="noopener">{{
                         content.projectPlanted4 }}</a>
                       {{ content.projectPlanted5 }}
-                      <span class="only-print code-link">planted.green</span>
+                      <span class="only-print code-link">https://planted.green</span>
                     </span>
                   </p>
                   <p>
@@ -874,7 +872,7 @@
                     href="https://dev.to/ingosteinke"
                     target="_blank"
                     rel="noopener"
-                  >{{ content.aboutMeDevBlog }}</a> {{ content.aboutMeAndOn }} <a
+                  >{{ content.aboutMeDevBlog }}</a> <span class="only-print inline">(dev.to/ingosteinke) </span>{{ content.aboutMeAndOn }} <a
                     href="https://www.open-mind-culture.org/"
                     target="_blank"
                     rel="noopener"
@@ -884,9 +882,6 @@
 
               <section class="avoid-page-break">
                 <h3 class="target-offset" id="talks-events">{{ content.talksHeading }}</h3>
-                <p>
-                  {{ content.talks }}
-                </p>
               </section>
 
               <figure class="content-image">
@@ -1068,7 +1063,7 @@
                   <div class="initially-hidden only-print">{{ content.bankaccountLabel }}</div>
                   {%- for chunk in content.bankaccountNumberChunks -%}<span class="visually-spaced">{{ chunk }}</span>{%- endfor -%}
                 </div>
-                <div>
+                <div class="paypal-link-wrapper">
                   <a
                     href="https://paypal.me/ingosteinke"
                     target="_blank"
@@ -1256,6 +1251,10 @@
 
           <div class="legal legal--copyright">
             &copy; {{ "now" | date: "%Y" }} {{ content.imprintName }}
+            ({{ content.updatedWithColon }}
+            {{ "now" | date: "%d" }}{{ content.dotIfGerman }}
+            {{ "now" | date: "%m" | customLocalizedMonthNameFilter }}
+            {{ "now" | date: "%Y" }})
           </div>
 
         </footer>

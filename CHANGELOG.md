@@ -1,5 +1,11 @@
 # Changelog
 
+## [3.5.0] content update, CV, print styles - 2024-02-14
+* include CV as downloadable PDF document in each language
+* improve print styles, prevent "widows" and empty space
+* combine events and testimonials in a compact way
+* add last updated date on the page footer
+
 ## [3.4.4] content update - 2024-02-13
 * further improve wording and introduction
 * remove older project from introduction
