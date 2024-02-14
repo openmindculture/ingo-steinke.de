@@ -25,6 +25,11 @@ h4 {
   margin-bottom: 13pt;
 }
 
+#skills,
+#about-me {
+  padding-top: 5pt;
+}
+
 .vcard h2,
 .vcard h3 {
   margin: 0;
