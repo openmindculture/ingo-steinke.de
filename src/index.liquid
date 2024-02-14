@@ -1254,6 +1254,10 @@
 
           <div class="legal legal--copyright">
             &copy; {{ "now" | date: "%Y" }} {{ content.imprintName }}
+            ({{ content.updatedWithColon }}
+            {{ "now" | date: "%d" }}{{ content.dotIfGerman }}
+            {{ "now" | date: "%m" | customLocalizedMonthNameFilter }}
+            {{ "now" | date: "%Y" }})
           </div>
 
         </footer>

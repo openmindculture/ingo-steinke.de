@@ -291,5 +291,7 @@ module.exports = {
   "ecofriendlyEcograderUrl": "https://ecograder.com/report/CTpDfqTWQquOGlqMr7RS6ZlC",
   "ecofriendlyEcograderTitle": "In October 2023, this page scored better than 86% of all URLs crawled by Ecograder.",
   "ecofriendlyEcograderScore": "Ecograder Score: 96/100 (0.06 g CO₂e)",
-  "buttonStopAnimation": "hide animation"
+  "buttonStopAnimation": "hide animation",
+  "updatedWithColon": "updated:",
+  "dotIfGerman": ""
 };
