@@ -181,8 +181,10 @@ img.avatar {
   display: none;
 }
 
-#contact {
+#contact,
+.paypal-link-wrapper {
   position: relative;
+  padding-top: 10pt;
 }
 
 .vcard-digital-wrapper {
@@ -219,9 +221,13 @@ figure,
 #talks-events,
 #work,
 #testimonials,
-.page-break-before,
-.imprint-contact {
+#interested,
+.page-break-before {
   page-break-before: always;
+}
+
+.imprint-contact {
+  padding-top: 16pt;
 }
 
 #projects .code-link,
