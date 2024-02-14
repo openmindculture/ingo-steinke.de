@@ -94,6 +94,10 @@ img.avatar {
   height: auto;
 }
 
+figure.content-image img {
+  max-width: 70%;
+}
+
 .code-link {
   font-family: monospace;
 }
@@ -220,7 +224,6 @@ figure,
 #projects,
 #talks-events,
 #work,
-#testimonials,
 #interested,
 .page-break-before {
   page-break-before: always;
