@@ -204,6 +204,10 @@ figure,
   font-weight: normal;
 }
 
+.project-thumb {
+  display: none;
+}
+
 .initially-hidden.only-print {
   display: block;
 }
