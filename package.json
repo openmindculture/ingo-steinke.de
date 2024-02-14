@@ -1,6 +1,6 @@
 {
     "name": "ingo-steinke.de",
-    "version": "3.4.4",
+    "version": "3.4.5",
     "description": "website about web developer Ingo Steinke",
     "main": "index.html",
     "scripts": {
@@ -49,7 +49,7 @@
         "html-minifier": "^4.0.0",
         "http-server": "^14.1.1",
         "playwright": "^1.27.1",
-        "postcss": "^8.4.18",
+        "postcss": "^8.4.35",
         "postcss-cli": "^11.0.0",
         "postcss-custom-properties": "^13.3.0",
         "postcss-custom-selectors": "^7.1.0",
