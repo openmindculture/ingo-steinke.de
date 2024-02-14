@@ -55,7 +55,7 @@
         "postcss-custom-selectors": "^6.0.0",
         "postcss-import": "^14.0.2",
         "precss": "^4.0.0",
-        "puppeteer": "^19.0.0",
+        "puppeteer": "^22.0.0",
         "stylelint": "^14.14.0",
         "stylelint-config-html": "^1.1.0",
         "stylelint-config-standard": "^29.0.0"
