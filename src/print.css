@@ -10,12 +10,13 @@ h4 {
 }
 
 h2 {
-  font-size: 18pt;
+  font-size: 17pt;
   margin-bottom: 0;
 }
 
 h3 {
-  font-size: 16pt;
+  font-size: 15pt;
+  line-height: 1;
   margin-bottom: 0;
 }
 
@@ -114,6 +115,14 @@ img.avatar {
   filter: grayscale(1);
 }
 
+#projects .tile-content p:not(:last-child) {
+  margin-bottom: 5pt;
+}
+
+#projects .tile-content p:last-child {
+  margin-top: 0;
+}
+
 .grid-container.skills {
   padding-left: 0;
   list-style-type: none;
@@ -131,10 +140,17 @@ img.avatar {
 
 .skills li.tile--verbose ul li {
   margin-bottom: 8pt;
+  align-items: flex-start;
 }
 
 .skills li.tile ul li > *:first-child {
   width: 130pt;
+  line-height: 1.5;
+}
+
+.skills li.tile--verbose ul li > *:first-child {
+  line-height: 1.25;
+  font-size: 11pt;
 }
 
 .skills li.tile ul li .hashtags {
@@ -142,7 +158,8 @@ img.avatar {
 }
 
 .skills li.tile ul li .hashtag {
-  font-size: 11pt;
+  font-size: 10.5pt;
+  margin-right: 1pt;
 }
 
 .testimonial {
@@ -207,6 +224,10 @@ figure,
   display: block;
   font-size: 11.5pt;
   font-weight: normal;
+}
+
+#projects .code-link {
+  font-size: 11pt;
 }
 
 .project-thumb {
