@@ -9,14 +9,18 @@
     "declaration-block-no-duplicate-properties": null,
     "declaration-block-no-redundant-longhand-properties": null,
     "keyframes-name-pattern": null,
+    "max-empty-lines": null,
     "media-feature-name-no-vendor-prefix": null,
     "media-feature-range-notation": null,
+    "number-no-trailing-zeros": null,
     "property-no-vendor-prefix": null,
     "rule-empty-line-before": null,
     "selector-class-pattern": null,
     "selector-id-pattern": null,
     "selector-not-notation": null,
     "shorthand-property-no-redundant-values": null,
+    "string-quotes": null,
+    "value-list-comma-space-after": null,
     "value-no-vendor-prefix": null
   }
 }
