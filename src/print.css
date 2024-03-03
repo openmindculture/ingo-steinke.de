@@ -206,6 +206,10 @@ h2.fn {
   font-size: 14pt;
 }
 
+.price {
+  white-space: nowrap;
+}
+
 .privacy {
   display: none;
 }
