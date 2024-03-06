@@ -145,7 +145,7 @@ a.menu-toggle:hover {
   background-size:
     70% 100%,
     50% 100%,
-    100% 100%;
+    99% 100%;
 }
 
 .vcard a:link,
@@ -707,7 +707,7 @@ Offscreen menu style
   background: none;
 }
 
-.legal--links,
+.landingpage--links,
 .legal--copyright {
   margin-bottom: 2em;
 }

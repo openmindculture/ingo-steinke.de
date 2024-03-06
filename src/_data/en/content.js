@@ -293,5 +293,15 @@ module.exports = {
   "ecofriendlyEcograderScore": "Ecograder Score: 96/100 (0.06 g CO₂e)",
   "buttonStopAnimation": "hide animation",
   "updatedWithColon": "updated:",
-  "dotIfGerman": ""
+  "dotIfGerman": "",
+  "showLandingpageLinks": "",
+  "landingLinkTitleWordPress":"Wordpress-Website nachhaltig optimieren lassen",
+  "landingLinkTextWordPress": "WordPress",
+  "landingLinkUrlWordPress": "https://www.ingo-steinke.de/wordpress-website-nachhaltig-optimieren-lassen/",
+  "landingLinkTitleShopware": "Zertifizierter Shopware 6 + Frontend Webentwickler",
+  "landingLinkTextShopware": "Shopware",
+  "landingLinkUrlShopware": "https://www.ingo-steinke.de/zertifizierter-shopware-6-frontend-webentwickler/",
+  "landingLinkTitleSustainability": "Webseiten klimafreundlich und barrierefrei optimieren lassen",
+  "landingLinkTextSustainability": "Nachhaltigkeit",
+  "landingLinkUrlSustainability": "https://www.ingo-steinke.de/webseiten-klimafreundlich-barrierefrei-optimieren/"
 };

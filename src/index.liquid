@@ -37,10 +37,10 @@
     </style>
     <link rel="preload" href="fonts/bitter-v16-latin-700.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/montserrat-v15-latin-ext_latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" media="screen" href="styles.css?v=3.5.0">
-    <script src="js/scripts.js?v=3.5.0"></script>
-    <link rel="stylesheet" media="screen and (prefers-reduced-motion: no-preference)" href="decoration.css?v=3.5.0">
-    <link rel="stylesheet" media="print" href="print.css?v=3.5.0">
+    <link rel="stylesheet" media="screen" href="styles.css?v=3.6.1">
+    <script src="js/scripts.js?v=3.6.1"></script>
+    <link rel="stylesheet" media="screen and (prefers-reduced-motion: no-preference)" href="decoration.css?v=3.6.1">
+    <link rel="stylesheet" media="print" href="print.css?v=3.6.1">
     <meta name=author content="{{ content.metaAuthor }}">
     <meta
       property="og:title"
@@ -1206,6 +1206,15 @@
             <a href="#imprint">{{ content.targetImprint }}</a>
             <a href="#privacy">{{ content.targetPrivacy }}</a>
           </p>
+
+          {% comment %} hide untranslated content using content variable{% endcomment %}
+          {% if content.showLandingpageLinks == "true" %}
+          <p class="landingpage--links no-print">
+            <a href="{{ content.landingLinkUrlWordPress }}" title="{{ content.landingLinkTitleWordPress }}">{{ content.landingLinkTextWordPress }}</a>
+            <a href="{{ content.landingLinkUrlShopware }}" title="{{ content.landingLinkTitleShopware }}">{{ content.landingLinkTextShopware }}</a>
+            <a href="{{ content.landingLinkUrlSustainability }}" title="{{ content.landingLinkTitleSustainability }}">{{ content.landingLinkTextSustainability }}</a>
+          </p>
+          {% endif %}
 
           <div id="wcb" class="carbonbadge no-print"></div>
           <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>

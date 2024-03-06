@@ -108,7 +108,9 @@ small {
   }
 
   @media (prefers-reduced-transparency) {
-    background-color: rgba(29, 73, 80, 1);
+    .jumbotronHeader {
+      background-color: rgba(29, 73, 80, 1);
+    }
   }
 
   .jumbotronHeader h1 {
@@ -163,7 +165,9 @@ small {
   }
 
   @media (prefers-reduced-transparency) {
-    box-shadow: 0 7px 14px 0 rgba(29, 73, 80, 1);
+    .sticky-header > .wrapper {
+      box-shadow: 0 7px 14px 0 rgba(29, 73, 80, 1);
+    }
   }
 
   .sticky-header > .wrapper img.avatar {

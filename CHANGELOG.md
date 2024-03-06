@@ -1,14 +1,12 @@
 # Changelog
 
-## [3.6.0] content update: additional pages - 2024-03-05
+## [3.6.1] content update: additional pages - 2024-03-05
 * add landing pages #210
-  for more specific on-page search optimization
-  as landing pages for adverts
-  for better tracking
-  as a proof of concept how to do multiple pages in eleventy
-  two different templates, index (with hero header) and page (without)
-  ad landing pages
-  (possibility of product detail pages)
+  - for more specific on-page search optimization
+  - as landing pages for adverts
+  - for better tracking
+* fix accessible decoration styles
+* fix buggy link border artifacts
 
 ## [3.5.0] content update, CV, print styles - 2024-02-14
 * include CV as downloadable PDF document in each language

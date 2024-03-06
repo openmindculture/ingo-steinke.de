@@ -21,6 +21,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/Shopware-6-Certified-Developer-Ingo-Steinke-de.pdf');
   eleventyConfig.addPassthroughCopy('src/Ingo-Steinke-CV-Projects-Skills-2024-sustainable-web-developer.pdf');
   eleventyConfig.addPassthroughCopy('src/Ingo-Steinke-CV-Projekte-Skills-2024-nachhaltiger-Webentwickler.pdf');
+  eleventyConfig.addPassthroughCopy('src/wordpress-website-nachhaltig-optimieren-lassen');
+  eleventyConfig.addPassthroughCopy('src/zertifizierter-shopware-6-frontend-webentwickler');
+  eleventyConfig.addPassthroughCopy('src/webseiten-klimafreundlich-barrierefrei-optimieren');
 
   // redirect rules and domain configuration for netlify
   eleventyConfig.addPassthroughCopy('src/netlify.toml');
