@@ -1,7 +1,11 @@
 # Changelog
 
-## [3.7.0] improve analytics #212
+## [3.7.1] remove temporary third-party code - 2024-03-15
+* remove obsolete third-party code after verifications
+
+## [3.7.0] improve analytics #212 - 2024-03-15
 * add privacy-friendly tracking (Matomo)
+* activate scripts on landing pages to enable tracking
 
 ## [3.6.1] content update: additional pages - 2024-03-05
 * add landing pages #210
