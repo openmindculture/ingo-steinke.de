@@ -9,7 +9,6 @@ window.addEventListener('DOMContentLoaded', () => {
   const navMenu = document.getElementById('main-menu');
   const languageSwitch = document.getElementById('language-switch');
   const animationToggle = document.getElementById('animation-toggle');
-console.log('boo d`nilreb!');
   /* Progressive enhancement:
    * DOM elements with visibility controlled by script, like sticky-header,
    * must always stay visible without javascript,
@@ -66,7 +65,6 @@ console.log('boo d`nilreb!');
   }
 
   var decorationElement = document.getElementById('decoration');
-  console.log(typeof decorationElement + ' decorationElement: ', decorationElement);
   if (decorationElement) {
     var randomProperties = [
       '--random-factor-grow-max',
@@ -80,7 +78,20 @@ console.log('boo d`nilreb!');
     ];
     for (var i=0; i<randomProperties.length; i++) {
       decorationElement.style.setProperty(randomProperties[i], Math.random());}
-      console.log(`assigned random value to randomProperties[${i}]: ${randomProperties[i]}`)
   }
+
+  var _paq = window._paq = window._paq || [];
+  // tracker methods like "setCustomDimension" should be called before "trackPageView"
+  _paq.push(["setDomains", ["*.ingo-steinke.com", "*.ingo-steinke.de"]]);
+  _paq.push(["enableCrossDomainLinking"]);
+  _paq.push(['trackPageView']);
+  // _paq.push(['enableLinkTracking']); // disable link tracking
+  (function() {
+    var u="//www.ingo-steinke.de/matomo/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
 
 });

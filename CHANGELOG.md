@@ -1,5 +1,8 @@
 # Changelog
 
+## [3.7.0] improve analytics #212
+* add privacy-friendly tracking (Matomo)
+
 ## [3.6.1] content update: additional pages - 2024-03-05
 * add landing pages #210
   - for more specific on-page search optimization
