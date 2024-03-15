@@ -6,6 +6,7 @@
 ## [3.7.0] improve analytics #212 - 2024-03-15
 * add privacy-friendly tracking (Matomo)
 * activate scripts on landing pages to enable tracking
+* add aggregate rating microdata (rich snippets) of Google reviews
 
 ## [3.6.1] content update: additional pages - 2024-03-05
 * add landing pages #210
