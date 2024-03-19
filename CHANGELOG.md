@@ -1,5 +1,10 @@
 # Changelog
 
+## [3.8.0] skills update - 2024-03-18
+* add Freemarker after Markdown, remove too generic XML,
+* add Vanilla/VanillaJS in a vanilla-ish color (floralwhite)
+* rearrange tiles for better overall look
+
 ## [3.7.1] remove temporary third-party code - 2024-03-15
 * remove obsolete third-party code after verifications
 

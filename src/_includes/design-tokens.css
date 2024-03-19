@@ -95,6 +95,7 @@
   --brand-gray-eleventy: #1d4950;
   --brand-gray-gimp: #514b3a;
   --brand-black-inkscape: #24273c;
+  --brand-vanilla: #fffaf0; /* === floralwhite */
 
   /* marker selection web safe color and wide gamut variations */
   --textmarker-blue: var(--brand-blue-tailwind-react);
