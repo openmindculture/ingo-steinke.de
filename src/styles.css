@@ -956,6 +956,12 @@ ul.grid-container.skills {
   color: #fff;
 }
 
+.brand-vanilla {
+  background-color: var(--brand-vanilla);
+  border: solid 1px var(--merino-slightly-lighter);
+  color: #000;
+}
+
 .testimonials {
   margin-bottom: 2rem;
 }
