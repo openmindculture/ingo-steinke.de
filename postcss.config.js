@@ -4,7 +4,7 @@ module.exports = {
     require('precss'),
     require('postcss-import'),
     postcssCustomProperties({
-      preserve: false,
+      preserve: true,
     }),
     require('cssnano')
   ]

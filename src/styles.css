@@ -750,6 +750,16 @@ a.menu-toggle:hover {
   outline: none;
 }
 
+.contrast-toggle {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 .jumbotronHeader h1 {
   background:
     -webkit-linear-gradient(
@@ -796,7 +806,7 @@ ul.grid-container.skills {
 }
 
 .skills > .tile {
-  background-color: rgba(98, 49, 68, 0.75);
+  background-color: var(--skills-tile-container-bg);
   color: #000;
   padding-left: 1em;
 }
@@ -1005,3 +1015,16 @@ ul.grid-container.skills {
   text-decoration-thickness: 0.1em;
 }
 
+body.high-contrast {
+  .sticky-header > .wrapper {
+    box-shadow: none;
+  }
+  .skills .tile li > span:first-child {
+    margin-bottom: 0.5em;
+    display: inline-block;
+    font-weight: bold;
+  }
+  .skills .tile .hashtag {
+    font-weight: bold;
+  }
+}
