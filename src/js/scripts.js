@@ -79,6 +79,9 @@ window.addEventListener('DOMContentLoaded', () => {
         }
       }
     });
+    if (!prefersMoreContrast) {
+      contrastToggle.title = contrastToggle.dataset.increasecaption;
+    }
   }
 
   if (animationToggle) {
