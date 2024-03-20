@@ -2,6 +2,14 @@ body {
   /* define possible colors,
    * postcss-custom-properties : preserve: false
    * => only export properties that are actually used
+   * BUT can't be used when we need theming (high contrast mode)
+   * TODO refactor and clean up!
+   * Also postcss-import : skipDuplicates: true still does not prevent
+   * 1x redundant design-tokens in critical.css if we import it there
+   * Workaround TODO: copy the most critical design tokens manually to critical CSS ?
+   * proper solution is a per-file exception for postcss-custom-properties
+   * should already be handled by utils/transform-css.js
+   * but that does not work currently
    */
 
   --deep-green: #017d63;

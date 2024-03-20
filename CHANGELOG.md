@@ -1,6 +1,6 @@
 # Changelog
 
-## [3.9.0] accessibility improvement - 2024-03-20
+## [3.9.0] accessibility improvement - 2024-03-21
 * offer high contrast color scheme #218 
 * auto-stop animation, offer restart #219
 
