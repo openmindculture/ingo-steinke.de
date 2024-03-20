@@ -1019,6 +1019,18 @@ ul.grid-container.skills {
   text-decoration-thickness: 0.1em;
 }
 
+@media (max-width: 340px) {
+
+  #sticky-headline {
+    display: inline-block;
+    padding: 0.25rem 0 0 0.5rem;
+  }
+
+  .avatar {
+    display: none;
+  }
+}
+
 body.high-contrast {
   .sticky-header > .wrapper {
     box-shadow: none;
