@@ -7,7 +7,6 @@ body {
   --deep-green: #017d63;
   --spermidine-green: #1d4950;
   --spermidine-green-darker: #0c1f22;
-  --anthracite-green: #3e5f58;
   --fresh-blue: #6440fa;
   --surftheweb-pantone: #203c7f;
   --greenish-blue: #053245;
@@ -181,5 +180,5 @@ body.high-contrast {
   --textmarker-blue: #b7efff;
 
   --skills-tile-container-bg: var(--omage-purple-darker);
-  --primary-animation-color: var(--anthracite-green);
+  --primary-animation-color: #000;
 }

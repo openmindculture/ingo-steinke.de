@@ -758,6 +758,10 @@ a.menu-toggle:hover {
   text-decoration: none;
   background-color: transparent;
   cursor: pointer;
+  svg {
+    color: white;
+    margin: 0.325rem 0 -0.325rem 0;
+  }
 }
 
 .jumbotronHeader h1 {
