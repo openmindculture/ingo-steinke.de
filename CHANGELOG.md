@@ -1,5 +1,9 @@
 # Changelog
 
+## [3.9.0] accessibility improvement - 2024-03-20
+* bla #218 
+* foo #219 (TODO)
+
 ## [3.8.0] skills update - 2024-03-18
 * add Freemarker after Markdown, remove too generic XML,
 * add Vanilla/VanillaJS in a vanilla-ish color (floralwhite)
