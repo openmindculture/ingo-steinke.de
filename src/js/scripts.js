@@ -84,12 +84,6 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  if (animationToggle) {
-    animationToggle.addEventListener('click', () => {
-      document.getElementById('decoration').style.display = 'none';
-    });
-  }
-
   var decorationElement = document.getElementById('decoration');
   if (decorationElement) {
     var randomProperties = [
@@ -103,7 +97,35 @@ window.addEventListener('DOMContentLoaded', () => {
       '--random-factor-position-bottom',
     ];
     for (var i=0; i<randomProperties.length; i++) {
-      decorationElement.style.setProperty(randomProperties[i], Math.random());}
+      decorationElement.style.setProperty(randomProperties[i], Math.random());
+    }
+
+    var decorationContainer = document.getElementById('decoration');
+    // WCAG SC 2.2.2 Pause, Stop, Hide (Level A) makes stop button obsolete if animation stops before 5 seconds
+    var animationStopperTimeout = window.setTimeout(function(){
+      animationStopperCallback();
+    },30000); // 1000ms initial (css) delay before animation fades in for the first time
+    var animationStopperCallback = function() {
+      if (decorationContainer) {
+        document.getElementById('decoration').style.display = 'none';
+      }
+    }
+
+    if (animationToggle) {
+      animationToggle.addEventListener('click', () => {
+        if (decorationContainer) {
+          if (decorationContainer.style.display !=='none') {
+            document.getElementById('decoration').style.display = 'none';
+            window.clearTimeout(animationStopperTimeout);
+          } else {
+            // no delay before fading in when triggered by user interaction
+            document.getElementById('decoration').style.animationDelay = '0s';
+            document.getElementById('decoration').style.display = 'block';
+            window.clearTimeout(animationStopperTimeout);
+          }
+        }
+      });
+    }
   }
 
   var _paq = window._paq = window._paq || [];

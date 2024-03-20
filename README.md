@@ -21,6 +21,10 @@ This is a screenshot after the relaunch in 2021:
 - a computer with an internet connection
 - linters and testing tools will be installed by npm
 
+### Frontend Debugging
+
+To use `console` functions like `console.log`, set `"removeConsole"` to `false` in `babel.config.json` !
+
 ## Edit Content
 
 ### Project Structure

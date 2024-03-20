@@ -292,6 +292,8 @@ module.exports = {
   "ecofriendlyEcograderScore": "Ecograder Score: 97/100 (0.05 g CO₂e)",
   "listedAt": "Verzeichnet bei",
   "buttonStopAnimation": "Animation ausblenden",
+  "buttonStartAnimation": "Animation einblenden",
+  "buttonToggleAnimation": "Animation an/aus",
   "updatedWithColon": "aktualisiert am",
   "dotIfGerman": ".",
   "toggleHighContrast": "Kontrast ändern",
