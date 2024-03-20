@@ -58,6 +58,29 @@ window.addEventListener('DOMContentLoaded', () => {
     languageSwitch.href += window.location.hash;
   });
 
+  var classNameHighContrast = 'high-contrast';
+  var prefersMoreContrastQuery = window.matchMedia('(prefers-contrast: more)');
+  var prefersMoreContrast = (prefersMoreContrastQuery.matches);
+  if (!prefersMoreContrast) {
+    document.body.classList.remove(classNameHighContrast);
+  }
+  var contrastToggle = document.getElementById('contrast-toggle');
+  if (contrastToggle) {
+    contrastToggle.addEventListener('click',function(){
+      if (document.body.className.indexOf(classNameHighContrast)>-1) {
+        document.body.classList.remove(classNameHighContrast);
+        if (contrastToggle.dataset.increasecaption) {
+          contrastToggle.title = contrastToggle.dataset.increasecaption;
+        }
+      } else {
+        document.body.classList.add(classNameHighContrast);
+        if (contrastToggle.dataset.reducecaption) {
+          contrastToggle.title = contrastToggle.dataset.reducecaption;
+        }
+      }
+    });
+  }
+
   if (animationToggle) {
     animationToggle.addEventListener('click', () => {
       document.getElementById('decoration').style.display = 'none';

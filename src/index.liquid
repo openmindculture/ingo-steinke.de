@@ -99,7 +99,7 @@
       }
     </script>
   </head>
-  <body>
+  <body class="high-contrast">
     <div class="page-container" id="top">
       <div class="page-content">
         <header class="jumbotronHeader" id="jumbotronHeader">
@@ -184,6 +184,15 @@
                       title="{{ content.targetOtherLanguageTitle }}"
                       id="language-switch"
                     >{{ content.targetOtherLanguage }}</a>
+                  </li>
+                  <li>
+                    <button
+                      id="contrast-toggle"
+                      class="contrast-toggle no-print"
+                      title="{{ content.toggleContrast }}"
+                      data-reducecaption="{{ content.reduceContrast }}"
+                      data-increasecaption="{{ content.increaseContrast }}"
+                    >☀️</button>
                   </li>
                 </ul>
               </nav>

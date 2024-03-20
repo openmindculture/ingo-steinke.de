@@ -24,6 +24,7 @@ body {
   --dirty-orange: #cf7626;
   --interior-rose: #f6b692;
   --omega-purple: #623144;
+  --omage-purple-darker: #360518;
   --palo-rose: #fedbbd;
   --merino-lighter: #ebeff2;
   --merino-slightly-lighter: #d1d4d6;
@@ -138,8 +139,8 @@ body.high-contrast {
   --secondary-background: var(--merino-lighter);
   --secondary-lighter-background: #fff;
   --nav-menu-background: var(--greenish-blue);
-  --peel-gradient: var(--greenish-blue);
-  --peel-gradient-semitrans: var(--spermidine-green);
+  --peel-gradient: var(--spermidine-green-darker);
+  --peel-gradient-semitrans: var(--greenish-blue);
   --hashtag-default: var(--dark-contrast-blue);
   --hashtag-green: var(--spermidine-green);
   --hashtag-blue: var(--greenish-blue);
@@ -179,6 +180,6 @@ body.high-contrast {
   --brand-vanilla: #fff;
   --textmarker-blue: #b7efff;
 
-  --skills-tile-container-bg: var(--brand-reddish-dark);
+  --skills-tile-container-bg: var(--omage-purple-darker);
   --primary-animation-color: var(--anthracite-green);
 }
