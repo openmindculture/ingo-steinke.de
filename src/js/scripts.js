@@ -9,6 +9,12 @@ window.addEventListener('DOMContentLoaded', () => {
   const navMenu = document.getElementById('main-menu');
   const languageSwitch = document.getElementById('language-switch');
   const animationToggle = document.getElementById('animation-toggle');
+  const supportsIntersectionObserver =  (('IntersectionObserver' in window) &&
+    ('IntersectionObserverEntry' in window) &&
+    ('intersectionRatio' in window.IntersectionObserverEntry.prototype) &&
+    ('isIntersecting' in window.IntersectionObserverEntry.prototype)
+  );
+
   /* Progressive enhancement:
    * DOM elements with visibility controlled by script, like sticky-header,
    * must always stay visible without javascript,
@@ -23,7 +29,7 @@ window.addEventListener('DOMContentLoaded', () => {
   })
 
   // display sticky headline when header stuck on top
-  if (stickyHeader && hideableHeadline) {
+  if (stickyHeader && hideableHeadline && supportsIntersectionObserver) {
     const observer = new IntersectionObserver(
       ([e]) => stickyHeader.classList.toggle(
         'is-unstuck',
@@ -58,13 +64,13 @@ window.addEventListener('DOMContentLoaded', () => {
     languageSwitch.href += window.location.hash;
   });
 
-  var classNameHighContrast = 'high-contrast';
-  var prefersMoreContrastQuery = window.matchMedia('(prefers-contrast: more)');
-  var prefersMoreContrast = (prefersMoreContrastQuery.matches);
+  const classNameHighContrast = 'high-contrast';
+  const prefersMoreContrastQuery = window.matchMedia('(prefers-contrast: more)');
+  const prefersMoreContrast = (prefersMoreContrastQuery.matches);
   if (!prefersMoreContrast) {
     document.body.classList.remove(classNameHighContrast);
   }
-  var contrastToggle = document.getElementById('contrast-toggle');
+  let contrastToggle = document.getElementById('contrast-toggle');
   if (contrastToggle) {
     contrastToggle.addEventListener('click',function(){
       if (document.body.className.indexOf(classNameHighContrast)>-1) {
@@ -84,7 +90,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  var decorationElement = document.getElementById('decoration');
+  let decorationElement = document.getElementById('decoration');
   if (decorationElement) {
     var randomProperties = [
       '--random-factor-grow-max',
@@ -96,16 +102,16 @@ window.addEventListener('DOMContentLoaded', () => {
       '--random-factor-position-left',
       '--random-factor-position-bottom',
     ];
-    for (var i=0; i<randomProperties.length; i++) {
+    for (let i=0; i<randomProperties.length; i++) {
       decorationElement.style.setProperty(randomProperties[i], Math.random());
     }
 
-    var decorationContainer = document.getElementById('decoration');
+    let decorationContainer = document.getElementById('decoration');
     // WCAG SC 2.2.2 Pause, Stop, Hide (Level A) makes stop button obsolete if animation stops before 5 seconds
-    var animationStopperTimeout = window.setTimeout(function(){
+    let animationStopperTimeout = window.setTimeout(function(){
       animationStopperCallback();
     },30000); // 1000ms initial (css) delay before animation fades in for the first time
-    var animationStopperCallback = function() {
+    let animationStopperCallback = function() {
       if (decorationContainer) {
         document.getElementById('decoration').style.display = 'none';
       }
@@ -128,17 +134,17 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  var _paq = window._paq = window._paq || [];
+  let _paq = window._paq = window._paq || [];
   // tracker methods like "setCustomDimension" should be called before "trackPageView"
   _paq.push(["setDomains", ["*.ingo-steinke.com", "*.ingo-steinke.de"]]);
   _paq.push(["enableCrossDomainLinking"]);
   _paq.push(['trackPageView']);
   // _paq.push(['enableLinkTracking']); // disable link tracking
   (function() {
-    var u="//www.ingo-steinke.de/matomo/";
+    let u="//www.ingo-steinke.de/matomo/";
     _paq.push(['setTrackerUrl', u+'matomo.php']);
     _paq.push(['setSiteId', '1']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    let d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
     g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
   })();
 
