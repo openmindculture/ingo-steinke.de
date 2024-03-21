@@ -99,7 +99,8 @@ small {
 }
 
 .nav-wrapper {
-  display: inline;
+  display: flex;
+  align-items: flex-start;
 }
 
 @media only screen {
