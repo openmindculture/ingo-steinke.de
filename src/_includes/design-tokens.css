@@ -19,12 +19,9 @@ body {
   --surftheweb-pantone: #203c7f;
   --greenish-blue: #053245;
   --dark-contrast-blue: #1d3464;
-  --orange-tagdrippalette-yellow: #f8bc24;
-  --rippedpalette-yellow: #f4d83d;
-  --pantone-illuminating: #f5df4d; /* spring summer 2021 */
+  --pantone-illuminating: #f5df4d;
   --illuminating-higher-contrast: #fef300;
   --light-yellowish: #fffcf0;
-  --monolith-yellow: #fddc03;
   --trendy-beige: #f3db6d;
   --nougat-beige: #c97d43;
   --orange-tag: #df814b;
@@ -37,8 +34,6 @@ body {
   --merino-slightly-lighter: #d1d4d6;
   --merino-light: #bbbfc2;
   --merino-dark: #83878a;
-  --pantone-stormy-weather: #58646d;
-  --pantone-inkwell: #363945; /* spring summer 2021 */
 
   /* export theme colors */
   --primary-foreground: var(--merino-lighter);
@@ -58,18 +53,6 @@ body {
   --hashtag-default: var(--surftheweb-pantone);
   --hashtag-green: var(--spermidine-green);
   --hashtag-blue: var(--fresh-blue);
-
-  /* colors to alternate by position */
-  --hashtag-bg-autumn-1: var(--deep-green);
-  --hashtag-bg-autumn-2: var(--pantone-stormy-weather);
-  --hashtag-bg-autumn-3: var(--pantone-inkwell);
-  --hashtag-bg-autumn-4: var(--spermidine-green);
-  --hashtag-bg-autumn-5: var(--surftheweb-pantone);
-  --hashtag-bg-spring-1: var(--pantone-illuminating);
-  --hashtag-bg-spring-2: var(--trendy-beige);
-  --hashtag-bg-spring-3: var(--interior-rose);
-  --hashtag-bg-spring-4: var(--palo-rose);
-  --hashtag-bg-spring-5: var(--orange-tag);
 
   /* colors inspired by external brands */
   --brand-yellow-js: #f5df4d;
@@ -182,8 +165,7 @@ body.high-contrast {
   --brand-green-twig-bg: #f8ffcf;
   --brand-green-css-mongo: var(--spermidine-green);
   --brand-green-css-mongo-neon: var(--spermidine-green);
-  --hashtag-bg-spring-3: #ffe0cf;
-  --hashtag-bg-spring-4: #ffe0cf;
+  --interior-rose: #ffe0cf;
   --brand-vanilla: #fff;
   --textmarker-blue: #b7efff;
 
