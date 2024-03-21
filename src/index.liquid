@@ -37,10 +37,10 @@
     </style>
     <link rel="preload" href="fonts/bitter-v16-latin-700.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/montserrat-v15-latin-ext_latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" media="screen" href="styles.css?v=3.8.0">
-    <script src="js/scripts.js?v=3.8.0"></script>
-    <link rel="stylesheet" media="screen and (prefers-reduced-motion: no-preference)" href="decoration.css?v=3.8.0">
-    <link rel="stylesheet" media="print" href="print.css?v=3.8.0">
+    <link rel="stylesheet" media="screen" href="styles.css?v=3.9.0">
+    <script src="js/scripts.js?v=3.9.0"></script>
+    <link rel="stylesheet" media="screen and (prefers-reduced-motion: no-preference)" href="decoration.css?v=3.9.0">
+    <link rel="stylesheet" media="print" href="print.css?v=3.9.0">
     <meta name=author content="{{ content.metaAuthor }}">
     <meta
       property="og:title"
@@ -99,7 +99,7 @@
       }
     </script>
   </head>
-  <body>
+  <body class="high-contrast">
     <div class="page-container" id="top">
       <div class="page-content">
         <header class="jumbotronHeader" id="jumbotronHeader">
@@ -187,6 +187,18 @@
                   </li>
                 </ul>
               </nav>
+              <button
+                id="contrast-toggle"
+                class="contrast-toggle no-print"
+                title="{{ content.toggleContrast }}"
+                data-reducecaption="{{ content.reduceContrast }}"
+                data-increasecaption="{{ content.increaseContrast }}"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="24" height="24">
+                  <path fill="currentColor" d="M15 2h2v3h-2zM27 15h3v2h-3zM15 27h2v3h-2zM2 15h3v2H2zM5.45 6.884l1.414-1.415 2.121 2.122-1.414 1.414zM23 7.58l2.121-2.12 1.414 1.414-2.121 2.121zM23.002 24.416l1.415-1.414 2.12 2.122-1.413 1.414zM5.47 25.13 7.59 23 9 24.42l-2.12 2.12-1.41-1.41zM16 8a8 8 0 1 0 8 8 8 8 0 0 0-8-8Zm0 14a6 6 0 0 1 0-12Z"/>
+                  <path fill="none" style="fill:none" d="M0 0h32v32H0z"/>
+                </svg>
+              </button>
 
               <a href="#main-menu-toggle"
                 class="backdrop"
@@ -1022,9 +1034,14 @@
                 </div>
 
                 <p class="no-print">
-                  <a href="{{ content.testimonialsReadMoreLinkUrl }}" target="_blank" rel="noopener">
-                    {{ content.testimonialsReadMoreText }}
+                  <a href="{{ content.testimonialsReadMoreLinkUrl1 }}" target="_blank" rel="nofollow noopener">
+                    {{ content.testimonialsReadMoreText1 }}
                   </a>
+                  {{ content.testimonialsReadMoreTextAnd }}
+                  <a href="{{ content.testimonialsReadMoreLinkUrl2 }}" target="_blank" rel="nofollow noopener">
+                    {{ content.testimonialsReadMoreText2 }}
+                  </a>
+                  ...
                 </p>
 
               <div class="only-print"><br></div>
@@ -1274,7 +1291,7 @@
           </div>
 
           <p class="no-print">
-            <button id="animation-toggle">{{ content.buttonStopAnimation }}</button>
+            <button id="animation-toggle">{{ content.buttonToggleAnimation }}</button>
           </p>
 
           <div class="only-print"><br></div>

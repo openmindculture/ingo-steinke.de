@@ -58,10 +58,30 @@ window.addEventListener('DOMContentLoaded', () => {
     languageSwitch.href += window.location.hash;
   });
 
-  if (animationToggle) {
-    animationToggle.addEventListener('click', () => {
-      document.getElementById('decoration').style.display = 'none';
+  var classNameHighContrast = 'high-contrast';
+  var prefersMoreContrastQuery = window.matchMedia('(prefers-contrast: more)');
+  var prefersMoreContrast = (prefersMoreContrastQuery.matches);
+  if (!prefersMoreContrast) {
+    document.body.classList.remove(classNameHighContrast);
+  }
+  var contrastToggle = document.getElementById('contrast-toggle');
+  if (contrastToggle) {
+    contrastToggle.addEventListener('click',function(){
+      if (document.body.className.indexOf(classNameHighContrast)>-1) {
+        document.body.classList.remove(classNameHighContrast);
+        if (contrastToggle.dataset.increasecaption) {
+          contrastToggle.title = contrastToggle.dataset.increasecaption;
+        }
+      } else {
+        document.body.classList.add(classNameHighContrast);
+        if (contrastToggle.dataset.reducecaption) {
+          contrastToggle.title = contrastToggle.dataset.reducecaption;
+        }
+      }
     });
+    if (!prefersMoreContrast) {
+      contrastToggle.title = contrastToggle.dataset.increasecaption;
+    }
   }
 
   var decorationElement = document.getElementById('decoration');
@@ -77,7 +97,35 @@ window.addEventListener('DOMContentLoaded', () => {
       '--random-factor-position-bottom',
     ];
     for (var i=0; i<randomProperties.length; i++) {
-      decorationElement.style.setProperty(randomProperties[i], Math.random());}
+      decorationElement.style.setProperty(randomProperties[i], Math.random());
+    }
+
+    var decorationContainer = document.getElementById('decoration');
+    // WCAG SC 2.2.2 Pause, Stop, Hide (Level A) makes stop button obsolete if animation stops before 5 seconds
+    var animationStopperTimeout = window.setTimeout(function(){
+      animationStopperCallback();
+    },30000); // 1000ms initial (css) delay before animation fades in for the first time
+    var animationStopperCallback = function() {
+      if (decorationContainer) {
+        document.getElementById('decoration').style.display = 'none';
+      }
+    }
+
+    if (animationToggle) {
+      animationToggle.addEventListener('click', () => {
+        if (decorationContainer) {
+          if (decorationContainer.style.display !=='none') {
+            document.getElementById('decoration').style.display = 'none';
+            window.clearTimeout(animationStopperTimeout);
+          } else {
+            // no delay before fading in when triggered by user interaction
+            document.getElementById('decoration').style.animationDelay = '0s';
+            document.getElementById('decoration').style.display = 'block';
+            window.clearTimeout(animationStopperTimeout);
+          }
+        }
+      });
+    }
   }
 
   var _paq = window._paq = window._paq || [];

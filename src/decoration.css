@@ -1,4 +1,8 @@
-@import url('_includes/design-tokens.css');
+/* @import url('_includes/design-tokens.css'); */
+/* WORKAROUND #218
+   TODO reactivate import when postcssCustomProperties: preserve: false
+   defined in utils/transform-css.js is respected
+ */
 
 /* decoration layer is styled in critical.css */
 

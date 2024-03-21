@@ -3,8 +3,20 @@ permalink: '/sitemap.xml'
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-   <url>
-      <loc>{{ content.canonicalHref }}</loc>
-      <lastmod>{{ "now" | date: "%Y-%m-%d" }}</lastmod>
-   </url>
+  <url>
+    <loc>{{ content.canonicalHref }}</loc>
+    <lastmod>{{ "now" | date: "%Y-%m-%d" }}</lastmod>
+  </url>
+  {% if content.showLandingpageLinks == "true" %}<url>
+    <loc>https://www.ingo-steinke.de/wordpress-website-nachhaltig-optimieren-lassen/</loc>
+    <lastmod>2024-03-15</lastmod>
+  </url>
+  <url>
+    <loc>https://www.ingo-steinke.de/zertifizierter-shopware-6-frontend-webentwickler/</loc>
+    <lastmod>2024-03-15</lastmod>
+  </url>
+  <url>
+    <loc>https://www.ingo-steinke.de/webseiten-klimafreundlich-barrierefrei-optimieren/</loc>
+    <lastmod>2024-03-15</lastmod>
+  </url>{% endif %}
 </urlset>

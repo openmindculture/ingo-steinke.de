@@ -1,5 +1,9 @@
 # Changelog
 
+## [3.9.0] accessibility improvement - 2024-03-21
+* offer high contrast color scheme #218 
+* auto-stop animation, offer restart #219
+
 ## [3.8.0] skills update - 2024-03-18
 * add Freemarker after Markdown, remove too generic XML,
 * add Vanilla/VanillaJS in a vanilla-ish color (floralwhite)
