@@ -116,18 +116,19 @@ window.addEventListener('DOMContentLoaded', () => {
     },30000); // 1000ms initial (css) delay before animation fades in for the first time
     let animationStopperCallback = function() {
       if (decorationContainer) {
-        document.getElementById('decoration').style.display = 'none';
+        document.getElementById('decoration').classList.add('decoration--fade-out');
       }
     }
 
     if (animationToggle) {
       animationToggle.addEventListener('click', () => {
         if (decorationContainer) {
-          if (decorationContainer.style.display !=='none') {
+          if (decorationContainer.style.display !=='none' && !decorationContainer.classList.contains('decoration--fade-out')) {
             document.getElementById('decoration').style.display = 'none';
             window.clearTimeout(animationStopperTimeout);
           } else {
             // no delay before fading in when triggered by user interaction
+            document.getElementById('decoration').classList.remove('decoration--fade-out');
             document.getElementById('decoration').style.animationDelay = '0s';
             document.getElementById('decoration').style.display = 'block';
             window.clearTimeout(animationStopperTimeout);
