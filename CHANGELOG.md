@@ -1,5 +1,10 @@
 # Changelog
 
+## [3.9.1] various fixes - 2024-03-27
+* revert linking to additional testimonial portal
+* fade out background animation more smoothly
+* rephrase work intro headline
+
 ## [3.9.0] accessibility improvement - 2024-03-21
 * offer high contrast color scheme #218 
 * auto-stop animation, offer restart #219
