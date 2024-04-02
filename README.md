@@ -34,6 +34,29 @@ To use `console` functions like `console.log`, set `"removeConsole"` to `false` 
 - `img` (image files)
 - `styles.css`, `_includes/*.css`(styles: CSS + PostCSS)
 
+#### Sub-pages
+
+- `src/{__slug__}/index.liquid`
+  - include common page parts from `src/_includes/`
+  - processed, built and added to sitemap
+- Common parts are not used for the (index.liquid) home page.
+
+##### Offers/services (Leistungen)
+
+Section to be added above "skills", replacing "skills" as a top navigation item, to add pages focused on the customers' perspective rather than the who-I-am-CV-perspective that the website started with. These pages must be provided in all languages.
+
+ - ...
+ - ...
+ - ...
+
+##### Campaign landing pages
+
+Keyword-centered additional landing pages, manually added in German only for specific campaigns and linked from the German footer only, should also be provided in all languages for more consistency.
+
+- ...
+- ...
+- ...
+
 ### Localization / text snippets
 
 Text content can be edited in

@@ -1,5 +1,8 @@
 # Changelog
 
+## [4.0.0] refactor and add sub-pages, improve trust elements
+* refactor and add sub-pages #225
+
 ## [3.9.1] various fixes - 2024-03-27
 * revert linking to additional testimonial portal
 * fade out background animation more smoothly
