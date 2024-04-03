@@ -216,7 +216,7 @@ module.exports = {
   "testimonialMalteLinkUrl": "https://www.malte-reiter.de",
   "testimonialPatriciaQuote": "We are totally satisfied with Ingo. Absolutely reliable and great results. 100% recommendation!",
   "testimonialPatriciaAuthor": "Patricia, systemic coach",
-  "testimonialPatriciaLinkUrl": "https://www.moock-coaching.de",
+  "testimonialPatriciaLinkUrl": "https://4l-impact-strategies.de/team/patricia-moock/",
   /* Interested CTA */
   "interestedHeading": "Interested?",
   "interested": "Contact me to schedule a non-binding appointment! I will reply in a timely manner! You can reach my by phone, email, Signal, or WhatsApp. If I can't take a call, feel free to leave me a voice message!",
