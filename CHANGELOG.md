@@ -2,6 +2,10 @@
 
 ## [4.0.0] refactor and add sub-pages, improve trust elements
 * refactor and add sub-pages #225
+* add star icons to ratings #226
+* fix deep link to customer page
+* remove dates from talks to prevent outdated impression #227
+* add contact alternatives #230
 
 ## [3.9.1] various fixes - 2024-03-27
 * revert linking to additional testimonial portal

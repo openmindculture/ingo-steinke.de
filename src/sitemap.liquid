@@ -6,17 +6,9 @@ permalink: '/sitemap.xml'
   <url>
     <loc>{{ content.canonicalHref }}</loc>
     <lastmod>{{ "now" | date: "%Y-%m-%d" }}</lastmod>
-  </url>
-  {% if content.showLandingpageLinks == "true" %}<url>
-    <loc>https://www.ingo-steinke.de/wordpress-website-nachhaltig-optimieren-lassen/</loc>
-    <lastmod>{{ "now" | date: "%Y-%m-%d" }}</lastmod>
-  </url>
+  </url>{% for page in collections.addtositemap %}
   <url>
-    <loc>https://www.ingo-steinke.de/zertifizierter-shopware-6-frontend-webentwickler/</loc>
+    <loc>{{ content.canonicalHrefNoTrailingSlash }}{{ page.url | url }}</loc>
     <lastmod>{{ "now" | date: "%Y-%m-%d" }}</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ingo-steinke.de/webseiten-klimafreundlich-barrierefrei-optimieren/</loc>
-    <lastmod>{{ "now" | date: "%Y-%m-%d" }}</lastmod>
-  </url>{% endif %}
+  </url>{% endfor %}
 </urlset>
