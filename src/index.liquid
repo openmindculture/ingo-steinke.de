@@ -1047,12 +1047,14 @@
                   <span class="postal-code">{{ content.imprintPostalCode }}</span> {{ content.imprintCity }}<br>
                   <span class="country-name">{{ content.imprintCountryName }}</span><br>
                 </span><br>
+
+                <span><a href="mailto:{{ content.contactEmail }}">{{ content.contactEmail }}</a></span><br>
                 {% if content.contactInterimTel %}
                   <small>{{ content.contactTelOfflineLabel }}:<br></small>
                   <del>
                     <span class="tel">
                       <a href="tel:{{ content.contactTel }}">{%-
-                        for chunk in content.contactTelChunks -%}<span class="visually-spaced">{{ chunk }}</span>
+                          for chunk in content.contactTelChunks -%}<span class="visually-spaced">{{ chunk }}</span>
                         {%- endfor -%}</a>
                     </span><br>
                   </del>
@@ -1071,11 +1073,19 @@
                 {% endif %}
                 <div class="visually-hidden no-print">{{ content.contactTel }}</div>
 
-                <span><a href="mailto:{{ content.contactEmail }}">{{ content.contactEmail }}</a></span><br>
-                <a class="url" rel="author" href="{{ content.canonicalHref }}">{{ content.shortHref }}</a>
                 <br>
-                <span><a href="https://cal.com/ingosteinke" target="_blank" rel="noopener">{{ content.scheduleAMeeting }}</a></span>
+                <!-- contact form wrapper must be inside #contact anchor target for graceful show+hide -->
+                <div class="contactform-wrapper initally-hidden no-print">
+                  {% include '_includes/contactform.liquid' %}
+                </div>
                 <br>
+                <div>{{ content.contactOr }} <a href="https://cal.com/ingosteinke" target="_blank" rel="noopener">{{ content.scheduleAMeeting }}</a></div>
+
+
+                <div class="only-print">
+                  <a class="url" rel="author" href="{{ content.canonicalHref }}">{{ content.shortHref }}</a>
+                </div>
+
                 <br>
                 <span>{{ content.vatIdLabel }} {{ content.vatIdNumber }}</span>
                 <div class="only-print"><br></div>

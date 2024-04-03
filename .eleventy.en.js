@@ -2,6 +2,8 @@ const htmlmin = require('html-minifier');
 module.exports = function (eleventyConfig) {
   // TODO refactor redundant code to include common config!
 
+  eleventyConfig.ignores.add('src/_includes');
+
   // explicit + fast way to copy certain files and folders
   eleventyConfig.addPassthroughCopy('src/fonts');
   eleventyConfig.addPassthroughCopy('src/img');

@@ -354,6 +354,65 @@ a.menu-toggle:hover {
   text-align: left;
 }
 
+#contact contactform-wrapper.initially-hidden {
+  display: none;
+}
+
+#contact:target contactform-wrapper.initially-hidden {
+  display: block;
+}
+
+.contactform-row,
+.contactform-title {
+  display: block;
+}
+
+.contactform-row {
+  display: flex;
+}
+
+.contactform-row label {
+  flex: 0 0 6rem;
+  max-width: 100%;
+}
+
+.contactform-row input,
+.contactform-row textarea {
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  box-shadow: none;
+  border-bottom: solid 1px silver;
+  font-family: Montserrat, sans-serif;
+  color: black;
+  font-size: 1rem;
+}
+
+.contactform-row input {
+  flex: 1 0 6em;
+  max-width: 100%;
+}
+
+.contactform-row textarea {
+  flex: 1 0 100%;
+  max-width: 100%;
+}
+
+.contactform-message-sending::before {
+  content: "…";
+}
+.contactform-message-sent::before {
+  content: "✅";
+}
+.contactform-message-error::before {
+  content: "❌";
+}
+
+.contactform-field-homepage,
+.contactform-field-captcha {
+  display: none;
+}
+
 @media only screen and (max-width: 490px) {
   .vcard,
   #contact,

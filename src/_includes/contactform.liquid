@@ -1,0 +1,55 @@
+<form action="/contact/send" class="contactform no-print">
+  <span class="contactform-title">{{ content.contactFormTitle }}</span>
+  <fieldset>
+    <div class="contactform-message-sending initially-hidden">{{ content.contactFormMessageSending }}</div>
+    <div class="contactform-message-sent initially-hidden">{{ content.contactFormMessageSent }}</div>
+    <div class="contactform-message-error initially-hidden">{{ content.contactFormMessageError }}</div>
+    <div class="contactform-row contactform-row-name">
+      <label for="contactform-field-name" class="contactform-label-name">
+        {{ content.contactFormLabelName }}:
+      </label>
+      <input
+        type="text"
+        name="contactform-field-name"
+        class="contactform-field-name"
+        placeholder="{{ content.contactFormPlaceholderYourName }}"
+      >
+    </div>
+
+    <div class="contactform-row contactform-row-emailfon">
+      <label for="contactform-field-emailfon" class="contactform-label-emailfon">
+        {{ content.contactFormLabelContact }}:
+      </label>
+      <input
+        type="text"
+        name="contactform-field-emailfon"
+        class="contactform-field-emailfon"
+        placeholder="{{ content.contactFormLabelEmailOrPhone }}"
+      >
+    </div>
+
+    <div class="contactform-row contactform-row-message">
+      <label for="contactform-field-message" class="contactform-label-message visually-hidden">
+        {{ content.contactFormLabelMessage }}:
+      </label>
+      <textarea
+        name="contactform-field-message"
+        class="contactform-field-message"
+        placeholder="{{ content.contactFormLabelMessage }}"
+      ></textarea>
+    </div>
+
+    <div class="contactform-row contactform-row-optional initially-hidden">
+      <input type="text" name="contactform-field-homepage" class="contactform-field-homepage">
+      <input type="hidden" name="contactform-field-captcha" class="contactform-field-captcha">
+    </div>
+
+    <div class="contactform-row contactform-row-submit">
+      <button type="submit" name="contactform-button-submit" class="contactform-button-submit">
+        {{ content.contactFormButtonSubmit }}
+      </button>
+    </div>
+  </fieldset>
+
+
+</form>
