@@ -798,8 +798,6 @@ ul.code-links {
   }
 }
 
-/* skills grid */
-
 ul.grid-container.skills {
   margin-bottom: 2em;
 }
@@ -831,6 +829,23 @@ ul.grid-container.skills {
   border-radius: 0;
   margin-right: 3px;
   font-size: 0.8125em;
+}
+
+.grid-container.services {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-container.services > li {
+  padding: 0 0 1rem 1rem;
+}
+
+.grid-container.services > li ul {
+  padding: 0 0 0 1rem;
+  list-style-type: disc;
+}
+
+.grid-container.services > li ul li {
+  padding: 0;
 }
 
 .brand-coral {
