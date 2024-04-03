@@ -980,6 +980,34 @@ ul.grid-container.skills {
   margin-bottom: 2rem;
 }
 
+.testimonial blockquote {
+  position: relative;
+}
+
+.testimonial blockquote::before {
+  position: absolute;
+  display: block;
+  content: "”";
+  color: var(--gradient-heading-dark-side);
+  font-family: var(--heading-font-family);
+  font-size: 3rem;
+  width: 3rem;
+  height: 3rem;
+  left: -2rem;
+  top: -1rem;
+}
+
+.testimonial .stars::after {
+  content: "⭐⭐⭐⭐⭐";
+  display: inline-block;
+  width: auto;
+  margin-left: 0.5rem;
+}
+
+figure.testimonial figcaption {
+  font-weight: bold;
+}
+
 /* stylelint-disable-next-line no-descending-specificity */
 .badge--greenweb a:hover {
   background-image: none;
