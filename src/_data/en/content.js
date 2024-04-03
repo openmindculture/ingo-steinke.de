@@ -237,6 +237,7 @@ module.exports = {
     "08",
     "0"
   ],
+  "scheduleAMeeting": "schedule a meeting via cal.com",
   "contactTelOfflineLabel": "Phone temporarily unavailable",
   "contactInterimLabel": "use interim number instead",
   "contactEmail": "contact@ingo-steinke.com",

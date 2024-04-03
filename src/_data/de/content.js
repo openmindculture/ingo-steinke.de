@@ -254,6 +254,7 @@ module.exports = {
     "8400",
     "00"
   ],
+  "scheduleAMeeting": "Termin buchen über cal.com",
   "profile": "Profil",
   "at": "auf",
   "vcardQrTitle": "Ingo-Steinke als Kontakt speichern",
