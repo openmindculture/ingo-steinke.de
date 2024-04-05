@@ -159,47 +159,68 @@ window.addEventListener('DOMContentLoaded', () => {
    * @param callback function
    */
   const ajaxPost = function(form) {
-    let url = form.action;
-    let xhr = new XMLHttpRequest();
-    let messageFormSending = form.querySelector('.contactform-message-sending');
-    let messageFormSent = form.querySelector('.contactform-message-sent');
-    let messageFormError = form.querySelector('.contactform-message-error');
-    if (!xhr || !messageFormSending || !messageFormSending.classList) { return; }
+    try {
+      let url = form.action;
+      let xhr = new XMLHttpRequest();
+      let messageFormSending = form.querySelector('.contactform-message-sending');
+      let messageFormSent = form.querySelector('.contactform-message-sent');
+      let messageFormError = form.querySelector('.contactform-message-error');
+      let submitRow = form.querySelector('.contactform-row-submit');
+      if (!xhr || !messageFormSending || !messageFormSending.classList) { return; }
+      /* only send data from known form fields */
+      let params = '';
+      if (document.getElementById('contactform-field-name')) {
+        params += '&contactform-field-name='+encodeURIComponent(document.getElementById('contactform-field-name').value);
+      }
+      if (document.getElementById('contactform-field-emailfon')) {
+        params += '&contactform-field-emailfon='+encodeURIComponent(document.getElementById('contactform-field-emailfon').value);
+      }
+      if (document.getElementById('contactform-field-message')) {
+        params += '&contactform-field-message='+encodeURIComponent(document.getElementById('contactform-field-message').value);
+      }
+      if (document.getElementById('contactform-field-captcha')) {
+        params += '&contactform-field-captcha='+encodeURIComponent(document.getElementById('contactform-field-captcha').value);
+      }
+      if (document.getElementById('contactform-field-homepage')) {
+        params += '&contactform-field-homepage='+encodeURIComponent(document.getElementById('contactform-field-homepage').value);
+      }
 
-    /* only send data from known form fields */
-    let params=''+
-      'Name='+encodeURIComponent(document.getElementById('Name').value)+
-      '&E-Mail='+encodeURIComponent(document.getElementById('E-Mail').value)+
-      '&Telefon='+encodeURIComponent(document.getElementById('Telefon').value)+
-      '&Nachricht='+encodeURIComponent(document.getElementById('Nachricht').value)+
-      '&Captcha='+encodeURIComponent(document.getElementById('captchafield').value)+
-      '&Homepage='+encodeURIComponent(document.getElementById('homepageurl').value);
-    if (document.referrer) {
-      params+='Referrer='+encodeURIComponent(document.referrer)
-    }
-    xhr.open("POST", url);
-    xhr.setRequestHeader("Accept", "application/json");
-    xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    xhr.setRequestHeader("X-Requested-With", "xmlhttprequest");
+      xhr.open("POST", url);
+      xhr.setRequestHeader("Accept", "application/json");
+      xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+      xhr.setRequestHeader("X-Requested-With", "xmlhttprequest");
 
-    messageFormError.classList.add('hidden');
-    messageFormSending.classList.remove('initially-hidden');
+      submitRow.classList.add('initially-hidden');
+      messageFormError.classList.add('initially-hidden');
+      messageFormSending.classList.remove('initially-hidden');
 
-    xhr.onload = function(){
-      messageFormSending.classList.add('initially-hidden');
-      if (xhr.status == 200) {
-        messageFormSent.classList.remove('initially-hidden');
-        messageFormError.classList.add('initially-hidden');
-      } else {
+      xhr.onload = function(){
+        messageFormSending.classList.add('initially-hidden');
+        if (xhr.status == 200) {
+          messageFormSent.classList.remove('initially-hidden');
+          messageFormError.classList.add('initially-hidden');
+        } else {
+          messageFormError.classList.remove('initially-hidden');
+          submitRow.classList.remove('initially-hidden');
+        }
+      }
+      xhr.send(params);
+      // TODO track matomo event: sent
+      // TODO add classes for "deactivating" the send button
+    } catch(e) {
+      console.error(e);
+      let messageFormError = form.querySelector('.contactform-message-error');
+      if (messageFormError) {
         messageFormError.classList.remove('initially-hidden');
       }
+      let submitRow = form.querySelector('.contactform-row-submit');
+      if (submitRow) {
+        submitRow.classList.remove('initially-hidden');
+      }
     }
-    xhr.send(params);
-    // TODO track matomo event: sent
-    // TODO add classes for "deactivating" the send button
   };
 
-  const contactforms = document.getElemenstByClassName('contact-form');
+  const contactforms = document.getElementsByClassName('contactform');
   for (let i=0; i < contactforms.length; i++) {
     contactforms.item(i).onsubmit = function(e) {
       e.preventDefault();

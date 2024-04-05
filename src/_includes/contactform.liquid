@@ -1,9 +1,6 @@
 <form action="/contact/send" class="contactform no-print">
   <span class="contactform-title">{{ content.contactFormTitle }}</span>
   <fieldset>
-    <div class="contactform-message-sending initially-hidden">{{ content.contactFormMessageSending }}</div>
-    <div class="contactform-message-sent initially-hidden">{{ content.contactFormMessageSent }}</div>
-    <div class="contactform-message-error initially-hidden">{{ content.contactFormMessageError }}</div>
     <div class="contactform-row contactform-row-name">
       <label for="contactform-field-name" class="contactform-label-name">
         {{ content.contactFormLabelName }}:
@@ -51,5 +48,7 @@
     </div>
   </fieldset>
 
-
+  <div class="contactform-message contactform-message-sending initially-hidden">{{ content.contactFormMessageSending }}</div>
+  <div class="contactform-message contactform-message-sent initially-hidden">{{ content.contactFormMessageSent }}</div>
+  <div class="contactform-message contactform-message-error initially-hidden">{{ content.contactFormMessageError }}</div>
 </form>
