@@ -248,7 +248,7 @@ module.exports = {
   "contactFormLabelEmail": "email",
   "contactFormLabelPhone": "phone",
   "contactFormLabelContact": "contact",
-  "contactFormLabelEmailOrPhone": "phone/email",
+  "contactFormLabelEmailOrPhone": "your phone or email",
   "contactFormLabelMessage": "message",
   "contactFormButtonSubmit": "send",
   "contactTelOfflineLabel": "Phone temporarily unavailable",

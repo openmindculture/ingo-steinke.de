@@ -160,29 +160,36 @@ window.addEventListener('DOMContentLoaded', () => {
    */
   const ajaxPost = function(form) {
     try {
-      let url = form.action;
+      let url = window.location.hostname && window.location.hostname.indexOf('.de') > -1
+        ? 'https://www.ingo-steinke.de/contact/send/index.php'
+        : 'https://www.ingo-steinke.com/contact/send/index.php';
       let xhr = new XMLHttpRequest();
       let messageFormSending = form.querySelector('.contactform-message-sending');
       let messageFormSent = form.querySelector('.contactform-message-sent');
       let messageFormError = form.querySelector('.contactform-message-error');
       let submitRow = form.querySelector('.contactform-row-submit');
       if (!xhr || !messageFormSending || !messageFormSending.classList) { return; }
-      /* only send data from known form fields */
-      let params = '';
-      if (document.getElementById('contactform-field-name')) {
-        params += '&contactform-field-name='+encodeURIComponent(document.getElementById('contactform-field-name').value);
+
+      let params = 'contactform-field-name=';
+      let nameFieldElement = form.querySelector('.contactform-field-name');
+      if (nameFieldElement) {
+        params += encodeURIComponent(nameFieldElement.value);
       }
-      if (document.getElementById('contactform-field-emailfon')) {
-        params += '&contactform-field-emailfon='+encodeURIComponent(document.getElementById('contactform-field-emailfon').value);
+      let emailfonFieldElement = form.querySelector('.contactform-field-emailfon');
+      if (emailfonFieldElement) {
+        params += '&contactform-field-emailfon='+encodeURIComponent(emailfonFieldElement.value);
       }
-      if (document.getElementById('contactform-field-message')) {
-        params += '&contactform-field-message='+encodeURIComponent(document.getElementById('contactform-field-message').value);
+      let messageFieldElement = form.querySelector('.contactform-field-message');
+      if (messageFieldElement) {
+        params += '&contactform-field-message='+encodeURIComponent(messageFieldElement.value);
       }
-      if (document.getElementById('contactform-field-captcha')) {
-        params += '&contactform-field-captcha='+encodeURIComponent(document.getElementById('contactform-field-captcha').value);
+      let messageFieldCaptcha = form.querySelector('.contactform-field-captcha');
+      if (messageFieldCaptcha) {
+        params += '&contactform-field-captcha='+encodeURIComponent(messageFieldCaptcha.value);
       }
-      if (document.getElementById('contactform-field-homepage')) {
-        params += '&contactform-field-homepage='+encodeURIComponent(document.getElementById('contactform-field-homepage').value);
+      let messageFieldHomepage = form.querySelector('.contactform-field-homepage');
+      if (messageFieldHomepage) {
+        params += '&contactform-field-homepage='+encodeURIComponent(messageFieldHomepage.value);
       }
 
       xhr.open("POST", url);
@@ -204,6 +211,7 @@ window.addEventListener('DOMContentLoaded', () => {
           submitRow.classList.remove('initially-hidden');
         }
       }
+      console.log('ready to send. params:', params);
       xhr.send(params);
       // TODO track matomo event: sent
       // TODO add classes for "deactivating" the send button
