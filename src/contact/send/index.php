@@ -1,5 +1,6 @@
 <?php
 // require_once __DIR__ . '/config.inc.php';
+$config_from = 'contact@ingo-steinke.com';
 $config_to = 'contact@ingo-steinke.com';
 $config_tospamtrap = 'contact@ingo-steinke.com';
 $config_subject = 'Contactform ISD';
@@ -42,19 +43,24 @@ if (!empty($spamtrap1) || !empty($spamtrap2) || 'POST'!=$_SERVER['REQUEST_METHOD
   $subject = '[Spamverdacht] ' . $subject;
 }
 
-$message = 'Name: ' .  $post_name . "\r\n".
-  'E-Mail/Telefon: ' . $post_emailfon . "\r\n".
-  $post_msg . "\r\n".
-  "\r\n";
+$message = '';
+if (!empty($post_name)) {
+  $message .= 'Name: ' .  $post_name . "\r\n";
+}
+if (!empty($post_emailfon)) {
+  $message .= 'Kontakt: ' .  $post_emailfon . "\r\n";
+}
+if (!empty($post_msg)) {
+  $message .=   $post_msg . "\r\n";
+}
+$message .= "\r\n";
+
 $headers = 'MIME-Version: 1.0' . "\r\n".
   'Content-Type: text/plain; charset=UTF-8' . "\r\n".
-  'From: ISD-Contactform<noreply@ingo-steinke.com>' . "\r\n" .
-  'Reply-To: ' . $post_emailfon . "\r\n" .
+  'From: ' . $config_from . "\r\n".
   'X-Requested-With: ' . $_SERVER['HTTP_X_REQUESTED_WITH'] . "\r\n".
   'X-Request-Method:'  . $_SERVER['REQUEST_METHOD'] . "\r\n".
   'X-Mailer: openmindculture'. "\r\n".
   $config_custheader;
 
 mail($to, $subject, $message, $headers);
-
-?>
