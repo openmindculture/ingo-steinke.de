@@ -2,6 +2,8 @@ const htmlmin = require('html-minifier');
 module.exports = function (eleventyConfig) {
   // TODO refactor redundant code to include common config!
 
+  eleventyConfig.ignores.add('src/_includes');
+
   // explicit + fast way to copy certain files and folders
   eleventyConfig.addPassthroughCopy('src/fonts');
   eleventyConfig.addPassthroughCopy('src/img');
@@ -21,6 +23,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/Shopware-6-Certified-Developer-Ingo-Steinke-de.pdf');
   eleventyConfig.addPassthroughCopy('src/Ingo-Steinke-CV-Projects-Skills-2024-sustainable-web-developer.pdf');
   eleventyConfig.addPassthroughCopy('src/Ingo-Steinke-CV-Projekte-Skills-2024-nachhaltiger-Webentwickler.pdf');
+  eleventyConfig.addPassthroughCopy('src/contact/send/index.php');
 
   // redirect rules and domain configuration for netlify
   eleventyConfig.addPassthroughCopy('src/netlify.toml');
