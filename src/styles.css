@@ -516,6 +516,17 @@ a.vcard-digital-qr:hover {
   }
 }
 
+@media (min-width: 375px) {
+  .vcard-digital-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5rem 1rem 0 0;
+    height: min-content;
+    width: 100%;
+  }
+}
+
 @media (min-width: 440px) {
   .vcard-digital-teaser-text {
     margin-left: 0;
@@ -531,12 +542,7 @@ a.vcard-digital-qr:hover {
   }
 
   .vcard-digital-wrapper {
-    position: absolute;
-    top: 0;
-    right: 0;
     padding: 6rem 1rem 0 0;
-    height: min-content;
-    width: 100%;
   }
 }
 
