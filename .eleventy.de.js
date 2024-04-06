@@ -4,6 +4,7 @@ module.exports = function (eleventyConfig) {
 
   // all subdirectory/*.liquid are processed implicitly,
   // so we need to exclude the ones that don't match the current language
+  eleventyConfig.ignores.add('src/_includes');
 
   // explicit + fast way to copy certain files and folders
   eleventyConfig.addPassthroughCopy('src/fonts');
@@ -24,6 +25,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/Shopware-6-Certified-Developer-Ingo-Steinke-de.pdf');
   eleventyConfig.addPassthroughCopy('src/Ingo-Steinke-CV-Projects-Skills-2024-sustainable-web-developer.pdf');
   eleventyConfig.addPassthroughCopy('src/Ingo-Steinke-CV-Projekte-Skills-2024-nachhaltiger-Webentwickler.pdf');
+  eleventyConfig.addPassthroughCopy('src/wordpress-website-nachhaltig-optimieren-lassen');
+  eleventyConfig.addPassthroughCopy('src/zertifizierter-shopware-6-frontend-webentwickler');
+  eleventyConfig.addPassthroughCopy('src/webseiten-klimafreundlich-barrierefrei-optimieren');
+  eleventyConfig.addPassthroughCopy('src/contact/send/index.php');
 
   // redirect rules and domain configuration for netlify
   // eleventyConfig.addPassthroughCopy('src/netlify.toml');

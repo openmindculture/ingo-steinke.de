@@ -2,15 +2,28 @@
 
 ## [4.0.0] refactor and add sub-pages, improve trust elements
 * refactor and add sub-pages #225
-* add star icons to ratings #226
+* move paragraphs from home to sub-pages #225
 * fix deep link to customer page
-* remove dates from talks to prevent outdated impression #227
-* add contact alternatives #230
+
+## [3.9.2] various fixes - 2024-04-06
+* improve QR code mobile position #233
+* fix mobile Safari/Vivaldi glitch #233
+* add contact form #230
+* add cal.com calendar link #230
+* update instagram link
+* improve title, talks, ratings
+* remove dates and outdated talk #227
+* replace broken link #226
+* add stars, remove confusing links #226
+* content update: more focus on Berlin
 
 ## [3.9.1] various fixes - 2024-03-27
 * revert linking to additional testimonial portal
 * fade out background animation more smoothly
 * rephrase work intro headline
+* improve link ellipsis position
+* fix translation typo, fix German orthography
+* fix sitemap date
 
 ## [3.9.0] accessibility improvement - 2024-03-21
 * offer high contrast color scheme #218 
