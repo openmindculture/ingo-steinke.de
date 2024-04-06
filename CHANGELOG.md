@@ -1,6 +1,6 @@
 # Changelog
 
-## [] upcoming
+## [3.9.2] various fixes - 2024-04-06
 * improve QR code mobile position #233
 * fix mobile Safari/Vivaldi glitch #233
 * add contact form #230
