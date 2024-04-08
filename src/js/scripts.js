@@ -42,30 +42,36 @@ window.addEventListener('DOMContentLoaded', () => {
     observer.observe(stickyHeader);
   }
 
-  navOpener.addEventListener('click', (e) => {
-    e.preventDefault();
-    navMenu.setAttribute('aria-expanded', 'true');
-    if (typeof navMenu.scrollIntoView === 'function') {
-      navMenu.scrollIntoView();
-    }
-    document.addEventListener('click', (e) => {
-      const isClickInside = navOpener.contains(e.target);
-      if (!isClickInside) {
-        navMenu.setAttribute('aria-expanded', 'false');
-        document.onclick = null;
+  if (navOpener) {
+    navOpener.addEventListener('click', (e) => {
+      e.preventDefault();
+      navMenu.setAttribute('aria-expanded', 'true');
+      if (typeof navMenu.scrollIntoView === 'function') {
+        navMenu.scrollIntoView();
       }
+      document.addEventListener('click', (e) => {
+        const isClickInside = navOpener.contains(e.target);
+        if (!isClickInside) {
+          navMenu.setAttribute('aria-expanded', 'false');
+          document.onclick = null;
+        }
+      });
     });
-  });
+  }
 
-  navCloser.addEventListener('click', (e) => {
-    e.preventDefault();
-    navMenu.setAttribute('aria-expanded', 'false')
-    document.onclick = null;
-  });
+  if (navCloser) {
+    navCloser.addEventListener('click', (e) => {
+      e.preventDefault();
+      navMenu.setAttribute('aria-expanded', 'false')
+      document.onclick = null;
+    });
+  }
 
-  languageSwitch.addEventListener('click', () => {
-    languageSwitch.href += window.location.hash;
-  });
+  if (languageSwitch) {
+    languageSwitch.addEventListener('click', () => {
+      languageSwitch.href += window.location.hash;
+    });
+  }
 
   const classNameHighContrast = 'high-contrast';
   const prefersMoreContrastQuery = window.matchMedia('(prefers-contrast: more)');
@@ -211,13 +217,11 @@ window.addEventListener('DOMContentLoaded', () => {
           submitRow.classList.remove('initially-hidden');
         }
       }
-      console.log('ready to send. params:', params);
       xhr.send(params);
       if (window._paq) {
         window._paq.push(['trackEvent', 'actions', 'contact', 'sent']);
       }
     } catch(e) {
-      console.error(e);
       let messageFormError = form.querySelector('.contactform-message-error');
       if (messageFormError) {
         messageFormError.classList.remove('initially-hidden');
