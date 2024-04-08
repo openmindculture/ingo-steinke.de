@@ -213,8 +213,9 @@ window.addEventListener('DOMContentLoaded', () => {
       }
       console.log('ready to send. params:', params);
       xhr.send(params);
-      // TODO track matomo event: sent
-      // TODO add classes for "deactivating" the send button
+      if (window._paq) {
+        window._paq.push(['trackEvent', 'actions', 'contact', 'sent']);
+      }
     } catch(e) {
       console.error(e);
       let messageFormError = form.querySelector('.contactform-message-error');
@@ -225,6 +226,13 @@ window.addEventListener('DOMContentLoaded', () => {
       if (submitRow) {
         submitRow.classList.remove('initially-hidden');
       }
+      if (window._paq) {
+        let errorText = 'error';
+        if (typeof e.toString === 'function') {
+          errorText = e.toString();
+        }
+        window._paq.push(['trackEvent', 'actions', 'contact', 'error', errorText]);
+      }
     }
   };
 
@@ -232,7 +240,9 @@ window.addEventListener('DOMContentLoaded', () => {
   for (let i=0; i < contactforms.length; i++) {
     contactforms.item(i).onsubmit = function(e) {
       e.preventDefault();
-      // TODO track matomo event: ready to send
+      if (window._paq) {
+        window._paq.push(['trackEvent', 'actions', 'contact', 'send']);
+      }
       ajaxPost(contactforms.item(i));
     };
   }
