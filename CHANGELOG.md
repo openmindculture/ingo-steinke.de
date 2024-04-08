@@ -3,7 +3,7 @@
 ## [4.0.0] refactor and add sub-pages, improve trust elements
 * refactor and add sub-pages #225
 * move paragraphs from home to sub-pages #225
-* fix deep link to customer page
+* inline certificate preview on Shopware sub-page #225
 
 ## [3.9.2] various fixes - 2024-04-06
 * improve QR code mobile position #233
@@ -15,6 +15,7 @@
 * remove dates and outdated talk #227
 * replace broken link #226
 * add stars, remove confusing links #226
+* fix deep link to customer page
 * content update: more focus on Berlin
 
 ## [3.9.1] various fixes - 2024-03-27
