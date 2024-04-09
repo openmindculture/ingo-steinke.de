@@ -49,6 +49,7 @@ body {
   --secondary-background: var(--merino-light);
   --secondary-lighter-background: var(--merino-slightly-lighter);
   --cta-light-background: var(--white-wheat-butter);
+  --cta-button-light-background: var(--pantone-illuminating);
   --nav-menu-background: var(--greenish-blue);
   --peel-gradient: var(--greenish-blue);
   --peel-gradient-semitrans: rgba(5, 50, 69, 0.5);
@@ -105,6 +106,9 @@ body {
 
   --skills-tile-container-bg: rgba(98, 49, 68, 0.75);
 
+  --effect-box-shadow-dropshadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.125);
+  --effect-box-shadow-dropshadow-darker: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+
   /* animation */
   --radius: 100%;
   --primary-animation-color: var(--deep-green);
@@ -131,6 +135,7 @@ body.high-contrast {
   --secondary-background: var(--merino-lighter);
   --secondary-lighter-background: #fff;
   --cta-light-background: #fff;
+  --cta-button-light-background: var(--illuminating-higher-contrast);
   --nav-menu-background: var(--greenish-blue);
   --peel-gradient: var(--spermidine-green-darker);
   --peel-gradient-semitrans: var(--greenish-blue);

@@ -931,6 +931,12 @@ ul.grid-container.skills {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+@media only screen and (max-width: 490px) {
+  .grid-container.services {
+    grid-template-columns: 1fr;
+  }
+}
+
 .grid-container.services > li {
   padding: 0 0 1rem 1rem;
   background-color: var(--cta-light-background);
@@ -944,6 +950,43 @@ ul.grid-container.skills {
 
 .grid-container.services > li ul li {
   padding: 0;
+}
+
+.grid-container.services a.buttonlike,
+.grid-container.services a.buttonlike:link,
+.grid-container.services a.buttonlike:visited,
+.grid-container.services a.buttonlike:active,
+.grid-container.services a.buttonlike:hover,
+.grid-container.services a.buttonlike:focus {
+  background: var(--cta-button-light-background);
+  background-color: var(--cta-button-light-background);
+  background-image: none;
+  border: solid 1px var(--cta-button-light-background);
+  border-radius: 0.25rem;
+  color: var(--secondary-foreground);
+  display: inline-block;
+  margin-top: 1rem;
+  min-width: 11rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  transition:
+    box-shadow 0.125s ease-out,
+    font-size 0.125s ease-out,
+    padding 0.125s ease-out;
+  text-align: center;
+}
+
+.grid-container.services a.buttonlike:link,
+.grid-container.services a.buttonlike:visited,
+.grid-container.services a.buttonlike:active {
+  box-shadow: var(--effect-box-shadow-dropshadow);
+}
+
+.grid-container.services a.buttonlike:hover,
+.grid-container.services a.buttonlike:focus {
+  box-shadow: var(--effect-box-shadow-dropshadow-darker);
+  font-size: 1.125rem;
+  padding: 0.4rem 0.875rem 0.35rem 0.875rem;
 }
 
 .brand-coral {
