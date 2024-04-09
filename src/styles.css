@@ -933,6 +933,8 @@ ul.grid-container.skills {
 
 .grid-container.services > li {
   padding: 0 0 1rem 1rem;
+  background-color: var(--cta-light-background);
+  color: var(--secondary-foreground);
 }
 
 .grid-container.services > li ul {
