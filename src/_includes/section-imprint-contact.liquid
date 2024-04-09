@@ -3,9 +3,20 @@
   <article id="contact" class="target-offset"><div class="vcard"><h2 class="fn">Ingo Steinke</h2><br>
       <span class="adr"><span class="street-address">Donaustr. 83 II</span><br><span class="postal-code">12043</span> Berlin<br>
   <span class="country-name">Deutschland</span><br></span><br>
+
+      <span><a href="mailto:{{ content.contactEmail }}">{{ content.contactEmail }}</a></span><br>
+
       <span class="tel"><a href="tel:+491634684080"><span class="visually-spaced">+49</span><span class="visually-spaced">163</span><span class="visually-spaced">46</span><span class="visually-spaced">84</span><span class="visually-spaced">08</span><span class="visually-spaced">0</span></a></span><br>
-      <div class="visually-hidden no-print">+491634684080</div><span><a href="mailto:kontakt@ingo-steinke.de">kontakt@ingo-steinke.de</a></span><br>
-      <a class="url" rel="author" href="https://www.ingo-steinke.de/">www.ingo-steinke.de</a><br><br><span>UStID DE337676808</span>
+      <div class="visually-hidden no-print">+491634684080</div><span>
+
+      <br>
+      <div class="contactform-wrapper initally-hidden no-print">
+        {% include '_includes/contactform.liquid' %}
+      </div>
+      <br>
+      <div>{{ content.contactOr }} <a href="https://cal.com/ingosteinke" target="_blank" rel="noopener">{{ content.scheduleAMeeting }}</a></div>
+
+      <br><span>UStID DE337676808</span>
       <div class="only-print"><br></div><br><div><a href="https://www.exali.de/siegel/Ingo-Steinke" target="_blank" title="Berufshaftpflichtversicherung: exali Media-Haftpflicht" id="insuranceLink" class="no-print">Berufshaftpflichtversicherung: Media-Haftpflicht </a><span class="initially-hidden only-print inline"><div>Berufshaftpflichtversicherung: exali Media-Haftpflicht:</div>www.exali.de/siegel/Ingo-Steinke</span></div>
       <div class="vcard-digital-wrapper"><a class="vcard-digital-qr" href="vcard/" download="ingo-steinke.vcf" title="Ingo-Steinke als Kontakt speichern"><img class="vcard-digital-qr-image" src="https://www.ingo-steinke.de/img/ingo-steinke-de-vcard-qr.svg" alt="QR-Code: Kontakt zu Ingo-Steinke" width="2500" height="2500"></a></div></div><ul class="row social-links no-print"><li><a rel="noopener nofollow" href="https://www.linkedin.com/in/ingosteinke" target="_blank" title="LinkedIn-Profil: Ingo Steinke"><svg width="25" height="25" viewBox="0 0 1200 1200"><title>LinkedIn Logo</title><g><path fill="currentColor" d="M173.099,315.394c67.758,0,122.814-55.008,122.814-122.978c0-67.927-55.056-122.983-122.814-122.983
   C105.148,69.433,50,124.49,50,192.416C50,260.386,105.148,315.394,173.099,315.394z"></path><path fill="currentColor" d="M281.983,392.659H64.113c-7.714,0-14.113,6.38-14.113,14.166v709.719c0,7.811,6.399,14.022,14.113,14.022
