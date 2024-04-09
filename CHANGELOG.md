@@ -3,7 +3,6 @@
 ## [4.0.0] refactor and add sub-pages, improve trust elements
 * refactor and add sub-pages #225
 * move paragraphs from home to sub-pages #225
-* inline certificate preview on Shopware sub-page #225
 
 ## [3.9.2] various fixes - 2024-04-06
 * improve QR code mobile position #233
