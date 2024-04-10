@@ -418,7 +418,7 @@
               <article class="tile target-offset" id="project-shopware-plugin">
                 <div class="tile-content flex bg-peel">
                   <header>
-                    <h3>{{ content.projectShopwareCostPluginHeading }}</h3>
+                    <h3 id="plugin-programmierung">{{ content.projectShopwareCostPluginHeading }}</h3>
                   </header>
                   <p>
                     <img
@@ -613,38 +613,22 @@
                 >{{ content.workCertifiedSWDev }}</a>
                 {{ content.workCertifiedAnd }}
                 {{ content.workCertifiedExtensionPartner }}.
-              </p>
-
-              <h3 class="target-offset" id="plugin-programmierung">{{ content.workPluginsHeading }}</h3>
-              <p>
-                {{ content.workPlugins5 }}
                 <a
-                  href="https://de.wordpress.org/plugins/incompatibility-status/"
+                  href="https://github.com/openmindculture"
+                  hreflang="en"
                   target="_blank"
-                  rel="noopener"
-                >{{ content.workPlugins6 }}</a>
-                {{ content.workPluginsAnd }}
-                <a
-                  href="https://github.com/openmindculture/wp-contact-form-inbox-report-mailer-plugin"
-                  target="_blank"
-                  rel="noopener"
-                >{{ content.workPlugins7 }}</a>.
-                {{ content.workPluginsOther }}
-                <a
-                  href="https://plugins.jetbrains.com/plugin/16721-cute-pink-light-theme"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  Cute Pink Light Theme
-                </a>.
+                  rel="me noopener"
+                >{{ content.workCertifiedSustainableSourceCodeLinkText }}</a>
+                {{ content.workCertifiedSustainable2 }}
+                <a href="#website-carbon-certified">
+                  {{ content.workCertifiedSustainableFootprintLinkText }}
+                </a>
+                {{ content.workCertifiedSustainable3 }}
               </p>
 
               <h3>{{ content.workFullstackHeading }}</h3>
               <p>
-                {{ content.workFullstack }}
-              </p>
-              <p>
-                {{ content.workOwnFocus }}
+                {{ content.workOwnFocus }} {{ content.workFullstack }}
               </p>
             </article>
           </section>
@@ -1284,6 +1268,7 @@
           </p>
           {% endif %}
 
+          <a id="website-carbon-certified"></a>
           <div id="wcb" class="carbonbadge no-print"></div>
           <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
 
