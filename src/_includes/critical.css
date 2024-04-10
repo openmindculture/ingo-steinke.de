@@ -90,6 +90,10 @@ h4,
   max-width: 99%;
 }
 
+ul.aside-heading {
+  text-align: left;
+}
+
 del {
   text-decoration: line-through;
 }
@@ -137,6 +141,10 @@ small {
     .jumbotronHeader {
       background-color: rgba(29, 73, 80, 1);
     }
+  }
+
+  .jumbotronHeader.has-text-paragraphs {
+    padding-top: 1rem;
   }
 
   .jumbotronHeader h1 {
@@ -258,7 +266,12 @@ small {
     }
   }
 
+  .text-content-layout-children {
+    padding: 0;
+  }
+
   .text-content-layout,
+  .text-content-layout-children > *,
   .privacy {
     padding: 0.5em 0 1em 1em;
     margin: 0 0 2em 0;
@@ -334,7 +347,8 @@ small {
     grid-column-gap: 1em;
   }
 
-  .text-width {
+  .text-width,
+  .text-width-children > * {
     max-width: 1300px;
     width: 90%;
   }
@@ -418,6 +432,10 @@ small {
 
   .initially-hidden:target {
     display: block;
+  }
+
+  .mb0 {
+    margin-bottom: 0;
   }
 
   a.tw-btn,

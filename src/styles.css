@@ -97,6 +97,11 @@ a::selection {
   color: var(--secondary-foreground);
 }
 
+.alternating-div-color > div:nth-child(2n-1):not(.no-alternating-color) {
+  background-color: var(--cta-light-background);
+  color: var(--secondary-foreground);
+}
+
 /* stylelint-disable-next-line no-descending-specificity */
 .text-content-color a,
 .text-content-color a:link,
@@ -980,6 +985,12 @@ ul.grid-container.skills {
   padding: 0;
 }
 
+a.buttonlike,
+a.buttonlike:link,
+a.buttonlike:visited,
+a.buttonlike:active,
+a.buttonlike:hover,
+a.buttonlike:focus,
 .grid-container.services a.buttonlike,
 .grid-container.services a.buttonlike:link,
 .grid-container.services a.buttonlike:visited,
@@ -1005,12 +1016,37 @@ ul.grid-container.skills {
   text-align: center;
 }
 
+.cta-container {
+  display: flex;
+  justify-content: center;
+  min-height: 6rem;
+  padding-bottom: 1rem;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.cta-container a.buttonlike,
+.cta-container a.buttonlike:link,
+.cta-container a.buttonlike:visited,
+.cta-container a.buttonlike:active,
+.cta-container a.buttonlike:hover,
+.cta-container a.buttonlike:focus {
+  min-width: 20rem;
+  max-width: 100%;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+a.buttonlike:link,
+a.buttonlike:visited,
+a.buttonlike:active,
 .grid-container.services a.buttonlike:link,
 .grid-container.services a.buttonlike:visited,
 .grid-container.services a.buttonlike:active {
   box-shadow: var(--effect-box-shadow-dropshadow);
 }
 
+/* stylelint-disable-next-line no-descending-specificity */
+a.buttonlike:hover,
+a.buttonlike:focus,
 .grid-container.services a.buttonlike:hover,
 .grid-container.services a.buttonlike:focus {
   box-shadow: var(--effect-box-shadow-dropshadow-darker);

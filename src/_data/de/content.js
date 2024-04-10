@@ -16,7 +16,7 @@ module.exports = {
   "pDomainVerify": "4c4296e5835f4a47eb2c2e5488a99d71",
   "googleSiteVerification": "Qs1p7JgqPLOGD3BYCMGe9EbyNJJEswyala44hnkO6d4",
   /* page content */
-  "jumbotronImageAlt": "Portrait of Ingo Steinke",
+  "jumbotronImageAlt": "Portrait von Ingo Steinke",
   "jumbotronHeader": "Ingo Steinke",
   "jumbotronTagline": "Creative Web Developer",
   "linkToTop": "Zum Seitenanfang",
