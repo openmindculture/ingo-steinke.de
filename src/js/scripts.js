@@ -170,11 +170,7 @@ window.addEventListener('DOMContentLoaded', () => {
         ? 'https://www.ingo-steinke.de/contact/send/index.php'
         : 'https://www.ingo-steinke.com/contact/send/index.php';
       let xhr = new XMLHttpRequest();
-      let messageFormSending = form.querySelector('.contactform-message-sending');
-      let messageFormSent = form.querySelector('.contactform-message-sent');
-      let messageFormError = form.querySelector('.contactform-message-error');
-      let submitRow = form.querySelector('.contactform-row-submit');
-      if (!xhr || !messageFormSending || !messageFormSending.classList) { return; }
+      if (!xhr) { return; }
 
       /** @var {String[]} params */
       let params = [];
@@ -207,18 +203,16 @@ window.addEventListener('DOMContentLoaded', () => {
       xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
       xhr.setRequestHeader("X-Requested-With", "xmlhttprequest");
 
-      submitRow.classList.add('initially-hidden');
-      messageFormError.classList.add('initially-hidden');
-      messageFormSending.classList.remove('initially-hidden');
+      form.classList.remove('status-initial', 'status-sent', 'status-error');
+      form.classList.add('status-sending');
 
       xhr.onload = function(){
-        messageFormSending.classList.add('initially-hidden');
         if (xhr.status == 200) {
-          messageFormSent.classList.remove('initially-hidden');
-          messageFormError.classList.add('initially-hidden');
+          form.classList.remove('status-initial', 'status-sending', 'status-error');
+          form.classList.add('status-sent');
         } else {
-          messageFormError.classList.remove('initially-hidden');
-          submitRow.classList.remove('initially-hidden');
+          form.classList.remove('status-initial', 'status-sending', 'status-sent');
+          form.classList.add('status-error');
         }
       }
       xhr.send(params.join('&'));
@@ -226,18 +220,8 @@ window.addEventListener('DOMContentLoaded', () => {
         window._paq.push(['trackEvent', 'actions', 'contact', 'sent']);
       }
     } catch(e) {
-      let messageFormError = form.querySelector('.contactform-message-error');
-      if (messageFormError) {
-        messageFormError.classList.remove('initially-hidden');
-      }
-      let messageFormSending = form.querySelector('.contactform-message-sending');
-      if (messageFormSending) {
-        messageFormSending.classList.add('initially-hidden');
-      }
-      let submitRow = form.querySelector('.contactform-row-submit');
-      if (submitRow) {
-        submitRow.classList.remove('initially-hidden');
-      }
+      form.classList.remove('status-initial', 'status-sending', 'status-sent');
+      form.classList.add('status-error');
       if (window._paq) {
         let errorText = 'error';
         if (typeof e.toString === 'function') {

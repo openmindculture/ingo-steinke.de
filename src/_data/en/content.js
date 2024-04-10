@@ -261,6 +261,7 @@ module.exports = {
   "contactFormLabelEmailOrPhone": "your phone or email",
   "contactFormLabelMessage": "message",
   "contactFormButtonSubmit": "send",
+  "contactFormButtonSubmitRetry": "send again",
   "contactTelOfflineLabel": "Phone temporarily unavailable",
   "contactInterimLabel": "use interim number instead",
   "contactEmail": "contact@ingo-steinke.com",

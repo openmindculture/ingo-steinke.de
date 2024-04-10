@@ -445,6 +445,29 @@ a.menu-toggle:hover {
   display: none;
 }
 
+.contactform.status-initial .initially-hidden,
+.contactform.status-initial .contactform-message-sending,
+.contactform.status-initial .contactform-message-sent,
+.contactform.status-initial .contactform-message-error,
+.contactform.status-error .contactform-button-submit .send-retry,
+.contactform.status-sending .contactform-button-submit .send-retry,
+.contactform.status-sent .contactform-button-submit .send-retry,
+.contactform.status-sending .contactform-row-submit,
+.contactform.status-sent .contactform-row-submit,
+.contactform.status-error .contactform-button-submit .send-first {
+  display: none;
+}
+
+.contactform.status-sending .contactform-message-sending,
+.contactform.status-sent .contactform-message-sent,
+.contactform.status-error .contactform-message-error {
+  display: block;
+}
+
+.contactform.status-error .contactform-button-submit .send-retry {
+  display: inline;
+}
+
 @media only screen and (max-width: 490px) {
   .vcard,
   #contact,

@@ -1,4 +1,4 @@
-<form action="/contact/send/index.php" class="contactform no-print">
+<form action="/contact/send/index.php" class="contactform no-print status-initial">
   <span class="contactform-title">{{ content.contactFormTitle }}</span>
   <fieldset>
     <div class="contactform-row contactform-row-name">
@@ -45,7 +45,7 @@
       <button
         type="submit" name="contactform-button-submit" class="contactform-button-submit">
         <span class="send-first">{{ content.contactFormButtonSubmit }}</span>
-        <span class="send-retry">{{ content.contactFormButtonSubmitRetry }}</span>
+        <span class="send-retry initially-hidden">{{ content.contactFormButtonSubmitRetry }}</span>
       </button>
     </div>
   </fieldset>

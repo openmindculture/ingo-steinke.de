@@ -278,6 +278,7 @@ module.exports = {
   "contactFormLabelEmailOrPhone": "Telefon oder E-Mail",
   "contactFormLabelMessage": "Deine Nachricht",
   "contactFormButtonSubmit": "Nachricht absenden",
+  "contactFormButtonSubmitRetry": "Nachricht erneut absenden",
   "profile": "Profil",
   "at": "auf",
   "vcardQrTitle": "Ingo-Steinke als Kontakt speichern",
