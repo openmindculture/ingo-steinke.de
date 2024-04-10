@@ -335,7 +335,7 @@ module.exports = {
   "servicesVerify4": "testen und zertifieren lassen",
   "servicesVerifyMoreLinkText": "jetzt prüfen",
   "servicesVerifyMoreLinkTitle": "mehr über Test und Analyse",
-  "servicesImproveTitle": "Wir verbessern und pflegen deine Website!",
+  "servicesImproveTitle": "Wir optimieren deine Website!",
   "servicesImprove1": "deine Kund:innen sollen sie lieben",
   "servicesImprove2": "perfekt für Computer und Smartphone",
   "servicesImprove3": "einfach auf Ecosia zu finden",

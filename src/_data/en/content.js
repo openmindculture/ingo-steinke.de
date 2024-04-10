@@ -336,7 +336,7 @@ module.exports = {
   "servicesVerify4": "pass audits, obtain certifications",
   "servicesVerifyMoreLinkText": "check now",
   "servicesVerifyMoreLinkTitle": "more about audits and analysis",
-  "servicesImproveTitle": "Let's improve and optimize your website!",
+  "servicesImproveTitle": "Let's optimize your website!",
   "servicesImprove1": "make your customers love it",
   "servicesImprove2": "make it work smoothly on every device",
   "servicesImprove3": "make it easy to find on Ecosia",
