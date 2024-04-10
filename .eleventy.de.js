@@ -4,6 +4,7 @@ module.exports = function (eleventyConfig) {
 
   // all subdirectory/*.liquid are processed implicitly,
   // so we need to exclude the ones that don't match the current language
+  eleventyConfig.ignores.add('src/services');
   eleventyConfig.ignores.add('src/_includes');
 
   // explicit + fast way to copy certain files and folders

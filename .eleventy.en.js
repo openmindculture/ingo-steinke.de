@@ -7,6 +7,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.ignores.add('src/webseiten-klimafreundlich-barrierefrei-optimieren/index.liquid');
   eleventyConfig.ignores.add('src/wordpress-website-nachhaltig-optimieren-lassen/index.liquid');
   eleventyConfig.ignores.add('src/zertifizierter-shopware-6-frontend-webentwickler/index.liquid');
+  eleventyConfig.ignores.add('src/leistungen');
   eleventyConfig.ignores.add('src/_includes');
 
   // explicit + fast way to copy certain files and folders

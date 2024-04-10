@@ -333,6 +333,7 @@ module.exports = {
   "servicesBuild4": "Kooperation mit erfahrenen Partner:innen",
   "servicesBuildMoreLinkText": "jetzt starten",
   "servicesBuildMoreLinkTitle": "Professionelle Websiteerstellung",
+  "servicesBuildMoreLinkPath": "leistungen/webentwicklung.html",
   "servicesVerifyTitle": "Wir testen deine Website!",
   "servicesVerify1": "dein digitaler CO<sub>2</sub>-Fußabdruck",
   "servicesVerify2": "deine Ladezeit und Barrierefreiheit",
@@ -340,13 +341,15 @@ module.exports = {
   "servicesVerify4": "testen und zertifieren lassen",
   "servicesVerifyMoreLinkText": "jetzt prüfen",
   "servicesVerifyMoreLinkTitle": "mehr über Test und Analyse",
+  "servicesVerifyMoreLinkPath": "leistungen/website-check.html",
   "servicesImproveTitle": "Wir optimieren deine Website!",
-  "servicesImprove1": "deine Kund:innen sollen sie lieben",
+  "servicesImprove1": "deine Kund:innen werden sie lieben",
   "servicesImprove2": "perfekt für Computer und Smartphone",
-  "servicesImprove3": "einfach auf Ecosia zu finden",
+  "servicesImprove3": "einfach bei Ecosia und Google zu finden",
   "servicesImprove4": "ökologisch effizient und zertifiziert",
   "servicesImproveMoreLinkText": "jetzt optimieren",
   "servicesImproveMoreLinkTitle": "mehr über Optimierung und Zertifizierung",
+  "servicesImproveMoreLinkPath": "leistungen/optimierung.html",
   "showLandingpageLinks": "true",
   "landingLinkTitleWordPress":"Wordpress-Website nachhaltig optimieren lassen",
   "landingLinkTextWordPress": "WordPress",
@@ -357,6 +360,7 @@ module.exports = {
   "landingLinkTitleSustainability": "Webseiten klimafreundlich und barrierefrei optimieren lassen",
   "landingLinkTextSustainability": "Nachhaltigkeit",
   "landingLinkUrlSustainability": "https://www.ingo-steinke.de/webseiten-klimafreundlich-barrierefrei-optimieren/"
+
 };
 
 
