@@ -1018,6 +1018,16 @@ ul.grid-container.skills {
   padding: 0.4rem 0.875rem 0.35rem 0.875rem;
 }
 
+/* stylelint-disable-next-line no-descending-specificity */
+ul.aside-heading > li {
+  margin-bottom: 1rem;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+ul.aside-heading > li:last-child {
+  margin-bottom: 2rem;
+}
+
 .brand-coral {
   background-color: var(--interior-rose);
   color: #000;

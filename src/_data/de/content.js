@@ -124,7 +124,7 @@ module.exports = {
   "projectKleiderordnungHashtag3": "JavaScript",
   "projectKleiderordnungHashtag4": "PHP",
   "projectKleiderordnungHashtag5": "WordPress",
-  "projectDaskannstdutunHeading": "Klimapsychologiekampagne",
+  "projectDaskannstdutunHeading": "Klimapsychologie-Kampagne",
   "projectDaskannstdutun1": "Als Teamarbeit von",
   "projectDaskannstdutunAnd": "und",
   "projectDaskannstdutunCreatedSpaced": " entstand die Website",
