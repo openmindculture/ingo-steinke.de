@@ -42,8 +42,10 @@
     </div>
 
     <div class="contactform-row contactform-row-submit">
-      <button type="submit" name="contactform-button-submit" class="contactform-button-submit">
-        {{ content.contactFormButtonSubmit }}
+      <button
+        type="submit" name="contactform-button-submit" class="contactform-button-submit">
+        <span class="send-first">{{ content.contactFormButtonSubmit }}</span>
+        <span class="send-retry">{{ content.contactFormButtonSubmitRetry }}</span>
       </button>
     </div>
   </fieldset>

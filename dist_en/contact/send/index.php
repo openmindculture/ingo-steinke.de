@@ -53,14 +53,18 @@ if (!empty($post_emailfon)) {
 if (!empty($post_msg)) {
   $message .=   $post_msg . "\r\n";
 }
+
+if (!empty($message)) {
+  $headers = 'MIME-Version: 1.0' . "\r\n".
+    'Content-Type: text/plain; charset=UTF-8' . "\r\n".
+    'From: ' . $config_from . "\r\n".
+    'X-Requested-With: ' . $_SERVER['HTTP_X_REQUESTED_WITH'] . "\r\n".
+    'X-Request-Method:'  . $_SERVER['REQUEST_METHOD'] . "\r\n".
+    'X-Mailer: openmindculture'. "\r\n".
+    $config_custheader;
+
+  mail($to, $subject, $message, $headers);
+}
 $message .= "\r\n";
 
-$headers = 'MIME-Version: 1.0' . "\r\n".
-  'Content-Type: text/plain; charset=UTF-8' . "\r\n".
-  'From: ' . $config_from . "\r\n".
-  'X-Requested-With: ' . $_SERVER['HTTP_X_REQUESTED_WITH'] . "\r\n".
-  'X-Request-Method:'  . $_SERVER['REQUEST_METHOD'] . "\r\n".
-  'X-Mailer: openmindculture'. "\r\n".
-  $config_custheader;
 
-mail($to, $subject, $message, $headers);

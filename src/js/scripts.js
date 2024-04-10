@@ -176,26 +176,30 @@ window.addEventListener('DOMContentLoaded', () => {
       let submitRow = form.querySelector('.contactform-row-submit');
       if (!xhr || !messageFormSending || !messageFormSending.classList) { return; }
 
-      let params = 'contactform-field-name=';
+      /** @var {String[]} params */
+      let params = [];
       let nameFieldElement = form.querySelector('.contactform-field-name');
-      if (nameFieldElement) {
-        params += encodeURIComponent(nameFieldElement.value);
+      if (nameFieldElement && nameFieldElement.value) {
+        params.push('contactform-field-name=' + encodeURIComponent(nameFieldElement.value));
       }
       let emailfonFieldElement = form.querySelector('.contactform-field-emailfon');
-      if (emailfonFieldElement) {
-        params += '&contactform-field-emailfon='+encodeURIComponent(emailfonFieldElement.value);
+      if (emailfonFieldElement && emailfonFieldElement.value) {
+        params.push('&contactform-field-emailfon='+encodeURIComponent(emailfonFieldElement.value));
       }
       let messageFieldElement = form.querySelector('.contactform-field-message');
-      if (messageFieldElement) {
-        params += '&contactform-field-message='+encodeURIComponent(messageFieldElement.value);
+      if (messageFieldElement && messageFieldElement.value) {
+        params.push(params += '&contactform-field-message='+encodeURIComponent(messageFieldElement.value));
       }
       let messageFieldCaptcha = form.querySelector('.contactform-field-captcha');
-      if (messageFieldCaptcha) {
-        params += '&contactform-field-captcha='+encodeURIComponent(messageFieldCaptcha.value);
+      if (messageFieldCaptcha && messageFieldCaptcha.value) {
+        params.push('&contactform-field-captcha='+encodeURIComponent(messageFieldCaptcha.value));
       }
       let messageFieldHomepage = form.querySelector('.contactform-field-homepage');
-      if (messageFieldHomepage) {
-        params += '&contactform-field-homepage='+encodeURIComponent(messageFieldHomepage.value);
+      if (messageFieldHomepage && messageFieldHomepage.value) {
+        params.push('&contactform-field-homepage='+encodeURIComponent(messageFieldHomepage.value));
+      }
+      if (params.length === 0) {
+        return;
       }
 
       xhr.open("POST", url);
@@ -217,7 +221,7 @@ window.addEventListener('DOMContentLoaded', () => {
           submitRow.classList.remove('initially-hidden');
         }
       }
-      xhr.send(params);
+      xhr.send(params.join('&'));
       if (window._paq) {
         window._paq.push(['trackEvent', 'actions', 'contact', 'sent']);
       }
@@ -225,6 +229,10 @@ window.addEventListener('DOMContentLoaded', () => {
       let messageFormError = form.querySelector('.contactform-message-error');
       if (messageFormError) {
         messageFormError.classList.remove('initially-hidden');
+      }
+      let messageFormSending = form.querySelector('.contactform-message-sending');
+      if (messageFormSending) {
+        messageFormSending.classList.add('initially-hidden');
       }
       let submitRow = form.querySelector('.contactform-row-submit');
       if (submitRow) {

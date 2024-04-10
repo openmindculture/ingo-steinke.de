@@ -428,6 +428,7 @@ a.menu-toggle:hover {
 
 .contactform-message {
   padding-top: 1rem;
+  margin-right: -1rem; /* override margin to allow for slightly longer text to fit one line */
 }
 
 .contactform-message-sent::before {
