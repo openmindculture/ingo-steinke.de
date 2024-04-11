@@ -378,6 +378,11 @@ a.menu-toggle:hover {
   display: block;
 }
 
+.contactform-title {
+  font-weight: bold;
+  margin: 0.5em 0 1em 0;
+}
+
 .contactform-row {
   display: flex;
   margin: 0.5rem 0 0 0;
@@ -1021,6 +1026,10 @@ a.buttonlike:focus,
   justify-content: center;
   min-height: 6rem;
   padding-bottom: 1rem;
+}
+
+.text-content-layout-children + .cta-container {
+  margin-bottom: 3rem;
 }
 
 /* stylelint-disable-next-line no-descending-specificity */
