@@ -2,14 +2,16 @@
 tags: addtositemap
 imgdirectory: "../img"
 permalink: "leistungen/webentwicklung.html"
+alternatelink: "https://www.ingo-steinke.com/services/web-development.html"
+alternatehreflang: "en"
 ---
 <!DOCTYPE html><html lang="de"><head><meta http-equiv="content-type" content="text/html; charset=utf-8">
 <title>Wir bauen deine Website! schnell, erfolgreich, nachhaltig, barrierefrei</title>
 {% include '../_includes/html-head-common.liquid' %}
   <link
     rel="alternate"
-    hreflang="en"
-    href="https://www.ingo-steinke.com/services/web-development.html"
+    hreflang="{{ alternatehreflang }}"
+    href="{{ alternatelink }}"
   >
 </head>
 <body>
@@ -24,6 +26,7 @@ permalink: "leistungen/webentwicklung.html"
     <li>langjährige Erfahrung</li>
   </ul>
 </header>
+{% include '../_includes/navigation-on-subpages.liquid' %}
 <main id="content-top" class="target-offset">
   <section class="text-content-layout text-content-color">
     <article class="text-width">
