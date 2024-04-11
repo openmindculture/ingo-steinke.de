@@ -25,6 +25,7 @@ module.exports = {
   "menuClose": "close menu",
   "menuButton": "contents",
   "targetProjects": "projects",
+  "targetServices": "services",
   "targetSkills": "skills",
   "targetAboutMe": "about me",
   "targetTalksEvents": "talks",

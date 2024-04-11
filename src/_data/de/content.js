@@ -25,6 +25,7 @@ module.exports = {
   "menuClose": "Inhaltsverzeichnis schließen",
   "menuButton": "Inhalt",
   "targetProjects": "Projekte",
+  "targetServices": "Leistungen",
   "targetSkills": "Skills",
   "targetAboutMe": "Über mich",
   "targetTalksEvents": "Vorträge",
