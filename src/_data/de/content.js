@@ -37,6 +37,7 @@ module.exports = {
   "introHeading": "Begeistere deine Kunden im Internet!",
   "intro": "Ich bin Ingo Steinke, nachhaltiger und kreativer Webentwickler mit über 20 Jahren Berufserfahrung. Von meiner Arbeit profitierten unter anderem",
   "spacedAnd": " und",
+  "andA": "und",
   "commaEnglishOnly": "",
   "currentlyEcologicalIam": "Aktuell arbeite ich vorrangig für Kund:innen mit ökologischem und ethischem Fokus. Ich bin",
   "memberOf": "Mitglied im",
@@ -371,8 +372,10 @@ module.exports = {
   "landingLinkUrlShopware": "https://www.ingo-steinke.de/zertifizierter-shopware-6-frontend-webentwickler/",
   "landingLinkTitleSustainability": "Webseiten klimafreundlich und barrierefrei optimieren lassen",
   "landingLinkTextSustainability": "Nachhaltigkeit",
-  "landingLinkUrlSustainability": "https://www.ingo-steinke.de/webseiten-klimafreundlich-barrierefrei-optimieren/"
-
+  "landingLinkUrlSustainability": "https://www.ingo-steinke.de/webseiten-klimafreundlich-barrierefrei-optimieren/",
+  "landingLinkTitleFreelanceBerlin": "Freelance Webentwickler in Berlin",
+  "landingLinkTextFreelanceBerlin": "Freelancer Berlin",
+  "landingLinkUrlFreelanceBerlin": "https://www.ingo-steinke.de/leistungen/webentwickler-berlin-freelancer.html"
 };
 
 

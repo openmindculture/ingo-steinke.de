@@ -38,6 +38,7 @@ module.exports = {
   "introHeading": "Your Internet Presence Can Inspire Your Customers",
   "intro": "My name is Ingo Steinke. I'm a sustainable and creative web developer with more than 20 years of professional experience. Customers who have benefited from my work include",
   "spacedAnd": ", and",
+  "andA": "and a",
   "currentlyEcologicalIam": "I enjoy working for customers with an ecological and ethical focus in their work! I'm a",
   "memberOf": "a member of",
   "careAboutGoingBeyond": "Creativity, flexibility, and thoughtfulness are the main values that guide my work and personal lives. I am deeply interested in how sustainability, culture, and art come together, and I strive to bring what I learn into my work every day.",
@@ -372,5 +373,8 @@ module.exports = {
   "landingLinkUrlShopware": "https://www.ingo-steinke.de/zertifizierter-shopware-6-frontend-webentwickler/",
   "landingLinkTitleSustainability": "Webseiten klimafreundlich und barrierefrei optimieren lassen",
   "landingLinkTextSustainability": "Nachhaltigkeit",
-  "landingLinkUrlSustainability": "https://www.ingo-steinke.de/webseiten-klimafreundlich-barrierefrei-optimieren/"
+  "landingLinkUrlSustainability": "https://www.ingo-steinke.de/webseiten-klimafreundlich-barrierefrei-optimieren/",
+  "landingLinkTitleFreelanceBerlin": "Freelance web developer in Berlin",
+  "landingLinkTextFreelanceBerlin": "Freelancer Berlin",
+  "landingLinkUrlFreelanceBerlin": "https://www.ingo-steinke.com/services/freelance-webdeveloper-berlin.html"
 };
