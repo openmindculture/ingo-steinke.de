@@ -161,7 +161,6 @@ module.exports = {
   "workClientsBenefit": "Als Kund:in profitierst du von geringeren Wartungskosten, optimierter Performance und erfolgreicher Kund:innenansprache.",
   "pricingHeading": "Preise",
   "pricing": "Ich biete verschiedene Preismodelle an. Bei einer Abrechnung auf Stundenbasis gebe ich üblicherweise im Vorfeld eine Aufwandsschätzung ab. Festpreisangebote sind ebenfalls möglich. Mein Stundensatz richtet sich nach Art und Umfang der Tätigkeit und beginnt ab <span class=price>85,- €</span> (zzgl. 19% MWSt.) Gemeinnützige Organisationen und nachhaltige Startups können auf Anfrage vergünstigte Angebote erhalten.",
-  "workFullstackHeading": "Frontend-Fokus und Full-Stack-Erfahrung",
   "workFullstack": "Bei der Weiterentwicklung bestehenden Codes kommt mir meine Berufserfahrung und meine pragmatische Einstellung zugute. Mit meinen Erfahrungen im Backend- und DevOps-Bereich und meiner hohen Lernbereitschaft übernehme ich bei Bedarf alle Aufgaben, die sich bei der Webentwicklung ergeben oder finde geeignete Partner:innen für die Umsetzung.",
   "workOwnFocus": "Mein Schwerpunkt ist die Frontend-Entwicklung mit CSS.",
   "workCertifiedHeading": "Zertifiziert und transparent",
