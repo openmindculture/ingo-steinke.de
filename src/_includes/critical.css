@@ -198,6 +198,10 @@ small {
     margin: 0 auto;
   }
 
+  .sticky-header.smaller-header > .wrapper {
+    max-width: 1300px;
+  }
+
   @media (prefers-reduced-transparency) {
     .sticky-header > .wrapper {
       box-shadow: 0 7px 14px 0 rgba(29, 73, 80, 1);
@@ -436,6 +440,10 @@ small {
 
   .mb0 {
     margin-bottom: 0;
+  }
+
+  .pb3 {
+    padding-bottom: 3em;
   }
 
   a.tw-btn,

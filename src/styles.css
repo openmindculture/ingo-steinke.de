@@ -1030,6 +1030,7 @@ a.buttonlike:focus,
 
 .text-content-layout-children + .cta-container {
   margin-bottom: 3rem;
+  padding-bottom: 3rem;
 }
 
 /* stylelint-disable-next-line no-descending-specificity */
