@@ -1243,8 +1243,8 @@
           {% comment %} hide untranslated content using content variable{% endcomment %}
           {% if content.showLandingpageLinks == "true" %}
           <p class="landingpage--links no-print">
+            <a href="{{ content.landingLinkUrlSustainability }}" title="{{ content.landingLinkTitleSustainability }}">{{ content.landingLinkTextSustainability }}</a>
             <a href="{{ content.landingLinkUrlWordPress }}" title="{{ content.landingLinkTitleWordPress }}">{{ content.landingLinkTextWordPress }}</a>
-            <a href="{{ content.landingLinkUrlShopware }}" title="{{ content.landingLinkTitleShopware }}">{{ content.landingLinkTextShopware }}</a>
             <a href="{{ content.landingLinkUrlFreelanceBerlin }}" title="{{ content.landingLinkTitleFreelanceBerlin }}">{{ content.landingLinkTextFreelanceBerlin }}</a>
           </p>
           {% endif %}
