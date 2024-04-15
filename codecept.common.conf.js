@@ -5,7 +5,8 @@ module.exports = {
     Puppeteer: {
       url: '',
       show: true,
-      windowSize: '1200x900'
+      windowSize: '1200x900',
+      executablePath: require('puppeteer-core'),
     },
     "ResembleHelper" : {
       "require": "codeceptjs-resemblehelper",
@@ -21,11 +22,6 @@ module.exports = {
   mocha: {},
   name: 'ingo-steinke.de',
   plugins: {
-    testomatio: {
-      enabled: true,
-      require: '@testomatio/reporter/lib/adapter/codecept',
-      apiKey: process.env.TESTOMATIO,
-    },
     pauseOnFail: {},
     retryFailedStep: {
       enabled: true
