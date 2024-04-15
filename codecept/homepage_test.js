@@ -4,7 +4,7 @@ Scenario('Test website content and navigation', ({ I }) => {
 
   // Set prepareScreenshotBaseImages to true to regenerate and save all screenshots,
   // set prepareScreenshotBaseImages to compare upcoming tests to saved screenshots:
-  let prepareScreenshotBaseImages = false;
+  let prepareScreenshotBaseImages = true;
 
   I.amOnPage('/');
   I.see('Ingo Steinke', 'h1');
