@@ -1,8 +1,8 @@
 <form action="/contact/send/index.php" class="contactform no-print status-initial">{% comment %}
 <!-- This snippet can be included in all types of contact sections -->
 {% endcomment %}
-  <span class="contactform-title">{{ content.contactFormTitle }}</span>
   <fieldset>
+    <legend class="contactform-title">{{ content.contactFormTitle }}</legend>
     <div class="contactform-row contactform-row-name">
       <label for="contactform-field-name" class="contactform-label-name">
         {{ content.contactFormLabelName }}:
@@ -10,6 +10,7 @@
       <input
         type="text"
         name="contactform-field-name"
+        id="contactform-field-name"
         class="contactform-field-name"
         placeholder="{{ content.contactFormPlaceholderYourName }}"
       >
@@ -22,6 +23,7 @@
       <input
         type="text"
         name="contactform-field-emailfon"
+        id="contactform-field-emailfon"
         class="contactform-field-emailfon"
         placeholder="{{ content.contactFormLabelEmailOrPhone }}"
       >
@@ -33,6 +35,7 @@
       </label>
       <textarea
         name="contactform-field-message"
+        id="contactform-field-message"
         class="contactform-field-message"
         placeholder="{{ content.contactFormLabelMessage }}"
       ></textarea>
