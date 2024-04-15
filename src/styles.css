@@ -102,6 +102,11 @@ a::selection {
   color: var(--secondary-foreground);
 }
 
+body.high-contrast .alternating-div-color > div:nth-child(2n-1):not(.no-alternating-color) {
+  border-top: solid 1px var(--secondary-heading);
+  border-bottom: solid 1px var(--secondary-heading);
+}
+
 /* stylelint-disable-next-line no-descending-specificity */
 .text-content-color a,
 .text-content-color a:link,
@@ -1030,7 +1035,12 @@ a.buttonlike:focus,
 
 .text-content-layout-children + .cta-container {
   margin-bottom: 3rem;
-  padding-bottom: 3rem;
+}
+
+.text-content-layout-children + .cta-container::after {
+  content: " ";
+  display: block;
+  height: 3rem;
 }
 
 /* stylelint-disable-next-line no-descending-specificity */
@@ -1062,6 +1072,12 @@ a.buttonlike:focus,
   box-shadow: var(--effect-box-shadow-dropshadow-darker);
   font-size: 1.125rem;
   padding: 0.4rem 0.875rem 0.35rem 0.875rem;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+body.high-contrast a.buttonlike {
+  background-color: #fff;
+  border: solid 1px #000;
 }
 
 /* stylelint-disable-next-line no-descending-specificity */
