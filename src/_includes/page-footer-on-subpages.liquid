@@ -2,9 +2,9 @@
 <!-- This snippet is only used on sub-pages, not on the homepage! -->
 {% endcomment %}
   <p class="legal legal--links no-print">
-    <a href="https://www.ingo-steinke.de/#contact">Kontakt</a>
-    <a href="https://www.ingo-steinke.de/#imprint">Impressum</a>
-    <a href="https://www.ingo-steinke.de/#privacy">Datenschutz</a>
+    <a href="../#contact">{{ content.targetContact }}</a>
+    <a href="../#imprint">{{ content.targetImprint }}</a>
+    <a href="../#privacy">{{ content.targetPrivacy }}</a>
   </p>
   <p class="landingpage--links no-print">
     <a href="{{ content.landingLinkUrlSustainability }}" title="{{ content.landingLinkTitleSustainability }}">{{ content.landingLinkTextSustainability }}</a>
