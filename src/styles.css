@@ -1015,9 +1015,13 @@ a.buttonlike:focus,
   border-radius: 0.25rem;
   color: var(--secondary-foreground);
   display: inline-block;
+  display: flex;
   margin-top: 1.5rem;
   min-width: 11rem;
-  padding: 0.5rem 1rem;
+  min-height: 3rem;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   transition:
     box-shadow 0.125s ease-out,
@@ -1071,7 +1075,6 @@ a.buttonlike:focus,
 .grid-container.services a.buttonlike:focus {
   box-shadow: var(--effect-box-shadow-dropshadow-darker);
   font-size: 1.125rem;
-  padding: 0.4rem 0.875rem 0.35rem 0.875rem;
 }
 
 /* stylelint-disable-next-line no-descending-specificity */
