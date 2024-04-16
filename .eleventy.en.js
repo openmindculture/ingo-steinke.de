@@ -2,6 +2,12 @@ const htmlmin = require('html-minifier');
 module.exports = function (eleventyConfig) {
   // TODO refactor redundant code to include common config!
 
+  // all subdirectory/*.liquid are processed implicitly,
+  // so we need to exclude the ones that don't match the current language
+  eleventyConfig.ignores.add('src/webseiten-klimafreundlich-barrierefrei-optimieren/index.liquid');
+  eleventyConfig.ignores.add('src/wordpress-website-nachhaltig-optimieren-lassen/index.liquid');
+  eleventyConfig.ignores.add('src/zertifizierter-shopware-6-frontend-webentwickler/index.liquid');
+  eleventyConfig.ignores.add('src/leistungen');
   eleventyConfig.ignores.add('src/_includes');
 
   // explicit + fast way to copy certain files and folders
@@ -26,7 +32,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/contact/send/index.php');
 
   // redirect rules and domain configuration for netlify
-  eleventyConfig.addPassthroughCopy('src/netlify.toml');
+  // eleventyConfig.addPassthroughCopy('src/netlify.toml');
   // redirect rules for apache webhosting
   eleventyConfig.addPassthroughCopy('src/.htaccess');
 

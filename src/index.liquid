@@ -37,10 +37,10 @@
     </style>
     <link rel="preload" href="fonts/bitter-v16-latin-700.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/montserrat-v15-latin-ext_latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" media="screen" href="styles.css?v=3.9.2">
-    <script src="js/scripts.js?v=3.9.2"></script>
-    <link rel="stylesheet" media="screen and (prefers-reduced-motion: no-preference)" href="decoration.css?v=3.9.2">
-    <link rel="stylesheet" media="print" href="print.css?v=3.9.2">
+    <link rel="stylesheet" media="screen" href="styles.css?v=4.0.0">
+    <script src="js/scripts.js?v=4.0.0"></script>
+    <link rel="stylesheet" media="screen and (prefers-reduced-motion: no-preference)" href="decoration.css?v=4.0.0">
+    <link rel="stylesheet" media="print" href="print.css?v=4.0.0">
     <meta name=author content="{{ content.metaAuthor }}">
     <meta
       property="og:title"
@@ -103,24 +103,7 @@
     <div class="page-container" id="top">
       <div class="page-content">
         <header class="jumbotronHeader" id="jumbotronHeader">
-          <picture>
-            <source
-              type="image/webp"
-              sizes="100vw"
-              srcset="img/Ingo-Steinke-flower-shirt.webp 1x,
-                    img/Ingo-Steinke-flower-shirt-496.webp 2x,
-                    img/Ingo-Steinke-flower-shirt-large.webp 4x"
-            >
-            <img
-              src="img/Ingo-Steinke-flower-shirt.jpg"
-              srcset="img/Ingo-Steinke-flower-shirt-496.jpg 2x,
-                    img/Ingo-Steinke-flower-shirt-large.jpg 4x"
-              width="248"
-              height="248"
-              alt="{{ content.jumbotronImageAlt }}"
-              class="avatar"
-            >
-          </picture>
+          {% include '_includes/jumbotron-image.liquid' %}
           <h1>{{ content.jumbotronHeader }}</h1>
           <p class="tagline">{{ content.jumbotronTagline }}</p>
         </header>
@@ -142,7 +125,7 @@
             </span>
 
             <div class="nav-wrapper">
-              <a href="#contact" aria-hidden="true" class="extra-nav-link initially-hidden">{{ content.targetContact }}</a>
+              <a href="#contact" class="extra-nav-link initially-hidden">{{ content.targetContact }}</a>
               <a href="#main-menu"
                 id="main-menu-toggle"
                 class="menu-toggle"
@@ -171,7 +154,7 @@
                 </a>
                 <ul>
                   <li><a href="#projects">{{ content.targetProjects }}</a></li>
-                  <li><a href="#skills">{{ content.targetSkills }}</a></li>
+                  <li><a href="#services">{{ content.targetServices }}</a></li>
                   <li><a href="#about-me">{{ content.targetAboutMe }}</a></li>
                   <li><a href="#contact">{{ content.targetContact }}</a></li>
                   <li><a href="#imprint">{{ content.targetImprint }}</a></li>
@@ -230,7 +213,7 @@
                 <a href="https://fairantwortung.org/uber-ingo-steinke/" target="_blank" rel="noopener">
                   Fairantworter</a>,
                 <a href="https://greencompanion.de/detail/web-entwicklung" target="_blank" rel="noopener">
-                  Green Companion</a>{{ content.and }} {{ content.memberOf }}
+                  Green Companion</a>{{ content.andA }} {{ content.memberOf }}
                 <a href="https://berlin.impacthub.net" target="_blank" rel="noopener">Impact Hub Berlin</a>.
               </p>
               {% comment %}p content.careAboutGoingBeyond TODO only after clarification{% endcomment %}
@@ -244,7 +227,7 @@
                 {{ content.workWithMe2 }}
               </p>
 
-              <h3>{{ content.pricingHeading }}</h3>
+              <h3 id="pricing">{{ content.pricingHeading }}</h3>
 
               <p>
                 {{ content.pricing }}
@@ -418,7 +401,7 @@
               <article class="tile target-offset" id="project-shopware-plugin">
                 <div class="tile-content flex bg-peel">
                   <header>
-                    <h3>{{ content.projectShopwarePluginHeading }}</h3>
+                    <h3 id="plugin-programmierung">{{ content.projectShopwareCostPluginHeading }}</h3>
                   </header>
                   <p>
                     <img
@@ -429,22 +412,23 @@
                       alt=""
                     />
                     <span class="text-line">
-                      {{ content.projectShopwarePlugin1 }}
+                      {{ content.projectShopwareCostPlugin1 }}
+                      <!-- TODO change link -->
                       <a
-                        href="https://store.shopware.com/waoio62482995391f/wao.io-cache-control.html"
-                        title="store.shopware.com/waoio62482995391f/wao.io-cache-control.html"
+                        href="https://github.com/openmindculture/sw-IngoSCostTransparency"
                         target="_blank"
                         rel="noopener"
-                      >{{ content.projectShopwarePlugin2 }}</a> {{ content.projectShopwarePlugin3 }}
-                      <span class="only-print code-link">store.shopware.com/waoio62482995391f/wao.io-cache-control.html</span>
-                    </span>
+                      >{{ content.projectShopwareCostPlugin2 }}</a> {{ content.projectShopwareCostPlugin3 }}
+                      <span class="only-print code-link">github.com/openmindculture/sw-IngoSCostTransparency</span>
+                    </span><!-- TODO change link -->
                   </p>
 
                   <p>
-                    <span class="hashtag">{{ content.projectShopwarePluginHashtag1 }}</span>
-                    <span class="hashtag">{{ content.projectShopwarePluginHashtag2 }}</span>
-                    <span class="hashtag">{{ content.projectShopwarePluginHashtag3 }}</span>
-                    <span class="hashtag">{{ content.projectShopwarePluginHashtag4 }}</span>
+                    <span class="hashtag">{{ content.projectShopwareCostPluginHashtag1 }}</span>
+                    <span class="hashtag">{{ content.projectShopwareCostPluginHashtag2 }}</span>
+                    <span class="hashtag">{{ content.projectShopwareCostPluginHashtag3 }}</span>
+                    <span class="hashtag">{{ content.projectShopwareCostPluginHashtag4 }}</span>
+                    <span class="hashtag">{{ content.projectShopwareCostPluginHashtag5 }}</span>
                   </p>
                 </div>
               </article>
@@ -521,24 +505,24 @@
                 </div>
               </article>
 
-              <article class="tile target-offset" id="wandelpunkt-consulting-semplice">
+              <article class="tile target-offset" id="photography-wordpress-optimization">
                 <div class="tile-content flex bg-peel pl1">
                   <header>
-                    <h3>{{ content.projectWandelpunktHeading }}</h3>
+                    <h3>{{ content.projectPhotographyHeading }}</h3>
                   </header>
-                  <p>
-                    <img src="img/logo-wandelpunkt.svg" width="512" height="512" class="project-thumb project-thumb--grow" loading="lazy" alt="" />
+                  <p><!-- TODO camera logo -->
+                    <img src="img/logo-lens-camera.svg" width="589" height="461" class="project-thumb project-thumb--grow" loading="lazy" alt="" />
                     <span class="text-line">
-                      {{ content.projectWandelpunkt1 }}
-                      <a href="http://web.archive.org/web/20230401133238/https://www.wandelpunkt-consulting.de/"
-                         target="_blank" rel="noopener">{{ content.projectWandelpunkt2 }}</a>{{ content.projectWandelpunkt3Spaced }}.
+                      {{ content.projectPhotography1 }}
+                      <a href="https://www.malte-reiter.de/"
+                         target="_blank" rel="noopener">{{ content.projectPhotography2 }}</a>{{ content.projectPhotography3Spaced }}.
                     </span>
                   </p>
                   <p>
-                    <span class="hashtag">{{ content.projectWandelpunktHashtag1 }}</span>
-                    <span class="hashtag">{{ content.projectWandelpunktHashtag2 }}</span>
-                    <span class="hashtag">{{ content.projectWandelpunktHashtag3 }}</span>
-                    <span class="hashtag">{{ content.projectWandelpunktHashtag4 }}</span>
+                    <span class="hashtag">{{ content.projectPhotographyHashtag1 }}</span>
+                    <span class="hashtag">{{ content.projectPhotographyHashtag2 }}</span>
+                    <span class="hashtag">{{ content.projectPhotographyHashtag3 }}</span>
+                    <span class="hashtag">{{ content.projectPhotographyHashtag4 }}</span>
                   </p>
                 </div>
               </article>
@@ -590,6 +574,10 @@
                 {{ content.work }}
               </p>
 
+              <p>
+                {{ content.workOwnFocus }} {{ content.workFullstack }}
+              </p>
+
               <h3>{{ content.workTeamHeading }}</h3>
               <p>
                 {{ content.workTeam }}
@@ -611,40 +599,55 @@
                 >{{ content.workCertifiedSWDev }}</a>
                 {{ content.workCertifiedAnd }}
                 {{ content.workCertifiedExtensionPartner }}.
-              </p>
-
-              <h3 class="target-offset" id="plugin-programmierung">{{ content.workPluginsHeading }}</h3>
-              <p>
-                {{ content.workPlugins5 }}
                 <a
-                  href="https://de.wordpress.org/plugins/incompatibility-status/"
+                  href="https://github.com/openmindculture"
+                  hreflang="en"
                   target="_blank"
-                  rel="noopener"
-                >{{ content.workPlugins6 }}</a>
-                {{ content.workPluginsAnd }}
-                <a
-                  href="https://github.com/openmindculture/wp-contact-form-inbox-report-mailer-plugin"
-                  target="_blank"
-                  rel="noopener"
-                >{{ content.workPlugins7 }}</a>.
-                {{ content.workPluginsOther }}
-                <a
-                  href="https://plugins.jetbrains.com/plugin/16721-cute-pink-light-theme"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  Cute Pink Light Theme
-                </a>.
-              </p>
-
-              <h3>{{ content.workFullstackHeading }}</h3>
-              <p>
-                {{ content.workFullstack }}
-              </p>
-              <p>
-                {{ content.workOwnFocus }}
+                  rel="me noopener"
+                >{{ content.workCertifiedSustainableSourceCodeLinkText }}</a>
+                {{ content.workCertifiedSustainable2 }}
+                <a href="#website-carbon-certified">
+                  {{ content.workCertifiedSustainableFootprintLinkText }}
+                </a>
+                {{ content.workCertifiedSustainable3 }}
               </p>
             </article>
+          </section>
+
+          <section class="no-print text-content-layout services-wrapper avoid-page-break">
+            <h3 id="services" class="font-sans target-offset">{{ content.services }}</h3>
+            <ul class="grid-container services">
+              <li class="tile text-content-color">
+                <h4 class="font-sans">{{ content.servicesBuildTitle }}</h4>
+                <ul>
+                  <li>{{ content.servicesBuild1 }}</li>
+                  <li>{{ content.servicesBuild2 }}</li>
+                  <li>{{ content.servicesBuild3 }}</li>
+                  <li>{{ content.servicesBuild4 }}</li>
+                </ul>
+                <a href="{{ content.servicesBuildMoreLinkPath }}" class="buttonlike" title="{{ content.servicesBuildMoreLinkTitle }}">{{ content.servicesBuildMoreLinkText }}!</a>
+              </li>
+              <li class="tile text-content-color">
+                <h4 class="font-sans">{{ content.servicesVerifyTitle }}</h4>
+                <ul>
+                  <li>{{ content.servicesVerify1 }}</li>
+                  <li>{{ content.servicesVerify2 }}</li>
+                  <li>{{ content.servicesVerify3 }}</li>
+                  <li>{{ content.servicesVerify4 }}</li>
+                </ul>
+                <a class="buttonlike" href="{{ content.servicesVerifyMoreLinkPath }}" title="{{ content.servicesVerifyMoreLinkTitle }}">{{ content.servicesVerifyMoreLinkText }}!</a>
+              </li>
+              <li class="tile text-content-color">
+                <h4 class="font-sans">{{ content.servicesImproveTitle }}</h4>
+                <ul>
+                  <li>{{ content.servicesImprove1 }}</li>
+                  <li>{{ content.servicesImprove2 }}</li>
+                  <li>{{ content.servicesImprove3 }}</li>
+                  <li>{{ content.servicesImprove4 }}</li>
+                </ul>
+                <a class="buttonlike" href="{{ content.servicesImproveMoreLinkPath }}" title="{{ content.servicesImproveMoreLinkTitle }}">{{ content.servicesImproveMoreLinkText }}!</a>
+              </li>
+            </ul>
           </section>
 
           <section class="text-content-layout skills-wrapper avoid-page-break">
@@ -1240,12 +1243,13 @@
           {% comment %} hide untranslated content using content variable{% endcomment %}
           {% if content.showLandingpageLinks == "true" %}
           <p class="landingpage--links no-print">
-            <a href="{{ content.landingLinkUrlWordPress }}" title="{{ content.landingLinkTitleWordPress }}">{{ content.landingLinkTextWordPress }}</a>
-            <a href="{{ content.landingLinkUrlShopware }}" title="{{ content.landingLinkTitleShopware }}">{{ content.landingLinkTextShopware }}</a>
             <a href="{{ content.landingLinkUrlSustainability }}" title="{{ content.landingLinkTitleSustainability }}">{{ content.landingLinkTextSustainability }}</a>
+            <a href="{{ content.landingLinkUrlWordPress }}" title="{{ content.landingLinkTitleWordPress }}">{{ content.landingLinkTextWordPress }}</a>
+            <a href="{{ content.landingLinkUrlFreelanceBerlin }}" title="{{ content.landingLinkTitleFreelanceBerlin }}">{{ content.landingLinkTextFreelanceBerlin }}</a>
           </p>
           {% endif %}
 
+          <a id="website-carbon-certified"></a>
           <div id="wcb" class="carbonbadge no-print"></div>
           <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
 

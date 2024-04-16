@@ -97,6 +97,16 @@ a::selection {
   color: var(--secondary-foreground);
 }
 
+.alternating-div-color > div:nth-child(2n-1):not(.no-alternating-color) {
+  background-color: var(--cta-light-background);
+  color: var(--secondary-foreground);
+}
+
+body.high-contrast .alternating-div-color > div:nth-child(2n-1):not(.no-alternating-color) {
+  border-top: solid 1px var(--secondary-heading);
+  border-bottom: solid 1px var(--secondary-heading);
+}
+
 /* stylelint-disable-next-line no-descending-specificity */
 .text-content-color a,
 .text-content-color a:link,
@@ -373,6 +383,11 @@ a.menu-toggle:hover {
   display: block;
 }
 
+.contactform-title {
+  font-weight: bold;
+  margin: 0.5em 0 1em 0;
+}
+
 .contactform-row {
   display: flex;
   margin: 0.5rem 0 0 0;
@@ -428,6 +443,7 @@ a.menu-toggle:hover {
 
 .contactform-message {
   padding-top: 1rem;
+  margin-right: -1rem; /* override margin to allow for slightly longer text to fit one line */
 }
 
 .contactform-message-sent::before {
@@ -442,6 +458,29 @@ a.menu-toggle:hover {
 .contactform-field-homepage,
 .contactform-field-captcha {
   display: none;
+}
+
+.contactform.status-initial .initially-hidden,
+.contactform.status-initial .contactform-message-sending,
+.contactform.status-initial .contactform-message-sent,
+.contactform.status-initial .contactform-message-error,
+.contactform.status-error .contactform-button-submit .send-retry,
+.contactform.status-sending .contactform-button-submit .send-retry,
+.contactform.status-sent .contactform-button-submit .send-retry,
+.contactform.status-sending .contactform-row-submit,
+.contactform.status-sent .contactform-row-submit,
+.contactform.status-error .contactform-button-submit .send-first {
+  display: none;
+}
+
+.contactform.status-sending .contactform-message-sending,
+.contactform.status-sent .contactform-message-sent,
+.contactform.status-error .contactform-message-error {
+  display: block;
+}
+
+.contactform.status-error .contactform-button-submit .send-retry {
+  display: inline;
 }
 
 @media only screen and (max-width: 490px) {
@@ -894,8 +933,6 @@ ul.code-links {
   }
 }
 
-/* skills grid */
-
 ul.grid-container.skills {
   margin-bottom: 2em;
 }
@@ -927,6 +964,133 @@ ul.grid-container.skills {
   border-radius: 0;
   margin-right: 3px;
   font-size: 0.8125em;
+}
+
+.grid-container.services {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media only screen and (max-width: 768px) {
+  .grid-container.services {
+    grid-template-columns: 1fr;
+  }
+}
+
+.grid-container.services > li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 0 2rem 1rem;
+  background-color: var(--cta-light-background);
+  color: var(--secondary-foreground);
+}
+
+.grid-container.services > li ul {
+  flex-grow: 1;
+  list-style-type: disc;
+  padding: 0 0.5rem 0 2rem;
+}
+
+.grid-container.services > li ul li {
+  padding: 0;
+}
+
+a.buttonlike,
+a.buttonlike:link,
+a.buttonlike:visited,
+a.buttonlike:active,
+a.buttonlike:hover,
+a.buttonlike:focus,
+.grid-container.services a.buttonlike,
+.grid-container.services a.buttonlike:link,
+.grid-container.services a.buttonlike:visited,
+.grid-container.services a.buttonlike:active,
+.grid-container.services a.buttonlike:hover,
+.grid-container.services a.buttonlike:focus {
+  align-self: center;
+  background: var(--cta-button-light-background);
+  background-color: var(--cta-button-light-background);
+  background-image: none;
+  border: solid 1px var(--cta-button-light-background);
+  border-radius: 0.25rem;
+  color: var(--secondary-foreground);
+  display: inline-block;
+  display: flex;
+  margin-top: 1.5rem;
+  min-width: 11rem;
+  min-height: 3rem;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition:
+    box-shadow 0.125s ease-out,
+    font-size 0.125s ease-out,
+    padding 0.125s ease-out;
+  text-align: center;
+}
+
+.cta-container {
+  display: flex;
+  justify-content: center;
+  min-height: 6rem;
+  padding-bottom: 1rem;
+}
+
+.text-content-layout-children + .cta-container {
+  margin-bottom: 3rem;
+}
+
+.text-content-layout-children + .cta-container::after {
+  content: " ";
+  display: block;
+  height: 3rem;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.cta-container a.buttonlike,
+.cta-container a.buttonlike:link,
+.cta-container a.buttonlike:visited,
+.cta-container a.buttonlike:active,
+.cta-container a.buttonlike:hover,
+.cta-container a.buttonlike:focus {
+  min-width: 20rem;
+  max-width: 100%;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+a.buttonlike:link,
+a.buttonlike:visited,
+a.buttonlike:active,
+.grid-container.services a.buttonlike:link,
+.grid-container.services a.buttonlike:visited,
+.grid-container.services a.buttonlike:active {
+  box-shadow: var(--effect-box-shadow-dropshadow);
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+a.buttonlike:hover,
+a.buttonlike:focus,
+.grid-container.services a.buttonlike:hover,
+.grid-container.services a.buttonlike:focus {
+  box-shadow: var(--effect-box-shadow-dropshadow-darker);
+  font-size: 1.125rem;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+body.high-contrast a.buttonlike {
+  background-color: #fff;
+  border: solid 1px #000;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+ul.aside-heading > li {
+  margin-bottom: 1rem;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+ul.aside-heading > li:last-child {
+  margin-bottom: 2rem;
 }
 
 .brand-coral {

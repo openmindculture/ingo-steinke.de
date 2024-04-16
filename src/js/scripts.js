@@ -42,30 +42,36 @@ window.addEventListener('DOMContentLoaded', () => {
     observer.observe(stickyHeader);
   }
 
-  navOpener.addEventListener('click', (e) => {
-    e.preventDefault();
-    navMenu.setAttribute('aria-expanded', 'true');
-    if (typeof navMenu.scrollIntoView === 'function') {
-      navMenu.scrollIntoView();
-    }
-    document.addEventListener('click', (e) => {
-      const isClickInside = navOpener.contains(e.target);
-      if (!isClickInside) {
-        navMenu.setAttribute('aria-expanded', 'false');
-        document.onclick = null;
+  if (navOpener) {
+    navOpener.addEventListener('click', (e) => {
+      e.preventDefault();
+      navMenu.setAttribute('aria-expanded', 'true');
+      if (typeof navMenu.scrollIntoView === 'function') {
+        navMenu.scrollIntoView();
       }
+      document.addEventListener('click', (e) => {
+        const isClickInside = navOpener.contains(e.target);
+        if (!isClickInside) {
+          navMenu.setAttribute('aria-expanded', 'false');
+          document.onclick = null;
+        }
+      });
     });
-  });
+  }
 
-  navCloser.addEventListener('click', (e) => {
-    e.preventDefault();
-    navMenu.setAttribute('aria-expanded', 'false')
-    document.onclick = null;
-  });
+  if (navCloser) {
+    navCloser.addEventListener('click', (e) => {
+      e.preventDefault();
+      navMenu.setAttribute('aria-expanded', 'false')
+      document.onclick = null;
+    });
+  }
 
-  languageSwitch.addEventListener('click', () => {
-    languageSwitch.href += window.location.hash;
-  });
+  if (languageSwitch) {
+    languageSwitch.addEventListener('click', () => {
+      languageSwitch.href += window.location.hash;
+    });
+  }
 
   const classNameHighContrast = 'high-contrast';
   const prefersMoreContrastQuery = window.matchMedia('(prefers-contrast: more)');
@@ -164,32 +170,32 @@ window.addEventListener('DOMContentLoaded', () => {
         ? 'https://www.ingo-steinke.de/contact/send/index.php'
         : 'https://www.ingo-steinke.com/contact/send/index.php';
       let xhr = new XMLHttpRequest();
-      let messageFormSending = form.querySelector('.contactform-message-sending');
-      let messageFormSent = form.querySelector('.contactform-message-sent');
-      let messageFormError = form.querySelector('.contactform-message-error');
-      let submitRow = form.querySelector('.contactform-row-submit');
-      if (!xhr || !messageFormSending || !messageFormSending.classList) { return; }
+      if (!xhr) { return; }
 
-      let params = 'contactform-field-name=';
+      /** @var {String[]} params */
+      let params = [];
       let nameFieldElement = form.querySelector('.contactform-field-name');
-      if (nameFieldElement) {
-        params += encodeURIComponent(nameFieldElement.value);
+      if (nameFieldElement && nameFieldElement.value) {
+        params.push('contactform-field-name=' + encodeURIComponent(nameFieldElement.value));
       }
       let emailfonFieldElement = form.querySelector('.contactform-field-emailfon');
-      if (emailfonFieldElement) {
-        params += '&contactform-field-emailfon='+encodeURIComponent(emailfonFieldElement.value);
+      if (emailfonFieldElement && emailfonFieldElement.value) {
+        params.push('&contactform-field-emailfon='+encodeURIComponent(emailfonFieldElement.value));
       }
       let messageFieldElement = form.querySelector('.contactform-field-message');
-      if (messageFieldElement) {
-        params += '&contactform-field-message='+encodeURIComponent(messageFieldElement.value);
+      if (messageFieldElement && messageFieldElement.value) {
+        params.push(params += '&contactform-field-message='+encodeURIComponent(messageFieldElement.value));
       }
       let messageFieldCaptcha = form.querySelector('.contactform-field-captcha');
-      if (messageFieldCaptcha) {
-        params += '&contactform-field-captcha='+encodeURIComponent(messageFieldCaptcha.value);
+      if (messageFieldCaptcha && messageFieldCaptcha.value) {
+        params.push('&contactform-field-captcha='+encodeURIComponent(messageFieldCaptcha.value));
       }
       let messageFieldHomepage = form.querySelector('.contactform-field-homepage');
-      if (messageFieldHomepage) {
-        params += '&contactform-field-homepage='+encodeURIComponent(messageFieldHomepage.value);
+      if (messageFieldHomepage && messageFieldHomepage.value) {
+        params.push('&contactform-field-homepage='+encodeURIComponent(messageFieldHomepage.value));
+      }
+      if (params.length === 0) {
+        return;
       }
 
       xhr.open("POST", url);
@@ -197,33 +203,31 @@ window.addEventListener('DOMContentLoaded', () => {
       xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
       xhr.setRequestHeader("X-Requested-With", "xmlhttprequest");
 
-      submitRow.classList.add('initially-hidden');
-      messageFormError.classList.add('initially-hidden');
-      messageFormSending.classList.remove('initially-hidden');
+      form.classList.remove('status-initial', 'status-sent', 'status-error');
+      form.classList.add('status-sending');
 
       xhr.onload = function(){
-        messageFormSending.classList.add('initially-hidden');
         if (xhr.status == 200) {
-          messageFormSent.classList.remove('initially-hidden');
-          messageFormError.classList.add('initially-hidden');
+          form.classList.remove('status-initial', 'status-sending', 'status-error');
+          form.classList.add('status-sent');
         } else {
-          messageFormError.classList.remove('initially-hidden');
-          submitRow.classList.remove('initially-hidden');
+          form.classList.remove('status-initial', 'status-sending', 'status-sent');
+          form.classList.add('status-error');
         }
       }
-      console.log('ready to send. params:', params);
-      xhr.send(params);
-      // TODO track matomo event: sent
-      // TODO add classes for "deactivating" the send button
-    } catch(e) {
-      console.error(e);
-      let messageFormError = form.querySelector('.contactform-message-error');
-      if (messageFormError) {
-        messageFormError.classList.remove('initially-hidden');
+      xhr.send(params.join('&'));
+      if (window._paq) {
+        window._paq.push(['trackEvent', 'actions', 'contact', 'sent']);
       }
-      let submitRow = form.querySelector('.contactform-row-submit');
-      if (submitRow) {
-        submitRow.classList.remove('initially-hidden');
+    } catch(e) {
+      form.classList.remove('status-initial', 'status-sending', 'status-sent');
+      form.classList.add('status-error');
+      if (window._paq) {
+        let errorText = 'error';
+        if (typeof e.toString === 'function') {
+          errorText = e.toString();
+        }
+        window._paq.push(['trackEvent', 'actions', 'contact', 'error', errorText]);
       }
     }
   };
@@ -232,7 +236,9 @@ window.addEventListener('DOMContentLoaded', () => {
   for (let i=0; i < contactforms.length; i++) {
     contactforms.item(i).onsubmit = function(e) {
       e.preventDefault();
-      // TODO track matomo event: ready to send
+      if (window._paq) {
+        window._paq.push(['trackEvent', 'actions', 'contact', 'send']);
+      }
       ajaxPost(contactforms.item(i));
     };
   }
