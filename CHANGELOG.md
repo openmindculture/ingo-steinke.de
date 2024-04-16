@@ -1,6 +1,6 @@
 # Changelog
 
-## [4.0.0] refactor and add sub-pages, improve trust elements
+## [4.0.0] refactor and add sub-pages, improve trust elements - 2024-04-16
 * refactor and add sub-pages #225
 * move paragraphs from home to sub-pages #225
 
