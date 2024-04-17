@@ -4,6 +4,8 @@
 * refactor and add sub-pages #225
 * move paragraphs from home to sub-pages #225
 * various fixes and improvements that don't affect CSS/JS [4.0.0.1]
+* preview images for social media [4.0.0.2]
+* improve text and cross-linking [4.0.0.2]
 
 ## [3.9.2] various fixes - 2024-04-06
 * improve QR code mobile position #233
