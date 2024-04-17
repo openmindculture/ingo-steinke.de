@@ -58,8 +58,8 @@
     </style>
 </head>
 
-<body color="black" bgcolor="#f7ebcf">
-    <table style="border-radius: 10px;min-height:100%" cellspacing="0" cellpadding="0">
+<body bgcolor="#f7ebcf" color="black" link="black" vlink="black" alink="black">
+    <table style="border-radius: 10px;min-height:100%;width:90%;max-width:900px;margin: 0 auto;" cellspacing="0" cellpadding="0" border="0" width="90%">
         <tbody>
             <tr>
                 <td style="padding:10px;background:white;color:black;font-family: Roboto,Helvetica,Arial,sans-serif;font-size:12px;min-height:100%;">

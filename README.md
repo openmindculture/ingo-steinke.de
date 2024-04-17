@@ -152,11 +152,11 @@ Note that Netlify does not respect `.htaccess` Apache configuration files, but n
 ## Code Style: Pragmatic Minimalism
 
 - Prefer semantic HTML and its built-in defaults,
-- prefer CSS over JavaScript,
+- prefer CSS to JavaScript,
 - follow helpful linter recommendations, deactivate unhelpful rules.
 - Compact CSS: composite classes instead of BEM verbosity,
 - mix functional and semantic class names pragmatically.
-- Prefer naming over code comments, but don't neglect explicit documentation either!
+- Prefer naming to code comments, but don't neglect explicit documentation either!
 - Always keep the documentation up to date!
 
 ## Progressive Enhancement
@@ -185,9 +185,10 @@ Optional enhancements in `scripts.js`:
 
 - improve test coverage
 - upgrade outdated code dependencies
-- refactor CSS to improve readiblity maintainability
+- refactor CSS to improve readability maintainability
 - refactor JS: split into testable unit files
 - refactor liquid markup: more modular to remove redundancy
 - prepare additional pages for project details and older entries
 - document and prioritize work using GitHub issues:
 https://github.com/openmindculture/ingo-steinke.de/issues/
+
