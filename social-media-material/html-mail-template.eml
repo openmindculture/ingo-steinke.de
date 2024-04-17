@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <style>
+        html, body,div,p,table,tr,td {
+        font-family: Roboto,Helvetica,Arial,sans-serif;
+        font-size: 12px;
+        color: black;
+        }
+        h1,h2 {
+        font-family: Roboto,Helvetica,Arial,sans-serif;
+        font-size: 20px;
+        color: black;
+        }
+        body {
+        background: #f7ebcf;
+        min-height: 100%;
+        }
+        table {
+        border: none;
+        border-radius: 10px;
+        margin: 0 auto;
+        max-width: 900px;
+        width: 90%;
+        min-height: 100%;
+        }
+        table,tr,td {
+        background: white;
+        }
+        td {
+        padding: 10px;
+        min-height: 100%;
+        }
+        a.buttonlike {
+          box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, .125);
+          align-items: center;
+          align-self: center;
+          background: #f5df4d;
+          background-color: #f5df4d;
+          border: 1px solid #f5df4d;
+          border-radius: 10px;
+          color: black;
+          display: inline-block;
+          padding: 10px;
+          padding: 10px 20px 10px 20px,;
+          text-align: center;
+          text-decoration: none;
+          transition: box-shadow .125s ease-out, font-size .125s ease-out;
+          font-size: 12px;
+          width: auto;
+        }
+        a.buttonlike:hover {
+          box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, .25);
+          font-size: 14px;
+        }
+    </style>
+</head>
+
+<body color="black" bgcolor="#f7ebcf">
+    <table style="border-radius: 10px;min-height:100%" cellspacing="0" cellpadding="0">
+        <tbody>
+            <tr>
+                <td style="padding:10px;background:white;color:black;font-family: Roboto,Helvetica,Arial,sans-serif;font-size:12px;min-height:100%;">
+                    <h1 style="font-size:20px">
+                        <font size="6">Willkommen bei meinem E-Mail-Newsletter!</font>
+                    </h1>
+                    <p>
+                        <font familiy="Roboto,Helvetica,Arial,sans-serif" size="4" color="black">Also geht es doch ohne HubSpot und MailChimp. Gut zu wissen.</font>
+                    </p>
+                    <p>
+                        <font familiy="Roboto,Helvetica,Arial,sans-serif" size="4" color="black">Lorem ipsum, oder wie man so sagt...</font>
+                    </p>
+                    <p>
+                        <font familiy="Roboto,Helvetica,Arial,sans-serif" size="4" color="black"><br></font>
+                    </p>
+                    <center>
+                        <div style="text-align:center">
+                            <a href="https://www.ingo-steinke.de/leistungen/website-check.html" target="_blank" class="buttonlike" style="background-color: #f5df4d; color: black; box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, .125);padding: 10px 20px 10px 20px;display:inline-block;margin: 0 auto;">Web-Check</a>
+                        </div>
+                    </center>
+                    <p>
+                        <font size="4" color="black"></font>
+
+                    </p>
+                    <p>
+                        <font size="4" color="black"><br></font>
+                    </p>
+                    <p>
+                        <font size="4" color="black">Lorem ipsum, oder wie man so sagt...</font>
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+</body>
+
+</html>
