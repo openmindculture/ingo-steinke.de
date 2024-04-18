@@ -236,6 +236,15 @@ a.menu-toggle:hover {
   }
 }
 
+.alternating-div-color > div:nth-child(2n-1):not(.no-alternating-color) a,
+.alternating-div-color > div:nth-child(2n-1):not(.no-alternating-color) a:link,
+.alternating-div-color > div:nth-child(2n-1):not(.no-alternating-color) a:visited {
+  background-image:
+    linear-gradient(var(--cta-light-background), var(--cta-light-background)),
+    linear-gradient(var(--cta-light-background), var(--cta-light-background)),
+    linear-gradient(var(--link-hover-background), var(--link-hover-background));
+}
+
 .hashtag {
   display: inline-block;
   font-size: 0.75rem;
@@ -791,6 +800,7 @@ Offscreen menu style
   }
 }
 
+/* stylelint-disable-next-line no-descending-specificity */
 .grid-container .tile a:link,
 .grid-container .tile a:visited,
 .grid-container .tile a:active {
@@ -798,11 +808,13 @@ Offscreen menu style
   font-size: 1em;
 }
 
+/* stylelint-disable-next-line no-descending-specificity */
 .grid-container .tile a:focus,
 .grid-container .tile a:hover {
   color: #000;
 }
 
+/* stylelint-disable-next-line no-descending-specificity */
 .grid-container .tile a:link,
 .grid-container .tile a:visited,
 .grid-container .tile a:active,
@@ -838,6 +850,7 @@ Offscreen menu style
   min-height: 2.5em;
 }
 
+/* stylelint-disable-next-line no-descending-specificity */
 .social-links a:not(a:hover):not(a:focus) {
   background: none;
 }
@@ -852,6 +865,7 @@ Offscreen menu style
   border-radius: 1em/0.75em;
 }
 
+/* stylelint-disable-next-line no-descending-specificity */
 .transparent,
 a.transparent,
 a:link.transparent,
