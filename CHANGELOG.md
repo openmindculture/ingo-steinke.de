@@ -1,5 +1,8 @@
 # Changelog
 
+## [4.1.0] improve style and content - 2024-04-19
+* remember contrast choice #239
+
 ## [4.0.1] improve style and content - 2024-04-18
 * preview images for social media
 * improve text and cross-linking
