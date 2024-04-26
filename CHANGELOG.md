@@ -1,5 +1,9 @@
 # Changelog
 
+## [4.1.1] improve style and content - 2024-04-26
+* fix contact form data error
+* fix typo in text
+
 ## [4.1.0] improve style and content - 2024-04-19
 * remember contrast choice #239
 

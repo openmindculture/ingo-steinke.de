@@ -172,7 +172,6 @@ window.addEventListener('DOMContentLoaded', () => {
    * @function ajaxPost
    * @return void
    * @param form HTMLFormElement
-   * @param callback function
    */
   const ajaxPost = function(form) {
     try {
@@ -194,7 +193,7 @@ window.addEventListener('DOMContentLoaded', () => {
       }
       let messageFieldElement = form.querySelector('.contactform-field-message');
       if (messageFieldElement && messageFieldElement.value) {
-        params.push(params += '&contactform-field-message='+encodeURIComponent(messageFieldElement.value));
+        params.push('&contactform-field-message='+encodeURIComponent(messageFieldElement.value));
       }
       let messageFieldCaptcha = form.querySelector('.contactform-field-captcha');
       if (messageFieldCaptcha && messageFieldCaptcha.value) {
@@ -207,6 +206,7 @@ window.addEventListener('DOMContentLoaded', () => {
       if (params.length === 0) {
         return;
       }
+      const paramString = params.join('&');
 
       xhr.open("POST", url);
       xhr.setRequestHeader("Accept", "application/json");
@@ -225,13 +225,15 @@ window.addEventListener('DOMContentLoaded', () => {
           form.classList.add('status-error');
         }
       }
-      xhr.send(params.join('&'));
+      xhr.send(paramString);
       if (window._paq) {
         window._paq.push(['trackEvent', 'actions', 'contact', 'sent']);
       }
     } catch(e) {
+      console.error('form send error', e);
       form.classList.remove('status-initial', 'status-sending', 'status-sent');
       form.classList.add('status-error');
+      form.classList.add('status-error-catch');
       if (window._paq) {
         let errorText = 'error';
         if (typeof e.toString === 'function') {
