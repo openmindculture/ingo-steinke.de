@@ -370,7 +370,7 @@ module.exports = {
   "servicesImproveMoreSubFooterLinkTitle": "improve existing websites",
   "servicesImproveMoreSubFooterLinkText": "optimize",
   "servicesImproveMoreLinkPath": "services/optimization.html",
-  "showLandingpageLinks": "",
+  "showLandingpageLinks": "true",
   "landingLinkTitleWordPress":"WordPress website optimized sustainably",
   "landingLinkTextWordPress": "WordPress",
   "landingLinkUrlWordPress": "https://www.ingo-steinke.de/wordpress-website-nachhaltig-optimieren-lassen/",
