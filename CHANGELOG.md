@@ -1,5 +1,8 @@
 # Changelog
 
+## [4.2.0] content update - 2024-05-02
+* link to Shopware extension and partner page
+
 ## [4.1.1] improve style and content - 2024-04-26
 * fix contact form data error
 * fix typo in text

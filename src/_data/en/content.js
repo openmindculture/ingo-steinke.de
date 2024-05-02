@@ -92,6 +92,7 @@ module.exports = {
   "projectWordpressWooHashtag3": "PHP",
   "projectWordpressWooHashtag4": "CSS",
   "projectShopwareCostPluginHeading": "Plugin for Shopware",
+  "projectShopwareCostPluginLinkUrl": "https://store.shopware.com/en/ingos57544164693f/cost-transparency.html",
   "projectShopwareCostPlugin1": "Sustainability in e-commerce also includes price transparency. My free plugin",
   "projectShopwareCostPlugin2": "&quot;Cost Transparency&quot;",
   "projectShopwareCostPlugin3": "extends the product details in Shopware 6, adding an interactive graphic that illustrates different shares of the total price.",
