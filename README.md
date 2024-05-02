@@ -1,6 +1,7 @@
 # Ingo-Steinke.de
 
-Portfolio website for Ingo Steinke, creative web developer.
+Portfolio website for [Ingo Steinke, creative web developer](https://www.ingo-steinke.com/).
+German version: <a hreflang="de" href="https://www.ingo-steinke.de/" target="_blank">Ingo-Steinke.de</a>
 
 This is a simple, static, multilingual website using eleventy as a JAMstack tool to facilitate content editing and deployment.
 Accessibility and web performance are important non-functional requirements.
@@ -16,8 +17,8 @@ This is a screenshot after the relaunch in 2021:
 
 ## Development Requirements
 
-- [npm](https://www.npmjs.com)
-- [eleventy](https://www.11ty.dev/) (global path: `npm install -g @11ty/eleventy`)
+- npm
+- eleventy (global path: `npm install -g @11ty/eleventy`)
 - a computer with an internet connection
 - linters and testing tools will be installed by npm
 
@@ -45,17 +46,17 @@ To use `console` functions like `console.log`, set `"removeConsole"` to `false` 
 
 Section to be added above "skills", replacing "skills" as a top navigation item, to add pages focused on the customers' perspective rather than the who-I-am-CV-perspective that the website started with. These pages must be provided in all languages.
 
- - ...
- - ...
- - ...
+ - [Web development](https://www.ingo-steinke.com/services/web-development.html) / [Webentwicklung](https://www.ingo-steinke.de/leistungen/webentwicklung.html)
+ - [Website check](https://www.ingo-steinke.com/services/website-check.html) / [Web-Check](https://www.ingo-steinke.de/leistungen/website-check.html)
+ - [Optimization](https://www.ingo-steinke.com/services/optimization.html) / [Optimierung](https://www.ingo-steinke.de/leistungen/optimierung.html)
 
 ##### Campaign landing pages
 
 Keyword-centered additional landing pages, manually added in German only for specific campaigns and linked from the German footer only, should also be provided in all languages for more consistency.
 
-- ...
-- ...
-- ...
+- [Sustainability](https://www.ingo-steinke.com/services/accessible-climate-website-optimization.html) / [Nachhaltigkeit](https://www.ingo-steinke.de/webseiten-klimafreundlich-barrierefrei-optimieren/index.html)
+- [Freelancer web developer Berlin](https://www.ingo-steinke.com/services/freelance-webdeveloper-berlin.html) / [Web Freelancer Berlin](https://www.ingo-steinke.de/leistungen/webentwickler-berlin-freelancer.html)
+- [Certified Shopware Developer](https://www.ingo-steinke.com/services/certified-shopware-developer-berlin.html) / [Zertifizierter Shopware-Webentwickler](https://www.ingo-steinke.de/zertifizierter-shopware-6-frontend-webentwickler/)
 
 ### Localization / text snippets
 
