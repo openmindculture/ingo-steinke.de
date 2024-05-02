@@ -167,6 +167,7 @@ module.exports = {
   "workCertifiedHeading": "Certified and Transparent",
   "workCertifiedIam": "I am a",
   "workCertifiedSWDev": "certified Shopware 6 Developer",
+  "workCertifiedSWDevPartnerPageUrl": "https://store.shopware.com/en/ingo-steinke.html",
   "workCertifiedPdfUrl": "Shopware-6-Certified-Developer-Ingo-Steinke.pdf",
   "workCertifiedAnd": "and a",
   "workCertifiedExtensionPartner": "Shopware Extension Partner",
