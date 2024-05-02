@@ -193,3 +193,13 @@ Optional enhancements in `scripts.js`:
 - document and prioritize work using GitHub issues:
 https://github.com/openmindculture/ingo-steinke.de/issues/
 
+## Marketing / SEO
+
+Blog, publish, participate in forums, and add content on free wiki services and profile pages like the following examples where we can create "do-follow backlinks" (i.e. links poiting to our own resouces without a restricting `rel="nofollow"` attribute)
+
+- https://www.open-mind-culture.org
+- https://www.patreon.com/ingosteinke
+- http://sustainable-web-services.wikidot.com
+- https://www.gutefrage.net/nutzer/ingosteinkeseo
+- https://solo.to/ingo-steinke-webdev
+- https://github.com/openmindculture
