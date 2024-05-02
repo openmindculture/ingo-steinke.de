@@ -201,5 +201,4 @@ Blog, publish, participate in forums, and add content on free wiki services and 
 - https://www.patreon.com/ingosteinke
 - http://sustainable-web-services.wikidot.com
 - https://www.gutefrage.net/nutzer/ingosteinkeseo
-- https://solo.to/ingo-steinke-webdev
 - https://github.com/openmindculture
