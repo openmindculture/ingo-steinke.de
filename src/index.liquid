@@ -39,7 +39,18 @@
     <link rel="preload" href="fonts/montserrat-v15-latin-ext_latin-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" media="screen" href="styles.css?v=4.2.0">
     <script src="js/scripts.js?v=4.2.0"></script>
-    <link rel="stylesheet" media="screen and (prefers-reduced-motion: no-preference)" href="decoration.css?v=4.2.0">
+    {% comment %}
+    Defer non-critical CSS as suggested at https://web.dev/articles/defer-non-critical-css
+    {% endcomment %}
+    <link
+      rel="preload" as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+      media="screen and (prefers-reduced-motion: no-preference)"
+      href="decoration.css?v=4.2.0"
+    >
+    <noscript>
+      <link rel="stylesheet" media="screen and (prefers-reduced-motion: no-preference)" href="decoration.css?v=4.2.0">
+    </noscript>
     <link rel="stylesheet" media="print" href="print.css?v=4.2.0">
     <meta name=author content="{{ content.metaAuthor }}">
     <meta
