@@ -4,13 +4,13 @@ ErrorDocument 404 /404.html
 # rewrite to canonical https://www.ingo-steinke.de
 # optimize caching and compression
 <IfModule mod_headers.c>
-  <FilesMatch "\.(ico|jpg|jpeg|gif|png|svg)$">
+  <FilesMatch "\.(ico|jpg|jpeg|gif|png|svg|webp|avif|woff|woff2|pdf)$">
     Header set Cache-Control "public, max-age=31536000, no-transform, immutable"
   </FilesMatch>
-  <FilesMatch "\.(css|js)$">
+  <FilesMatch "\.(css|js|json|webmanifest)$">
     Header set Cache-Control "public, max-age=15552000"
   </FilesMatch>
-  <FilesMatch "\.(html|htm)$">
+  <FilesMatch "\.(html|htm|xml|txt|vcf|ics)$">
     Header set Cache-Control "public, max-age=14400, must-revalidate"
   </FilesMatch>
 </IfModule>
