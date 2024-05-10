@@ -38,8 +38,19 @@
     <link rel="preload" href="fonts/bitter-v16-latin-700.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/montserrat-v15-latin-ext_latin-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" media="screen" href="styles.css?v=4.2.0">
-    <script src="js/scripts.js?v=4.2.0"></script>
-    <link rel="stylesheet" media="screen and (prefers-reduced-motion: no-preference)" href="decoration.css?v=4.2.0">
+    <script defer src="js/scripts.js?v=4.2.0"></script>
+    {% comment %}
+    Defer non-critical CSS as suggested at https://web.dev/articles/defer-non-critical-css
+    {% endcomment %}
+    <link
+      rel="preload" as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+      media="screen and (prefers-reduced-motion: no-preference)"
+      href="decoration.css?v=4.2.0"
+    >
+    <noscript>
+      <link rel="stylesheet" media="screen and (prefers-reduced-motion: no-preference)" href="decoration.css?v=4.2.0">
+    </noscript>
     <link rel="stylesheet" media="print" href="print.css?v=4.2.0">
     <meta name=author content="{{ content.metaAuthor }}">
     <meta
@@ -1123,6 +1134,7 @@
                       class="vcard-digital-qr-image"
                       src="img/{{ content.vcardQrImgFilename }}"
                       alt="{{ content.vcardQrImgAlt }}"
+                      loading="lazy"
                       width="2500"
                       height="2500">
                   </a>
@@ -1277,6 +1289,7 @@
                      src="img/{{ content.ecofriendlyGreenWebCheckImageFilename }}.png"
                      data-original-src="{{ content.ecofriendlyGreenWebCheckImageOriginalSrc }}"
                      alt="{{ content.ecofriendlyGreenWebCheckImageAlt }}"
+                     loading="lazy"
                   >
                 </picture>
               </a>

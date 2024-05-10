@@ -30,7 +30,7 @@
     </div>
 
     <div class="contactform-row contactform-row-message">
-      <label for="contactform-field-message" class="contactform-label-message visually-hidden">
+      <label for="contactform-field-message" class="contactform-label-message sr-only">
         {{ content.contactFormLabelMessage }}:
       </label>
       <textarea
@@ -42,8 +42,9 @@
     </div>
 
     <div class="contactform-row contactform-row-optional initially-hidden">
-      <input type="text" name="contactform-field-homepage" class="contactform-field-homepage">
-      <input type="hidden" name="contactform-field-captcha" class="contactform-field-captcha">
+      <label for="contactform-field-homepage" class="initially-hidden">{{ content.contactFormLabelHomepage }}</label>
+      <input type="text" name="contactform-field-homepage" id="contactform-field-homepage" class="contactform-field-homepage">
+      <input type="hidden" name="contactform-field-captcha" id="contactform-field-captcha" class="contactform-field-captcha">
     </div>
 
     <div class="contactform-row contactform-row-submit">

@@ -1,24 +1,18 @@
 # Apache server settings
+ErrorDocument 404 /404.html
+
 # rewrite to canonical https://www.ingo-steinke.de
 # optimize caching and compression
-
-<IfModule mod_expires.c>
-ExpiresActive on
-ExpiresDefault "access plus 5 minutes"
-ExpiresByType image/x-icon "access plus 1 year"
-ExpiresByType image/jpg "access plus 1 month"
-ExpiresByType image/jpeg "access plus 1 month"
-ExpiresByType image/gif "access plus 1 month"
-ExpiresByType image/png "access plus 1 month"
-ExpiresByType image/svg "access plus 1 month"
-ExpiresByType text/html "access plus 4 hours"
-ExpiresByType text/htm "access plus 4 hours"
-ExpiresByType text/javascript "access plus 2 days"
-ExpiresByType text/css "access plus 2 days"
-ExpiresByType text/xml "access plus 2 days"
-ExpiresByType application/xml "access plus 0 seconds"
-ExpiresByType application/json "access plus 0 seconds"
-ExpiresByType text/cache-manifest "access plus 0 seconds"
+<IfModule mod_headers.c>
+  <FilesMatch "\.(ico|jpg|jpeg|gif|png|svg|webp|avif|woff|woff2|pdf)$">
+    Header set Cache-Control "public, max-age=31536000, no-transform, immutable"
+  </FilesMatch>
+  <FilesMatch "\.(css|js|json|webmanifest)$">
+    Header set Cache-Control "public, max-age=15552000"
+  </FilesMatch>
+  <FilesMatch "\.(html|htm|xml|txt|vcf|ics)$">
+    Header set Cache-Control "public, max-age=14400, must-revalidate"
+  </FilesMatch>
 </IfModule>
 
 <IfModule mod_filter.c>

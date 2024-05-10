@@ -41,44 +41,37 @@
     </style>
   </head>
   <body>
-    <form
-      name="contact-isd"
-      method="POST"
-      data-netlify="true"
-      id="contactform"
-      class="contactform"
-      action="//ingo-steinke.de/#contact-submitted"
-    >
-      <label for="Name">
-        <input type="text" required="" name="Name" id="Name" placeholder="Mein Name" label="Name">
-      </label>
-
-      <label for="E-Mail">
-        <input type="email" name="E-Mail" id="E-Mail" placeholder="Meine E-Mail-Adresse" label="E-Mail">
-      </label>
-
-      <label for="Telefon">
-        <input type="tel" name="Telefon" id="Telefon" placeholder="Meine Telefonnummer" label="Telefon">
-      </label>
-
-      <label for="Nachricht">
-        <textarea
-          name="Nachricht"
-          id="Nachricht"
-          placeholder="Meine Nachricht an Ingo Steinke"
-          label="Meine Nachricht an Ingo Steinke"
-        ></textarea>
-      </label>
-      <label for="Datenschutzerklaerung_zur_Kenntnis genommen">
-        <textarea
-          name="Datenschutzhinweis"
-          id="Datenschutzhinweis"
-          readonly="readonly"
-          placeholder="Meine Kontaktdaten werden zwecks eventueller vorvertraglicher Maßnahmen übermittelt und gespeichert. Die Datenschutzerklärung informiert über Rechtsgrundlage, Art der Datenverarbeitung, Lösch- und Widerrufsmöglichkeit."
-        ></textarea>
-      </label>
-
-      <input type="submit" class="submit" value="absenden">
-    </form>
+  <form action="/contact/send/index.php" class="contactform no-print status-initial">
+    <fieldset>
+      <legend class="contactform-title">Schreib mir eine Nachricht:</legend>
+      <div class="contactform-row contactform-row-name">
+        <label for="contactform-field-name" class="contactform-label-name">Name:</label>
+        <input type="text" name="contactform-field-name" id="contactform-field-name" class="contactform-field-name" placeholder="Dein Name">
+      </div>
+      <div class="contactform-row contactform-row-emailfon">
+        <label for="contactform-field-emailfon" class="contactform-label-emailfon">Kontakt:</label>
+        <input type="text" name="contactform-field-emailfon" id="contactform-field-emailfon" class="contactform-field-emailfon" placeholder="Telefon oder E-Mail">
+      </div>
+      <div class="contactform-row contactform-row-message">
+        <label for="contactform-field-message" class="contactform-label-message sr-only">Deine Nachricht:</label>
+        <textarea name="contactform-field-message" id="contactform-field-message" class="contactform-field-message" placeholder="Deine Nachricht"></textarea>
+      </div>
+      <div class="contactform-row contactform-row-optional initially-hidden">
+        <label for="contactform-field-homepage" class="initially-hidden"></label>
+        <label for="contactform-field-captcha" class="initially-hidden"></label>
+        <input type="text" name="contactform-field-homepage" id="contactform-field-homepage" class="contactform-field-homepage">
+        <input type="hidden" name="contactform-field-captcha" id="contactform-field-captcha" class="contactform-field-captcha">
+      </div>
+      <div class="contactform-row contactform-row-submit">
+        <button type="submit" name="contactform-button-submit" class="contactform-button-submit">
+          <span class="send-first">Nachricht absenden</span>
+          <span class="send-retry initially-hidden">Nachricht erneut absenden</span>
+        </button>
+      </div>
+    </fieldset>
+    <div class="contactform-message contactform-message-sending initially-hidden">Deine Nachricht wird gesendet...</div>
+    <div class="contactform-message contactform-message-sent initially-hidden">Danke! Deine Nachricht wurde gesendet.</div>
+    <div class="contactform-message contactform-message-error initially-hidden">Deine Nachricht konnte leider nicht gesendet werden.</div>
+  </form>
   </body>
 </html>
