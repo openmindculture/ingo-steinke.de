@@ -1,6 +1,7 @@
 # Changelog
 
 ## [4.2.1] fix performance issues - 2024-05-10
+* fix hidden textarea label a11y #238
 * prevent spamtrap causing a11y errors #238
 * simplify and  improve cachability #240
 * lazy load optional assets #240
