@@ -15,6 +15,11 @@ module.exports = {
   "pageDescription-en": "Ingo Steinke ist ein kreativer Webentwickler mit Schwerpunkt Frontend und Nachhaltigkeit, mit über 20 Jahren Beruferfahrung.",
   "pDomainVerify": "4c4296e5835f4a47eb2c2e5488a99d71",
   "googleSiteVerification": "Qs1p7JgqPLOGD3BYCMGe9EbyNJJEswyala44hnkO6d4",
+  "notFoundTitle": "Ingo Steinke - Seite nicht gefunden",
+  "notFoundHeading": "Entschuldigung, diese Seite konnten wir nicht finden.",
+  "notFoundDescription": "Die gewünschte Seite existiert an dieser Adresse nicht. Aktuelle Links findest du auf meiner ",
+  "notFoundHomepageLinkUrl" : "https://www.ingo-steinke.de/",
+  "notFoundHomepageLinkText" : "Startseite",
   /* page content */
   "jumbotronImageAlt": "Portrait von Webentwickler Ingo Steinke in Berlin",
   "jumbotronHeader": "Ingo Steinke",

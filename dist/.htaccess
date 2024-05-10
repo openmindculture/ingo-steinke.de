@@ -1,4 +1,7 @@
 # Apache server settings
+
+ErrorDocument 404 /404.html
+
 # rewrite to canonical https://www.ingo-steinke.de
 # optimize caching and compression
 
