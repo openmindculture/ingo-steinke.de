@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.2.1] fix performance issues - 2024-05-10
+* prevent spamtrap causing a11y errors #238
+* simplify and  improve cachability #240
+* lazy load optional assets #240
+* defer and cache css #240
+* add 404 error page with link and style #243
+
 ## [4.2.0] content update - 2024-05-02
 * link to Shopware extension and partner page
 
