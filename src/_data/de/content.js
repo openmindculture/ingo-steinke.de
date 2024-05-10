@@ -297,6 +297,8 @@ module.exports = {
   "contactFormLabelContact": "Kontakt",
   "contactFormLabelEmailOrPhone": "Telefon oder E-Mail",
   "contactFormLabelMessage": "Deine Nachricht",
+  "contactFormLabelHomepage": "Homepage",
+  "contactFormLabelCaptcha": "Sicherheitsfrage",
   "contactFormButtonSubmit": "Nachricht absenden",
   "contactFormButtonSubmitRetry": "Nachricht erneut absenden",
   "profile": "Profil",

@@ -280,6 +280,8 @@ module.exports = {
   "contactFormLabelContact": "contact",
   "contactFormLabelEmailOrPhone": "your phone or email",
   "contactFormLabelMessage": "message",
+  "contactFormLabelHomepage": "homepage",
+  "contactFormLabelCaptcha": "security question",
   "contactFormButtonSubmit": "send",
   "contactFormButtonSubmitRetry": "send again",
   "contactTelOfflineLabel": "Phone temporarily unavailable",
