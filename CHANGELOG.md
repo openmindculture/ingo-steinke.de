@@ -1,5 +1,8 @@
 # Changelog
 
+## [4.2.2] improve spam protection - 2024-05-14
+* respond error status on spam suspicion #230
+
 ## [4.2.1] fix performance issues - 2024-05-10
 * fix hidden textarea label a11y #238
 * prevent spamtrap causing a11y errors #238
@@ -12,7 +15,7 @@
 * link to Shopware extension and partner page
 
 ## [4.1.1] improve style and content - 2024-04-26
-* fix contact form data error
+* fix contact form data error #230
 * fix typo in text
 
 ## [4.1.0] improve style and content - 2024-04-19
