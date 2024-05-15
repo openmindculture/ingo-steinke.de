@@ -97,7 +97,7 @@ window.addEventListener('DOMContentLoaded', () => {
       } else {
         document.body.classList.add(classNameHighContrast);
         if (localStorage) {
-          localStorage.setItem('highContrast', true);
+          localStorage.setItem('highContrast', 'true');
         }
         if (contrastToggle.dataset.reducecaption) {
           contrastToggle.title = contrastToggle.dataset.reducecaption;
