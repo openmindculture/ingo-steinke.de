@@ -5,6 +5,7 @@ $config_to = 'contact@ingo-steinke.com';
 $config_tospamtrap = 'contact@ingo-steinke.com';
 $config_subject = 'Contactform ISD';
 $config_custheader = '';
+$config_verbose = true;
 
 header('Cache-Control: no-store');
 header('Pragma: no-cache');
@@ -20,7 +21,18 @@ $spamtrap2     = filter_var($_REQUEST['contactform-field-homepage'], FILTER_SANI
 $suspectedSpam = false;
 
 /* require spam trap 'captcha' be empty, require msg not empty */
-if (!empty($spamtrap1) || !empty($spamtrap2) || 'POST'!=$_SERVER['REQUEST_METHOD'] ){
+if (
+  !empty($spamtrap1) ||
+  !empty($spamtrap2) ||
+  'POST' != $_SERVER['REQUEST_METHOD'] ||
+  strpos($post_msg, 'know your price') !== false ||
+  strpos($post_msg, 'the prices') !== false ||
+  strpos($post_msg, 'ég') !== false ||
+  strpos($post_msg, 'ə') !== false ||
+  strpos($post_msg, 'হা') !== false ||
+  strpos($post_msg, 'прайс') !== false ||
+  strpos($post_msg, 'я') !== false
+) {
   $suspectedSpam = true;
 }
 
@@ -65,6 +77,18 @@ if (!empty($post_emailfon)) {
 }
 if (!empty($post_msg)) {
   $message .=   $post_msg . "\r\n";
+}
+
+if ( $config_verbose ) {
+  $message .= "\r\n";
+  $message .= "\r\n";
+  $message .= "SERVER_NAME: " . $_SERVER['SERVER_NAME'] . "\r\n";
+  $message .= "REQUEST_METHOD: " . $_SERVER['REQUEST_METHOD'] . "\r\n";
+  $message .= "HTTP_ACCEPT: " . $_SERVER['HTTP_ACCEPT'] . "\r\n";
+  $message .= "HTTP_REFERER: " . $_SERVER['HTTP_REFERER'] . "\r\n";
+  $message .= "HTTP_USER_AGENT: " . $_SERVER['HTTP_USER_AGENT'] . "\r\n";
+  $message .= "REMOTE_ADDR: " . $_SERVER['REMOTE_ADDR'] . "\r\n";
+  $message .= "HTTP_X_FORWARDED_FOR: " . $_SERVER['HTTP_X_FORWARDED_FOR'] . "\r\n";
 }
 
 if (!empty($message)) {
