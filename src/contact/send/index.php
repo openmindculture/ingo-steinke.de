@@ -28,6 +28,7 @@ if (
   strpos($post_msg, 'know your price') !== false ||
   strpos($post_msg, 'the prices') !== false ||
   strpos($post_msg, 'ég') !== false ||
+  strpos($post_msg, 'ə') !== false ||
   strpos($post_msg, 'হা') !== false ||
   strpos($post_msg, 'прайс') !== false ||
   strpos($post_msg, 'я') !== false
