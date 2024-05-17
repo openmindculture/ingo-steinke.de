@@ -27,6 +27,8 @@ if (
   'POST' != $_SERVER['REQUEST_METHOD'] ||
   strpos($post_msg, 'know your price') !== false ||
   strpos($post_msg, 'the prices') !== false ||
+  strpos($post_msg, 'eich pris') !== false ||
+  strpos($post_msg, 'Äre Präis') !== false ||
   strpos($post_msg, 'ég') !== false ||
   strpos($post_msg, 'ə') !== false ||
   strpos($post_msg, 'হা') !== false ||

@@ -13,9 +13,9 @@ header('Pragma: no-cache');
 /* don’t let your default response header reveal technical details */
 header('X-Powered-By: openmindculture');
 
-$post_name     = filter_var($_REQUEST['contactform-field-name'], FILTER_SANITIZE_STRING);
-$post_emailfon = filter_var($_REQUEST['contactform-field-emailfon'], FILTER_SANITIZE_EMAIL);
-$post_msg      = filter_var($_REQUEST['contactform-field-message'], FILTER_SANITIZE_STRING);
+$post_name     = trim(filter_var($_REQUEST['contactform-field-name'], FILTER_SANITIZE_STRING));
+$post_emailfon = trim(filter_var($_REQUEST['contactform-field-emailfon'], FILTER_SANITIZE_EMAIL));
+$post_msg      = trim(filter_var($_REQUEST['contactform-field-message'], FILTER_SANITIZE_STRING));
 $spamtrap1     = filter_var($_REQUEST['contactform-field-captcha'], FILTER_SANITIZE_STRING);
 $spamtrap2     = filter_var($_REQUEST['contactform-field-homepage'], FILTER_SANITIZE_STRING);
 $suspectedSpam = false;
@@ -27,11 +27,14 @@ if (
   'POST' != $_SERVER['REQUEST_METHOD'] ||
   strpos($post_msg, 'know your price') !== false ||
   strpos($post_msg, 'the prices') !== false ||
+  strpos($post_msg, 'eich pris') !== false ||
+  strpos($post_msg, 'Äre Präis') !== false ||
   strpos($post_msg, 'ég') !== false ||
   strpos($post_msg, 'ə') !== false ||
   strpos($post_msg, 'হা') !== false ||
   strpos($post_msg, 'прайс') !== false ||
-  strpos($post_msg, 'я') !== false
+  strpos($post_msg, 'я') !== false ||
+  (empty($post_name) && empty($post_emailfon) && empty($post_msg))
 ) {
   $suspectedSpam = true;
 }
