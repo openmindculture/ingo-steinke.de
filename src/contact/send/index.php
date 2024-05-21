@@ -30,6 +30,7 @@ if (
   strpos($post_msg, 'the prices') !== false ||
   strpos($post_msg, 'eich pris') !== false ||
   strpos($post_msg, 'Äre Präis') !== false ||
+  strpos($post_msg, 'ønskede') !== false ||
   strpos($post_msg, 'ég') !== false ||
   strpos($post_msg, 'ə') !== false ||
   strpos($post_msg, 'হা') !== false ||
@@ -39,6 +40,7 @@ if (
   strpos($post_msg, 'ụ') !== false ||
   strpos($post_msg, 'ị') !== false ||
   strpos($post_name, 'Masonbeids') !== false ||
+  strpos($post_name, 'Robertbeids') !== false ||
   (empty($post_name) && empty($post_emailfon) && empty($post_msg))
 ) {
   $suspectedSpam = true;
