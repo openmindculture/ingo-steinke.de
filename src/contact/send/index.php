@@ -25,7 +25,8 @@ if (
   !empty($spamtrap1) ||
   !empty($spamtrap2) ||
   'POST' != $_SERVER['REQUEST_METHOD'] ||
-  strpos($post_msg, 'know your price') !== false ||
+  strpos($post_msg, 'intengo yakho') !== false ||
+  strpos($post_msg, 'your price') !== false ||
   strpos($post_msg, 'the prices') !== false ||
   strpos($post_msg, 'eich pris') !== false ||
   strpos($post_msg, 'Äre Präis') !== false ||
@@ -34,6 +35,10 @@ if (
   strpos($post_msg, 'হা') !== false ||
   strpos($post_msg, 'прайс') !== false ||
   strpos($post_msg, 'я') !== false ||
+  strpos($post_msg, 'ë') !== false ||
+  strpos($post_msg, 'ụ') !== false ||
+  strpos($post_msg, 'ị') !== false ||
+  strpos($post_name, 'Masonbeids') !== false ||
   (empty($post_name) && empty($post_emailfon) && empty($post_msg))
 ) {
   $suspectedSpam = true;
