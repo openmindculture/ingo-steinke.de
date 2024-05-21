@@ -58,7 +58,9 @@ if(!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
   header('Content-Type: text/html');
   header('Refresh: 5; url=https://www.ingo-steinke.com/');
   if ( $suspectedSpam ) {
+    sleep(5);
     header('Status: 503 Service Unavailable');
+    sleep(5);
     echo '503 Service Unavailable - please try again later';
   } else {
     echo '<!DOCTYPE HTML><html lang=de><head><meta charset="utf-8"><title>Ingo Steinke - Contact Form</title></head>';
