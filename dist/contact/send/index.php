@@ -13,9 +13,9 @@ header('Pragma: no-cache');
 /* don’t let your default response header reveal technical details */
 header('X-Powered-By: openmindculture');
 
-$post_name     = filter_var($_REQUEST['contactform-field-name'], FILTER_SANITIZE_STRING);
-$post_emailfon = filter_var($_REQUEST['contactform-field-emailfon'], FILTER_SANITIZE_EMAIL);
-$post_msg      = filter_var($_REQUEST['contactform-field-message'], FILTER_SANITIZE_STRING);
+$post_name     = trim(filter_var($_REQUEST['contactform-field-name'], FILTER_SANITIZE_STRING));
+$post_emailfon = trim(filter_var($_REQUEST['contactform-field-emailfon'], FILTER_SANITIZE_EMAIL));
+$post_msg      = trim(filter_var($_REQUEST['contactform-field-message'], FILTER_SANITIZE_STRING));
 $spamtrap1     = filter_var($_REQUEST['contactform-field-captcha'], FILTER_SANITIZE_STRING);
 $spamtrap2     = filter_var($_REQUEST['contactform-field-homepage'], FILTER_SANITIZE_STRING);
 $suspectedSpam = false;
@@ -25,15 +25,23 @@ if (
   !empty($spamtrap1) ||
   !empty($spamtrap2) ||
   'POST' != $_SERVER['REQUEST_METHOD'] ||
-  strpos($post_msg, 'know your price') !== false ||
+  strpos($post_msg, 'intengo yakho') !== false ||
+  strpos($post_msg, 'your price') !== false ||
   strpos($post_msg, 'the prices') !== false ||
   strpos($post_msg, 'eich pris') !== false ||
   strpos($post_msg, 'Äre Präis') !== false ||
+  strpos($post_msg, 'ønskede') !== false ||
   strpos($post_msg, 'ég') !== false ||
   strpos($post_msg, 'ə') !== false ||
   strpos($post_msg, 'হা') !== false ||
   strpos($post_msg, 'прайс') !== false ||
-  strpos($post_msg, 'я') !== false
+  strpos($post_msg, 'я') !== false ||
+  strpos($post_msg, 'ë') !== false ||
+  strpos($post_msg, 'ụ') !== false ||
+  strpos($post_msg, 'ị') !== false ||
+  strpos($post_name, 'Masonbeids') !== false ||
+  strpos($post_name, 'Robertbeids') !== false ||
+  (empty($post_name) && empty($post_emailfon) && empty($post_msg))
 ) {
   $suspectedSpam = true;
 }
@@ -52,7 +60,9 @@ if(!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
   header('Content-Type: text/html');
   header('Refresh: 5; url=https://www.ingo-steinke.com/');
   if ( $suspectedSpam ) {
+    sleep(5);
     header('Status: 503 Service Unavailable');
+    sleep(5);
     echo '503 Service Unavailable - please try again later';
   } else {
     echo '<!DOCTYPE HTML><html lang=de><head><meta charset="utf-8"><title>Ingo Steinke - Contact Form</title></head>';

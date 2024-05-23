@@ -4,7 +4,7 @@ Scenario('Test website content and navigation', ({ I }) => {
 
   // Set prepareScreenshotBaseImages to true to regenerate and save all screenshots,
   // set prepareScreenshotBaseImages to compare upcoming tests to saved screenshots:
-  let prepareScreenshotBaseImages = false;
+  let prepareScreenshotBaseImages = false ;
 
   I.amOnPage('/');
   I.see('Ingo Steinke', 'h1');
@@ -76,7 +76,7 @@ Scenario('Test website content and navigation', ({ I }) => {
   });
 
   I.amOnPage('/leistungen/website-check.html');
-  I.see("Lass deine Website überprüfen!");
+  I.see("wir überprüfen deine Website!");
   I.saveScreenshot('Services-Check_DE_Screenshot.png');
   I.seeVisualDiff('Services-Check_DE_Screenshot.png', {
     tolerance: 2,

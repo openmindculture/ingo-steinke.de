@@ -1,11 +1,16 @@
 # Changelog
 
+## [4.2.3] content update - 2024-05-23
+* focus on business aspects
+* highlight design cooperation and capabilities
+* move sustainability details to the about section
+
 ## [4.2.2] improve spam protection - 2024-05-14
 * respond error status on spam suspicion #230
 
 ## [4.2.1] fix performance issues - 2024-05-10
 * fix hidden textarea label a11y #238
-* prevent spamtrap causing a11y errors #238
+* prevent spam trap causing a11y errors #238
 * simplify and  improve cachability #240
 * lazy load optional assets #240
 * defer and cache css #240
