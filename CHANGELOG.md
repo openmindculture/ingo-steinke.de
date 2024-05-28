@@ -1,5 +1,9 @@
 # Changelog
 
+## [4.2.4] content update - 2024-05-28
+* fix typo
+* add "platform" keyword
+
 ## [4.2.3] content update - 2024-05-23
 * focus on business aspects
 * highlight design cooperation and capabilities
