@@ -21,8 +21,8 @@ $spamtrap2      = filter_var($_REQUEST['contactform-field-homepage'], FILTER_SAN
 $time_ip_stamp  = date("YmdHi") . '_';
 $time_ip_stamp .= trim(filter_var($_SERVER['REMOTE_ADDR'], FILTER_SANITIZE_EMAIL));
 $stamp_filename = './latest/' . $time_ip_stamp . '.txt';
-$safer_senderme = trim(preg_replace('/\s+/', ' ', $post_name));
-$response_status = '200 OK';
+$safer_sender   = trim(preg_replace('/\s+/', ' ', $post_name));
+$responseStatus = '200 OK';
 $suspectedSpam = false;
 
 /* require spam trap 'captcha' be empty, require msg not empty */
@@ -46,7 +46,7 @@ if (
   strpos($post_msg, 'ị') !== false ||
   strpos($post_name, 'Masonbeids') !== false ||
   strpos($post_name, 'Robertbeids') !== false ||
-  (empty($post_name) && empty($post_emailfon) && empty($post_msg))
+  (empty(trim($post_name)) && empty(trim($post_emailfon)) && empty(trim($post_msg)))
 ) {
   $suspectedSpam = true;
 }
@@ -75,9 +75,21 @@ if(!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
   header('Refresh: 5; url=https://www.ingo-steinke.com/');
   if ( $suspectedSpam ) {
     sleep(5);
-    header('Status: 503 Service Unavailable');
-    sleep(5);
-    echo '503 Service Unavailable - please try again later';
+    if (file_exists($stamp_filename)) {
+      header('Status: 403 Forbidden');
+      echo 'Sorry, you cannot access this service right now.';
+      $responseStatus = '403 Forbidden';
+    } else if ('POST' != $_SERVER['REQUEST_METHOD']) {
+      header('Status: 405 Method Not Allowed');
+      echo 'Sorry, something went wrong trying to submit the form!';
+      $responseStatus = '405 Method Not Allowed';
+    } else  {
+      header('Status: 503 Service Unavailable');
+      sleep(5);
+      echo '503 Service Unavailable - please try again later';
+      $responseStatus = '503 Service Unavailable';
+    }
+
   } else {
     echo '<!DOCTYPE HTML><html lang=de><head><meta charset="utf-8"><title>Ingo Steinke - Contact Form</title></head>';
     echo '<body><h1>Thanks for your message!</h1>';
@@ -120,7 +132,7 @@ if ( $config_verbose ) {
   $message .= "\r\n";
   $message .= "---\r\n";
   $message .= "\r\n";
-  $message .= "Response Status: " . $response_status . "\r\n";
+  $message .= "Response Status: " . $responseStatus . "\r\n";
   $message .= "REQUEST_METHOD: " . $_SERVER['REQUEST_METHOD'] . "\r\n";
   $message .= $time_ip_stamp . "\r\n";
   $message .= "HTTP_ACCEPT: " . $_SERVER['HTTP_ACCEPT'] . "\r\n";
