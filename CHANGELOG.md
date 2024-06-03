@@ -1,5 +1,10 @@
 # Changelog
 
+## [4.2.5] contact form webmaster usability - 2024-06-03
+* reject repeated spam attempts #248
+* add legitimate sender name to subject #248
+* upgrade development dependencies 
+
 ## [4.2.4] content update - 2024-05-28
 * fix typo
 * add "platform" keyword
