@@ -13,11 +13,16 @@ header('Pragma: no-cache');
 /* don’t let your default response header reveal technical details */
 header('X-Powered-By: openmindculture');
 
-$post_name     = trim(filter_var($_REQUEST['contactform-field-name'], FILTER_SANITIZE_STRING));
-$post_emailfon = trim(filter_var($_REQUEST['contactform-field-emailfon'], FILTER_SANITIZE_EMAIL));
-$post_msg      = trim(filter_var($_REQUEST['contactform-field-message'], FILTER_SANITIZE_STRING));
-$spamtrap1     = filter_var($_REQUEST['contactform-field-captcha'], FILTER_SANITIZE_STRING);
-$spamtrap2     = filter_var($_REQUEST['contactform-field-homepage'], FILTER_SANITIZE_STRING);
+$post_name      = trim(filter_var($_REQUEST['contactform-field-name'], FILTER_SANITIZE_STRING));
+$post_emailfon  = trim(filter_var($_REQUEST['contactform-field-emailfon'], FILTER_SANITIZE_STRING));
+$post_msg       = trim(filter_var($_REQUEST['contactform-field-message'], FILTER_SANITIZE_STRING));
+$spamtrap1      = filter_var($_REQUEST['contactform-field-captcha'], FILTER_SANITIZE_STRING);
+$spamtrap2      = filter_var($_REQUEST['contactform-field-homepage'], FILTER_SANITIZE_STRING);
+$time_ip_stamp  = date("YmdHi") . '_';
+$time_ip_stamp .= trim(filter_var($_SERVER['REMOTE_ADDR'], FILTER_SANITIZE_EMAIL));
+$stamp_filename = './latest/' . $time_ip_stamp . '.txt';
+$safer_senderme = trim(preg_replace('/\s+/', ' ', $post_name));
+$response_status = '200 OK';
 $suspectedSpam = false;
 
 /* require spam trap 'captcha' be empty, require msg not empty */
@@ -51,7 +56,16 @@ if(!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
   header('Content-Type: application/json');
   header('Connection: close');
   if ( $suspectedSpam ) {
-    echo '{"Status":"503 Service Unavailable"}';
+    if (file_exists($stamp_filename)) {
+      echo '{"Status":"403 Forbidden"}';
+      $response_status = '403 Forbidden';
+    } else if ('POST' != $_SERVER['REQUEST_METHOD']) {
+      echo '{"Status":"405 Method Not Allowed"}';
+      $response_status = '405 Method Not Allowed';
+    } else  {
+      echo '{"Status":"503 Service Unavailable"}';
+      $response_status = '503 Service Unavailable';
+    }
   } else {
     echo '{"Status":"200 OK"}';
   }
@@ -72,35 +86,45 @@ if(!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
   }
 }
 
+array_map('unlink', glob('./latest/*'));
+rmdir('./latest');
+if (!is_dir('./latest')) {
+  mkdir('./latest');
+}
+touch($stamp_filename);
+
 $to = $config_to;
 $subject = $config_subject;
 
 if ( $suspectedSpam ) {
   $to      = $config_tospamtrap;
   $subject = '[Spamverdacht] ' . $subject;
+} else if (!empty($safer_sender)) {
+  $subject .= ': ' . $safer_sender;
 }
 
 $message = '';
+if (!empty($post_msg)) {
+  $message .=   $post_msg . "\r\n";
+}
 if (!empty($post_name)) {
+  $message .= "\r\n";
   $message .= 'Name: ' .  $post_name . "\r\n";
 }
 if (!empty($post_emailfon)) {
+  $message .= "\r\n";
   $message .= 'Kontakt: ' .  $post_emailfon . "\r\n";
-}
-if (!empty($post_msg)) {
-  $message .=   $post_msg . "\r\n";
 }
 
 if ( $config_verbose ) {
   $message .= "\r\n";
+  $message .= "---\r\n";
   $message .= "\r\n";
-  $message .= "SERVER_NAME: " . $_SERVER['SERVER_NAME'] . "\r\n";
+  $message .= "Response Status: " . $response_status . "\r\n";
   $message .= "REQUEST_METHOD: " . $_SERVER['REQUEST_METHOD'] . "\r\n";
+  $message .= $time_ip_stamp . "\r\n";
   $message .= "HTTP_ACCEPT: " . $_SERVER['HTTP_ACCEPT'] . "\r\n";
-  $message .= "HTTP_REFERER: " . $_SERVER['HTTP_REFERER'] . "\r\n";
   $message .= "HTTP_USER_AGENT: " . $_SERVER['HTTP_USER_AGENT'] . "\r\n";
-  $message .= "REMOTE_ADDR: " . $_SERVER['REMOTE_ADDR'] . "\r\n";
-  $message .= "HTTP_X_FORWARDED_FOR: " . $_SERVER['HTTP_X_FORWARDED_FOR'] . "\r\n";
 }
 
 if (!empty($message)) {
