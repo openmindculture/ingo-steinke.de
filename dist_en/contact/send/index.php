@@ -35,6 +35,7 @@ if (
   strpos($post_msg, 'the prices') !== false ||
   strpos($post_msg, 'eich pris') !== false ||
   strpos($post_msg, 'Äre Präis') !== false ||
+  strpos($post_msg, 'lovevoyager.page') !== false ||
   strpos($post_msg, 'ønskede') !== false ||
   strpos($post_msg, 'ég') !== false ||
   strpos($post_msg, 'ə') !== false ||
@@ -46,6 +47,7 @@ if (
   strpos($post_msg, 'ị') !== false ||
   strpos($post_name, 'Masonbeids') !== false ||
   strpos($post_name, 'Robertbeids') !== false ||
+  strpos($post_name, 'Nataler') !== false ||
   (empty(trim($post_name)) && empty(trim($post_emailfon)) && empty(trim($post_msg)))
 ) {
   $suspectedSpam = true;
