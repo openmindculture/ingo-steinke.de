@@ -1,5 +1,9 @@
 # Changelog
 
+## [4.2.6] stricter spam protection - 2024-06-10
+* reject some suspicious (but formally correct) senders randomly
+* reduce extra wait time to reject more repeated sumissions
+
 ## [4.2.5] contact form webmaster usability - 2024-06-03
 * reject repeated spam attempts #248
 * add legitimate sender name to subject #248

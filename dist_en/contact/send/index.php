@@ -6,6 +6,7 @@ $config_tospamtrap = 'contact@ingo-steinke.com';
 $config_subject = 'Contactform ISD';
 $config_custheader = '';
 $config_verbose = true;
+$randombool = rand(0,1) == 1;
 
 header('Cache-Control: no-store');
 header('Pragma: no-cache');
@@ -54,11 +55,11 @@ if (
 }
 
 if(!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
-  /* AJAX request from modern browser: at this point, there isn't anything to download anymore */
+  /* AJAX request from legitimate major modern browser users */
   header('Content-Type: application/json');
   header('Connection: close');
   if ( $suspectedSpam ) {
-    if (file_exists($stamp_filename)) {
+    if (file_exists($stamp_filename) || $randombool) {
       echo '{"Status":"403 Forbidden"}';
       $response_status = '403 Forbidden';
     } else if ('POST' != $_SERVER['REQUEST_METHOD']) {
@@ -76,8 +77,7 @@ if(!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
   header('Content-Type: text/html');
   header('Refresh: 5; url=https://www.ingo-steinke.com/');
   if ( $suspectedSpam ) {
-    sleep(5);
-    if (file_exists($stamp_filename)) {
+    if (file_exists($stamp_filename) || $randombool) {
       header('Status: 403 Forbidden');
       echo 'Sorry, you cannot access this service right now.';
       $responseStatus = '403 Forbidden';
