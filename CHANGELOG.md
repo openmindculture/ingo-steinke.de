@@ -1,5 +1,8 @@
 # Changelog
 
+## [4.2.7] spam protection - 2024-06-22
+* add spam protection rules
+
 ## [4.2.6] stricter spam protection - 2024-06-10
 * reject some suspicious (but formally correct) senders randomly
 * reduce extra wait time to reject more repeated sumissions
