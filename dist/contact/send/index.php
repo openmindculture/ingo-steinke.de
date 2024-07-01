@@ -34,6 +34,7 @@ if (
   strpos($post_msg, 'intengo yakho') !== false ||
   strpos($post_msg, 'your price') !== false ||
   strpos($post_msg, 'the prices') !== false ||
+  strpos($post_msg, 'volevo sapere il tuo prezzo') !== false ||
   strpos($post_msg, 'eich pris') !== false ||
   strpos($post_msg, 'Äre Präis') !== false ||
   strpos($post_msg, 'lovevoyager.page') !== false ||
@@ -42,6 +43,7 @@ if (
   strpos($post_msg, 'ə') !== false ||
   strpos($post_msg, 'ē') !== false ||
   strpos($post_msg, 'হা') !== false ||
+  strpos($post_msg, '&#39;') !== false ||
   strpos($post_msg, 'прайс') !== false ||
   strpos($post_msg, 'я') !== false ||
   strpos($post_msg, 'ë') !== false ||
@@ -51,6 +53,8 @@ if (
   strpos($post_name, 'Masonbeids') !== false ||
   strpos($post_name, 'Robertbeids') !== false ||
   strpos($post_name, 'Jobeids') !== false ||
+  strpos($post_name, 'Davidbeids') !== false ||
+
   strpos($post_name, 'Nataler') !== false ||
   (empty(trim($post_name)) && empty(trim($post_emailfon)) && empty(trim($post_msg)))
 ) {

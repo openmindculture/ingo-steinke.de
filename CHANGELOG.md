@@ -1,5 +1,9 @@
 # Changelog
 
+## [4.2.7.1] spam protection - 2024-07-01
+* add spam protection rules
+* upgrade development dependencies
+
 ## [4.2.7] spam protection - 2024-06-22
 * add spam protection rules
 
