@@ -38,6 +38,8 @@ if (
   strpos($post_msg, 'volevo sapere il tuo prezzo') !== false ||
   strpos($post_msg, 'eich pris') !== false ||
   strpos($post_msg, 'Äre Präis') !== false ||
+  strpos($post_msg, 'willst du abhängen') !== false ||
+  strpos($post_msg, 'surl.li') !== false ||
   strpos($post_msg, 'lovevoyager.page') !== false ||
   strpos($post_msg, 'ønskede') !== false ||
   strpos($post_msg, 'ég') !== false ||
