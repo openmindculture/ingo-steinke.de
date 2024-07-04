@@ -1,5 +1,9 @@
 # Changelog
 
+## [4.3.0] responsive design - 2024-07-04
+* improve mobile square/landscape display
+* improve hero header spacing on mobile
+
 ## [4.2.7.3] spam protection - 2024-07-03
 * add spam protection rules
 
