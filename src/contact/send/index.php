@@ -41,6 +41,7 @@ if (
   strpos($post_msg, 'willst du abhängen') !== false ||
   strpos($post_msg, 'surl.li') !== false ||
   strpos($post_msg, 'lovevoyager.page') !== false ||
+  strpos($post_msg, 'XRumer') !== false ||
   strpos($post_msg, '//rb.gy') !== false ||
   strpos($post_msg, 'ønskede') !== false ||
   strpos($post_msg, 'ég') !== false ||
@@ -48,8 +49,9 @@ if (
   strpos($post_msg, 'ē') !== false ||
   strpos($post_msg, 'হা') !== false ||
   strpos($post_msg, '&#39;') !== false ||
-  strpos($post_msg, 'прайс') !== false ||
   strpos($post_msg, 'vašu cijenu') !== false ||
+  strpos($post_msg, 'прайс') !== false ||
+  strpos($post_msg, 'mail.ru') !== false ||
   strpos($post_msg, 'я') !== false ||
   strpos($post_msg, 'ë') !== false ||
   strpos($post_msg, 'ụ') !== false ||
@@ -62,6 +64,7 @@ if (
   strpos($post_name, 'Adjbeids') !== false ||
   strpos($post_name, 'Maxbeids') !== false ||
   strpos($post_name, 'Amandapeaceame') !== false ||
+  strpos($post_name, 'Tracyselty') !== false ||
   strpos($post_name, 'Nataler') !== false ||
   (empty(trim($post_name)) && empty(trim($post_emailfon)) && empty(trim($post_msg)))
 ) {
