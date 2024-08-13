@@ -72,6 +72,7 @@ if (
   strpos($post_name, 'Amandapeaceame') !== false ||
   strpos($post_name, 'Tracyselty') !== false ||
   strpos($post_name, 'Nataler') !== false ||
+  strpos($post_name, 'xrumer') !== false ||
   (empty(trim($post_name)) && empty(trim($post_emailfon)) && empty(trim($post_msg)))
 ) {
   $suspectedSpam = true;
