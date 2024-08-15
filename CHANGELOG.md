@@ -1,5 +1,8 @@
 # Changelog
 
+## [4.4.0] testimonials and projects - 2024-08-15
+* projects flow grid flip card effect #258
+
 ## [4.3.0] responsive design - 2024-07-04
 * improve mobile square/landscape display
 * improve hero header spacing on mobile
