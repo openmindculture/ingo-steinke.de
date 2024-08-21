@@ -44,6 +44,8 @@ if (
   strpos($post_msg, 'willst du abhängen') !== false ||
   strpos($post_msg, 'surl.li') !== false ||
   strpos($post_msg, 'lovevoyager.page') !== false ||
+  strpos($post_msg, 'meet singles') !== false ||
+  strpos($post_msg, 'singles online') !== false ||
   strpos($post_msg, 'XRumer') !== false ||
   strpos($post_msg, 'Money Alert') !== false ||
   strpos($post_msg, '/exec') !== false ||
@@ -63,6 +65,8 @@ if (
   strpos($post_msg, 'ụ') !== false ||
   strpos($post_msg, 'ị') !== false ||
   strpos($post_msg, 'ā') !== false ||
+  strpos($post_msg, 'Ђ') !== false ||
+  strpos($post_name, 'Ready for love') !== false ||
   strpos($post_name, 'Masonbeids') !== false ||
   strpos($post_name, 'Robertbeids') !== false ||
   strpos($post_name, 'Jobeids') !== false ||
@@ -73,6 +77,7 @@ if (
   strpos($post_name, 'Tracyselty') !== false ||
   strpos($post_name, 'Nataler') !== false ||
   strpos($post_name, 'xrumer') !== false ||
+  strpos($post_name, 'www.') !== false ||
   (empty(trim($post_name)) && empty(trim($post_emailfon)) && empty(trim($post_msg)))
 ) {
   $suspectedSpam = true;
