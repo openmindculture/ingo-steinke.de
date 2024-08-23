@@ -41,8 +41,10 @@ if (
   strpos($post_msg, 'Claim Your $') !== false ||
   strpos($post_msg, 'Passive Income') !== false ||
   strpos($post_msg, 'Cryptocurrency') !== false ||
+  strpos($post_msg, 'cannabidiol') !== false ||
   strpos($post_msg, 'willst du abhängen') !== false ||
   strpos($post_msg, 'surl.li') !== false ||
+  strpos($post_msg, 'porn.') !== false ||
   strpos($post_msg, 'lovevoyager.page') !== false ||
   strpos($post_msg, 'meet singles') !== false ||
   strpos($post_msg, 'singles online') !== false ||
@@ -66,6 +68,7 @@ if (
   strpos($post_msg, 'ị') !== false ||
   strpos($post_msg, 'ā') !== false ||
   strpos($post_msg, 'Ђ') !== false ||
+  strpos($post_msg, '==>') !== false ||
   strpos($post_name, 'Ready for love') !== false ||
   strpos($post_name, 'Masonbeids') !== false ||
   strpos($post_name, 'Robertbeids') !== false ||
