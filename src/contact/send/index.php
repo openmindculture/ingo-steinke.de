@@ -42,6 +42,8 @@ if (
   strpos($post_msg, 'Passive Income') !== false ||
   strpos($post_msg, 'Cryptocurrency') !== false ||
   strpos($post_msg, 'cannabidiol') !== false ||
+  strpos($post_msg, 'shipping options for your order') !== false ||
+  strpos($post_msg, 'omplete your purchase from the cart') !== false ||
   strpos($post_msg, 'willst du abhängen') !== false ||
   strpos($post_msg, 'surl.li') !== false ||
   strpos($post_msg, 'porn.') !== false ||
@@ -58,7 +60,9 @@ if (
   strpos($post_msg, 'ə') !== false ||
   strpos($post_msg, 'ē') !== false ||
   strpos($post_msg, 'হা') !== false ||
+  strpos($post_msg, 'Ոা') !== false ||
   strpos($post_msg, '&#39;') !== false ||
+  strpos($post_msg, 'meg akartam') !== false ||
   strpos($post_msg, 'vašu cijenu') !== false ||
   strpos($post_msg, 'прайс') !== false ||
   strpos($post_msg, 'mail.ru') !== false ||
@@ -70,6 +74,7 @@ if (
   strpos($post_msg, 'Ђ') !== false ||
   strpos($post_msg, '==>') !== false ||
   strpos($post_name, 'Ready for love') !== false ||
+  strpos($post_name, 'MasonMef') !== false ||
   strpos($post_name, 'Masonbeids') !== false ||
   strpos($post_name, 'Robertbeids') !== false ||
   strpos($post_name, 'Jobeids') !== false ||
