@@ -55,6 +55,7 @@ if (
   strpos($post_msg, '/exec') !== false ||
   strpos($post_msg, '//script.google.com') !== false ||
   strpos($post_msg, '//rb.gy') !== false ||
+  strpos($post_msg, '//yandex.ru') !== false ||
   strpos($post_msg, 'ønskede') !== false ||
   strpos($post_msg, 'ég') !== false ||
   strpos($post_msg, 'ə') !== false ||
