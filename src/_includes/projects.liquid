@@ -7,11 +7,20 @@
   <div class="grid-container flow-grid">
     {%- assign projects =  "kleiderordnung, fractal, foodtogether, daskannstdutun, shopwareplugin, reactapp, portfolio, wordpress, planted" | split: ", " -%}
     {%- for project in projects -%}
-      <article class="tile target-offset" id="{{ project }}">
+      <article class="tile target-offset flip-box-row" id="{{ project }}">
         <div class="tile-content flex bg-peel pl1">
+          {%- assign header = '' -%}
           {%- assign hashtags = '' |  split: '' -%}
           {%- assign contentfile = '../_data/' |  appendCurrentLanguageSlug | append: '/projects/' | append: project |  append: '.liquid'  -%}
-          {%- include contentfile -%}
+          <header>
+            <h3>{{ header }}</h3>
+          </header>
+          <p>
+            {{ project | svgIcon }}
+          </p>
+          <span class="text-line">
+            {%- include contentfile -%}
+          </span>
           <p>
             {%- for hashtag in hashtags %}
             <span class="hashtag">{{ hashtag }}</span>
