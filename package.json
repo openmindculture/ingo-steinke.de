@@ -9,10 +9,16 @@
         "build": "npm run eslint && npm run stylelint && npm run build:de && npm run build:en",
         "build:de": "eleventy --config .eleventy.de.js && node_modules/.bin/postcss src/*.css --dir dist && babel src/js -d dist/js",
         "build:en": "eleventy --config .eleventy.en.js && node_modules/.bin/postcss src/*.css --dir dist_en && babel src/js -d dist_en/js",
+        "codeceptjs": "codeceptjs run --steps",
+        "codeceptjs:headless": "HEADLESS=true codeceptjs run --steps",
+        "codeceptjs:ui": "codecept-ui --app",
+        "codeceptjs:demo": "codeceptjs run --steps -c node_modules/@codeceptjs/examples",
+        "codeceptjs:demo:headless": "HEADLESS=true codeceptjs run --steps -c node_modules/@codeceptjs/examples",
+        "codeceptjs:demo:ui": "codecept-ui --app  -c node_modules/@codeceptjs/examples",
         "dev": "npm run serve",
         "serve": "npx http-server dist -p 1974 --cors &",
         "pretest": "npm run build && npm run serve",
-        "test": "npm run todo",
+        "test": "npm run codeceptjs",
         "posttest": "pkill -f http-server",
         "unserve": "pkill -f http-server"
     },
@@ -27,7 +33,12 @@
     },
     "homepage": "https://github.com/openmindculture/ingo-steinke.de#readme",
     "devDependencies": {
-        "@11ty/eleventy": "^2.0.0"
+        "@11ty/eleventy": "^2.0.0",
+        "@codeceptjs/configure": "^1.0.1",
+        "@codeceptjs/examples": "^1.2.4",
+        "@codeceptjs/ui": "^1.2.0",
+        "codeceptjs": "^3.6.5",
+        "playwright": "^1.46.1"
     },
     "dependencies": {
         "@babel/cli": "^7.25.6",
@@ -38,6 +49,7 @@
         "autoprefixer": "^10.4.20",
         "babel-preset-minify": "^0.5.2",
         "clean-css": "^5.3.3",
+        "codeceptjs-resemblehelper": "^1.9.6",
         "cssnano": "^7.0.6",
         "eslint": "^9.9.1",
         "globals": "^15.9.0",
@@ -49,6 +61,7 @@
         "postcss-custom-selectors": "^8.0.1",
         "postcss-import": "^16.1.0",
         "precss": "^4.0.0",
+        "puppeteer": "^23.3.0",
         "stylelint": "^16.9.0",
         "stylelint-config-html": "^1.1.0",
         "stylelint-config-standard": "^36.0.1"
