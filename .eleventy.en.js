@@ -1,5 +1,5 @@
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPlugin(require('./.eleventy.common.js'));
+  eleventyConfig.addPlugin(require('./.eleventy.default.js'));
   // all subdirectory/*.liquid are processed implicitly,
   // so we need to exclude the ones that don't match the current language
   eleventyConfig.ignores.add('src/webseiten-klimafreundlich-barrierefrei-optimieren/index.liquid');
@@ -36,8 +36,10 @@ module.exports = function (eleventyConfig) {
   // redirect rules for apache webhosting
   eleventyConfig.addPassthroughCopy('src/.htaccess');
 
-  // postcss shortcut for inline code; external css files are handles by postcss
-  eleventyConfig.addPairedShortcode("postcss", require("./utils/transform-css"));
+  eleventyConfig.addLiquidFilter("appendCurrentLanguageSlug", function(text) {
+    return text + 'en';
+  });
+
   return {
     dir: {
       input: 'src',

@@ -1,4 +1,5 @@
 const htmlmin = require('html-minifier');
+
 module.exports = function (eleventyConfig) {
   eleventyConfig.addTransform('htmlmin', function (content, outputPath) {
     if (outputPath.endsWith('.html')) {
@@ -31,7 +32,6 @@ module.exports = function (eleventyConfig) {
     return markup;
   });
 
-  eleventyConfig.addLiquidFilter("appendCurrentLanguageSlug", function(text) {
-    return text + 'en';
-  });
+  // postcss shortcut for inline code; external css files are handles by postcss
+  eleventyConfig.addPairedShortcode("postcss", require("./utils/transform-css"));
 };

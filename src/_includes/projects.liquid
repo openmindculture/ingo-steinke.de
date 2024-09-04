@@ -5,30 +5,58 @@
   </div>
 
   <div class="grid-container flow-grid">
-    {%- assign projects =  "kleiderordnung, fractal, foodtogether, daskannstdutun, shopwareplugin, reactapp, portfolio, wordpress, planted" | split: ", " -%}
+    {%- assign projects = 'kleiderordnung, fractal, foodtogether, daskannstdutun, shopwareplugin, reactapp, portfolio, wordpress, planted' | split: ', ' -%}
+    {%- assign projects = "daskannstdutun" | split: ", " -%}
     {%- for project in projects -%}
+      {%- assign header = '' -%}
+      {%- assign hashtags = '' -%}
+      {%- assign imgalt = '' -%}
+      {%- assign description = '' -%}
+      {%- assign contentfile = '../_data/'
+        | appendCurrentLanguageSlug
+        | append: '/projects/'
+        | append: project
+        | append: '.liquid'
+      -%}
+      {%- render contentfile -%}
       <article class="tile target-offset flip-box-row" id="{{ project }}">
-        <div class="tile-content flex bg-peel pl1">
-          {%- assign header = '' -%}
-          {%- assign hashtags = '' |  split: '' -%}
-          {%- assign contentfile = '../_data/' |  appendCurrentLanguageSlug | append: '/projects/' | append: project |  append: '.liquid'  -%}
-          <header>
-            <h3>{{ header }}</h3>
-          </header>
-          <p>
-            {{ project | svgIcon }}
-          </p>
-          <span class="text-line">
-            {%- include contentfile -%}
-          </span>
-          <p>
-            {%- for hashtag in hashtags %}
-            <span class="hashtag">{{ hashtag }}</span>
-            {% endfor -%}
-          </p>
+        <div class="flip-box-column">
+          <div class="flip-box-front tile">
+            <img
+              src="{{ 'img/screenshot-' | append: project | append: '.png' }}"
+              alt="{{ imgalt }}"
+              width="821"
+              height="478"
+              class="poster-image"
+            >
+            <div class="tile-content flex bg-peel">
+              <header>
+                <h3>{{ headline }}</h3>
+              </header>
+            </div>
+
+          </div>
+          <div class="flip-box-back tile">
+            <div class="tile-content flex bg-peel">
+              <header>
+                <div class="tile-header-repeat">{{ headline }}</div>
+              </header>
+              <p>
+                {{ project | svgIcon }}
+              </p>
+              <span class="text-line">
+                {{ description }}
+              </span>
+              <p>
+                {%- assign hashtagarray = hashtags | split: ' ' -%}
+                {%- for hashtag in hashtagarray %}
+                <span class="hashtag">{{ hashtag }}</span>
+                {% endfor -%}
+              </p>
+            </div>
+          </div>
         </div>
       </article>
     {% endfor -%}
-
   </div>
 </section>

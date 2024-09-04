@@ -1380,6 +1380,15 @@ body.high-contrast {
   padding: 0 5px 0 5px;
 }
 
+.flip-box-front.tile {
+  position: relative;
+}
+
+.flip-box-front.tile .poster-image,
+.flip-box-front.tile .tile-content {
+  position: relative;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .flip-box-row {
     width: 100%;
