@@ -42,6 +42,7 @@ if (
   strpos($post_msg, 'Passive Income') !== false ||
   strpos($post_msg, 'Cryptocurrency') !== false ||
   strpos($post_msg, 'cannabidiol') !== false ||
+  strpos($post_msg, 'greenrevolution.com') !== false ||
   strpos($post_msg, 'shipping options for your order') !== false ||
   strpos($post_msg, 'omplete your purchase from the cart') !== false ||
   strpos($post_msg, 'willst du abhängen') !== false ||
