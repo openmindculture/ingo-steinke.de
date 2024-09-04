@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /*.pdf$
+Sitemap: https://www.ingo-steinke.de/sitemap.xml

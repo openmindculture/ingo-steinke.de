@@ -1,0 +1,25 @@
+<section class="tiled-content target-offset" id="projects">
+  <div class="pl1">
+    <h2>{{ content.projectsHeading }}</h2>
+    <p>{{ content.projects }}</p>
+  </div>
+
+  <div class="grid-container flow-grid">
+    {%- assign projects =  "kleiderordnung, fractal, foodtogether, daskannstdutun, shopwareplugin, reactapp, portfolio, wordpress, planted" | split: ", " -%}
+    {%- for project in projects -%}
+      <article class="tile target-offset" id="{{ project }}">
+        <div class="tile-content flex bg-peel pl1">
+          {%- assign hashtags = '' |  split: '' -%}
+          {%- assign contentfile = '../_data/' |  appendCurrentLanguageSlug | append: '/projects/' | append: project |  append: '.liquid'  -%}
+          {%- include contentfile -%}
+          <p>
+            {%- for hashtag in hashtags %}
+            <span class="hashtag">{{ hashtag }}</span>
+            {% endfor -%}
+          </p>
+        </div>
+      </article>
+    {% endfor -%}
+
+  </div>
+</section>

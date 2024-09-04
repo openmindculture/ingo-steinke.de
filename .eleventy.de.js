@@ -1,11 +1,11 @@
-const htmlmin = require('html-minifier');
 module.exports = function (eleventyConfig) {
-  // TODO refactor redundant code to include common config!
-
+  eleventyConfig.addPlugin(require('./.eleventy.common.js'));
   // all subdirectory/*.liquid are processed implicitly,
   // so we need to exclude the ones that don't match the current language
   eleventyConfig.ignores.add('src/services');
   eleventyConfig.ignores.add('src/_includes');
+  eleventyConfig.ignores.add('src/_data');
+  eleventyConfig.ignores.add('src/_data/de/projects');
 
   // explicit + fast way to copy certain files and folders
   eleventyConfig.addPassthroughCopy('src/fonts');
@@ -33,33 +33,14 @@ module.exports = function (eleventyConfig) {
   // redirect rules for apache webhosting
   eleventyConfig.addPassthroughCopy('src/.htaccess');
 
-  eleventyConfig.addTransform('htmlmin', function (content, outputPath) {
-    if (outputPath.endsWith('.html')) {
-      return htmlmin.minify(content, {
-        useShortDoctype: true, removeComments: true, collapseWhitespace: true
-      });
-    }
-    return content;
-  });
-
-  eleventyConfig.addLiquidFilter("customLocalizedMonthNameFilter", function(monthParam) {
-    let monthIndex = parseInt(monthParam);
-    let monthNames = [
-      '', 'Januar', 'Februar', 'März', 'April', 'Mai', 'Juni',
-      'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'
-    ]
-    if (0 < monthIndex < 13) {
-      return monthNames[monthIndex];
-    } else {
-      return '';
-    }
-  })
-
   // postcss shortcut for inline code; external css files are handles by postcss
   eleventyConfig.addPairedShortcode("postcss", require("./utils/transform-css"));
   return {
     dir: {
-      input: 'src', data: '_data/de', output: 'dist'
-    }, templateFormats: ['liquid']
+      input: 'src',
+      data: '_data/de',
+      output: 'dist'
+    },
+    templateFormats: ['liquid']
   }
 };
