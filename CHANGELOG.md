@@ -1,7 +1,13 @@
 # Changelog
 
-## [4.4.0] testimonials and projects - 2024-08-15
-* projects flow grid flip card effect #258
+## [4.4.0] testimonials and projects - 2024-09
+* projects flip card effect #258
+* modularize project card content
+* modularize and upgrade eleventy configuration
+* upgrade stylelint configuration
+* upgrade postcss configuration
+* upgrade eslint configuration
+* upgrade CodeceptJS test configuration
 
 ## [4.3.0] responsive design - 2024-07-04
 * improve mobile square/landscape display
