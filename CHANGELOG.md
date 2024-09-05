@@ -1,5 +1,10 @@
 # Changelog
 
+## [4.5.0] restructure and rephrase content - todo
+* more focused and visual home page
+* move printable CV summary to freelance/HR landing page
+* reduce buzzwords and undesirable tech/services
+
 ## [4.4.0] testimonials and projects - 2024-09-06
 * projects flip card effect #258
 * modularize project card content
