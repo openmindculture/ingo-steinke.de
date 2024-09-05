@@ -287,6 +287,7 @@ a.menu-toggle:hover {
   overflow: visible;
   position: relative;
   z-index: 2;
+  grid-template-rows: 205px;
 }
 
 .flow-grid .tile {
@@ -299,27 +300,6 @@ a.menu-toggle:hover {
 
 .tile-content {
   padding: 0 1em 0 1em;
-}
-
-.tile-content .screenshots {
-  position: relative;
-}
-
-.tile-content .screenshot {
-  position: relative;
-  display: inline-block;
-  width: 30%;
-  max-width: calc(100vw - 1rem);
-  height: auto;
-  z-index: 1;
-  transition:
-    width 0.25s ease-in,
-    height 0.25s ease-in;
-}
-
-.tile-content .screenshot:hover {
-  z-index: 100;
-  width: 100%;
 }
 
 .flow-grid .hashtag {
