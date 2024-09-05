@@ -280,7 +280,7 @@ a.menu-toggle:hover {
   justify-content: space-between;
 }
 
-.flow-grid {
+.grid-container.flow-grid {
   background-size: auto;
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -288,6 +288,13 @@ a.menu-toggle:hover {
   position: relative;
   z-index: 2;
   grid-auto-rows: 227px;
+  grid-auto-rows: minmax(min-content, max-content);
+grid-template-columns: repeat(auto-fit, 428px);
+  grid-column-gap: 1em;
+  /* TODO do we need grid at all?
+       maybe flex-wrap works better and is
+       easier to understand and maintain?
+       */
 }
 
 .flow-grid .tile {
