@@ -287,7 +287,7 @@ a.menu-toggle:hover {
   overflow: visible;
   position: relative;
   z-index: 2;
-  grid-template-rows: 205px;
+  grid-auto-rows: 227px;
 }
 
 .flow-grid .tile {
@@ -1361,6 +1361,8 @@ body.high-contrast {
 .flip-box-front.tile .poster-image,
 .flip-box-front.tile .tile-content {
   position: relative;
+  max-width: 100%;
+  height: auto;
 }
 
 @media (prefers-reduced-motion: no-preference) {
