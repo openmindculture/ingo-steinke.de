@@ -4,7 +4,7 @@
     <p>{{ content.projects }}</p>
   </div>
 
-  <div class="grid-container flow-grid">
+  <div class="grid-container grid-container--projects">
 
     {%- assign projects = 'kleiderordnung, fractal, foodtogether, daskannstdutun, shopwareplugin, reactapp, portfolio, wordpress, planted' | split: ', ' -%}
     {%- for project in projects -%}
@@ -46,10 +46,10 @@
                 <div class="tile-header-repeat">{{ projectHeadline }}</div>
               <p>
                 {{ project | svgIcon }}
-              </p>
-              <span class="text-line">
+                <span class="text-line">
                 {{ projectDescription }}
               </span>
+              </p>
               <p>
                 {%- assign hashtagsArray = projectHashtags | split: ' ' -%}
                 {%- for hashtag in hashtagsArray %}
