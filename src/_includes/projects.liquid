@@ -50,6 +50,9 @@
                 <span class="text-line">
                 {{ projectDescription }}
               </span>
+                <a class="only-print print-display-block"target="_blank" rel="noopener" href="{{ projectLinkUrl }}">
+                  {{ projectLinkUrl }}
+                </a>
               </p>
               <p>
                 {%- assign hashtagsArray = projectHashtags | split: ' ' -%}
