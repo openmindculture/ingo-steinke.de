@@ -1,6 +1,6 @@
 # Changelog
 
-## [4.4.0] testimonials and projects - 2024-09
+## [4.4.0] testimonials and projects - 2024-09-06
 * projects flip card effect #258
 * modularize project card content
 * modularize and upgrade eleventy configuration

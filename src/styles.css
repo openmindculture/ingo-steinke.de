@@ -1408,7 +1408,7 @@ body.high-contrast {
   height: auto;
 }
 
-@media (max-width: 855px) {
+@media (max-width: 1307px) {
   .grid-container--projects .flip-box-back.tile {
     border: none;
   }
