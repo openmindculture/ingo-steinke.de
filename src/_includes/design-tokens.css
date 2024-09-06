@@ -120,6 +120,8 @@ body {
   --body-line-height: 1.75;
   --heading-font-family: 'Bitter', serif;
   --heading-font-weight: 700;
+
+  --project-tile-min-height: 382px;
 }
 
 body.high-contrast {

@@ -280,51 +280,8 @@ a.menu-toggle:hover {
   justify-content: space-between;
 }
 
-.flow-grid {
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  overflow-x: hidden;
-}
-
-.flow-grid .tile {
-  line-height: 2;
-  border: dashed 1px;
-  margin-left: 2px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 .tile-content {
   padding: 0 1em 0 1em;
-}
-
-.tile-content .screenshots {
-  position: relative;
-}
-
-.tile-content .screenshot {
-  position: relative;
-  display: inline-block;
-  width: 30%;
-  max-width: calc(100vw - 1rem);
-  height: auto;
-  z-index: 1;
-  transition:
-    width 0.25s ease-in,
-    height 0.25s ease-in;
-}
-
-.tile-content .screenshot:hover {
-  z-index: 100;
-  width: 100%;
-}
-
-.flow-grid .hashtag {
-  font-size: 0.95em;
-  background-color: var(--hashtag-default);
-  color: #fff;
-  border-radius: 0;
 }
 
 .code-link {
@@ -348,14 +305,28 @@ a.menu-toggle:hover {
 }
 
 .bg-peel {
+  position: absolute;
   background:
     linear-gradient(
-      135deg,
+      259deg,
       var(--primary-background) 0%,
-      var(--peel-gradient-semitrans) 15%,
+      var(--peel-gradient-semitrans) 20%,
       var(--peel-gradient) 60%
     );
+  width: 100%;
   height: 100%;
+}
+
+body.high-contrast .bg-peel {
+  background: var(--primary-background);
+  opacity: 1;
+}
+
+@media (prefers-reduced-transparency) {
+  .bg-peel {
+    background: var(--primary-background);
+    opacity: 1;
+  }
 }
 
 .hashtags {
@@ -800,7 +771,7 @@ Offscreen menu style
   }
 }
 
-/* stylelint-disable-next-line no-descending-specificity */
+/* stylelint-disable no-descending-specificity */
 .grid-container .tile a:link,
 .grid-container .tile a:visited,
 .grid-container .tile a:active {
@@ -808,13 +779,11 @@ Offscreen menu style
   font-size: 1em;
 }
 
-/* stylelint-disable-next-line no-descending-specificity */
 .grid-container .tile a:focus,
 .grid-container .tile a:hover {
   color: #000;
 }
 
-/* stylelint-disable-next-line no-descending-specificity */
 .grid-container .tile a:link,
 .grid-container .tile a:visited,
 .grid-container .tile a:active,
@@ -843,14 +812,12 @@ Offscreen menu style
   height: auto;
 }
 
-/* stylelint-disable-next-line no-descending-specificity */
 .social-links a:not(.only-print) {
   display: block;
   min-width: 2.5em;
   min-height: 2.5em;
 }
 
-/* stylelint-disable-next-line no-descending-specificity */
 .social-links a:not(a:hover):not(a:focus) {
   background: none;
 }
@@ -865,7 +832,6 @@ Offscreen menu style
   border-radius: 1em/0.75em;
 }
 
-/* stylelint-disable-next-line no-descending-specificity */
 .transparent,
 a.transparent,
 a:link.transparent,
@@ -884,6 +850,8 @@ a.transparent:hover .rounded-rectangle,
 a.transparent:focus .rounded-rectangle {
   border: solid 2px var(--link-hover-background);
 }
+
+/* stylelint-enable no-descending-specificity */
 
 /* reset link styles and animation for sticky headline avatar */
 #sticky-headline a {
@@ -1061,7 +1029,7 @@ a.buttonlike:focus,
   height: 3rem;
 }
 
-/* stylelint-disable-next-line no-descending-specificity */
+/* stylelint-disable no-descending-specificity */
 .cta-container a.buttonlike,
 .cta-container a.buttonlike:link,
 .cta-container a.buttonlike:visited,
@@ -1072,7 +1040,6 @@ a.buttonlike:focus,
   max-width: 100%;
 }
 
-/* stylelint-disable-next-line no-descending-specificity */
 a.buttonlike:link,
 a.buttonlike:visited,
 a.buttonlike:active,
@@ -1082,7 +1049,6 @@ a.buttonlike:active,
   box-shadow: var(--effect-box-shadow-dropshadow);
 }
 
-/* stylelint-disable-next-line no-descending-specificity */
 a.buttonlike:hover,
 a.buttonlike:focus,
 .grid-container.services a.buttonlike:hover,
@@ -1091,21 +1057,20 @@ a.buttonlike:focus,
   font-size: 1.125rem;
 }
 
-/* stylelint-disable-next-line no-descending-specificity */
 body.high-contrast a.buttonlike {
   background-color: #fff;
   border: solid 1px #000;
 }
 
-/* stylelint-disable-next-line no-descending-specificity */
 ul.aside-heading > li {
   margin-bottom: 1rem;
 }
 
-/* stylelint-disable-next-line no-descending-specificity */
 ul.aside-heading > li:last-child {
   margin-bottom: 2rem;
 }
+
+/* stylelint-enable no-descending-specificity */
 
 .brand-coral {
   background-color: var(--interior-rose);
@@ -1344,5 +1309,164 @@ body.high-contrast {
   }
   .skills .tile .hashtag {
     font-weight: bold;
+  }
+}
+
+.grid-container.grid-container--projects {
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  overflow: visible;
+  position: relative;
+  z-index: 2;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  grid-auto-rows: var(--project-tile-min-height); /* 382px; */
+  grid-auto-rows: minmax(min-content, max-content);
+  grid-column-gap: 1em;
+  grid-row-gap: 1.5em;
+  /* TODO do we need grid at all?
+       maybe flex-wrap works better and is
+       easier to understand and maintain?
+       */
+}
+
+.grid-container--projects .tile {
+  line-height: 2;
+  border: dashed 1px;
+  margin-left: 2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.grid-container--projects .hashtag {
+  font-size: 0.95em;
+  background-color: var(--hashtag-default);
+  color: #fff;
+  border-radius: 0;
+}
+
+.flip-box-row {
+  background-color: transparent;
+  width: 100%;
+  height: auto;
+  height: max-content;
+  flex-basis: 100%;
+  flex-shrink: 0;
+  flex-grow: 1;
+  outline: none;
+  border: none;
+}
+
+.flip-box-column,
+.flip-box-front,
+.flip-box-back,
+.flip-box-decoration,
+.tile-content {
+  min-height: var(--project-tile-min-height); /* 382px; */
+}
+
+.flip-box-column {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.flip-box-front,
+.flip-box-back {
+  margin: 0 auto 24px auto;
+  width: 100%;
+}
+
+.flip-box-back {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.flip-box-decoration {
+  position: absolute;
+  top: 0;
+  mix-blend-mode: soft-light;
+  opacity: 0.25;
+  display: flex;
+  align-items: center;
+}
+
+.flip-box-column .text-line {
+  background: var(--primary-background);
+}
+
+.flip-box-front.tile {
+  position: relative;
+}
+
+.flip-box-column .tile-content {
+  position: absolute;
+}
+
+.flip-box-column .poster-image {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 339.999px) {
+  .flip-box-back.tile {
+    border: none;
+  }
+}
+
+@media (min-width: 440px) and (prefers-reduced-motion: no-preference) {
+  .flip-box-row {
+    width: 100%;
+    height: 100%;
+    -webkit-perspective: 800px;
+    perspective: 800px;
+  }
+
+  .flip-box-column {
+    -webkit-transition: transform 0.8s;
+    transition: transform 0.8s;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+
+  .flip-box-row:not(:last-child) {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  .flip-box-column .flip-box-front,
+  .flip-box-column .flip-box-back {
+    position: absolute;
+    margin: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .flip-box-column .flip-box-back {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+
+  .flip-box-row.active .flip-box-column,
+  .flip-box-row:hover .flip-box-column,
+  .flip-box-row:not(.active):focus .flip-box-column,
+  .flip-box-row:not(.active):focus-within .flip-box-column {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+}
+
+body.high-contrast .flip-box-decoration {
+  opacity: 0;
+}
+
+@media (prefers-reduced-transparency) {
+  .flip-box-decoration {
+    opacity: 1;
   }
 }

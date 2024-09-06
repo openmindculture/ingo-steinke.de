@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang={{ content.language }}>
+<html lang="{{ '' | appendCurrentLanguageSlug }}">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <title>
       {{ content.pageTitle }}
     </title>
-    <meta name=language content={{ content.language }}>
+    <meta name="language" content="{{ '' | appendCurrentLanguageSlug }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
       /* heading font serif */
@@ -32,7 +32,7 @@
           url('fonts/montserrat-v15-latin-ext_latin-regular.woff') format('woff');
       }
       {%- postcss -%}
-        {% include '_includes/critical.css' %}
+        {% include './_includes/critical.css' %}
       {%- endpostcss -%}
     </style>
     <link rel="preload" href="fonts/bitter-v16-latin-700.woff2" as="font" type="font/woff2" crossorigin>
@@ -114,7 +114,7 @@
     <div class="page-container" id="top">
       <div class="page-content">
         <header class="jumbotronHeader" id="jumbotronHeader">
-          {% include '_includes/jumbotron-image.liquid' %}
+          {% include './_includes/jumbotron-image.liquid' %}
           <h1>{{ content.jumbotronHeader }}</h1>
           <p class="tagline">{{ content.jumbotronTagline }}</p>
         </header>
@@ -232,333 +232,7 @@
             </article>
           </section>
 
-          <section class="tiled-content target-offset" id="projects">
-            <div class="pl1">
-              <h2>{{ content.projectsHeading }}</h2>
-              <p>{{ content.projects }}</p>
-            </div>
-
-            <div class="grid-container flow-grid">
-
-              <article class="tile target-offset" id="project-kleiderordnung">
-                <div class="tile-content flex bg-peel">
-                  <header>
-                    <h3>{{ content.projectKleiderordnungHeading }}</h3>
-                  </header>
-                  <p>
-                    <img
-                      src="img/icon-hanger.svg"
-                      width="24" height="24"
-                      class="project-thumb project-thumb--kleiderordnung"
-                      loading="lazy"
-                      alt=""
-                    />
-                    <span class="text-line">
-                      {{ content.projectKleiderordnung1 }}
-                       <a
-                         href="https://kleiderordnung.berlin/"
-                         title="www.kleiderordnung.berlin"
-                         target="_blank"
-                         rel="noopener"
-                       >{{ content.projectKleiderordnung2 }}</a>
-                      {{ content.projectKleiderordnung3 }}<br>
-                      </span>
-                      <span class="only-print code-link">www.kleiderordnung.berlin<br></span>
-                      <span class="text-line">
-                        {{ content.projectKleiderordnungCode }}<br>
-                      </span>
-                      <a
-                      class="code-link"
-                      href="https://github.com/openmindculture/kleiderordnung-berlin"
-                      target="_blank"
-                      rel="noopener"
-                    >github.com/openmindculture/kleiderordnung-berlin</a>
-                  </p>
-                  <p>
-                    <span class="hashtag">{{ content.projectKleiderordnungHashtag1 }}</span>
-                    <span class="hashtag">{{ content.projectKleiderordnungHashtag2 }}</span>
-                    <span class="hashtag">{{ content.projectKleiderordnungHashtag3 }}</span>
-                    <span class="hashtag">{{ content.projectKleiderordnungHashtag4 }}</span>
-                    <span class="hashtag">{{ content.projectKleiderordnungHashtag5 }}</span>
-                  </p>
-                </div>
-              </article>
-
-              <article class="tile target-offset" id="atomic-design-system">
-                <div class="tile-content flex bg-peel pl1">
-                  <header>
-                    <h3>{{ content.projectAtomicRelaunchHeading }}</h3>
-                  </header>
-                  <p>
-                    <img
-                      src="img/logo-fractal.svg"
-                      width="512"
-                      height="512"
-                      class="project-thumb project-thumb--atomic-design-system"
-                      loading="lazy"
-                      alt=""
-                    />
-                    <span class="text-line">
-                      {{ content.projectAtomicRelaunch1 }}
-                      {{ content.projectAtomicRelaunch2 }} <a href="https://fractal.build/" target="_blank" rel="noopener">{{ content.projectAtomicRelaunch3 }}</a>{{ content.projectAtomicRelaunch4 }}
-                    </span>
-                  </p>
-                  <p>
-                    <span class="hashtag">{{ content.projectAtomicRelaunchHashtag1 }}</span>
-                    <span class="hashtag">{{ content.projectAtomicRelaunchHashtag2 }}</span>
-                    <span class="hashtag">{{ content.projectAtomicRelaunchHashtag3 }}</span>
-                    <span class="hashtag">{{ content.projectAtomicRelaunchHashtag4 }}</span>
-                    <span class="hashtag">{{ content.projectAtomicRelaunchHashtag5 }}</span>
-                  </p>
-                </div>
-              </article>
-
-              <article class="tile target-offset" id="project-wordpress-woo">
-                <div class="tile-content flex bg-peel">
-                  <header>
-                    <h3>{{ content.projectWordpressWooHeading }}</h3>
-                  </header>
-                  <p>
-                    <img
-                      src="img/logo-wordpress.svg"
-                      width="452" height="452"
-                      class="project-thumb project-thumb--wordpress-woo"
-                      loading="lazy"
-                      alt=""
-                    />
-                    <span class="text-line">
-                      {{ content.projectWordpressWoo1 }}
-                      <a
-                        href="https://foodtogether.de/"
-                        target="_blank"
-                        rel="noopener"
-                      >Food Together</a> {{ content.projectWordpressWoo2 }}.<br>
-                      <a
-                        href="https://foodtogether.de/wer-wir-sind/"
-                        target="_blank"
-                        rel="noopener"
-                      >foodtogether.de/wer-wir-sind</a>
-                    </span>
-                  </p>
-                  <p>
-                    <span class="hashtag">{{ content.projectWordpressWooHashtag1 }}</span>
-                    <span class="hashtag">{{ content.projectWordpressWooHashtag2 }}</span>
-                    <span class="hashtag">{{ content.projectWordpressWooHashtag3 }}</span>
-                    <span class="hashtag">{{ content.projectWordpressWooHashtag4 }}</span>
-                  </p>
-                </div>
-              </article>
-
-              <article class="tile target-offset" id="project-daskannstdutun">
-                <div class="tile-content flex bg-peel">
-                  <header>
-                    <h3>{{ content.projectDaskannstdutunHeading }}</h3>
-                  </header>
-                  <p>
-                    <img
-                      src="img/logo-hand.svg"
-                      width="286" height="290"
-                      class="project-thumb project-thumb--daskannstdutun"
-                      loading="lazy"
-                      alt=""
-                    />
-                    <span class="text-line">
-                      {{ content.projectDaskannstdutun1 }}
-                      <a
-                        href="https://creativesforfuture.de/"
-                        target="_blank"
-                        rel="noopener"
-                      >Creatives for Future</a>
-                      {{ content.projectDaskannstdutunAnd }}
-                      <a
-                        href="https://www.psy4f.org/"
-                        target="_blank"
-                        rel="noopener"
-                      >Psychologists for Future</a>
-                      {{ content.projectDaskannstdutunCreatedSpaced }}{% comment %} might start with a comma e.g. ", the..." {% endcomment %}
-                      &quot;{{ content.projectDaskannstdutunDKDT }}&quot;
-                      {{ content.projectDaskannstdutunLast }}
-                      <a
-                        href="https://daskannstdutun.de/"
-                        target="_blank"
-                        rel="noopener"
-                        class="print-display-block"
-                      >daskannstdutun.de</a>
-                    </span>
-                  </p>
-                  <p>
-                    <span class="hashtag">{{ content.projectDaskannstdutunHashtag1 }}</span>
-                    <span class="hashtag">{{ content.projectDaskannstdutunHashtag2 }}</span>
-                    <span class="hashtag">{{ content.projectDaskannstdutunHashtag3 }}</span>
-                  </p>
-                </div>
-              </article>
-
-              <article class="tile target-offset" id="project-shopware-plugin">
-                <div class="tile-content flex bg-peel">
-                  <header>
-                    <h3 id="plugin-programmierung">{{ content.projectShopwareCostPluginHeading }}</h3>
-                  </header>
-                  <p>
-                    <img
-                      src="img/logo-shopware.svg"
-                      width="512" height="512"
-                      class="project-thumb project-thumb--minify project-thumb--shopware-plugin"
-                      loading="lazy"
-                      alt=""
-                    />
-                    <span class="text-line">
-                      {{ content.projectShopwareCostPlugin1 }}
-                      <a
-                        href="{{ content.projectShopwareCostPluginLinkUrl }}"
-                        target="_blank"
-                        rel="noopener"
-                      >{{ content.projectShopwareCostPlugin2 }}</a> {{ content.projectShopwareCostPlugin3 }}
-                      <span class="only-print code-link">store.shopware.com/en/detail/index/sArticle/11634729/number/IngoS57544164693</span>
-                    </span>
-                  </p>
-
-                  <p>
-                    <span class="hashtag">{{ content.projectShopwareCostPluginHashtag1 }}</span>
-                    <span class="hashtag">{{ content.projectShopwareCostPluginHashtag2 }}</span>
-                    <span class="hashtag">{{ content.projectShopwareCostPluginHashtag3 }}</span>
-                    <span class="hashtag">{{ content.projectShopwareCostPluginHashtag4 }}</span>
-                    <span class="hashtag">{{ content.projectShopwareCostPluginHashtag5 }}</span>
-                  </p>
-                </div>
-              </article>
-
-              <article class="tile target-offset" id="project-react-app">
-                <div class="tile-content flex bg-peel">
-                  <header>
-                    <h3>{{ content.projectReactAppHeading }}</h3>
-                  </header>
-                  <p>
-                    <img
-                      src="img/logo-react.svg"
-                      width="512" height="512"
-                      class="project-thumb project-thumb--react"
-                      loading="lazy"
-                      alt=""
-                    />
-                    <span class="text-line">
-                      {{ content.projectReactApp1 }}
-                      <a
-                        href="http://web.archive.org/web/20230129234614/https://wao.io/de/about-us/experts/ingo-steinke/"
-                        title="wao.io/de/about-us/experts/ingo-steinke"
-                        target="_blank"
-                        rel="noopener"
-                      >{{ content.projectReactApp2 }}</a>.
-                    </span>
-                    {{ content.projectReactApp3 }}
-                    <span class="only-print code-link">wao.io/de/about-us/experts/ingo-steinke</span>
-                  </p>
-                  <p>
-                    <span class="hashtag">{{ content.projectReactAppHashtag1 }}</span>
-                    <span class="hashtag">{{ content.projectReactAppHashtag2 }}</span>
-                    <span class="hashtag">{{ content.projectReactAppHashtag3 }}</span>
-                    <span class="hashtag">{{ content.projectReactAppHashtag4 }}</span>
-                    <span class="hashtag">{{ content.projectReactAppHashtag5 }}</span>
-                  </p>
-                </div>
-              </article>
-
-              <article class="tile target-offset" id="project-portfolio-relaunch">
-                <div class="tile-content flex bg-peel">
-                  <header>
-                    <h3>{{ content.projectPortfolioRelaunchHeading }}</h3>
-                  </header>
-                  <p>
-                    <img
-                      src="img/icon-varnish.svg"
-                      width="512" height="512"
-                      class="project-thumb project-thumb--portfolio"
-                      loading="lazy"
-                      alt=""
-                    />
-                    <span class="text-line">
-                      {{ content.projectPortfolioRelaunch1 }}
-                      <a href="{{ content.canonicalHref }}">{{ content.projectPortfolioRelaunch2 }}</a> {{ content.projectPortfolioRelaunch3 }}<br>
-                      <a
-                        class="code-link"
-                        href="https://github.com/openmindculture/ingo-steinke.de"
-                        target="_blank"
-                        rel="noopener"
-                      >
-                        github.com/openmindculture/ingo-steinke.de
-                      </a>
-                    </span>
-                  </p>
-
-                  <p>
-                    <span class="hashtag">{{ content.projectPortfolioRelaunchHashtag1 }}</span>
-                    <span class="hashtag">{{ content.projectPortfolioRelaunchHashtag2 }}</span>
-                    <span class="hashtag">{{ content.projectPortfolioRelaunchHashtag3 }}</span>
-                    <span class="hashtag">{{ content.projectPortfolioRelaunchHashtag4 }}</span>
-                    <span class="hashtag">{{ content.projectPortfolioRelaunchHashtag5 }}</span>
-                  </p>
-                </div>
-              </article>
-
-              <article class="tile target-offset" id="photography-wordpress-optimization">
-                <div class="tile-content flex bg-peel pl1">
-                  <header>
-                    <h3>{{ content.projectPhotographyHeading }}</h3>
-                  </header>
-                  <p><!-- TODO camera logo -->
-                    <img src="img/logo-lens-camera.svg" width="589" height="461" class="project-thumb project-thumb--grow" loading="lazy" alt="" />
-                    <span class="text-line">
-                      {{ content.projectPhotography1 }}
-                      <a href="https://www.malte-reiter.de/"
-                         target="_blank" rel="noopener">{{ content.projectPhotography2 }}</a>{{ content.projectPhotography3Spaced }}.
-                    </span>
-                  </p>
-                  <p>
-                    <span class="hashtag">{{ content.projectPhotographyHashtag1 }}</span>
-                    <span class="hashtag">{{ content.projectPhotographyHashtag2 }}</span>
-                    <span class="hashtag">{{ content.projectPhotographyHashtag3 }}</span>
-                    <span class="hashtag">{{ content.projectPhotographyHashtag4 }}</span>
-                  </p>
-                </div>
-              </article>
-
-              <article class="tile target-offset" id="project-planted">
-                <div class="flex bg-peel pl1">
-                  <header>
-                    <h3>{{ content.projectPlantedHeading }}</h3>
-                  </header>
-                  <p>
-                    <img
-                      src="img/icon-tree-branch.svg"
-                      width="512"
-                      height="512"
-                      class="project-thumb project-thumb--planted"
-                      loading="lazy"
-                      alt=""
-                    />
-                    <span class="text-line">
-                      {{ content.projectPlanted1 }}
-                      <a href="https://www.climatefounders.com/climate-hack" target="_blank" rel="noopener">{{
-                        content.projectPlanted2 }}</a>
-                      {{ content.projectPlanted3 }}
-                      <a href="https://planted.green"
-                         target="_blank" rel="noopener">{{
-                        content.projectPlanted4 }}</a>
-                      {{ content.projectPlanted5 }}
-                      <span class="only-print code-link">https://planted.green</span>
-                    </span>
-                  </p>
-                  <p>
-                    <span class="hashtag">{{ content.projectPlantedHashtag1 }}</span>
-                    <span class="hashtag">{{ content.projectPlantedHashtag2 }}</span>
-                    <span class="hashtag">{{ content.projectPlantedHashtag3 }}</span>
-                    <span class="hashtag">{{ content.projectPlantedHashtag4 }}</span>
-                  </p>
-                </div>
-              </article>
-
-            </div>
-          </section>
+          {% include './_includes/projects.liquid' %}
 
           <section class="text-content-layout text-content-color avoid-page-break">
             <h2 class="target-offset" id="work">
@@ -1076,7 +750,7 @@
                 <br>
                 <!-- contact form wrapper must be inside #contact anchor target for graceful show+hide -->
                 <div class="contactform-wrapper initally-hidden no-print">
-                  {% include '_includes/contactform.liquid' %}
+                  {% include './_includes/contactform.liquid' %}
                 </div>
                 <br>
                 <div>{{ content.contactOr }} <a href="https://cal.com/ingosteinke" target="_blank" rel="noopener">{{ content.scheduleAMeeting }}</a></div>
