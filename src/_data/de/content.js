@@ -54,6 +54,7 @@ module.exports = {
   "projectsHeading": "Web- und Software-Projekte",
   "projects": "Überzeuge dich selbst von meiner Arbeit! Eine Auswahl meiner bisherigen Projekte:",
   "projectsScreenshots": "Screenshots",
+  "projectWebsite": "Website",
   /* work */
   "workHeading": "Langlebige Lösungen",
   "work": "Deine Layouts realisiere ich plattformübergreifend, responsiv und barrierefrei. Mein Ziel sind langlebige Lösungen, elegant, verständlich und pflegeleicht. Modulare Komponenten, Themes, sowie CSS-Frameworks und Methoden wie BEM und Atomic Design erleichtern die Teamarbeit und Weiterentwicklung. Kontinuierliches Testen ermöglicht mir, Fehler frühzeitig zu entdecken und zu beheben.",

@@ -54,6 +54,7 @@ module.exports = {
   "projectsHeading": "Web and Software Projects",
   "projects": "This is a selection of my past projects. Take a look and see what you think!",
   "projectsScreenshots": "Screenshots",
+  "projectWebsite": "website",
   /* work */
   "workHeading": "Long-Lasting Solutions",
   "work": "I can implement your layouts across platforms in a responsive and accessible way. My goal is to build long-lasting solutions that are elegant, transparent, and easy to maintain. Modular components, themes, as well as CSS frameworks and methodologies like BEM and Atomic Design help to simplify collaboration and further development. Continuous testing allows me to discover and eliminate errors at an early stage.",

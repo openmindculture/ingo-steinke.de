@@ -280,41 +280,8 @@ a.menu-toggle:hover {
   justify-content: space-between;
 }
 
-.grid-container.grid-container--projects {
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  overflow: visible;
-  position: relative;
-  z-index: 2;
-  grid-auto-rows: 227px;
-  grid-auto-rows: minmax(min-content, max-content);
-  grid-template-columns: repeat(auto-fit, 428px);
-  grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
-  grid-column-gap: 1em;
-  /* TODO do we need grid at all?
-       maybe flex-wrap works better and is
-       easier to understand and maintain?
-       */
-}
-
-.grid-container--projects .tile {
-  line-height: 2;
-  border: dashed 1px;
-  margin-left: 2px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 .tile-content {
   padding: 0 1em 0 1em;
-}
-
-.grid-container--projects .hashtag {
-  font-size: 0.95em;
-  background-color: var(--hashtag-default);
-  color: #fff;
-  border-radius: 0;
 }
 
 .code-link {
@@ -340,9 +307,9 @@ a.menu-toggle:hover {
 .bg-peel {
   background:
     linear-gradient(
-      135deg,
+      259deg,
       var(--primary-background) 0%,
-      var(--peel-gradient-semitrans) 15%,
+      var(--peel-gradient-semitrans) 20%,
       var(--peel-gradient) 60%
     );
   height: 100%;
@@ -1331,6 +1298,40 @@ body.high-contrast {
   }
 }
 
+.grid-container.grid-container--projects {
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  overflow: visible;
+  position: relative;
+  z-index: 2;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  grid-auto-rows: var(--project-tile-min-height); /* 382px; */
+  grid-auto-rows: minmax(min-content, max-content);
+  grid-column-gap: 1em;
+  grid-row-gap: 1.5em;
+  /* TODO do we need grid at all?
+       maybe flex-wrap works better and is
+       easier to understand and maintain?
+       */
+}
+
+.grid-container--projects .tile {
+  line-height: 2;
+  border: dashed 1px;
+  margin-left: 2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.grid-container--projects .hashtag {
+  font-size: 0.95em;
+  background-color: var(--hashtag-default);
+  color: #fff;
+  border-radius: 0;
+}
+
 .flip-box-row {
   background-color: transparent;
   width: 100%;
@@ -1345,8 +1346,10 @@ body.high-contrast {
 
 .flip-box-column,
 .flip-box-front,
-.flip-box-back {
-  min-height: 246px;
+.flip-box-back,
+.flip-box-decoration,
+.tile-content {
+  min-height: var(--project-tile-min-height); /* 382px; */
 }
 
 .flip-box-column {
@@ -1364,17 +1367,26 @@ body.high-contrast {
 .flip-box-back {
   display: flex;
   align-items: center;
-  padding: 0 5px 0 5px;
+  padding: 0;
+}
+
+.flip-box-decoration {
+  position: absolute;
+  top: 0;
+  mix-blend-mode: soft-light;
+  opacity: 0.25;
+  display: flex;
+  align-items: center;
 }
 
 .flip-box-front.tile {
   position: relative;
 }
 
-.flip-box-front.tile .poster-image,
-.flip-box-front.tile .tile-content {
+.flip-box-column .poster-image {
+  display: block;
   position: relative;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 

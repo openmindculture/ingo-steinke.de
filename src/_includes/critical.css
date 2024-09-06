@@ -315,6 +315,10 @@ small {
     margin: 0 1em 2em 0;
   }
 
+  .tiled-content#projects {
+    margin-right: 0;
+  }
+
   section,
   .clear {
     clear: both;

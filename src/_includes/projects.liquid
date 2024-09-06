@@ -6,11 +6,14 @@
 
   <div class="grid-container grid-container--projects">
 
-    {%- assign projects = 'kleiderordnung, fractal, foodtogether, daskannstdutun, shopwareplugin, reactapp, portfolio, wordpress, planted' | split: ', ' -%}
+    {%- assign projects = 'kleiderordnung, fractal, foodtogether, daskannstdutun, shopwareplugin, reactapp, portfolio, wordpress, twistedconnection' | split: ', ' -%}
     {%- for project in projects -%}
       {%- assign projectHeadline = '' -%}
       {%- assign projectHashtags = '' -%}
       {%- assign projectImgAlt = '' -%}
+      {%- assign projectImgWidth = '' -%}
+      {%- assign projectImgHeight = '' -%}
+      {%- assign projectLinkUrl = '' -%}
       {%- assign projectDescription = '' -%}
       {%- assign contentfile = '../_data/'
         | appendCurrentLanguageSlug
@@ -23,29 +26,27 @@
       render does not pass variables, but include does, see
       https://stackoverflow.com/questions/74672545/pass-variables-inside-render-to-outside
       maybe liquid is not the right language in a JS context and Nunjucks would be better?
+
+      TODO adjust CSS min heights on mobile!
       {%- endcomment -%}
       <article class="target-offset flip-box-row" id="project-{{ project }}" tabindex="0">
         <div class="flip-box-column">
           <div class="flip-box-front tile">
-            <img
-              src="{{ 'img/screenshot-' | append: project | append: '.png' }}"
-              alt="{{ imgalt }}"
-              width="821"
-              height="478"
-              class="poster-image"
-            >
+            <div class="flip-box-decoration">
+              <img
+                src="{{ 'img/screenshot-' | append: project | append: '.png' }}"
+                alt="{{ imgalt }}"
+                width="{{ projectImgWidth | default: '1265' }}"
+                height="{{ projectImgHeight | default: '1129' }}"
+                class="poster-image"
+                loading="lazy"
+              >
+            </div>
             <div class="tile-content flex bg-peel">
               <header>
                 <h3>{{ projectHeadline }}</h3>
               </header>
-            </div>
-
-          </div>
-          <div class="flip-box-back tile">
-            <div class="tile-content flex bg-peel">
-                <div class="tile-header-repeat">{{ projectHeadline }}</div>
               <p>
-                {{ project | svgIcon }}
                 <span class="text-line">
                 {{ projectDescription }}
               </span>
@@ -53,10 +54,22 @@
               <p>
                 {%- assign hashtagsArray = projectHashtags | split: ' ' -%}
                 {%- for hashtag in hashtagsArray %}
-                <span class="hashtag">{{ hashtag }}</span>
+                  <span class="hashtag">{{ hashtag }}</span>
                 {% endfor -%}
               </p>
             </div>
+          </div>
+          <div class="flip-box-back tile">
+            <a target="_blank" rel="noopener" href="{{ projectLinkUrl }}" title="{{ projectHeadline }} {{ content.projectWebsite }}">
+              <img
+                src="{{ 'img/screenshot-' | append: project | append: '.png' }}"
+                alt="{{ imgalt }}"
+                width="{{ projectImgWidth | default: '1265' }}"
+                height="{{ projectImgHeight | default: '1129' }}"
+                class="poster-image"
+                loading="lazy"
+              >
+            </a>
           </div>
         </div>
       </article>
