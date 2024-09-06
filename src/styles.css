@@ -1324,10 +1324,6 @@ body.high-contrast {
   grid-auto-rows: minmax(min-content, max-content);
   grid-column-gap: 1em;
   grid-row-gap: 1.5em;
-  /* TODO do we need grid at all?
-       maybe flex-wrap works better and is
-       easier to understand and maintain?
-       */
 }
 
 .grid-container--projects .tile {
@@ -1412,13 +1408,22 @@ body.high-contrast {
   height: auto;
 }
 
-@media (max-width: 339.999px) {
-  .flip-box-back.tile {
+@media (max-width: 855px) {
+  .grid-container--projects .flip-box-back.tile {
     border: none;
+  }
+  .flip-box-column .poster-image {
+    max-width: 98vw;
+  }
+  flip-box-front.tile {
+    max-width: calc(100% - 4px);
+  }
+  .flip-box-back {
+    aspect-ratio: 65 / 58;
   }
 }
 
-@media (min-width: 440px) and (prefers-reduced-motion: no-preference) {
+@media (min-width: 856px) and (prefers-reduced-motion: no-preference) {
   .flip-box-row {
     width: 100%;
     height: 100%;
