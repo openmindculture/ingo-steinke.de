@@ -305,6 +305,7 @@ a.menu-toggle:hover {
 }
 
 .bg-peel {
+  position: absolute;
   background:
     linear-gradient(
       259deg,
@@ -312,7 +313,20 @@ a.menu-toggle:hover {
       var(--peel-gradient-semitrans) 20%,
       var(--peel-gradient) 60%
     );
+  width: 100%;
   height: 100%;
+}
+
+body.high-contrast .bg-peel {
+  background: var(--primary-background);
+  opacity: 1;
+}
+
+@media (prefers-reduced-transparency) {
+  .bg-peel {
+    background: var(--primary-background);
+    opacity: 1;
+  }
 }
 
 .hashtags {
@@ -1379,8 +1393,16 @@ body.high-contrast {
   align-items: center;
 }
 
+.flip-box-column .text-line {
+  background: var(--primary-background);
+}
+
 .flip-box-front.tile {
   position: relative;
+}
+
+.flip-box-column .tile-content {
+  position: absolute;
 }
 
 .flip-box-column .poster-image {
@@ -1433,3 +1455,12 @@ body.high-contrast {
   }
 }
 
+body.high-contrast .flip-box-decoration {
+  opacity: 0;
+}
+
+@media (prefers-reduced-transparency) {
+  .flip-box-decoration {
+    opacity: 1;
+  }
+}
