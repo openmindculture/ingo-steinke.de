@@ -1240,6 +1240,7 @@ ul.aside-heading > li:last-child {
   display: inline-block;
   width: auto;
   margin-left: 0.5rem;
+  text-shadow: var(--effect-box-shadow-dropshadow);
 }
 
 figure.testimonial figcaption {
@@ -1356,6 +1357,8 @@ body.high-contrast {
   flex-grow: 1;
   outline: none;
   border: none;
+  /* additional hover zone to prevent hanging/blinking mouse over flip flop */
+  padding-top: 30px;
 }
 
 .flip-box-column,
@@ -1370,6 +1373,7 @@ body.high-contrast {
   position: relative;
   width: 100%;
   height: 100%;
+  top: -30px;
 }
 
 .flip-box-front,
@@ -1431,8 +1435,8 @@ body.high-contrast {
   .flip-box-row {
     width: 100%;
     height: 100%;
-    -webkit-perspective: 800px;
-    perspective: 800px;
+    -webkit-perspective: 5000px;
+    perspective: 5000px;
   }
 
   .flip-box-column {
