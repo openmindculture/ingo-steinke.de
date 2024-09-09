@@ -67,7 +67,12 @@
               </header>
               <p>
                 {% if showicons %}
-                  {{ project | svgIcon }}
+                  <img src="img/icon-{{ project }}.svg"
+                       alt="{{ projectIconAlt }}"
+                       width="{{ projectIconWidth | default: '24' }}"
+                       height="{{ projectIconHeight | default: '24' }}"
+                       class="project-thumb project-thumb--{{ project }}"
+                       loading="lazy">
                 {% endif %}
                 <span class="text-line">
                 {{ projectDescription }}
@@ -102,7 +107,12 @@
             </header>
             <p>
               {% if showicons %}
-                {{ project | svgIcon }}
+                <img src="img/icon-{{ project }}.svg"
+                     alt="{{ projectIconAlt }}"
+                     width="{{ projectIconWidth | default: '24' }}"
+                     height="{{ projectIconHeight | default: '24' }}"
+                      class="project-thumb project-thumb--{{ project }}"
+                loading="lazy">
               {% endif %}
               <span class="text-line">
                 {{ projectDescription }}
