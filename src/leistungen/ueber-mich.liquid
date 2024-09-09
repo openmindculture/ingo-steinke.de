@@ -1,0 +1,463 @@
+---
+tags: addtositemap
+isaboutme: true
+imgdirectory: "../img"
+previewimage: "https://www.ingo-steinke.com/img/preview-sustainability-en.png"
+previewtitle: "Accessible and Climate-Friendly Website Optimization"
+previewdescription: "Websites should be user-friendly and legally compliant. How to respect GDPR, EAA, and the Green Claims directive."
+permalink: "ueber-mich.html"
+alternatelink: "https://www.ingo-steinke.de/ueber-mich/index.html"
+alternatehreflang: "de"
+---
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Webentwickler Ingo Steinke: über mich</title>
+  {% include '../_includes/html-head-common.liquid' %}
+</head>
+<body class="high-contrast">
+<div class="page-container" id="top">
+  <div class="page-content">
+    <header class="jumbotronHeader" id="jumbotronHeader">
+      <br>
+      {% include './_includes/jumbotron-image.liquid' %}
+      <h1>Ingo Steinke: über mich<br>CV, Projekte, Skills</h1>
+      <br>
+    </header>
+    {% include '../_includes/navigation-on-subpages.liquid' %}
+    <main id="content-top" class="target-offset">
+
+      <section class="text-content-layout text-content-color">
+        <article class="text-width">
+          <h2>Alles auf einen Blick</h2>
+          Werdegang/CV, Projektliste und Skillmatrix als PDF herunterladen:
+          <ul>
+            <li><a href="../Ingo-Steinke-CV-Projekte-Skills-2024-nachhaltiger-Webentwickler.pdf" target="_blank"
+                   rel="noopener noreferrer nofollow">Ingo Steinke, Webentwickler, Berlin: CV, Skills, Projekte</a>
+              (deutsch, Stand: Februar 2024)
+            </li>
+            <li><a href="../Ingo-Steinke-CV-Projects-Skills-2024-sustainable-web-developer.pdf" target="_blank"
+                   rel="noopener noreferrer nofollow">Ingo Steinke, web developer, Berlin: CV, skills, projects</a>
+              (englisch, Stand: Februar 2024)
+            </li>
+          </ul>
+        </article>
+
+      </section>
+
+      <section class="text-content-layout text-content-color semitransparent avoid-page-break">
+        <h2 class="target-offset" id="about-me">
+          {{ content.aboutMeHeading }}
+        </h2>
+        <article class="text-width">
+          <header>
+            <h3>
+              {{ content.aboutMeIntroHeading }}
+            </h3>
+          </header>
+          <p class="capitalized"><!-- overcapitalize first letter -->
+            {{ content.aboutMeIntro }}
+          </p>
+
+          <section class="avoid-page-break">
+            <h3>{{ content.aboutMeCvHeading }}</h3>
+            <p>
+              {{ content.aboutMeCv1 }}
+            </p>
+            <p>
+              {{ content.aboutMeCv2 }}
+            </p>
+          </section>
+
+          <section class="avoid-page-break">
+            <h4>{{ content.aboutMeEthicalHeading }}</h4>
+            <p>
+              {{ content.aboutMeEthical }}
+            </p>
+            <p>
+              {{ content.careAboutGoingBeyond }}
+            </p>
+          </section>
+
+        </article>
+      </section>
+
+      {% include './_includes/projects.liquid' %}
+
+      <section class="text-content-layout text-content-color avoid-page-break">
+        <h2 class="target-offset" id="work">
+          {{ content.workHeading }}
+        </h2>
+        <article class="text-width">
+          <p>
+            {{ content.work }}
+          </p>
+
+          <p>
+            {{ content.workOwnFocus }} {{ content.workFullstack }}
+          </p>
+
+          <h3>{{ content.workTeamHeading }}</h3>
+          <p>
+            {{ content.workTeam }}
+          </p>
+
+          <h3>{{ content.workReliableHeading }}</h3>
+          <p>
+            {{ content.workReliable }}
+            {{ content.workClientsBenefit }}
+          </p>
+
+          <h3 class="target-offset" id="zertifizierter-shopware-entwickler">{{ content.workCertifiedHeading }}</h3>
+          <p>
+            {{ content.workCertifiedIam }}
+            <a href="{{ content.landingLinkUrlShopware }}">{{ content.workCertifiedSWDev }}</a>
+            {{ content.workCertifiedAnd }}
+            <a href="{{ content.workCertifiedSWDevPartnerPageUrl }}"
+               target="_blank"
+               rel="noopener"
+            >{{ content.workCertifiedExtensionPartner }}</a>.
+            <a
+              href="https://github.com/openmindculture"
+              hreflang="en"
+              target="_blank"
+              rel="me noopener"
+            >{{ content.workCertifiedSustainableSourceCodeLinkText }}</a>
+            {{ content.workCertifiedSustainable2 }}
+            <a href="#website-carbon-certified">
+              {{ content.workCertifiedSustainableFootprintLinkText }}
+            </a>
+            {{ content.workCertifiedSustainable3 }}
+          </p>
+        </article>
+      </section>
+
+      <section class="no-print text-content-layout services-wrapper avoid-page-break">
+        <h3 id="services" class="font-sans target-offset">{{ content.services }}</h3>
+        <ul class="grid-container services">
+          <li class="tile text-content-color">
+            <h4 class="font-sans">{{ content.servicesBuildTitle }}</h4>
+            <ul>
+              <li>{{ content.servicesBuild1 }}</li>
+              <li>{{ content.servicesBuild2 }}</li>
+              <li>{{ content.servicesBuild3 }}</li>
+              <li>{{ content.servicesBuild4 }}</li>
+            </ul>
+            <a href="{{ content.servicesBuildMoreLinkPath }}" class="buttonlike" title="{{ content.servicesBuildMoreLinkTitle }}">{{ content.servicesBuildMoreLinkText }}!</a>
+          </li>
+          <li class="tile text-content-color">
+            <h4 class="font-sans">{{ content.servicesVerifyTitle }}</h4>
+            <ul>
+              <li>{{ content.servicesVerify1 }}</li>
+              <li>{{ content.servicesVerify2 }}</li>
+              <li>{{ content.servicesVerify3 }}</li>
+              <li>{{ content.servicesVerify4 }}</li>
+            </ul>
+            <a class="buttonlike" href="{{ content.servicesVerifyMoreLinkPath }}" title="{{ content.servicesVerifyMoreLinkTitle }}">{{ content.servicesVerifyMoreLinkText }}!</a>
+          </li>
+          <li class="tile text-content-color">
+            <h4 class="font-sans">{{ content.servicesImproveTitle }}</h4>
+            <ul>
+              <li>{{ content.servicesImprove1 }}</li>
+              <li>{{ content.servicesImprove2 }}</li>
+              <li>{{ content.servicesImprove3 }}</li>
+              <li>{{ content.servicesImprove4 }}</li>
+            </ul>
+            <a class="buttonlike" href="{{ content.servicesImproveMoreLinkPath }}" title="{{ content.servicesImproveMoreLinkTitle }}">{{ content.servicesImproveMoreLinkText }}!</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="text-content-layout skills-wrapper avoid-page-break">
+        <h3 id="skills" class="font-sans target-offset">{{ content.SkillsHeading }}</h3>
+        <ul class="grid-container skills">
+          <li class="tile">
+            <h4 class="font-sans">{{ content.SkillsWebdevHeading }}</h4>
+            <ul>
+              <li>
+                <span>Markup, Templating</span>
+                <div class="hashtags">
+                  <span class="hashtag brand-orange" title="HTML 5">HTML 5</span>
+                  <span class="hashtag brand-green" title="Markdown">MD</span>
+                  <span class="hashtag brand-blue-liquid">Freemarker</span>
+                  <span class="hashtag brand-blue-light">Liquid</span>
+                  <span class="hashtag brand-green-twig">Twig</span>
+                  <span class="hashtag brand-beige">handlebars</span>
+                </div>
+              </li>
+              <li>
+                <span>CSS</span>
+                <div class="hashtags">
+                  <span class="hashtag brand-green" title="CSS3">CSS 3</span>
+                  <span class="hashtag brand-purple">SCSS</span>
+                  <span class="hashtag brand-red-light">PostCSS</span>
+                  <span class="hashtag brand-blue-light">tailwind</span>
+                  <span class="hashtag brand-blue-less">less</span>
+                  <span class="hashtag brand-purple-dark">Bootstrap</span>
+                </div>
+              </li>
+              <li>
+                <span>JavaScript</span>
+                <div class="hashtags">
+                  <span class="hashtag brand-yellow" title="ECMAScript 6">ES6</span>
+                  <span class="hashtag brand-blue">TypeScript</span>
+                  <span class="hashtag brand-green">Node.js</span>
+                  <span class="hashtag brand-blue">jQuery</span>
+                  <span class="hashtag brand-blue-light">React</span>
+                  <span class="hashtag brand-vanilla" title="Vanilla JavaScript">VanillaJS</span>
+                </div>
+              </li>
+
+              <li>
+                <span>PHP</span>
+                <div class="hashtags">
+                  <span class="hashtag brand-blue-php">PHP 7</span>
+                  <span class="hashtag brand-blue-php8">PHP 8</span>
+                  <span class="hashtag brand-yellow">Symfony</span>
+                  <span class="hashtag brand-coral">Composer</span>
+                  <span class="hashtag brand-green-twig">PHPStan</span>
+                </div>
+              </li>
+              <li>
+                <span>{{ content.SkillsWebdevDb }}</span>
+                <div class="hashtags">
+                  <span class="hashtag brand-yellow">MySQL</span>
+                  <span class="hashtag brand-red-dark">Oracle</span>
+                  <span class="hashtag brand-green">mongoDB</span>
+                  <span class="hashtag brand-gray-light">Mongoose</span>
+                </div>
+              </li>
+              <li>
+                <span>XML</span>
+                <div class="hashtags">
+                  <span class="hashtag brand-yellow">XPath</span>
+                  <span class="hashtag brand-purple">XSLT</span>
+                  <span class="hashtag brand-red-dark">SOAP</span>
+                  <span class="hashtag brand-gray">UBL</span>
+                </div>
+              </li>
+
+            </ul>
+          </li>
+          <li class="tile">
+            <h4 class="font-sans">{{ content.SkillsLib }}</h4>
+            <ul>
+              <li>
+                <span>JAM Stack, {{ content.SkillsLibStaticSiteGenerators }}</span>
+                <div class="hashtags">
+                  <span class="hashtag brand-yellow">JavaScript</span>
+                  <span class="hashtag brand-gray" title="11ty">Eleventy</span>
+                  <span class="hashtag brand-green">Markdown</span>
+                  <span class="hashtag brand-blue-liquid">Liquid</span>
+                  <span class="hashtag brand-red-dark">npm</span>
+                </div>
+              </li>
+              <li>
+                <span>{{ content.SkillsLibDesignSystems }}</span>
+                <div class="hashtags">
+                  <span class="hashtag brand-blue-purplish">fractal</span>
+                  <span class="hashtag brand-purple">SCSS</span>
+                  <span class="hashtag brand-orange">Handlebars</span>
+                  <span class="hashtag brand-blue-liquid">Webpack</span>
+                  <span class="hashtag brand-yellow">CodeceptJS</span>
+                </div>
+              </li>
+              <li>
+                <span>Shopware 6</span>
+                <div class="hashtags">
+                  <span class="hashtag brand-blue-purplish">Shopware</span>
+                  <span class="hashtag brand-red-dark">Bootstrap</span>
+                  <span class="hashtag brand-purple">SCSS</span>
+                  <span class="hashtag brand-yellow">JS</span>
+                  <span class="hashtag brand-green-twig">Twig</span>
+                  <span class="hashtag brand-yellow">Symfony</span>
+                </div>
+              </li>
+              <li>
+                <span>WordPress</span>
+                <div class="hashtags">
+                  <span class="hashtag brand-blue-less">WordPress</span>
+                  <span class="hashtag brand-blue-php">PHP</span>
+                  <span class="hashtag brand-orange">HTML</span>
+                  <span class="hashtag brand-green">CSS</span>
+                  <span class="hashtag brand-yellow">JS</span>
+                  <span class="hashtag brand-purple">WooCommerce</span>
+                </div>
+              </li>
+              <li>
+                <span>LAMP Stack</span>
+                <div class="hashtags">
+                  <span class="hashtag brand-blue-less">Linux</span>
+                  <span class="hashtag brand-red-light">Apache</span>
+                  <span class="hashtag brand-yellow">MySQL</span>
+                  <span class="hashtag brand-blue-php">PHP</span>
+                  <span class="hashtag brand-green">nginx</span>
+                </div>
+              </li>
+              <li>
+                <span>MERN Stack</span>
+                <div class="hashtags">
+                  <span class="hashtag brand-green">mongoDB</span>
+                  <span class="hashtag brand-red-light">Express</span>
+                  <span class="hashtag brand-purple-dark">(P)react</span>
+                  <span class="hashtag brand-green">Node.js</span>
+                  <span class="hashtag brand-blue">TypeScript</span>
+                  <span class="hashtag brand-blue-php8">yarn</span>
+                </div>
+              </li>
+            </ul>
+          </li>
+
+          <li class="tile tile--verbose">
+            <h4 class="font-sans">{{ content.SkillsOther }}</h4>
+            <ul>
+              <li>
+                <span>{{ content.SkillsOtherQa }}</span>
+                <div class="hashtags">
+                  <span class="hashtag brand-orange">Axe</span>
+                  <span class="hashtag brand-coral">Lighthouse</span>
+                  <span class="hashtag brand-beige">Storybook</span>
+                  <span class="hashtag brand-yellow">CodeceptJS</span>
+                  <span class="hashtag brand-yellow-dark">Browserstack</span>
+                </div>
+              </li>
+              <li>
+                <span>{{ content.SkillsOtherLinter }}</span>
+                <div class="hashtags">
+                  <span class="hashtag brand-blue">TypeScript</span>
+                  <span class="hashtag brand-yellow">Babel</span>
+                  <span class="hashtag brand-coral">Stylelint</span>
+                  <span class="hashtag brand-beige">eslint</span>
+                  <span class="hashtag brand-green">esbuild</span>
+                  <span class="hashtag brand-red-light">PostCSS</span>
+                </div>
+              </li>
+              <li>
+                <span>{{ content.SkillsDevuxImg }}</span>
+                <div class="hashtags">
+                  <span class="hashtag brand-red">Scrum</span>
+                  <span class="hashtag brand-purple-dark">Kanban</span>
+                  <span class="hashtag brand-blue-less">Jira</span>
+                  <span class="hashtag brand-red-dark">Trello</span>
+                  <span class="hashtag brand-orange">fractal</span>
+                  <span class="hashtag brand-coral">asana</span>
+                  <span class="hashtag brand-gray-light">GitHub</span>
+                </div>
+              </li>
+              <li>
+                <span>{{ content.SkillsOtherVcs }}</span>
+                <div class="hashtags">
+                  <span class="hashtag brand-red-dark">Git</span>
+                  <span class="hashtag brand-red-light">GitLab</span>
+                  <span class="hashtag brand-gray-light">GitHub</span>
+                  <span class="hashtag brand-green">SVN</span>
+                </div>
+              </li>
+              <li>
+                <span>{{ content.SkillsOtherDevops }}</span>
+                <div class="hashtags">
+                  <span class="hashtag brand-blue">Docker</span>
+                  <span class="hashtag brand-red">Jenkins</span>
+                  <span class="hashtag brand-blue-php8">Snowpack</span>
+                  <span class="hashtag brand-blue-liquid">Webpack</span>
+                  <span class="hashtag brand-green">Netlify</span>
+                </div>
+              </li>
+              <li>
+                <span>{{ content.SkillsOtherImg }}</span>
+                <div class="hashtags">
+                  <span class="hashtag brand-brown-light">GIMP</span>
+                  <span class="hashtag brand-gray-dark">Inkscape</span>
+                  <span class="hashtag brand-yellow">ImageMagick</span>
+                  <span class="hashtag brand-beige">SVG</span>
+                  <span class="hashtag brand-green-twig">webp</span>
+                  <span class="hashtag brand-orange">guetzli</span>
+                </div>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+      </section>
+
+      <section class="text-content-layout text-content-color semitransparent avoid-page-break">
+        <article class="text-width">
+
+          <section class="avoid-page-break">
+            <h3 class="target-offset" id="testimonials">{{ content.testimonials }}</h3>
+            <div class="testimonials">
+              <figure class="testimonial">
+                <figcaption>
+                  {{ content.testimonialDanielaAuthor }}:
+                  <span class="stars" title="{{ content.testimonialsFiveStarRating }}"></span>
+                </figcaption>
+                <blockquote>{{ content.testimonialDanielaQuote }}</blockquote>
+              </figure>
+              <figure class="testimonial">
+                <figcaption>
+                  {{ content.testimonialMalteAuthor }}:
+                  <span class="stars" title="{{ content.testimonialsFiveStarRating }}"></span>
+                </figcaption>
+                <blockquote>{{ content.testimonialMalteQuote }}</blockquote>
+              </figure>
+              <figure class="testimonial">
+                <figcaption>
+                  {{ content.testimonialPatriciaAuthor }}:
+                  <span class="stars" title="{{ content.testimonialsFiveStarRating }}"></span>
+                </figcaption>
+                <blockquote>{{ content.testimonialPatriciaQuote }}</blockquote>
+              </figure>
+            </div>
+
+            <p class="no-print">
+              <a href="{{ content.testimonialsReadMoreLinkUrl1 }}" target="_blank" rel="nofollow noopener">
+                {{ content.testimonialsReadMoreText1 }}...
+              </a>
+            </p>
+          </section>
+
+          <figure class="content-image">
+            <picture>
+              <source
+                type="image/webp"
+                sizes="100vw"
+                srcset="img/Ingo-Steinke-NCA-TV-2021-800x443.webp 1x,
+                    img/Ingo-Steinke-NCA-TV-2021-400x222.webp 2x,
+                    img/Ingo-Steinke-NCA-TV-2021-800x443.webp 4x"
+              >
+              <img
+                src="img/Ingo-Steinke-NCA-TV-2021-800x443.jpg"
+                srcset="img/Ingo-Steinke-NCA-TV-2021-400x222.jpg 400w,
+                          img/Ingo-Steinke-NCA-TV-2021-800x443.jpg 800w"
+                sizes="(min-width: 800px) 800px, 100vw"
+                width="800"
+                height="443"
+                alt="{{ content.talksImageAlt }}"
+                loading="lazy"
+              >
+            </picture>
+            <figcaption>
+              {{ content.talksImageCaption }}:
+              <a href="https://blog.nevercodealone.de/php-testing-refactoring-nca-conference-duisburg/" target="_blank" rel="noopener">
+                {{ content.talksImageLinkText }}
+              </a>
+            </figcaption>
+          </figure>
+        </article>
+
+        <h3 id="interested">{{ content.interestedHeading }}</h3>
+        <p>
+          {{ content.interested }}
+        </p>
+      </section>
+
+      <br>
+
+      {% include '../_includes/section-imprint-contact.liquid' %}
+    </main>
+    {% include '../_includes/page-footer-on-subpages.liquid' %}
+  </div>
+</div>
+</body>
+</html>

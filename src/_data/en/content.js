@@ -33,6 +33,7 @@ module.exports = {
   "targetServices": "services",
   "targetSkills": "skills",
   "targetAboutMe": "about me",
+  "targetAboutMeUrl": "about-me.html",
   "targetTalksEvents": "talks",
   "targetContact": "contact",
   "targetImprint": "imprint",

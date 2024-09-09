@@ -166,7 +166,7 @@
                 <ul>
                   <li><a href="#projects">{{ content.targetProjects }}</a></li>
                   <li><a href="#services">{{ content.targetServices }}</a></li>
-                  <li><a href="#about-me">{{ content.targetAboutMe }}</a></li>
+                  <li><a href="{{ content.targetAboutMeUrl }}">{{ content.targetAboutMe }}#about-me</a></li>
                   <li><a href="#contact">{{ content.targetContact }}</a></li>
                   <li><a href="#imprint">{{ content.targetImprint }}</a></li>
                   <li><a href="#privacy">{{ content.targetPrivacy }}</a></li>
@@ -207,10 +207,10 @@
         </div>
 
         <main id="content-top" class="target-offset">
-          <section class="text-content-layout text-content-color">
+          <section class="text-content-layout text-content-color" id="about-me">
             <h2>{{ content.introHeading }}</h2>
             <article class="text-width">
-              <!-- article lacks heading -->
+              {% comment %} article lacks heading {% endcomment %}
               <p>
                 {{ content.intro }}
               </p>
@@ -530,182 +530,7 @@
             </ul>
           </section>
 
-          <section class="text-content-layout text-content-color semitransparent avoid-page-break">
-            <h2 class="target-offset" id="about-me">
-              {{ content.aboutMeHeading }}
-            </h2>
-            <article class="text-width">
-              <header>
-                <h3>
-                  {{ content.aboutMeIntroHeading }}
-                </h3>
-              </header>
-              <p class="capitalized"><!-- overcapitalize first letter -->
-                {{ content.aboutMeIntro }}
-              </p>
-
-              <section class="avoid-page-break">
-                <h3>{{ content.aboutMeCvHeading }}</h3>
-                <p>
-                  {{ content.aboutMeCv1 }}
-                </p>
-                <p>
-                  {{ content.aboutMeCv2 }}
-                </p>
-              </section>
-
-              <section class="avoid-page-break">
-                <h4>{{ content.aboutMeEthicalHeading }}</h4>
-                <p>
-                  {{ content.aboutMeEthical }}
-                </p>
-                <p>
-                  {{ content.careAboutGoingBeyond }}
-                </p>
-
-                <h4>{{ content.memberships }}</h4>
-                <p>
-                  {{ content.currentlyEcologicalIam }}
-                  <a href="https://www.reflecta.network/changemaker/ingo-steinke?ref=f181cba6-ddc9-4791-b579-b02c3be47206" target="_blank" rel="noopener">
-                    Changemaker</a>,
-                  <a href="https://fairantwortung.org/uber-ingo-steinke/" target="_blank" rel="noopener">
-                    Fairantworter</a>,
-                  <a href="https://greencompanion.de/detail/web-entwicklung" target="_blank" rel="noopener">
-                    Green Companion</a> {{ content.andA }} {{ content.memberOf }}
-                  <a href="https://berlin.impacthub.net" target="_blank" rel="noopener">Impact Hub Berlin</a>.
-                </p>
-              </section>
-
-              <section class="avoid-page-break">
-                <h3 class="target-offset" id="talks-events">{{ content.talksHeading }}</h3>
-                <p>
-                  {{ content.aboutMeAtDev }} <a
-                    href="https://dev.to/ingosteinke"
-                    target="_blank"
-                    rel="noopener"
-                  >{{ content.aboutMeDevBlog }}</a> <span class="only-print inline">(dev.to/ingosteinke) </span>{{ content.aboutMeAndOn }} <a
-                    href="https://www.open-mind-culture.org/"
-                    target="_blank"
-                    rel="noopener"
-                  >{{ content.aboutMeOMCLinkText }}</a> {{ content.aboutMeIRegularly }}
-                </p>
-              </section>
-
-              <figure class="content-image">
-                <picture>
-                  <source
-                    type="image/webp"
-                    sizes="100vw"
-                    srcset="img/Ingo-Steinke-NCA-TV-2021-800x443.webp 1x,
-                    img/Ingo-Steinke-NCA-TV-2021-400x222.webp 2x,
-                    img/Ingo-Steinke-NCA-TV-2021-800x443.webp 4x"
-                  >
-                  <img
-                    src="img/Ingo-Steinke-NCA-TV-2021-800x443.jpg"
-                    srcset="img/Ingo-Steinke-NCA-TV-2021-400x222.jpg 400w,
-                          img/Ingo-Steinke-NCA-TV-2021-800x443.jpg 800w"
-                    sizes="(min-width: 800px) 800px, 100vw"
-                    width="800"
-                    height="443"
-                    alt="{{ content.talksImageAlt }}"
-                    loading="lazy"
-                  >
-                </picture>
-                <figcaption>
-                  {{ content.talksImageCaption }}:
-                  <a href="https://blog.nevercodealone.de/php-testing-refactoring-nca-conference-duisburg/" target="_blank" rel="noopener">
-                    {{ content.talksImageLinkText }}
-                  </a>
-                </figcaption>
-              </figure>
-
-              <p>
-              {{ content.talks2 }}
-                <ul>
-                  <li>
-                    <a
-                      href="https://www.meetup.com/cologne-germany-high-performance-website-optimization-group/events/274558354/"
-                      hreflang="de"
-                      target="_blank"
-                      rel="noopener"
-                    >
-                      {{ content.talkMeetupWebVitals }}
-                    </a>
-                    {{ content.talkMeetupWebVitals2 }}
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.meetup.com/cologne-germany-high-performance-website-optimization-group/events/268706480/"
-                      hreflang="de"
-                      target="_blank"
-                      rel="noopener"
-                    >
-                      {{ content.talkPerformanceNoCode }}
-                    </a> {{ content.talkPerformanceNoCode2 }}
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.meetup.com/cologne-germany-high-performance-website-optimization-group/events/255856182/"
-                      hreflang="de"
-                      target="_blank"
-                      rel="noopener"
-                    >
-                      {{ content.talkHsts }}
-                    </a>
-                    {{ content.talkHsts2 }}
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.meetup.com/cologne-germany-high-performance-website-optimization-group/events/zdnjlmywhbgb/"
-                      hreflang="de"
-                      target="_blank"
-                      rel="noopener"
-                    >
-                      {{ content.talkInfrastructure }}
-                    </a>
-                    {{ content.talkInfrastructure2 }}
-                  </li>
-                </ul>
-
-                <h3 id="testimonials">{{ content.testimonials }}</h3>
-                <div class="testimonials">
-                  <figure class="testimonial">
-                    <figcaption>
-                      {{ content.testimonialDanielaAuthor }}:
-                      <span class="stars" title="{{ content.testimonialsFiveStarRating }}"></span>
-                    </figcaption>
-                    <blockquote>{{ content.testimonialDanielaQuote }}</blockquote>
-                  </figure>
-                  <figure class="testimonial">
-                    <figcaption>
-                      {{ content.testimonialMalteAuthor }}:
-                      <span class="stars" title="{{ content.testimonialsFiveStarRating }}"></span>
-                    </figcaption>
-                    <blockquote>{{ content.testimonialMalteQuote }}</blockquote>
-                  </figure>
-                  <figure class="testimonial">
-                    <figcaption>
-                      {{ content.testimonialPatriciaAuthor }}:
-                      <span class="stars" title="{{ content.testimonialsFiveStarRating }}"></span>
-                    </figcaption>
-                    <blockquote>{{ content.testimonialPatriciaQuote }}</blockquote>
-                  </figure>
-                </div>
-
-                <p class="no-print">
-                  <a href="{{ content.testimonialsReadMoreLinkUrl1 }}" target="_blank" rel="nofollow noopener">
-                    {{ content.testimonialsReadMoreText1 }}...
-                  </a>
-                </p>
-
-              <div class="only-print"><br></div>
-
-                <h3 id="interested">{{ content.interestedHeading }}</h3>
-                <p>
-                  {{ content.interested }}
-                </p>
-            </article>
-          </section>
+          {% comment %}about-me moved to sub page{% endcomment %}
 
           <section class="imprint-contact">
             <div class="aside-heading center target-offset" id="imprint">
@@ -753,8 +578,6 @@
                   {% include './_includes/contactform.liquid' %}
                 </div>
                 <br>
-                <div>{{ content.contactOr }} <a href="https://cal.com/ingosteinke" target="_blank" rel="noopener">{{ content.scheduleAMeeting }}</a></div>
-
 
                 <div class="only-print">
                   <a class="url" rel="author" href="{{ content.canonicalHref }}">{{ content.shortHref }}</a>
