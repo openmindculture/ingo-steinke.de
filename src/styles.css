@@ -1363,7 +1363,7 @@ body.high-contrast {
   outline: none;
   border: none;
   /* additional hover zone to prevent hanging/blinking mouse over flip flop */
-  padding-top: 30px;
+  padding-top: 24px;
 }
 
 .flip-box-column,
@@ -1378,7 +1378,7 @@ body.high-contrast {
   position: relative;
   width: 100%;
   height: 100%;
-  top: -30px;
+  top: -24px;
 }
 
 .flip-box-front,
@@ -1402,10 +1402,6 @@ body.high-contrast {
   align-items: center;
 }
 
-.flip-box-column .text-line {
-  background: var(--primary-background);
-}
-
 .flip-box-front.tile {
   position: relative;
 }
@@ -1422,9 +1418,6 @@ body.high-contrast {
 }
 
 @media (max-width: 1307px) {
-  .grid-container--projects .flip-box-back.tile {
-    border: none;
-  }
   .flip-box-column .poster-image {
     max-width: 98vw;
   }
