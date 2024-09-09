@@ -23,13 +23,22 @@ module.exports = function (eleventyConfig) {
     }
   });
 
-  eleventyConfig.addLiquidFilter("svgIcon", function(slug) {
+  eleventyConfig.addLiquidFilter('svgIcon', function(slug) {
     let markup = '<img src="img/icon-' + slug + '.svg"';
     markup += 'width="24" height="24"';
     markup += 'class="project-thumb project-thumb--' + slug +  '"'
     markup += 'loading="lazy" alt=""'
     markup += '>';
     return markup;
+  });
+
+  eleventyConfig.addLiquidFilter( 'unprefixedHumanReadableUrl', function(url) {
+    url = url.replace(/^https?:\/\//, '');
+    url = url.replace(/^www\./, '');
+    url = url.replace(/^ingo-steinke\.de/, '');
+    url = url.replace(/^ingo-steinke\.com/, '');
+    url = url.replace(/\/$/, '');
+    return url;
   });
 
   // postcss shortcut for inline code; external css files are handles by postcss
