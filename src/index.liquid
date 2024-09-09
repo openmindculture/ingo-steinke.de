@@ -232,7 +232,38 @@
             </article>
           </section>
 
-          {% include './_includes/projects.liquid', showflipsides: 'showflipsides' %}
+          <section class="tiled-content target-offset" id="projects">
+            <div class="pl1">
+              <h2>{{ content.projectsHeading }}</h2>
+
+          <div class="tiled-content target-offset" id="projects">
+            <div class="pl1">
+              <h2></h2>
+              <p>
+                {% if showallprojects %}
+                  {{ content.projectsHereAreSome }}:
+                {% else %}
+                  {{ content.projects }}
+                {% endif %}
+              </p>
+            </div>
+
+            <section class="tiled-content target-offset" id="projects">
+
+              {% include './_includes/projects.liquid', showflipsides: 'showflipsides' %}
+
+              {% include './_includes/projects.liquid', showicons: 'showicons', projectlist: 'fractal, portfolio, daskannstdutun' %}
+                  {% if showallprojects %}{% else %}
+                    <div class="pl1 transparent">
+                      {{ content.projectsMore1 }} <a href="{{ content.targetAboutMeUrl }}#projects">
+                        {{ content.projectsMoreLinkText }}
+                      </a>.
+                    </div>
+                  {% endif %}
+
+              </section>
+
+
 
           <section class="text-content-layout text-content-color avoid-page-break">
             <h3 id="testimonials">{{ content.testimonials }}</h3>

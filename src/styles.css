@@ -142,6 +142,11 @@ body.high-contrast .alternating-div-color > div:nth-child(2n-1):not(.no-alternat
 .page-footer a:active,
 .page-footer a:focus,
 .page-footer a:hover,
+.transparent a:link,
+.transparent a:visited,
+.transparent a:active,
+.transparent a:focus,
+.transparent a:hover,
 a.menu-toggle:link,
 a.menu-toggle:visited,
 a.menu-toggle:active,
@@ -185,6 +190,8 @@ a.menu-toggle:hover {
 .vcard a:hover,
 .page-footer a:focus,
 .page-footer a:hover,
+.transparent a:focus,
+.transparent a:hover,
 a.menu-toggle:focus,
 a.menu-toggle:hover {
   color: #000;

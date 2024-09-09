@@ -25,7 +25,7 @@ alternatehreflang: "de"
       <h1>Ingo Steinke: über mich<br>CV, Projekte, Skills</h1>
       <br>
     </header>
-    {% include '../_includes/navigation-on-subpages.liquid' %}
+    {% include '../_includes/navigation-on-subpages.liquid', headerClassName: 'wide' %}
     <main id="content-top" class="target-offset">
 
       <section class="text-content-layout text-content-color">
@@ -84,8 +84,9 @@ alternatehreflang: "de"
 
       {% include './_includes/projects.liquid', showallprojects: 'showallprojects', showicons: 'showicons'  %}
 
+      <br>
       <span id="services"></span>
-      {% include './_includes/skills.liquid', showallskills: 'showallskills', skillsTitle: 'Leistungen: Fachkenntnisse (Skills)'  %}
+      {% include './_includes/skills.liquid', showallskills: 'showallskills', skillsTitle: 'Leistungen / Fachkenntnisse / Skills'  %}
 
       <section class="tiled-content target-offset"><!-- TODO improve layout -->
         <h3 id="interested">{{ content.interestedHeading }}</h3>

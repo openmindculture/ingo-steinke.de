@@ -52,7 +52,7 @@ module.exports = {
   "workWithMe":"Do you want to overhaul your website? Does your team need support from a front-end developer with full-stack experience?",
   "ctaContact": "Call me or leave a message!",
   "workWithMe2": "I'm happy to discuss your project with no obligations over a coffee in Berlin, via Zoom, or in a phone call.",
-  "projectsHeading": "Web and Software Projects",
+  "projectsHeading": "Projects",
   "projects": "Take a look and see what you think!",
   "projectsMore1": "You can find",
   "projectsMoreLinkText": "more projects on the page about me",
@@ -102,7 +102,7 @@ module.exports = {
   "SkillsOtherLinter": "Linters, Bundlers, Transpilers",
   "SkillsOtherDevops": "DevOps, Automation",
   "SkillsDevuxImg": "Collaboration, Project Management",
-  "SkillsOtherImg": "Image Editing, Image Optimization",
+  "SkillsOtherImg": "Image Editing",
   /* About me, talks, and events */
   "aboutMeHeading": "About Me: Work And Passion",
   "aboutMeIntroHeading": "What Still Fascinates Me",
