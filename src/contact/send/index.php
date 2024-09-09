@@ -180,7 +180,7 @@ if ( $config_verbose ) {
   $message .= "HTTP_USER_AGENT: " . $_SERVER['HTTP_USER_AGENT'] . "\r\n";
 }
 
-if (!empty($message)) {
+if (!empty($message) && !$suspectedSpam) {
   $headers = 'MIME-Version: 1.0' . "\r\n".
     'Content-Type: text/plain; charset=UTF-8' . "\r\n".
     'From: ' . $config_from . "\r\n".
