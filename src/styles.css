@@ -305,7 +305,6 @@ a.menu-toggle:hover {
 }
 
 .bg-peel {
-  position: absolute;
   background:
     linear-gradient(
       259deg,
@@ -1324,6 +1323,11 @@ body.high-contrast {
   grid-auto-rows: minmax(min-content, max-content);
   grid-column-gap: 1em;
   grid-row-gap: 1.5em;
+}
+
+.grid-container.grid-container--projects.flip-box-container {
+  grid-auto-rows: var(--project-tile-min-height); /* 382px; */
+  grid-auto-rows: minmax(min-content, max-content);
 }
 
 .grid-container--projects .tile {
