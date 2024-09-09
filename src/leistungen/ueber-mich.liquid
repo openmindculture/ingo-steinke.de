@@ -43,7 +43,6 @@ alternatehreflang: "de"
             </li>
           </ul>
         </article>
-
       </section>
 
       <section class="text-content-layout text-content-color semitransparent avoid-page-break">
@@ -83,97 +82,11 @@ alternatehreflang: "de"
         </article>
       </section>
 
-      {% include './_includes/projects.liquid' %}
-
-      <section class="text-content-layout text-content-color avoid-page-break">
-        <h2 class="target-offset" id="work">
-          {{ content.workHeading }}
-        </h2>
-        <article class="text-width">
-          <p>
-            {{ content.work }}
-          </p>
-
-          <p>
-            {{ content.workOwnFocus }} {{ content.workFullstack }}
-          </p>
-
-          <h3>{{ content.workTeamHeading }}</h3>
-          <p>
-            {{ content.workTeam }}
-          </p>
-
-          <h3>{{ content.workReliableHeading }}</h3>
-          <p>
-            {{ content.workReliable }}
-            {{ content.workClientsBenefit }}
-          </p>
-
-          <h3 class="target-offset" id="zertifizierter-shopware-entwickler">{{ content.workCertifiedHeading }}</h3>
-          <p>
-            {{ content.workCertifiedIam }}
-            <a href="{{ content.landingLinkUrlShopware }}">{{ content.workCertifiedSWDev }}</a>
-            {{ content.workCertifiedAnd }}
-            <a href="{{ content.workCertifiedSWDevPartnerPageUrl }}"
-               target="_blank"
-               rel="noopener"
-            >{{ content.workCertifiedExtensionPartner }}</a>.
-            <a
-              href="https://github.com/openmindculture"
-              hreflang="en"
-              target="_blank"
-              rel="me noopener"
-            >{{ content.workCertifiedSustainableSourceCodeLinkText }}</a>
-            {{ content.workCertifiedSustainable2 }}
-            <a href="#website-carbon-certified">
-              {{ content.workCertifiedSustainableFootprintLinkText }}
-            </a>
-            {{ content.workCertifiedSustainable3 }}
-          </p>
-        </article>
-      </section>
-
-      <section class="no-print text-content-layout services-wrapper avoid-page-break">
-        <h3 id="services" class="font-sans target-offset">{{ content.services }}</h3>
-        <ul class="grid-container services">
-          <li class="tile text-content-color">
-            <h4 class="font-sans">{{ content.servicesBuildTitle }}</h4>
-            <ul>
-              <li>{{ content.servicesBuild1 }}</li>
-              <li>{{ content.servicesBuild2 }}</li>
-              <li>{{ content.servicesBuild3 }}</li>
-              <li>{{ content.servicesBuild4 }}</li>
-            </ul>
-            <a href="{{ content.servicesBuildMoreLinkPath }}" class="buttonlike" title="{{ content.servicesBuildMoreLinkTitle }}">{{ content.servicesBuildMoreLinkText }}!</a>
-          </li>
-          <li class="tile text-content-color">
-            <h4 class="font-sans">{{ content.servicesVerifyTitle }}</h4>
-            <ul>
-              <li>{{ content.servicesVerify1 }}</li>
-              <li>{{ content.servicesVerify2 }}</li>
-              <li>{{ content.servicesVerify3 }}</li>
-              <li>{{ content.servicesVerify4 }}</li>
-            </ul>
-            <a class="buttonlike" href="{{ content.servicesVerifyMoreLinkPath }}" title="{{ content.servicesVerifyMoreLinkTitle }}">{{ content.servicesVerifyMoreLinkText }}!</a>
-          </li>
-          <li class="tile text-content-color">
-            <h4 class="font-sans">{{ content.servicesImproveTitle }}</h4>
-            <ul>
-              <li>{{ content.servicesImprove1 }}</li>
-              <li>{{ content.servicesImprove2 }}</li>
-              <li>{{ content.servicesImprove3 }}</li>
-              <li>{{ content.servicesImprove4 }}</li>
-            </ul>
-            <a class="buttonlike" href="{{ content.servicesImproveMoreLinkPath }}" title="{{ content.servicesImproveMoreLinkTitle }}">{{ content.servicesImproveMoreLinkText }}!</a>
-          </li>
-        </ul>
-      </section>
-
-      <section class="text-content-layout skills-wrapper avoid-page-break">
-        <h3 id="skills" class="font-sans target-offset">{{ content.SkillsHeading }}</h3>
+      <section class="skills-wrapper avoid-page-break" id="skills">
+        <h3 id="services" class="font-sans target-offset">{{ content.SkillsHeading }}</h3>
         <ul class="grid-container skills">
           <li class="tile">
-            <h4 class="font-sans">{{ content.SkillsWebdevHeading }}</h4>
+            <h4 class="font-sans">Leistungen: {{ content.SkillsWebdevHeading }}</h4>
             <ul>
               <li>
                 <span>Markup, Templating</span>
@@ -381,74 +294,13 @@ alternatehreflang: "de"
         </ul>
       </section>
 
-      <section class="text-content-layout text-content-color semitransparent avoid-page-break">
-        <article class="text-width">
+      {% include './_includes/projects.liquid', showallprojects: 'showallprojects', showicons: 'showicons'  %}
 
-          <section class="avoid-page-break">
-            <h3 class="target-offset" id="testimonials">{{ content.testimonials }}</h3>
-            <div class="testimonials">
-              <figure class="testimonial">
-                <figcaption>
-                  {{ content.testimonialDanielaAuthor }}:
-                  <span class="stars" title="{{ content.testimonialsFiveStarRating }}"></span>
-                </figcaption>
-                <blockquote>{{ content.testimonialDanielaQuote }}</blockquote>
-              </figure>
-              <figure class="testimonial">
-                <figcaption>
-                  {{ content.testimonialMalteAuthor }}:
-                  <span class="stars" title="{{ content.testimonialsFiveStarRating }}"></span>
-                </figcaption>
-                <blockquote>{{ content.testimonialMalteQuote }}</blockquote>
-              </figure>
-              <figure class="testimonial">
-                <figcaption>
-                  {{ content.testimonialPatriciaAuthor }}:
-                  <span class="stars" title="{{ content.testimonialsFiveStarRating }}"></span>
-                </figcaption>
-                <blockquote>{{ content.testimonialPatriciaQuote }}</blockquote>
-              </figure>
-            </div>
-
-            <p class="no-print">
-              <a href="{{ content.testimonialsReadMoreLinkUrl1 }}" target="_blank" rel="nofollow noopener">
-                {{ content.testimonialsReadMoreText1 }}...
-              </a>
-            </p>
-          </section>
-
-          <figure class="content-image">
-            <picture>
-              <source
-                type="image/webp"
-                sizes="100vw"
-                srcset="img/Ingo-Steinke-NCA-TV-2021-800x443.webp 1x,
-                    img/Ingo-Steinke-NCA-TV-2021-400x222.webp 2x,
-                    img/Ingo-Steinke-NCA-TV-2021-800x443.webp 4x"
-              >
-              <img
-                src="img/Ingo-Steinke-NCA-TV-2021-800x443.jpg"
-                srcset="img/Ingo-Steinke-NCA-TV-2021-400x222.jpg 400w,
-                          img/Ingo-Steinke-NCA-TV-2021-800x443.jpg 800w"
-                sizes="(min-width: 800px) 800px, 100vw"
-                width="800"
-                height="443"
-                alt="{{ content.talksImageAlt }}"
-                loading="lazy"
-              >
-            </picture>
-            <figcaption>
-              {{ content.talksImageCaption }}:
-              <a href="https://blog.nevercodealone.de/php-testing-refactoring-nca-conference-duisburg/" target="_blank" rel="noopener">
-                {{ content.talksImageLinkText }}
-              </a>
-            </figcaption>
-          </figure>
-        </article>
-
+      <section class="tiled-content target-offset">
         <h3 id="interested">{{ content.interestedHeading }}</h3>
         <p>
-          {{ content.interested }}
+          Melde dich gerne, um ein unverbindliches Gespräch zu vereinbaren!
+          Falls ich einen Anruf nicht persönlich entgegennehmen kann, hinterlasse mir gerne eine Sprachnachricht!
         </p>
       </section>
 
