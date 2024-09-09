@@ -53,7 +53,9 @@ module.exports = {
   "ctaContact": "Ruf mich an oder hinterlasse mir eine Nachricht!",
   "workWithMe2": "Gern können wir uns bei einem Kaffee in Berlin, telefonisch oder per Zoom unverbindlich über dein Projekt unterhalten.",
   "projectsHeading": "Web- und Software-Projekte",
-  "projects": "Überzeuge dich selbst von meiner Arbeit! Eine Auswahl meiner bisherigen Projekte:",
+  "projects": "Überzeuge dich selbst von meiner Arbeit! Auf der",
+  "projectsMoreLinkText": "Seite über mich findest du weitere Projekte",
+  "projectsHereAreSome": "Eine Auswahl meiner bisherigen Projekte",
   "projectsScreenshots": "Screenshots",
   "projectWebsite": "Website",
   /* work */
