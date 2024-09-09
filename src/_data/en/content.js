@@ -42,7 +42,7 @@ module.exports = {
   "targetOtherLanguageTitle": "zur deutschen Sprache wechseln",
   /* page content */
   "introHeading": "Your Internet Presence Can Inspire Your Customers",
-  "intro": "My name is Ingo Steinke. I'm a sustainable and creative web developer with more than 20 years of professional experience. My professional strengths include front-end development, accessibility, loading speed, and energy efficiency. I am pragmatic and communicative and enjoy working closely with designers. If necessary, I can also conceptualize and implement simple design and UX changes myself.",
+  "intro": "My name is Ingo Steinke. I'm a sustainable and creative web developer with more than 20 years of professional experience. Ich develop (program), test, and optimize websites, web apps, and online shops. My professional strengths include front-end development, accessibility, loading speed, and energy efficiency. I am pragmatic and communicative and enjoy working closely with designers. If necessary, I can also conceptualize and implement simple design and UX changes myself.",
   "spacedAnd": ", and",
   "andA": "and a",
   "currentlyEcologicalIam": "I enjoy working for customers with an ecological and ethical focus in their work. I'm a",
@@ -53,7 +53,8 @@ module.exports = {
   "ctaContact": "Call me or leave a message!",
   "workWithMe2": "I'm happy to discuss your project with no obligations over a coffee in Berlin, via Zoom, or in a phone call.",
   "projectsHeading": "Web and Software Projects",
-  "projects": "Take a look and see what you think! You can find",
+  "projects": "Take a look and see what you think!",
+  "projectsMore1": "You can find",
   "projectsMoreLinkText": "more projects on the page about me",
   "projectsHereAreSome": "This is a selection of my past projects. Take a look and see what you think!",
   "projectsScreenshots": "Screenshots",

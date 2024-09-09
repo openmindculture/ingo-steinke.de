@@ -26,6 +26,11 @@ figure.content-image figcaption {
   padding-top: 0.25em;
 }
 
+.pl0,
+.pl0.pl0 {
+  padding-left: 0;
+}
+
 .pl1 {
   padding-left: 1em;
 }
@@ -797,7 +802,7 @@ Offscreen menu style
 .social-links {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-direction: row;
   list-style: none;
   max-width: 490px;
