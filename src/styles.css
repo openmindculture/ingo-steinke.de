@@ -1364,7 +1364,6 @@ body.high-contrast {
 .flip-box-decoration,
 .tile-content {
   min-height: var(--project-tile-min-height);
-  overflow-y: hidden;
 }
 
 .flip-box-column {
