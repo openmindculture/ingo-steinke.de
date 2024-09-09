@@ -239,6 +239,11 @@ small {
   main {
     max-width: 1500px;
     margin: 0 auto;
+    width: 100%;
+  }
+
+  main > section {
+    width: 100%;
   }
 
   .page-content {
@@ -319,7 +324,6 @@ small {
     margin-right: 0;
   }
 
-  section,
   .clear {
     clear: both;
   }

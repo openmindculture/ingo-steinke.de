@@ -67,7 +67,7 @@
                 {{ projectDescription }}
               </span>
                 <a class="only-print print-display-block"target="_blank" rel="noopener" href="{{ projectLinkUrl }}">
-                  {{ projectLinkUrl }}
+                  {{ projectLinkUrl | unprefixedHumanReadableUrl }}
                 </a>
               </p>
               <p>
@@ -96,7 +96,7 @@
       {% else %}
 
         <article
-          class="target-offset"
+          class="tile target-offset"
           id="project-{{ project }}"
           tabindex="0"
         >
@@ -112,7 +112,7 @@
                 {{ projectDescription }}
               </span>
               <a class="print-display-block"target="_blank" rel="noopener" href="{{ projectLinkUrl }}">
-                {{ projectLinkUrl }}
+                {{ projectLinkUrl | unprefixedHumanReadableUrl }}
               </a>
             </p>
             <p>
