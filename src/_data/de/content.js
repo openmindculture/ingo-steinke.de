@@ -96,7 +96,7 @@ module.exports = {
   "SkillsLib": "Software Stacks",
   "SkillsLibStaticSiteGenerators": "SSG",
   "SkillsLibDesignSystems": "Design-Systeme",
-  "SkillsOther": "Sonstige Tools",
+  "SkillsOther": "sonstige Tools",
   "SkillsOtherQa": "Qualitätssicherung, Tests und Audits",
   "SkillsOtherVcs": "Codeverwaltung, Versionierung",
   "SkillsOtherLinter": "Linter, Bundler, Transpiler",
