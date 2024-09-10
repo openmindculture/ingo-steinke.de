@@ -41,6 +41,13 @@ module.exports = function (eleventyConfig) {
     return url;
   });
 
-  // postcss shortcut for inline code; external css files are handles by postcss
-  eleventyConfig.addPairedShortcode("postcss", require("./utils/transform-css"));
-};
+  eleventyConfig.addPairedShortcode('projectgrid', async function(content) {
+    let output = '<div class="grid-container grid-container--projects flip-box-container">';
+    output += content;
+    output += '</div>';
+    return output;
+    });
+
+    // postcss shortcut for inline code; external css files are handles by postcss
+    eleventyConfig.addPairedShortcode("postcss", require("./utils/transform-css"));
+    };

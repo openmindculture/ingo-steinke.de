@@ -1,32 +1,7 @@
-<!-- TODO
-
-Vielleicht doch nicht zu krass parametrisieren oder mehrere Include Files:
-Index soll in einem Container die 3 mit Screenshot vorne und drei weitere unumklappbare;
-aber über mich soll die bestehende "alle Projekte" Ansicht zeigen.
-
--->
-
-
-<section class="tiled-content target-offset" id="projects">
-  <div class="pl1">
-    <h2>{{ content.projectsHeading }}</h2>
-    <p>
-      {% if showallprojects %}
-        {{ content.projectsHereAreSome }}:
-      {% else %}
-        {{ content.projects }}
-      {% endif %}
-    </p>
-  </div>
-
-  <div class="grid-container grid-container--projects{% if showflipsides %} flip-box-container{% endif %}">
-
     {% if showallprojects %}
       {%- assign projects = 'kleiderordnung, fractal, portfolio, shopwareplugin, twistedconnection, daskannstdutun, foodtogether, reactapp, wordpress' | split: ', ' -%}
-    {% elsif projectlist %}
-      {%- assign projects = projectlist | split: ', ' -%}
     {% else %}
-      {%- assign projects = 'kleiderordnung, shopwareplugin, twistedconnection' | split: ', ' -%}
+      {%- assign projects = projectlist | split: ', ' -%}
     {% endif %}
 
     {%- for project in projects -%}
@@ -143,14 +118,3 @@ aber über mich soll die bestehende "alle Projekte" Ansicht zeigen.
 
       {% endif %}
     {% endfor -%}
-  </div>
-
-  {% if showallprojects %}{% else %}
-    <div class="pl1 transparent">
-      {{ content.projectsMore1 }} <a href="{{ content.targetAboutMeUrl }}#projects">
-        {{ content.projectsMoreLinkText }}
-      </a>.
-    </div>
-  {% endif %}
-
-</section>
