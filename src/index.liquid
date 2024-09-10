@@ -263,24 +263,26 @@
             <div class="pl1">
               <h2>{{ content.projectsHeading }}</h2>
               <p>
-                {% if showallprojects %}
-                  {{ content.projectsHereAreSome }}:
-                {% else %}
-                  {{ content.projects }}
-                {% endif %}
-              </p>
+                {{ content.projectsHereAreSome }}
+                </p>
             </div>
 
-            {% include './_includes/projects.liquid', showflipsides: 'showflipsides' %}
+            <div class="grid-container grid-container--projects flip-box-container">
+              {% include './_includes/projects.liquid',
+                projectlist: 'kleiderordnung, shopwareplugin, twistedconnection',
+                showflipsides: 'showflipsides'
+              %}
+              {% include './_includes/projects.liquid',
+                projectlist: 'fractal, portfolio, daskannstdutun',
+                showicons: 'showicons'
+              %}
+            </div>
 
-            {% include './_includes/projects.liquid', showicons: 'showicons', projectlist: 'fractal, portfolio, daskannstdutun' %}
-                {% if showallprojects %}{% else %}
-                  <div class="pl1 transparent">
-                    {{ content.projectsMore1 }} <a href="{{ content.targetAboutMeUrl }}#projects">
-                      {{ content.projectsMoreLinkText }}
-                    </a>.
-                  </div>
-                {% endif %}
+            <div class="pl1 transparent">
+              {{ content.projectsMore1 }} <a href="{{ content.targetAboutMeUrl }}#projects">
+                {{ content.projectsMoreLinkText }}
+              </a>.
+            </div>
 
           </section>
 

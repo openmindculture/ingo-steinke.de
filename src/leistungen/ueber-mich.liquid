@@ -88,7 +88,17 @@ alternatehreflang: "de"
         </article>
       </section>
 
-      {% include './_includes/projects.liquid', showallprojects: 'showallprojects', showicons: 'showicons'  %}
+      <section class="tiled-content target-offset" id="projects">
+        <div class="pl1">
+          <h2>{{ content.projectsHeading }}</h2>
+          <p>
+            {{ content.projects }}
+          </p>
+        </div>
+        <div class="grid-container grid-container--projects">
+          {% include './_includes/projects.liquid', showallprojects: 'showallprojects', showicons: 'showicons'  %}
+        </div>
+      </section>
 
       <br>
       <span id="skills"></span>
