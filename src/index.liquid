@@ -164,7 +164,7 @@
                   </svg>
                 </a>
                 <ul>
-                  <li><a href="#projects">{{ content.targetProjects }}</a></li>
+                  <li><a href="#projects">{{ content.targetRefs }}</a></li>
                   <li><a href="#services">{{ content.targetServices }}</a></li>
                   <li><a href="{{ content.targetAboutMeUrl }}#about-me">{{ content.targetAboutMe }}</a></li>
                   <li><a href="#contact">{{ content.targetContact }}</a></li>
@@ -232,39 +232,6 @@
             </article>
           </section>
 
-          <section class="tiled-content target-offset" id="projects">
-            <div class="pl1">
-              <h2>{{ content.projectsHeading }}</h2>
-
-          <div class="tiled-content target-offset" id="projects">
-            <div class="pl1">
-              <h2></h2>
-              <p>
-                {% if showallprojects %}
-                  {{ content.projectsHereAreSome }}:
-                {% else %}
-                  {{ content.projects }}
-                {% endif %}
-              </p>
-            </div>
-
-            <section class="tiled-content target-offset" id="projects">
-
-              {% include './_includes/projects.liquid', showflipsides: 'showflipsides' %}
-
-              {% include './_includes/projects.liquid', showicons: 'showicons', projectlist: 'fractal, portfolio, daskannstdutun' %}
-                  {% if showallprojects %}{% else %}
-                    <div class="pl1 transparent">
-                      {{ content.projectsMore1 }} <a href="{{ content.targetAboutMeUrl }}#projects">
-                        {{ content.projectsMoreLinkText }}
-                      </a>.
-                    </div>
-                  {% endif %}
-
-              </section>
-
-
-
           <section class="text-content-layout text-content-color avoid-page-break">
             <h3 id="testimonials">{{ content.testimonials }}</h3>
             <div class="testimonials">
@@ -292,41 +259,29 @@
             </div>
           </section>
 
-          <section class="no-print text-content-layout services-wrapper avoid-page-break">
-            <h2 id="services">{{ content.services }}</h2>
+          <section class="tiled-content target-offset" id="projects">
+            <div class="pl1">
+              <h2>{{ content.projectsHeading }}</h2>
+              <p>
+                {% if showallprojects %}
+                  {{ content.projectsHereAreSome }}:
+                {% else %}
+                  {{ content.projects }}
+                {% endif %}
+              </p>
+            </div>
 
-            <ul class="grid-container services pl0">
-              <li class="tile text-content-color">
-                <h4 class="font-sans">{{ content.servicesBuildTitle }}</h4>
-                <ul>
-                  <li>{{ content.servicesBuild1 }}</li>
-                  <li>{{ content.servicesBuild2 }}</li>
-                  <li>{{ content.servicesBuild3 }}</li>
-                  <li>{{ content.servicesBuild4 }}</li>
-                </ul>
-                <a href="{{ content.servicesBuildMoreLinkPath }}" class="buttonlike" title="{{ content.servicesBuildMoreLinkTitle }}">{{ content.servicesBuildMoreLinkText }}!</a>
-              </li>
-              <li class="tile text-content-color">
-                <h4 class="font-sans">{{ content.servicesVerifyTitle }}</h4>
-                <ul>
-                  <li>{{ content.servicesVerify1 }}</li>
-                  <li>{{ content.servicesVerify2 }}</li>
-                  <li>{{ content.servicesVerify3 }}</li>
-                  <li>{{ content.servicesVerify4 }}</li>
-                </ul>
-                <a class="buttonlike" href="{{ content.servicesVerifyMoreLinkPath }}" title="{{ content.servicesVerifyMoreLinkTitle }}">{{ content.servicesVerifyMoreLinkText }}!</a>
-              </li>
-              <li class="tile text-content-color">
-                <h4 class="font-sans">{{ content.servicesImproveTitle }}</h4>
-                <ul>
-                  <li>{{ content.servicesImprove1 }}</li>
-                  <li>{{ content.servicesImprove2 }}</li>
-                  <li>{{ content.servicesImprove3 }}</li>
-                  <li>{{ content.servicesImprove4 }}</li>
-                </ul>
-                <a class="buttonlike" href="{{ content.servicesImproveMoreLinkPath }}" title="{{ content.servicesImproveMoreLinkTitle }}">{{ content.servicesImproveMoreLinkText }}!</a>
-              </li>
-            </ul>
+            {% include './_includes/projects.liquid', showflipsides: 'showflipsides' %}
+
+            {% include './_includes/projects.liquid', showicons: 'showicons', projectlist: 'fractal, portfolio, daskannstdutun' %}
+                {% if showallprojects %}{% else %}
+                  <div class="pl1 transparent">
+                    {{ content.projectsMore1 }} <a href="{{ content.targetAboutMeUrl }}#projects">
+                      {{ content.projectsMoreLinkText }}
+                    </a>.
+                  </div>
+                {% endif %}
+
           </section>
 
           <section class="text-content-layout text-content-color avoid-page-break">
@@ -380,6 +335,43 @@
                 {{ content.interested }}
               </p>
             </article>
+          </section>
+
+          <section class="no-print text-content-layout services-wrapper avoid-page-break">
+            <h2 id="services">{{ content.services }}</h2>
+
+            <ul class="grid-container services pl0">
+              <li class="tile text-content-color">
+                <h4 class="font-sans">{{ content.servicesBuildTitle }}</h4>
+                <ul>
+                  <li>{{ content.servicesBuild1 }}</li>
+                  <li>{{ content.servicesBuild2 }}</li>
+                  <li>{{ content.servicesBuild3 }}</li>
+                  <li>{{ content.servicesBuild4 }}</li>
+                </ul>
+                <a href="{{ content.servicesBuildMoreLinkPath }}" class="buttonlike" title="{{ content.servicesBuildMoreLinkTitle }}">{{ content.servicesBuildMoreLinkText }}!</a>
+              </li>
+              <li class="tile text-content-color">
+                <h4 class="font-sans">{{ content.servicesVerifyTitle }}</h4>
+                <ul>
+                  <li>{{ content.servicesVerify1 }}</li>
+                  <li>{{ content.servicesVerify2 }}</li>
+                  <li>{{ content.servicesVerify3 }}</li>
+                  <li>{{ content.servicesVerify4 }}</li>
+                </ul>
+                <a class="buttonlike" href="{{ content.servicesVerifyMoreLinkPath }}" title="{{ content.servicesVerifyMoreLinkTitle }}">{{ content.servicesVerifyMoreLinkText }}!</a>
+              </li>
+              <li class="tile text-content-color">
+                <h4 class="font-sans">{{ content.servicesImproveTitle }}</h4>
+                <ul>
+                  <li>{{ content.servicesImprove1 }}</li>
+                  <li>{{ content.servicesImprove2 }}</li>
+                  <li>{{ content.servicesImprove3 }}</li>
+                  <li>{{ content.servicesImprove4 }}</li>
+                </ul>
+                <a class="buttonlike" href="{{ content.servicesImproveMoreLinkPath }}" title="{{ content.servicesImproveMoreLinkTitle }}">{{ content.servicesImproveMoreLinkText }}!</a>
+              </li>
+            </ul>
           </section>
 
           <section class="imprint-contact">
