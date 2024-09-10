@@ -30,6 +30,7 @@ module.exports = {
   "menuClose": "Inhaltsverzeichnis schließen",
   "menuButton": "Inhalt",
   "targetProjects": "Projekte",
+  "targetRefs": "Referenzen",
   "targetServices": "Leistungen",
   "targetSkills": "Skills",
   "targetAboutMe": "Über mich",
