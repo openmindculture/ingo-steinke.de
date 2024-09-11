@@ -257,6 +257,10 @@
                 <blockquote>{{ content.testimonialPatriciaQuote }}</blockquote>
               </figure>
             </div>
+
+            <a href="{{ content.testimonialsReadMoreLinkUrl1 }}" target="_blank" rel="noopener">
+              {{ content.testimonialsReadMoreText1 }}
+            </a>
           </section>
 
           <section class="tiled-content target-offset" id="projects">
@@ -273,10 +277,12 @@
                 showflipsides: 'showflipsides'
               %}
               {% include './_includes/projects.liquid',
-                projectlist: 'fractal, portfolio, daskannstdutun',
+                projectlist: 'portfolio, daskannstdutun, fractal',
                 showicons: 'showicons'
               %}
             </div>
+
+            <br>
 
             <div class="pl1 transparent">
               {{ content.projectsMore1 }} <a href="{{ content.targetAboutMeUrl }}#projects">
@@ -293,15 +299,6 @@
             <article class="text-width">
               <p>
                 {{ content.work }}
-              </p>
-
-              <p>
-                {{ content.workOwnFocus }} {{ content.workFullstack }}
-              </p>
-
-              <h3>{{ content.workTeamHeading }}</h3>
-              <p>
-                {{ content.workTeam }}
               </p>
 
               <h3>{{ content.workReliableHeading }}</h3>
