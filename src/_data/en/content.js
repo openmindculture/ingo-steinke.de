@@ -62,7 +62,7 @@ module.exports = {
   "projectWebsite": "website",
   /* work */
   "workHeading": "Long-Lasting Solutions",
-  "work": "I can implement your layouts across platforms in a responsive and accessible way. My goal is to build long-lasting solutions that are elegant, transparent, and easy to maintain. Modular components, themes, as well as CSS frameworks and methodologies like BEM and Atomic Design help to simplify collaboration and further development. Continuous testing allows me to discover and eliminate errors at an early stage.",
+  "work": "I can implement your layouts across platforms in a responsive and accessible way. My goal is to build long-lasting solutions that are elegant, transparent, and easy to maintain.",
   "workReliableHeading": "Reliable and Easy to Understand",
   "workReliable": "For me, it's important to explain technological facts in simple words, to understand my customers' requirements, and to look ahead and implement sustainable solutions.",
   "workClientsBenefit": "You benefit from lower maintenance costs, optimised performance, and improved customer contact.",
@@ -137,7 +137,7 @@ module.exports = {
   "talkInfrastructure2": " (German)",
   "memberships": "Memberships",
   "testimonials": "What my customers say",
-  "testimonialsReadMoreText1": "Read more Google Business testimonials",
+  "testimonialsReadMoreText1": "You can find more testimonials at Google Business.",
   "testimonialsReadMoreLinkUrl1": "https://www.google.com/maps/place/Ingo+Steinke/@54.5871961,-51.7559002,3z/data=!4m13!1m3!11m2!2s1A_qFX3OC2-87_jFnYtJquSLGNds!3e1!3m8!1s0x47b8cf81dc94e4ab:0x756104e1aec1a165!8m2!3d52.4789132!4d13.4417945!9m1!1b1!15sCgEqWgMiASqSARB3ZWJzaXRlX2Rlc2lnbmVy4AEA!16s%2Fg%2F11qsm5r_br",
   "testimonialsReadMoreLinkUrl2": "https://www.provenexpert.com/ingo-steinke-creative-web-developer/",
   "testimonialDanielaQuote": "I had the pleasure of working with Ingo and am impressed by his expertise in web development. He is not only technically skilled, but also conceptually strong. I find it particularly impressive that Ingo can come up with a solution for every problem. Last but not least, he is characterized by his strong commitment to sustainability. I can therefore highly recommend him!",

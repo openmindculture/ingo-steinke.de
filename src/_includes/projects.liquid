@@ -11,6 +11,7 @@
       {%- assign projectImgWidth = '' -%}
       {%- assign projectImgHeight = '' -%}
       {%- assign projectLinkUrl = '' -%}
+      {%- assign projectTimestamp = '' -%}
       {%- assign projectDescription = '' -%}
       {%- assign contentfile = '../_data/'
         | appendCurrentLanguageSlug
@@ -24,7 +25,7 @@
       https://stackoverflow.com/questions/74672545/pass-variables-inside-render-to-outside
       maybe liquid is not the right language in a JS context and Nunjucks would be better?
 
-      TODO adjust CSS min heights on mobile!
+      TODO refactor flipsides vs static tiles logic
       {%- endcomment -%}
 
     {% if showflipsides %}
@@ -51,6 +52,9 @@
               <header>
                 <h3>{{ projectHeadline }}</h3>
               </header>
+              {% if projectTimestamp %}
+                <div class="timestamp">{{ projectTimestamp }}</div>
+              {% endif %}
               <p>
                 {% if showicons %}
                   <img src="img/icon-{{ project }}.svg"
@@ -91,6 +95,9 @@
             <header>
               <h3>{{ projectHeadline }}</h3>
             </header>
+            {% if projectTimestamp %}
+              <div class="timestamp">{{ projectTimestamp }}</div>
+            {% endif %}
             <p>
               {% if showicons %}
                 <img src="img/icon-{{ project }}.svg"
