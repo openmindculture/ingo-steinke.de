@@ -58,6 +58,7 @@ if (
   strpos($post_msg, '//script.google.com') !== false ||
   strpos($post_msg, '//rb.gy') !== false ||
   strpos($post_msg, '//yandex.ru') !== false ||
+  strpos($post_msg, 'dublikat.ru') !== false ||
   strpos($post_msg, 'ønskede') !== false ||
   strpos($post_msg, 'ég') !== false ||
   strpos($post_msg, 'ə') !== false ||
@@ -84,6 +85,7 @@ if (
   strpos($post_name, 'Davidbeids') !== false ||
   strpos($post_name, 'Adjbeids') !== false ||
   strpos($post_name, 'Maxbeids') !== false ||
+  strpos($post_name, 'KevinKen') !== false ||
   strpos($post_name, 'Amandapeaceame') !== false ||
   strpos($post_name, 'Tracyselty') !== false ||
   strpos($post_name, 'Nataler') !== false ||
