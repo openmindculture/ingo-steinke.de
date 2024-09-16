@@ -1,7 +1,7 @@
 # Changelog
 
 ## [4.4.4] content update - 2024-09-16
-* reorder my professional information to improve marketing #250 #257
+* restructure my professional information to improve marketing #250 #257
 * add sub-page about me #250
 * add testimonial projects #254
 * harmonize landing page styles #265

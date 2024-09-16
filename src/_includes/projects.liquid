@@ -24,17 +24,22 @@
       render does not pass variables, but include does, see
       https://stackoverflow.com/questions/74672545/pass-variables-inside-render-to-outside
       maybe liquid is not the right language in a JS context and Nunjucks would be better?
-
-      TODO refactor flipsides vs static tiles logic
       {%- endcomment -%}
 
     {% if showflipsides %}
       <article
-        class="target-offset flip-box-row"
+        class="flip-box-row"
         id="project-{{ project }}"
         tabindex="0"
       >
           <div class="flip-box-column">
+            <img
+              src="data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%3E%3C/svg%3E"
+              alt
+              width="{{ projectImgWidth | default: '1265' }}"
+              height="{{ projectImgHeight | default: '1129' }}"
+              class="poster-image flip-height-placeholder"
+            >
             <div class="flip-box-front tile">
               <a target="_blank" rel="noopener" href="{{ projectLinkUrl }}" title="{{ projectHeadline }} {{ content.projectWebsite }}">
                 <img
@@ -72,7 +77,6 @@
                   {{ projectLinkUrl | unprefixedHumanReadableUrl }}
                 </a>
               </div>
-              </p>
               <p>
                 {%- assign hashtagsArray = projectHashtags | split: ' ' -%}
                 {%- for hashtag in hashtagsArray %}
@@ -87,7 +91,7 @@
       {% else %}
 
         <article
-          class="tile target-offset"
+          class="tile"
           id="project-{{ project }}"
           tabindex="0"
         >

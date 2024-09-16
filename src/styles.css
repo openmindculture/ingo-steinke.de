@@ -1339,7 +1339,6 @@ body.high-contrast {
 .grid-container--projects .tile {
   line-height: 2;
   border: dashed 1px;
-  margin-left: 2px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -1364,6 +1363,9 @@ body.high-contrast {
   border: none;
   /* additional hover zone to prevent hanging/blinking mouse over flip flop */
   padding-top: 24px;
+  padding-bottom: 24px;
+  margin-top: -24px;
+  margin-bottom: -24px;
 }
 
 .flip-box-column,
@@ -1378,13 +1380,22 @@ body.high-contrast {
   position: relative;
   width: 100%;
   height: 100%;
-  top: -24px;
+  height: max-content;
+}
+
+.flip-height-placeholder,
+.flip-box-column .flip-height-placeholder,
+.flip-box-column .flip-height-placeholder.poster-image {
+  display: none;
+  visibility: hidden;
 }
 
 .flip-box-front,
 .flip-box-back {
-  margin: 0 auto 24px auto;
+  margin: 0 auto 2em auto;
+  max-width: unset;
   width: 100%;
+  height: 100%;
 }
 
 .flip-box-back {
@@ -1404,6 +1415,7 @@ body.high-contrast {
 
 .flip-box-front.tile {
   position: relative;
+  background-color: #ffffff;
 }
 
 .flip-box-column .tile-content {
@@ -1421,7 +1433,7 @@ body.high-contrast {
   .flip-box-column .poster-image {
     max-width: 98vw;
   }
-  flip-box-front.tile {
+  .flip-box-front.tile {
     max-width: calc(100% - 4px);
   }
   .flip-box-back {
@@ -1444,14 +1456,16 @@ body.high-contrast {
     transform-style: preserve-3d;
   }
 
-  .flip-box-row:not(:last-child) {
-    margin-right: 20px;
-    margin-bottom: 0;
+  .flip-height-placeholder,
+  .flip-box-column .flip-height-placeholder,
+  .flip-box-column .flip-height-placeholder.poster-image {
+    display: block;
   }
 
   .flip-box-column .flip-box-front,
   .flip-box-column .flip-box-back {
     position: absolute;
+    top: 0;
     margin: 0;
     -webkit-transform: translate3d(0, 0, 0);
     -webkit-backface-visibility: hidden;
@@ -1470,6 +1484,14 @@ body.high-contrast {
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
   }
+}
+
+#project-kleiderordnung .flip-box-front {
+  background-color: #f5f1ed;
+}
+
+#project-twistedconnection .flip-box-front {
+  background-color: #f2f1ed;
 }
 
 body.high-contrast .flip-box-decoration {
