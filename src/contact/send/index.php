@@ -42,6 +42,7 @@ if (
   strpos($post_msg, 'Passive Income') !== false ||
   strpos($post_msg, 'Cryptocurrency') !== false ||
   strpos($post_msg, 'cannabidiol') !== false ||
+  strpos($post_msg, 'verified accounts') !== false ||
   strpos($post_msg, 'greenrevolution.com') !== false ||
   strpos($post_msg, 'bulk verified accounts') !== false ||
   strpos($post_msg, 'shipping options for your order') !== false ||
@@ -58,6 +59,7 @@ if (
   strpos($post_msg, '//script.google.com') !== false ||
   strpos($post_msg, '//rb.gy') !== false ||
   strpos($post_msg, '//yandex.ru') !== false ||
+  strpos($post_msg, 'dublikat.ru') !== false ||
   strpos($post_msg, 'ønskede') !== false ||
   strpos($post_msg, 'ég') !== false ||
   strpos($post_msg, 'ə') !== false ||
@@ -84,6 +86,7 @@ if (
   strpos($post_name, 'Davidbeids') !== false ||
   strpos($post_name, 'Adjbeids') !== false ||
   strpos($post_name, 'Maxbeids') !== false ||
+  strpos($post_name, 'KevinKen') !== false ||
   strpos($post_name, 'Amandapeaceame') !== false ||
   strpos($post_name, 'Tracyselty') !== false ||
   strpos($post_name, 'Nataler') !== false ||
