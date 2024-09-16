@@ -108,8 +108,8 @@ a::selection {
 }
 
 body.high-contrast .alternating-div-color > div:nth-child(2n-1):not(.no-alternating-color) {
-  border-top: solid 1px var(--secondary-heading);
-  border-bottom: solid 1px var(--secondary-heading);
+  border-top: solid thin var(--secondary-heading);
+  border-bottom: solid thin var(--secondary-heading);
 }
 
 /* stylelint-disable-next-line no-descending-specificity */
@@ -412,7 +412,7 @@ body.high-contrast .bg-peel {
   -webkit-appearance: none;
   border: none;
   box-shadow: none;
-  border-bottom: solid 1px silver;
+  border-bottom: solid thin silver;
   font-family: var(--body-font-family);
   color: black;
   font-size: 1rem;
@@ -997,7 +997,7 @@ a.buttonlike:focus,
   background: var(--cta-button-light-background);
   background-color: var(--cta-button-light-background);
   background-image: none;
-  border: solid 1px var(--cta-button-light-background);
+  border: solid thin var(--cta-button-light-background);
   border-radius: 0.25rem;
   color: var(--secondary-foreground);
   display: inline-block;
@@ -1063,7 +1063,7 @@ a.buttonlike:focus,
 
 body.high-contrast a.buttonlike {
   background-color: #fff;
-  border: solid 1px #000;
+  border: solid thin #000;
 }
 
 ul.aside-heading > li {
@@ -1215,7 +1215,7 @@ ul.aside-heading > li:last-child {
 
 .brand-vanilla {
   background-color: var(--brand-vanilla);
-  border: solid 1px var(--merino-slightly-lighter);
+  border: solid thin var(--merino-slightly-lighter);
   color: #000;
 }
 
@@ -1338,7 +1338,7 @@ body.high-contrast {
 
 .grid-container--projects .tile {
   line-height: 2;
-  border: dashed 1px;
+  border: dashed thin;
   overflow: hidden;
   text-overflow: ellipsis;
 }

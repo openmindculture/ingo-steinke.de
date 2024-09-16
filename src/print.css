@@ -103,7 +103,7 @@ figure.content-image img {
 }
 
 .hashtag {
-  border: solid 1px #aaa;
+  border: solid thin #aaa;
   padding: 4pt;
   margin-right: 4pt;
   line-height: 28pt;
