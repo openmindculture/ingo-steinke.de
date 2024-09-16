@@ -28,6 +28,12 @@ alternatehreflang: "de"
     {% include '../_includes/navigation-on-subpages.liquid', headerClassName: 'wide' %}
     <main id="content-top" class="target-offset">
       <section class="text-content-layout text-content-color semitransparent avoid-page-break">
+        <div class="only-print timestamp top-timestamp">
+          Berlin,
+          {{ "now" | date: "%d" }}{{ content.dotIfGerman }}
+          {{ "now" | date: "%m" | customLocalizedMonthNameFilter }}
+          {{ "now" | date: "%Y" }}
+        </div>
         <h2 class="target-offset" id="about-me">
           {{ content.aboutMeHeading }}
         </h2>
@@ -35,8 +41,8 @@ alternatehreflang: "de"
           <p>I'm Ingo Steinke, front-end focused web developer with over 20 years of professional experience. When developing elegant and easy-to-use websites, I pay attention to accessibility, loading speed and maintainability. HTML, CSS, JavaScript, TypeScript and PHP are among my favourite technologies. Since 2024, I am a <a href="/services/certified-shopware-developer-berlin.html">certified Shopware developer</a>.
             I'm pragmatic, communicative and enjoy working closely with web designers.
           </p>
-          <p>Download CV, projects list, and skills matrix as a PDF file:</p>
-          <ul>
+          <p class="no-print">Download CV, projects list, and skills matrix as a PDF file:</p>
+          <ul class="no-print">
             <li><a href="../Ingo-Steinke-CV-Projekte-Skills-2024-nachhaltiger-Webentwickler.pdf" target="_blank"
                    rel="noopener noreferrer nofollow">Ingo Steinke, Webentwickler, Berlin: CV, Skills, Projekte</a>
               (deutsch, updated September 2024)
@@ -55,6 +61,7 @@ alternatehreflang: "de"
           <p class="capitalized"><!-- overcapitalize first letter -->
             {{ content.aboutMeIntro }}
           </p>
+          <br class="only-print">
 
           <section class="avoid-page-break">
             <h3>{{ content.aboutMeCvHeading }}</h3>
@@ -96,6 +103,7 @@ alternatehreflang: "de"
               </a>
             </figcaption>
           </figure>
+          <br class="only-print">
 
           <section class="avoid-page-break">
             <h3>Memberships, Events and Talks</h3>

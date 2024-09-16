@@ -124,7 +124,23 @@ figure.content-image img {
   filter: grayscale(1);
 }
 
+.timestamp {
+  margin: 0 16pt 32pt 0;
+  display: block;
+  width: 100%;
+}
+
+.top-timestamp {
+  text-align: right;
+  margin-top: 24pt;
+}
+
+#projects .timestamp {
+  margin: 3pt 16pt 8pt 0;
+}
+
 #projects .tile-content p:not(:last-child) {
+  margin-top: 2pt;
   margin-bottom: 5pt;
 }
 
@@ -239,6 +255,7 @@ figure,
 
 .imprint-contact {
   padding-top: 16pt;
+  font-size: 13pt;
 }
 
 #projects .code-link,

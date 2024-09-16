@@ -28,6 +28,12 @@ alternatehreflang: "en"
     {% include '../_includes/navigation-on-subpages.liquid', headerClassName: 'wide' %}
     <main id="content-top" class="target-offset">
       <section class="text-content-layout text-content-color semitransparent avoid-page-break">
+        <div class="only-print timestamp top-timestamp">
+          Berlin,
+          {{ "now" | date: "%d" }}{{ content.dotIfGerman }}
+          {{ "now" | date: "%m" | customLocalizedMonthNameFilter }}
+          {{ "now" | date: "%Y" }}
+        </div>
         <h2 class="target-offset" id="about-me">
           {{ content.aboutMeHeading }}
         </h2>
@@ -58,6 +64,7 @@ alternatehreflang: "en"
           <p class="capitalized"><!-- overcapitalize first letter -->
             {{ content.aboutMeIntro }}
           </p>
+          <br class="only-print">
 
           <section class="avoid-page-break">
             <h3>Werdegang</h3>
@@ -100,6 +107,7 @@ alternatehreflang: "en"
               </a>
             </figcaption>
           </figure>
+          <br class="only-print">
 
           <section class="avoid-page-break">
             <h3>Mitgliedschaften, Veranstaltungen und Vorträge</h3>

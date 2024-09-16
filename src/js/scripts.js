@@ -274,13 +274,11 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
   let pdfContainerElement = document.getElementById('pdf-container');
-  console.log('pdfContainerElement', pdfContainerElement);
   if (pdfContainerElement) {
     if (window.location.search && typeof URLSearchParams === 'function') {
       const queryString = window.location.search;
       const urlParams = new URLSearchParams(queryString);
       if (urlParams && urlParams.get('pdf') == 'embed') {
-        console.log('trying to embed a prepared PDF ...');
         let pdfObjectElement = document.createElement('object');
         pdfObjectElement.setAttribute('data', '/Shopware-6-Certified-Developer-Ingo-Steinke-de.pdf');
         pdfObjectElement.setAttribute('width', '2480');
@@ -289,7 +287,6 @@ window.addEventListener('DOMContentLoaded', () => {
         pdfObjectElement.classList.add('size-din-a4-portrait');
         pdfContainerElement.appendChild(pdfObjectElement);
         pdfContainerElement.classList.remove('initially-hidden');
-        console.log('... done embedding!');
       }
     }
   }
