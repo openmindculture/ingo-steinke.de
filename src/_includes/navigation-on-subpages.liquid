@@ -1,4 +1,4 @@
-<div class="sticky-header smaller-header is-nav-closed is-unstuck" id="sticky-header">
+<div class="sticky-header {{ headerClassName | default: 'smaller-header' }} is-nav-closed is-unstuck" id="sticky-header">
   <div class="wrapper">
       <span class="raised-layer">
         <span class="scripted hideable" id="sticky-headline">
@@ -44,10 +44,17 @@
           </svg>
         </a>
         <ul>
-          <li><a href="../#projects">{{ content.targetProjects }}</a></li>
-          <li><a href="../#services">{{ content.targetServices }}</a></li>
-          <li><a href="../#about-me">{{ content.targetAboutMe }}</a></li>
-          <li><a href="../#contact">{{ content.targetContact }}</a></li>
+          {% if isaboutme %}
+            <li><a href="#about-me">{{ content.targetAboutMe }}</a></li>
+            <li><a href="#projects">{{ content.targetProjects }}</a></li>
+            <li><a href="#skills">{{ content.targetSkills }}</a></li>
+            <li><a href="#contact">{{ content.targetContact }}</a></li>
+          {% else %}
+            <li><a href="../#projects">{{ content.targetRefs }}</a></li>
+            <li><a href="../#services">{{ content.targetServices }}</a></li>
+            <li><a href="../{{ content.targetAboutMeUrl }}">{{ content.targetAboutMe }}</a></li>
+            <li><a href="../#contact">{{ content.targetContact }}</a></li>
+          {% endif %}
           <li><a href="../#imprint">{{ content.targetImprint }}</a></li>
           <li><a href="../#privacy">{{ content.targetPrivacy }}</a></li>
           <li>

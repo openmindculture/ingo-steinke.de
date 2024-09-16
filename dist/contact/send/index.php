@@ -42,7 +42,9 @@ if (
   strpos($post_msg, 'Passive Income') !== false ||
   strpos($post_msg, 'Cryptocurrency') !== false ||
   strpos($post_msg, 'cannabidiol') !== false ||
+  strpos($post_msg, 'verified accounts') !== false ||
   strpos($post_msg, 'greenrevolution.com') !== false ||
+  strpos($post_msg, 'bulk verified accounts') !== false ||
   strpos($post_msg, 'shipping options for your order') !== false ||
   strpos($post_msg, 'omplete your purchase from the cart') !== false ||
   strpos($post_msg, 'willst du abhängen') !== false ||
@@ -57,6 +59,7 @@ if (
   strpos($post_msg, '//script.google.com') !== false ||
   strpos($post_msg, '//rb.gy') !== false ||
   strpos($post_msg, '//yandex.ru') !== false ||
+  strpos($post_msg, 'dublikat.ru') !== false ||
   strpos($post_msg, 'ønskede') !== false ||
   strpos($post_msg, 'ég') !== false ||
   strpos($post_msg, 'ə') !== false ||
@@ -83,6 +86,7 @@ if (
   strpos($post_name, 'Davidbeids') !== false ||
   strpos($post_name, 'Adjbeids') !== false ||
   strpos($post_name, 'Maxbeids') !== false ||
+  strpos($post_name, 'KevinKen') !== false ||
   strpos($post_name, 'Amandapeaceame') !== false ||
   strpos($post_name, 'Tracyselty') !== false ||
   strpos($post_name, 'Nataler') !== false ||
@@ -180,7 +184,7 @@ if ( $config_verbose ) {
   $message .= "HTTP_USER_AGENT: " . $_SERVER['HTTP_USER_AGENT'] . "\r\n";
 }
 
-if (!empty($message)) {
+if (!empty($message) && !$suspectedSpam) {
   $headers = 'MIME-Version: 1.0' . "\r\n".
     'Content-Type: text/plain; charset=UTF-8' . "\r\n".
     'From: ' . $config_from . "\r\n".

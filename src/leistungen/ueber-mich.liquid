@@ -1,0 +1,211 @@
+---
+tags: addtositemap
+isaboutme: true
+imgdirectory: "../img"
+previewimage: "https://www.ingo-steinke.com/img/preview-sustainability-en.png"
+previewtitle: "Accessible and Climate-Friendly Website Optimization"
+previewdescription: "Websites should be user-friendly and legally compliant. How to respect GDPR, EAA, and the Green Claims directive."
+permalink: "ueber-mich.html"
+alternatelink: "https://www.ingo-steinke.de/ueber-mich/index.html"
+alternatehreflang: "de"
+---
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Webentwickler Ingo Steinke: über mich</title>
+  {% include '../_includes/html-head-common.liquid' %}
+</head>
+<body class="high-contrast">
+<div class="page-container" id="top">
+  <div class="page-content">
+    <header class="jumbotronHeader" id="jumbotronHeader">
+      <br>
+      {% include './_includes/jumbotron-image.liquid' %}
+      <h1>Ingo Steinke: über mich<br>CV, Projekte, Skills</h1>
+      <br>
+    </header>
+    {% include '../_includes/navigation-on-subpages.liquid', headerClassName: 'wide' %}
+    <main id="content-top" class="target-offset">
+
+      <section class="text-content-layout text-content-color">
+        <article class="text-width">
+          <h2>Alles auf einen Blick</h2>
+          <p>Ich bin Ingo Steinke, Webentwickler mit Frontend-Fokus und über 20 Jahren Berufserfahrung.
+             Bei der Entwicklung eleganter und einfach bedienbarer Websites achte ich auf Barrierefreiheit,
+            Ladegeschwindigkeit und Wartbarkeit. HTML, CSS, JavaScript, TypeScript und PHP zählen zu meinen
+            bevorzugten Technologien. Seit 2024 bin ich zertifizierter Shopware-Entwickler.
+            Ich bin pragmatisch, kommunikativ, arbeite gerne eng mit Designer:innen zusammen.
+          </p>
+          <p>Lebenslauf, Projektliste und Skillmatrix als PDF-Download:</p>
+          <ul>
+            <li><a href="../Ingo-Steinke-CV-Projekte-Skills-2024-nachhaltiger-Webentwickler.pdf" target="_blank"
+                   rel="noopener noreferrer nofollow">Ingo Steinke, Webentwickler, Berlin: CV, Skills, Projekte</a>
+              (deutsch, Stand: Februar 2024)
+            </li>
+            <li><a href="../Ingo-Steinke-CV-Projects-Skills-2024-sustainable-web-developer.pdf" target="_blank"
+                   rel="noopener noreferrer nofollow">Ingo Steinke, web developer, Berlin: CV, skills, projects</a>
+              (englisch, Stand: Februar 2024)
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="text-content-layout text-content-color semitransparent avoid-page-break">
+        <h2 class="target-offset" id="about-me">
+          {{ content.aboutMeHeading }}
+        </h2>
+        <article class="text-width">
+          <header>
+            <h3>
+              {{ content.aboutMeIntroHeading }}
+            </h3>
+          </header>
+          <p class="capitalized"><!-- overcapitalize first letter -->
+            {{ content.aboutMeIntro }}
+          </p>
+
+          <section class="avoid-page-break">
+            <h3>Werdegang</h3>
+            <p>
+              Interaktive Websites und Browserspiele waren die ersten Produkte meines 2000 mitgegründeten Startups in Münster. Suchmaschinenoptimierung und unsere CMS- und unsere eigene Shop-Software bildeten später das Kerngeschäft.
+            </p>
+            <p>
+              Als angestellter E-Commerce-Engineer bei Xsite in Düsseldorf entwickelte ich von 2010 bis 2014 Online-Shops
+              unter anderem für Shop-Apotheke.com und den Kunstversand Ars mundi. Als Technical Consultant bei Sevenval Technologies (später Avenga Germany) in Köln und Berlin optimierte ich die Ladezeit und Handytauglichkeit
+                von Online-Shops und Websites der Frankfurter Allgemeinen Zeitung und der Otto Group und erstellte Frontend-Anwendungen mit ReactJS.
+            </p>
+            <p>
+              Seit Ende 2020 bin ich als selbstständiger Webentwickler und Freelancer für Agenturen und individuelle Kund:innen tätig. 2024 wurde ich als Shopware-Entwickler zertifiziert.
+            </p>
+          </section>
+
+          <figure class="content-image">
+            <picture>
+              <source
+                type="image/webp"
+                sizes="100vw"
+                srcset="img/Ingo-Steinke-NCA-TV-2021-800x443.webp 1x,
+                    img/Ingo-Steinke-NCA-TV-2021-400x222.webp 2x,
+                    img/Ingo-Steinke-NCA-TV-2021-800x443.webp 4x"
+              >
+              <img
+                src="img/Ingo-Steinke-NCA-TV-2021-800x443.jpg"
+                srcset="img/Ingo-Steinke-NCA-TV-2021-400x222.jpg 400w,
+                          img/Ingo-Steinke-NCA-TV-2021-800x443.jpg 800w"
+                sizes="(min-width: 800px) 800px, 100vw"
+                width="800"
+                height="443"
+                alt="{{ content.talksImageAlt }}"
+                loading="lazy"
+              >
+            </picture>
+            <figcaption>
+              {{ content.talksImageCaption }}:
+              <a href="https://blog.nevercodealone.de/php-testing-refactoring-nca-conference-duisburg/" target="_blank" rel="noopener">
+                {{ content.talksImageLinkText }}
+              </a>
+            </figcaption>
+          </figure>
+
+          <section class="avoid-page-break">
+            <h3>Mitgliedschaften, Veranstaltungen und Vorträge</h3>
+            <p>
+              Von 2019 - 2021 war ich Mitveranstalter des Kölner Webperformance Meetups. Aktuell bin ich Mitglied im Impact Hub Berlin, beteilige mich aktiv an fachlichen Diskussionen und schreibe
+              <a href="https://dev.to/ingosteinke" target="_blank" rel="noopener">Blogartikel</a> zu technischen Themen.
+            </p>
+            <p>
+              {{ content.talks2 }}
+            <ul>
+              <li>
+                <a
+                  href="https://www.meetup.com/cologne-germany-high-performance-website-optimization-group/events/274558354/"
+                  hreflang="de"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  {{ content.talkMeetupWebVitals }}
+                </a>
+                {{ content.talkMeetupWebVitals2 }}
+              </li>
+              <li>
+                <a
+                  href="https://www.meetup.com/cologne-germany-high-performance-website-optimization-group/events/268706480/"
+                  hreflang="de"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  {{ content.talkPerformanceNoCode }}
+                </a> {{ content.talkPerformanceNoCode2 }}
+              </li>
+              <li>
+                <a
+                  href="https://www.meetup.com/cologne-germany-high-performance-website-optimization-group/events/255856182/"
+                  hreflang="de"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  {{ content.talkHsts }}
+                </a>
+                {{ content.talkHsts2 }}
+              </li>
+              <li>
+                <a
+                  href="https://www.meetup.com/cologne-germany-high-performance-website-optimization-group/events/zdnjlmywhbgb/"
+                  hreflang="de"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  {{ content.talkInfrastructure }}
+                </a>
+                {{ content.talkInfrastructure2 }}
+              </li>
+            </ul>
+            </p>
+            <p>
+              Kreativität, Flexibilität und Reflektiertheit sind mir wichtig. Ich möchte Nachhaltigkeit, Kultur und Kunst verbinden und neue Erfahrungen in meine tägliche Arbeit einbringen.
+            </p>
+          </section>
+
+          <section class="avoid-page-break">
+            <h4>Zukunftsthemen und nachhaltige Digitalisierung</h4>
+            <p>
+              Digitalisierung kann sowohl wirtschaftlich, als auch sozial und ökologisch nachhaltig sein. Synergien ergeben sich beispielsweise, indem effiziente Entwicklung Energie und somit Kosten spart, oder indem inklusive und barrierefreie Angebote neue Kundenkreise erschließen. Gesetzlichen Vorgaben wie der Datenschutz-Grundverordnung oder dem Barrierefreiheits-Stärkungs-Gesetz können wir dank meiner Erfahrung auf elegante Weise entsprechen.
+            </p>
+          </section>
+
+        </article>
+      </section>
+
+      <section class="tiled-content target-offset" id="projects">
+        <div class="pl1">
+          <h2>{{ content.projectsHeading }}</h2>
+          <p>
+            {{ content.projects }}
+          </p>
+        </div>
+        <div class="grid-container grid-container--projects">
+          {% include './_includes/projects.liquid', showallprojects: 'showallprojects', showicons: 'showicons'  %}
+        </div>
+      </section>
+
+      <br>
+      <span id="skills"></span>
+      {% include './_includes/skills.liquid', showallskills: 'showallskills', skillsTitle: 'Leistungen / Fachkenntnisse / Skills'  %}
+
+      <section class="tiled-content target-offset"><!-- TODO improve layout -->
+        <h3 id="interested">{{ content.interestedHeading }}</h3>
+        <p>
+          Melde dich gerne, um ein unverbindliches Gespräch zu vereinbaren!<br>
+          Falls ich einen Anruf nicht persönlich entgegennehmen kann, hinterlasse mir gerne eine Sprachnachricht!
+        </p>
+      </section>
+      <br>
+
+      {% include '../_includes/section-imprint-contact.liquid' %}
+    </main>
+    <footer class="page-footer"><div class="legal legal--copyright">© 2024 Ingo Steinke</div></footer>
+  </div>
+</div>
+</body>
+</html>

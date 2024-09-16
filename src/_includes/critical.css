@@ -94,6 +94,10 @@ ul.aside-heading {
   text-align: left;
 }
 
+.headingless {
+  padding-top: 1em;
+}
+
 del {
   text-decoration: line-through;
 }
@@ -239,6 +243,11 @@ small {
   main {
     max-width: 1500px;
     margin: 0 auto;
+    width: 100%;
+  }
+
+  main > section {
+    width: 100%;
   }
 
   .page-content {
@@ -319,7 +328,6 @@ small {
     margin-right: 0;
   }
 
-  section,
   .clear {
     clear: both;
   }
