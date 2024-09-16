@@ -86,6 +86,10 @@ npm run build
 * `npm run serve` &&
 * `npm run codeceptjs` [CodeceptJS](https://codecept.io/)
 
+### Test language versions
+
+* `npm run serve:en`
+
 ### Testomat.io synchronization (optional)
 
 export / update local tests to Testomat.io:
