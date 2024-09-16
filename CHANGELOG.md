@@ -1,6 +1,6 @@
 # Changelog
 
-## [4.4.4] content update - 2024-09-16
+## [4.4.4] content update - 2024-09-17
 * restructure my professional information to improve marketing #250 #257
 * add sub-page about me #250
 * add testimonial projects #254
@@ -8,6 +8,7 @@
 * dim decoration contrast to improve readability #264
 * fix flip-card effect edge cases #254
 * fix and improve QR code image size #267
+* add a more prominent pause button in the top navigation
 * optionally embed additional PDF documents
 
 ## [4.4.0] testimonials and projects - 2024-09-06
