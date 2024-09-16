@@ -22,8 +22,8 @@ alternatehreflang: "de"
     <header class="jumbotronHeader" id="jumbotronHeader">
       <br>
       {% include './_includes/jumbotron-image.liquid' %}
-      <h1>Ingo Steinke: about me<br>CV, Projects, Skills</h1>
-      <br>
+      <h1>Ingo Steinke</h1>
+      <p class="tagline">CV, Projects, Skills</p>
     </header>
     {% include '../_includes/navigation-on-subpages.liquid', headerClassName: 'wide' %}
     <main id="content-top" class="target-offset">
@@ -57,7 +57,7 @@ alternatehreflang: "de"
           </p>
 
           <section class="avoid-page-break">
-            <h3>Werdegang</h3>
+            <h3>{{ content.aboutMeCvHeading }}</h3>
             <p>
               I co-founded a start-up in 2000 whose first products were interactive websites and browser games. Later, our core business transitioned to search engine optimization and our own e-commerce software.
             </p>
@@ -180,7 +180,7 @@ alternatehreflang: "de"
 
       <br>
       <span id="skills"></span>
-      {% include './_includes/skills.liquid', showallskills: 'showallskills', skillsTitle: 'Services and Skills'  %}
+      {% include './_includes/skills.liquid', showallskills: 'showallskills', skillsTitle: 'Top Skills'  %}
 
       <section class="tiled-content target-offset pl1">
         <h3 id="interested">{{ content.interestedHeading }}</h3>

@@ -164,7 +164,7 @@ small {
     font-weight: var(--body-font-weight);
     color: var(--primary-heading);
     padding: 0;
-    margin: 0;
+    margin: 1rem 0 0 0;
   }
 
   @media screen and (min-width: 950px) {
