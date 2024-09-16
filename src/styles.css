@@ -131,6 +131,12 @@ body.high-contrast .alternating-div-color > div:nth-child(2n-1):not(.no-alternat
   background: var(--nav-menu-background);
 }
 
+.breakable {
+  max-width: 100%;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+}
+
 /* TODO refactor alternate colors to modifier classes */
 .vcard a:link,
 .vcard a:visited,
@@ -481,6 +487,10 @@ body.high-contrast .bg-peel {
 }
 
 @media only screen and (max-width: 490px) {
+  .vcard {
+    font-size: 1.25em;
+  }
+
   .vcard,
   #contact,
   main > section {
@@ -507,12 +517,15 @@ body.high-contrast .bg-peel {
   -ms-user-select: none;
   -webkit-user-select: none;
   user-select: none;
+  padding: 0;
+  margin: 3rem auto 1rem auto;
+  width: 100%;
 }
 
 .vcard-digital-qr {
   display: inline-block;
   margin: 1rem 0 0 auto;
-  text-align: right;
+  text-align: center;
   background: transparent;
 }
 
@@ -525,25 +538,8 @@ a.vcard-digital-qr:hover {
 }
 
 .vcard-digital-qr-image {
-  width: 8rem;
-  max-width: 40vw;
+  width: 90%;
   height: auto;
-}
-
-.vcard-digital-teaser-text {
-  margin-top: -4rem;
-  transform: rotate(19deg);
-  font-size: 1.125rem;
-  line-height: 1.625;
-}
-
-.vcard-digital-arrow {
-  display: block;
-  margin: 0.75rem 3rem 1rem auto;
-  max-width: 20vw;
-  width: 4rem;
-  height: auto;
-  transform: rotate(45deg);
 }
 
 @media (min-width: 360px) {
@@ -552,33 +548,24 @@ a.vcard-digital-qr:hover {
   }
 }
 
-@media (min-width: 375px) {
+@media (min-width: 490px) {
   .vcard-digital-wrapper {
     position: absolute;
     top: 0;
     right: 0;
-    padding: 5rem 1rem 0 0;
+    margin: 0;
+    padding: 6rem 1rem 0 0;
     height: min-content;
-    width: 100%;
-  }
-}
-
-@media (min-width: 440px) {
-  .vcard-digital-teaser-text {
-    margin-left: 0;
-  }
-
-  .vcard-digital-arrow {
-    margin-right: 0.5rem;
-    transform: rotate(338deg);
   }
 
   .vcard-digital-qr {
     margin: 0 0 0 auto;
+    text-align: right;
   }
 
-  .vcard-digital-wrapper {
-    padding: 6rem 1rem 0 0;
+  .vcard-digital-qr-image {
+    width: 8rem;
+    max-width: 40vw;
   }
 }
 
@@ -825,8 +812,8 @@ Offscreen menu style
 }
 
 .social-links svg {
-  width: 25px;
-  height: auto;
+  width: auto;
+  height: 2rem;
 }
 
 .social-links a:not(.only-print) {

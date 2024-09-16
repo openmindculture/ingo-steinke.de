@@ -27,10 +27,11 @@ alternatehreflang: "de"
     </header>
     {% include '../_includes/navigation-on-subpages.liquid', headerClassName: 'wide' %}
     <main id="content-top" class="target-offset">
-
-      <section class="text-content-layout text-content-color">
-        <article class="text-width headingless">
-
+      <section class="text-content-layout text-content-color semitransparent avoid-page-break">
+        <h2 class="target-offset" id="about-me">
+          {{ content.aboutMeHeading }}
+        </h2>
+        <article class="text-width">
           <p>I'm Ingo Steinke, front-end focused web developer with over 20 years of professional experience. When developing elegant and easy-to-use websites, I pay attention to accessibility, loading speed and maintainability. HTML, CSS, JavaScript, TypeScript and PHP are among my favourite technologies. Since 2024, I am a <a href="/services/certified-shopware-developer-berlin.html">certified Shopware developer</a>.
             I'm pragmatic, communicative and enjoy working closely with web designers.
           </p>
@@ -45,14 +46,7 @@ alternatehreflang: "de"
               (englisch, updated September 2024)
             </li>
           </ul>
-        </article>
-      </section>
-
-      <section class="text-content-layout text-content-color semitransparent avoid-page-break">
-        <h2 class="target-offset" id="about-me">
-          {{ content.aboutMeHeading }}
-        </h2>
-        <article class="text-width">
+          <br>
           <header>
             <h3>
               {{ content.aboutMeIntroHeading }}
@@ -104,7 +98,7 @@ alternatehreflang: "de"
           </figure>
 
           <section class="avoid-page-break">
-            <h3>Mitgliedschaften, Veranstaltungen und Vorträge</h3>
+            <h3>Memberships, Events and Talks</h3>
             <p>
               From 2019 to 2021 I co-hosted the Cologne Web Performance meetup. Currentyl, I am a member of <a href="https://impact-hub-berlin.notion.site/Ingo-Steinke-2dd84e135fff4973ad8f06ddf9553890" target="_blank" rel="noopener">Impact Hub Berlin</a> and <a href="https://fairantwortung.org/uber-ingo-steinke/" target="_blank" rel="noopener">Fairantwortung</a>. I actively participate in professional discussions and write
               <a href="https://dev.to/ingosteinke" target="_blank" rel="noopener">blog posts</a> about technological topics.
@@ -163,7 +157,7 @@ alternatehreflang: "de"
           </section>
 
           <section class="avoid-page-break">
-            <h4>Zukunftsthemen und nachhaltige Digitalisierung</h4>
+            <h4>{{ content.aboutMeEthicalHeading }}</h4>
             <p>
               Digitalisation primarily stands for technological progress. The economic benefits of sustainable innovation have often been overlooked. I like to to support ethical and ecological projects, for example the transition in the transport sector, renewable energies, and environmentally-friendly fashion. Thanks to my experience, we can elegantly comply with legal requirements such as the General Data Protection Regulation or the European Accessibility Act.
             </p>
@@ -186,9 +180,9 @@ alternatehreflang: "de"
 
       <br>
       <span id="skills"></span>
-      {% include './_includes/skills.liquid', showallskills: 'showallskills', skillsTitle: 'Leistungen / Fachkenntnisse / Skills'  %}
+      {% include './_includes/skills.liquid', showallskills: 'showallskills', skillsTitle: 'Services and Skills'  %}
 
-      <section class="tiled-content target-offset"><!-- TODO improve layout -->
+      <section class="tiled-content target-offset pl1">
         <h3 id="interested">{{ content.interestedHeading }}</h3>
         <p>
           Contact me to schedule a non-binding appointment! I will reply in a timely manner! You can reach my by phone, email, Signal, or WhatsApp. If I can't take a call, feel free to leave me a voice message!
@@ -199,6 +193,9 @@ alternatehreflang: "de"
       {% include '../_includes/section-imprint-contact.liquid' %}
     </main>
     <footer class="page-footer">
+      <p class="no-print">
+        <button id="animation-toggle">{{ content.buttonToggleAnimation }}</button>
+      </p>
       <div class="legal legal--copyright">
         &copy; {{ "now" | date: "%Y" }} {{ content.imprintName }}
         ({{ content.updatedWithColon }}

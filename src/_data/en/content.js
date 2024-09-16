@@ -170,6 +170,7 @@ module.exports = {
   ],
   "contactOr": "or",
   "scheduleAMeeting": "schedule a meeting via cal.com",
+  "contactScheduleTitle": "Contact me and Book a Meeting",
   "contactFormTitle": "Write me a message:",
   "contactFormMessageSending": "Sending your message...",
   "contactFormMessageSent": "Thanks! Your message has been sent.",
@@ -291,5 +292,9 @@ module.exports = {
   "landingLinkUrlSustainability": "https://www.ingo-steinke.com/services/accessible-climate-website-optimization.html",
   "landingLinkTitleFreelanceBerlin": "freelance web developer in Berlin",
   "landingLinkTextFreelanceBerlin": "freelancer Berlin",
-  "landingLinkUrlFreelanceBerlin": "https://www.ingo-steinke.com/services/freelance-webdeveloper-berlin.html"
+  "landingLinkUrlFreelanceBerlin": "https://www.ingo-steinke.com/services/freelance-webdeveloper-berlin.html",
+  "landingLinkTextSitemap": "Sitemap",
+  "landingLinkUrlSitemap": "https://www.ingo-steinke.com/sitemap.html",
+  "languagesSubtitle": "Languages",
+  "furtherInformationSubheading": "Further Information"
 };

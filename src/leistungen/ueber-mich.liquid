@@ -27,12 +27,13 @@ alternatehreflang: "en"
     </header>
     {% include '../_includes/navigation-on-subpages.liquid', headerClassName: 'wide' %}
     <main id="content-top" class="target-offset">
-
-      <section class="text-content-layout text-content-color">
-        <article class="text-width headingless">
-
+      <section class="text-content-layout text-content-color semitransparent avoid-page-break">
+        <h2 class="target-offset" id="about-me">
+          {{ content.aboutMeHeading }}
+        </h2>
+        <article class="text-width">
           <p>Ich bin Ingo Steinke, Webentwickler mit Frontend-Fokus und über 20 Jahren Berufserfahrung.
-             Bei der Entwicklung eleganter und einfach bedienbarer Websites achte ich auf Barrierefreiheit,
+            Bei der Entwicklung eleganter und einfach bedienbarer Websites achte ich auf Barrierefreiheit,
             Ladegeschwindigkeit und Wartbarkeit. HTML, CSS, JavaScript, TypeScript und PHP zählen zu meinen
             bevorzugten Technologien. Seit 2024 bin ich <a href="/zertifizierter-shopware-6-frontend-webentwickler/index.html">zertifizierter Shopware-Entwickler</a>.
             Ich bin pragmatisch, kommunikativ und arbeite gerne eng mit Webdesigner:innen zusammen.
@@ -48,14 +49,7 @@ alternatehreflang: "en"
               (englisch, Stand: September 2024)
             </li>
           </ul>
-        </article>
-      </section>
-
-      <section class="text-content-layout text-content-color semitransparent avoid-page-break">
-        <h2 class="target-offset" id="about-me">
-          {{ content.aboutMeHeading }}
-        </h2>
-        <article class="text-width">
+          <br>
           <header>
             <h3>
               {{ content.aboutMeIntroHeading }}
@@ -111,7 +105,6 @@ alternatehreflang: "en"
             <h3>Mitgliedschaften, Veranstaltungen und Vorträge</h3>
             <p>
               Von 2019 - 2021 war ich Mitveranstalter des Kölner Webperformance Meetups. Aktuell bin ich <a href="https://impact-hub-berlin.notion.site/Ingo-Steinke-2dd84e135fff4973ad8f06ddf9553890" target="_blank" rel="noopener">Mitglied im Impact Hub Berlin</a> und bei <a href="https://fairantwortung.org/uber-ingo-steinke/" target="_blank" rel="noopener">Fairantwortung</a>, beteilige mich aktiv an fachlichen Diskussionen und schreibe
-              Von 2019 - 2021 war ich Mitveranstalter des Kölner Webperformance Meetups. Aktuell bin ich <a href="https://impact-hub-berlin.notion.site/Ingo-Steinke-2dd84e135fff4973ad8f06ddf9553890" target="_blank" rel="noopener">Mitglied im Impact Hub Berlin</a>, beteilige mich aktiv an fachlichen Diskussionen und schreibe
               <a href="https://dev.to/ingosteinke" target="_blank" rel="noopener">Blogartikel</a> zu technischen Themen.
             </p>
             <p>
@@ -193,7 +186,7 @@ alternatehreflang: "en"
       <span id="skills"></span>
       {% include './_includes/skills.liquid', showallskills: 'showallskills', skillsTitle: 'Leistungen / Fachkenntnisse / Skills'  %}
 
-      <section class="tiled-content target-offset"><!-- TODO improve layout -->
+      <section class="tiled-content target-offset pl1">
         <h3 id="interested">{{ content.interestedHeading }}</h3>
         <p>
           Melde dich gerne, um ein unverbindliches Gespräch zu vereinbaren!<br>
@@ -205,6 +198,9 @@ alternatehreflang: "en"
       {% include '../_includes/section-imprint-contact.liquid' %}
     </main>
     <footer class="page-footer">
+      <p class="no-print">
+        <button id="animation-toggle">{{ content.buttonToggleAnimation }}</button>
+      </p>
       <div class="legal legal--copyright">
         &copy; {{ "now" | date: "%Y" }} {{ content.imprintName }}
         ({{ content.updatedWithColon }}
