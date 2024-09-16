@@ -15,6 +15,18 @@ This is a screenshot after the relaunch in 2021:
 
 ![screenshot](_screenshots/screenshot-ingo-steinke-de.jpg)
 
+## Generate updated CV PDFs
+
+Print the "about me page" to a PDF file to generate an updated CV. Optionally (and experimentally), add the query string
+parameter `pdf=embed` to the URL to embed a prepared PDF document, e.g. to append certifications. This seems to work
+in **Firefox** 130, but not in Chrome 128 or Vivaldi 6.9.
+
+- https://www.ingo-steinke.de/ueber-mich.html?pdf=embed
+- https://www.ingo-steinke.com/about-me.html?pdf=embed
+
+- `npm run serve` && open http://localhost:1974/ueber-mich.html?pdf=embed
+- `npm run serve:en` && open http://localhost:1974/about-me.html?pdf=embed
+
 ## Development Requirements
 
 - npm

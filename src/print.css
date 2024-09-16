@@ -278,3 +278,20 @@ figure,
   --b1: #000;
   --b2: #000;
 }
+
+/* embedded printable pdf */
+.size-din-a4-portrait {
+  width: 100%;
+  width: 210mm;
+  height: auto;
+  height: 297mm;
+  margin: 0;
+  padding: 0;
+}
+
+.pdf-container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
