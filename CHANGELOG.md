@@ -4,8 +4,7 @@
 * reorder my professional information to improve marketing #250 #257
 * add sub-page about me #250
 * add testimonial projects #254
-* harmonize landing page styles
-#265
+* harmonize landing page styles #265
 * link to sitemap to improve readability and SEO #266
 * dim decoration contrast to improve readability #264
 * fix flip-card effect edge cases #254

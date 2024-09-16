@@ -13,6 +13,7 @@ body {
    */
 
   --deep-green: #017d63;
+  --deep-green-darker: #235656;
   --spermidine-green: #1d4950;
   --spermidine-green-darker: #0c1f22;
   --fresh-blue: #6440fa;
@@ -111,7 +112,7 @@ body {
 
   /* animation */
   --radius: 100%;
-  --primary-animation-color: var(--deep-green);
+  --primary-animation-color: var(--deep-green-darker);
   --secondary-animation-color: var(--omega-purple);
 
   /* export typography */
