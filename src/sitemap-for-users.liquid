@@ -1,0 +1,46 @@
+---
+tags: addtositemap
+permalink: '/sitemap.html'
+---
+<!doctype html>
+<html lang="{{ '' | appendCurrentLanguageSlug }}">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Ingo Steinke: Sitemap</title>
+  {% include '../_includes/html-head-common.liquid' %}
+</head>
+<body class="high-contrast">
+<div class="page-container" id="top">
+  <main id="content-top" class="target-offset">
+
+  <ul>
+    <li><a href="/">Index: {{ content.pageTitle }}</a></li>
+    <li lang="de"><a href="https://www.ingo-steinke.de/" hreflang="de">Deutsch: Ingo-Steinke.de</a></li>
+    <li lang="en"><a href="https://www.ingo-steinke.com/" hreflang="en">English: Ingo-Steinke.com</a></li>
+    <li><a href="{{ content.targetAboutMeUrl }}">{{ content.targetAboutMe }}</a></li>
+    <li><a href="{{ content.landingLinkUrlFreelanceBerlin }}">{{ content.landingLinkTextFreelanceBerlin }}: {{ content.landingLinkTitleFreelanceBerlin }}</a></li>
+    <li><a href="{{ content.landingLinkUrlShopware }}">{{ content.landingLinkTextShopware }}: {{ content.landingLinkTitleShopware }}</a></li>
+    <li><a href="{{ content.landingLinkUrlWordPress }}">{{ content.landingLinkTextWordPress }}: {{ content.landingLinkTitleWordPress }}</a></li>
+    <li><a href="{{ content.landingLinkUrlSustainability }}">{{ content.landingLinkTextSustainability }}: {{ content.landingLinkTitleSustainability }}</a></li>
+    <a href="/{{ content.servicesBuildMoreLinkPath }}" title="{{ content.servicesBuildMoreSubFooterLinkTitle }}">{{ content.servicesBuildMoreSubFooterLinkText }}</a>
+    <a href="/{{ content.servicesVerifyMoreLinkPath }}" title="{{ content.servicesVerifyMoreSubFooterLinkTitle }}">{{ content.servicesVerifyMoreSubFooterLinkText }}</a>
+    <a href="/{{ content.servicesImproveMoreLinkPath }}" title="{{ content.servicesImproveMoreSubFooterLinkTitle }}">{{ content.servicesImproveMoreSubFooterLinkText }}</a>
+    <a href="/#contact">{{ content.targetContact }}</a>
+    <a href="/#imprint">{{ content.targetImprint }}</a>
+    <a href="/#privacy">{{ content.targetPrivacy }}</a>
+    <li><a href="/sitemap.xml">sitemap.xml</a></li>
+  </ul>
+  </main>
+
+  <footer>
+    <div class="legal legal--copyright">
+      &copy; {{ "now" | date: "%Y" }} {{ content.imprintName }}
+      ({{ content.updatedWithColon }}
+      {{ "now" | date: "%d" }}{{ content.dotIfGerman }}
+      {{ "now" | date: "%m" | customLocalizedMonthNameFilter }}
+      {{ "now" | date: "%Y" }})
+    </div>
+  </footer>
+</div>
+</body>
+</html>

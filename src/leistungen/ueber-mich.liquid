@@ -3,11 +3,11 @@ tags: addtositemap
 isaboutme: true
 imgdirectory: "../img"
 previewimage: "https://www.ingo-steinke.com/img/preview-sustainability-en.png"
-previewtitle: "Accessible and Climate-Friendly Website Optimization"
-previewdescription: "Websites should be user-friendly and legally compliant. How to respect GDPR, EAA, and the Green Claims directive."
+previewtitle: "Über Ingo Steinke: CV, Projekte, Skills"
+previewdescription: "Ingo Steinke ist Webentwickler mit Frontend-Fokus und über 20 Jahren Berufserfahrung. Bei der Entwicklung eleganter und einfach bedienbarer Websites achtet er auf Barrierefreiheit, Ladegeschwindigkeit und Wartbarkeit."
 permalink: "ueber-mich.html"
-alternatelink: "https://www.ingo-steinke.de/ueber-mich/index.html"
-alternatehreflang: "de"
+alternatelink: "https://www.ingo-steinke.com/about-me/index.html"
+alternatehreflang: "en"
 ---
 <!DOCTYPE html>
 <html lang="de">
@@ -29,23 +29,23 @@ alternatehreflang: "de"
     <main id="content-top" class="target-offset">
 
       <section class="text-content-layout text-content-color">
-        <article class="text-width">
-          <h2>Alles auf einen Blick</h2>
+        <article class="text-width headingless">
+
           <p>Ich bin Ingo Steinke, Webentwickler mit Frontend-Fokus und über 20 Jahren Berufserfahrung.
              Bei der Entwicklung eleganter und einfach bedienbarer Websites achte ich auf Barrierefreiheit,
             Ladegeschwindigkeit und Wartbarkeit. HTML, CSS, JavaScript, TypeScript und PHP zählen zu meinen
-            bevorzugten Technologien. Seit 2024 bin ich zertifizierter Shopware-Entwickler.
-            Ich bin pragmatisch, kommunikativ, arbeite gerne eng mit Designer:innen zusammen.
+            bevorzugten Technologien. Seit 2024 bin ich <a href="/zertifizierter-shopware-6-frontend-webentwickler/index.html">zertifizierter Shopware-Entwickler</a>.
+            Ich bin pragmatisch, kommunikativ und arbeite gerne eng mit Webdesigner:innen zusammen.
           </p>
           <p>Lebenslauf, Projektliste und Skillmatrix als PDF-Download:</p>
           <ul>
             <li><a href="../Ingo-Steinke-CV-Projekte-Skills-2024-nachhaltiger-Webentwickler.pdf" target="_blank"
                    rel="noopener noreferrer nofollow">Ingo Steinke, Webentwickler, Berlin: CV, Skills, Projekte</a>
-              (deutsch, Stand: Februar 2024)
+              (deutsch, Stand: September 2024)
             </li>
             <li><a href="../Ingo-Steinke-CV-Projects-Skills-2024-sustainable-web-developer.pdf" target="_blank"
                    rel="noopener noreferrer nofollow">Ingo Steinke, web developer, Berlin: CV, skills, projects</a>
-              (englisch, Stand: Februar 2024)
+              (englisch, Stand: September 2024)
             </li>
           </ul>
         </article>
@@ -72,8 +72,7 @@ alternatehreflang: "de"
             </p>
             <p>
               Als angestellter E-Commerce-Engineer bei Xsite in Düsseldorf entwickelte ich von 2010 bis 2014 Online-Shops
-              unter anderem für Shop-Apotheke.com und den Kunstversand Ars mundi. Als Technical Consultant bei Sevenval Technologies (später Avenga Germany) in Köln und Berlin optimierte ich die Ladezeit und Handytauglichkeit
-                von Online-Shops und Websites der Frankfurter Allgemeinen Zeitung und der Otto Group und erstellte Frontend-Anwendungen mit ReactJS.
+              unter anderem für Shop-Apotheke.com und den Kunstversand Ars mundi. Als Technical Consultant bei Sevenval Technologies (später Avenga Germany) in Köln und Berlin optimierte ich die Ladezeit und Handytauglichkeit von Online-Shops und Websites der Frankfurter Allgemeinen Zeitung und der Otto Group und erstellte Frontend-Anwendungen mit ReactJS.
             </p>
             <p>
               Seit Ende 2020 bin ich als selbstständiger Webentwickler und Freelancer für Agenturen und individuelle Kund:innen tätig. 2024 wurde ich als Shopware-Entwickler zertifiziert.
@@ -111,7 +110,8 @@ alternatehreflang: "de"
           <section class="avoid-page-break">
             <h3>Mitgliedschaften, Veranstaltungen und Vorträge</h3>
             <p>
-              Von 2019 - 2021 war ich Mitveranstalter des Kölner Webperformance Meetups. Aktuell bin ich Mitglied im Impact Hub Berlin, beteilige mich aktiv an fachlichen Diskussionen und schreibe
+              Von 2019 - 2021 war ich Mitveranstalter des Kölner Webperformance Meetups. Aktuell bin ich <a href="https://impact-hub-berlin.notion.site/Ingo-Steinke-2dd84e135fff4973ad8f06ddf9553890" target="_blank" rel="noopener">Mitglied im Impact Hub Berlin</a> und bei <a href="https://fairantwortung.org/uber-ingo-steinke/" target="_blank" rel="noopener">Fairantwortung</a>, beteilige mich aktiv an fachlichen Diskussionen und schreibe
+              Von 2019 - 2021 war ich Mitveranstalter des Kölner Webperformance Meetups. Aktuell bin ich <a href="https://impact-hub-berlin.notion.site/Ingo-Steinke-2dd84e135fff4973ad8f06ddf9553890" target="_blank" rel="noopener">Mitglied im Impact Hub Berlin</a>, beteilige mich aktiv an fachlichen Diskussionen und schreibe
               <a href="https://dev.to/ingosteinke" target="_blank" rel="noopener">Blogartikel</a> zu technischen Themen.
             </p>
             <p>
@@ -204,7 +204,15 @@ alternatehreflang: "de"
 
       {% include '../_includes/section-imprint-contact.liquid' %}
     </main>
-    <footer class="page-footer"><div class="legal legal--copyright">© 2024 Ingo Steinke</div></footer>
+    <footer class="page-footer">
+      <div class="legal legal--copyright">
+        &copy; {{ "now" | date: "%Y" }} {{ content.imprintName }}
+        ({{ content.updatedWithColon }}
+        {{ "now" | date: "%d" }}{{ content.dotIfGerman }}
+        {{ "now" | date: "%m" | customLocalizedMonthNameFilter }}
+        {{ "now" | date: "%Y" }})
+      </div>
+    </footer>
   </div>
 </div>
 </body>
