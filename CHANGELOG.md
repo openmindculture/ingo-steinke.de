@@ -1,9 +1,10 @@
 # Changelog
 
 ## [4.4.4] content update - 2024-09-16
-* add sub-page about me
-* reorder my professional information to improve marketing
-* fix flip-card effect edge cases
+* reorder my professional information to improve marketing #250 #257
+* add sub-page about me #250
+* add testimonial projects #254
+* fix flip-card effect edge cases #254
 
 ## [4.4.0] testimonials and projects - 2024-09-06
 * projects flip card effect #258
