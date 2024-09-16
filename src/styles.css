@@ -871,7 +871,8 @@ a.menu-toggle:hover {
   outline: none;
 }
 
-.contrast-toggle {
+.contrast-toggle,
+.nav-wrapper .animation-toggle {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -879,11 +880,14 @@ a.menu-toggle:hover {
   text-decoration: none;
   background-color: transparent;
   cursor: pointer;
-  svg {
-    color: white;
-    margin: 0.35rem 0.5rem -0.35rem 0.5rem;
-  }
 }
+
+.contrast-toggle svg,
+.nav-wrapper .animation-toggle svg {
+  color: white;
+  margin: 0.35rem 0.5rem -0.35rem 0.5rem;
+}
+
 
 .jumbotronHeader h1 {
   background:

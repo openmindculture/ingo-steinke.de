@@ -58,7 +58,7 @@
   --decoration-bottom-position-bottom-left: calc(-30% * var(--random-factor-position-bottom)); /* 0 .. -30% */
 }
 
-#animation-toggle {
+.animation-toggle {
   cursor: pointer;
 }
 

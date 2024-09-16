@@ -8,7 +8,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const navCloser = document.getElementById('main-menuClose');
   const navMenu = document.getElementById('main-menu');
   const languageSwitch = document.getElementById('language-switch');
-  const animationToggle = document.getElementById('animation-toggle');
+  const animationToggles = document.getElementByClassName('animation-toggle');
   const supportsIntersectionObserver = (('IntersectionObserver' in window) &&
     ('IntersectionObserverEntry' in window) &&
     ('intersectionRatio' in window.IntersectionObserverEntry.prototype) &&
@@ -136,7 +136,8 @@ window.addEventListener('DOMContentLoaded', () => {
       }
     }
 
-    if (animationToggle) {
+    for (let a = 0; a < animationToggles.length; a++) {
+      let animationToggle = animationToggles[a];
       animationToggle.addEventListener('click', () => {
         if (decorationContainer) {
           if (decorationContainer.style.display !== 'none' && !decorationContainer.classList.contains('decoration--fade-out')) {
