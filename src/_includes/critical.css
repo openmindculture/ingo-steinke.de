@@ -85,7 +85,6 @@ h3,
 h4,
 .aside-heading,
 .tagline,
-.tile,
 .hashtags {
   max-width: 99%;
 }
@@ -254,7 +253,8 @@ small {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 100%;
+    width: 99%;
+    margin: 0 auto;
     z-index: 2;
   }
 

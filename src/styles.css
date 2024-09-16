@@ -1223,6 +1223,10 @@ ul.aside-heading > li:last-child {
   margin-bottom: 2rem;
 }
 
+.testimonial {
+  margin-left: 0.5em;
+}
+
 .testimonial blockquote {
   position: relative;
 }
