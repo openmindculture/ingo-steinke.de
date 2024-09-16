@@ -192,7 +192,9 @@ module.exports = {
   "taxNo": "Tax No.",
   "vatIdLabel": "VAT ID",
   "vatIdNumber": "DE337676808",
-  "insurance": "professional liability insurance: Media-Haftfplicht",
+  "insurance": "Professional liability insurance: Media-Haftfplicht",
+  "insurancePrint1": "Professional liability insurance:",
+  "insurancePrint2": "Exali Media-Haftfplicht",
   "insuranceTitle": "Professional liability insurance: exali Media-Haftpflicht",
   "bankaccountLabel": "Bank account: GLS Gemeinschaftsbank eG",
   "bankaccountNumberChunks": [

@@ -175,6 +175,8 @@ module.exports = {
   "vatIdLabel": "UStID",
   "vatIdNumber": "DE337676808",
   "insurance": "Berufshaftpflichtversicherung: Media-Haftpflicht",
+  "insurancePrint1": "Berufshaftpflichtversicherung:",
+  "insurancePrint2": "Exali Media-Haftfplicht",
   "insuranceTitle": "Berufshaftpflichtversicherung: exali Media-Haftpflicht",
   "bankaccountLabel": "Bankverbindung: GLS Gemeinschaftsbank eG",
   "bankaccountNumberChunks": [

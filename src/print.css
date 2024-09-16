@@ -285,6 +285,12 @@ figure,
   display: none;
 }
 
+/* visually spaced content that can be copied contiguously */
+.visually-spaced + .visually-spaced::before {
+  content: " ";
+  letter-spacing: 0.25rem;
+}
+
 /* website carbon badge */
 #wcb_p {
   text-align: left;
