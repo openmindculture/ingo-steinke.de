@@ -8,8 +8,8 @@ window.addEventListener('DOMContentLoaded', () => {
   const navCloser = document.getElementById('main-menuClose');
   const navMenu = document.getElementById('main-menu');
   const languageSwitch = document.getElementById('language-switch');
-  const animationToggle = document.getElementById('animation-toggle');
-  const supportsIntersectionObserver =  (('IntersectionObserver' in window) &&
+  const animationToggles = document.getElementsByClassName('animation-toggle');
+  const supportsIntersectionObserver = (('IntersectionObserver' in window) &&
     ('IntersectionObserverEntry' in window) &&
     ('intersectionRatio' in window.IntersectionObserverEntry.prototype) &&
     ('isIntersecting' in window.IntersectionObserverEntry.prototype)
@@ -85,8 +85,8 @@ window.addEventListener('DOMContentLoaded', () => {
   }
   let contrastToggle = document.getElementById('contrast-toggle');
   if (contrastToggle) {
-    contrastToggle.addEventListener('click',function(){
-      if (document.body.className.indexOf(classNameHighContrast)>-1) {
+    contrastToggle.addEventListener('click', function () {
+      if (document.body.className.indexOf(classNameHighContrast) > -1) {
         document.body.classList.remove(classNameHighContrast);
         if (localStorage) {
           localStorage.removeItem('highContrast');
@@ -121,25 +121,26 @@ window.addEventListener('DOMContentLoaded', () => {
       '--random-factor-position-left',
       '--random-factor-position-bottom',
     ];
-    for (let i=0; i<randomProperties.length; i++) {
+    for (let i = 0; i < randomProperties.length; i++) {
       decorationElement.style.setProperty(randomProperties[i], Math.random());
     }
 
     let decorationContainer = document.getElementById('decoration');
     // WCAG SC 2.2.2 Pause, Stop, Hide (Level A) makes stop button obsolete if animation stops before 5 seconds
-    let animationStopperTimeout = window.setTimeout(function(){
+    let animationStopperTimeout = window.setTimeout(function () {
       animationStopperCallback();
-    },30000); // 1000ms initial (css) delay before animation fades in for the first time
-    let animationStopperCallback = function() {
+    }, 30000); // 1000ms initial (css) delay before animation fades in for the first time
+    let animationStopperCallback = function () {
       if (decorationContainer) {
         document.getElementById('decoration').classList.add('decoration--fade-out');
       }
     }
 
-    if (animationToggle) {
+    for (let a = 0; a < animationToggles.length; a++) {
+      let animationToggle = animationToggles[a];
       animationToggle.addEventListener('click', () => {
         if (decorationContainer) {
-          if (decorationContainer.style.display !=='none' && !decorationContainer.classList.contains('decoration--fade-out')) {
+          if (decorationContainer.style.display !== 'none' && !decorationContainer.classList.contains('decoration--fade-out')) {
             document.getElementById('decoration').style.display = 'none';
             window.clearTimeout(animationStopperTimeout);
           } else {
@@ -160,12 +161,14 @@ window.addEventListener('DOMContentLoaded', () => {
   _paq.push(["enableCrossDomainLinking"]);
   _paq.push(['trackPageView']);
   // _paq.push(['enableLinkTracking']); // disable link tracking
-  (function() {
-    let u="//www.ingo-steinke.de/matomo/";
-    _paq.push(['setTrackerUrl', u+'matomo.php']);
+  (function () {
+    let u = "//www.ingo-steinke.de/matomo/";
+    _paq.push(['setTrackerUrl', u + 'matomo.php']);
     _paq.push(['setSiteId', '1']);
-    let d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    let d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+    g.async = true;
+    g.src = u + 'matomo.js';
+    s.parentNode.insertBefore(g, s);
   })();
 
   /**
@@ -173,13 +176,15 @@ window.addEventListener('DOMContentLoaded', () => {
    * @return void
    * @param form HTMLFormElement
    */
-  const ajaxPost = function(form) {
+  const ajaxPost = function (form) {
     try {
       let url = window.location.hostname && window.location.hostname.indexOf('.de') > -1
         ? 'https://www.ingo-steinke.de/contact/send/index.php'
         : 'https://www.ingo-steinke.com/contact/send/index.php';
       let xhr = new XMLHttpRequest();
-      if (!xhr) { return; }
+      if (!xhr) {
+        return;
+      }
 
       /** @var {String[]} params */
       let params = [];
@@ -189,19 +194,19 @@ window.addEventListener('DOMContentLoaded', () => {
       }
       let emailfonFieldElement = form.querySelector('.contactform-field-emailfon');
       if (emailfonFieldElement && emailfonFieldElement.value) {
-        params.push('&contactform-field-emailfon='+encodeURIComponent(emailfonFieldElement.value));
+        params.push('&contactform-field-emailfon=' + encodeURIComponent(emailfonFieldElement.value));
       }
       let messageFieldElement = form.querySelector('.contactform-field-message');
       if (messageFieldElement && messageFieldElement.value) {
-        params.push('&contactform-field-message='+encodeURIComponent(messageFieldElement.value));
+        params.push('&contactform-field-message=' + encodeURIComponent(messageFieldElement.value));
       }
       let messageFieldCaptcha = form.querySelector('.contactform-field-captcha');
       if (messageFieldCaptcha && messageFieldCaptcha.value) {
-        params.push('&contactform-field-captcha='+encodeURIComponent(messageFieldCaptcha.value));
+        params.push('&contactform-field-captcha=' + encodeURIComponent(messageFieldCaptcha.value));
       }
       let messageFieldHomepage = form.querySelector('.contactform-field-homepage');
       if (messageFieldHomepage && messageFieldHomepage.value) {
-        params.push('&contactform-field-homepage='+encodeURIComponent(messageFieldHomepage.value));
+        params.push('&contactform-field-homepage=' + encodeURIComponent(messageFieldHomepage.value));
       }
       if (params.length === 0) {
         return;
@@ -216,7 +221,7 @@ window.addEventListener('DOMContentLoaded', () => {
       form.classList.remove('status-initial', 'status-sent', 'status-error');
       form.classList.add('status-sending');
 
-      xhr.onload = function(){
+      xhr.onload = function () {
         if (xhr.status == 200) {
           form.classList.remove('status-initial', 'status-sending', 'status-error');
           form.classList.add('status-sent');
@@ -229,7 +234,7 @@ window.addEventListener('DOMContentLoaded', () => {
       if (window._paq) {
         window._paq.push(['trackEvent', 'actions', 'contact', 'sent']);
       }
-    } catch(e) {
+    } catch (e) {
       console.error('form send error', e);
       form.classList.remove('status-initial', 'status-sending', 'status-sent');
       form.classList.add('status-error');
@@ -245,8 +250,8 @@ window.addEventListener('DOMContentLoaded', () => {
   };
 
   const contactforms = document.getElementsByClassName('contactform');
-  for (let i=0; i < contactforms.length; i++) {
-    contactforms.item(i).onsubmit = function(e) {
+  for (let i = 0; i < contactforms.length; i++) {
+    contactforms.item(i).onsubmit = function (e) {
       e.preventDefault();
       if (window._paq) {
         window._paq.push(['trackEvent', 'actions', 'contact', 'send']);
@@ -262,11 +267,30 @@ window.addEventListener('DOMContentLoaded', () => {
     typeof document.body.classList.toggle === 'function'
   ) {
     let flipBoxRows = document.getElementsByClassName('flip-box-row');
-    for (let i=0; i < flipBoxRows.length; i++) {
+    for (let i = 0; i < flipBoxRows.length; i++) {
       flipBoxRows[i].addEventListener('touch', event => {
         event.currentTarget.classList.toggle('active');
       });
     }
   }
 
+  let pdfContainerElement = document.getElementById('pdf-container');
+  if (pdfContainerElement) {
+    if (window.location.search && typeof URLSearchParams === 'function') {
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      if (urlParams && urlParams.get('pdf') == 'embed') {
+        let pdfObjectElement = document.createElement('object');
+        pdfObjectElement.setAttribute('data', '/Shopware-6-Certified-Developer-Ingo-Steinke-de.pdf');
+        pdfObjectElement.setAttribute('width', '2480');
+        pdfObjectElement.setAttribute('height', '3508');
+        pdfObjectElement.setAttribute('type', 'application/pdf');
+        pdfObjectElement.classList.add('size-din-a4-portrait');
+        pdfContainerElement.appendChild(pdfObjectElement);
+        pdfContainerElement.classList.remove('initially-hidden');
+      }
+    }
+  }
 });
+
+

@@ -1,0 +1,219 @@
+---
+tags: addtositemap
+isaboutme: true
+imgdirectory: "../img"
+previewimage: "https://www.ingo-steinke.com/img/preview-sustainability-en.png"
+previewtitle: "About Ingo Steinke: CV, projects, skills"
+previewdescription: "Ingo Steinke is a front-end focused web developer with over 20 years of professional experience. When developing elegant and easy-to-use websites, he pays attention to accessibility, loading speed and maintainability."
+permalink: "about-me.html"
+alternatelink: "https://www.ingo-steinke.de/ueber-mich/index.html"
+alternatehreflang: "de"
+---
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Web developer Ingo Steinke: about me</title>
+  {% include '../_includes/html-head-common.liquid' %}
+</head>
+<body class="high-contrast">
+<div class="page-container" id="top">
+  <div class="page-content">
+    <header class="jumbotronHeader" id="jumbotronHeader">
+      <br>
+      {% include './_includes/jumbotron-image.liquid' %}
+      <h1>Ingo Steinke</h1>
+      <p class="tagline">CV, Projects, Skills</p>
+    </header>
+    {% include '../_includes/navigation-on-subpages.liquid', headerClassName: 'wide' %}
+    <main id="content-top" class="target-offset">
+      <section class="text-content-layout text-content-color semitransparent avoid-page-break">
+        <div class="only-print timestamp top-timestamp">
+          Berlin,
+          {{ "now" | date: "%d" }}{{ content.dotIfGerman }}
+          {{ "now" | date: "%m" | customLocalizedMonthNameFilter }}
+          {{ "now" | date: "%Y" }}
+        </div>
+        <h2 class="target-offset" id="about-me">
+          {{ content.aboutMeHeading }}
+        </h2>
+        <article class="text-width">
+          <p>I'm Ingo Steinke, front-end focused web developer with over 20 years of professional experience. When developing elegant and easy-to-use websites, I pay attention to accessibility, loading speed and maintainability. HTML, CSS, JavaScript, TypeScript and PHP are among my favourite technologies. Since 2024, I am a <a href="/services/certified-shopware-developer-berlin.html">certified Shopware developer</a>.
+            I'm pragmatic, communicative and enjoy working closely with web designers.
+          </p>
+          <p class="no-print">Download CV, projects list, and skills matrix as a PDF file:</p>
+          <ul class="no-print">
+            <li><a href="../Ingo-Steinke-CV-Projekte-Skills-2024-nachhaltiger-Webentwickler.pdf" target="_blank"
+                   rel="noopener noreferrer nofollow">Ingo Steinke, Webentwickler, Berlin: CV, Skills, Projekte</a>
+              (German, updated September 2024)
+            </li>
+            <li><a href="../Ingo-Steinke-CV-Projects-Skills-2024-sustainable-web-developer.pdf" target="_blank"
+                   rel="noopener noreferrer nofollow">Ingo Steinke, web developer, Berlin: CV, skills, projects</a>
+              (English, updated September 2024)
+            </li>
+          </ul>
+          <br>
+          <header>
+            <h3>
+              {{ content.aboutMeIntroHeading }}
+            </h3>
+          </header>
+          <p class="capitalized"><!-- overcapitalize first letter -->
+            {{ content.aboutMeIntro }}
+          </p>
+          <br class="only-print">
+
+          <section class="avoid-page-break">
+            <h3>{{ content.aboutMeCvHeading }}</h3>
+            <p>
+              I co-founded a start-up in 2000 whose first products were interactive websites and browser games. Later, our core business transitioned to search engine optimization and our own e-commerce software.
+            </p>
+            <p>
+              While employed as an e-commerce engineer at Xsite in Düsseldorf from 2010 to 2014, I developed online shops for Shop-Apotheke.com, Ars mundi, and other customers. As a technical consultant at Sevenval Technologies (later Avenga Germany) in Cologne and Berlin, I optimized the loading time and mobile phone compatibility of apps and websites for Frankfurter Allgemeine Zeitung and online shops for Otto Group and created front-end applications for wao.io and other customers.
+            </p>
+            <p>
+              I'm a freelance web developer since 2020, working for agencies and individual customers. I became a certified Shopware developer in 2024.
+            </p>
+          </section>
+
+          <figure class="content-image">
+            <picture>
+              <source
+                type="image/webp"
+                sizes="100vw"
+                srcset="img/Ingo-Steinke-NCA-TV-2021-800x443.webp 1x,
+                    img/Ingo-Steinke-NCA-TV-2021-400x222.webp 2x,
+                    img/Ingo-Steinke-NCA-TV-2021-800x443.webp 4x"
+              >
+              <img
+                src="img/Ingo-Steinke-NCA-TV-2021-800x443.jpg"
+                srcset="img/Ingo-Steinke-NCA-TV-2021-400x222.jpg 400w,
+                          img/Ingo-Steinke-NCA-TV-2021-800x443.jpg 800w"
+                sizes="(min-width: 800px) 800px, 100vw"
+                width="800"
+                height="443"
+                alt="{{ content.talksImageAlt }}"
+                loading="lazy"
+              >
+            </picture>
+            <figcaption>
+              {{ content.talksImageCaption }}:
+              <a href="https://blog.nevercodealone.de/php-testing-refactoring-nca-conference-duisburg/" target="_blank" rel="noopener">
+                {{ content.talksImageLinkText }}
+              </a>
+            </figcaption>
+          </figure>
+          <br class="only-print">
+
+          <section class="avoid-page-break">
+            <h3>Memberships, Events and Talks</h3>
+            <p>
+              From 2019 to 2021 I co-hosted the Cologne Web Performance meetup. Currentyl, I am a member of <a href="https://impact-hub-berlin.notion.site/Ingo-Steinke-2dd84e135fff4973ad8f06ddf9553890" target="_blank" rel="noopener">Impact Hub Berlin</a> and <a href="https://fairantwortung.org/uber-ingo-steinke/" target="_blank" rel="noopener">Fairantwortung</a>. I actively participate in professional discussions and write
+              <a href="https://dev.to/ingosteinke" target="_blank" rel="noopener">blog posts</a> about technological topics.
+            </p>
+            <p>
+              {{ content.talks2 }}
+            <ul>
+              <li>
+                <a
+                  href="https://www.meetup.com/cologne-germany-high-performance-website-optimization-group/events/274558354/"
+                  hreflang="de"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  {{ content.talkMeetupWebVitals }}
+                </a>
+                {{ content.talkMeetupWebVitals2 }}
+              </li>
+              <li>
+                <a
+                  href="https://www.meetup.com/cologne-germany-high-performance-website-optimization-group/events/268706480/"
+                  hreflang="de"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  {{ content.talkPerformanceNoCode }}
+                </a> {{ content.talkPerformanceNoCode2 }}
+              </li>
+              <li>
+                <a
+                  href="https://www.meetup.com/cologne-germany-high-performance-website-optimization-group/events/255856182/"
+                  hreflang="de"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  {{ content.talkHsts }}
+                </a>
+                {{ content.talkHsts2 }}
+              </li>
+              <li>
+                <a
+                  href="https://www.meetup.com/cologne-germany-high-performance-website-optimization-group/events/zdnjlmywhbgb/"
+                  hreflang="de"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  {{ content.talkInfrastructure }}
+                </a>
+                {{ content.talkInfrastructure2 }}
+              </li>
+            </ul>
+            </p>
+            <p>
+              Creativity, flexibility, and thoughtfulness are values that guide my work and personal life. I am deeply interested in how sustainability, culture, and art come together, and I strive to bring what I learn into my work every day.
+            </p>
+          </section>
+
+          <section class="avoid-page-break">
+            <h4>{{ content.aboutMeEthicalHeading }}</h4>
+            <p>
+              Digitalisation primarily stands for technological progress. The economic benefits of sustainable innovation have often been overlooked. I like to to support ethical and ecological projects, for example the transition in the transport sector, renewable energies, and environmentally-friendly fashion. Thanks to my experience, we can elegantly comply with legal requirements such as the General Data Protection Regulation or the European Accessibility Act.
+            </p>
+          </section>
+
+        </article>
+      </section>
+
+      <section class="tiled-content target-offset" id="projects">
+        <div class="pl1">
+          <h2>{{ content.projectsHeading }}</h2>
+          <p>
+            {{ content.projects }}
+          </p>
+        </div>
+        <div class="grid-container grid-container--projects">
+          {% include './_includes/projects.liquid', showallprojects: 'showallprojects', showicons: 'showicons'  %}
+        </div>
+      </section>
+
+      <br>
+      <span id="skills"></span>
+      {% include './_includes/skills.liquid', showallskills: 'showallskills', skillsTitle: 'Professional Skills'  %}
+
+      <section class="tiled-content target-offset pl1">
+        <h3 id="interested">{{ content.interestedHeading }}</h3>
+        <p>
+          Contact me to schedule a non-binding appointment! I will reply in a timely manner! You can reach my by phone, email, Signal, or WhatsApp. If I can't take a call, feel free to leave me a voice message!
+        </p>
+      </section>
+      <br>
+
+      {% include '../_includes/section-imprint-contact.liquid' %}
+    </main>
+    <footer class="page-footer">
+      <p class="no-print">
+        <button class="animation-toggle">{{ content.buttonToggleAnimation }}</button>
+      </p>
+      <div class="legal legal--copyright">
+        &copy; {{ "now" | date: "%Y" }} {{ content.imprintName }}
+        ({{ content.updatedWithColon }}
+        {{ "now" | date: "%d" }}{{ content.dotIfGerman }}
+        {{ "now" | date: "%m" | customLocalizedMonthNameFilter }}
+        {{ "now" | date: "%Y" }})
+      </div>
+    </footer>
+    <div id="pdf-container" class="only-print initially-hidden pdf-container"></div>
+  </div>
+</div>
+</body>
+</html>

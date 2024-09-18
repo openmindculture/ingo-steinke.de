@@ -13,6 +13,7 @@ body {
    */
 
   --deep-green: #017d63;
+  --deep-green-darker: #235656;
   --spermidine-green: #1d4950;
   --spermidine-green-darker: #0c1f22;
   --fresh-blue: #6440fa;
@@ -111,7 +112,7 @@ body {
 
   /* animation */
   --radius: 100%;
-  --primary-animation-color: var(--deep-green);
+  --primary-animation-color: var(--deep-green-darker);
   --secondary-animation-color: var(--omega-purple);
 
   /* export typography */
@@ -120,8 +121,8 @@ body {
   --body-line-height: 1.75;
   --heading-font-family: 'Bitter', serif;
   --heading-font-weight: 700;
-
-  --project-tile-min-height: 382px;
+  --sans-font-family: 'Montserrat', 'Helvetica', sans-serif;
+  --project-tile-min-height: 448px;
 }
 
 body.high-contrast {

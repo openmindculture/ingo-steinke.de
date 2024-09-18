@@ -1,4 +1,4 @@
-<div class="sticky-header smaller-header is-nav-closed is-unstuck" id="sticky-header">
+<div class="sticky-header {{ headerClassName | default: 'smaller-header' }} is-nav-closed is-unstuck" id="sticky-header">
   <div class="wrapper">
       <span class="raised-layer">
         <span class="scripted hideable" id="sticky-headline">
@@ -44,10 +44,17 @@
           </svg>
         </a>
         <ul>
-          <li><a href="../#projects">{{ content.targetProjects }}</a></li>
-          <li><a href="../#services">{{ content.targetServices }}</a></li>
-          <li><a href="../#about-me">{{ content.targetAboutMe }}</a></li>
-          <li><a href="../#contact">{{ content.targetContact }}</a></li>
+          {% if isaboutme %}
+            <li><a href="#about-me">{{ content.targetAboutMe }}</a></li>
+            <li><a href="#projects">{{ content.targetProjects }}</a></li>
+            <li><a href="#skills">{{ content.targetSkills }}</a></li>
+            <li><a href="#contact">{{ content.targetContact }}</a></li>
+          {% else %}
+            <li><a href="../#projects">{{ content.targetRefs }}</a></li>
+            <li><a href="../#services">{{ content.targetServices }}</a></li>
+            <li><a href="../{{ content.targetAboutMeUrl }}">{{ content.targetAboutMe }}</a></li>
+            <li><a href="../#contact">{{ content.targetContact }}</a></li>
+          {% endif %}
           <li><a href="../#imprint">{{ content.targetImprint }}</a></li>
           <li><a href="../#privacy">{{ content.targetPrivacy }}</a></li>
           <li>
@@ -61,6 +68,7 @@
           </li>
         </ul>
       </nav>
+      {% include '_includes/animation-toggle-button.liquid' %}
       <button
         id="contrast-toggle"
         class="contrast-toggle no-print"
@@ -68,7 +76,7 @@
         data-reducecaption="{{ content.reduceContrast }}"
         data-increasecaption="{{ content.increaseContrast }}"
       >
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="24" height="24">
+        <svg viewBox="0 0 32 32" width="24" height="24">
           <path fill="currentColor" d="M15 2h2v3h-2zM27 15h3v2h-3zM15 27h2v3h-2zM2 15h3v2H2zM5.45 6.884l1.414-1.415 2.121 2.122-1.414 1.414zM23 7.58l2.121-2.12 1.414 1.414-2.121 2.121zM23.002 24.416l1.415-1.414 2.12 2.122-1.413 1.414zM5.47 25.13 7.59 23 9 24.42l-2.12 2.12-1.41-1.41zM16 8a8 8 0 1 0 8 8 8 8 0 0 0-8-8Zm0 14a6 6 0 0 1 0-12Z"/>
           <path fill="none" style="fill:none" d="M0 0h32v32H0z"/>
         </svg>

@@ -85,13 +85,16 @@ h3,
 h4,
 .aside-heading,
 .tagline,
-.tile,
 .hashtags {
   max-width: 99%;
 }
 
 ul.aside-heading {
   text-align: left;
+}
+
+.headingless {
+  padding-top: 1em;
 }
 
 del {
@@ -161,7 +164,7 @@ small {
     font-weight: var(--body-font-weight);
     color: var(--primary-heading);
     padding: 0;
-    margin: 0;
+    margin: 1rem 0 0 0;
   }
 
   @media screen and (min-width: 950px) {
@@ -239,13 +242,19 @@ small {
   main {
     max-width: 1500px;
     margin: 0 auto;
+    width: 100%;
+  }
+
+  main > section {
+    width: 100%;
   }
 
   .page-content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 100%;
+    width: 99%;
+    margin: 0 auto;
     z-index: 2;
   }
 
@@ -319,7 +328,6 @@ small {
     margin-right: 0;
   }
 
-  section,
   .clear {
     clear: both;
   }

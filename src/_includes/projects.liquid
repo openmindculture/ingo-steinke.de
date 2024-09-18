@@ -1,12 +1,9 @@
-<section class="tiled-content target-offset" id="projects">
-  <div class="pl1">
-    <h2>{{ content.projectsHeading }}</h2>
-    <p>{{ content.projects }}</p>
-  </div>
+    {% if showallprojects %}
+      {%- assign projects = 'kleiderordnung, fractal, portfolio, shopwareplugin, twistedconnection, daskannstdutun, foodtogether, reactapp, wordpress' | split: ', ' -%}
+    {% else %}
+      {%- assign projects = projectlist | split: ', ' -%}
+    {% endif %}
 
-  <div class="grid-container grid-container--projects">
-
-    {%- assign projects = 'kleiderordnung, fractal, foodtogether, daskannstdutun, shopwareplugin, reactapp, portfolio, wordpress, twistedconnection' | split: ', ' -%}
     {%- for project in projects -%}
       {%- assign projectHeadline = '' -%}
       {%- assign projectHashtags = '' -%}
@@ -14,6 +11,7 @@
       {%- assign projectImgWidth = '' -%}
       {%- assign projectImgHeight = '' -%}
       {%- assign projectLinkUrl = '' -%}
+      {%- assign projectTimestamp = '' -%}
       {%- assign projectDescription = '' -%}
       {%- assign contentfile = '../_data/'
         | appendCurrentLanguageSlug
@@ -26,35 +24,59 @@
       render does not pass variables, but include does, see
       https://stackoverflow.com/questions/74672545/pass-variables-inside-render-to-outside
       maybe liquid is not the right language in a JS context and Nunjucks would be better?
-
-      TODO adjust CSS min heights on mobile!
       {%- endcomment -%}
-      <article class="target-offset flip-box-row" id="project-{{ project }}" tabindex="0">
-        <div class="flip-box-column">
-          <div class="flip-box-front tile">
-            <div class="flip-box-decoration">
-              <img
-                src="{{ 'img/screenshot-' | append: project | append: '.png' }}"
-                alt="{{ imgalt }}"
-                width="{{ projectImgWidth | default: '1265' }}"
-                height="{{ projectImgHeight | default: '1129' }}"
-                class="poster-image"
-                loading="lazy"
-              >
-            </div>
-            <div class="tile-content bg-peel"></div>
-            <div class="tile-content flex">
+
+    {% if showflipsides %}
+      <article
+        class="flip-box-row"
+        id="project-{{ project }}"
+        tabindex="0"
+      >
+          <div class="flip-box-column">
+            <img
+              src="data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%3E%3C/svg%3E"
+              alt
+              width="{{ projectImgWidth | default: '1265' }}"
+              height="{{ projectImgHeight | default: '1129' }}"
+              class="poster-image flip-height-placeholder"
+            >
+            <div class="flip-box-front tile">
+              <a target="_blank" rel="noopener" href="{{ projectLinkUrl }}" title="{{ projectHeadline }} {{ content.projectWebsite }}">
+                <img
+                  src="{{ 'img/screenshot-' | append: project | append: '.png' }}"
+                  alt="{{ imgalt }}"
+                  width="{{ projectImgWidth | default: '1265' }}"
+                  height="{{ projectImgHeight | default: '1129' }}"
+                  class="poster-image"
+                  loading="lazy"
+                >
+              </a>
+          </div>
+          <div class="flip-box-back tile">
+            <div class="tile-content flex bg-peel">
               <header>
                 <h3>{{ projectHeadline }}</h3>
               </header>
+              {% if projectTimestamp %}
+                <div class="timestamp">{{ projectTimestamp }}</div>
+              {% endif %}
               <p>
+                {% if showicons %}
+                  <img src="img/icon-{{ project }}.svg"
+                       alt="{{ projectIconAlt }}"
+                       width="{{ projectIconWidth | default: '64' }}"
+                       height="{{ projectIconHeight | default: '64' }}"
+                       class="project-thumb project-thumb--{{ project }}"
+                       loading="lazy">
+                {% endif %}
                 <span class="text-line">
                 {{ projectDescription }}
               </span>
-                <a class="only-print print-display-block"target="_blank" rel="noopener" href="{{ projectLinkUrl }}">
-                  {{ projectLinkUrl }}
+              <div>
+                <a class="print-display-block breakable" target="_blank" rel="noopener" href="{{ projectLinkUrl }}">
+                  {{ projectLinkUrl | unprefixedHumanReadableUrl }}
                 </a>
-              </p>
+              </div>
               <p>
                 {%- assign hashtagsArray = projectHashtags | split: ' ' -%}
                 {%- for hashtag in hashtagsArray %}
@@ -63,20 +85,47 @@
               </p>
             </div>
           </div>
-          <div class="flip-box-back tile">
-            <a target="_blank" rel="noopener" href="{{ projectLinkUrl }}" title="{{ projectHeadline }} {{ content.projectWebsite }}">
-              <img
-                src="{{ 'img/screenshot-' | append: project | append: '.png' }}"
-                alt="{{ imgalt }}"
-                width="{{ projectImgWidth | default: '1265' }}"
-                height="{{ projectImgHeight | default: '1129' }}"
-                class="poster-image"
-                loading="lazy"
-              >
-            </a>
-          </div>
         </div>
       </article>
+
+      {% else %}
+
+        <article
+          class="tile"
+          id="project-{{ project }}"
+          tabindex="0"
+        >
+          <div class="tile-content flex bg-peel">
+            <header>
+              <h3>{{ projectHeadline }}</h3>
+            </header>
+            {% if projectTimestamp %}
+              <div class="timestamp">{{ projectTimestamp }}</div>
+            {% endif %}
+            <p>
+              {% if showicons %}
+                <img src="img/icon-{{ project }}.svg"
+                     alt="{{ projectIconAlt }}"
+                     width="{{ projectIconWidth | default: '64' }}"
+                     height="{{ projectIconHeight | default: '64' }}"
+                      class="project-thumb project-thumb--{{ project }}"
+                loading="lazy">
+              {% endif %}
+              <span class="text-line">
+                {{ projectDescription }}
+              </span>
+              <a class="print-display-block breakable" target="_blank" rel="noopener" href="{{ projectLinkUrl }}">
+                {{ projectLinkUrl | unprefixedHumanReadableUrl }}
+              </a>
+            </p>
+            <p>
+              {%- assign hashtagsArray = projectHashtags | split: ' ' -%}
+              {%- for hashtag in hashtagsArray %}
+                <span class="hashtag">{{ hashtag }}</span>
+              {% endfor -%}
+            </p>
+          </div>
+        </article>
+
+      {% endif %}
     {% endfor -%}
-  </div>
-</section>
