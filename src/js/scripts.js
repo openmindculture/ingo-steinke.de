@@ -8,7 +8,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const navCloser = document.getElementById('main-menuClose');
   const navMenu = document.getElementById('main-menu');
   const languageSwitch = document.getElementById('language-switch');
-  const animationToggles = document.getElementByClassName('animation-toggle');
+  const animationToggles = document.getElementsByClassName('animation-toggle');
   const supportsIntersectionObserver = (('IntersectionObserver' in window) &&
     ('IntersectionObserverEntry' in window) &&
     ('intersectionRatio' in window.IntersectionObserverEntry.prototype) &&
