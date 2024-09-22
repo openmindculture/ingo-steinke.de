@@ -1,10 +1,9 @@
 # Changelog
 
 ## [4.4.5] improve layout, typography, accessibility - 2024-09-22
+* fix navigation link hover color contrast in Safari #270
+* improve mobile testimonials layout
 * improve footer copyright note layout on mobile
-* harmonize landing page header typography font size #...
-* fix navigation link hover color contrast in Safari #...
-* improve mobile layout issues
 * fix grid layout breakpoint edge cases
 * add contact form spam protection rules
 
@@ -19,7 +18,7 @@
 * add a more prominent pause button in the top navigation
 * optionally embed additional PDF documents
 
-## [4.4.0] testimonials and projects - 2024-09-06
+## [4.4.0] testimonials and projects - 2024-09-06 (stage only)
 * projects flip card effect #258
 * modularize project card content
 * modularize and upgrade eleventy configuration
