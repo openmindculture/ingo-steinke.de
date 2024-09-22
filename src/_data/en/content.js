@@ -59,6 +59,7 @@ module.exports = {
   "projectsHereAreSome": "This is a selection of my past projects. Take a look and see what you think!",
   "projectsScreenshots": "Screenshots",
   "projectWebsite": "website",
+  "projectSourceCode": "source code",
   /* work */
   "workHeading": "Long-Lasting Solutions",
   "work": "I can implement your layouts across platforms in a responsive and accessible way. My goal is to build long-lasting solutions that are elegant, transparent, and easy to maintain.",
