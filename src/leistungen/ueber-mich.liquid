@@ -210,11 +210,15 @@ alternatehreflang: "en"
         <button class="animation-toggle">{{ content.buttonToggleAnimation }}</button>
       </p>
       <div class="legal legal--copyright">
-        &copy; {{ "now" | date: "%Y" }} {{ content.imprintName }}
-        ({{ content.updatedWithColon }}
-        {{ "now" | date: "%d" }}{{ content.dotIfGerman }}
-        {{ "now" | date: "%m" | customLocalizedMonthNameFilter }}
-        {{ "now" | date: "%Y" }})
+        <span class="copyright-icon">&copy;</span>
+        <span class="copright-date">{{ "now" | date: "%Y" }}</span>
+        <span class="copyright-author">{{ content.imprintName }}</span>
+        <span class="copyright-details">
+          ({{ content.updatedWithColon }}
+          {{ "now" | date: "%d" }}{{ content.dotIfGerman }}
+          {{ "now" | date: "%m" | customLocalizedMonthNameFilter }}
+          {{ "now" | date: "%Y" }})
+        </span>
       </div>
     </footer>
     <div id="pdf-container" class="only-print initially-hidden pdf-container"></div>

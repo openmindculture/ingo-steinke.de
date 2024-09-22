@@ -497,6 +497,11 @@ body.high-contrast .bg-peel {
     max-width: 100%;
     max-width: 100vw;
   }
+
+  .copyright-details {
+    display: block;
+    margin-top: 0.5em;
+  }
 }
 
 .vcard h2 {

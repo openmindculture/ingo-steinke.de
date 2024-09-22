@@ -21,5 +21,9 @@
     <button class="animation-toggle">{{ content.buttonToggleAnimation }}</button>
   </p>
   <div class="only-print"><br></div>
-  <div class="legal legal--copyright">© 2024 Ingo Steinke</div>
+  <div class="legal legal--copyright">
+    <span class="copyright-icon">&copy;</span>
+    <span class="copright-date">{{ "now" | date: "%Y" }}</span>
+    <span class="copyright-author">{{ content.imprintName }}</span>
+  </div>
 </footer>
