@@ -3,14 +3,12 @@
 ## [4.4.5] improve layout, typography, accessibility - 2024-09-22
 * improve footer copyright note layout on mobile
 * harmonize landing page header typography font size #...
-* add contact form spam protection rules
-* fix unless rare browser edge cases:
 * fix navigation link hover color contrast in Safari #...
-* fix navigation vertical align in Epiphany/GnomeWeb
-* fix grid layout breakpoints, font size in Epiphany/GnomeWeb
-* fix grid/page max-width in Epiphany/GnomeWeb
+* improve mobile layout issues
+* fix grid layout breakpoint edge cases
+* add contact form spam protection rules
 
-## [4.4.4] content update - 2024-09-17
+## [4.4.4] content update - 2024-09-17 (stage only)
 * restructure my professional information to improve marketing #250 #257
 * add sub-page about me #250
 * add testimonial projects #254

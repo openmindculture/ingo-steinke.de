@@ -1233,7 +1233,8 @@ ul.aside-heading > li:last-child {
 }
 
 .testimonial {
-  margin-left: 0.5em;
+  margin: 0 0 2em 0.5em;
+  max-width: 1080px;
 }
 
 .testimonial blockquote {
@@ -1263,6 +1264,12 @@ ul.aside-heading > li:last-child {
 
 figure.testimonial figcaption {
   font-weight: bold;
+}
+
+@media (min-width: 950px) {
+  .testimonial {
+    margin: 0 2em 2em 2em;
+  }
 }
 
 /* stylelint-disable-next-line no-descending-specificity */

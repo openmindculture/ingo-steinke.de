@@ -65,6 +65,7 @@ if (
   strpos($post_msg, 'ə') !== false ||
   strpos($post_msg, 'ē') !== false ||
   strpos($post_msg, 'হা') !== false ||
+  strpos($post_msg, 'ფ') !== false ||
   strpos($post_msg, 'Ոা') !== false ||
   strpos($post_msg, '&#39;') !== false ||
   strpos($post_msg, 'meg akartam') !== false ||
@@ -86,6 +87,7 @@ if (
   strpos($post_name, 'Davidbeids') !== false ||
   strpos($post_name, 'Adjbeids') !== false ||
   strpos($post_name, 'Maxbeids') !== false ||
+  strpos($post_name, 'Tedbeids') !== false ||
   strpos($post_name, 'KevinKen') !== false ||
   strpos($post_name, 'Amandapeaceame') !== false ||
   strpos($post_name, 'Tracyselty') !== false ||
