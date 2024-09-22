@@ -1,5 +1,11 @@
 # Changelog
 
+## [4.4.5] improve layout, typography, accessibility - 2024-09-22
+* improve footer copyright note layout on mobile
+* harmonize landing page header typography font size #...
+* fix navigation link hover color contrast in Safari #...
+* add contact form spam protection rules
+
 ## [4.4.4] content update - 2024-09-17
 * restructure my professional information to improve marketing #250 #257
 * add sub-page about me #250
