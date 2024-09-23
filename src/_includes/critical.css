@@ -571,6 +571,7 @@ small {
   }
 
   .text-content-layout {
+    padding-right: 0.5em;
     padding-left: 0.5em;
     margin-bottom: 1em;
   }
@@ -610,11 +611,6 @@ small {
   ul.skills > .tile ul,
   ul.skills > .tile li {
     padding-right: 0;
-  }
-
-  /* adjust too narrow margin on iOS */
-  .tile h3 {
-    margin-top: 1em;
   }
 
   .hashtags {

@@ -56,7 +56,7 @@ module.exports = {
   "projects": "Überzeuge dich selbst von meiner Arbeit!",
   "projectsMore1": "Auf der",
   "projectsMoreLinkText": "Seite über mich findest du weitere Projekte",
-  "projectsHereAreSome": "Eine Auswahl meiner bisherigen Projekte",
+  "projectsHereAreSome": "Eine Auswahl meiner Projekte",
   "projectsScreenshots": "Screenshots",
   "projectWebsite": "Website",
   "projectSourceCode": "Quellcode",

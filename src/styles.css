@@ -289,7 +289,7 @@ a.menu-toggle:hover {
 }
 
 .tile h3 {
-  margin: 0.75rem 0 0 0;
+  margin: 1rem 0 0 0;
 }
 
 .tile .timestamp {
@@ -597,9 +597,17 @@ a.vcard-digital-qr:hover {
   padding: 6px 8px 0 4px;
 }
 
-@media only screen and (min-width: 375px) {
+.menu-toggle,
+.animation-toggle,
+.contrast-toggle {
+  margin-right: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+@media only screen and (min-width: 410px) {
   .menu-toggle {
-    margin-right: 1.5rem;
+    margin-right: 0.5rem;
   }
 }
 
@@ -1345,22 +1353,28 @@ body.high-contrast {
   grid-row-gap: 1.5em;
 }
 
+.grid-container--projects .tile {
+  line-height: 2;
+  border: dashed thin;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: calc(100% - 2px);
+  margin-right: auto;
+  margin-left: auto;
+}
+
 @media only screen and (min-width: 480px) {
   .grid-container.grid-container--projects {
     grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+  }
+  .grid-container--projects .tile {
+    max-width: 100%;
   }
 }
 
 .grid-container.grid-container--projects.flip-box-container {
   grid-auto-rows: var(--project-tile-min-height); /* 382px; */
   grid-auto-rows: minmax(min-content, max-content);
-}
-
-.grid-container--projects .tile {
-  line-height: 2;
-  border: dashed thin;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 /* stylelint-disable-next-line no-descending-specificity */
