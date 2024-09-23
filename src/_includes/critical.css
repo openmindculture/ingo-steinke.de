@@ -293,10 +293,10 @@ small {
   }
 
   @media (min-width: 768px) {
-    .text-content-layout,
-    .text-content-layout-children > *,
-    .privacy {
+    .text-content-layout.text-content-color,
+    .text-content-layout-children.text-content-color > * {
       padding-left: 2rem;
+      padding-left: max(2rem, 5%);
     }
   }
 
