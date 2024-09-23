@@ -998,6 +998,7 @@ a.buttonlike:visited,
 a.buttonlike:active,
 a.buttonlike:hover,
 a.buttonlike:focus,
+button.buttonlike,
 .grid-container.services a.buttonlike,
 .grid-container.services a.buttonlike:link,
 .grid-container.services a.buttonlike:visited,
@@ -1058,6 +1059,7 @@ a.buttonlike:focus,
 a.buttonlike:link,
 a.buttonlike:visited,
 a.buttonlike:active,
+button.buttonlike,
 .grid-container.services a.buttonlike:link,
 .grid-container.services a.buttonlike:visited,
 .grid-container.services a.buttonlike:active {
@@ -1066,13 +1068,16 @@ a.buttonlike:active,
 
 a.buttonlike:hover,
 a.buttonlike:focus,
+button.buttonlike:hover,
+button.buttonlike:focus,
 .grid-container.services a.buttonlike:hover,
 .grid-container.services a.buttonlike:focus {
   box-shadow: var(--effect-box-shadow-dropshadow-darker);
   font-size: 1.125rem;
 }
 
-body.high-contrast a.buttonlike {
+body.high-contrast a.buttonlike,
+body.high-contrast button.buttonlike {
   background-color: #fff;
   border: solid thin #000;
 }
