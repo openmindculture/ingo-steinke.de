@@ -75,9 +75,6 @@
               </span>
               {% if projectLinkUrl != '' %}
                 <div>
-                  {% if sourceLinkUrl != '' %}
-                    <div>{{ content.projectWebsite }}:</div>
-                  {% endif %}
                   <a class="print-display-block breakable" target="_blank" rel="noopener" href="{{ projectLinkUrl }}">
                     {{ projectLinkUrl | unprefixedHumanReadableUrl }}
                   </a>
@@ -85,8 +82,7 @@
               {% endif %}
               {% if sourceLinkUrl != '' %}
                 <div>
-                  <div>{{ content.projectSourceCode }}:</div>
-                  <a class="codelink print-display-block breakable" target="_blank" rel="noopener" href="{{ sourceLinkUrl }}">
+                  <a class="code-link print-display-block breakable" target="_blank" rel="noopener" href="{{ sourceLinkUrl }}">
                     {{ sourceLinkUrl | unprefixedHumanReadableUrl }}
                   </a>
                 </div>
@@ -130,9 +126,6 @@
               </span>
               {% if projectLinkUrl != '' %}
               <div>
-                {% if sourceLinkUrl != '' %}
-                  <div>{{ content.projectWebsite }}:</div>
-                {% endif %}
                 <a class="print-display-block breakable" target="_blank" rel="noopener" href="{{ projectLinkUrl }}">
                   {{ projectLinkUrl | unprefixedHumanReadableUrl }}
                 </a>
@@ -140,8 +133,7 @@
               {% endif %}
               {% if sourceLinkUrl != '' %}
                 <div>
-                  <div>{{ content.projectSourceCode }}:</div>
-                  <a class="codelink print-display-block breakable" target="_blank" rel="noopener" href="{{ sourceLinkUrl }}">
+                  <a class="code-link print-display-block breakable" target="_blank" rel="noopener" href="{{ sourceLinkUrl }}">
                     {{ sourceLinkUrl | unprefixedHumanReadableUrl }}
                   </a>
                 </div>

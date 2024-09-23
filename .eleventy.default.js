@@ -37,6 +37,8 @@ module.exports = function (eleventyConfig) {
     url = url.replace(/^www\./, '');
     url = url.replace(/^ingo-steinke\.de/, '');
     url = url.replace(/^ingo-steinke\.com/, '');
+    url = url.replace(/^github.com/, '<img class="logo-inline" src="img/logo-github.svg" witdh="32" height="32" alt="github.com">');
+    url = url.replace(/^store.shopware.com(?:\/en)*/, '<img class="logo-inline" src="img/logo-shopware.svg" witdh="32" height="32" alt="store.shopware.com">');
     url = url.replace(/\/$/, '');
     return url;
   });

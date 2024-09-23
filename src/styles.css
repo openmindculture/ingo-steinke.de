@@ -309,23 +309,16 @@ a.menu-toggle:hover {
 }
 
 .code-link {
-  font-family: monospace;
-  font-size: 1em;
-  text-overflow: ellipsis;
+  white-space: nowrap;
   overflow-x: clip;
+  text-overflow: ellipsis;
+  display: inline-block;
+  max-width: 99%;
 }
 
 .code-link:not(.only-print) {
   display: inline-block;
   white-space: nowrap;
-}
-
-@media only screen and (max-width: 490px) {
-  .code-link:not(.only-print) {
-    max-width: 99vw;
-    white-space: normal;
-    word-break: break-all;
-  }
 }
 
 .bg-peel {
@@ -1345,11 +1338,17 @@ body.high-contrast {
   overflow: visible;
   position: relative;
   z-index: 2;
-  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
   grid-auto-rows: var(--project-tile-min-height); /* 382px; */
   grid-auto-rows: minmax(min-content, max-content);
   grid-column-gap: 1em;
   grid-row-gap: 1.5em;
+}
+
+@media only screen and (min-width: 480px) {
+  .grid-container.grid-container--projects {
+    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+  }
 }
 
 .grid-container.grid-container--projects.flip-box-container {
@@ -1523,4 +1522,11 @@ body.high-contrast .flip-box-decoration {
   .flip-box-decoration {
     opacity: 1;
   }
+}
+
+.logo-inline {
+  height: 1.125rem;
+  width: auto;
+  margin-right: 0.125rem;
+  margin-bottom: -0.125rem;
 }
