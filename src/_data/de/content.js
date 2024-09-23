@@ -62,7 +62,7 @@ module.exports = {
   "projectSourceCode": "Quellcode",
   /* work */
   "workHeading": "Langlebige Lösungen",
-  "work": "Deine Layouts realisiere ich plattformübergreifend, responsiv und barrierefrei. Mein Ziel sind langlebige Lösungen, elegant, verständlich und pflegeleicht.",
+  "work": "Deine Layouts realisiere ich möglichst plattformübergreifend, responsiv und barrierefrei. Mein Ziel sind langlebige Lösungen, elegant, verständlich und pflegeleicht.",
   "workReliableHeading": "Zuverlässig und verständlich",
   "workReliable": "Mir ist es wichtig, technische Themen einfach verständlich zu erklären, die Wünsche meiner Kundschaft zu verstehen, weiterzudenken und nachhaltig umzusetzen.",
   "workClientsBenefit": "Als Kund:in profitierst du von geringeren Wartungskosten, optimierter Performance und erfolgreicher Kund:innenansprache.",
