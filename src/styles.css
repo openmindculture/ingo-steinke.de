@@ -597,9 +597,9 @@ a.vcard-digital-qr:hover {
   padding: 6px 8px 0 4px;
 }
 
-.menu-toggle,
-.animation-toggle,
-.contrast-toggle {
+.nav-wrapper .menu-toggle,
+.nav-wrapper .animation-toggle,
+.nav-wrapper .contrast-toggle {
   margin-right: 0;
   padding-right: 0;
   padding-left: 0;
@@ -878,7 +878,7 @@ a.menu-toggle:hover {
   outline: none;
 }
 
-.contrast-toggle,
+.nav-wrapper .contrast-toggle,
 .nav-wrapper .animation-toggle {
   -moz-appearance: none;
   -webkit-appearance: none;
