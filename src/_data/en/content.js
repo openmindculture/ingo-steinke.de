@@ -42,7 +42,7 @@ module.exports = {
   "targetOtherLanguage": "deutsch",
   "targetOtherLanguageTitle": "zur deutschen Sprache wechseln",
   /* page content */
-  "intro": "My name is Ingo Steinke. I'm a sustainable and creative web developer with more than 20 years of professional experience. Ich develop (program), test, and optimize websites, web apps, and online shops. My professional strengths include front-end development, accessibility, loading speed, and energy efficiency. I am pragmatic and communicative and enjoy working closely with designers. If necessary, I can also conceptualize and implement simple design and UX changes myself.",
+  "intro": "My name is Ingo Steinke. I'm a sustainable and creative web developer with more than 20 years of professional experience. I develop, test, and optimize websites, web apps, and online shops. My professional strengths include front-end development, accessibility, loading speed, and energy efficiency. I am pragmatic and communicative and enjoy working closely with designers. If necessary, I can also conceptualize and implement simple design and UX changes myself.",
   "spacedAnd": ", and",
   "andA": "and a",
   "currentlyEcologicalIam": "I enjoy working for customers with an ecological and ethical focus in their work. I'm a",
