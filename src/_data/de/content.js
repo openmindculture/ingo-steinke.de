@@ -73,6 +73,7 @@ module.exports = {
   "workCertifiedHeading": "Zertifiziert und transparent",
   "workCertifiedIam": "Ich bin",
   "workCertifiedSWDev": "zertifizierter Shopware 6 Developer",
+  "projectShopwareCostPluginLinkUrl": "https://store.shopware.com/en/ingos57544164693f/cost-transparency.html",
   "workCertifiedSWDevPartnerPageUrl": "https://store.shopware.com/ingo-steinke.html",
   "workCertifiedPdfUrl": "Shopware-6-Certified-Developer-Ingo-Steinke-de.pdf",
   "workCertifiedAnd": "und",
