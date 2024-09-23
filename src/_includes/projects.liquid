@@ -1,5 +1,5 @@
     {% if showallprojects %}
-      {%- assign projects = 'kleiderordnung, fractal, portfolio, shopwareplugin, twistedconnection, daskannstdutun, foodtogether, reactapp, wordpress' | split: ', ' -%}
+      {%- assign projects = 'kleiderordnung, shopwareplugin, twistedconnection, portfolio, daskannstdutun, fractal, foodtogether, wordpress, reactapp' | split: ', ' -%}
     {% else %}
       {%- assign projects = projectlist | split: ', ' -%}
     {% endif %}
@@ -75,7 +75,7 @@
               </span>
               {% if projectLinkUrl != '' %}
                 <div>
-                  <a class="print-display-block breakable" target="_blank" rel="noopener" href="{{ projectLinkUrl }}">
+                  <a class="code-link print-display-block breakable" target="_blank" rel="noopener" href="{{ projectLinkUrl }}">
                     {{ projectLinkUrl | unprefixedHumanReadableUrl }}
                   </a>
                 </div>
@@ -126,7 +126,7 @@
               </span>
               {% if projectLinkUrl != '' %}
               <div>
-                <a class="print-display-block breakable" target="_blank" rel="noopener" href="{{ projectLinkUrl }}">
+                <a class="code-link print-display-block breakable" target="_blank" rel="noopener" href="{{ projectLinkUrl }}">
                   {{ projectLinkUrl | unprefixedHumanReadableUrl }}
                 </a>
               </div>

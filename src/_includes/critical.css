@@ -286,7 +286,7 @@ small {
   .text-content-layout,
   .text-content-layout-children > *,
   .privacy {
-    padding: 0.5em 0 1em 1em;
+    padding: 0.5em 1em 1em 1em;
     margin: 0 0 2em 0;
     text-align: left;
     line-height: var(--body-line-height);
@@ -336,11 +336,24 @@ small {
     display: flex;
     display: grid;
     clear: both;
-    grid-template-columns: repeat(auto-fit, 400px);
+    grid-template-columns: repeat(auto-fit, 100%);
     grid-column-gap: 3em;
     grid-row-gap: 2em;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  .site-title {
+    display: none;
+  }
+
+  @media (min-width: 400px) {
+    .grid-container {
+      grid-template-columns: repeat(auto-fit, 400px);
+    }
+    .site-title {
+      display: inline;
+    }
   }
 
   .grid-container > * {
@@ -359,8 +372,14 @@ small {
     padding: 0;
     text-indent: 0;
     list-style-type: none;
-    grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
     grid-column-gap: 1em;
+  }
+
+  @media (min-width: 410px) {
+    .grid-container.skills {
+      grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
+    }
   }
 
   .text-width,
@@ -397,7 +416,7 @@ small {
   }
 
   .tile img.project-thumb--kleiderordnung {
-    margin: 3em 0.5em 1em 1em;
+    margin: 0 .5em 2em 3em;
   }
 
   .tile img.project-thumb--atomic-design-system {
@@ -415,8 +434,21 @@ small {
   }
 
   .tile img.project-thumb--planted,
-  .tile img.project-thumb--shopware-plugin {
+  .tile img.project-thumb--shopwareplugin {
     margin-right: 0.5em;
+  }
+
+  .tile img.project-thumb--shopwareplugin {
+    margin-top: 3rem;
+  }
+
+  .tile img.project-thumb--twistedconnection {
+    margin-top: 2.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .tile img.project-thumb--portfolio {
+    margin-bottom: 1.5rem;
   }
 
   .row {
