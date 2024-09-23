@@ -292,6 +292,14 @@ small {
     line-height: var(--body-line-height);
   }
 
+  @media (min-width: 768px) {
+    .text-content-layout,
+    .text-content-layout-children > *,
+    .privacy {
+      padding-left: 2rem;
+    }
+  }
+
   .privacy {
     display: block;
   }
