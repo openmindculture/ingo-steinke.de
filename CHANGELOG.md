@@ -1,6 +1,6 @@
 # Changelog
 
-## [4.4.5] improve layout, typography, accessibility - 2024-09-22
+## [4.4.5] improve layout, typography, accessibility - 2024-09-23
 * fix navigation link hover color contrast in Safari #270
 * improve mobile testimonials layout
 * improve footer copyright note layout on mobile
