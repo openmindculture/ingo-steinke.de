@@ -137,7 +137,8 @@ module.exports = {
   "talkInfrastructure2": "",
   "memberships": "Mitgliedschaften",
   "testimonials": "Was meine Kund:innen sagen:",
-  "testimonialsReadMoreText1": "Weitere Bewertungen findest du auf meinem Google-Unternehmensprofil",
+  "testimonialsReadMoreText1": "Weitere Bewertungen bei Google lesen",
+  "testimonialsReadMoreTitle1": "Google-Unternehmensprofil von Ingo Steinke",
   "testimonialsReadMoreLinkUrl1": "https://www.google.com/maps/place/Ingo+Steinke/@54.5871961,-51.7559002,3z/data=!4m13!1m3!11m2!2s1A_qFX3OC2-87_jFnYtJquSLGNds!3e1!3m8!1s0x47b8cf81dc94e4ab:0x756104e1aec1a165!8m2!3d52.4789132!4d13.4417945!9m1!1b1!15sCgEqWgMiASqSARB3ZWJzaXRlX2Rlc2lnbmVy4AEA!16s%2Fg%2F11qsm5r_br",
   "testimonialsReadMoreLinkUrl2": "https://www.provenexpert.com/ingo-steinke-creative-web-developer/",
   "testimonialDanielaQuote": "Ich hatte das Vergnügen mit Ingo zusammenzuarbeiten und bin begeistert von seiner Kompetenz im Bereich Webentwicklung. Er ist nicht nur technisch versiert, sondern auch konzeptionell stark. Besonders eindrucksvoll finde ich, dass Ingo für jedes Problem eine Lösung erarbeiten kann. Nicht zuletzt zeichnet er sich durch sein starkes Engagement im Bereich Nachhaltigkeit aus.",
@@ -145,7 +146,7 @@ module.exports = {
   "testimonialMalteQuote": "An meiner Seite haben bereits einige Programmierer und ITler gewerkelt, aber erst jetzt merke ich was für einen krassen Unterschied es machen kann.",
   "testimonialMalteAuthor": "Malte, Fotograf",
   "testimonialPatriciaQuote": "Wir sind total zufrieden mit Ingo. Absolut zuverlässig und tolle Ergebnisse. 100% Empfehlung!",
-  "testimonialPatriciaAuthor": "Patricia, systemischer Coach",
+  "testimonialPatriciaAuthor": "Patricia, Coach",
   "testimonialsFiveStarRating": "Fünf-Sterne-Bewertung",
   /* Interested CTA */
   "interestedHeading": "Interessiert?",
