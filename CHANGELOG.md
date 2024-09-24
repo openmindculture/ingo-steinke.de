@@ -1,8 +1,12 @@
 # Changelog
 
-## [4.4.6] fix typos, improve button styles - 2024-09-23
+## [4.4.5.1] fix typos, improve button styles - 2024-09-24
 * fix translation error
 * make contact button look more "buttonlike"
+* add pragraph to improve readability
+* print unambiguous URLs (text, not icons)
+* update ecograder report result
+* update CV PDF files
 
 ## [4.4.5] improve layout, typography, accessibility - 2024-09-23
 * fix navigation link hover color contrast in Safari #270
