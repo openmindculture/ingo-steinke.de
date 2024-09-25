@@ -32,6 +32,7 @@ module.exports = {
   "targetProjects": "projects",
   "targetRefs": "testimonials",
   "targetServices": "services",
+  "targetServicesUcFirst": "Services",
   "targetSkills": "skills",
   "targetAboutMe": "about me",
   "targetAboutMeUrl": "about-me.html",
@@ -302,5 +303,7 @@ module.exports = {
   "landingLinkUrlSitemap": "https://www.ingo-steinke.com/sitemap.html",
   "languagesSubtitle": "Languages",
   "furtherInformationSubheading": "Further Information",
-  "projectImgAltDefault": "project screenshot"
+  "projectImgAltDefault": "project screenshot",
+  "userSitemapClaimTitle": "Sitemap: everything at a glance",
+  "userSitemapDescription": "This sitemap summarizes alls pages about services, offers, and testimonials of the Berlin based web developer Ingo Steinke at a glance."
 };
