@@ -1,6 +1,19 @@
 # Changelog
 
-## [4.4.5.1] fix typos, improve button styles - 2024-09-24
+## [4.4.7] fix semantic markup, SEO, button styles - 2024-09-25
+* add missing alternative text to images #272
+* fix order of heading levels #272
+* add canonical tags to prevent duplicate content
+* redirect sub directory /index.html variations to the intended shorter versions
+* add self-referencing alternate links as recommended by Google
+* fix contradictory meta language information
+* update rating meta snippet
+* fix button styles #271 #272
+* link to sitemap from footer on every page #272
+* fix heading sizes on Shopware landing pages
+* improve site titles and descriptions according to SEO audit
+
+## [4.4.6] fix typos, improve button styles - 2024-09-24
 * fix translation error
 * make contact button look more "buttonlike"
 * add pragraph to improve readability

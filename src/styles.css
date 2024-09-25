@@ -288,7 +288,11 @@ a.menu-toggle:hover {
   position: relative;
 }
 
-.tile h3 {
+.grid-container.services h3 {
+  margin-left: 0.5rem;
+}
+
+.grid-container--projects .tile h3 {
   margin: 1rem 0 0 0;
 }
 
@@ -431,8 +435,9 @@ body.high-contrast .bg-peel {
 
 .contactform-button-submit {
   font-size: 1rem;
-  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+  padding: 0.25rem 1rem 0.25rem 1rem; /* fallback, overridden if .buttonlike is applied */
   margin-top: 0.25rem;
+  width: 100%;
   cursor: pointer;
   font-family: var(--body-font-family);
 }
@@ -501,8 +506,9 @@ body.high-contrast .bg-peel {
   text-align: center;
 }
 
-.vcard h2,
-.vcard h3 {
+/* stylelint-disable-next-line no-descending-specificity */
+.vcard h3,
+.vcard h2 {
   font-size: 2em;
   margin: 0;
   color: black;
@@ -934,6 +940,8 @@ ul.grid-container.skills {
   margin-bottom: 2em;
 }
 
+/* stylelint-disable-next-line no-descending-specificity */
+.skills h3,
 .skills h4 {
   color: #fff;
   font-size: 1.25em;
@@ -977,15 +985,19 @@ ul.grid-container.skills {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0 0 2rem 1rem;
+  padding: 0 0 2rem 0;
   background-color: var(--cta-light-background);
   color: var(--secondary-foreground);
+}
+
+.grid-container.services > li > h3 {
+  padding-left: 1rem;
 }
 
 .grid-container.services > li ul {
   flex-grow: 1;
   list-style-type: disc;
-  padding: 0 0.5rem 0 2rem;
+  padding: 0 0.5rem 0 2.75rem;
 }
 
 .grid-container.services > li ul li {

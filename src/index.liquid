@@ -37,8 +37,8 @@
     </style>
     <link rel="preload" href="fonts/bitter-v16-latin-700.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/montserrat-v15-latin-ext_latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" media="screen" href="styles.css?v=4.4.6">
-    <script defer src="js/scripts.js?v=4.4.6"></script>
+    <link rel="stylesheet" media="screen" href="styles.css?v=4.4.7">
+    <script defer src="js/scripts.js?v=4.4.7"></script>
     {% comment %}
     Defer non-critical CSS as suggested at https://web.dev/articles/defer-non-critical-css
     {% endcomment %}
@@ -46,12 +46,12 @@
       rel="preload" as="style"
       onload="this.onload=null;this.rel='stylesheet'"
       media="screen and (prefers-reduced-motion: no-preference)"
-      href="decoration.css?v=4.4.6"
+      href="decoration.css?v=4.4.7"
     >
     <noscript>
-      <link rel="stylesheet" media="screen and (prefers-reduced-motion: no-preference)" href="decoration.css?v=4.4.6">
+      <link rel="stylesheet" media="screen and (prefers-reduced-motion: no-preference)" href="decoration.css?v=4.4.7">
     </noscript>
-    <link rel="stylesheet" media="print" href="print.css?v=4.4.6">
+    <link rel="stylesheet" media="print" href="print.css?v=4.4.7">
     <meta name=author content="{{ content.metaAuthor }}">
     <meta
       property="og:title"
@@ -75,6 +75,11 @@
     >
     <link
       rel="canonical"
+      href="{{ content.canonicalHref }}"
+    >
+    <link
+      rel="alternate"
+      hreflang="{{ '' | appendCurrentLanguageSlug }}"
       href="{{ content.canonicalHref }}"
     >
     <link
@@ -106,7 +111,7 @@
         },
         "ratingValue": "5",
         "bestRating": "5",
-        "ratingCount": "7"
+        "ratingCount": "9"
       }
     </script>
   </head>
@@ -214,7 +219,7 @@
                 {{ content.intro }}
               </p>
 
-              <h3>{{ content.workWithMeHeading }}</h3>
+              <h2>{{ content.workWithMeHeading }}</h2>
 
               <p>
                 {{ content.workWithMe }}<br>
@@ -338,7 +343,7 @@
 
             <ul class="grid-container services pl0">
               <li class="tile text-content-color">
-                <h4 class="font-sans">{{ content.servicesBuildTitle }}</h4>
+                <h3 class="font-sans">{{ content.servicesBuildTitle }}</h3>
                 <ul>
                   <li>{{ content.servicesBuild1 }}</li>
                   <li>{{ content.servicesBuild2 }}</li>
@@ -348,7 +353,7 @@
                 <a href="{{ content.servicesBuildMoreLinkPath }}" class="buttonlike" title="{{ content.servicesBuildMoreLinkTitle }}">{{ content.servicesBuildMoreLinkText }}!</a>
               </li>
               <li class="tile text-content-color">
-                <h4 class="font-sans">{{ content.servicesVerifyTitle }}</h4>
+                <h3 class="font-sans">{{ content.servicesVerifyTitle }}</h3>
                 <ul>
                   <li>{{ content.servicesVerify1 }}</li>
                   <li>{{ content.servicesVerify2 }}</li>
@@ -358,7 +363,7 @@
                 <a class="buttonlike" href="{{ content.servicesVerifyMoreLinkPath }}" title="{{ content.servicesVerifyMoreLinkTitle }}">{{ content.servicesVerifyMoreLinkText }}!</a>
               </li>
               <li class="tile text-content-color">
-                <h4 class="font-sans">{{ content.servicesImproveTitle }}</h4>
+                <h3 class="font-sans">{{ content.servicesImproveTitle }}</h3>
                 <ul>
                   <li>{{ content.servicesImprove1 }}</li>
                   <li>{{ content.servicesImprove2 }}</li>
@@ -578,6 +583,10 @@
 
           <p class="no-print">
             <button class="animation-toggle">{{ content.buttonToggleAnimation }}</button>
+          </p>
+
+          <p class="landingpage--links no-print">
+            <a href="{{ content.landingLinkUrlSitemap }}">{{ content.landingLinkTextSitemap }}</a>
           </p>
 
           <div class="only-print"><br></div>

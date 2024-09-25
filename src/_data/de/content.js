@@ -11,7 +11,7 @@ module.exports = {
   "alternateHref": "https://www.ingo-steinke.com/",
   "metaAuthor": "Ingo Steinke",
   "pageTitle": "Ingo Steinke, nachhaltiger und kreativer Webentwickler in Berlin",
-  "pageDescription": "Ingo Steinke ist ein kreativer Webentwickler mit Schwerpunkt Frontend und Nachhaltigkeit, mit über 20 Jahren Beruferfahrung.",
+  "pageDescription": "Ingo Steinke ist ein kreativer Webentwickler mit Schwerpunkt Frontend, Nachhaltigkeit und Barrierefreiheit, mit über 20 Jahren Beruferfahrung. Ingo programmiert, testet und optimiert Websites, Web Apps und Online-Shops. Auf dieser Website findest du die Leistungen, Preise, Projekte, und was Ingos Kunden sagen.",
   "pageDescription-en": "Ingo Steinke ist ein kreativer Webentwickler mit Schwerpunkt Frontend und Nachhaltigkeit, mit über 20 Jahren Beruferfahrung.",
   "pDomainVerify": "4c4296e5835f4a47eb2c2e5488a99d71",
   "googleSiteVerification": "Qs1p7JgqPLOGD3BYCMGe9EbyNJJEswyala44hnkO6d4",
@@ -32,6 +32,7 @@ module.exports = {
   "targetProjects": "Projekte",
   "targetRefs": "Referenzen",
   "targetServices": "Leistungen",
+  "targetServicesUcFirst": "Leistungen",
   "targetSkills": "Skills",
   "targetAboutMe": "Über mich",
   "targetAboutMeUrl": "ueber-mich.html",
@@ -300,7 +301,10 @@ module.exports = {
   "landingLinkTextSitemap": "Sitemap",
   "landingLinkUrlSitemap": "https://www.ingo-steinke.com/sitemap.html",
   "languagesSubtitle": "Sprachen",
-  "furtherInformationSubheading": "Weitere Informationen"
+  "furtherInformationSubheading": "Weitere Informationen",
+  "projectImgAltDefault": "Projekt-Screenshot",
+  "userSitemapClaimTitle": "Sitemap: alles auf einen Blick",
+  "userSitemapDescription": "Auf dieser Sitemap sind alle Unterseiten zu Angeboten, Dienstleistungen und Referenzen des Berliner Webentwicklers Ingo Steinke auf einen Blick zusammengefasst."
 };
 
 

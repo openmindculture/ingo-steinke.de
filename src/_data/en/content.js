@@ -11,8 +11,8 @@ module.exports = {
   "alternateHref": "https://www.ingo-steinke.de/",
   "metaAuthor": "Ingo Steinke",
   "pageTitle": "Ingo Steinke, Sustainable and Creative Web Developer in Berlin",
-  "pageDescription": "Ingo Steinke is a creative web developer focused on sustainable web development with more than 20 years of professional experience.",
-  "pageDescription-en": "Ingo Steinke is a creative web developer focused on sustainable web development with more than 20 years of professional experience..",
+  "pageDescription": "Ingo Steinke is a creative web developer focused on sustainable and accessible web development with more than 20 years of professional experience. Ingo programs, inspects and optimizes websites, web apps, and online shops. On this website, you can find his services, prices, projects, and what Ingo's customers say.",
+  "pageDescription-en": "Ingo Steinke is a creative web developer focused on sustainable and accessible web development with more than 20 years of professional experience. Ingo programs, inspects and optimizes websites, web apps, and online shops. On this website, you can find his services, prices, projects, and what Ingo's customers say.",
   "pDomainVerify": "4c4296e5835f4a47eb2c2e5488a99d71",
   "googleSiteVerification": "rKw6ukUkdoGGTo5dFb1sv4HQXN5wy6GysuVCRkt1FTg",
   "notFoundTitle": "Ingo Steinke - page not found",
@@ -32,6 +32,7 @@ module.exports = {
   "targetProjects": "projects",
   "targetRefs": "testimonials",
   "targetServices": "services",
+  "targetServicesUcFirst": "Services",
   "targetSkills": "skills",
   "targetAboutMe": "about me",
   "targetAboutMeUrl": "about-me.html",
@@ -301,5 +302,8 @@ module.exports = {
   "landingLinkTextSitemap": "Sitemap",
   "landingLinkUrlSitemap": "https://www.ingo-steinke.com/sitemap.html",
   "languagesSubtitle": "Languages",
-  "furtherInformationSubheading": "Further Information"
+  "furtherInformationSubheading": "Further Information",
+  "projectImgAltDefault": "project screenshot",
+  "userSitemapClaimTitle": "Sitemap: everything at a glance",
+  "userSitemapDescription": "This sitemap summarizes alls pages about services, offers, and testimonials of the Berlin based web developer Ingo Steinke at a glance."
 };
