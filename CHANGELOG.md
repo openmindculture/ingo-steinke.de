@@ -11,9 +11,7 @@
 * fix button styles #271 #272
 * link to sitemap from footer on every page #272
 * fix heading sizes on Shopware landing pages
-
-* improve site titles according to SEO audit
-* reduce partial duplicate content to prevent pages competing against each other
+* improve site titles and descriptions according to SEO audit
 
 ## [4.4.5.1] fix typos, improve button styles - 2024-09-24
 * fix translation error
