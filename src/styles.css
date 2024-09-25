@@ -288,7 +288,7 @@ a.menu-toggle:hover {
   position: relative;
 }
 
-.tile h3 {
+.grid-container--projects .tile h3 {
   margin: 1rem 0 0 0;
 }
 
@@ -501,8 +501,9 @@ body.high-contrast .bg-peel {
   text-align: center;
 }
 
-.vcard h2,
-.vcard h3 {
+/* stylelint-disable-next-line no-descending-specificity */
+.vcard h3,
+.vcard h2 {
   font-size: 2em;
   margin: 0;
   color: black;
@@ -934,6 +935,8 @@ ul.grid-container.skills {
   margin-bottom: 2em;
 }
 
+/* stylelint-disable-next-line no-descending-specificity */
+.skills h3,
 .skills h4 {
   color: #fff;
   font-size: 1.25em;
