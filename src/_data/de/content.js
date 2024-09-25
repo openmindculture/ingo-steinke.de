@@ -300,7 +300,8 @@ module.exports = {
   "landingLinkTextSitemap": "Sitemap",
   "landingLinkUrlSitemap": "https://www.ingo-steinke.com/sitemap.html",
   "languagesSubtitle": "Sprachen",
-  "furtherInformationSubheading": "Weitere Informationen"
+  "furtherInformationSubheading": "Weitere Informationen",
+  "projectImgAltDefault": "Projekt-Screenshot"
 };
 
 
