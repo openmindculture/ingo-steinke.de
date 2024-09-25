@@ -1,4 +1,4 @@
-<meta name="language" content="de"><meta name="viewport" content="width=device-width,initial-scale=1">{% comment %}
+<meta name="language" content="{{ canonicalhreflang | default: 'de' }}"><meta name="viewport" content="width=device-width,initial-scale=1">{% comment %}
 <!-- This snippet is only used on sub-pages, not on the homepage! -->
 {% endcomment %}
 <style>@font-face{font-family:'Bitter';font-style:normal;font-weight:700;font-display:swap;src:local(''),
@@ -120,10 +120,23 @@
 {% if previewdescription %}
   <meta property="og:description" content="{{ previewdescription }}">
 {% endif %}
+{% if canonicalhref %}
+  <link
+    rel="canonical"
+    href="{{ canonicalhref }}"
+  >
+{% endif %}
 {% if alternatelink %}
-<link
-  rel="alternate"
-  hreflang="{{ alternatehreflang }}"
-  href="{{ alternatelink }}"
->
+  <link
+    rel="alternate"
+    hreflang="{{ alternatehreflang }}"
+    href="{{ alternatelink }}"
+  >
+  {% if canonicalhref %}
+    <link
+      rel="alternate"
+      hreflang="{{ alternatehreflang }}"
+      href="{{ canonicalhref }}"
+    >
+  {% endif %}
 {% endif %}

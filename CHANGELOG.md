@@ -9,7 +9,9 @@
 * improve site titles according to SEO audit
 * reduce partial duplicate content to prevent pages competing against each other
 * add canonical tags to prevent duplicate content
+* redirect sub directory /index.html variations to the intended shorter versions
 * add self-referencing alternate links as recommended by Google
+* fix contradictory meta language information
 
 ## [4.4.5.1] fix typos, improve button styles - 2024-09-24
 * fix translation error
