@@ -10,8 +10,8 @@
 * update rating meta snippet
 * fix button styles #271 #272
 * link to sitemap from footer on every page #272
-
 * fix heading sizes on Shopware landing pages
+
 * improve site titles according to SEO audit
 * reduce partial duplicate content to prevent pages competing against each other
 
