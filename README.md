@@ -66,7 +66,7 @@ Section to be added above "skills", replacing "skills" as a top navigation item,
 
 Keyword-centered additional landing pages, manually added in German only for specific campaigns and linked from the German footer only, should also be provided in all languages for more consistency.
 
-- [Sustainability](https://www.ingo-steinke.com/services/accessible-climate-website-optimization.html) / [Nachhaltigkeit](https://www.ingo-steinke.de/webseiten-klimafreundlich-barrierefrei-optimieren/index.html)
+- [Sustainability](https://www.ingo-steinke.com/services/accessible-climate-website-optimization.html) / [Nachhaltigkeit](https://www.ingo-steinke.de/webseiten-klimafreundlich-barrierefrei-optimieren/)
 - [Freelancer web developer Berlin](https://www.ingo-steinke.com/services/freelance-webdeveloper-berlin.html) / [Web Freelancer Berlin](https://www.ingo-steinke.de/leistungen/webentwickler-berlin-freelancer.html)
 - [Certified Shopware Developer](https://www.ingo-steinke.com/services/certified-shopware-developer-berlin.html) / [Zertifizierter Shopware-Webentwickler](https://www.ingo-steinke.de/zertifizierter-shopware-6-frontend-webentwickler/)
 

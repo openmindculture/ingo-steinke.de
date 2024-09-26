@@ -36,7 +36,7 @@ Scenario('Test website content and navigation', ({ I }) => {
   // but as a pragmatic workaround, we could use a classic dead-link-checker
   // and check for search console errors after deployment
 
-  I.amOnPage('/webseiten-klimafreundlich-barrierefrei-optimieren/index.html');
+  I.amOnPage('/webseiten-klimafreundlich-barrierefrei-optimieren/');
   I.see('Webseiten klimafreundlich und barrierefrei optimieren lassen');
   I.saveScreenshot('Sustainability_DE_Screenshot.png');
   I.seeVisualDiff('Sustainability_DE_Screenshot.png', {
@@ -44,7 +44,7 @@ Scenario('Test website content and navigation', ({ I }) => {
     prepareBaseImage: prepareScreenshotBaseImages
   });
 
-  I.amOnPage('/wordpress-website-nachhaltig-optimieren-lassen/index.html');
+  I.amOnPage('/wordpress-website-nachhaltig-optimieren-lassen/');
   I.see('Individuell optimierte WordPress-Themes');
   I.saveScreenshot('WordPress_DE_Screenshot.png');
   I.seeVisualDiff('WordPress_DE_Screenshot.png', {
@@ -52,7 +52,7 @@ Scenario('Test website content and navigation', ({ I }) => {
     prepareBaseImage: prepareScreenshotBaseImages
   });
 
-  I.amOnPage('/zertifizierter-shopware-6-frontend-webentwickler/index.html');
+  I.amOnPage('/zertifizierter-shopware-6-frontend-webentwickler/');
   I.saveScreenshot('Shopware_DE_Screenshot.png');
   I.seeVisualDiff('Shopware_DE_Screenshot.png', {
     tolerance: 2,
