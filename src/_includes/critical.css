@@ -167,7 +167,7 @@ small {
     margin: 1rem 0 0 0;
   }
 
-  @media screen and (min-width: 950px) {
+  @media (min-width: 950px) {
     .jumbotronHeader:not(.has-text-paragraphs) h1 {
       font-size: 13vh;
     }
