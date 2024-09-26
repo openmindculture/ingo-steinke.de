@@ -6,7 +6,7 @@
 * fix CSS media query nesting error
 * fix DOM nesting errors
 * remove obsolete duplicate id
-* add missing source set sizes
+* remove invalid source set attribute
 * add more text to Shopware landing page
 * shorten new meta descriptions according to SEO audit
 
