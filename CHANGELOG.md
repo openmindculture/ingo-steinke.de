@@ -1,8 +1,14 @@
 # Changelog
 
-## [4.4.7.1] fix metadata - 2024-09-26
+## [4.4.7.1] fix markup and metadata - 2024-09-26
 * fix contradictory meta language information
 * fix typos in source code
+* fix CSS media query nesting error
+* fix DOM nesting errors
+* remove obsolete duplicate id
+* add missing source set sizes
+* add more text to Shopware landing page
+* shorten new meta descriptions according to SEO audit
 
 ## [4.4.7] fix semantic markup, SEO, button styles - 2024-09-25
 * add missing alternative text to images #272
