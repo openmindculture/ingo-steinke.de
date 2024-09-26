@@ -3,6 +3,7 @@
 ## [4.4.7.1] fix markup and metadata - 2024-09-26
 * fix contradictory meta language information
 * fix typos in source code
+* add missing CSS selector
 * fix CSS media query nesting error
 * fix DOM nesting errors
 * remove obsolete duplicate id
