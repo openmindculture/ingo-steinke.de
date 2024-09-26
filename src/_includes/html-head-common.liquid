@@ -128,6 +128,11 @@
     rel="canonical"
     href="{{ canonicalhref }}"
   >
+  <link
+    rel="alternate"
+    hreflang="{{ canonicalhrefhreflang }}"
+    href="{{ canonicalhref }}"
+  >
 {% endif %}
 {% if alternatelink %}
   <link
@@ -135,11 +140,4 @@
     hreflang="{{ alternatehreflang }}"
     href="{{ alternatelink }}"
   >
-  {% if canonicalhref %}
-    <link
-      rel="alternate"
-      hreflang="{{ alternatehreflang }}"
-      href="{{ canonicalhref }}"
-    >
-  {% endif %}
 {% endif %}

@@ -1,5 +1,8 @@
 # Changelog
 
+## [4.4.7.1] fix metadata - 2024-09-26
+* fix contradictory meta language information
+
 ## [4.4.7] fix semantic markup, SEO, button styles - 2024-09-25
 * add missing alternative text to images #272
 * fix order of heading levels #272
