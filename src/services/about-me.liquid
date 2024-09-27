@@ -78,25 +78,24 @@ alternatehreflang: "de"
             </p>
           </section>
 
-          <figure class="content-image">
-            <picture>
-              <source
-                type="image/webp"
-                srcset="img/Ingo-Steinke-NCA-TV-2021-800x443.webp 1x,
-                    img/Ingo-Steinke-NCA-TV-2021-400x222.webp 2x,
-                    img/Ingo-Steinke-NCA-TV-2021-800x443.webp 4x"
-              >
-              <img
-                src="img/Ingo-Steinke-NCA-TV-2021-800x443.jpg"
-                srcset="img/Ingo-Steinke-NCA-TV-2021-400x222.jpg 400w,
+          <picture>
+            <source
+              type="image/webp"
+              srcset="img/Ingo-Steinke-NCA-TV-2021-800x443.webp,
+                    img/Ingo-Steinke-NCA-TV-2021-400x222.webp 400w,
+                    img/Ingo-Steinke-NCA-TV-2021-800x443.webp 800w"
+            >
+            <img
+              src="img/Ingo-Steinke-NCA-TV-2021-800x443.jpg"
+              srcset="img/Ingo-Steinke-NCA-TV-2021-400x222.jpg 400w,
                           img/Ingo-Steinke-NCA-TV-2021-800x443.jpg 800w"
-                sizes="(min-width: 800px) 800px, 100vw"
-                width="800"
-                height="443"
-                alt="{{ content.talksImageAlt }}"
-                loading="lazy"
-              >
-            </picture>
+              sizes="(min-width: 800px) 800px, 100vw"
+              width="800"
+              height="443"
+              alt="{{ content.talksImageAlt }}"
+              loading="lazy"
+            >
+          </picture>
             <figcaption>
               {{ content.talksImageCaption }}:
               <a href="https://blog.nevercodealone.de/php-testing-refactoring-nca-conference-duisburg/" target="_blank" rel="noopener">
