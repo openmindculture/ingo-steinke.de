@@ -1,5 +1,10 @@
 # Changelog
 
+## [4.4.9] more elegant content - (upcoming)
+* improve text content #225
+* add missing links in printed PDF #225
+* prevent anchor links aggregation 404 #275
+
 ## [4.4.8] fix printed PDF version - 2024-09-27
 * prevent unreadable PDF output
 * fix source set fix that caused low-resultion display #276
