@@ -9,6 +9,10 @@ h4 {
   font-size: 11pt;
 }
 
+html, body, * {
+  font-variant-ligatures: none !important; /* prevent unreadable PDF output */
+}
+
 h2 {
   font-size: 17pt;
   margin-bottom: 0;
