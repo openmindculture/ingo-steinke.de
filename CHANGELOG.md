@@ -2,6 +2,7 @@
 
 ## [4.4.8] fix printed PDF version - 2024-09-27
 * prevent unreadable PDF output
+* fix source set fix that caused low-resultion display #276
 
 ## [4.4.7.1] fix markup and metadata - 2024-09-26
 * fix contradictory meta language information
