@@ -106,12 +106,12 @@ module.exports = {
   /* About me, talks, and events */
   "aboutMeHeading": "About Me: Work And Passion",
   "aboutMeIntroHeading": "What Still Fascinates Me",
-  "aboutMeIntro": "Worldwide communication and inspiration: The World Wide Web connects people using robust and decentralized technology. Websites designed to offer everyone access to this network need to be attractive, fast, and accessible. This vision shapes my work.",
+  "aboutMeIntro": "Worldwide communication and inspiration: The World Wide Web connects people using robust and decentralized technology. Websites designed to offer everyone access to this network must be attractive, fast, and accessible. This vision shapes my work.",
   "aboutMeCvHeading": "Professional Background",
   "aboutMeCv1": "I co-founded a start-up in 2000 whose first products were interactive websites and browser games. Later, our core business transitioned to search engine optimization and our own e-commerce software.",
   "aboutMeCv2": "While employed as an e-commerce engineer at Xsite in Düsseldorf from 2010 to 2014, I developed online shops for Shop-Apotheke.com, Ars mundi, and other customers. As a technical consultant at Sevenval Technologies (later Avenga Germany) in Cologne and Berlin, I optimized the loading time and mobile phone compatibility of apps and websites for Frankfurter Allgemeine Zeitung and online shops for Otto Group and created front-end applications for wao.io and other customers. I'm a freelance web developer since 2020, working for agencies and individual customers.",
   "aboutMeEthicalHeading": "Future Topics and Sustainable Development",
-  "aboutMeEthical": "Digitalisation primarily stands for technological progress. The economic benefits of sustainable innovation have often been overlooked. I like to to support ethical and ecological projects, for example the transition in the transport sector, renewable energies, and environmentally-friendly fashion. Thanks to my experience, we can elegantly comply with legal requirements such as the General Data Protection Regulation or the European Accessibility Act.",
+  "aboutMeEthical": "Digitalisation primarily stands for technological progress. The economic benefits of sustainable innovation have often been overlooked. I like to support ethical and ecological projects, for example the transition in the transport sector, renewable energies, and environmentally-friendly fashion. Thanks to my experience, we can elegantly comply with legal requirements such as the General Data Protection Regulation or the European Accessibility Act.",
   "aboutMeEthicalImA": "I'm a",
   "aboutMeEthicalA": "a",
   "aboutMeEthicalandASignatory": ", and I signed the",
@@ -149,7 +149,7 @@ module.exports = {
   "testimonialsFiveStarRating": "five-star rating",
   /* Interested CTA */
   "interestedHeading": "Interested?",
-  "interested": "Contact me to schedule a non-binding appointment! I will reply in a timely manner! You can reach my by phone, email, Signal, or WhatsApp. If I can't take a call, feel free to leave me a voice message!",
+  "interested": "Contact me to schedule a non-binding appointment! I will reply in a timely manner! You can reach me by phone, email, Signal, or WhatsApp. If I can't take a call, please leave me a voice message!",
   /* Imprint, Contact */
   "imprintHeader": "Imprint and Contact Information",
   "imprintName": "Ingo Steinke",
