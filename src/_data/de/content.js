@@ -48,7 +48,6 @@ module.exports = {
   "commaEnglishOnly": "",
   "currentlyEcologicalIam": "Ich arbeite gerne für Kund:innen mit ökologischem und ethischem Fokus. Ich bin",
   "memberOf": "Mitglied im",
-  "careAboutGoingBeyond": "Kreativität, Flexibilität und Reflektiertheit sind mir beruflich und privat sehr wichtig. Ich möchte Nachhaltigkeit, Kultur und Kunst verbinden und neue Erfahrungen in meine tägliche Arbeit einbringen.",
   "workWithMeHeading": "Lass uns zusammenarbeiten!",
   "workWithMe":"Du möchtest deine Website überarbeiten? Dein Team braucht Verstärkung durch einen Frontend-Entwickler mit Fullstack-Erfahrung?",
   "ctaContact": "Ruf mich an oder hinterlasse mir eine Nachricht!",
@@ -109,7 +108,7 @@ module.exports = {
   /* About me, talks, and events */
   "aboutMeHeading": "Über mich: Beruf und Leidenschaft",
   "aboutMeIntroHeading": "Was mich immer noch fasziniert",
-  "aboutMeIntro": "Weltweite Kommunikation und Inspiration: das World Wide Web verbindet die Menschen mithilfe robuster und dezentraler Technologie. Schöne, schnelle und barrierefreie Websites sollen allen Menschen Zugang zu diesem Netzwerk bieten. Meine Arbeit trägt dazu bei, diesen Traum zu verwirklichen.",
+  "aboutMeIntro": "Weltweite Kommunikation und Inspiration: das World Wide Web verbindet die Menschen mithilfe robuster und dezentraler Technologie. Schöne, schnelle und barrierefreie Websites sollen allen Menschen Zugang zu diesem Netzwerk bieten. Diese Vision prägt meine Arbeit.",
   "aboutMeCvHeading": "Werdegang",
   "aboutMeCv1": "Interaktive Websites und Browserspiele waren die ersten Produkte meines 2000 mitgegründeten Startups in Münster. Suchmaschinenoptimierung und unsere CMS- und unsere eigene Shop-Software bildeten später das Kerngeschäft.",
   "aboutMeCv2": "Als angestellter E-Commerce-Engineer bei Xsite in Düsseldorf entwickelte ich von 2010 bis 2014 Online-Shops für Shop-Apotheke.com, den Kunstversand Ars mundi und andere Kunden. Als Technical Consultant bei Sevenval Technologies (später Avenga Germany) in Köln und Berlin optimierte ich die Ladezeit und Handytauglichkeit von Apps und Websites der Frankfurter Allgemeinen Zeitung und Online-Shops der Otto Group und erstellte Frontend-Anwendungen für wao.io und andere Kunden. Seit Ende 2020 bin ich als selbstständiger Webentwickler und Freelancer für Agenturen und individuelle Kund:innen tätig.",
@@ -152,7 +151,7 @@ module.exports = {
   "testimonialsFiveStarRating": "Fünf-Sterne-Bewertung",
   /* Interested CTA */
   "interestedHeading": "Interessiert?",
-  "interested": "Melde dich gerne, um ein unverbindliches Gespräch zu vereinbaren! Anfragen werden zeitnah beantwortet! Ich bin telefonisch, per E-Mail, per Signal oder WhatsApp erreichbar. Falls ich einen Anruf nicht persönlich entgegennehmen kann, hinterlasse mir gerne eine Sprachnachricht!",
+  "interested": "Melde dich gerne, um ein unverbindliches Gespräch zu vereinbaren! Anfragen werden zeitnah beantwortet! Ich bin telefonisch, per E-Mail, per Signal oder WhatsApp erreichbar. Falls ich einen Anruf nicht annehmen kann, hinterlasse mir gerne eine Sprachnachricht!",
   /* Imprint, Contact */
   "imprintHeader": "Impressum und Kontaktdaten",
   "imprintName": "Ingo Steinke",

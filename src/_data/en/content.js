@@ -48,7 +48,6 @@ module.exports = {
   "andA": "and a",
   "currentlyEcologicalIam": "I enjoy working for customers with an ecological and ethical focus in their work. I'm a",
   "memberOf": "member of",
-  "careAboutGoingBeyond": "Creativity, flexibility, and thoughtfulness are the main values that guide my work and personal lives. I am deeply interested in how sustainability, culture, and art come together, and I strive to bring what I learn into my work every day.",
   "workWithMeHeading": "Let's Work Together!",
   "workWithMe":"Do you want to overhaul your website? Does your team need support from a front-end developer with full-stack experience?",
   "ctaContact": "Call me or leave a message!",
@@ -109,7 +108,7 @@ module.exports = {
   /* About me, talks, and events */
   "aboutMeHeading": "About Me: Work And Passion",
   "aboutMeIntroHeading": "What Still Fascinates Me",
-  "aboutMeIntro": "Worldwide communication and inspiration: The World Wide Web connects people using robust and decentralized technology. Websites designed to offer everyone access to this network need to be attractive, fast, and accessible. My professional and non-profit work helps to make this dream a reality.",
+  "aboutMeIntro": "Worldwide communication and inspiration: The World Wide Web connects people using robust and decentralized technology. Websites designed to offer everyone access to this network need to be attractive, fast, and accessible. This vision shapes my work.",
   "aboutMeCvHeading": "Professional Background",
   "aboutMeCv1": "I co-founded a start-up in 2000 whose first products were interactive websites and browser games. Later, our core business transitioned to search engine optimization and our own e-commerce software.",
   "aboutMeCv2": "While employed as an e-commerce engineer at Xsite in Düsseldorf from 2010 to 2014, I developed online shops for Shop-Apotheke.com, Ars mundi, and other customers. As a technical consultant at Sevenval Technologies (later Avenga Germany) in Cologne and Berlin, I optimized the loading time and mobile phone compatibility of apps and websites for Frankfurter Allgemeine Zeitung and online shops for Otto Group and created front-end applications for wao.io and other customers. I'm a freelance web developer since 2020, working for agencies and individual customers.",
