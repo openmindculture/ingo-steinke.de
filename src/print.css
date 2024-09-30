@@ -171,19 +171,9 @@ ul {
   align-items: baseline;
 }
 
-.skills li.tile--verbose ul li {
-  margin-bottom: 8pt;
-  align-items: flex-start;
-}
-
 .skills li.tile ul li > *:first-child {
   width: 130pt;
   line-height: 1.5;
-}
-
-.skills li.tile--verbose ul li > *:first-child {
-  line-height: 1.25;
-  font-size: 11pt;
 }
 
 .skills li.tile ul li .hashtags {
