@@ -157,6 +157,11 @@ figure.content-image img {
   list-style-type: none;
 }
 
+.skills li.tile h3 {
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
 ul {
   padding-left: 1.5em;
 }
