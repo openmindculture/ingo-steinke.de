@@ -69,7 +69,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
   if (languageSwitch) {
     languageSwitch.addEventListener('click', () => {
-      languageSwitch.href += window.location.hash;
+      if (window.location.hash && window.location.hash != '#top') {
+        var currentHrefParts = languageSwitch.href.split('#');
+        languageSwitch.href = currentHrefParts[0] + window.location.hash;
+      }
     });
   }
 

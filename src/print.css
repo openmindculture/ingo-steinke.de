@@ -157,6 +157,11 @@ figure.content-image img {
   list-style-type: none;
 }
 
+.skills li.tile h3 {
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
 ul {
   padding-left: 1.5em;
 }
@@ -171,19 +176,9 @@ ul {
   align-items: baseline;
 }
 
-.skills li.tile--verbose ul li {
-  margin-bottom: 8pt;
-  align-items: flex-start;
-}
-
 .skills li.tile ul li > *:first-child {
   width: 130pt;
   line-height: 1.5;
-}
-
-.skills li.tile--verbose ul li > *:first-child {
-  line-height: 1.25;
-  font-size: 11pt;
 }
 
 .skills li.tile ul li .hashtags {
