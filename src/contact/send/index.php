@@ -71,6 +71,7 @@ if (
   strpos($post_msg, 'meg akartam') !== false ||
   strpos($post_msg, 'vašu cijenu') !== false ||
   strpos($post_msg, 'прайс') !== false ||
+  strpos($post_msg, 'сайт') !== false ||
   strpos($post_msg, 'mail.ru') !== false ||
   strpos($post_msg, 'я') !== false ||
   strpos($post_msg, 'ë') !== false ||
