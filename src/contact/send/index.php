@@ -57,9 +57,6 @@ if (
   strpos($post_msg, 'Money Alert') !== false ||
   strpos($post_msg, '/exec') !== false ||
   strpos($post_msg, '//script.google.com') !== false ||
-  strpos($post_msg, '//rb.gy') !== false ||
-  strpos($post_msg, '//yandex.ru') !== false ||
-  strpos($post_msg, 'dublikat.ru') !== false ||
   strpos($post_msg, 'ønskede') !== false ||
   strpos($post_msg, 'ég') !== false ||
   strpos($post_msg, 'ə') !== false ||
@@ -72,8 +69,15 @@ if (
   strpos($post_msg, 'vašu cijenu') !== false ||
   strpos($post_msg, 'прайс') !== false ||
   strpos($post_msg, 'сайт') !== false ||
-  strpos($post_msg, 'mail.ru') !== false ||
   strpos($post_msg, 'я') !== false ||
+  strpos($post_msg, 'б') !== false ||
+  strpos($post_msg, 'д') !== false ||
+  strpos($post_msg, 'mail.ru') !== false ||
+  strpos($post_msg, '//telegra.ph/') !== false ||
+  strpos($post_msg, '//rb.gy') !== false ||
+  strpos($post_msg, '//yandex.ru') !== false ||
+  strpos($post_msg, 'dublikat.ru') !== false ||
+  strpos($post_msg, '//telegra.ph/') !== false ||
   strpos($post_msg, 'ë') !== false ||
   strpos($post_msg, 'ụ') !== false ||
   strpos($post_msg, 'ị') !== false ||
