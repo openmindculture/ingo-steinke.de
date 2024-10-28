@@ -71,7 +71,10 @@ if (
   strpos($post_msg, 'сайт') !== false ||
   strpos($post_msg, 'я') !== false ||
   strpos($post_msg, 'б') !== false ||
+  strpos($post_msg, 'в') !== false ||
   strpos($post_msg, 'д') !== false ||
+  strpos($post_msg, 'и') !== false ||
+  strpos($post_msg, 'й') !== false ||
   strpos($post_msg, 'mail.ru') !== false ||
   strpos($post_msg, '//telegra.ph/') !== false ||
   strpos($post_msg, '//rb.gy') !== false ||
