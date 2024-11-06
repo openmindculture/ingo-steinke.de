@@ -1,6 +1,6 @@
 # Changelog
 
-## [4.4.9] more elegant content - (upcoming)
+## [4.4.9] more elegant content - 2024-09-30
 * improve text content #225
 * add missing links in printed PDF #225
 * prevent anchor links aggregation 404 #275
