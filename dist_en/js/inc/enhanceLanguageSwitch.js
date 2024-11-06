@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.enhanceLanguageSwitch=enhanceLanguageSwitch;function enhanceLanguageSwitch(){var a=document.getElementById("language-switch");a&&a.addEventListener("click",function(){if(window.location.hash&&"#top"!=window.location.hash){var b=a.href.split("#");a.href=b[0]+window.location.hash}})}
