@@ -39,6 +39,7 @@
     "@codeceptjs/examples": "^1.2.4",
     "@codeceptjs/ui": "^1.2.0",
     "codeceptjs": "^3.6.5",
+    "esbuild": "^0.24.0",
     "playwright": "^1.46.1"
   },
   "dependencies": {

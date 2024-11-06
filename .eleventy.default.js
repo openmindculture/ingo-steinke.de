@@ -11,6 +11,18 @@ module.exports = function (eleventyConfig) {
     return content;
   });
 
+  eleventyConfig.addFilter('jsbundle', function (code) {
+    require('fs').writeFileSync('in.js', code)
+    require('esbuild').buildSync({
+      entryPoints: ['in.js'],
+      outfile: 'out.js',
+      minify: true,
+      bundle: true,
+    })
+    const bundle = require('fs').readFileSync('out.js', 'utf8')
+    return bundle
+  })
+
   eleventyConfig.addLiquidFilter("customLocalizedMonthNameFilter", function(monthParam) {
     let monthIndex = parseInt(monthParam);
     let monthNames = [
