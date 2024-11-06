@@ -1,5 +1,9 @@
 # Changelog
 
+## [4.5.0] restructure and rephrase content - todo
+* refactor script file to modules
+* refactor JavaScript to TypeScript
+
 ## [4.4.9] more elegant content - 2024-09-30
 * improve text content #225
 * add missing links in printed PDF #225
