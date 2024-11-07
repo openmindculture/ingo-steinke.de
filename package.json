@@ -1,6 +1,6 @@
 {
   "name": "ingo-steinke.de",
-  "version": "4.4.9",
+  "version": "4.5.0",
   "description": "website about web developer Ingo Steinke",
   "main": "index.html",
   "scripts": {
@@ -34,13 +34,7 @@
   },
   "homepage": "https://github.com/openmindculture/ingo-steinke.de#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.0",
-    "@codeceptjs/configure": "^1.0.1",
-    "@codeceptjs/examples": "^1.2.4",
-    "@codeceptjs/ui": "^1.2.0",
-    "codeceptjs": "^3.6.5",
-    "esbuild": "^0.24.0",
-    "playwright": "^1.46.1"
+    "@11ty/eleventy": "^2.0.0"
   },
   "dependencies": {
     "@babel/cli": "^7.25.6",
@@ -51,7 +45,6 @@
     "autoprefixer": "^10.4.20",
     "babel-preset-minify": "^0.5.2",
     "clean-css": "^5.3.3",
-    "codeceptjs-resemblehelper": "^1.9.6",
     "cssnano": "^7.0.6",
     "eslint": "^9.14.0",
     "globals": "^15.9.0",

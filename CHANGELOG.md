@@ -4,6 +4,9 @@
 * refactor script file to modules
 * refactor JavaScript to TypeScript
 
+## [4.4.12 more elegant content - 2024-09-30
+* improve text content: prevent greenwashing #279
+
 ## [4.4.9] more elegant content - 2024-09-30
 * improve text content #225
 * add missing links in printed PDF #225
