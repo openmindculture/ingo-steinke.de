@@ -1,6 +1,6 @@
 # Changelog
 
-## [4.4.11 more elegant content - 2024-09-30
+## [4.4.12 more elegant content - 2024-09-30
 * improve text content: prevent greenwashing #279
 
 ## [4.4.9] more elegant content - 2024-09-30

@@ -42,7 +42,7 @@ module.exports = {
   "targetPrivacy": "Datenschutz",
   "targetOtherLanguage": "English",
   "targetOtherLanguageTitle": "Change language to English",
-  "intro": "Ich bin Ingo Steinke, kreativer Frontend-Webentwickler mit über 20 Jahren Berufserfahrung. Ich entwickle (programmiere), teste und optimiere Websites, Web Apps und Online-Shops. Frontend-Entwicklung, Barrierefreiheit, Ladegeschwindigkeit und Effizienz sind meine fachlichen Stärken. Ich bin pragmatisch, kommunikativ und arbeite gerne eng mit Designer:innen zusammen. Bei Bedarf kann ich einfache Design- und UX-Änderungen auch selbst konzipieren und umsetzen.",
+  "intro": "Ich bin Ingo Steinke, kreativer Webentwickler mit über 20 Jahren Berufserfahrung. Ich entwickle (programmiere), teste und optimiere Websites, Web Apps und Online-Shops. Frontend-Entwicklung, Barrierefreiheit, Ladegeschwindigkeit und Effizienz sind meine fachlichen Stärken. Ich bin pragmatisch, kommunikativ und arbeite gerne eng mit Designer:innen zusammen. Bei Bedarf kann ich einfache Design- und UX-Änderungen auch selbst konzipieren und umsetzen.",
   "spacedAnd": " und",
   "andA": "und",
   "commaEnglishOnly": "",
