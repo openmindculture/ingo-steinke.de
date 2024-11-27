@@ -209,6 +209,10 @@ Optional enhancements in `scripts.js`:
 - document and prioritize work using GitHub issues:
 https://github.com/openmindculture/ingo-steinke.de/issues/
 
+## Colours
+
+In 2023, Ingo's website introduced high gamut colors to be used on devices supporting extended color definitions. In 2024, the CSS hashtag color was changed from green to [rebeccapurple](https://meyerweb.com/eric/thoughts/2014/06/19/rebeccapurple/) following the W3 community's decision to honor Rebecca Meyer.
+
 ## Marketing / SEO
 
 Blog, publish, participate in forums, and add content on free wiki services and profile pages like the following examples where we can create "do-follow backlinks" (i.e. links poiting to our own resouces without a restricting `rel="nofollow"` attribute)
