@@ -1161,6 +1161,12 @@ ul.aside-heading > li:last-child {
   color: #fff;
 }
 
+.brand-rebeccapurple {
+  background-color: var(--brand-rebeccapurple);
+  background-color: rebeccapurple;
+  color: #fff;
+}
+
 .brand-blue {
   background-color: var(--brand-blue-typescript);
   background-color: var(--brand-blue-typescript-neon);

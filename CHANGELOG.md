@@ -1,5 +1,13 @@
 # Changelog
 
+## [4.5.0] add gemeva and rebeccapurple - 2024-11-27
+* update CSS hashtag color to rebeccapurple #284
+* harmonize similar purple tones #284
+* harmonize gray color tones #284
+* use German typographic quotation marks #284
+* update skills content, adding Astro and putting Figma where it belongs #284
+* add gemeva portfolio website to reference projects #285
+
 ## [4.4.13] update social preview image - 2024-11-25
 * update social preview image #283
 
