@@ -74,7 +74,7 @@ body {
   --brand-reddish-dark: #7e000d;
   --brand-purple-scss: #bf4080;
   --brand-purple-scss-neon: color(display-p3 0.75 0.25 0.50);
-  --brand-purple-dark-preact: #673ab8;
+  --brand-rebeccapurple: #663399;
   --brand-blue-tailwind-react: #55d0f4;
   --brand-blue-tailwind-react-neon: color(display-p3 0.33 0.82 0.96);
   --brand-blue-light: #c0f1ff;
@@ -145,7 +145,6 @@ body.high-contrast {
   --hashtag-default: var(--dark-contrast-blue);
   --hashtag-green: var(--spermidine-green);
   --hashtag-blue: var(--greenish-blue);
-
   --brand-yellow-js: var(--illuminating-higher-contrast);
   --brand-yellow-js-neon: var(--illuminating-higher-contrast);
   --brand-yellow-miro: var(--illuminating-higher-contrast);
