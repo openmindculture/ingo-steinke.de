@@ -80,7 +80,7 @@ module.exports = {
   "workCertifiedExtensionPartner": "Shopware Extension Partner",
   "workCertifiedSustainableSourceCodeLinkText": "Der Quellcode meiner Arbeit",
   "workCertifiedSustainable2": "ist offen einsehbar, sofern es der Datenschutz erlaubt. Der ",
-  "workCertifiedSustainableFootprintLinkText": "&quot;CO<sub>2</sub>-Fußabdruck&quot; meiner Website",
+  "workCertifiedSustainableFootprintLinkText": "„CO<sub>2</sub>-Fußabdruck“ meiner Website",
   "workCertifiedSustainable3": "ist ebenfalls sichtbar ausgewiesen.",
   "workTeamHeading": "Teamwork und Netzwerk",
   "workTeam": "Ich habe kein festes Team, aber ein Netzwerk guter Geschäftsfreund:innen mit denen ich teilweise schon seit vielen Jahren zusammenarbeite. Als Kund:in kannst du mir aber auch gerne die Dienstleister:innen deines Vertrauens vorstellen. So behältst du selbst die volle Kontrolle und sparst dir Mehraufwand und wechselnde Ansprechpartner:innen klassischer Agenturen.",
