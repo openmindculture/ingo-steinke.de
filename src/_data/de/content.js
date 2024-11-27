@@ -296,7 +296,7 @@ module.exports = {
   "landingLinkTextFreelanceBerlin": "Freelancer Berlin",
   "landingLinkUrlFreelanceBerlin": "https://www.ingo-steinke.de/leistungen/webentwickler-berlin-freelancer.html",
   "landingLinkTextSitemap": "Sitemap",
-  "landingLinkUrlSitemap": "https://www.ingo-steinke.com/sitemap.html",
+  "landingLinkUrlSitemap": "https://www.ingo-steinke.de/sitemap.html",
   "languagesSubtitle": "Sprachen",
   "furtherInformationSubheading": "Weitere Informationen",
   "projectImgAltDefault": "Projekt-Screenshot",
