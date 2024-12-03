@@ -1,6 +1,7 @@
 # Changelog
 
-## [4.5.1] housekeeping - 2024-12-03
+## [4.5.2] housekeeping - 2024-12-03
+* fix broken link
 * add spam protection rule
 * release script security for matomo
 * upgrade development dependencies
