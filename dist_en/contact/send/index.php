@@ -76,6 +76,7 @@ if (
   strpos($post_msg, 'и') !== false ||
   strpos($post_msg, 'й') !== false ||
   strpos($post_msg, 'mail.ru') !== false ||
+  strpos($post_msg, ' .ru/') !== false ||
   strpos($post_msg, '//telegra.ph/') !== false ||
   strpos($post_msg, '//rb.gy') !== false ||
   strpos($post_msg, '//yandex.ru') !== false ||
