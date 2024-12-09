@@ -1,5 +1,8 @@
 # Changelog
 
+## [4.5.4] form field accessibility - 2024-12-09
+* a11y: explicit borders to make input form fields more accessible
+
 ## [4.5.3] content focus - 2024-12-09
 * content: improved frontend and a11y focus for upcoming EAA/BFSG
 

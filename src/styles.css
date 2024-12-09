@@ -407,9 +407,8 @@ body.high-contrast .bg-peel {
 .contactform-field-message {
   appearance: none;
   -webkit-appearance: none;
-  border: none;
   box-shadow: none;
-  border-bottom: solid thin silver;
+  border: solid thin silver;
   font-family: var(--body-font-family);
   color: black;
   font-size: 1rem;
@@ -431,6 +430,7 @@ body.high-contrast .bg-peel {
   flex: 1 0 100%;
   max-width: 100%;
   margin-top: 0.5rem;
+  padding-top: 0.25rem;
 }
 
 .contactform-button-submit {
