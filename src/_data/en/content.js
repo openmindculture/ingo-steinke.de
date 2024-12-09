@@ -43,7 +43,7 @@ module.exports = {
   "targetOtherLanguage": "deutsch",
   "targetOtherLanguageTitle": "zur deutschen Sprache wechseln",
   /* page content */
-  "intro": "My name is Ingo Steinke. I'm a creative web developer with more than 20 years of professional experience. I develop, test, and optimize websites, web apps, and online shops. My professional strengths include front-end development, accessibility, loading speed, and energy efficiency. I am pragmatic and communicative and enjoy working closely with designers. If necessary, I can also conceptualize and implement simple design and UX changes myself.",
+  "intro": "My name is Ingo Steinke. I'm a creative frontend web developer with more than 20 years of professional experience. I develop, test, and optimize websites, web apps, and online shops. I can pragmatically and easily explain and implement current requirements such as EAA/BFSG, GDPR, loading time, and ecological sustainability. I am communicative and enjoy working closely with designers.",
   "spacedAnd": ", and",
   "andA": "and a",
   "currentlyEcologicalIam": "I enjoy working for customers with an ecological and ethical focus in their work. I'm a",
@@ -61,8 +61,8 @@ module.exports = {
   "projectWebsite": "website",
   "projectSourceCode": "source code",
   /* work */
-  "workHeading": "Long-Lasting Solutions",
-  "work": "I can implement your layouts across platforms in a responsive and accessible way. My goal is to build long-lasting solutions that are elegant, transparent, and easy to maintain.",
+  "workHeading": "Long-lasting, Accessible, and Ecological",
+  "work": "I can implement your layouts across platforms in a responsive and accessible way (EAA/BFSG-compliant). We will find long-lasting solutions that are elegant, transparent, and easy to maintain. Read more about <a href='/services/accessible-climate-website-optimization.html'>accessible and climate-friendly website optimization</a>",
   "workReliableHeading": "Reliable and Easy to Understand",
   "workReliable": "For me, it's important to explain technological facts in simple words, to understand my customers' requirements, and to look ahead and implement sustainable solutions.",
   "workClientsBenefit": "You benefit from lower maintenance costs, optimised performance, and improved customer contact.",

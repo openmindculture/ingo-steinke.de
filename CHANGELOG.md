@@ -1,5 +1,8 @@
 # Changelog
 
+## [4.5.3] content focus - 2024-12-09
+* content: improved frontend and a11y focus for upcoming EAA/BFSG
+
 ## [4.5.2] housekeeping - 2024-12-03
 * fix broken link
 * add spam protection rule
