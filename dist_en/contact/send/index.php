@@ -31,6 +31,7 @@ if (
   !empty($spamtrap1) ||
   !empty($spamtrap2) ||
   'POST' != $_SERVER['REQUEST_METHOD'] ||
+  !strpos($post_msg, ' ') ||
   strpos($post_msg, 'intengo yakho') !== false ||
   strpos($post_msg, 'your price') !== false ||
   strpos($post_msg, 'the prices') !== false ||
