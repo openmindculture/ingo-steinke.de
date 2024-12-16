@@ -1,5 +1,9 @@
 # Changelog
 
+## [4.5.5] maintenance - 2024-12-16
+* add contact form spam protection heuristics
+* upgrade development dependencies
+
 ## [4.5.4] form field accessibility - 2024-12-09
 * a11y: explicit borders to make input form fields more accessible
 

@@ -64,7 +64,11 @@ if (
   strpos($post_msg, 'হা') !== false ||
   strpos($post_msg, 'ფ') !== false ||
   strpos($post_msg, 'Ոা') !== false ||
+  strpos($post_msg, 'գ') !== false ||
   strpos($post_msg, '&#39;') !== false ||
+  strpos($post_msg, 'tôi muốn biết') !== false ||
+  strpos($post_msg, 'saber tu precio') !== false ||
+  strpos($post_msg, 'arga Anda') !== false ||
   strpos($post_msg, 'meg akartam') !== false ||
   strpos($post_msg, 'vašu cijenu') !== false ||
   strpos($post_msg, 'прайс') !== false ||
@@ -92,11 +96,14 @@ if (
   strpos($post_name, 'MasonMef') !== false ||
   strpos($post_name, 'Masonbeids') !== false ||
   strpos($post_name, 'Robertbeids') !== false ||
-  strpos($post_name, 'Jobeids') !== false ||
-  strpos($post_name, 'Davidbeids') !== false ||
   strpos($post_name, 'Adjbeids') !== false ||
+  strpos($post_name, 'Avabeids') !== false ||
+  strpos($post_name, 'Davidbeids') !== false ||
+  strpos($post_name, 'Harrybeids') !== false ||
+  strpos($post_name, 'Jobeids') !== false ||
   strpos($post_name, 'Maxbeids') !== false ||
   strpos($post_name, 'Tedbeids') !== false ||
+  strpos($post_name, 'TedMef') !== false ||
   strpos($post_name, 'KevinKen') !== false ||
   strpos($post_name, 'Amandapeaceame') !== false ||
   strpos($post_name, 'Tracyselty') !== false ||
