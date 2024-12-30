@@ -1,5 +1,10 @@
 # Changelog
 
+## [4.6.0] maintenance - 2024-12-30
+* fix mobile layout edge cases on landing pages
+* fix typo in German sustainability claim
+* add contact form spam protection heuristics
+
 ## [4.5.5] maintenance - 2024-12-16
 * add contact form spam protection heuristics
 * upgrade development dependencies
