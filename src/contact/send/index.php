@@ -89,6 +89,8 @@ if (
   strpos($post_msg, '//yandex.ru') !== false ||
   strpos($post_msg, 'dublikat.ru') !== false ||
   strpos($post_msg, '//telegra.ph/') !== false ||
+  strpos($post_msg, '//tinyurl.com/') !== false ||
+  strpos($post_msg, '//amazn.to/') !== false ||
   strpos($post_msg, 'ë') !== false ||
   strpos($post_msg, 'ụ') !== false ||
   strpos($post_msg, 'ị') !== false ||
