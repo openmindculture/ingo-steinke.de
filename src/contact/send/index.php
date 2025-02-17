@@ -3,7 +3,7 @@
 $config_from = 'contact@ingo-steinke.com';
 $config_to = 'contact@ingo-steinke.com';
 $config_tospamtrap = 'contact@ingo-steinke.com';
-$config_subject = 'Contactform ISD';
+$config_subject = 'Contactform from ISD website';
 $config_custheader = '';
 $config_verbose = true;
 $randombool = rand(0,1) == 1;
@@ -22,7 +22,6 @@ $spamtrap2      = filter_var($_REQUEST['contactform-field-homepage'], FILTER_SAN
 $time_ip_stamp  = date("YmdHi") . '_';
 $time_ip_stamp .= trim(filter_var($_SERVER['REMOTE_ADDR'], FILTER_SANITIZE_EMAIL));
 $stamp_filename = './latest/' . $time_ip_stamp . '.txt';
-$safer_sender   = trim(preg_replace('/\s+/', ' ', $post_name));
 $responseStatus = '200 OK';
 $suspectedSpam = false;
 
@@ -38,8 +37,14 @@ if (
   strpos($post_msg, 'ego volo scire') !== false ||
   strpos($post_msg, 'volevo sapere il tuo prezzo') !== false ||
   strpos($post_msg, 'eich pris') !== false ||
+  strpos($post_msg, 'el seu preu') !== false ||
+  strpos($post_msg, 'o seu prezo') !== false ||
   strpos($post_msg, 'Äre Präis') !== false ||
+  strpos($post_msg, 'Kaixo, ') !== false ||
+  strpos($post_msg, 'Sveiki, ') !== false ||
+  strpos($post_msg, 'Dia duit, ') !== false ||
   strpos($post_msg, 'Claim Your $') !== false ||
+  strpos($post_msg, ' WIN') !== false ||
   strpos($post_msg, 'Passive Income') !== false ||
   strpos($post_msg, 'Cryptocurrency') !== false ||
   strpos($post_msg, 'cannabidiol') !== false ||
@@ -56,6 +61,10 @@ if (
   strpos($post_msg, 'singles online') !== false ||
   strpos($post_msg, 'XRumer') !== false ||
   strpos($post_msg, 'Money Alert') !== false ||
+  strpos($post_msg, 'promo code') !== false ||
+  strpos($post_msg, 'mobilepokerclub') !== false ||
+  strpos($post_msg, ' casino') !== false ||
+  strpos($post_msg, 'скачать') !== false ||
   strpos($post_msg, '/exec') !== false ||
   strpos($post_msg, '//script.google.com') !== false ||
   strpos($post_msg, 'ønskede') !== false ||
@@ -67,6 +76,7 @@ if (
   strpos($post_msg, 'Ոা') !== false ||
   strpos($post_msg, 'գ') !== false ||
   strpos($post_msg, '&#39;') !== false ||
+  strpos($post_msg, '&#34;') !== false ||
   strpos($post_msg, 'tôi muốn biết') !== false ||
   strpos($post_msg, 'saber tu precio') !== false ||
   strpos($post_msg, 'arga Anda') !== false ||
@@ -80,6 +90,7 @@ if (
   strpos($post_msg, 'д') !== false ||
   strpos($post_msg, 'и') !== false ||
   strpos($post_msg, 'й') !== false ||
+  strpos($post_msg, 'спорт') !== false ||
   strpos($post_msg, 'mail.ru') !== false ||
   strpos($post_msg, ' .ru/') !== false ||
   strpos($post_msg, '//telegra.ph/') !== false ||
@@ -91,7 +102,10 @@ if (
   strpos($post_msg, '//telegra.ph/') !== false ||
   strpos($post_msg, '//tinyurl.com/') !== false ||
   strpos($post_msg, '//amazn.to/') !== false ||
+  strpos($post_msg, 'bitcoin') !== false ||
   strpos($post_msg, 'cryptocurrency') !== false ||
+  strpos($post_msg, 'cannabis') !== false ||
+  strpos($post_msg, 'impressed with the quality') !== false ||
   strpos($post_msg, 'ë') !== false ||
   strpos($post_msg, 'ụ') !== false ||
   strpos($post_msg, 'ị') !== false ||
@@ -99,23 +113,15 @@ if (
   strpos($post_msg, 'Ђ') !== false ||
   strpos($post_msg, '==>') !== false ||
   strpos($post_name, 'Ready for love') !== false ||
-  strpos($post_name, 'MasonMef') !== false ||
-  strpos($post_name, 'Masonbeids') !== false ||
-  strpos($post_name, 'Robertbeids') !== false ||
-  strpos($post_name, 'Adjbeids') !== false ||
-  strpos($post_name, 'Avabeids') !== false ||
-  strpos($post_name, 'Davidbeids') !== false ||
-  strpos($post_name, 'Harrybeids') !== false ||
-  strpos($post_name, 'Jobeids') !== false ||
-  strpos($post_name, 'Maxbeids') !== false ||
-  strpos($post_name, 'Tedbeids') !== false ||
-  strpos($post_name, 'TedMef') !== false ||
-  strpos($post_name, 'KevinKen') !== false ||
   strpos($post_name, 'Amandapeaceame') !== false ||
-  strpos($post_name, 'Tracyselty') !== false ||
+  strpos($post_name, 'KevinKen') !== false ||
   strpos($post_name, 'Nataler') !== false ||
+  strpos($post_name, 'Tracyselty') !== false ||
+  strpos($post_name, 'Iyannacrigo') !== false ||
   strpos($post_name, 'xrumer') !== false ||
   strpos($post_name, 'www.') !== false ||
+  str_ends_with($post_name, 'beids') ||
+  str_ends_with($post_name, 'Mef') ||
   (empty(trim($post_name)) && empty(trim($post_emailfon)) && empty(trim($post_msg)))
 ) {
   $suspectedSpam = true;
@@ -180,8 +186,6 @@ $subject = $config_subject;
 if ( $suspectedSpam ) {
   $to      = $config_tospamtrap;
   $subject = '[Spamverdacht] ' . $subject;
-} else if (!empty($safer_sender)) {
-  $subject .= ': ' . $safer_sender;
 }
 
 $message = '';
