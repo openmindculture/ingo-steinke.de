@@ -34,6 +34,7 @@ module.exports = {
   "targetServices": "services",
   "targetServicesUcFirst": "Services",
   "targetSkills": "skills",
+  "targetSkillsLong": "More services and technological skills",
   "targetAboutMe": "about me",
   "targetAboutMeUrl": "about-me.html",
   "targetTalksEvents": "talks",
@@ -103,6 +104,7 @@ module.exports = {
   "SkillsOtherVcs": "Source Control",
   "SkillsOtherDevops": "DevOps",
   "SkillsDevuxImg": "Collaboration",
+  "SkillsOtherSystems": "Other Systems and Software",
   /* About me, talks, and events */
   "aboutMeHeading": "About Me: Work And Passion",
   "aboutMeIntroHeading": "What Still Fascinates Me",

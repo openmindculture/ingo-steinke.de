@@ -1,5 +1,10 @@
 # Changelog
 
+## [4.6.1] content - 2025-02-26
+* fix skills subtitle and content
+* add WebFlow and other secondary skills
+* link from home services section to skills
+
 ## [4.6.0] maintenance - 2024-12-30
 * fix mobile layout edge cases on landing pages
 * fix typo in German sustainability claim
