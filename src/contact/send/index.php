@@ -106,6 +106,7 @@ if (
   strpos($post_msg, 'cryptocurrency') !== false ||
   strpos($post_msg, 'cannabis') !== false ||
   strpos($post_msg, 'impressed with the quality') !== false ||
+  strpos($post_msg, 'wkdwodkwkifjejr') !== false ||
   strpos($post_msg, 'ë') !== false ||
   strpos($post_msg, 'ụ') !== false ||
   strpos($post_msg, 'ị') !== false ||
@@ -114,6 +115,7 @@ if (
   strpos($post_msg, '==>') !== false ||
   strpos($post_name, 'Ready for love') !== false ||
   strpos($post_name, 'Amandapeaceame') !== false ||
+  strpos($post_name, 'GregoryFub') !== false ||
   strpos($post_name, 'KevinKen') !== false ||
   strpos($post_name, 'Nataler') !== false ||
   strpos($post_name, 'Tracyselty') !== false ||
@@ -148,7 +150,7 @@ if(!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
 } else {
   /* fallback for plain FORM SUBMIT */
   header('Content-Type: text/html');
-  header('Refresh: 5; url=https://www.ingo-steinke.com/');
+  header('Refresh: 6; url=https://www.ingo-steinke.com/');
   if ( $suspectedSpam ) {
     if (file_exists($stamp_filename) || $randombool) {
       header('Status: 403 Forbidden');
@@ -160,8 +162,8 @@ if(!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
       $responseStatus = '405 Method Not Allowed';
     } else  {
       header('Status: 503 Service Unavailable');
-      sleep(5);
-      echo '503 Service Unavailable - please try again later';
+      sleep(6);
+      echo 'Sorry, the service is unavailable. Please try again later';
       $responseStatus = '503 Service Unavailable';
     }
 
