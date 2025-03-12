@@ -113,6 +113,8 @@ if (
   strpos($post_msg, 'ā') !== false ||
   strpos($post_msg, 'Ђ') !== false ||
   strpos($post_msg, '==>') !== false ||
+  preg_match("/\bsex\b/i", $post_msg) ||
+  preg_match("/\bdating\b/i", $post_msg) ||
   strpos($post_name, 'Ready for love') !== false ||
   strpos($post_name, 'Amandapeaceame') !== false ||
   strpos($post_name, 'GregoryFub') !== false ||
