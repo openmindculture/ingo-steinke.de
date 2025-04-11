@@ -105,7 +105,11 @@ if (
   strpos($post_msg, 'bitcoin') !== false ||
   strpos($post_msg, 'cryptocurrency') !== false ||
   strpos($post_msg, 'cannabis') !== false ||
+  strpos($post_msg, 'cbd ') !== false ||
+  strpos($post_msg, 'CBD ') !== false ||
+  strpos($post_msg, 'artet drink') !== false ||
   strpos($post_msg, 'impressed with the quality') !== false ||
+  strpos($post_msg, ' has improved. ') !== false ||
   strpos($post_msg, 'wkdwodkwkifjejr') !== false ||
   strpos($post_msg, 'ë') !== false ||
   strpos($post_msg, 'ụ') !== false ||
