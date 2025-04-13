@@ -1,5 +1,13 @@
 # Changelog
 
+## [4.7.0] style and content - 2025-04-13
+* replace Bitter font with Blackletra Dorival UI
+* improve intro and services layout
+* remove misleading communication claim
+* remove overpromising contact claim
+* add contact form spam protection heuristics
+* add alternative black and white portrait photo version
+
 ## [4.6.1] content - 2025-02-26
 * fix skills subtitle and content
 * add WebFlow and other secondary skills
