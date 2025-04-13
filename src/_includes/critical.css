@@ -91,6 +91,9 @@ h4,
 
 ul.aside-heading {
   text-align: left;
+}
+
+.jumbotronHeader .aside-heading {
   font-family: var(--body-font-family);
 }
 
