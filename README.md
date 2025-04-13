@@ -11,7 +11,7 @@ and to save CV documents using the print dialog.
 
 My [changelog](./CHANGELOG.md) contains details about features and fixes.
 
-This is a screenshot after the relaunch in 2021:
+This is a screenshot updated in 2025:
 
 ![screenshot](_screenshots/screenshot-ingo-steinke-de.jpg)
 
