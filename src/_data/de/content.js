@@ -43,7 +43,7 @@ module.exports = {
   "targetPrivacy": "Datenschutz",
   "targetOtherLanguage": "English",
   "targetOtherLanguageTitle": "Change language to English",
-  "intro": "Ich bin Ingo Steinke, kreativer Frontend-Webentwickler mit über 20 Jahren Berufserfahrung. Ich entwickle (programmiere), teste und optimiere Websites, Web Apps und Online-Shops. Aktuelle Anforderungen wie BFSG, DSGVO, Ladezeit und ökologische Nachhaltigkeit werden verständlich erklärt und pragmatisch umgesetzt. Ich bin, kommunikativ und arbeite gerne eng mit Designer:innen zusammen.",
+  "intro": "Ich bin Ingo Steinke, kreativer Frontend-Webentwickler mit über 20 Jahren Berufserfahrung. Ich entwickle (programmiere), teste und optimiere Websites, Web Apps und Online-Shops. Aktuelle Anforderungen wie BFSG, DSGVO, Ladezeit und ökologische Nachhaltigkeit werden verständlich erklärt und pragmatisch umgesetzt.",
   "spacedAnd": " und",
   "andA": "und",
   "commaEnglishOnly": "",
