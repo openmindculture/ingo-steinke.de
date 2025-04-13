@@ -1,6 +1,6 @@
 # Changelog
 
-## [4.7.0] style and content - 2025-04-13
+## [4.7.1] style and content - 2025-04-13
 * replace Bitter font with Blackletra Dorival UI
 * improve intro and services layout
 * remove misleading communication claim
