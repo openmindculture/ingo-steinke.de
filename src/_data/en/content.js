@@ -43,6 +43,8 @@ module.exports = {
   "targetPrivacy": "privacy",
   "targetOtherLanguage": "deutsch",
   "targetOtherLanguageTitle": "zur deutschen Sprache wechseln",
+  "targetHrCv": "CV, Projects, Skills",
+  "targetHrCvUrl": "cv-projects-skills.html",
   /* page content */
   "intro": "My name is Ingo Steinke. I'm a creative frontend web developer with more than 20 years of professional experience. I develop, test, and optimize websites, web apps, and online shops. I can pragmatically and easily explain and implement current requirements such as EAA/BFSG, GDPR, loading time, and ecological sustainability.",
   "spacedAnd": ", and",
@@ -173,7 +175,7 @@ module.exports = {
   ],
   "contactOr": "or",
   "scheduleAMeeting": "schedule a meeting via cal.com",
-  "contactScheduleTitle": "Contact me and Book a Meeting",
+  "contactScheduleTitle": "Contact me",
   "contactFormTitle": "Write me a message:",
   "contactFormMessageSending": "Sending your message...",
   "contactFormMessageSent": "Thanks! Your message has been sent.",

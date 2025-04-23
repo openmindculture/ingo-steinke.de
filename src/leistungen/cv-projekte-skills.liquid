@@ -5,17 +5,17 @@ imgdirectory: "../img"
 previewimage: "https://www.ingo-steinke.com/img/preview-creative-web-developer.png"
 previewtitle: "Über Ingo Steinke: CV, Projekte, Skills"
 previewdescription: "Ingo Steinke ist Webentwickler mit Frontend-Fokus und über 20 Jahren Berufserfahrung und Fokus auf Barrierefreiheit, Ladegeschwindigkeit und Wartbarkeit."
-permalink: "ueber-mich.html"
-canonicalhref: "https://www.ingo-steinke.de/ueber-mich.html"
+permalink: "cv-projekte-skills.html"
+canonicalhref: "https://www.ingo-steinke.de/cv-projekte-skills.html"
 canonicalhreflang: "de"
-alternatelink: "https://www.ingo-steinke.com/about-me.html"
+alternatelink: "https://www.ingo-steinke.com/cv-projects-skills.html"
 alternatehreflang: "en"
 ---
 <!DOCTYPE html>
 <html lang="de">
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>Webentwickler Ingo Steinke: über mich</title>
+  <title>Webentwickler Ingo Steinke: CV, Projekte, Skills</title>
   {% include '../_includes/html-head-common.liquid' %}
 </head>
 <body class="high-contrast">
@@ -25,7 +25,8 @@ alternatehreflang: "en"
       <br>
       {% include './_includes/jumbotron-image.liquid' %}
       <h1>Ingo Steinke</h1>
-      <p class="tagline center">Über mich</p>
+      <p class="tagline center">Creative Web Developer<br>
+        CV, Projekte, Skills</p>
     </header>
     {% include '../_includes/navigation-on-subpages.liquid', headerClassName: 'wide' %}
     <main id="content-top" class="target-offset">
@@ -40,11 +41,12 @@ alternatehreflang: "en"
           {{ content.aboutMeHeading }}
         </h2>
         <article class="text-width">
-          <p>Ich bin Ingo Steinke, Webentwickler mit Frontend-Fokus und über 20 Jahren Berufserfahrung.
+          <p>Ich bin Ingo Steinke, selbstständiger Webentwickler mit Frontend-Fokus und über 20 Jahren Berufserfahrung.
             Bei der Entwicklung eleganter und einfach bedienbarer Websites achte ich auf Barrierefreiheit,
             Ladegeschwindigkeit und Wartbarkeit. HTML, CSS, JavaScript, TypeScript und PHP zählen zu meinen
             bevorzugten Technologien.
             Seit 2024 bin ich <a href="/zertifizierter-shopware-6-frontend-webentwickler/">zertifizierter Shopware-Entwickler</a>.
+          </p><p>Ich bin pragmatisch, kommunikativ und arbeite gerne eng mit Webdesigner:innen zusammen.
           </p>
           <p class="no-print">Lebenslauf, Projektliste und Skillmatrix als PDF-Download:</p>
           <ul class="no-print">
@@ -60,11 +62,11 @@ alternatehreflang: "en"
           <br>
           <header>
             <h3>
-              {{ content.aboutMeIntroHeading }}
+              Zukunftsthemen und nachhaltige Digitalisierung
             </h3>
           </header>
           <p class="capitalized"><!-- overcapitalize first letter -->
-            {{ content.aboutMeIntro }}
+            Digitalisierung kann sowohl wirtschaftlich, als auch sozial und ökologisch nachhaltig sein. Synergien ergeben sich beispielsweise, indem effiziente Entwicklung Energie und somit Kosten spart, oder indem inklusive und barrierefreie Angebote neue Kundenkreise erschließen. Gesetzlichen Vorgaben wie der Datenschutz-Grundverordnung oder dem Barrierefreiheits-Stärkungs-Gesetz können wir dank meiner Erfahrung auf elegante Weise entsprechen.
           </p>
           <br class="only-print">
 
@@ -81,124 +83,21 @@ alternatehreflang: "en"
               Seit Ende 2020 bin ich als selbstständiger Webentwickler und Freelancer für Agenturen und individuelle Kund:innen tätig. 2024 wurde ich als Shopware-Entwickler zertifiziert.
             </p>
           </section>
-
-          <figure class="content-image">
-            <picture>
-              <source
-                type="image/webp"
-                srcset="img/Ingo-Steinke-NCA-TV-2021-800x443.webp,
-                    img/Ingo-Steinke-NCA-TV-2021-400x222.webp 400w,
-                    img/Ingo-Steinke-NCA-TV-2021-800x443.webp 800w"
-              >
-              <img
-                src="img/Ingo-Steinke-NCA-TV-2021-800x443.jpg"
-                srcset="img/Ingo-Steinke-NCA-TV-2021-400x222.jpg 400w,
-                          img/Ingo-Steinke-NCA-TV-2021-800x443.jpg 800w"
-                sizes="(min-width: 800px) 800px, 100vw"
-                width="800"
-                height="443"
-                alt="{{ content.talksImageAlt }}"
-                loading="lazy"
-              >
-            </picture>
-            <figcaption>
-              {{ content.talksImageCaption }}:
-              <a href="https://blog.nevercodealone.de/php-testing-refactoring-nca-conference-duisburg/" target="_blank" rel="noopener">
-                {{ content.talksImageLinkText }}
-              </a>
-            </figcaption>
-          </figure>
-          <br class="only-print">
-
-          <section class="avoid-page-break">
-            <h3>Mitgliedschaften, Veranstaltungen und Vorträge</h3>
-            <p>
-              Von 2019 - 2021 war ich Mitveranstalter des Kölner Webperformance Meetups. Aktuell bin ich <a href="https://impact-hub-berlin.notion.site/Ingo-Steinke-2dd84e135fff4973ad8f06ddf9553890" target="_blank" rel="noopener">Mitglied im Impact Hub Berlin</a> und bei <a href="https://fairantwortung.org/uber-ingo-steinke/" target="_blank" rel="noopener">Fairantwortung</a>, beteilige mich aktiv an fachlichen Diskussionen und schreibe
-              <a href="https://dev.to/ingosteinke" target="_blank" rel="noopener">Blogartikel</a> zu technischen Themen.
-            </p>
-            <p>
-              {{ content.talks2 }}
-            <ul>
-              <li>
-                <a
-                  href="https://www.meetup.com/cologne-germany-high-performance-website-optimization-group/events/274558354/"
-                  hreflang="de"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  {{ content.talkMeetupWebVitals }}
-                </a>
-                {{ content.talkMeetupWebVitals2 }}
-              </li>
-              <li>
-                <a
-                  href="https://www.meetup.com/cologne-germany-high-performance-website-optimization-group/events/268706480/"
-                  hreflang="de"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  {{ content.talkPerformanceNoCode }}
-                </a> {{ content.talkPerformanceNoCode2 }}
-              </li>
-              <li>
-                <a
-                  href="https://www.meetup.com/cologne-germany-high-performance-website-optimization-group/events/255856182/"
-                  hreflang="de"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  {{ content.talkHsts }}
-                </a>
-                {{ content.talkHsts2 }}
-              </li>
-              <li>
-                <a
-                  href="https://www.meetup.com/cologne-germany-high-performance-website-optimization-group/events/zdnjlmywhbgb/"
-                  hreflang="de"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  {{ content.talkInfrastructure }}
-                </a>
-                {{ content.talkInfrastructure2 }}
-              </li>
-            </ul>
-            </p>
-          </section>
-
-          <section class="avoid-page-break">
-            <h4>Zukunftsthemen und nachhaltige Digitalisierung</h4>
-            <p>
-              Digitalisierung kann sowohl wirtschaftlich, als auch sozial und ökologisch nachhaltig sein. Synergien ergeben sich beispielsweise, indem effiziente Entwicklung Energie und somit Kosten spart, oder indem inklusive und barrierefreie Angebote neue Kundenkreise erschließen. Gesetzlichen Vorgaben wie der Datenschutz-Grundverordnung oder dem Barrierefreiheits-Stärkungs-Gesetz können wir dank meiner Erfahrung auf elegante Weise entsprechen.
-            </p>
-          </section>
-
         </article>
       </section>
 
       <section class="tiled-content target-offset" id="projects">
         <div class="pl1">
           <h2>{{ content.projectsHeading }}</h2>
-          <p>
-            {{ content.projects }}
-          </p>
         </div>
         <div class="grid-container grid-container--projects">
-          {% include './_includes/projects.liquid', showallprojects: 'showallprojects', showicons: 'showicons'  %}
+          {% include './_includes/projects.liquid', projectlist: 'nativetheme, kunnigkonsulting, shopwareplugin, gemeva, twistedconnection, kleiderordnung, coursebooking, foodtogether, daskannstdutun, wordpress, fractal, portfolio'  %}
         </div>
       </section>
 
       <br>
       {% include './_includes/skills.liquid', showallskills: 'showallskills', skillsTitle: 'Fachkenntnisse (Skills)'  %}
 
-      <section class="tiled-content target-offset pl1">
-        <h3 id="interested">{{ content.interestedHeading }}</h3>
-        <p>
-          Melde dich gerne, um ein unverbindliches Gespräch zu vereinbaren!<br>
-          Falls ich einen Anruf nicht annehmen kann, hinterlasse mir gerne eine Sprachnachricht!
-          Ich melde mich dann zeitnah.
-        </p>
-      </section>
       <br>
 
       {% include '../_includes/section-imprint-contact.liquid' %}

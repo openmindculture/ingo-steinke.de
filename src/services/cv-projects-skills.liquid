@@ -1,0 +1,124 @@
+---
+tags: addtositemap
+isaboutme: true
+imgdirectory: "../img"
+previewimage: "https://www.ingo-steinke.com/img/preview-creative-web-developer.png"
+previewtitle: "About Ingo Steinke: CV, projects, skills"
+previewdescription: "Ingo Steinke is a front-end focused web developer with over 20 years of professional experience, focused on accessibility, loading speed and maintainability."
+permalink: "cv-projects-skills.html"
+canonicalhref: "https://www.ingo-steinke.com/cv-projects-skills.html"
+canonicalhreflang: "en"
+alternatelink: "https://www.ingo-steinke.de/cv-projekte-skills.html"
+alternatehreflang: "de"
+---
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Web developer Ingo Steinke: CV, Projects, Skills</title>
+  {% include '../_includes/html-head-common.liquid' %}
+</head>
+<body class="high-contrast">
+<div class="page-container" id="top">
+  <div class="page-content">
+    <header class="jumbotronHeader" id="jumbotronHeader">
+      <br>
+      {% include './_includes/jumbotron-image.liquid' %}
+      <h1>Ingo Steinke</h1>
+      <p class="tagline center">Creative Web Developer<br>
+        CV, Projects, Skills</p>
+    </header>
+    {% include '../_includes/navigation-on-subpages.liquid', headerClassName: 'wide' %}
+    <main id="content-top" class="target-offset">
+      <section class="text-content-layout text-content-color semitransparent avoid-page-break">
+        <div class="only-print timestamp top-timestamp">
+          Berlin,
+          {{ "now" | date: "%d" }}{{ content.dotIfGerman }}
+          {{ "now" | date: "%m" | customLocalizedMonthNameFilter }}
+          {{ "now" | date: "%Y" }}
+        </div>
+        <h2 class="target-offset" id="about-me">
+          {{ content.aboutMeHeading }}
+        </h2>
+        <article class="text-width">
+          <p>I'm Ingo Steinke, a self-employed, front-end focused web developer with over 20 years of professional experience. When developing elegant and easy-to-use websites, I pay attention to accessibility, loading speed and maintainability. HTML, CSS, JavaScript, TypeScript and PHP are among my favourite technologies. Since 2024, I am a <a href="/services/certified-shopware-developer-berlin.html">certified Shopware developer</a>.
+          </p><p>I'm pragmatic, communicative and enjoy working closely with web designers.
+          </p>
+          <p class="no-print">Download CV, projects list, and skills matrix as a PDF file:</p>
+          <ul class="no-print">
+            <li><a href="../Ingo-Steinke-CV-Projekte-Skills-2025-nachhaltiger-Webentwickler.pdf" target="_blank"
+                   rel="noopener noreferrer nofollow">Ingo Steinke, Webentwickler, Berlin: CV, Skills, Projekte</a>
+              (German, updated April 2025)
+            </li>
+            <li><a href="../Ingo-Steinke-CV-Projects-Skills-2025-sustainable-web-developer.pdf" target="_blank"
+                   rel="noopener noreferrer nofollow">Ingo Steinke, web developer, Berlin: CV, skills, projects</a>
+              (English, updated April 2025)
+            </li>
+          </ul>
+          <br>
+          <header>
+            <h3>
+              {{ content.aboutMeEthicalHeading }}
+            </h3>
+          </header>
+          <p class="capitalized"><!-- overcapitalize first letter -->
+            Digitalisation primarily stands for technological progress. The economic benefits of sustainable innovation have often been overlooked.
+            I like to support ethical and ecological projects, for example the transition in the transport sector, renewable energies, and environmentally-friendly fashion. Thanks to my experience, we can elegantly comply with legal requirements such as the General Data Protection Regulation or the European Accessibility Act.
+          </p>
+          <br class="only-print">
+
+          <section class="avoid-page-break">
+            <h3>{{ content.aboutMeCvHeading }}</h3>
+            <p>
+              I co-founded a start-up in 2000 whose first products were interactive websites and browser games. Later, our core business transitioned to search engine optimization and our own e-commerce software.
+            </p>
+            <p>
+              While employed as an e-commerce engineer at Xsite in Düsseldorf from 2010 to 2014, I developed online shops for Shop-Apotheke.com, Ars mundi, and other customers. As a technical consultant at Sevenval Technologies (later Avenga Germany) in Cologne and Berlin, I optimized the loading time and mobile phone compatibility of apps and websites for Frankfurter Allgemeine Zeitung and online shops for Otto Group and created front-end applications for wao.io and other customers.
+            </p>
+            <p>
+              I'm a freelance web developer since 2020, working for agencies and individual customers. I became a certified Shopware developer in 2024.
+            </p>
+          </section>
+        </article>
+      </section>
+
+      <section class="tiled-content target-offset" id="projects">
+        <div class="pl1">
+          <h2>{{ content.projectsHeading }}</h2>
+        </div>
+        <div class="grid-container grid-container--projects">
+          {% include './_includes/projects.liquid', projectlist: 'nativetheme, kunnigkonsulting, shopwareplugin, gemeva, twistedconnection, kleiderordnung, coursebooking, foodtogether, daskannstdutun, wordpress, fractal, portfolio'  %}
+        </div>
+      </section>
+
+      <br>
+      {% include './_includes/skills.liquid', showallskills: 'showallskills', skillsTitle: 'Professional Skills'  %}
+
+      <br>
+
+      {% include '../_includes/section-imprint-contact.liquid' %}
+    </main>
+    <footer class="page-footer">
+      <p class="no-print">
+        <button class="animation-toggle">{{ content.buttonToggleAnimation }}</button>
+      </p>
+      <p class="landingpage--links no-print">
+        <a href="{{ content.landingLinkUrlSitemap }}">{{ content.landingLinkTextSitemap }}</a>
+      </p>
+      <div class="legal legal--copyright">
+        <span class="copyright-icon">&copy;</span>
+        <span class="copright-date">{{ "now" | date: "%Y" }}</span>
+        <span class="copyright-author">{{ content.imprintName }}</span>
+        <span class="copyright-details">
+          ({{ content.updatedWithColon }}
+          {{ "now" | date: "%d" }}{{ content.dotIfGerman }}
+          {{ "now" | date: "%m" | customLocalizedMonthNameFilter }}
+          {{ "now" | date: "%Y" }})
+        </span>
+      </div>
+    </footer>
+    <div id="pdf-container" class="only-print initially-hidden pdf-container"></div>
+  </div>
+</div>
+</body>
+</html>
