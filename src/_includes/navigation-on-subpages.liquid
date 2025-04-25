@@ -16,7 +16,7 @@
       </span>
 
     <div class="nav-wrapper">
-      <a href="../#contact" class="extra-nav-link initially-hidden">{{ content.targetContact }}</a>
+      <a href="../#contact" class="extra-nav-link contact-link initially-hidden">{{ content.targetContact }}</a>
       <a href="#main-menu"
          id="main-menu-toggle"
          class="menu-toggle"
@@ -48,12 +48,12 @@
             <li><a href="#about-me">{{ content.targetAboutMe }}</a></li>
             <li><a href="#projects">{{ content.targetProjects }}</a></li>
             <li><a href="#skills">{{ content.targetSkills }}</a></li>
-            <li><a href="#contact">{{ content.targetContact }}</a></li>
+            <li><a href="#contact" class="contact-link">{{ content.targetContact }}</a></li>
           {% else %}
             <li><a href="../#projects">{{ content.targetRefs }}</a></li>
             <li><a href="../#services">{{ content.targetServices }}</a></li>
             <li><a href="../{{ content.targetAboutMeUrl }}">{{ content.targetAboutMe }}</a></li>
-            <li><a href="../#contact">{{ content.targetContact }}</a></li>
+            <li><a href="../#contact" class="contact-link">{{ content.targetContact }}</a></li>
           {% endif %}
           <li><a href="../#imprint">{{ content.targetImprint }}</a></li>
           <li><a href="../#privacy">{{ content.targetPrivacy }}</a></li>

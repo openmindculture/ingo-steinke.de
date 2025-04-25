@@ -1,10 +1,11 @@
 # Changelog
 
-## [4.8.0] extend content - 2025-04-24
+## [4.8.0] extend content - 2025-04-25
 * add Kunnig Konsulting to public project history
 * add a landing page for freelance recruiters and PDF generation
 * add internal projects to project history on HR landing page
 * update CV/skills/projects PDF files
+* add insights tracking and data
 
 ## [4.7.1] style and content - 2025-04-13
 * replace Bitter font with Blackletra Dorival UI

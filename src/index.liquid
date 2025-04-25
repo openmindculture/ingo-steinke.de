@@ -141,7 +141,7 @@
             </span>
 
             <div class="nav-wrapper">
-              <a href="#contact" class="extra-nav-link initially-hidden">{{ content.targetContact }}</a>
+              <a href="#contact" class="extra-nav-link contact-link initially-hidden">{{ content.targetContact }}</a>
               <a href="#main-menu"
                 id="main-menu-toggle"
                 class="menu-toggle"
@@ -172,7 +172,7 @@
                   <li><a href="#projects">{{ content.targetRefs }}</a></li>
                   <li><a href="#services">{{ content.targetServices }}</a></li>
                   <li><a href="{{ content.targetAboutMeUrl }}#about-me">{{ content.targetAboutMe }}</a></li>
-                  <li><a href="#contact">{{ content.targetContact }}</a></li>
+                  <li><a href="#contact" class="contact-link">{{ content.targetContact }}</a></li>
                   <li><a href="#imprint">{{ content.targetImprint }}</a></li>
                   <li><a href="#privacy">{{ content.targetPrivacy }}</a></li>
                   <li>
@@ -225,7 +225,7 @@
               <p>
                 {{ content.workWithMe }}<br>
                 {{ content.workWithMe2 }}<br>
-                <a href="#contact">{{ content.ctaContact }}</a>
+                <a href="#contact" class="contact-link">{{ content.ctaContact }}</a>
               </p>
 
               <h3 id="pricing" class="target-offset">{{ content.pricingHeading }}</h3>

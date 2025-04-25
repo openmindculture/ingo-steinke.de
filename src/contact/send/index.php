@@ -17,10 +17,12 @@ header('X-Powered-By: openmindculture');
 $post_name      = trim(filter_var($_REQUEST['contactform-field-name'], FILTER_SANITIZE_STRING));
 $post_emailfon  = trim(filter_var($_REQUEST['contactform-field-emailfon'], FILTER_SANITIZE_STRING));
 $post_msg       = trim(filter_var($_REQUEST['contactform-field-message'], FILTER_SANITIZE_STRING));
+$post_referrer  = trim(filter_var($_REQUEST['referrer'], FILTER_SANITIZE_STRING));
 $spamtrap1      = filter_var($_REQUEST['contactform-field-captcha'], FILTER_SANITIZE_STRING);
 $spamtrap2      = filter_var($_REQUEST['contactform-field-homepage'], FILTER_SANITIZE_STRING);
 $time_ip_stamp  = date("YmdHi") . '_';
-$time_ip_stamp .= trim(filter_var($_SERVER['REMOTE_ADDR'], FILTER_SANITIZE_EMAIL));
+$remote_addr    = trim(filter_var($_SERVER['REMOTE_ADDR'], FILTER_SANITIZE_EMAIL));
+$time_ip_stamp .= $remote_addr;
 $stamp_filename = './latest/' . $time_ip_stamp . '.txt';
 $responseStatus = '200 OK';
 $suspectedSpam = false;
@@ -210,28 +212,25 @@ if (!empty($post_emailfon)) {
   $message .= 'Kontakt: ' .  $post_emailfon . "\r\n";
 }
 
-if ( $config_verbose ) {
+if ($config_verbose) {
   $message .= "\r\n";
   $message .= "---\r\n";
   $message .= "\r\n";
-  $message .= "Response Status: " . $responseStatus . "\r\n";
-  $message .= "REQUEST_METHOD: " . $_SERVER['REQUEST_METHOD'] . "\r\n";
-  $message .= $time_ip_stamp . "\r\n";
-  $message .= "HTTP_ACCEPT: " . $_SERVER['HTTP_ACCEPT'] . "\r\n";
-  $message .= "HTTP_USER_AGENT: " . $_SERVER['HTTP_USER_AGENT'] . "\r\n";
+  if (!empty($post_referrer)) {
+    $message .= "Referrer: " . $post_referrer . "\r\n";
+  }
+  $message .= filter_var($_SERVER['HTTP_USER_AGENT'], FILTER_SANITIZE_STRING);
+  $message .= $remote_addr;
+  $message .= "\r\n";
 }
 
 if (!empty($message) && !$suspectedSpam) {
   $headers = 'MIME-Version: 1.0' . "\r\n".
     'Content-Type: text/plain; charset=UTF-8' . "\r\n".
     'From: ' . $config_from . "\r\n".
-    'X-Requested-With: ' . $_SERVER['HTTP_X_REQUESTED_WITH'] . "\r\n".
-    'X-Request-Method:'  . $_SERVER['REQUEST_METHOD'] . "\r\n".
     'X-Mailer: openmindculture'. "\r\n".
     $config_custheader;
 
   mail($to, $subject, $message, $headers);
 }
 $message .= "\r\n";
-
-

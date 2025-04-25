@@ -9,6 +9,8 @@ window.addEventListener('DOMContentLoaded', () => {
   const navMenu = document.getElementById('main-menu');
   const languageSwitch = document.getElementById('language-switch');
   const animationToggles = document.getElementsByClassName('animation-toggle');
+  /** @var {Array.<HTMLElement>} */
+  const contactLinks = Array.from(document.getElementsByClassName('contact-link'));
   const supportsIntersectionObserver = (('IntersectionObserver' in window) &&
     ('IntersectionObserverEntry' in window) &&
     ('intersectionRatio' in window.IntersectionObserverEntry.prototype) &&
@@ -27,6 +29,14 @@ window.addEventListener('DOMContentLoaded', () => {
       'unsticky-hidden'
     );
   })
+
+  contactLinks.forEach(contactLink => {
+    contactLink.addEventListener('click', () => {
+      if (window._paq) {
+        window._paq.push(['trackEvent', 'click', '#contact', '']);
+      }
+    });
+  });
 
   // display sticky headline when header stuck on top
   if (stickyHeader && hideableHeadline && supportsIntersectionObserver) {
@@ -211,6 +221,9 @@ window.addEventListener('DOMContentLoaded', () => {
       if (messageFieldHomepage && messageFieldHomepage.value) {
         params.push('&contactform-field-homepage=' + encodeURIComponent(messageFieldHomepage.value));
       }
+      if (document.referrer) {
+        params.push('&referrer=' + encodeURIComponent(document.referrer));
+      }
       if (params.length === 0) {
         return;
       }
@@ -228,6 +241,9 @@ window.addEventListener('DOMContentLoaded', () => {
         if (xhr.status == 200) {
           form.classList.remove('status-initial', 'status-sending', 'status-error');
           form.classList.add('status-sent');
+          if (window._paq) {
+            _paq.push(['trackGoal', 1]); // define matching goal 1 (contact sent) in matomo config
+          }
         } else {
           form.classList.remove('status-initial', 'status-sending', 'status-sent');
           form.classList.add('status-error');
