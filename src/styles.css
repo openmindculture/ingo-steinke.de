@@ -1409,6 +1409,19 @@ body.high-contrast {
   }
 }
 
+.grid-container--projects .tile:not(.has-icons) .description-group,
+.grid-container--projects .tile:not(.has-icons) .project-link-wrapper {
+  padding-top: 1em;
+}
+
+.grid-container--projects .tile:not(.has-icons) .project-link-wrapper + .project-link-wrapper {
+  padding-top: 0.5em;
+}
+
+.grid-container--projects .tile:not(.has-icons) .flex-push {
+  flex-basis: 100%; /* harmonize vertical alignment */
+}
+
 .grid-container.grid-container--projects.flip-box-container {
   grid-auto-rows: var(--project-tile-min-height); /* 382px; */
   grid-auto-rows: minmax(min-content, max-content);

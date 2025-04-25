@@ -101,7 +101,7 @@
       {% else %}
 
         <article
-          class="tile"
+          class="tile{% if showicons %} has-icons{% endif %}"
           id="project-{{ project }}"
           tabindex="0"
         >
@@ -112,7 +112,7 @@
             {% if projectTimestamp %}
               <div class="timestamp">{{ projectTimestamp }}</div>
             {% endif %}
-            <p>
+            <div class="description-group">
               {% if showicons %}
                 <img src="img/icon-{{ project }}.svg"
                      alt="{{ projectIconAlt | default: '' }}"
@@ -124,21 +124,22 @@
               <span class="text-line">
                 {{ projectDescription }}
               </span>
-              {% if projectLinkUrl != '' %}
-              <div>
+            </div>
+            {% if projectLinkUrl != '' %}
+              <div class="project-link-wrapper">
                 <a class="code-link print-display-block breakable" target="_blank" rel="noopener" href="{{ projectLinkUrl }}">
                   {{ projectLinkUrl | unprefixedHumanReadableUrl }}
                 </a>
               </div>
-              {% endif %}
-              {% if sourceLinkUrl != '' %}
-                <div>
-                  <a class="code-link print-display-block breakable" target="_blank" rel="noopener" href="{{ sourceLinkUrl }}">
-                    {{ sourceLinkUrl | unprefixedHumanReadableUrl }}
-                  </a>
-                </div>
-              {% endif %}
-            </p>
+            {% endif %}
+            {% if sourceLinkUrl != '' %}
+              <div class="project-link-wrapper">
+                <a class="code-link print-display-block breakable" target="_blank" rel="noopener" href="{{ sourceLinkUrl }}">
+                  {{ sourceLinkUrl | unprefixedHumanReadableUrl }}
+                </a>
+              </div>
+            {% endif %}
+            <div class="flex-push"></div>
             <p>
               {%- assign hashtagsArray = projectHashtags | split: ' ' -%}
               {%- for hashtag in hashtagsArray %}
