@@ -41,10 +41,9 @@ alternatehreflang: "en"
           {{ content.aboutMeHeading }}
         </h2>
         <article class="text-width">
-          <p>Ich bin Ingo Steinke, selbstständiger Webentwickler mit Frontend-Fokus und über 20 Jahren Berufserfahrung.
-            Bei der Entwicklung eleganter und einfach bedienbarer Websites achte ich auf Barrierefreiheit,
-            Ladegeschwindigkeit und Wartbarkeit. HTML, CSS, JavaScript, TypeScript und PHP zählen zu meinen
-            bevorzugten Technologien.
+          <p>Ich bin Ingo Steinke, selbstständiger Webentwickler mit CSS- bzw. <strong>Frontend</strong>-Fokus und über 25 Jahren Berufserfahrung.
+            Bei der Entwicklung eleganter und einfach bedienbarer Websites achte ich auf <strong>Barrierefreiheit,
+              Ladegeschwindigkeit und Wartbarkeit</strong>.<br>
             Seit 2024 bin ich <a href="/zertifizierter-shopware-6-frontend-webentwickler/">zertifizierter Shopware-Entwickler</a>.
           </p><p>Ich bin pragmatisch, kommunikativ und arbeite gerne eng mit Webdesigner:innen zusammen.
           </p>
@@ -71,16 +70,16 @@ alternatehreflang: "en"
           <br class="only-print">
 
           <section class="avoid-page-break">
-            <h3>Werdegang</h3>
+            <h3>Werdegang (CV)</h3>
             <p>
-              Interaktive Websites und Browserspiele waren die ersten Produkte meines 2000 mitgegründeten Startups in Münster. Suchmaschinenoptimierung und unsere CMS- und unsere eigene Shop-Software bildeten später das Kerngeschäft.
+              Interaktive Websites und Browserspiele waren die ersten Produkte meines 2000 mitgegründeten Startups in Münster. Suchmaschinenoptimierung und unsere eigene CMS- und Shop-Software bildeten später das Kerngeschäft.
             </p>
             <p>
               Als angestellter E-Commerce-Engineer bei Xsite in Düsseldorf entwickelte ich von 2010 bis 2014 Online-Shops
               unter anderem für Shop-Apotheke.com und den Kunstversand Ars mundi. Als Technical Consultant bei Sevenval Technologies (später Avenga Germany) in Köln und Berlin optimierte ich die Ladezeit und Handytauglichkeit von Online-Shops und Websites der Frankfurter Allgemeinen Zeitung und der Otto Group und erstellte Frontend-Anwendungen mit ReactJS.
             </p>
             <p>
-              Seit Ende 2020 bin ich als selbstständiger Webentwickler und Freelancer für Agenturen und individuelle Kund:innen tätig. 2024 wurde ich als Shopware-Entwickler zertifiziert.
+              Seit Ende 2020 bin ich als selbstständiger Webentwickler und Freelancer für Agenturen und individuelle Kund:innen tätig.
             </p>
           </section>
         </article>
@@ -91,7 +90,7 @@ alternatehreflang: "en"
           <h2>{{ content.projectsHeading }}</h2>
         </div>
         <div class="grid-container grid-container--projects">
-          {% include './_includes/projects.liquid', projectlist: 'kleiderordnung, kunnigkonsulting, nativetheme, shopwareplugin, gemeva, twistedconnection, coursebooking, foodtogether, daskannstdutun, wordpress, fractal, portfolio'  %}
+          {% include './_includes/projects.liquid', projectlist: 'kleiderordnung, kunnigkonsulting, nativetheme, shopwareplugin, gemeva, twistedconnection, coursebooking, fractal, foodtogether, daskannstdutun, portfolio'  %}
         </div>
       </section>
 
@@ -102,6 +101,9 @@ alternatehreflang: "en"
 
       {% include '../_includes/section-imprint-contact.liquid' %}
     </main>
+    <div id="pdf-container" class="only-print">
+      Ich freue mich auf Anfragen und eine gute Zusammenarbeit!
+    </div>
     <footer class="page-footer">
       <p class="no-print">
         <button class="animation-toggle">{{ content.buttonToggleAnimation }}</button>

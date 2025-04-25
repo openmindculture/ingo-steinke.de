@@ -108,11 +108,11 @@ module.exports = {
   "SkillsDevuxImg": "Kollaboration",
   "SkillsOtherSystems": "Sonstige Systeme und Software",
   /* About me, talks, and events */
-  "aboutMeHeading": "Über mich: Beruf und Leidenschaft",
+  "aboutMeHeading": "Über mich: Webentwickler mit Begeisterung für UX-Design",
   "aboutMeIntroHeading": "Was mich immer noch fasziniert",
   "aboutMeIntro": "Weltweite Kommunikation und Inspiration: das World Wide Web verbindet die Menschen mithilfe robuster und dezentraler Technologie. Schöne, schnelle und barrierefreie Websites sollen allen Menschen Zugang zu diesem Netzwerk bieten. Diese Vision prägt meine Arbeit.",
   "aboutMeCvHeading": "Werdegang",
-  "aboutMeCv1": "Interaktive Websites und Browserspiele waren die ersten Produkte meines 2000 mitgegründeten Startups in Münster. Suchmaschinenoptimierung und unsere CMS- und unsere eigene Shop-Software bildeten später das Kerngeschäft.",
+  "aboutMeCv1": "Interaktive Websites und Browserspiele waren die ersten Produkte meines 2000 mitgegründeten Startups in Münster. Suchmaschinenoptimierung und unsere eigene CMS- und Shop-Software bildeten später das Kerngeschäft.",
   "aboutMeCv2": "Als angestellter E-Commerce-Engineer bei Xsite in Düsseldorf entwickelte ich von 2010 bis 2014 Online-Shops für Shop-Apotheke.com, den Kunstversand Ars mundi und andere Kunden. Als Technical Consultant bei Sevenval Technologies (später Avenga Germany) in Köln und Berlin optimierte ich die Ladezeit und Handytauglichkeit von Apps und Websites der Frankfurter Allgemeinen Zeitung und Online-Shops der Otto Group und erstellte Frontend-Anwendungen für wao.io und andere Kunden. Seit Ende 2020 bin ich als selbstständiger Webentwickler und Freelancer für Agenturen und individuelle Kundinnen und Kunden tätig.",
   "aboutMeEthicalHeading": "Zukunftsthemen und nachhaltige Digitalisierung",
   "aboutMeEthical": "Digitalisierung steht in erster Linie für technologischen Fortschritt. Der wirtschaftliche Nutzen nachhaltiger Innovation wurde bisher oft übersehen. Ethische und ökologische Projekte beispielsweise in der Verkehrswende, bei erneuerbaren Energien und umweltfreundlicher Mode möchte ich mit meiner Arbeit unterstützen. Gesetzlichen Vorgaben wie der Datenschutz-Grundverordnung oder dem Barrierefreiheits-Stärkungs-Gesetz können wir dank meiner Erfahrung auf elegante Weise entsprechen.",

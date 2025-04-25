@@ -41,7 +41,8 @@ alternatehreflang: "de"
           {{ content.aboutMeHeading }}
         </h2>
         <article class="text-width">
-          <p>I'm Ingo Steinke, a self-employed, front-end focused web developer with over 20 years of professional experience. When developing elegant and easy-to-use websites, I pay attention to accessibility, loading speed and maintainability. HTML, CSS, JavaScript, TypeScript and PHP are among my favourite technologies. Since 2024, I am a <a href="/services/certified-shopware-developer-berlin.html">certified Shopware developer</a>.
+          <p>I'm Ingo Steinke, a self-employed, CSS- and <strong>front-end</strong> focused web developer with over 25 years of professional experience. When developing elegant and easy-to-use websites, I pay attention to <strong>accessibility, loading speed and maintainability</strong>.<br>
+            Since 2024, I am a <a href="/services/certified-shopware-developer-berlin.html">certified Shopware developer</a>.
           </p><p>I'm pragmatic, communicative and enjoy working closely with web designers.
           </p>
           <p class="no-print">Download CV, projects list, and skills matrix as a PDF file:</p>
@@ -70,13 +71,13 @@ alternatehreflang: "de"
           <section class="avoid-page-break">
             <h3>{{ content.aboutMeCvHeading }}</h3>
             <p>
-              I co-founded a start-up in 2000 whose first products were interactive websites and browser games. Later, our core business transitioned to search engine optimization and our own e-commerce software.
+              I co-founded a start-up in 2000 whose first products were interactive websites and browser games. Later, our core business transitioned to search engine optimization and our own CMS and e-commerce software.
             </p>
             <p>
               While employed as an e-commerce engineer at Xsite in Düsseldorf from 2010 to 2014, I developed online shops for Shop-Apotheke.com, Ars mundi, and other customers. As a technical consultant at Sevenval Technologies (later Avenga Germany) in Cologne and Berlin, I optimized the loading time and mobile phone compatibility of apps and websites for Frankfurter Allgemeine Zeitung and online shops for Otto Group and created front-end applications for wao.io and other customers.
             </p>
             <p>
-              I'm a freelance web developer since 2020, working for agencies and individual customers. I became a certified Shopware developer in 2024.
+              I'm a freelance web developer since 2020, working for agencies and individual customers.
             </p>
           </section>
         </article>
@@ -87,7 +88,7 @@ alternatehreflang: "de"
           <h2>{{ content.projectsHeading }}</h2>
         </div>
         <div class="grid-container grid-container--projects">
-          {% include './_includes/projects.liquid', projectlist: 'kleiderordnung, kunnigkonsulting, nativetheme, shopwareplugin, gemeva, twistedconnection, coursebooking, foodtogether, daskannstdutun, wordpress, fractal, portfolio'  %}
+          {% include './_includes/projects.liquid', projectlist: 'kleiderordnung, kunnigkonsulting, nativetheme, shopwareplugin, gemeva, twistedconnection, coursebooking, fractal, foodtogether, daskannstdutun, portfolio'  %}
         </div>
       </section>
 
@@ -98,6 +99,9 @@ alternatehreflang: "de"
 
       {% include '../_includes/section-imprint-contact.liquid' %}
     </main>
+    <div id="pdf-container" class="only-print">
+      I welocme your business inquiries and look forward to a fruitful cooperation!
+    </div>
     <footer class="page-footer">
       <p class="no-print">
         <button class="animation-toggle">{{ content.buttonToggleAnimation }}</button>

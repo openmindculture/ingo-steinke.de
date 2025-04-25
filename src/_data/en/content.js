@@ -108,11 +108,11 @@ module.exports = {
   "SkillsDevuxImg": "Collaboration",
   "SkillsOtherSystems": "Other Systems and Software",
   /* About me, talks, and events */
-  "aboutMeHeading": "About Me: Work And Passion",
+  "aboutMeHeading": "About Me: Web developer with a Passion for UX Design",
   "aboutMeIntroHeading": "What Still Fascinates Me",
   "aboutMeIntro": "Worldwide communication and inspiration: The World Wide Web connects people using robust and decentralized technology. Websites designed to offer everyone access to this network must be attractive, fast, and accessible. This vision shapes my work.",
   "aboutMeCvHeading": "Professional Background",
-  "aboutMeCv1": "I co-founded a start-up in 2000 whose first products were interactive websites and browser games. Later, our core business transitioned to search engine optimization and our own e-commerce software.",
+  "aboutMeCv1": "I co-founded a start-up in 2000 whose first products were interactive websites and browser games. Later, our core business transitioned to search engine optimization and our own CMS and e-commerce software.",
   "aboutMeCv2": "While employed as an e-commerce engineer at Xsite in Düsseldorf from 2010 to 2014, I developed online shops for Shop-Apotheke.com, Ars mundi, and other customers. As a technical consultant at Sevenval Technologies (later Avenga Germany) in Cologne and Berlin, I optimized the loading time and mobile phone compatibility of apps and websites for Frankfurter Allgemeine Zeitung and online shops for Otto Group and created front-end applications for wao.io and other customers. I'm a freelance web developer since 2020, working for agencies and individual customers.",
   "aboutMeEthicalHeading": "Future Topics and Sustainable Development",
   "aboutMeEthical": "Digitalisation primarily stands for technological progress. The economic benefits of sustainable innovation have often been overlooked. I like to support ethical and ecological projects, for example the transition in the transport sector, renewable energies, and environmentally-friendly fashion. Thanks to my experience, we can elegantly comply with legal requirements such as the General Data Protection Regulation or the European Accessibility Act.",

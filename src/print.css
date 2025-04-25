@@ -140,7 +140,7 @@ figure.content-image img {
 }
 
 #projects .timestamp {
-  margin: 3pt 16pt 8pt 0;
+  margin: 5pt 16pt 8pt 0;
 }
 
 #projects .tile-content p:not(:last-child) {
@@ -150,6 +150,11 @@ figure.content-image img {
 
 #projects .tile-content p:last-child {
   margin-top: 0;
+}
+
+.grid-container--projects .tile:not(.has-icons) .project-link-wrapper,
+.grid-container--projects .tile:not(.has-icons) .flex-push {
+  margin-top: 5pt;
 }
 
 .grid-container.skills {

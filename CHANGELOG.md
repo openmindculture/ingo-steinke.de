@@ -1,6 +1,6 @@
 # Changelog
 
-## [4.8.0] extend content - 2025-04-25
+## [4.8.1] extend content - 2025-04-25
 * add Kunnig Konsulting to public project history
 * add a landing page for freelance recruiters and PDF generation
 * add internal projects to project history on HR landing page
