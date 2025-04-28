@@ -113,6 +113,8 @@ if (
   strpos($post_msg, 'impressed with the quality') !== false ||
   strpos($post_msg, ' has improved. ') !== false ||
   strpos($post_msg, 'Please send us your offer and price list.') !== false ||
+  strpos($post_msg, 'share your offerings and prices') !== false ||
+  strpos($post_msg, 'a company like yours') !== false ||
   strpos($post_msg, 'wkdwodkwkifjejr') !== false ||
   strpos($post_msg, 'ë') !== false ||
   strpos($post_msg, 'ụ') !== false ||
