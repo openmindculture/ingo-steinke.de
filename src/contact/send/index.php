@@ -114,6 +114,8 @@ if (
   strpos($post_msg, ' has improved. ') !== false ||
   strpos($post_msg, 'Please send us your offer and price list.') !== false ||
   strpos($post_msg, 'share your offerings and prices') !== false ||
+  strpos($post_msg, 'and pricing') !== false ||
+  strpos($post_msg, 'found your company') !== false ||
   strpos($post_msg, 'a company like yours') !== false ||
   strpos($post_msg, 'wkdwodkwkifjejr') !== false ||
   strpos($post_msg, 'ë') !== false ||
