@@ -121,7 +121,7 @@ Upload `dist` content to `ingo-steinke.de` and `dist_en` content to `ingo-steink
 
 ### Netlify CI (optional, currently deactivated)
 
-- Commits to the master branch will trigger a production deployment by netlify.
+- Commits to the main branch will trigger a production deployment by netlify.
 - Commits to pull requests will trigger preview builds to a preview domain.
 
 #### Distribution Directories
