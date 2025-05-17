@@ -101,6 +101,7 @@ if (
   strpos($post_msg, '//rb.gy') !== false ||
   strpos($post_msg, '//yandex.ru') !== false ||
   strpos($post_msg, 'dublikat.ru') !== false ||
+  strpos($post_msg, '.ru/') !== false ||
   strpos($post_msg, '//telegra.ph/') !== false ||
   strpos($post_msg, '//tinyurl.com/') !== false ||
   strpos($post_msg, '//amazn.to/') !== false ||
@@ -113,6 +114,10 @@ if (
   strpos($post_msg, 'impressed with the quality') !== false ||
   strpos($post_msg, ' has improved. ') !== false ||
   strpos($post_msg, 'Please send us your offer and price list.') !== false ||
+  strpos($post_msg, 'share your offerings and prices') !== false ||
+  strpos($post_msg, 'and pricing') !== false ||
+  strpos($post_msg, 'found your company') !== false ||
+  strpos($post_msg, 'a company like yours') !== false ||
   strpos($post_msg, 'wkdwodkwkifjejr') !== false ||
   strpos($post_msg, 'ë') !== false ||
   strpos($post_msg, 'ụ') !== false ||
