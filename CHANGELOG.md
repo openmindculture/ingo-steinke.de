@@ -1,5 +1,8 @@
 # Changelog
 
+## [4.8.2] improve content - 2025-05-17
+* remove price example in favor of individual quotes
+
 ## [4.8.1] extend content - 2025-04-25
 * add Kunnig Konsulting to public project history
 * add a landing page for freelance recruiters and PDF generation
