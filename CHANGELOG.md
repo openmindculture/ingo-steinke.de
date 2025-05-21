@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.8.3] extend content - TODO
+* update project list
+* add an alternative tabular CV page and PDF
+* add project case study pages (public beta: ...)
+* add impact landing pages (public beta: ...)
+* add intermediate overview pages (dto. ...)
+
 ## [4.8.2] improve content - 2025-05-17
 * remove price example in favor of individual quotes
 
