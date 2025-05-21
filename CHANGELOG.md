@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.8.2] extend content - TODO
+* update project list
+* add an alternative tabular CV page and PDF
+* add project case study pages (public beta: ...)
+* add impact landing pages (public beta: ...)
+* add intermediate overview pages (dto. ...)
+
 ## [4.8.1] extend content - 2025-04-25
 * add Kunnig Konsulting to public project history
 * add a landing page for freelance recruiters and PDF generation
