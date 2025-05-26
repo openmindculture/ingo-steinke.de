@@ -105,6 +105,7 @@ if (
   strpos($post_msg, '//telegra.ph/') !== false ||
   strpos($post_msg, '//tinyurl.com/') !== false ||
   strpos($post_msg, '//amazn.to/') !== false ||
+  strpos($post_msg, '/wa.me/') !== false ||
   strpos($post_msg, 'bitcoin') !== false ||
   strpos($post_msg, 'cryptocurrency') !== false ||
   strpos($post_msg, 'cannabis') !== false ||
