@@ -283,6 +283,18 @@ a.menu-toggle:hover {
   text-align: center;
 }
 
+.flex-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
+.flex-column-bigger {
+  flex-basis: 66%;
+}
+.flex-column-smaller {
+  flex-basis: 33%;
+}
+
 .tile {
   padding: 0;
   position: relative;

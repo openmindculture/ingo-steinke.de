@@ -1,5 +1,45 @@
 # Stellenausschreibungen und Firmenprofile
 
+TL;DR
+
+top keywords across all relevant job descriptions:
+web (35); kenntnisse (29); entwicklung (26); frontend (25); typescript (22)
+
+more frequent and relevant keywords:
+Entwickler
+Development
+Anforderungen
+Techhnologien
+Tools
+Dokumentation
+CSS
+Barrierefreiheit
+Mobile
+Javascript
+React
+Docker
+Git
+Github
+agilen Methoden
+DevOps
+Entwicklungsprozesse
+Continuous Delivery Pipelines
+Senior (bei Rollen) bzw. Lead
+Engineer (dto.)
+Developer
+Websites
+Webseiten
+UX
+Software
+Performance
+remote
+Berlin
+Umsetzung
+Frameworks
+Jahre
+Englisch(er)
+Code
+
 gekürzt, irrelevantes gestrichen
 
 

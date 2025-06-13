@@ -18,6 +18,9 @@ Soll: most frequent words in Stellenausschreibungen:
 SOLL: web (35); kenntnisse (29); entwicklung (26); frontend (25); typescript (22)
 IST:  css (13); kenntnisse (11); html (11); javascript (10); wordpress (8)
 TODO: weniger HTML, weniger WordPress, mehr Frontend, mehr Entwicklung !
+      mehr Cypress: z.B. bei FT rudimentären Test von CC auf Cy umbauen;
+      mehr TypeScript erst wenn ich es wirklich verwende ;-)
+
     Check: - Worthäufigkeit
            - Reihenfolge: steht wichtiges vorne?
            - Zeitraum lückenlos abgedeckt?
@@ -26,6 +29,26 @@ TODO: weniger HTML, weniger WordPress, mehr Frontend, mehr Entwicklung !
     - Vergleich mit und ohne Astro + Shopware davor
     - "Standard-Schriftart" statt eigener
     Calibri, Cambria, Georgia, Helvetica, Arial and Times New Roman,
+
+   TODO vom Stil her alles übernehmen, was keinen Tipps widerspricht
+
+bisher so
+
+Projekte (fett)
+Portfolio: Stilberaterin (fett)
+2023 - 2024
+Kleiderordnung.Berlin ist die Portfolio-Website der nachhaltigen Modeberaterin Tina
+Steinke. Ich habe das Web-Projekt als technischer Projektleiter und alleiniger Entwickler
+komplett umgesetzt – von der Planung über die Abstimmung bis zur Entwicklung eines
+mehrsprachigen WordPress-Themes mit individuellen Inhaltstypen dezenten
+Animationen und Scrolling-Effekten.
+
+kleiderordnung.berlin (clickable link)
+HTML CSS JavaScript PHP WordPress (each tag with silver gray border)
+
+keine anderen Kästchen oder Grafiken
+
+Seitenrand/Maximalbreite -> fehlen Wrapper-Elemente?
 {% endcomment %} -->
   <style>
     /* inter-regular - latin */
@@ -44,23 +67,59 @@ TODO: weniger HTML, weniger WordPress, mehr Frontend, mehr Entwicklung !
       font-weight: 700;
       src: url('../fonts/inter-v19-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
     }
+    body.font-cv .page-container {
+      padding: 0 24pt;
+    }
     body.font-cv, body.font-cv * {
       font-family: 'Inter', 'Helvetica', 'Arial', sans-serif !important;
       font-weight: 400 !important;
       background-color: #fff !important;
       color: #000 !important;
     }
+    body.font-cv h1,
+    body.font-cv h2,
+    body.font-cv h3 {
+      font-weight: 700 !important;
+    }
+    .hashtag {
+      border: thin solid #aaa;
+      line-height: 28pt;
+      margin-right: 4pt;
+      padding: 4pt;
+    }
+    .flex-reverse {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+    .flex-nowrap {
+      flex-wrap: nowrap;
+    }
+    .flex-column-bigger {
+      flex-basis: 66%;
+    }
+    .flex-column-smaller {
+      flex-basis: 33%;
+    }
     @media print {
       body.font-cv, body.font-cv * {
         font-family: 'Inter', 'Helvetica', 'Arial', sans-serif !important;
         font-weight: 400 !important;
       }
+      body.font-cv h1,
+      body.font-cv h2,
+      body.font-cv h3 {
+        font-weight: 700 !important;
+      }
     }
   </style>
 </head>
 <body class="high-contrast font-cv">
-<div class="flex-reverse">
-  <div class="flex-column">
+<div class="page-container" id="top">
+  <div class="page-content">
+
+
+<div class="flex-reverse flex-nowrap">
+  <div class="flex-column flex-column-bigger">
     <!-- main content rechte spalte goldener schnitt groß -->
     <h1>Frontend-Web-Entwickler Ingo Steinke</h1>
     <!-- Dabei stehen die Details zu Ihrer jeweiligen Position rechts, während der Zeitraum im Format MM/JJJJ – MM /JJJJ links angeordnet wird. Zu der jeweiligen Position geben Sie stichpunktartig an, welche Tätigkeiten Sie ausgeübt haben. Erfolge sollten möglichst in Form von konkreten Kennzahlen genannt werden (z.B. Steigerung der Kundenzufriedenheit um 15 % innerhalb von 2 Jahren). Dabei sollten Sie die Tätigkeiten zuerst nennen, die für die Stelle, auf die Sie sich bewerben, besonders relevant sind. -->
@@ -80,7 +139,7 @@ TODO: weniger HTML, weniger WordPress, mehr Frontend, mehr Entwicklung !
     <table>
       <!-- TODO add prelovedshop, astro dev-ux-lesezeichen
       Referenzprojekte
-      sehr gute Kenntnisse, nachweisbare langjährige Erfahrung
+      sehr gute Kenntnisse, nachweisbare fundierte langjährige Erfahrung
       Static Site Generation
       React, Github und Tailwind und Storybook
       Shopware Web-Entwicklung für Mobile-First Onepager Landingpage (E-Commerce)
@@ -140,7 +199,15 @@ bestehende Shopware-Umgebung
             <li>anonym <!-- TODO: Branchen- bzw. Kunden-Wording vgl. Websites u. Stellenausschreibungen --></li>
             <li>Aufgabe: Frontend-Web-Entwicklung nativer WordPress-Themes zur Ablösung bestehender Legacy-Themes und Plugins</li>
             <li>Erfolg: </li>
-            <li>Kenntnisse: PHP, JavaScript, CSS, HTML, WordPress, npm, Docker, Cypress</li>
+            <li>Kenntnisse:<br>
+              <span class="hashtag">PHP</span>
+              <span class="hashtag">JavaScript</span>
+              <span class="hashtag">CSS</span>
+              <span class="hashtag">HTML</span>
+              <span class="hashtag">WordPress</span>
+              <span class="hashtag">npm</span>
+              <span class="hashtag">Docker</span>
+              <span class="hashtag">Cypress</span>
           </ul>
         </td>
       </tr>
@@ -220,6 +287,8 @@ bestehende Shopware-Umgebung
           <h2>Shopware-Plugin <!-- TODO better match Stellenausschreibungen --></h2>
           <ul>
             <li>Kostentransparenz für Shopware</li>
+            <li>Veröffentlichung als zertifizierter Shopwware-Entwickler und Shopware Extension Partner (TODO ist das so?)</li>
+            <!-- TODO wie besser formulieren ? -->
             <li>Kenntnisse: Shopware PHP Twig CSS JavaScript</li>
           </ul>
         </td>
@@ -279,7 +348,7 @@ Key skills, strengths, and certifications:
   DevOps Docker esbuild Snowpack Webpack Netlify
 </ul>
   </div>
-  <div class="flex-column">
+  <div class="flex-column flex-column-smaller">
     <!-- sidebar links daneben mit Foto und Kontaktdaten -->
     <picture><source type="image/webp" srcset="img/Ingo-Steinke-flower-shirt.webp, ../img/Ingo-Steinke-flower-shirt-496.webp 2x, ../img/Ingo-Steinke-flower-shirt-large.webp 4x"><img src="../img/Ingo-Steinke-flower-shirt.jpg" srcset="../img/Ingo-Steinke-flower-shirt-496.jpg 2x, ../img/Ingo-Steinke-flower-shirt-large.jpg 4x" width="248" height="248" alt="Frontend-Web-Entwickler Ingo Steinke" class="avatar"></picture>
     <!-- Handpicked: – Photos are optional (55% don’t include them)
@@ -375,3 +444,4 @@ kurzfristig Ref, XP sanmeln und präsentieren, ggf. Projektdauer aufrunden und I
 mittelfristig viel Geld verdienen und anlegen, ggf. Stunden aufrufen bei zeitlicher Abrechnung;
 langfristig viel Zeit haben, Wartungverträge, Stammkunden und interessante und/oder wichtige Impact-Projekte ohne grübeln und strugglen
 -->
+  </div></div></body></html>
