@@ -1,12 +1,14 @@
 # Changelog
 
-## [4.8.3] improve and extend content - TODO
+## [4.8.3] improve and extend content - TODO: 2025-06
 * update project list
 * add an alternative CV page to generate a tabular German HR-optimized PDF
 * add project case study pages (public beta: ...)
 * add impact landing pages (public beta: ...)
 * add intermediate overview pages (dto. ...)
 * improve existing landing page style and content
+* update development dependencies
+* add spam protection heuristics
 
 ## [4.8.2] improve content - 2025-05-17
 * remove price example in favor of individual quotes
