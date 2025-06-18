@@ -33,7 +33,7 @@ permalink: "cv-tabellarisch.html"
     }
 
     body.font-cv .page-container {
-      padding: 16pt 24pt 0 24pt;
+      padding: 16pt 16pt 0 24pt;
     }
 
     body.font-cv, body.font-cv * {
@@ -45,7 +45,9 @@ permalink: "cv-tabellarisch.html"
 
     body.font-cv h1,
     body.font-cv h2,
-    body.font-cv h3 {
+    body.font-cv h3,
+    body.font-cv th,
+    body.font-cv th * {
       font-weight: 700 !important;
     }
 
@@ -60,14 +62,6 @@ permalink: "cv-tabellarisch.html"
       max-width: unset;
       height: auto;
       margin-right: 0.75cm;
-    }
-
-    .vcard-digital-qr-image {
-      position: absolute;
-      width: 3cm;
-      top: 4cm;
-      right: 0.5cm;
-      margin-right: 0;
     }
 
     .flex-column-smaller ul,
@@ -99,11 +93,15 @@ permalink: "cv-tabellarisch.html"
     }
 
     th {
-      padding-top: 15pt;
+      padding-top: 14pt;
       padding-bottom: 5pt;
       text-align: left;
-      font-weight: 700 !important;
-      font-size: 14pt;
+      font-size: 13pt;
+      page-break-after: avoid;
+    }
+
+    th time {
+      font-size: 12pt;
     }
 
     a, a:link, a:visited, a:active {
@@ -154,35 +152,29 @@ permalink: "cv-tabellarisch.html"
       <div class="flex-column-smaller">
         <picture>
           <source type="image/webp"
-                  srcset="img/Ingo-Steinke-flower-shirt.webp, ../img/Ingo-Steinke-flower-shirt-496.webp 2x, ../img/Ingo-Steinke-flower-shirt-large.webp 4x">
-          <img src="../img/Ingo-Steinke-flower-shirt.jpg"
-               srcset="../img/Ingo-Steinke-flower-shirt-496.jpg 2x, ../img/Ingo-Steinke-flower-shirt-large.jpg 4x"
+                  srcset="img/Ingo-Steinke-flower-shirt.webp, img/Ingo-Steinke-flower-shirt-496.webp 2x, img/Ingo-Steinke-flower-shirt-large.webp 4x">
+          <img src="img/Ingo-Steinke-flower-shirt.jpg"
+               srcset="img/Ingo-Steinke-flower-shirt-496.jpg 2x, img/Ingo-Steinke-flower-shirt-large.jpg 4x"
                width="248" height="248" alt="Frontend-Web-Entwickler Ingo Steinke" class="avatar"></picture>
       </div>
       <div class="flex-column-bigger"><span class="vcard">
       Berlin ·
-      <span class="tel">Tel. <a href="tel:+491634684080"><span class="visually-spaced">+49</span><span
-            class="visually-spaced">163</span><span class="visually-spaced">46</span><span
-            class="visually-spaced">84</span><span class="visually-spaced">08</span><span
-            class="visually-spaced">0</span></a></span> ·
-      <a href="mailto:kontakt@ingo-steinke.de">kontakt@ingo-steinke.de</a> ·
-      <a href="https://github.com/openmindculture" target="_blank" rel="noopener">github.com/openmindculture</a> ·
-      <a href="https://www.ingo-steinke.de" target="_blank" rel="noopener">ingo-steinke.de</a> ·
-      <a href="https://linkedin.com/in/ingosteinke" target="_blank" rel="noopener">linkedin.com/in/ingosteinke</a>
-    </span>
-      </div>
-      <div class="flex-column-smaller">
-        <div class="vcard-digital-wrapper">
-          <a class="vcard-digital-qr" href="../vcard/" download="ingo-steinke.vcf" title="Kontaktdaten scannen"><img
-              class="vcard-digital-qr-image" src="https://www.ingo-steinke.de/img/ingo-steinke-de-vcard-qr.svg"
-              alt="Kontaktdaten scannen" width="500" height="500"></a></div>
+        <span class="tel">Tel. <a href="tel:+491634684080"><span class="visually-spaced">+49</span><span
+              class="visually-spaced">163</span><span class="visually-spaced">46</span><span
+              class="visually-spaced">84</span><span class="visually-spaced">08</span><span
+              class="visually-spaced">0</span></a></span> ·
+        <a href="mailto:kontakt@ingo-steinke.de">kontakt@ingo-steinke.de</a> ·
+        <a href="https://github.com/openmindculture" target="_blank" rel="noopener">github.com/openmindculture</a> ·
+        <a href="https://www.ingo-steinke.de" target="_blank" rel="noopener">ingo-steinke.de</a> ·
+        <a href="https://linkedin.com/in/ingosteinke" target="_blank" rel="noopener">linkedin.com/in/ingosteinke</a>
+      </span>
       </div>
     </div>
     <div class="full-width">
 
       <table>
         <tr>
-          <th>Frontend-Web-Entwicklung 2025-01 – 2025-06</th>
+          <th>Frontend-Web-Entwicklung <time>2025-01 – 2025-06</time></th>
         </tr>
         <tr>
           <td>
@@ -201,7 +193,7 @@ permalink: "cv-tabellarisch.html"
           </td>
         </tr>
         <tr>
-          <th>Frontend-Web-Entwicklung KK 2025-02 – 2025-04</th>
+          <th>Frontend-Web-Entwicklung KK <time>2025-02 – 2025-04</time></th>
         </tr>
         <tr>
           <td>
@@ -217,7 +209,7 @@ permalink: "cv-tabellarisch.html"
           </td>
         </tr>
         <tr>
-          <th>Full-Stack-Web-Entwicklung 2021-01 – 2025-04</th>
+          <th>Full-Stack-Web-Entwicklung <time>2021-01 – 2025-04</time></th>
         </tr>
         <tr>
           <td>
@@ -234,7 +226,7 @@ permalink: "cv-tabellarisch.html"
           </td>
         </tr>
         <tr>
-          <th>Frontend-Web-Entwicklung: WordPress-Theme 2023-04 – 2024-12</th>
+          <th>Frontend-Web-Entwicklung: WordPress-Theme <time>2023-04 – 2024-12</time></th>
         </tr>
         <tr>
           <td>
@@ -252,7 +244,7 @@ permalink: "cv-tabellarisch.html"
         </tr>
 
         <tr>
-          <th>Frontend-Web-Entwicklung: WordPress-Theme 2024-10 – 2024-11</th>
+          <th>Frontend-Web-Entwicklung: WordPress-Theme <time>2024-10 – 2024-11</time></th>
         </tr>
         <tr>
           <td>
@@ -269,7 +261,7 @@ permalink: "cv-tabellarisch.html"
         </tr>
 
         <tr>
-          <th>Responsive Portfolio-Website-Entwicklung · Twisted Connection (Beratung) · 2024-05 – 2024-08</th>
+          <th>Responsive Portfolio-Website-Entwicklung · Twisted Connection (Beratung) · <time>2024-05 – 2024-08</time></th>
         </tr>
         <tr>
           <td>
@@ -289,7 +281,7 @@ permalink: "cv-tabellarisch.html"
         </tr>
 
         <tr>
-          <th>E-Commerce-Entwicklung FT TODO 2022-07 – 2024-07</th>
+          <th>E-Commerce-Entwicklung FT TODO <time>2022-07 – 2024-07</time></th>
         </tr>
         <tr>
           <td>
@@ -313,7 +305,7 @@ permalink: "cv-tabellarisch.html"
         <!-- Die Überschrift gefällt mir so nicht, weil sie keinen gefragten Keyword-match ergibt. -->
 
         <tr>
-          <th>E-Commerce-Entwicklung Shopware/FT TODO 2024-02 – 2024-06</th>
+          <th>E-Commerce-Entwicklung Shopware/FT TODO <time>2024-02 – 2024-06</time></th>
         </tr>
         <tr>
           <td>
@@ -331,7 +323,7 @@ permalink: "cv-tabellarisch.html"
         </tr>
 
         <tr>
-          <th>Frontend Developer, fachliche Teamleitung · STRABAG SE · 2021-10 – 2022-05</th>
+          <th>Senior Frontend Developer, fachliche Teamleitung · STRABAG SE · <time>2021-10  – 2022-05</time></th>
         </tr>
         <tr>
           <td>
@@ -353,7 +345,7 @@ permalink: "cv-tabellarisch.html"
           </td>
         </tr>
         <tr>
-          <th>Senior Frontend Developer React · Sevenval/Avenga · 2017-07 – 2020-10</th>
+          <th>Senior Frontend Developer React · Sevenval/Avenga · <time>2017-07 – 2020-10</time></th>
         </tr>
         <tr>
           <td>
@@ -395,7 +387,7 @@ permalink: "cv-tabellarisch.html"
           <td>
             <ul>
               <li>
-                Fachkenntnisse/Technologien:
+                Technologien:
                 <ul>
                   <li>Frontend: HTML · HTML5 · CSS3 · SCSS · JavaScript (ES6+) · TypeScript · React · Astro · Eleventy · WordPress</li>
                   <li>E-Commerce: Shopware 6 (zertifiziert 2024) · WooCommerce · PHP 8 · Liquid · Twig</li>
@@ -403,8 +395,8 @@ permalink: "cv-tabellarisch.html"
                   <li>Methoden: Responsive Web Design · Barrierefreiheit (WCAG) · Performance-Optimierung · Agile · Scrum · Kanban · Jira</li>
                 </ul>
               </li>
-              <li>Sprachkenntnisse: Englisch (C1, fließend), Deutsch (C2, Muttersprache)</li>
               <li>27 Jahre Berufserfahrung</li>
+              <li>Sprachkenntnisse: Englisch (C1, fließend) · Deutsch (C2, Muttersprache)</li>
             </ul>
           </td>
         </tr>
