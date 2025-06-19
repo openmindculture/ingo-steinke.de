@@ -1,4 +1,7 @@
 TODO PDF Metadaten gff. mit exiftool anpassen
+
+exiftool -Title="New Title" -Author="New Author" -Subject="New Subject" -Keywords="PDF, Metadata" example.pdf
+
 Soll: most frequent words in Stellenausschreibungen:
 SOLL: web (35); kenntnisse (29); entwicklung (26); frontend (25); typescript (22)
 IST:  css (13); kenntnisse (11); html (11); javascript (10); wordpress (8)
