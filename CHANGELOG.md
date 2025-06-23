@@ -1,5 +1,10 @@
 # Changelog
 
+## [4.8.3] improve and extend content - TODO: 2025-06
+* update project list
+* add an alternative CV page to generate a tabular German HR-optimized PDF (2025-06-23 -> freelancermap)
+* add project case study pages (public beta: React/wao.io, 2025-06-23)
+
 ## [4.8.2] improve content - 2025-05-17
 * remove price example in favor of individual quotes
 
