@@ -3,6 +3,9 @@ module.exports = function (eleventyConfig) {
   // all subdirectory/*.liquid are processed implicitly,
   // so we need to exclude the ones that don't match the current language
   eleventyConfig.ignores.add('src/services');
+  eleventyConfig.ignores.add('src/projects');
+  eleventyConfig.ignores.add('src/impact_de'); // TODO reactivate when ready
+  eleventyConfig.ignores.add('src/impact_en');
   eleventyConfig.ignores.add('src/_includes');
   eleventyConfig.ignores.add('src/_data');
   eleventyConfig.ignores.add('src/_data/de/projects');

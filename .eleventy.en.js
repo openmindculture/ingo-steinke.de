@@ -6,6 +6,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.ignores.add('src/wordpress-website-nachhaltig-optimieren-lassen/index.liquid');
   eleventyConfig.ignores.add('src/zertifizierter-shopware-6-frontend-webentwickler/index.liquid');
   eleventyConfig.ignores.add('src/leistungen');
+  eleventyConfig.ignores.add('src/projekte');
+  eleventyConfig.ignores.add('src/impact_de');
+  eleventyConfig.ignores.add('src/impact_en'); // TODO reactivate when ready
   eleventyConfig.ignores.add('src/_includes');
   eleventyConfig.ignores.add('src/_data');
   eleventyConfig.ignores.add('src/_data/en/projects');

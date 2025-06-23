@@ -1,5 +1,5 @@
     {% if showallprojects %}
-      {%- assign projects = 'kleiderordnung, shopwareplugin, twistedconnection, portfolio, gemeva, kunnigkonsulting, foodtogether, fractal, daskannstdutun' | split: ', ' -%}
+      {%- assign projects = 'kleiderordnung, shopwareplugin, twistedconnection, portfolio, gemeva, kunnigkonsulting, foodtogether, fractal, reactapp' | split: ', ' -%}
     {% else %}
       {%- assign projects = projectlist | split: ', ' -%}
     {% endif %}
@@ -58,9 +58,9 @@
               <header>
                 <h3>{{ projectHeadline }}</h3>
               </header>
-              {% if projectTimestamp %}
+              {% comment if projectTimestamp %}
                 <div class="timestamp">{{ projectTimestamp }}</div>
-              {% endif %}
+              {% endcomment %}
               <p>
                 {% if showicons %}
                   <img src="img/icon-{{ project }}.svg"
@@ -109,9 +109,9 @@
             <header>
               <h3>{{ projectHeadline }}</h3>
             </header>
-            {% if projectTimestamp %}
+            {% comment if projectTimestamp %}
               <div class="timestamp">{{ projectTimestamp }}</div>
-            {% endif %}
+            {% endcomment %}
             <div class="description-group">
               {% if showicons %}
                 <img src="img/icon-{{ project }}.svg"
