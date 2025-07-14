@@ -96,6 +96,7 @@ if (
   strpos($post_msg, 'mail.ru') !== false ||
   strpos($post_msg, ' .ru/') !== false ||
   strpos($post_msg, '//telegra.ph/') !== false ||
+  strpos($post_msg, '=telegra.ph') !== false ||
   strpos($post_msg, '//bit.ly') !== false ||
   strpos($post_msg, '//t.me') !== false ||
   strpos($post_msg, '//rb.gy') !== false ||
