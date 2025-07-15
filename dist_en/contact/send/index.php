@@ -113,6 +113,10 @@ if (
   strpos($post_msg, 'cannabis') !== false ||
   strpos($post_msg, 'cbd ') !== false ||
   strpos($post_msg, 'CBD ') !== false ||
+  strpos($post_msg, 'casino ') !== false ||
+  strpos($post_msg, 'Casino ') !== false ||
+  strpos($post_msg, 'Sportwetten ') !== false ||
+  strpos($post_msg, 'topcasworld.') !== false ||
   strpos($post_msg, 'artet drink') !== false ||
   strpos($post_msg, 'impressed with the quality') !== false ||
   strpos($post_msg, ' has improved. ') !== false ||
