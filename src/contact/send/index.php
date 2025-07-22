@@ -176,7 +176,9 @@ if(!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
   if ( $suspectedSpam ) {
     if (file_exists($stamp_filename) || $randombool) {
       header('Status: 403 Forbidden');
-      echo 'Sorry, you cannot access this service right now.';
+      echo "Status: 403 Forbidden\r\n";
+      echo "Sorry, you cannot access this service right now.\r\n";
+      echo "Action: failed. Suspected spam message rejected.\r\n";
       $responseStatus = '403 Forbidden';
     } else if ('POST' != $_SERVER['REQUEST_METHOD']) {
       header('Status: 405 Method Not Allowed');
