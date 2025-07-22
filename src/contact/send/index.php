@@ -108,6 +108,8 @@ if (
   strpos($post_msg, '//amazn.to/') !== false ||
   strpos($post_msg, '/wa.me/') !== false ||
   strpos($post_msg, '//trustedleadgeneration.com') !== false ||
+  strpos($post_msg, '//goldsolutions.pro') !== false ||
+  strpos($post_msg, '?unsubscribe') !== false ||
   strpos($post_msg, 'bitcoin') !== false ||
   strpos($post_msg, 'cryptocurrency') !== false ||
   strpos($post_msg, 'cannabis') !== false ||
