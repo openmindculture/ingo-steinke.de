@@ -96,6 +96,7 @@ if (
   strpos($post_msg, 'mail.ru') !== false ||
   strpos($post_msg, ' .ru/') !== false ||
   strpos($post_msg, '//telegra.ph/') !== false ||
+  strpos($post_msg, '=telegra.ph') !== false ||
   strpos($post_msg, '//bit.ly') !== false ||
   strpos($post_msg, '//t.me') !== false ||
   strpos($post_msg, '//rb.gy') !== false ||
@@ -106,14 +107,22 @@ if (
   strpos($post_msg, '//tinyurl.com/') !== false ||
   strpos($post_msg, '//amazn.to/') !== false ||
   strpos($post_msg, '/wa.me/') !== false ||
+  strpos($post_msg, '//trustedleadgeneration.com') !== false ||
+  strpos($post_msg, '//goldsolutions.pro') !== false ||
+  strpos($post_msg, '?unsubscribe') !== false ||
   strpos($post_msg, 'bitcoin') !== false ||
   strpos($post_msg, 'cryptocurrency') !== false ||
   strpos($post_msg, 'cannabis') !== false ||
   strpos($post_msg, 'cbd ') !== false ||
   strpos($post_msg, 'CBD ') !== false ||
+  strpos($post_msg, 'casino ') !== false ||
+  strpos($post_msg, 'Casino ') !== false ||
+  strpos($post_msg, 'Sportwetten ') !== false ||
+  strpos($post_msg, 'topcasworld.') !== false ||
   strpos($post_msg, 'artet drink') !== false ||
   strpos($post_msg, 'impressed with the quality') !== false ||
   strpos($post_msg, ' has improved. ') !== false ||
+  strpos($post_msg, 'please send us message on Whatsapp') !== false ||
   strpos($post_msg, 'Please send us your offer and price list.') !== false ||
   strpos($post_msg, 'share your offerings and prices') !== false ||
   strpos($post_msg, 'and pricing') !== false ||
@@ -169,7 +178,9 @@ if(!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
   if ( $suspectedSpam ) {
     if (file_exists($stamp_filename) || $randombool) {
       header('Status: 403 Forbidden');
-      echo 'Sorry, you cannot access this service right now.';
+      echo "Status: 403 Forbidden\r\n";
+      echo "Sorry, you cannot access this service right now.\r\n";
+      echo "Action: failed. Suspected spam message rejected.\r\n";
       $responseStatus = '403 Forbidden';
     } else if ('POST' != $_SERVER['REQUEST_METHOD']) {
       header('Status: 405 Method Not Allowed');

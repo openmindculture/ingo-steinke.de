@@ -10,6 +10,7 @@
 * update development dependencies
 * add spam protection heuristics
 
+
 ## [4.8.2] improve content - 2025-05-17
 * remove price example in favor of individual quotes
 
