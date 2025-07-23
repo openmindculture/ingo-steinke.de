@@ -128,6 +128,8 @@ if (
   strpos($post_msg, 'and pricing') !== false ||
   strpos($post_msg, 'found your company') !== false ||
   strpos($post_msg, 'a company like yours') !== false ||
+  strpos($post_msg, 'wir sind ein baltisches Unternehmen') !== false ||
+  strpos($post_msg, 'verfugt uber') !== false ||
   strpos($post_msg, 'wkdwodkwkifjejr') !== false ||
   strpos($post_msg, 'ë') !== false ||
   strpos($post_msg, 'ụ') !== false ||
@@ -137,7 +139,7 @@ if (
   strpos($post_msg, '==>') !== false ||
   preg_match("/\bsex\b/i", $post_msg) ||
   preg_match("/\bdating\b/i", $post_msg) ||
-  strpos($post_name, 'anonmails.de') !== false ||
+  strpos($post_emailfon, 'anonmails.de') !== false ||
   strpos($post_name, 'Ready for love') !== false ||
   strpos($post_name, 'Amandapeaceame') !== false ||
   strpos($post_name, 'GregoryFub') !== false ||
