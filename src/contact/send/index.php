@@ -122,6 +122,7 @@ if (
   strpos($post_msg, 'artet drink') !== false ||
   strpos($post_msg, 'impressed with the quality') !== false ||
   strpos($post_msg, ' has improved. ') !== false ||
+  strpos($post_msg, 'text us on whatsapp') !== false ||
   strpos($post_msg, 'please send us message on Whatsapp') !== false ||
   strpos($post_msg, 'Please send us your offer and price list.') !== false ||
   strpos($post_msg, 'share your offerings and prices') !== false ||
