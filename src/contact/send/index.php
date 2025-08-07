@@ -33,6 +33,10 @@ if (
   !empty($spamtrap2) ||
   'POST' != $_SERVER['REQUEST_METHOD'] ||
   !strpos($post_msg, ' ') ||
+  strpos($post_msg, 'Dominate YouTube') !== false ||
+  strpos($post_msg, 'a promotional offer') !== false ||
+  strpos($post_msg, 'free trial of our') !== false ||
+  strpos($post_msg, '/unsubscribe?domain') !== false ||
   strpos($post_msg, 'intengo yakho') !== false ||
   strpos($post_msg, 'your price') !== false ||
   strpos($post_msg, 'the prices') !== false ||
@@ -56,6 +60,10 @@ if (
   strpos($post_msg, 'shipping options for your order') !== false ||
   strpos($post_msg, 'omplete your purchase from the cart') !== false ||
   strpos($post_msg, 'willst du abhängen') !== false ||
+  strpos($post_msg, 'Ihr Abonnement') !== false ||
+  strpos($post_msg, 'einmalige Gebühr') !== false ||
+  strpos($post_msg, 'Niedrigzins') !== false ||
+  strpos($post_msg, 'Sofortauszahlung') !== false ||
   strpos($post_msg, 'surl.li') !== false ||
   strpos($post_msg, 'porn.') !== false ||
   strpos($post_msg, 'lovevoyager.page') !== false ||
@@ -94,7 +102,9 @@ if (
   strpos($post_msg, 'й') !== false ||
   strpos($post_msg, 'спорт') !== false ||
   strpos($post_msg, 'mail.ru') !== false ||
-  strpos($post_msg, ' .ru/') !== false ||
+  strpos($post_msg, '.ru/') !== false ||
+  strpos($post_msg, '/fekal0911') !== false ||
+  strpos($post_msg, 'wixsite.com') !== false ||
   strpos($post_msg, '//telegra.ph/') !== false ||
   strpos($post_msg, '=telegra.ph') !== false ||
   strpos($post_msg, '//bit.ly') !== false ||
@@ -120,6 +130,7 @@ if (
   strpos($post_msg, 'Sportwetten ') !== false ||
   strpos($post_msg, 'topcasworld.') !== false ||
   strpos($post_msg, 'artet drink') !== false ||
+  strpos($post_msg, 'impressed by the quality') !== false ||
   strpos($post_msg, 'impressed with the quality') !== false ||
   strpos($post_msg, ' has improved. ') !== false ||
   strpos($post_msg, 'text us on whatsapp') !== false ||
