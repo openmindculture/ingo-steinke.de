@@ -53,8 +53,12 @@ if (
   strpos($post_msg, ' WIN') !== false ||
   strpos($post_msg, 'Passive Income') !== false ||
   strpos($post_msg, 'Cryptocurrency') !== false ||
+  strpos($post_msg, 'Kryptow') !== false ||
   strpos($post_msg, 'cannabidiol') !== false ||
   strpos($post_msg, 'verified accounts') !== false ||
+  strpos($post_msg, 'verified reviews') !== false ||
+  strpos($post_msg, 'o more bad ratings') !== false ||
+  strpos($post_msg, 'No More Bad Ratings') !== false ||
   strpos($post_msg, 'greenrevolution.com') !== false ||
   strpos($post_msg, 'bulk verified accounts') !== false ||
   strpos($post_msg, 'shipping options for your order') !== false ||
@@ -64,6 +68,8 @@ if (
   strpos($post_msg, 'einmalige Gebühr') !== false ||
   strpos($post_msg, 'Niedrigzins') !== false ||
   strpos($post_msg, 'Sofortauszahlung') !== false ||
+  strpos($post_msg, 'Zustellbenachrichtigung') !== false ||
+  strpos($post_msg, 'Dringende Mitteilung') !== false ||
   strpos($post_msg, 'surl.li') !== false ||
   strpos($post_msg, 'porn.') !== false ||
   strpos($post_msg, 'lovevoyager.page') !== false ||
@@ -135,13 +141,21 @@ if (
   strpos($post_msg, ' has improved. ') !== false ||
   strpos($post_msg, 'text us on whatsapp') !== false ||
   strpos($post_msg, 'please send us message on Whatsapp') !== false ||
-  strpos($post_msg, 'Please send us your offer and price list.') !== false ||
+  strpos($post_msg, 'please contact us on WhatsApp') !== false ||
+  strpos($post_msg, 'kindly send it via Whatsapp') !== false ||
+  strpos($post_msg, 'indly share the information') !== false ||
+  strpos($post_msg, 'send us your offer and price list.') !== false ||
   strpos($post_msg, 'share your offerings and prices') !== false ||
   strpos($post_msg, 'and pricing') !== false ||
+  strpos($post_msg, 'your price list') !== false ||
+  strpos($post_msg, 'the price list') !== false ||
   strpos($post_msg, 'found your company') !== false ||
   strpos($post_msg, 'a company like yours') !== false ||
+  strpos($post_msg, 'rank on the first page') !== false ||
   strpos($post_msg, 'wir sind ein baltisches Unternehmen') !== false ||
   strpos($post_msg, 'verfugt uber') !== false ||
+  strpos($post_msg, 'Metavista') !== false ||
+  strpos($post_msg, 'ohne Rezept') !== false ||
   strpos($post_msg, 'wkdwodkwkifjejr') !== false ||
   strpos($post_msg, 'ë') !== false ||
   strpos($post_msg, 'ụ') !== false ||
@@ -151,6 +165,8 @@ if (
   strpos($post_msg, '==>') !== false ||
   preg_match("/\bsex\b/i", $post_msg) ||
   preg_match("/\bdating\b/i", $post_msg) ||
+  strpos($post_emailfon, '+48') !== false ||
+  strpos($post_emailfon, '+91') !== false ||
   strpos($post_emailfon, 'anonmails.de') !== false ||
   strpos($post_name, 'Ready for love') !== false ||
   strpos($post_name, 'Amandapeaceame') !== false ||
