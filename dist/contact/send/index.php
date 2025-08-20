@@ -57,6 +57,7 @@ if (
   strpos($post_msg, 'cannabidiol') !== false ||
   strpos($post_msg, 'verified accounts') !== false ||
   strpos($post_msg, 'verified reviews') !== false ||
+  strpos($post_msg, '5-star reviews') !== false ||
   strpos($post_msg, 'o more bad ratings') !== false ||
   strpos($post_msg, 'No More Bad Ratings') !== false ||
   strpos($post_msg, 'greenrevolution.com') !== false ||
