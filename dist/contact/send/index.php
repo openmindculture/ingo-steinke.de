@@ -173,6 +173,7 @@ if (
   strpos($post_emailfon, 'anonmails.de') !== false ||
   strpos($post_name, 'Ready for love') !== false ||
   strpos($post_name, 'Amandapeaceame') !== false ||
+  strpos($post_name, 'GrantBib') !== false ||
   strpos($post_name, 'GregoryFub') !== false ||
   strpos($post_name, 'KevinKen') !== false ||
   strpos($post_name, 'Nataler') !== false ||
