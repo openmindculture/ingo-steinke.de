@@ -155,11 +155,14 @@ if (
   strpos($post_msg, 'found your company') !== false ||
   strpos($post_msg, 'a company like yours') !== false ||
   strpos($post_msg, 'rank on the first page') !== false ||
+  strpos($post_msg, 'limited proposal') !== false ||
   strpos($post_msg, 'wir sind ein baltisches Unternehmen') !== false ||
   strpos($post_msg, 'verfugt uber') !== false ||
   strpos($post_msg, 'Metavista') !== false ||
   strpos($post_msg, 'ohne Rezept') !== false ||
   strpos($post_msg, 'wkdwodkwkifjejr') !== false ||
+  strpos($post_msg, 'Ghost Pages') !== false ||
+  strpos($post_msg, 'GhostPages') !== false ||
   strpos($post_msg, 'ë') !== false ||
   strpos($post_msg, 'ụ') !== false ||
   strpos($post_msg, 'ị') !== false ||
