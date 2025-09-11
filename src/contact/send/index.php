@@ -174,6 +174,7 @@ if (
   strpos($post_emailfon, '+48') !== false ||
   strpos($post_emailfon, '+91') !== false ||
   strpos($post_emailfon, 'anonmails.de') !== false ||
+  str_ends_with($post_emailfon, '.ru') ||
   strpos($post_name, 'Ready for love') !== false ||
   strpos($post_name, 'Amandapeaceame') !== false ||
   strpos($post_name, 'GrantBib') !== false ||
