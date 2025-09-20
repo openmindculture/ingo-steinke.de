@@ -163,6 +163,7 @@ if (
   strpos($post_msg, 'wkdwodkwkifjejr') !== false ||
   strpos($post_msg, 'Ghost Pages') !== false ||
   strpos($post_msg, 'GhostPages') !== false ||
+  strpos($post_msg, 'click here') !== false ||
   strpos($post_msg, 'ë') !== false ||
   strpos($post_msg, 'ụ') !== false ||
   strpos($post_msg, 'ị') !== false ||
