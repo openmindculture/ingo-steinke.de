@@ -139,10 +139,11 @@ if (
   strpos($post_msg, 'Sportwetten ') !== false ||
   strpos($post_msg, 'topcasworld.') !== false ||
   strpos($post_msg, 'artet drink') !== false ||
+  strpos($post_msg, 'promote your product') !== false ||
   strpos($post_msg, 'impressed by the quality') !== false ||
   strpos($post_msg, 'impressed with the quality') !== false ||
   strpos($post_msg, ' has improved. ') !== false ||
-  strpos($post_msg, 'text us on whatsapp') !== false ||
+  strpos($post_msg, 'us on whatsapp') !== false ||
   strpos($post_msg, 'please send us message on Whatsapp') !== false ||
   strpos($post_msg, 'please contact us on WhatsApp') !== false ||
   strpos($post_msg, 'kindly send it via Whatsapp') !== false ||
