@@ -119,6 +119,7 @@ if (
   strpos($post_msg, '//bit.ly') !== false ||
   strpos($post_msg, '//t.me') !== false ||
   strpos($post_msg, '//rb.gy') !== false ||
+  strpos($post_msg, 'rb.gy/') !== false ||
   strpos($post_msg, '//yandex.ru') !== false ||
   strpos($post_msg, 'dublikat.ru') !== false ||
   strpos($post_msg, '.ru/') !== false ||
@@ -160,6 +161,7 @@ if (
   strpos($post_msg, 'rank on the first page') !== false ||
   strpos($post_msg, 'limited proposal') !== false ||
   strpos($post_msg, 'wir sind ein baltisches Unternehmen') !== false ||
+  strpos($post_msg, 'mein Benutzername ist der gleiche') !== false ||
   strpos($post_msg, 'verfugt uber') !== false ||
   strpos($post_msg, 'Metavista') !== false ||
   strpos($post_msg, 'ohne Rezept') !== false ||
@@ -167,6 +169,9 @@ if (
   strpos($post_msg, 'Ghost Pages') !== false ||
   strpos($post_msg, 'GhostPages') !== false ||
   strpos($post_msg, 'click here') !== false ||
+  strpos($post_msg, 'accounts in bulk') !== false ||
+  strpos($post_msg, 'AccStores.com') !== false ||
+  strpos($post_msg, 'SalesCloser') !== false ||
   strpos($post_msg, 'ë') !== false ||
   strpos($post_msg, 'ụ') !== false ||
   strpos($post_msg, 'ị') !== false ||
@@ -181,6 +186,7 @@ if (
   str_ends_with($post_emailfon, '.ru') ||
   strpos($post_name, 'Ready for love') !== false ||
   strpos($post_name, 'Amandapeaceame') !== false ||
+  strpos($post_name, 'AmeliaDog') !== false ||
   strpos($post_name, 'GrantBib') !== false ||
   strpos($post_name, 'GregoryFub') !== false ||
   strpos($post_name, 'KevinKen') !== false ||
