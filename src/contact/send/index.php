@@ -34,6 +34,8 @@ if (
   'POST' != $_SERVER['REQUEST_METHOD'] ||
   !strpos($post_msg, ' ') ||
   strpos($post_msg, 'Dominate YouTube') !== false ||
+  strpos($post_msg, 'top Google rankings') !== false ||
+  strpos($post_msg, ' dominate ') !== false ||
   strpos($post_msg, 'a promotional offer') !== false ||
   strpos($post_msg, 'free trial of our') !== false ||
   strpos($post_msg, '/unsubscribe?domain') !== false ||
@@ -46,6 +48,7 @@ if (
   strpos($post_msg, 'el seu preu') !== false ||
   strpos($post_msg, 'o seu prezo') !== false ||
   strpos($post_msg, 'Äre Präis') !== false ||
+  strpos($post_msg, 'contact you about course') !== false ||
   strpos($post_msg, 'Kaixo, ') !== false ||
   strpos($post_msg, 'Sveiki, ') !== false ||
   strpos($post_msg, 'Dia duit, ') !== false ||
@@ -62,8 +65,11 @@ if (
   strpos($post_msg, 'No More Bad Ratings') !== false ||
   strpos($post_msg, 'greenrevolution.com') !== false ||
   strpos($post_msg, 'bulk verified accounts') !== false ||
-  strpos($post_msg, 'Trustpilot reputation') !== false ||
-  strpos($post_msg, 'Trustpilot presence') !== false ||
+  strpos($post_msg, 'Online-Bewertungen') !== false ||
+  strpos($post_msg, 'online reputation') !== false ||
+  strpos($post_msg, 'Trustpilot') !== false ||
+  strpos($post_msg, 'trustpilot') !== false ||
+  strpos($post_msg, 'replace harmful feedback') !== false ||
   strpos($post_msg, 'shipping options for your order') !== false ||
   strpos($post_msg, 'omplete your purchase from the cart') !== false ||
   strpos($post_msg, 'willst du abhängen') !== false ||
@@ -191,6 +197,7 @@ if (
   strpos($post_name, 'GregoryFub') !== false ||
   strpos($post_name, 'KevinKen') !== false ||
   strpos($post_name, 'Nataler') !== false ||
+  strpos($post_name, 'Phillippoify') !== false ||
   strpos($post_name, 'Tracyselty') !== false ||
   strpos($post_name, 'Iyannacrigo') !== false ||
   strpos($post_name, 'xrumer') !== false ||
