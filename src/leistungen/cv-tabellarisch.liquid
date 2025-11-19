@@ -14,6 +14,7 @@ permalink: "cv-tabellarisch.html"
   <title>Frontend-Web-Entwickler Ingo Steinke</title>
   {% include '../_includes/html-head-common.liquid' %}
   <style>
+<<<<<<< HEAD
     /* inter-regular - latin */
     @font-face {
       font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -30,6 +31,21 @@ permalink: "cv-tabellarisch.html"
       font-style: normal;
       font-weight: 700;
       src: url('../fonts/inter-v19-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+=======
+    @font-face {
+      font-display: swap;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      src: url('../fonts/inter-v19-latin-regular.woff2') format('woff2');
+    }
+    @font-face {
+      font-display: swap;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      src: url('../fonts/inter-v19-latin-700.woff2') format('woff2');
+>>>>>>> main
     }
 
     body.font-cv .page-container {
@@ -167,7 +183,7 @@ permalink: "cv-tabellarisch.html"
 
       <div class="flex-column-bigger">
         Senior Frontend-Web-Entwickler und zertifizierter Shopware 6 Experte,<br>
-        27 Jahre Berufserfahrung, barrierefreie Web-Entwicklung mit React, TypeScript, JavaScript, Cypress, CSS, HTML.<!-- TODO add Astro -->
+        27 Jahre Berufserfahrung, barrierefreie Web-Entwicklung mit React, TypeScript, JavaScript, CSS, HTML, Astro.
       </div>
     </div>
     <div class="full-width">
@@ -183,6 +199,23 @@ permalink: "cv-tabellarisch.html"
         <a href="https://linkedin.com/in/ingosteinke" target="_blank" rel="noopener">linkedin.com/in/ingosteinke</a><br>
       </span>
       <table>
+
+        <tr>
+          <th>Frontend-Web-Entwicklung · dev-UX-Lesezeichen.de · <time>2025-07 – 2025-09</time></th>
+        </tr>
+        <tr>
+          <td>
+            Branche: Web-Dienstleistungen<br>
+            Projekt: Web-App zur Präsentation von IT-Fachbüchern<br>
+            React · TypeScript · Tailwind · Astro · Storybook · Vitest · Playwright · npm<br>
+            Frontend-Web-App-Entwicklung, Webdesign, Projektleitung<br>
+            <ul>
+              <li>Hexagonal-Masonry-Placement-Modul auf npm publiziert</li>
+              <li>Software-Architektur mit modular getesteten Komponenten</li>
+            </ul>
+          </td>
+        </tr>
+
         <tr>
           <th>Frontend-Web-Entwicklung · namhafter Online-Dienstleister · <time>2025-01 – 2025-06</time></th>
         </tr>
@@ -355,4 +388,5 @@ permalink: "cv-tabellarisch.html"
   </div>
 </div>
 </body>
+<!-- generated from src/leistungen/cv-tabellarisch.liquid -->
 </html>
