@@ -21,7 +21,7 @@ Link Title Angebot: Leistungen und Fachkenntnisse (Skills)
 Linktext Sitemap bisher: Freelancer Berlin: Freelance Webentwickler in Berlin
 Projekte und Fachkenntniss Skills hierher
 
-## Freelancer Berlin Frontend Web Entwickler
+## (Freelancer Berlin Frontend Web Entwickler) no top navi
 textlich mehr wie der neue CV zwecks Match mit Stellenausschreibungen
 und optisch mehr wie die Hauptseiten bzw. Startseite
 mit bunten Skills und Link zu Projektliste
@@ -45,7 +45,7 @@ auch mit mehr Bildern z.B. Laptop + Geräte Kunnig "Referenzen"
 Branchen und Zielgruppen hier auch nennen und mehr Zahlen und Fakten
 
 
-## Impressum, Datenschutz
+## (Impressum, Datenschutz) no top navi
 aus der oberen Navi raus solange niemand abmahnt
 
 
@@ -63,3 +63,6 @@ Ich übernehme Aufräge und unterstütze Teams als Freelancer.
 Mein Ziel sind langlebige Lösungen, elegant, verständlich und pflegeleicht. Schnell ladende, nutzerfreundliche und barrierearme Websites sparen Energie und schonen sowohl die Nerven aller Beteiligten als auch Strom- und Serverrechnung.
 Ingo Steinke auf die Frage: Was macht dein Angebot nachhaltig?
 Fünf bisherige Auftraggeber:innen
+
+Weitere Textschnippsel aus Stellenanzeigen und Mails echter Kunden:
+
