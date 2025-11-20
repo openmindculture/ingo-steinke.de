@@ -111,7 +111,11 @@
 <meta name="author" content="Ingo Steinke">
 <meta name="p:domain_verify" content="4c4296e5835f4a47eb2c2e5488a99d71">
 <meta name="google-site-verification" content="Qs1p7JgqPLOGD3BYCMGe9EbyNJJEswyala44hnkO6d4">
+{% if metanoindex %}
+  <meta name="robots" content="noindex,follow">
+{% else %}
 <meta name="robots" content="index,follow">
+{% endif %}
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="manifest" href="/site.webmanifest"><meta name="msapplication-TileColor" content="#da532c"><meta name="theme-color" content="#ffffff">
 {% if previewimage %}
 <meta property="og:image" content="{{ previewimage }}">

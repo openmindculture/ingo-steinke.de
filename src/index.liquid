@@ -545,10 +545,6 @@
         </main>
 
         <footer class="page-footer">
-          <p class="landingpage--links no-print">
-            <a href="{{ content.landingLinkUrlSitemap }}">{{ content.landingLinkTextSitemap }}</a>
-          </p>
-
           <a id="website-carbon-certified"></a>
           <div id="wcb" class="carbonbadge no-print"></div>
           <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
@@ -590,6 +586,12 @@
 
           <p class="no-print">
             <button class="animation-toggle">{{ content.buttonToggleAnimation }}</button>
+          </p>
+
+          <p class="landingpage--links no-print">
+            <a href="../#imprint">{{ content.targetImprint }}</a>
+            <a href="../#privacy">{{ content.targetPrivacy }}</a>
+            <a href="{{ content.landingLinkUrlSitemap }}">{{ content.landingLinkTextSitemap }}</a>
           </p>
 
           <div class="only-print"><br></div>
