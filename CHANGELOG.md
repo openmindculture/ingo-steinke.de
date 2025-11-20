@@ -1,15 +1,18 @@
 # Changelog
 
-## [4.8.3] improve and extend content - TODO: 2025-06
+## [4.9.0] improve and extend content - TODO: 2025-11
+* add intermediate overview pages
+* more consistent and unsurprising navigation
+* rewrite existing content to improve SEO
+* improve existing landing page style 
+* update project list
+* add project case study pages (public beta: React/wao.io, 2025-06-23)
+* add impact landing pages (stub or public beta)
+
+## [4.8.3] improve and extend content - 2025-06-23
 * update project list
 * add an alternative CV page to generate a tabular German HR-optimized PDF (2025-06-23 -> freelancermap)
 * add project case study pages (public beta: React/wao.io, 2025-06-23)
-* add impact landing pages (public beta: ...)
-* add intermediate overview pages (dto. ...)
-* improve existing landing page style and content
-* update development dependencies
-* add spam protection heuristics
-
 
 ## [4.8.2] improve content - 2025-05-17
 * remove price example in favor of individual quotes
