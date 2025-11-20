@@ -302,7 +302,7 @@ module.exports = {
   "landingLinkTitleFreelanceBerlin": "freelance web developer in Berlin",
   "landingLinkTextFreelanceBerlin": "freelancer Berlin",
   "landingLinkUrlFreelanceBerlin": "https://www.ingo-steinke.com/services/freelance-webdeveloper-berlin.html",
-  "landingLinkTextSitemap": "Sitemap",
+  "landingLinkTextSitemap": "sitemap",
   "landingLinkUrlSitemap": "https://www.ingo-steinke.com/sitemap.html",
   "languagesSubtitle": "Languages",
   "furtherInformationSubheading": "Further Information",
