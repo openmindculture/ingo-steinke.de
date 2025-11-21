@@ -59,7 +59,7 @@ module.exports = {
   "ctaContact": "Ruf mich an oder hinterlasse mir eine Nachricht!",
   "workWithMe2": "Gern können wir uns bei einem Kaffee in Berlin, telefonisch oder per Zoom unverbindlich über dein Projekt unterhalten.",
   "projectsHeading": "Projekte",
-  "projects": "Überzeuge dich selbst von meiner Arbeit!",
+  "projects": "Überzeuge dich von meiner Arbeit!",
   "projectsMore1": "Auf der",
   "projectsMoreLinkText": "Seite über mich findest du weitere Projekte",
   "projectsHereAreSome": "Eine Auswahl meiner Projekte",
@@ -100,6 +100,7 @@ module.exports = {
   /* Skills */
   "SkillsHeading": "Fachkenntnisse (Skills)",
   "SkillsWebdevHeading": "Webentwicklung",
+  "SkillsWebdevMarkupHeading": "Markup, Templating",
   "SkillsWebdevDb": "Datenbanken",
   "SkillsLib": "Software Stacks",
   "SkillsLibStaticSiteGenerators": "SSG",

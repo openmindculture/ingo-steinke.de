@@ -100,6 +100,7 @@ module.exports = {
   /* Skills */
   "SkillsHeading": "Professional Skills",
   "SkillsWebdevHeading": "Web Development",
+  "SkillsWebdevMarkupHeading": "Markup, Templating",
   "SkillsWebdevDb": "Database",
   "SkillsLib": "Software Stacks",
   "SkillsLibStaticSiteGenerators": "SSG",
