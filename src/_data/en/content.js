@@ -54,7 +54,7 @@ module.exports = {
   "andA": "and a",
   "currentlyEcologicalIam": "I enjoy working for customers with an ecological and ethical focus in their work. I'm a",
   "memberOf": "member of",
-  "workWithMeHeading": "Let's Work Together!",
+  "workWithMeHeading": "Angebot",
   "workWithMe":"Do you want to overhaul your website? Does your team need support from a front-end developer with full-stack experience?",
   "ctaContact": "Call me or leave a message!",
   "workWithMe2": "I'm happy to discuss your project with no obligations over a coffee in Berlin, via Zoom, or in a phone call.",

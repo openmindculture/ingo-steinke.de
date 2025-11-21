@@ -54,7 +54,7 @@ module.exports = {
   "commaEnglishOnly": "",
   "currentlyEcologicalIam": "Ich arbeite gerne für Kundinnen und Kunden mit ökologischem und ethischem Fokus. Ich bin",
   "memberOf": "Mitglied im",
-  "workWithMeHeading": "Lass uns zusammenarbeiten!",
+  "workWithMeHeading": "Angebot",
   "workWithMe":"Du möchtest deine Website überarbeiten? Dein Team braucht Verstärkung durch einen Frontend-Entwickler mit Fullstack-Erfahrung?",
   "ctaContact": "Ruf mich an oder hinterlasse mir eine Nachricht!",
   "workWithMe2": "Gern können wir uns bei einem Kaffee in Berlin, telefonisch oder per Zoom unverbindlich über dein Projekt unterhalten.",
