@@ -920,7 +920,7 @@ a.menu-toggle:hover {
   margin: 0.35rem 0.5rem -0.35rem 0.5rem;
 }
 
-
+.jumbotronHeader .overline,
 .jumbotronHeader h1 {
   background:
     -webkit-linear-gradient(
