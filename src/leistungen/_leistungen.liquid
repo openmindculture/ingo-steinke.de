@@ -1,9 +1,9 @@
 ---
 tags: addtositemap
-isaboutme: true
+isservices: true
 imgdirectory: "../img"
 previewimage: "https://www.ingo-steinke.com/img/preview-creative-web-developer.png"
-previewtitle: "Leistungen und Angebote von Ingo Steinke"
+previewtitle: "Angebot und Fachkenntnisse (Skills) als Webentwickler Ingo Steinke"
 previewdescription: "Ingo Steinkes Leistungen und Angebote: Webentwicklung, Beratung und Optimierung"
 permalink: "leistungen/index.html"
 canonicalhref: "https://www.ingo-steinke.com/leistungen/"
@@ -22,7 +22,7 @@ Verkürzte farbige Skills- und Tech-Stack Blöcke die vorher bei "über mich" st
 <html lang="de">
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <title>Ingo Steinke: Angebot und Fachkenntnisse (Skills) als Webentwickler</title>
+    <title>Angebot und Fachkenntnisse (Skills) als Webentwickler Ingo Steinke</title>
     {% include '../_includes/html-head-common.liquid' %}
 </head>
 <body class="high-contrast">
@@ -47,12 +47,57 @@ Verkürzte farbige Skills- und Tech-Stack Blöcke die vorher bei "über mich" st
                     {{ content.aboutMeHeading }}
                 </h2>
                 <article class="text-width">
-                    <p>Ich bin Ingo Steinke, Webentwickler mit Frontend-Fokus und über 20 Jahren Berufserfahrung. TODO
+                    <p>Meine Arbeit als Senior Frontend-Web-Entwickler mit über 25 Jahren Berufserfahrung konzentriert sich auf die Entwicklung barrierefreier, responsiver und ökologisch effizienter Websites und Web Apps mit React, TypeScript, JavaScript, CSS und Astro.
                     </p>
                 </article>
             </section>
 
             {% include './_includes/skills.liquid', showallskills: 'showallskills', skillsTitle: 'Fachkenntnisse (Skills)'  %}
+
+            <section class="text-content-layout text-content-color semitransparent avoid-page-break">
+                <h2 class="target-offset" id="frontend-webentwicklung">
+                    Frontend-Web-Entwicklung: HTML, CSS, TypeScript, React
+                </h2>
+                <article class="text-width">
+                    <p>
+                        Barrierefreie Web-Entwicklung mit modernen Mitteln: HTML 5, CSS 3, TypeScript, JavaScript und React haben sich in der Frontend-Enwicklung bewährt. Das weiß ich als Senior Web-Entwickler aus langjähriger Berufserfahrung.
+                    </p>
+                    <p>
+                        React habe ich in mehreren Projekten eingesetzt, zuletzt zusammen mit Astro und Tailwind in einem Proof of Concept auf Dev-UX-Lesezeichen.de. Den JavaScript- und TypeScript-Code zur Optimierung des responsiven Masonry-Layouts habe ich in als npm-Paket <a href="https://www.npmjs.com/package/hexagonal-masonry-placement" target="_blank" rel="noopener">hexagonal-masonry-placement</a> auf npmjs.com veröffentlicht.
+                    </p>
+                </article>
+
+                <h2 class="target-offset">
+                    E-Commerce und Full-Stack-Web-Entwicklung
+                </h2>
+                <article class="text-width">
+                    <p>Als Shop-Software setze ich aktuell bevorzugt Shopware 6 oder WooCommerce ein. Seit 2024 bin ich <a href="/zertifizierter-shopware-6-frontend-webentwickler/">zertifizierter Shopware-Entwickler und Shopware Extension Partner</a>.</p>
+                    <p>Statische Seitenerstellung (SSG) ist unter anderem mit React, Astro oder Eleventy möglich und verbessert die Effizienz und Ladezeit von Websites meist deutlich. In der Backend-Web-Entwicklung arbeite ich mit PHP, TypeScript oder JavaScript (Node.js), wobei mein Schwerpunkt die Frontend-Web-Entwicklung ist.</p>
+                </article>
+
+                <h2 class="target-offset">
+                    Kollaboration, Qualitätssicherung und Barrierefreiheit
+                </h2>
+                <article class="text-width">
+                    <p>Kommunikation, Dokumentation und Qualitätssicherung spielen in Web-Projekten eine wichtige Rolle. Automatisierte Audit- und Testwerkzeuge wie Cypress, Playwright, Lighthouse, axe und WAVE erleichtern das Einhalten von Kundenwünschen und gesetzlichen Vorgaben (DSGVO, BFSG, WCAG etc.)</p>
+                </article>
+
+                <h2 class="target-offset">
+                    {{ content.aboutMeHeading }}
+                </h2>
+                <article class="text-width">
+                    Unterseiten
+                    3er-Linkbox und Wordpress, Shopware, Webseiten und Webseiten - bis auf Shopware der veraltete Kram, den man eigentlich gar nicht mehr verlinken will? und die URL-mäßig gar nicht alle unter /leistungen liegen, wohl aber englisch unter /services
+                    - accessible/sustainable
+                    - certified shopware
+                    - cv projects skills
+                    - freelance web dev berlin
+                    - optimization
+                    - web development
+                    - website check
+                    - sustainable wordpress theme development (Klimafreundliche Wordpress-Theme-Entwicklung)
+                </article>
+            </section>
 
             {% include '../_includes/section-imprint-contact.liquid' %}
         </main>

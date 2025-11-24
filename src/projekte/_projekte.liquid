@@ -1,6 +1,6 @@
 ---
 tags: addtositemap
-isaboutme: true
+isprojects: true
 imgdirectory: "../img"
 previewimage: "https://www.ingo-steinke.com/img/preview-creative-web-developer.png"
 previewtitle: "Projekte, Referenzen und Fallstudien - Webentwickler Ingo Steinke"
@@ -103,7 +103,44 @@ Stelle also den Nutzen oder das Ziel des Projekts in den Vordergrund, nicht das 
                 </article>
             </section>
 
-            {% include './_includes/skills.liquid', showallskills: 'showallskills', skillsTitle: 'Fachkenntnisse (Skills)'  %}
+          <section class="text-content-layout text-content-color semitransparent avoid-page-break">
+            <h2 class="target-offset" id="about-me">
+              {{ content.aboutMeHeading }}
+            </h2>
+            <article class="text-width">
+              Unterseiten
+              3er-Linkbox und Wordpress, Shopware, Webseiten und Webseiten - bis auf Shopware der veraltete Kram, den man eigentlich gar nicht mehr verlinken will? und die URL-mäßig gar nicht alle unter /leistungen liegen, wohl aber englisch unter /services
+              - astro react typescript tailwind vitest npm case study
+              - kleiderordnung responsive cms portfolio case study
+              - react app react react react wao case study
+              - shopware plugin php css case
+            </article>
+          </section>
+
+          <section class="tiled-content target-offset" id="projects">
+            <div class="pl1">
+              <h2>Projekte</h2>
+              Überzeuge dich selbst von meiner Arbeit!
+              <div class="grid-container grid-container--projects flip-box-container">
+                {% include './_includes/projects.liquid',
+                  projectlist: 'kleiderordnung, shopwareplugin, twistedconnection',
+                  showflipsides: 'showflipsides'
+                %}
+                {% include './_includes/projects.liquid',
+                  projectlist: 'kunnigkonsulting, fractal, portfolio, foodtogether, gemeva, reactapp',
+                  showicons: 'showicons'
+                %}
+              </div>
+            </div>
+          </section>
+
+          <section class="text-content-layout text-content-color semitransparent avoid-page-break">
+            <h2 class="target-offset" id="about-me">
+              Referenzen (Testimonials): Was meine Kunden sagen
+            </h2>
+            <article class="text-width">...
+            </article>
+          </section>
 
             {% include '../_includes/section-imprint-contact.liquid' %}
         </main>

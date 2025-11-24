@@ -959,9 +959,12 @@ ul.grid-container.skills {
   margin-bottom: 2em;
 }
 
-.sitemap ul:last-child,
-.sitemap ul li ul li {
+.sitemap ul:last-child {
   margin-bottom: 1rem;
+}
+
+.sitemap h2 {
+  margin-bottom: 0;
 }
 
 /* stylelint-disable-next-line no-descending-specificity */

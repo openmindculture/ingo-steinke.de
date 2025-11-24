@@ -31,6 +31,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/Ingo-Steinke-CV-Projects-Skills-2025-sustainable-web-developer.pdf');
   eleventyConfig.addPassthroughCopy('src/Ingo-Steinke-CV-Projekte-Skills-2024-nachhaltiger-Webentwickler.pdf');
   eleventyConfig.addPassthroughCopy('src/Ingo-Steinke-CV-Projekte-Skills-2025-nachhaltiger-Webentwickler.pdf');
+  eleventyConfig.addPassthroughCopy('src/Ingo-Steinke-Frontend-Web-Entwickler-CV-2025-10.pdf');
   eleventyConfig.addPassthroughCopy('src/contact/send/index.php');
 
   // redirect rules and domain configuration for netlify

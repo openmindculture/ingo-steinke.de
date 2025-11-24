@@ -44,10 +44,26 @@
           </svg>
         </a>
         <ul>
-          <li><a href="/{{ content.targetServicesUrl }}">{{ content.targetServices }}</a></li>
-          <li><a href="/{{ content.targetProjectsUrl }}">{{ content.targetProjects }}</a></li>
-          <li><a href="/{{ content.targetAboutMeUrl }}">{{ content.targetAboutMe }}</a></li>
-          <li><a href="/#contact" class="contact-link">{{ content.targetContact }}</a></li>
+          <li>
+            <a
+              {% if isservices %}class="active"{% endif %}
+              href="/{{ content.targetServicesUrl }}"
+            >{{ content.targetServices }}</a>
+          </li>
+          <li>
+            <a
+              {% if isprojects %}class="active"{% endif %}
+              href="/{{ content.targetProjectsUrl }}">{{ content.targetProjects }}</a>
+          </li>
+          <li>
+            <a
+              {% if isaboutme %}class="active"{% endif %}
+              href="/{{ content.targetAboutMeUrl }}">{{ content.targetAboutMe }}</a>
+          </li>
+          <li>
+            <a
+              href="/#contact" class="contact-link">{{ content.targetContact }}</a>
+          </li>
           <li>
             <a
               href="{{ alternatelink }}"

@@ -44,7 +44,7 @@
             <div class="flip-box-front tile">
               <a target="_blank" rel="noopener" href="{{ projectLinkUrl }}" title="{{ projectHeadline }} {{ content.projectWebsite }}">
                 <img
-                  src="{{ 'img/screenshot-' | append: project | append: '.png' }}"
+                  src="{{ '/img/screenshot-' | append: project | append: '.png' }}"
                   alt="{{ projectImgAlt | default: content.projectImgAltDefault }}"
                   width="{{ projectImgWidth | default: '1265' }}"
                   height="{{ projectImgHeight | default: '1129' }}"
@@ -63,7 +63,7 @@
               {% endcomment %}
               <p>
                 {% if showicons %}
-                  <img src="img/icon-{{ project }}.svg"
+                  <img src="/img/icon-{{ project }}.svg"
                        alt="{{ projectIconAlt | default: '' }}"
                        width="{{ projectIconWidth | default: '64' }}"
                        height="{{ projectIconHeight | default: '64' }}"
@@ -114,7 +114,7 @@
             {% endcomment %}
             <div class="description-group">
               {% if showicons %}
-                <img src="img/icon-{{ project }}.svg"
+                <img src="/img/icon-{{ project }}.svg"
                      alt="{{ projectIconAlt | default: '' }}"
                      width="{{ projectIconWidth | default: '64' }}"
                      height="{{ projectIconHeight | default: '64' }}"

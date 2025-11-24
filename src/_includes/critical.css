@@ -562,6 +562,12 @@ small {
   .page-navigation a:active {
     color: #fff;
     text-decoration: none;
+    letter-spacing: 0.5px;
+  }
+
+  .page-navigation a.active,
+  .page-navigation a:active {
+    font-weight: bold;
   }
 }
 
