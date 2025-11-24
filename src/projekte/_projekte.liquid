@@ -3,7 +3,7 @@ tags: addtositemap
 isaboutme: true
 imgdirectory: "../img"
 previewimage: "https://www.ingo-steinke.com/img/preview-creative-web-developer.png"
-previewtitle: "Projekte und Fallstudien von Ingo Steinke"
+previewtitle: "Projekte, Referenzen und Fallstudien - Webentwickler Ingo Steinke"
 previewdescription: "Ingo Steinkes Projekte und Fallstudien im Überblick."
 permalink: "projekte/index.html"
 canonicalhref: "https://www.ingo-steinke.com/projekte/"
@@ -11,7 +11,7 @@ canonicalhreflang: "de"
 alternatelink: "https://www.ingo-steinke.de/projects/"
 alternatehreflang: "en"
 ---
-
+{% comment %}TODO:
 Hier die vollständige Projektliste, die von Home angeteasert wird.
 Bessere Projektbeschreibungen, vgl. neuer CV, mit gesuchten Keywords!
 und Worte, die echte (auch kleine) Kunden schrieben.
@@ -69,3 +69,67 @@ How We Launched 10x Faster in Production
 Fokus verschieben: Von Technologie zu Mehrwert
 Nachhaltige E-Commerce-Lösung für ein lokales Unternehmen, optimiert für Performance, SEO und einfache redaktionelle Pflege (WooCommerce, Custom Theme, Performance Tuning) oder Hochperformante Website für ein lokales Studio – SEO-optimiert, barrierefrei und leicht pflegbar.
 Stelle also den Nutzen oder das Ziel des Projekts in den Vordergrund, nicht das Tool. Dass im Backend WordPress steckt, kann in einem Nebensatz oder gar nicht erwähnt werden.
+{% endcomment %}
+<html lang="de">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Projekte, Referenzen und Fallstudien - Webentwickler Ingo Steinke</title>
+    {% include '../_includes/html-head-common.liquid' %}
+</head>
+<body class="high-contrast">
+<div class="page-container" id="top">
+    <div class="page-content">
+        <header class="jumbotronHeader" id="jumbotronHeader">
+            <br>
+            {% include './_includes/jumbotron-image.liquid' %}
+            <div class="overline center">Ingo Steinke</div>
+            <h1 class="tagline center">Projekte, Referenzen und Fallstudien</h1>
+        </header>
+        {% include '../_includes/navigation-on-subpages.liquid', headerClassName: 'wide' %}
+        <main id="content-top" class="target-offset">
+            <section class="text-content-layout text-content-color semitransparent avoid-page-break">
+                <div class="only-print timestamp top-timestamp">
+                    Berlin,
+                    {{ "now" | date: "%d" }}{{ content.dotIfGerman }}
+                    {{ "now" | date: "%m" | customLocalizedMonthNameFilter }}
+                    {{ "now" | date: "%Y" }}
+                </div>
+                <h2 class="target-offset" id="about-me">
+                    {{ content.aboutMeHeading }}
+                </h2>
+                <article class="text-width">
+                    <p>Ich bin Ingo Steinke, Webentwickler mit Frontend-Fokus und über 20 Jahren Berufserfahrung. TODO
+                    </p>
+                </article>
+            </section>
+
+            {% include './_includes/skills.liquid', showallskills: 'showallskills', skillsTitle: 'Fachkenntnisse (Skills)'  %}
+
+            {% include '../_includes/section-imprint-contact.liquid' %}
+        </main>
+        <footer class="page-footer">
+            <p class="no-print">
+                <button class="animation-toggle">{{ content.buttonToggleAnimation }}</button>
+            </p>
+            <p class="landingpage--links no-print">
+                <a href="../#imprint">{{ content.targetImprint }}</a>
+                <a href="../#privacy">{{ content.targetPrivacy }}</a>
+                <a href="{{ content.landingLinkUrlSitemap }}">{{ content.landingLinkTextSitemap }}</a>
+            </p>
+            <div class="legal legal--copyright">
+                <span class="copyright-icon">&copy;</span>
+                <span class="copright-date">{{ "now" | date: "%Y" }}</span>
+                <span class="copyright-author">{{ content.imprintName }}</span>
+                <span class="copyright-details">
+          ({{ content.updatedWithColon }}
+                    {{ "now" | date: "%d" }}{{ content.dotIfGerman }}
+                    {{ "now" | date: "%m" | customLocalizedMonthNameFilter }}
+                    {{ "now" | date: "%Y" }})
+        </span>
+            </div>
+        </footer>
+        <div id="pdf-container" class="only-print initially-hidden pdf-container"></div>
+    </div>
+</div>
+</body>
+</html>
