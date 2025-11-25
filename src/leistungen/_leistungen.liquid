@@ -80,49 +80,17 @@ Verkürzte farbige Skills- und Tech-Stack Blöcke die vorher bei "über mich" st
                 </h2>
                 <article class="text-width">
                     <p>Kommunikation, Dokumentation und Qualitätssicherung spielen in Web-Projekten eine wichtige Rolle. Automatisierte Audit- und Testwerkzeuge wie Cypress, Playwright, Lighthouse, axe und WAVE erleichtern das Einhalten von Kundenwünschen und gesetzlichen Vorgaben (DSGVO, BFSG, WCAG etc.)</p>
+                    <p>Eine Zusammenarbeit ist auf Vertragsbasis als Freelancer, per Wartungsvertrag oder, bei kleineren Aufträgen, nach Angebot mit Kostenvoranschlag möglich.</p>
+                    <p>Interessiert? Melde dich gleich, um ein unverbindliches Gespräch zu vereinbaren! Ich bin telefonisch, per E-Mail, per Signal oder WhatsApp erreichbar. Falls ich einen Anruf nicht annehmen kann, hinterlasse mir bitte eine Sprachnachricht!</p>
                 </article>
 
-                <h2 class="target-offset">
-                    {{ content.aboutMeHeading }}
-                </h2>
-                <article class="text-width">
-                    Unterseiten
-                    3er-Linkbox und Wordpress, Shopware, Webseiten und Webseiten - bis auf Shopware der veraltete Kram, den man eigentlich gar nicht mehr verlinken will? und die URL-mäßig gar nicht alle unter /leistungen liegen, wohl aber englisch unter /services
-                    - accessible/sustainable
-                    - certified shopware
-                    - cv projects skills
-                    - freelance web dev berlin
-                    - optimization
-                    - web development
-                    - website check
-                    - sustainable wordpress theme development (Klimafreundliche Wordpress-Theme-Entwicklung)
-                </article>
+                <div class="cta-container">
+                    <a href="../#contact" class="buttonlike contact-link">Beratungstermin vereinbaren</a>
+                </div>
+
             </section>
-
-            {% include '../_includes/section-imprint-contact.liquid' %}
         </main>
-        <footer class="page-footer">
-            <p class="no-print">
-                <button class="animation-toggle">{{ content.buttonToggleAnimation }}</button>
-            </p>
-            <p class="landingpage--links no-print">
-                <a href="../#imprint">{{ content.targetImprint }}</a>
-                <a href="../#privacy">{{ content.targetPrivacy }}</a>
-                <a href="{{ content.landingLinkUrlSitemap }}">{{ content.landingLinkTextSitemap }}</a>
-            </p>
-            <div class="legal legal--copyright">
-                <span class="copyright-icon">&copy;</span>
-                <span class="copright-date">{{ "now" | date: "%Y" }}</span>
-                <span class="copyright-author">{{ content.imprintName }}</span>
-                <span class="copyright-details">
-          ({{ content.updatedWithColon }}
-                    {{ "now" | date: "%d" }}{{ content.dotIfGerman }}
-                    {{ "now" | date: "%m" | customLocalizedMonthNameFilter }}
-                    {{ "now" | date: "%Y" }})
-        </span>
-            </div>
-        </footer>
-        <div id="pdf-container" class="only-print initially-hidden pdf-container"></div>
+        {% include '../_includes/page-footer-on-subpages.liquid' %}
     </div>
 </div>
 </body>

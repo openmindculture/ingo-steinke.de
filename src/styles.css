@@ -1086,6 +1086,10 @@ button.buttonlike,
   height: 3rem;
 }
 
+main > section:last-child > .cta-container:last-child {
+  min-height: 10rem;
+}
+
 /* stylelint-disable no-descending-specificity */
 .cta-container a.buttonlike,
 .cta-container a.buttonlike:link,
