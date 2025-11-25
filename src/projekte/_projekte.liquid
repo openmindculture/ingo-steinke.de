@@ -121,16 +121,16 @@ Stelle also den Nutzen oder das Ziel des Projekts in den Vordergrund, nicht das 
             <div class="pl1">
               <h2>Projekte</h2>
               Überzeuge dich selbst von meiner Arbeit!
-              <div class="grid-container grid-container--projects flip-box-container">
-                {% include './_includes/projects.liquid',
-                  projectlist: 'kleiderordnung, shopwareplugin, twistedconnection',
-                  showflipsides: 'showflipsides'
-                %}
-                {% include './_includes/projects.liquid',
-                  projectlist: 'kunnigkonsulting, fractal, portfolio, foodtogether, gemeva, reactapp',
-                  showicons: 'showicons'
-                %}
-              </div>
+            </div>
+            <div class="grid-container grid-container--projects flip-box-container">
+              {% include './_includes/projects.liquid',
+                projectlist: 'kleiderordnung, shopwareplugin, twistedconnection',
+                showflipsides: 'showflipsides'
+              %}
+              {% include './_includes/projects.liquid',
+                projectlist: 'kunnigkonsulting, fractal, portfolio, foodtogether, gemeva, reactapp',
+                showicons: 'showicons'
+              %}
             </div>
           </section>
 
@@ -142,30 +142,8 @@ Stelle also den Nutzen oder das Ziel des Projekts in den Vordergrund, nicht das 
             </article>
           </section>
 
-            {% include '../_includes/section-imprint-contact.liquid' %}
         </main>
-        <footer class="page-footer">
-            <p class="no-print">
-                <button class="animation-toggle">{{ content.buttonToggleAnimation }}</button>
-            </p>
-            <p class="landingpage--links no-print">
-                <a href="../#imprint">{{ content.targetImprint }}</a>
-                <a href="../#privacy">{{ content.targetPrivacy }}</a>
-                <a href="{{ content.landingLinkUrlSitemap }}">{{ content.landingLinkTextSitemap }}</a>
-            </p>
-            <div class="legal legal--copyright">
-                <span class="copyright-icon">&copy;</span>
-                <span class="copright-date">{{ "now" | date: "%Y" }}</span>
-                <span class="copyright-author">{{ content.imprintName }}</span>
-                <span class="copyright-details">
-          ({{ content.updatedWithColon }}
-                    {{ "now" | date: "%d" }}{{ content.dotIfGerman }}
-                    {{ "now" | date: "%m" | customLocalizedMonthNameFilter }}
-                    {{ "now" | date: "%Y" }})
-        </span>
-            </div>
-        </footer>
-        <div id="pdf-container" class="only-print initially-hidden pdf-container"></div>
+      {% include '../_includes/page-footer-on-subpages.liquid' %}
     </div>
 </div>
 </body>
