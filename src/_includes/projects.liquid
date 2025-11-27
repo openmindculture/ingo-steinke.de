@@ -109,9 +109,9 @@
             <header>
               <h3>{{ projectHeadline }}</h3>
             </header>
-            {% comment if projectTimestamp %}
+            {% if projectTimestamp and showtimestamps %}
               <div class="timestamp">{{ projectTimestamp }}</div>
-            {% endcomment %}
+            {% endif %}
             <div class="description-group">
               {% if showicons %}
                 <img src="/img/icon-{{ project }}.svg"

@@ -245,24 +245,10 @@
                 </figcaption>
                 <blockquote>{{ content.testimonialDanielaQuote }}</blockquote>
               </figure>
-              <figure class="testimonial" lang="{{ content.  testimonialManuelaQuoteLang }}">
-                <figcaption>
-                  {{ content.testimonialManuelaAuthor }}:
-                  <span class="stars" title="{{ content.testimonialsFiveStarRating }}"></span>
-                </figcaption>
-                <blockquote lang="{{ content.  testimonialManuelaQuoteLang }}">{{ content.testimonialManuelaQuote }}</blockquote>
-              </figure>
-              <figure class="testimonial">
-                <figcaption>
-                  {{ content.testimonialPatriciaAuthor }}:
-                  <span class="stars" title="{{ content.testimonialsFiveStarRating }}"></span>
-                </figcaption>
-                <blockquote>{{ content.testimonialPatriciaQuote }}</blockquote>
-              </figure>
             </div>
 
-            <a href="{{ content.testimonialsReadMoreLinkUrl1 }}" target="_blank" rel="noopener">
-              {{ content.testimonialsReadMoreText1 }}
+            <a href="{{ content.testimonialsReadMoreLinkUrl0 }}" title="{{ content.testimonialsReadMoreTitle0 }}">
+              {{ content.testimonialsReadMoreText0 }}
             </a>
           </section>
 
@@ -288,7 +274,7 @@
             <br>
 
             <div class="pl1 transparent">
-              {{ content.projectsMore1 }} <a href="{{ content.targetProjectsUrl}}">
+              {{ content.projectsMore1 }} <a href="{{ content.targetProjectsDeeplinkUrl}}">
                 {{ content.projectsMoreLinkText }}
               </a>.
             </div>

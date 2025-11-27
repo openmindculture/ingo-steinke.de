@@ -69,6 +69,33 @@ How We Launched 10x Faster in Production
 Fokus verschieben: Von Technologie zu Mehrwert
 Nachhaltige E-Commerce-Lösung für ein lokales Unternehmen, optimiert für Performance, SEO und einfache redaktionelle Pflege (WooCommerce, Custom Theme, Performance Tuning) oder Hochperformante Website für ein lokales Studio – SEO-optimiert, barrierefrei und leicht pflegbar.
 Stelle also den Nutzen oder das Ziel des Projekts in den Vordergrund, nicht das Tool. Dass im Backend WordPress steckt, kann in einem Nebensatz oder gar nicht erwähnt werden.
+
+Startseite:
+Kleiderordnung, Shopware-Plugin, Twisted Connection,
+Kunnig Finanzberaterin, Design System STRABAG, React Web-App wao
+
+Projekte:
+Kleiderordnung, Shopware-Plugin, Twisted Connection,
+Kunnig Finanzberaterin, Design System STRABAG, Entwickler-Portfolio ISD,
+FoodTogether, gemeva Portfolio, React Web-App wao
+
+ohne zusätzliche Zeile könnte ich statt Food Together und gemeva hier etwas anderes featuren ...
+
+zum Vergleich der getunte CV:
++ dX wegen React, TypeScript, Astro etc.
++ Railslove/sedo als namhafter Online-Dienstleister
+= Kunnig Frontend Finanzberaterin
+= Full-Stack-Web-Entwicklung ISD (dann auf der Website auch so bezeichnen)
+= Kleiderordnung
+= FoodTogether (auch hier das Wording anpassen)
+= Shopware-Plugin hier auch mit Kunde FoodTogether (auch hier das Wording anpassen)
+= Design System STRABAG
+= React Web-App wao
+
+also kommt gemeva raus, und damit es zahlenmäßig und vom Layout passt und voll konsistent,
+müsste auch noch Twisted Connection raus, das zwar Natascha konkret so gut gefiel,
+aber als kleines WordPress-Projekt eigentlich nicht unbedingt in die Liste gehört - Ich denke ich lasse TC
+und nehme FT wieder raus, nenne sie dafür aber auch auf der Website als Kunde für das Shopware-Plugin
 {% endcomment %}
 <html lang="de">
 <head>
@@ -95,51 +122,67 @@ Stelle also den Nutzen oder das Ziel des Projekts in den Vordergrund, nicht das 
                     {{ "now" | date: "%Y" }}
                 </div>
                 <h2 class="target-offset" id="about-me">
-                    {{ content.aboutMeHeading }}
+                  Überzeuge dich selbst von meiner Arbeit!
                 </h2>
                 <article class="text-width">
-                    <p>Ich bin Ingo Steinke, Webentwickler mit Frontend-Fokus und über 20 Jahren Berufserfahrung. TODO
+                    <p>
+                      Ausgewählte Arbeitsproben, Kundenstimmen und Fallstudien zeigen den Mehrwert meiner Arbeit als Webentwickler: schöne, effiziente und erfolgreiche Websites, Web-Apps und Online-Shops, die konvertieren und dabei alle Vorgaben zu Barrierefreiheit und Datenschutz beachten.
                     </p>
                 </article>
             </section>
 
-          <section class="text-content-layout text-content-color semitransparent avoid-page-break">
-            <h2 class="target-offset" id="about-me">
-              {{ content.aboutMeHeading }}
-            </h2>
-            <article class="text-width">
-              Unterseiten
-              3er-Linkbox und Wordpress, Shopware, Webseiten und Webseiten - bis auf Shopware der veraltete Kram, den man eigentlich gar nicht mehr verlinken will? und die URL-mäßig gar nicht alle unter /leistungen liegen, wohl aber englisch unter /services
-              - astro react typescript tailwind vitest npm case study
-              - kleiderordnung responsive cms portfolio case study
-              - react app react react react wao case study
-              - shopware plugin php css case
-            </article>
-          </section>
-
           <section class="tiled-content target-offset" id="projects">
             <div class="pl1">
-              <h2>Projekte</h2>
-              Überzeuge dich selbst von meiner Arbeit!
+              <h2>Projekte: Websites, Shops und Case Studies</h2>
             </div>
             <div class="grid-container grid-container--projects flip-box-container">
               {% include './_includes/projects.liquid',
                 projectlist: 'kleiderordnung, shopwareplugin, twistedconnection',
-                showflipsides: 'showflipsides'
+                showflipsides: 'showflipsides',
+                showtimestamps: 'showtimestamps'
               %}
               {% include './_includes/projects.liquid',
-                projectlist: 'kunnigkonsulting, fractal, portfolio, foodtogether, gemeva, reactapp',
-                showicons: 'showicons'
+                projectlist: 'kunnigkonsulting, fractal, dxastroreact, nativetheme, portfolio, reactapp',
+                showicons: 'showicons',
+                showtimestamps: 'showtimestamps'
               %}
             </div>
           </section>
 
           <section class="text-content-layout text-content-color semitransparent avoid-page-break">
-            <h2 class="target-offset" id="about-me">
+            <h2 class="target-offset" id="testimonials">
               Referenzen (Testimonials): Was meine Kunden sagen
             </h2>
-            <article class="text-width">...
-            </article>
+            <div class="testimonials">
+              <figure class="testimonial">
+                <figcaption>
+                  {{ content.testimonialDanielaAuthor }}:
+                  <span class="stars" title="{{ content.testimonialsFiveStarRating }}"></span>
+                </figcaption>
+                <blockquote>{{ content.testimonialDanielaQuote }}</blockquote>
+              </figure>
+              <figure class="testimonial" lang="{{ content.  testimonialManuelaQuoteLang }}">
+                <figcaption>
+                  {{ content.testimonialManuelaAuthor }}:
+                  <span class="stars" title="{{ content.testimonialsFiveStarRating }}"></span>
+                </figcaption>
+                <blockquote lang="{{ content.  testimonialManuelaQuoteLang }}">{{ content.testimonialManuelaQuote }}</blockquote>
+              </figure>
+              <figure class="testimonial">
+                <figcaption>
+                  {{ content.testimonialPatriciaAuthor }}:
+                  <span class="stars" title="{{ content.testimonialsFiveStarRating }}"></span>
+                </figcaption>
+                <blockquote>{{ content.testimonialPatriciaQuote }}</blockquote>
+              </figure>
+            </div>
+
+            <a href="{{ content.testimonialsReadMoreLinkUrl1 }}" target="_blank" rel="noopener">
+              {{ content.testimonialsReadMoreText1 }}
+            </a>
+            <div class="cta-container">
+              <a href="../#contact" class="buttonlike contact-link">jetzt Kontakt aufnehmen!</a>
+            </div>
           </section>
 
         </main>
