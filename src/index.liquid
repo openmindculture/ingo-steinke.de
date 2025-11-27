@@ -39,6 +39,7 @@
     <link rel="preload" href="fonts/montserrat-v15-latin-ext_latin-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" media="screen" href="styles.css?v=4.8.1">
     <script defer src="js/scripts.js?v=4.8.1"></script>
+    {% include '../_includes/google-analytics.liquid' %}
     {% comment %}
     Defer non-critical CSS as suggested at https://web.dev/articles/defer-non-critical-css
     {% endcomment %}
@@ -62,6 +63,7 @@
       content="{{ content.pageDescription }}"
     >
     <meta name=description content="{{ content.pageDescription }}">
+    <meta name="author" content="Ingo Steinke">
     <meta name="p:domain_verify" content="{{ content.pDomainVerify }}"/>
     <meta name="google-site-verification" content="{{ content.googleSiteVerification }}"/>
     <meta name=robots content="index,follow">
