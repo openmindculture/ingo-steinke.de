@@ -129,6 +129,8 @@ if (
   strpos($post_msg, '//yandex.ru') !== false ||
   strpos($post_msg, 'dublikat.ru') !== false ||
   strpos($post_msg, '.ru/') !== false ||
+  strpos($post_msg, '/shorte.pro') !== false ||
+  strpos($post_msg, '/circapress.com/redirect/') !== false ||
   strpos($post_msg, '//telegra.ph/') !== false ||
   strpos($post_msg, '//tinyurl.com/') !== false ||
   strpos($post_msg, '//amazn.to/') !== false ||
@@ -139,6 +141,7 @@ if (
   strpos($post_msg, 'Unauthorized transaction') !== false ||
   strpos($post_msg, 'Bitcoin') !== false ||
   strpos($post_msg, 'bitcoin') !== false ||
+  strpos($post_msg, 'Bi tc o i n') !== false ||
   strpos($post_msg, 'cryptocurrency') !== false ||
   strpos($post_msg, 'cannabis') !== false ||
   strpos($post_msg, 'cbd ') !== false ||
@@ -147,6 +150,10 @@ if (
   strpos($post_msg, 'Casino ') !== false ||
   strpos($post_msg, 'Sportwetten ') !== false ||
   strpos($post_msg, 'topcasworld.') !== false ||
+  strpos($post_msg, 'thanksgiving') !== false ||
+  strpos($post_msg, 'THANKSGIVING') !== false ||
+  strpos($post_msg, 'Hersteller von E Bikes') !== false ||
+  strpos($post_msg, 'manufacturer of electric bicycles') !== false ||
   strpos($post_msg, 'artet drink') !== false ||
   strpos($post_msg, 'promote your product') !== false ||
   strpos($post_msg, 'impressed by the quality') !== false ||
@@ -189,6 +196,11 @@ if (
   strpos($post_emailfon, '+48') !== false ||
   strpos($post_emailfon, '+91') !== false ||
   strpos($post_emailfon, 'anonmails.de') !== false ||
+  strpos($post_emailfon, 'chinanameregistry.net') !== false ||
+  strpos($post_emailfon, 'finanzselect-online.de') !== false ||
+  strpos($post_emailfon, 'rabatt.info') !== false ||
+  strpos($post_emailfon, 'resend.dev') !== false ||
+  strpos($post_emailfon, 'spar-highlight.de') !== false ||
   str_ends_with($post_emailfon, '.ru') ||
   strpos($post_name, 'Ready for love') !== false ||
   strpos($post_name, 'Amandapeaceame') !== false ||
@@ -199,6 +211,7 @@ if (
   strpos($post_name, 'Nataler') !== false ||
   strpos($post_name, 'Phillippoify') !== false ||
   strpos($post_name, 'Tracyselty') !== false ||
+  strpos($post_name, 'Isaacnuh') !== false ||
   strpos($post_name, 'Iyannacrigo') !== false ||
   strpos($post_name, 'xrumer') !== false ||
   strpos($post_name, 'www.') !== false ||
@@ -230,17 +243,17 @@ if(!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
 } else {
   /* fallback for plain FORM SUBMIT */
   header('Content-Type: text/html');
-  header('Refresh: 6; url=https://www.ingo-steinke.com/');
+  header('Refresh: 6; url=https://www.ingo-steinke.de/');
   if ( $suspectedSpam ) {
     if (file_exists($stamp_filename) || $randombool) {
       header('Status: 403 Forbidden');
       echo "Status: 403 Forbidden\r\n";
-      echo "Sorry, you cannot access this service right now.\r\n";
-      echo "Action: failed. Suspected spam message rejected.\r\n";
+      echo "Sorry, you can't use this service right now.\r\n";
+      echo "Action: failed. Suspicious message content rejected.\r\n";
       $responseStatus = '403 Forbidden';
     } else if ('POST' != $_SERVER['REQUEST_METHOD']) {
       header('Status: 405 Method Not Allowed');
-      echo 'Sorry, something went wrong trying to submit the form!';
+      echo 'Sorry, something went wrong trying to submit the form.';
       $responseStatus = '405 Method Not Allowed';
     } else  {
       header('Status: 503 Service Unavailable');
@@ -252,7 +265,7 @@ if(!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
   } else {
     echo '<!DOCTYPE HTML><html lang=de><head><meta charset="utf-8"><title>Ingo Steinke - Contact Form</title></head>';
     echo '<body><h1>Thanks for your message!</h1>';
-    echo '<a href="https://www.ingo-steinke.com/">Back to ingo-steinke.com</a>';
+    echo '<a href="https://www.ingo-steinke.de/">Go to ingo-steinke.de</a>';
     echo '</body></html>';
   }
 }
