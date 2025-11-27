@@ -5,6 +5,10 @@
 * add an alternative CV page to generate a tabular German HR-optimized PDF (2025-06-23 -> freelancermap)
 * add project case study pages (public beta: React/wao.io, 2025-06-23)
 
+## [4.8.2.1] add anonymized tracking - 2025-11-27
+
+* add privacy-compliant Google Analytics integration
+
 ## [4.8.2] improve content - 2025-05-17
 * remove price example in favor of individual quotes
 
