@@ -1,5 +1,4 @@
-# Changelog
-
+# Changel
 ## [4.9.0] improve and extend content - TODO: 2025-11
 * add intermediate overview pages
 * more consistent and unsurprising navigation
@@ -9,14 +8,16 @@
 * add project case study pages (public beta: React/wao.io, 2025-06-23)
 * add impact landing pages (stub or public beta)
 
+## [4.8.4] add anonymized tracking - 2025-11-27
+
+* add privacy-compliant Google Analytics integration
+* update privacy policy text accordingly
+* update spam protection heuristics
+
 ## [4.8.3] improve and extend content - 2025-06-23
 * update project list
 * add an alternative CV page to generate a tabular German HR-optimized PDF (2025-06-23 -> freelancermap)
 * add project case study pages (public beta: React/wao.io, 2025-06-23)
-
-## [4.8.2.1] add anonymized tracking - 2025-11-27
-
-* add privacy-compliant Google Analytics integration
 
 ## [4.8.2] improve content - 2025-05-17
 * remove price example in favor of individual quotes
