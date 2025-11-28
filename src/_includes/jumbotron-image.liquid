@@ -2,20 +2,22 @@
   {% assign imgdirectory = 'img' %}
 {% endunless %}
 
-<picture>
-  <source
-    type="image/webp"
-    srcset="{{ imgdirectory }}/Ingo-Steinke-flower-shirt.webp 1x,
-            {{ imgdirectory }}/Ingo-Steinke-flower-shirt-496.webp 2x,
-            {{ imgdirectory }}/Ingo-Steinke-flower-shirt-large.webp 4x"
-  >
-  <img
-    src="{{ imgdirectory }}/Ingo-Steinke-flower-shirt.jpg"
-    srcset="{{ imgdirectory }}/Ingo-Steinke-flower-shirt-496.jpg 2x,
-            {{ imgdirectory }}/Ingo-Steinke-flower-shirt-large.jpg 4x"
-    width="248"
-    height="248"
-    alt="{{ content.jumbotronImageAlt }}"
-    class="avatar"
-  >
-</picture>
+<a href="/" class="transparent">
+  <picture>
+    <source
+      type="image/webp"
+      srcset="{{ imgdirectory }}/Ingo-Steinke-flower-shirt.webp 1x,
+              {{ imgdirectory }}/Ingo-Steinke-flower-shirt-496.webp 2x,
+              {{ imgdirectory }}/Ingo-Steinke-flower-shirt-large.webp 4x"
+    >
+    <img
+      src="{{ imgdirectory }}/Ingo-Steinke-flower-shirt.jpg"
+      srcset="{{ imgdirectory }}/Ingo-Steinke-flower-shirt-496.jpg 2x,
+              {{ imgdirectory }}/Ingo-Steinke-flower-shirt-large.jpg 4x"
+      width="248"
+      height="248"
+      alt="{{ content.jumbotronImageAlt }}"
+      class="avatar"
+    >
+  </picture>
+</a>

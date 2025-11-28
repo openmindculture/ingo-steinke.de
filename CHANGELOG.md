@@ -1,4 +1,12 @@
-# Changelog
+# Changel
+## [4.9.0] improve and extend content - TODO: 2025-11
+* add intermediate overview pages
+* more consistent and unsurprising navigation
+* rewrite existing content to improve SEO
+* improve existing landing page style 
+* update project list
+* add project case study pages (public beta: React/wao.io, 2025-06-23)
+* add impact landing pages (stub or public beta)
 
 ## [4.8.4] add anonymized tracking - 2025-11-27
 

@@ -1,5 +1,5 @@
     {% if showallprojects %}
-      {%- assign projects = 'kleiderordnung, shopwareplugin, twistedconnection, portfolio, gemeva, kunnigkonsulting, foodtogether, fractal, daskannstdutun' | split: ', ' -%}
+      {%- assign projects = 'kleiderordnung, shopwareplugin, twistedconnection, portfolio, gemeva, kunnigkonsulting, foodtogether, fractal, reactapp' | split: ', ' -%}
     {% else %}
       {%- assign projects = projectlist | split: ', ' -%}
     {% endif %}
@@ -44,7 +44,7 @@
             <div class="flip-box-front tile">
               <a target="_blank" rel="noopener" href="{{ projectLinkUrl }}" title="{{ projectHeadline }} {{ content.projectWebsite }}">
                 <img
-                  src="{{ 'img/screenshot-' | append: project | append: '.png' }}"
+                  src="{{ '/img/screenshot-' | append: project | append: '.png' }}"
                   alt="{{ projectImgAlt | default: content.projectImgAltDefault }}"
                   width="{{ projectImgWidth | default: '1265' }}"
                   height="{{ projectImgHeight | default: '1129' }}"
@@ -58,12 +58,12 @@
               <header>
                 <h3>{{ projectHeadline }}</h3>
               </header>
-              {% if projectTimestamp %}
+              {% comment if projectTimestamp %}
                 <div class="timestamp">{{ projectTimestamp }}</div>
-              {% endif %}
+              {% endcomment %}
               <p>
                 {% if showicons %}
-                  <img src="img/icon-{{ project }}.svg"
+                  <img src="/img/icon-{{ project }}.svg"
                        alt="{{ projectIconAlt | default: '' }}"
                        width="{{ projectIconWidth | default: '64' }}"
                        height="{{ projectIconHeight | default: '64' }}"
@@ -109,12 +109,12 @@
             <header>
               <h3>{{ projectHeadline }}</h3>
             </header>
-            {% if projectTimestamp %}
+            {% if projectTimestamp and showtimestamps %}
               <div class="timestamp">{{ projectTimestamp }}</div>
             {% endif %}
             <div class="description-group">
               {% if showicons %}
-                <img src="img/icon-{{ project }}.svg"
+                <img src="/img/icon-{{ project }}.svg"
                      alt="{{ projectIconAlt | default: '' }}"
                      width="{{ projectIconWidth | default: '64' }}"
                      height="{{ projectIconHeight | default: '64' }}"

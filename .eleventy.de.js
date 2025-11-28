@@ -3,6 +3,9 @@ module.exports = function (eleventyConfig) {
   // all subdirectory/*.liquid are processed implicitly,
   // so we need to exclude the ones that don't match the current language
   eleventyConfig.ignores.add('src/services');
+  eleventyConfig.ignores.add('src/projects');
+  eleventyConfig.ignores.add('src/impact_de'); // TODO reactivate when ready
+  eleventyConfig.ignores.add('src/impact_en');
   eleventyConfig.ignores.add('src/_includes');
   eleventyConfig.ignores.add('src/_data');
   eleventyConfig.ignores.add('src/_data/de/projects');
@@ -28,6 +31,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/Ingo-Steinke-CV-Projects-Skills-2025-sustainable-web-developer.pdf');
   eleventyConfig.addPassthroughCopy('src/Ingo-Steinke-CV-Projekte-Skills-2024-nachhaltiger-Webentwickler.pdf');
   eleventyConfig.addPassthroughCopy('src/Ingo-Steinke-CV-Projekte-Skills-2025-nachhaltiger-Webentwickler.pdf');
+  eleventyConfig.addPassthroughCopy('src/Ingo-Steinke-Frontend-Web-Entwickler-CV-2025-10.pdf');
   eleventyConfig.addPassthroughCopy('src/contact/send/index.php');
 
   // redirect rules and domain configuration for netlify
