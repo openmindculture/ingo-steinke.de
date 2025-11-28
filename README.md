@@ -82,6 +82,12 @@ to be used in liquid variables with the `content.` prefix.
 
 My localization setup does not match eleventy's front matter handling, but this proved a quick and maintainable way to get things done when I did not find any official documentation how to internationalize eleventy projects in January 2021.
 
+### Image optimization
+
+Provide cwebp alternatives to jpg which can be created manually using the cwebp CLI:
+
+- `cwebp [options] src/img/input_file.jpg -o src/img/output_file.webp`
+
 ## Build
 
 ```

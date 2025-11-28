@@ -80,11 +80,11 @@ module.exports = {
   "projectWebsite": "Website",
   "projectSourceCode": "Quellcode",
   /* work */
-  "workHeading": "Langlebig, barrierefrei und umweltfreundlich",
-  "work": "Deine Layouts realisiere ich möglichst plattformübergreifend, responsiv und barrierefrei (BFSG-konform). Wir finden langlebige Lösungen, elegant, verständlich und pflegeleicht. Mehr dazu: <a href='/webseiten-klimafreundlich-barrierefrei-optimieren/'>Webseiten klimafreundlich und barrierefrei optimieren lassen</a>.",
+  "workHeading": "Webentwicklung: Langlebig, barrierefrei und umweltfreundlich",
+  "work": "Deine Layouts realisiere ich als Webentwickler möglichst plattformübergreifend, responsiv und barrierefrei (BFSG-konform). Wir finden langlebige Lösungen: elegant, langlebig und verständlich. Als teamfaähiger Freelancer mit einem Netzwerk anderer Experten kann ich auch große Projekte unterstützen.",
   "workReliableHeading": "Zuverlässig und verständlich",
-  "workReliable": "Mir ist es wichtig, technische Themen einfach zu erklären, die Wünsche meiner Kundschaft zu verstehen, weiterzudenken und nachhaltig umzusetzen.",
-  "workClientsBenefit": "Als Kund:in profitierst du von geringeren Wartungskosten, optimierter Performance und erfolgreicher Kundenansprache.",
+  "workReliable": "Mir ist es wichtig, technische Themen einfach zu erklären, Kundenwünsche zu verstehen, konstruktiv weiterzudenken und nachhaltig umzusetzen.",
+  "workClientsBenefit": "Deine Vorteile: erfolgreiche Kundenansprache, transparente Wartungskosten und optimierte Performance.",
   "pricingHeading": "Preise",
   "workFullstack": "Bei der Weiterentwicklung bestehenden Codes kommt mir meine Berufserfahrung und meine pragmatische Einstellung zugute. Mit meinen Erfahrungen im Backend- und DevOps-Bereich und meiner hohen Lernbereitschaft übernehme ich bei Bedarf alle Aufgaben, die sich bei der Webentwicklung ergeben oder finde geeignete Partner:innen für die Umsetzung.",
   "pricing": "Ich biete verschiedene Preismodelle an. Bei einer Abrechnung auf Stundenbasis gebe ich üblicherweise im Vorfeld eine Aufwandsschätzung ab. Festpreisangebote sind ebenfalls möglich. Erfrage gerne ein individuelles Angebot!",
@@ -121,13 +121,13 @@ module.exports = {
   "SkillsDevuxImg": "Kollaboration und agile Methoden",
   "SkillsOtherSystems": "Page Builder und sonstige Software",
   /* About me, talks, and events */
-  "aboutMeHeading": "Über mich: Webentwickler mit Begeisterung für UX-Design",
+  "aboutMeHeading": "Webentwickler mit Begeisterung für UX-Design",
   "aboutMeIntroHeading": "Was mich immer noch fasziniert",
   "aboutMeIntro": "Weltweite Kommunikation und Inspiration: das World Wide Web verbindet die Menschen mithilfe robuster und dezentraler Technologie. Schöne, schnelle und barrierefreie Websites sollen allen Menschen Zugang zu diesem Netzwerk bieten. Diese Vision prägt meine Arbeit.",
   "aboutMeCvHeading": "Werdegang",
   "aboutMeCv1": "Interaktive Websites und Browserspiele waren die ersten Produkte meines 2000 mitgegründeten Startups in Münster. Suchmaschinenoptimierung und unsere eigene CMS- und Shop-Software bildeten später das Kerngeschäft.",
   "aboutMeCv2": "Als angestellter E-Commerce-Engineer bei Xsite in Düsseldorf entwickelte ich von 2010 bis 2014 Online-Shops für Shop-Apotheke.com, den Kunstversand Ars mundi und andere Kunden. Als Technical Consultant bei Sevenval Technologies (später Avenga Germany) in Köln und Berlin optimierte ich die Ladezeit und Handytauglichkeit von Apps und Websites der Frankfurter Allgemeinen Zeitung und Online-Shops der Otto Group und erstellte Frontend-Anwendungen für wao.io und andere Kunden. Seit Ende 2020 bin ich als selbstständiger Webentwickler und Freelancer für Agenturen und individuelle Kundinnen und Kunden tätig.",
-  "aboutMeEthicalHeading": "Zukunftsthemen und nachhaltige Digitalisierung",
+  "aboutMeEthicalHeading": "Barrierefreiheit und nachhaltige Digitalisierung",
   "aboutMeEthical": "Digitalisierung steht in erster Linie für technologischen Fortschritt. Der wirtschaftliche Nutzen nachhaltiger Innovation wurde bisher oft übersehen. Ethische und ökologische Projekte beispielsweise in der Verkehrswende, bei erneuerbaren Energien und umweltfreundlicher Mode möchte ich mit meiner Arbeit unterstützen. Gesetzlichen Vorgaben wie der Datenschutz-Grundverordnung oder dem Barrierefreiheits-Stärkungs-Gesetz können wir dank meiner Erfahrung auf elegante Weise entsprechen.",
   "aboutMeEthicalImA": "Ich bin ein",
   "aboutMeEthicalA": "ein",
@@ -324,7 +324,9 @@ module.exports = {
   "furtherInformationSubheading": "Weitere Informationen",
   "projectImgAltDefault": "Projekt-Screenshot",
   "userSitemapClaimTitle": "Sitemap: alles auf einen Blick",
-  "userSitemapDescription": "Auf dieser Sitemap sind alle Unterseiten zu Angeboten, Dienstleistungen und Referenzen des Berliner Webentwicklers Ingo Steinke auf einen Blick zusammengefasst."
+  "userSitemapDescription": "Auf dieser Sitemap sind alle Unterseiten zu Angeboten, Dienstleistungen und Referenzen des Berliner Webentwicklers Ingo Steinke auf einen Blick zusammengefasst.",
+  "hubLaptopImageAlt": "Portrait: Ingo Steinke, Frontend Web Developer, Freelancer, arbeitet am Laptop im Impact Hub Berlin",
+  "hubLaptopImageCaption": "Ingo im Impact Hub Berlin",
 };
 
 

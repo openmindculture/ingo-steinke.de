@@ -21,10 +21,10 @@ metanoindex: true
         <li class="sitemap--section--skills"><!-- Angebot, Leistungen, Services, Skills, Fachkenntnisse -->
           <a href="{{ content.targetServicesUrl }}">{{ content.targetServicesTitle }}</a>
           <ul>
+            <li><a href="{{ content.landingLinkUrlFreelanceBerlin }}">{{ content.landingLinkTitleFreelanceBerlin }}</a></li>
             <li><a href="{{ content.landingLinkUrlShopware }}">{{ content.landingLinkTextShopware }}: {{ content.landingLinkTitleShopware }}</a></li>
             <li><a href="{{ content.landingLinkUrlWordPress }}">{{ content.landingLinkTitleWordPress }}</a></li>
             <li><a href="{{ content.landingLinkUrlSustainability }}">{{ content.landingLinkTextSustainability }}: {{ content.landingLinkTitleSustainability }}</a></li>
-            <li><a href="{{ content.landingLinkUrlFreelanceBerlin }}">{{ content.landingLinkTitleFreelanceBerlin }}</a></li>
             <li><a href="/{{ content.servicesBuildMoreLinkPath }}" title="{{ content.servicesBuildMoreSubFooterLinkTitle }}">{{ content.servicesBuildMoreSubFooterLinkText }}</a>
             <li><a href="/{{ content.servicesVerifyMoreLinkPath }}" title="{{ content.servicesVerifyMoreSubFooterLinkTitle }}">{{ content.servicesVerifyMoreSubFooterLinkText }}</a>
             <li><a href="/{{ content.servicesImproveMoreLinkPath }}" title="{{ content.servicesImproveMoreSubFooterLinkTitle }}">{{ content.servicesImproveMoreSubFooterLinkText }}</a>
@@ -40,7 +40,8 @@ metanoindex: true
         <li class="sitemap--section--about">
           <a href="{{ content.targetAboutMeUrl }}">{{ content.targetAboutMe }}</a>
           <ul>
-            <li><a href="/{{ content.targetHrConciseCvUrl }}">{{ content.targetHrConciseCv }}</a> (PDF, Deutsch, latest)</li>
+            <li><a href="{{ content.targetHrConciseCvUrl }}" hreflang="de" target="_blank">{{ content.targetHrConciseCv }}</a> (PDF, Deutsch)</li>
+            <!--
             <li><a href="../Ingo-Steinke-CV-Projekte-Skills-2025-nachhaltiger-Webentwickler.pdf" hreflang="de" target="_blank"
                    rel="noopener noreferrer nofollow">Ingo Steinke, Webentwickler, Berlin: CV, Projekte, Skills</a>
               (PDF, Deutsch, 04/2025)
@@ -49,6 +50,7 @@ metanoindex: true
                    rel="noopener noreferrer nofollow">Ingo Steinke, web developer, Berlin: CV, projects, skills</a>
               (PDF, English, 04/2025)
             </li>
+            -->
             <li>
               <a href="../Shopware-6-Certified-Developer-Ingo-Steinke-de.pdf" hreflang="en" target="_blank">
                 Shopware Certified Developer Ingo Steinke

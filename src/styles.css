@@ -7,6 +7,7 @@ body {
 
 img {
   border: none;
+  border-radius: .25rem;
 }
 
 figure.content-image {
@@ -957,6 +958,10 @@ ul.code-links {
 
 ul.grid-container.skills {
   margin-bottom: 2em;
+}
+
+.sitemap li {
+  margin-top: 0.5rem;
 }
 
 .sitemap ul:last-child {
