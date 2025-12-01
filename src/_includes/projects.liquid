@@ -10,8 +10,11 @@
       {%- assign projectImgAlt = '' -%}
       {%- assign projectImgWidth = '' -%}
       {%- assign projectImgHeight = '' -%}
+      {%- assign projectIconSlug = '' -%}
       {%- assign projectLinkUrl = '' -%}
       {%- assign sourceLinkUrl = '' -%}
+      {%- assign customLinkUrl = '' -%}
+      {%- assign customLinkTitle = '' -%}
       {%- assign projectTimestamp = '' -%}
       {%- assign projectDescription = '' -%}
       {%- assign contentfile = '../_data/'
@@ -63,7 +66,7 @@
               {% endcomment %}
               <p>
                 {% if showicons %}
-                  <img src="/img/icon-{{ project }}.svg"
+                  <img src="/img/icon-{{ projectIconSlug |  default: project }}.svg"
                        alt="{{ projectIconAlt | default: '' }}"
                        width="{{ projectIconWidth | default: '64' }}"
                        height="{{ projectIconHeight | default: '64' }}"
@@ -87,10 +90,17 @@
                   </a>
                 </div>
               {% endif %}
+              {% if customLinkUrl != '' %}
+                <div>
+                  <a class="code-link print-display-block breakable" target="_blank" rel="noopener" href="{{ customLinkUrl }}">
+                    {{ customLinkTitle }}
+                  </a>
+                </div>
+              {% endif %}
               <p>
                 {%- assign hashtagsArray = projectHashtags | split: ' ' -%}
                 {%- for hashtag in hashtagsArray %}
-                  <span class="hashtag">{{ hashtag }}</span>
+                  <span class="hashtag">{{ hashtag | replace: '_', ' ' }}</span>
                 {% endfor -%}
               </p>
             </div>
@@ -114,7 +124,7 @@
             {% endif %}
             <div class="description-group">
               {% if showicons %}
-                <img src="/img/icon-{{ project }}.svg"
+                <img src="/img/icon-{{ projectIconSlug |  default: project }}.svg"
                      alt="{{ projectIconAlt | default: '' }}"
                      width="{{ projectIconWidth | default: '64' }}"
                      height="{{ projectIconHeight | default: '64' }}"
@@ -136,6 +146,13 @@
               <div class="project-link-wrapper">
                 <a class="code-link print-display-block breakable" target="_blank" rel="noopener" href="{{ sourceLinkUrl }}">
                   {{ sourceLinkUrl | unprefixedHumanReadableUrl }}
+                </a>
+              </div>
+            {% endif %}
+            {% if customLinkUrl != '' %}
+              <div>
+                <a class="code-link print-display-block breakable" target="_blank" rel="noopener" href="{{ customLinkUrl }}">
+                  {{ customLinkTitle }}
                 </a>
               </div>
             {% endif %}
