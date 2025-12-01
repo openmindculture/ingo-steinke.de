@@ -3,24 +3,8 @@
 TL;DR
 
 top keywords across all relevant job descriptions:
-web (35); kenntnisse (29); entwicklung (26); frontend (25); typescript (22)
+web (35); kenntnisse (29); entwicklung (26); frontend (25); typescript (22), Entwickler , Development, Developer, Anforderungen , Techhnologien , Tools, Dokumentation CSS Barrierefreiheit  Mobile Javascript React Docker Git Github  agilen Methoden Senior Lead Engineer Websites Webseiten UX Software Performance remote Berlin Umsetzung Frameworks Code
 
-more frequent and relevant keywords:
-Entwickler
-Development
-Anforderungen
-Techhnologien
-Tools
-Dokumentation
-CSS
-Barrierefreiheit
-Mobile
-Javascript
-React
-Docker
-Git
-Github
-agilen Methoden
 DevOps
 Entwicklungsprozesse
 Continuous Delivery Pipelines
