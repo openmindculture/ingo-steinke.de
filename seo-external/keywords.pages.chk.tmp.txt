@@ -1,0 +1,86 @@
+Welche der folgenden Schlagworte sind populär mit hohem Suchvolumen und relevant für die Suche nach einem erfahrenen Frontend Web Entwickler als Freelancer in Berlin für professionelle Projekte mit lukrativem Budget?
+
+web, frontend, berlin, webentwickler, typescript, shopware, react, javascript, css, entwicklung, developer, wordpress, portfolio, html, entwickler, websites, senior, berufserfahrung, erfahren, projekte, freelancer, barrierefreiheit, woocommerce, website, webseiten, webentwicklung, wartung, tools, software, performance, mitarbeiter, legacy, kenntnisse, github, fachkenntnisse, docker, code, cms, astro
+
+❌ Anti-/Negativ-Keywords (auch fürs Blogging beachten)
+--- kostenlos gratis billig preiswert Budget erstellen
+--- DIY Vorlage Template Basteln Selbermachen Anfänger Schulung
+--- Support Hilfe Fehlersuche Problem Wartung
+--- Job Arbeitsplatz Karriere Ausbildung Praktikum lernen Tutorial onboarding
+--- wix jimdo squarespace baukasten
+--- webseite website builder homepage
+--- sofort garantiert express schnell viral traffic
+
+⚠️ Weniger sinnvoll / sehr generisch oder ineffektiv allein
+-- wartung/legacy - Eher Maintenance als Development
+-- docker - Backend/DevOps-lastig
+-- mitarbeiter - Widersprüchlich zu "Freelancer"
+-- „tools“, „software“, „code“ — sehr breit und unspezifisch; schwer zu ranken ohne Kontext.
+-- „webseiten“ vs. „webseite“ — beide generisch, oft unscharf und mit starkem Wettbewerb.
+-- „mitarbeiter“ — klingt nach Angestellter: eher unpassend, wenn du dich als Freelancer vermarkten willst.
+-- cms/astro - (zu) spezialisierte Technologien
+
+😼 Individuelle Expertise und warmes Wording:
++ maßgeschneidert / individuell
++ strategisch / nachhaltig / skalierbar
+Mehrwert:
++ Ich helfe Impact-Startups, barrierefreie und performante Websites umzusetzen – ohne Kompromisse bei Design oder Geschwindigkeit.“
++ „Ich unterstütze Teams dabei, komplexe Frontends nachhaltig zu modernisieren, damit sie sicher, wartbar und zukunftsfähig sind.“
++ Kennenlernen Kennenlern-Call
+
+🎯 SOLL: Empfehlungen gelistet, gewichtet, erneut gezählt
+
+berlin (28); frontend (25); entwickler (19); developer (19); webentwickler (15); web (15); senior (13); freelancer (12); webentwicklung (10); typescript (8); javascript (8); freelance (8); react (6); front (6); end (6); development (6); erfahren (5); website (4); performance (4); accessibility (4); wartung (3); shopware (3); css (3); barrierefreiheit (3); woocommerce (2); services (2); professionelle (2); erfahrener (2); berufserfahrung (2); usability (1)
+
+SOLL laut Notizen/Recherchen/Relevanz/Suchvolumen (TODO: Update nach Google Ads Testlauf)
+ Web Kenntnisse Entwicklung Frontend TypeScript Cypress Berlin
+
+SOLL laut Stellenbeschreibungen und Textsammlung Notes:#biz und seo-external/Stellenausschreibungen.md
+ web (35); kenntnisse (29); entwicklung (26); frontend (25); typescript (22), Entwickler , Development, Developer, Anforderungen , Techhnologien , Tools, Dokumentation CSS Barrierefreiheit  Mobile Javascript React Docker Git Github  agilen Methoden Senior Lead Engineer Websites Webseiten UX Software Performance remote Berlin Umsetzung
+ ++ Frameworks
+ Code
+
+🔥 Call-to-Action, Hero-Section, Meta-Description:
+
++ verfügbar (SEO mittel, aber als starker Entscheidungs-Trigger sehr relevant für Conversion)
+
+
+Check keywords
+
+/ (home)
+ website (9); shopware (7); ingo (7); web (6); steinke (6); frontend (6 ++); css (6); projekte (5); portfolio (5); javascript (5); react (4); cms (4); webentwickler (3 ++); verständlich (3); system (3 --);
+
+über mich
+ web (8); webentwickler (7); frontend (6); berlin (6); ingo (5); websites (4); steinke (4); performance (4); freelancer (4); skills (3);
+
+Projekte Referenzen
+ web (9); css (8); portfolio (7); javascript (7); ingo (7); 2025 (7); website (6); react (6); shopware (5); frontend (5 ++); app (5); php (4); html (4); design (4); cms (4); typescript (... ++);
+
+Leistungen Fachkenntnisse Skills (Angebot und Fachkenntnisse als Webentwickler)
+ web (13); javascript (8); entwicklung (8); typescript (7 ++); react (6 ++); frontend (6 ++); css (6); shopware (5); html (5); entwickler (5 ++); qualitätssicherung (4 --); astro (4);
+
+LP Berlin Freelancer
+ berlin (17); webentwickler (16); frontend (8); freelance (7); teams (6); ort (5); websites (4); team (4); projekten (4); gerne (4); freelancer (4); code (4); arbeite (4); web (3); startups (3)
+
+LP Shopware
+ shopware (12); shop (5); 6 (5); storefront (4); optimierung (4); e (4); commerce (4); kostenlose (3 --); ingo (3); zertifizierter (2); webentwickler (2); unverbindliche (2); steinke (2); preistransparenz (2) ... entwicklung (2 ++)
+
+LP WordPress WooCommerce Legacy
+ woocommerce (3 ++); open (3); source (2); wordpress (2); websites (2); webentwickler (2); themes (2); theme (2);  software (2); projekte (2); nachhaltig (2 ++);
+
+LP Sustainability
+ barrierefreiheit (6); websites (5); nachhaltigkeit (5); co2 (4); accessibility (4); web (3); datenschutz (3); bfsg (3); wcag (2); wartbarkeit (2);
+
+externe Profile:
+
+freelancermap
+ javascript (9); html (8); css (8); typescript (7); frontend (7); web (5); php (5); entwicklung (5); shopware (4); react (4); ingo (4); entwickler (4); berlin (4); astro (4); wordpress (3); webentwicklung (3); steinke (3); postcss (3); mitarbeiter (3); docker (3); barrierefreiheit (3); barrierefreie (3);
+
+
+freelance.de
+ berlin (4); 2025 (4); monate (3); css (3); wordpress (2); typescript (2); remote (2); react (2); portfolio (2); javascript (2); html (2); frontend (2); details (2); berufserfahrung (2); anzeigen (2); 7 (2); 4 (2); 1 (2); zürich (1); webentwicklung (1)
+
+linkedin
+ web (9); developer (6); senior (4); steinke (3); experience (3); end (3);
+
+TODO: Varianten von Linkedin-post und DEV-Blogpost Creative Web Developer: my Updated Profile/Portfolio as a Senior Web Developer mit Links zu ISD(.de) Startseite und LP Berlin Freelancer (DE/EN je nachdem)

@@ -61,9 +61,9 @@
               <header>
                 <h3>{{ projectHeadline }}</h3>
               </header>
-              {% comment if projectTimestamp %}
+              {% if projectTimestamp and showtimestamps %}
                 <div class="timestamp">{{ projectTimestamp }}</div>
-              {% endcomment %}
+              {% endif %}
               <p>
                 {% if showicons %}
                   <img src="/img/icon-{{ projectIconSlug |  default: project }}.svg"
