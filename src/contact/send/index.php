@@ -20,6 +20,7 @@ $post_msg       = trim(filter_var($_REQUEST['contactform-field-message'], FILTER
 $post_referrer  = trim(filter_var($_REQUEST['referrer'], FILTER_SANITIZE_STRING));
 $spamtrap1      = filter_var($_REQUEST['contactform-field-captcha'], FILTER_SANITIZE_STRING);
 $spamtrap2      = filter_var($_REQUEST['contactform-field-homepage'], FILTER_SANITIZE_STRING);
+$spamtrap3      = filter_var($_REQUEST['contactform-field-mousemove_activity'], FILTER_SANITIZE_STRING);
 $time_ip_stamp  = date("YmdHi") . '_';
 $remote_addr    = trim(filter_var($_SERVER['REMOTE_ADDR'], FILTER_SANITIZE_EMAIL));
 $time_ip_stamp .= $remote_addr;
@@ -31,6 +32,7 @@ $suspectedSpam = false;
 if (
   !empty($spamtrap1) ||
   !empty($spamtrap2) ||
+  !empty($spamtrap3) ||
   'POST' != $_SERVER['REQUEST_METHOD'] ||
   !strpos($post_msg, ' ') ||
   strpos($post_msg, 'Dominate YouTube') !== false ||
