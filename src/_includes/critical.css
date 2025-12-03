@@ -657,6 +657,7 @@ small {
     max-width: 99%;
     padding-left: 0;
     padding-right: 0;
+    justify-content: space-around;
   }
 
   ul.social-links li {

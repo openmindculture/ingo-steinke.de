@@ -23,9 +23,8 @@ Scenario('Test website content and navigation', ({ I }) => {
   // By default, CodeceptJS tries to find the button or link with the exact text on it
   I.click('Datenschutz');
   I.see('Umfang der Verarbeitung personenbezogener Daten');
-  I.see('Schreib mir eine Nachricht');
-  I.see('Nachricht absenden');
-  I.see('buche einen Termin');
+  I.see('Deine Projektanfrage');
+  I.see('Anfrage absenden');
 
   // We can ensure NOT to see something:
   I.dontSeeElement('.error');

@@ -33,7 +33,9 @@ window.addEventListener('DOMContentLoaded', () => {
   contactLinks.forEach(contactLink => {
     contactLink.addEventListener('click', () => {
       if (window._paq) {
-        window._paq.push(['trackEvent', 'click', '#contact', '']);
+        const linkText = contactLink.innerText || '';
+        window._paq.push(['trackEvent', 'click', '#contact', linkText]);
+        console.log('tracked button link click with text ' + linkText);
       }
     });
   });
@@ -80,7 +82,7 @@ window.addEventListener('DOMContentLoaded', () => {
   if (languageSwitch) {
     languageSwitch.addEventListener('click', () => {
       if (window.location.hash && window.location.hash != '#top') {
-        var currentHrefParts = languageSwitch.href.split('#');
+        const currentHrefParts = languageSwitch.href.split('#');
         languageSwitch.href = currentHrefParts[0] + window.location.hash;
       }
     });
@@ -124,7 +126,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   let decorationElement = document.getElementById('decoration');
   if (decorationElement) {
-    var randomProperties = [
+    const randomProperties = [
       '--random-factor-grow-max',
       '--random-factor-grow-delay-top-right',
       '--random-factor-grow-delay-bottom-right',

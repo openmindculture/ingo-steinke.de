@@ -61,14 +61,14 @@ Sehr gut geeignet im Dienstleister-Kontext:
 
 🎯 „Unverbindliche Beratung anfragen“
 
-🎯 „Kostenlose Erstberatung sichern“
+🎯❌ „Kostenlose Erstberatung sichern“
 
 🎯 „Projekt besprechen“
 
 Stark performend:
 
 🎯 "Projekt besprechen" - Konkret, niedrige Hemmschwelle
-🎯 "Kostenloses Erstgespräch" - Bietet Wert, reduziert Risiko
+🎯❌ "Kostenloses Erstgespräch" - Bietet Wert, reduziert Risiko
 🎯 "Verfügbarkeit anfragen" - Passt zu Freelancer-Kontext
 🎯 "Jetzt Kontakt aufnehmen" - Klar und direkt
 

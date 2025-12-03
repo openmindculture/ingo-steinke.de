@@ -76,7 +76,7 @@ a:focus {
 .social-links a:focus {
   border-radius: 0.25em;
   color: var(--primary-background);
-  padding: 1.25em 1em 0.75em 1em;
+  max-height: 4em;
 }
 
 .font-sans {
@@ -139,11 +139,11 @@ body.high-contrast .alternating-div-color > div:nth-child(2n-1):not(.no-alternat
 }
 
 /* TODO refactor alternate colors to modifier classes */
-.vcard a:link,
-.vcard a:visited,
-.vcard a:active,
-.vcard a:focus,
-.vcard a:hover,
+.vcard-block-visual-background a:link,
+.vcard-block-visual-background a:visited,
+.vcard-block-visual-background a:active,
+.vcard-block-visual-background a:focus,
+.vcard-block-visual-background a:hover,
 .page-footer a:link,
 .page-footer a:visited,
 .page-footer a:active,
@@ -175,11 +175,11 @@ a.menu-toggle:hover {
     99% 100%;
 }
 
-.vcard a:link,
-.vcard a:visited,
-.vcard a:active,
-.vcard a:focus,
-.vcard a:hover {
+.vcard-block-visual-background a:link,
+.vcard-block-visual-background a:visited,
+.vcard-block-visual-background a:active,
+.vcard-block-visual-background a:focus,
+.vcard-block-visual-background a:hover {
   background-image:
     linear-gradient(#fff, #fff),
     linear-gradient(#fff, #fff),
@@ -193,8 +193,8 @@ a.menu-toggle:hover {
   margin-left: 1rem;
 }
 
-.vcard a:focus,
-.vcard a:hover,
+.vcard-block-visual-background a:focus,
+.vcard-block-visual-background a:hover,
 .page-footer a:focus,
 .page-footer a:hover,
 .transparent a:focus,
@@ -369,12 +369,28 @@ body.high-contrast .bg-peel {
 
 .vcard {
   position: relative;
+  margin: 1em auto 0 auto;
+  max-width: 490px;
+}
+
+.vcard-block {
   padding: 1em;
+  text-align: left;
+}
+
+.vcard-block-visual-background {
   background-color: white;
   color: black;
-  max-width: 490px;
-  margin: 1em auto 0 auto;
-  text-align: left;
+}
+
+.vcard-block-fiscal {
+  padding-top: 0;
+  padding-left: 3rem;
+}
+
+.vcard .adr {
+  display: block;
+  margin-bottom: 0.75em;
 }
 
 #contact contactform-wrapper.initially-hidden {
@@ -836,13 +852,13 @@ Offscreen menu style
 .social-links {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-direction: row;
   list-style: none;
   max-width: 490px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 1em 0 1em;
+  padding: 0 3em 0 3em;
 }
 
 .social-links svg {
