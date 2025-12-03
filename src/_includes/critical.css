@@ -199,6 +199,11 @@ small {
     border-radius: 50%;
   }
 
+  .jumbotronHeader-homeLink,
+  .jumbotronHeader-homeLink picture {
+    display: block;
+  }
+
   .sticky-header {
     position: sticky;
     top: -1px;
@@ -630,6 +635,13 @@ small {
     font-size: 3.5em;
     font-size: min(3.5em, 18vh);
     font-size: min(3.5em, 18dvh);
+  }
+
+  .jumbotronHeader .overline {
+    margin-top: 0.75rem;
+  }
+  .jumbotronHeader .overline + h1.tagline {
+    margin-top: 1.25rem;
   }
 
   h2,
