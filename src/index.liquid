@@ -506,44 +506,7 @@
 
         <footer class="page-footer"><aside>
 
-          <div class="center transparent no-print">
-            <p>
-              <a
-                href="{{ content.ecofriendlyEcograderUrl }}"
-                target="_blank"
-                rel="noopener"
-                title="{{ content.ecofriendlyEcograderTitle }}"
-              >
-                {{ content.ecofriendlyEcograderScore }}
-              </a>
-            </p>
-          </div>
-
-          <div class="badges">
-            <div class="badge badge--greenweb transparent no-print">
-              <a
-                href="{{ content.ecofriendlyGreenWebCheckUrl }}"
-                target="_blank"
-                rel="noopener"
-                title="Green Web Check"
-              >
-                <picture>
-                  <source srcset="img/{{ content.ecofriendlyGreenWebCheckImageFilename }}.webp" type="image/webp">
-                  <source srcset="img/{{ content.ecofriendlyGreenWebCheckImageFilename }}.png" type="image/png">
-                  <img
-                     src="img/{{ content.ecofriendlyGreenWebCheckImageFilename }}.png"
-                     data-original-src="{{ content.ecofriendlyGreenWebCheckImageOriginalSrc }}"
-                     alt="{{ content.ecofriendlyGreenWebCheckImageAlt }}"
-                     loading="lazy"
-                  >
-                </picture>
-              </a>
-            </div>
-
-            <a id="website-carbon-certified"></a>
-            <div id="wcb" class="carbonbadge no-print"></div>
-            <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
-          </div>
+          {% include '../_includes/eco-badges.liquid' %}
 
           <p class="no-print">
             <button class="animation-toggle">{{ content.buttonToggleAnimation }}</button>
