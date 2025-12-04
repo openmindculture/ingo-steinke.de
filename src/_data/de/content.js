@@ -81,7 +81,7 @@ module.exports = {
   "projectSourceCode": "Quellcode",
   /* work */
   "workHeading": "Webentwicklung: Langlebig, barrierefrei und umweltfreundlich",
-  "work": "Deine Layouts realisiere ich als Webentwickler möglichst plattformübergreifend, responsiv und barrierefrei (BFSG-konform). Wir finden langlebige Lösungen: elegant, langlebig und verständlich. Als teamfaähiger Freelancer mit einem Netzwerk anderer Experten kann ich auch große Projekte unterstützen.",
+  "work": "Deine Layouts realisiere ich als Webentwickler möglichst plattformübergreifend, responsiv und barrierefrei (BFSG-konform). Wir finden langlebige Lösungen, elegant und verständlich. Als gut vernetzter und teamfähiger Freelancer kann ich auch große Projekte unterstützen.",
   "workReliableHeading": "Zuverlässig und verständlich",
   "workReliable": "Mir ist es wichtig, technische Themen einfach zu erklären, Kundenwünsche zu verstehen, konstruktiv weiterzudenken und nachhaltig umzusetzen.",
   "workClientsBenefit": "Deine Vorteile: erfolgreiche Kundenansprache, transparente Wartungskosten und optimierte Performance.",
