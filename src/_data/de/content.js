@@ -331,6 +331,7 @@ module.exports = {
   "hubLaptopImageCaption": "Ingo im Impact Hub Berlin",
   "deviceLabImageAlt": "Website-Test auf diversen Geräten",
   "deviceLabImageCaption": "Website-Test auf diversen Geräten",
+  "coworkingImageAlt": "Ingo mit Laptop im Coworking Space",
 };
 
 

@@ -17,6 +17,19 @@ This is a screenshot updated in 2025:
 
 ## Generate updated CV PDFs
 
+- `src/leistungen/cv-tabellarisch.liquid` && `npm run build` =>
+- `cv-tabellarisch.html` && print as PDF =>
+- `Ingo-Steinke-Frontend-Web-Entwickler-CV-YYYY-MM.pdf` &&
+- edit metadata using exiftool
+
+```
+exiftool -Title="CV Ingo Steinke -Frontend-Web-Entwickler" -Author="Ingo Steinke" -Subject="Freelance-Web-Entwickler mit Frontend-Fokus" -Keywords="Frontend-Entwickler, Web-Entwicklung, Webentwicklung, Web Development, JavaScript, TypeScript, React, HTML, CSS, SCSS, PHP, npm, Docker, Git, Cypress, Performance Optimierung, Accessibility, Barrierefreiheit, Freelancer, Remote" Ingo-Steinke-Frontend-Web-Entwickler-CV-YYYY-MM.pdf
+```
+
+- save output to `/src` && rebuild project
+- && repeat for the english version in
+- `src/services/cv-tabular.liquid` ...
+
 ### classic verbose one-page website version
 
 Print the "about me page" to a PDF file to generate an updated CV. Optionally (and experimentally), add the query string

@@ -55,7 +55,9 @@ alternatehreflang: "en"
               (englisch)
             </li>
           </ul>
-          <br>
+        </article>
+        {% include '../_includes/image-align-right-ingo-laptop.liquid' %}
+        <article class="text-width">
           <header>
             <h3>
               {{ content.aboutMeIntroHeading }}
@@ -66,7 +68,7 @@ alternatehreflang: "en"
           </p>
           <br class="only-print">
 
-          <section class="avoid-page-break">
+          <section class="avoid-page-break no-clear">
             <h3>Werdegang: Webentwickler</h3>
             <p>
               Interaktive Websites und Browserspiele waren die ersten Produkte meines 2000 mitgegründeten Startups in Münster. Suchmaschinenoptimierung und unsere eigene CMS- und E-Commerce-Software bildeten später unser Kerngeschäft.
@@ -82,38 +84,15 @@ alternatehreflang: "en"
             </p>
           </section>
 
-          <figure class="content-image">
-            <picture>
-              <source
-                type="image/webp"
-                srcset="img/Ingo-Steinke-NCA-TV-2021-800x443.webp,
-                    img/Ingo-Steinke-NCA-TV-2021-400x222.webp 400w,
-                    img/Ingo-Steinke-NCA-TV-2021-800x443.webp 800w"
-              >
-              <img
-                src="img/Ingo-Steinke-NCA-TV-2021-800x443.jpg"
-                srcset="img/Ingo-Steinke-NCA-TV-2021-400x222.jpg 400w,
-                          img/Ingo-Steinke-NCA-TV-2021-800x443.jpg 800w"
-                sizes="(min-width: 800px) 800px, 100vw"
-                width="800"
-                height="443"
-                alt="{{ content.talksImageAlt }}"
-                loading="lazy"
-              >
-            </picture>
-            <figcaption>
-              {{ content.talksImageCaption }}:
-              {{ content.talksImageLinkText }}
-            </figcaption>
-          </figure>
-          <br class="only-print">
-
           <section class="avoid-page-break">
             <h3 id="netzwerk" class="target-offset">Netzwerke und Geschäftspartner</h3>
             <p>
               Als selbstständiger Webentwickler bin ich gut vernetzt mit Designern, Entwicklern und anderen Experten. Aktuell bin ich Mitglied im Impact Hub Berlin, im Netzwerk <a href="https://fairantwortung.org/uber-ingo-steinke/" target="_blank" rel="noopener">Fairantwortung</a> und Teil des freien <a href="https://defacto-ci.ch/projektteam/" target="_blank" rel="noopener">Projektteams von defacto | ci</a> aus Zürich.<br>
               In Berlin kooperiere ich unter anderem mit der Agentur <a href="https://www.berlingeschwister.de/" target="_blank" rel="noopener">Berlingeschwister</a>. In Köln war ich als Freelancer für <a href="https://railslove.de/" target="_blank" rel="noopener">Railslove</a> tätig.
             </p>
+          </section>
+
+          <section class="avoid-page-break no-clear">
             <h3>Veranstaltungen und Vorträge</h3>
             <p>
               Von 2019 bis 2021 war ich Mitveranstalter des Kölner Web-Performance Meetups. Zuvor engagierte ich mich ehrenamtlich im Arbeitskreis Neue Medien im Unterricht und als Veranstalter und  Vorsitzender der Skate Association Germany e.V.<br>
@@ -170,7 +149,13 @@ alternatehreflang: "en"
             </p>
           </section>
 
-          <section class="avoid-page-break">
+        </article>
+
+        {% include '../_includes/image-align-right-ingo-coworking.liquid' %}
+
+        <article class="text-width">
+
+          <section class="avoid-page-break no-clear">
             <h4>Barrierefreiheit und nachhaltige Digitalisierung</h4>
             <p>
               Digitalisierung kann sowohl wirtschaftlich, als auch sozial und ökologisch nachhaltig sein. Synergien ergeben sich beispielsweise, indem effiziente Entwicklung Energie und Kosten spart, oder indem inklusive und barrierefreie Angebote neue Kundenkreise erschließen. Gesetzlichen Vorgaben wie der Datenschutz-Grundverordnung oder dem Barrierefreiheits-Stärkungs-Gesetz können wir dank meiner Erfahrung auf elegante Weise entsprechen.

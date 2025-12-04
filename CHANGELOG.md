@@ -1,12 +1,13 @@
 # Changelog
 
-## [4.9.0] improve and extend content - TODO: 2025-11
+## [4.9.0] improve and extend content - 2025-12-04
 * add intermediate overview pages
 * more consistent and unsurprising navigation
+* replace outdated with up-to-date photography
 * rewrite existing content to improve SEO
-* improve existing landing page style 
+* improve existing landing page style
 * update project list
-* add project case study pages (public beta: React/wao.io, 2025-06-23)
+* add project case study page: React/wao.io (pre-released 2025-06-23)
 * re-add link to fediverse (mastodon) profile
 * remove link to DEV developer blog from contact vcard
 
