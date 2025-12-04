@@ -90,10 +90,7 @@
       href="{{ content.alternateHref }}"
     >
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <script type="application/ld+json">
       {
@@ -130,13 +127,19 @@
             <span class="raised-layer">
               <span class="scripted hideable" id="sticky-headline">
                 <a href="/#top">
-                  <img
-                    src="img/Ingo-Steinke-portrait-2020.jpg"
-                    width="25"
-                    height="25"
-                    alt="{{ content.linkToTop }}"
-                    class="avatar"
-                  />
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="/img/Ingo-Steinke-flower-shirt.webp"
+                    >
+                    <img
+                      src="/img/Ingo-Steinke-flower-shirt.jpg"
+                      width="25"
+                      height="25"
+                      alt="{{ content.linkToTop }}"
+                      class="avatar"
+                    />
+                  </picture>
                   <span class="site-title">{{ content.jumbotronHeader }}</span>
                 </a>
               </span>
