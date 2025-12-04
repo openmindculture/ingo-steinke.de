@@ -61,7 +61,7 @@ module.exports = {
   "caseStudyShopwarePlugin": "",
   "caseStudyShopwarePluginUrl": "",
   /* page content */
-  "intro": "Ich bin Ingo Steinke, kreativer Frontend-Webentwickler mit über 20 Jahren Berufserfahrung. Ich entwickle (programmiere), teste und optimiere Websites, Web-Apps und Online-Shops. Aktuelle Anforderungen wie BFSG, DSGVO, Ladezeit und ökologische Nachhaltigkeit kann ich pragmatisch umsetzen und verständlich erklären.",
+  "intro": "Ich bin Ingo Steinke, kreativer Frontend-Webentwickler und Web Application Developer mit über 25 Jahren Berufserfahrung. Ich entwickle, programmiere, teste und optimiere Websites, Web-Apps und Online-Shops. Aktuelle Anforderungen wie BFSG, DSGVO, Ladezeit und ökologische Nachhaltigkeit kann ich pragmatisch umsetzen und verständlich erklären.",
   "spacedAnd": " und",
   "andA": "und",
   "commaEnglishOnly": "",

@@ -12,7 +12,7 @@ module.exports = {
   "metaAuthor": "Ingo Steinke",
   "pageTitle": "Ingo Steinke, Creative Frontend Web Developer in Berlin",
   "pageDescription": "Ingo Steinke is a creative web developer focused on accessible and sustainable web development with more than 25 years of professional experience. Find out about Ingo's services, prices, projects, and what Ingo's customers say.",
-  "pageDescription-en": "Ingo Steinke is a creative web developer focused on accessible and sustainable web development with more than 20 years of professional experience. Find out about Ingo's services, prices, projects, and what Ingo's customers say.",
+  "pageDescription-en": "Ingo Steinke is a creative web developer focused on accessible and sustainable web development with more than 25 years of professional experience. Find out about Ingo's services, prices, projects, and what Ingo's customers say.",
   "pDomainVerify": "4c4296e5835f4a47eb2c2e5488a99d71",
   "googleSiteVerification": "rKw6ukUkdoGGTo5dFb1sv4HQXN5wy6GysuVCRkt1FTg",
   "notFoundTitle": "Ingo Steinke - page not found",
@@ -61,7 +61,7 @@ module.exports = {
   "caseStudyShopwarePlugin": "",
   "caseStudyShopwarePluginUrl": "",
   /* page content */
-  "intro": "My name is Ingo Steinke. I'm a creative frontend web developer with more than 20 years of professional experience. I develop, test, and optimize websites, web apps, and online shops. I can pragmatically and easily explain and implement current requirements such as EAA/BFSG, GDPR, loading time, and ecological sustainability.",
+  "intro": "My name is Ingo Steinke. I'm a creative frontend web developer and web application developer with more than 25 years of professional experience. I develop, test, and optimize websites, web apps, and online shops. I can pragmatically and easily explain and implement current requirements such as EAA/BFSG, GDPR, loading time, and ecological sustainability.",
   "spacedAnd": ", and",
   "andA": "and a",
   "currentlyEcologicalIam": "I enjoy working for customers with an ecological and ethical focus in their work. I'm a",

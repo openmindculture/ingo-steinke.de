@@ -71,7 +71,7 @@ a:active {
   margin-bottom: 25%;
 }
 
-.jumbotronHeader h1 {
+.jumbotronHeader h1:not(.tagline) {
   font-size: 50pt;
   margin: 0;
 }
@@ -81,6 +81,7 @@ a:active {
   margin: 0;
 }
 
+.tiled-content,
 small {
   font-size: 10pt;
 }
@@ -126,6 +127,27 @@ figure.content-image img {
   border: none;
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
+}
+
+.image-right,
+.tile.flip-box-front {
+  float: right;
+  max-width: 22%;
+  margin-left: 24pt;
+}
+
+.tile.flip-box-front.tile img {
+  max-width: 100%;
+  height: auto;
+  border: solid thin #aaa;
+}
+
+.flip-box-row {
+  /* clear: both; */
+}
+
+.poster-image.flip-height-placeholder {
+  display: none;
 }
 
 .timestamp {
@@ -249,7 +271,6 @@ figure,
   page-break-inside: initial;
 }
 
-#projects,
 #talks-events,
 #work,
 #interested,
@@ -265,12 +286,8 @@ figure,
 #projects .code-link,
 .print-display-block {
   display: block;
-  font-size: 11.5pt;
+  font-size: 10pt;
   font-weight: normal;
-}
-
-#projects .code-link {
-  font-size: 11pt;
 }
 
 .project-thumb {
