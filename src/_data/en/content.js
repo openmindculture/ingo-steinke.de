@@ -127,7 +127,7 @@ module.exports = {
   "aboutMeCvHeading": "Professional Background",
   "aboutMeCv1": "I co-founded a start-up in 2000 whose first products were interactive websites and browser games. Later, our core business transitioned to search engine optimization and our own CMS and e-commerce software.",
   "aboutMeCv2": "While employed as an e-commerce engineer at Xsite in Düsseldorf from 2010 to 2014, I developed online shops for Shop-Apotheke.com, Ars mundi, and other customers. As a technical consultant at Sevenval Technologies (later Avenga Germany) in Cologne and Berlin, I optimized the loading time and mobile phone compatibility of apps and websites for Frankfurter Allgemeine Zeitung and online shops for Otto Group and created front-end applications for wao.io and other customers. I'm a freelance web developer since 2020, working for agencies and individual customers.",
-  "aboutMeEthicalHeading": "Accessibility and Sustainable Development",
+  "aboutMeEthicalHeading": "Accessibility and Sustainable Digitalisation",
   "aboutMeEthical": "Digitalisation primarily stands for technological progress. The economic benefits of sustainable innovation have often been overlooked. I like to support ethical and ecological projects, for example the transition in the transport sector, renewable energies, and environmentally-friendly fashion. Thanks to my experience, we can elegantly comply with legal requirements such as the General Data Protection Regulation or the European Accessibility Act.",
   "aboutMeEthicalImA": "I'm a",
   "aboutMeEthicalA": "a",
