@@ -14,6 +14,7 @@
       {%- assign projectLinkUrl = '' -%}
       {%- assign sourceLinkUrl = '' -%}
       {%- assign customLinkUrl = '' -%}
+      {%- assign customLinkTarget = '' -%}
       {%- assign customLinkTitle = '' -%}
       {%- assign projectTimestamp = '' -%}
       {%- assign projectDescription = '' -%}
@@ -92,7 +93,7 @@
               {% endif %}
               {% if customLinkUrl != '' %}
                 <div>
-                  <a class="code-link print-display-block breakable" target="_blank" rel="noopener" href="{{ customLinkUrl }}">
+                  <a class="print-display-block breakable" target="{{ customLinkTarget | default: '_blank' }}" rel="noopener" href="{{ customLinkUrl }}">
                     {{ customLinkTitle }}
                   </a>
                 </div>
@@ -151,7 +152,7 @@
             {% endif %}
             {% if customLinkUrl != '' %}
               <div>
-                <a class="code-link print-display-block breakable" target="_blank" rel="noopener" href="{{ customLinkUrl }}">
+                <a class="print-display-block breakable" target="{{ customLinkTarget | default: '_blank' }}" rel="noopener" href="{{ customLinkUrl }}">
                   {{ customLinkTitle }}
                 </a>
               </div>
