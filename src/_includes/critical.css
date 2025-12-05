@@ -154,12 +154,26 @@ small {
     padding-top: 1rem;
   }
 
-  .jumbotronHeader h1 {
+  .jumbotronHeader h1,
+  .jumbotronHeader .overline {
     font-size: 5rem;
     line-height: 1.25;
     letter-spacing: 0.125rem;
     padding: 0;
     margin: 0;
+    font-family: var(--heading-font-family);
+    font-weight: var(--heading-font-weight);
+  }
+
+  /* Semantic SEO vs. visual appearance */
+  .jumbotronHeader h1.tagline {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    font-family: var(--body-font-family);
+    font-weight: 400;
+    animation: none;
+    background: unset;
+    -webkit-text-fill-color: var(--primary-foreground);
   }
 
   .jumbotronHeader p {
@@ -183,6 +197,11 @@ small {
 
   img.avatar {
     border-radius: 50%;
+  }
+
+  .jumbotronHeader-homeLink,
+  .jumbotronHeader-homeLink picture {
+    display: block;
   }
 
   .sticky-header {
@@ -548,6 +567,12 @@ small {
   .page-navigation a:active {
     color: #fff;
     text-decoration: none;
+    letter-spacing: 0.5px;
+  }
+
+  .page-navigation a.active,
+  .page-navigation a:active {
+    font-weight: bold;
   }
 }
 
@@ -561,7 +586,8 @@ small {
     min-height: calc(100vh - 5rem);
     min-height: 100dvh;
   }
-  .jumbotronHeader h1 {
+  .jumbotronHeader .overline,
+  .jumbotronHeader h1:not(.tagline) {
     font-size: min(5rem, 18vh);
     font-size: min(5rem, 18dvh);
   }
@@ -604,10 +630,18 @@ small {
     padding-top: 0.5rem;
   }
 
-  .jumbotronHeader h1 {
+  .jumbotronHeader .overline,
+  .jumbotronHeader h1:not(.tagline) {
     font-size: 3.5em;
     font-size: min(3.5em, 18vh);
     font-size: min(3.5em, 18dvh);
+  }
+
+  .jumbotronHeader .overline {
+    margin-top: 0.75rem;
+  }
+  .jumbotronHeader .overline + h1.tagline {
+    margin-top: 1.25rem;
   }
 
   h2,
@@ -635,6 +669,7 @@ small {
     max-width: 99%;
     padding-left: 0;
     padding-right: 0;
+    justify-content: space-around;
   }
 
   ul.social-links li {
@@ -700,3 +735,24 @@ small {
     animation: none;
   }
 }
+
+.image-right {
+  max-width: 100%;
+  height: auto;
+}
+
+.image-right img {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 0.25rem;
+}
+
+@media (min-width: 768px) {
+  .image-right {
+    float: right;
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
+}
+

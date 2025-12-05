@@ -1,0 +1,107 @@
+---
+tags: addtositemap
+isprojects: true
+imgdirectory: "../img"
+previewimage: "https://www.ingo-steinke.com/img/preview-creative-web-developer.png"
+previewtitle: "Projects, References and Case Studies - Web Developer Ingo Steinke"
+previewdescription: "Ingo Steinke's projects, references, customer testimonials and case studies at a glance."
+permalink: "projects/index.html"
+canonicalhref: "https://www.ingo-steinke.com/projects/"
+canonicalhreflang: "de"
+alternatelink: "https://www.ingo-steinke.de/projekte/"
+alternatehreflang: "en"
+---
+<html lang="de">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Projects, References and Case Studies - Web Developer Ingo Steinke</title>
+    {% include '../_includes/html-head-common.liquid' %}
+</head>
+<body class="high-contrast">
+<div class="page-container" id="top">
+    <div class="page-content">
+        <header class="jumbotronHeader" id="jumbotronHeader">
+            <br>
+            {% include './_includes/jumbotron-image.liquid' %}
+            <div class="overline center">Ingo Steinke</div>
+            <h1 class="tagline center">Projects, References and Case Studies</h1>
+        </header>
+        {% include '../_includes/navigation-on-subpages.liquid', headerClassName: 'wide' %}
+        <main id="content-top" class="target-offset">
+            <section class="text-content-layout text-content-color semitransparent avoid-page-break">
+                <div class="only-print timestamp top-timestamp">
+                    Berlin,
+                    {{ "now" | date: "%d" }}{{ content.dotIfGerman }}
+                    {{ "now" | date: "%m" | customLocalizedMonthNameFilter }}
+                    {{ "now" | date: "%Y" }}
+                </div>
+                <h2 class="target-offset" id="about-me">
+                  My Work
+                </h2>
+                <article class="text-width">
+                    <p>
+                      Selected work samples, customer testimonials and case studies demonstrate the added value of my work as a web developer: beautiful, efficient and successful websites, web apps and online shops that convert and inspire.
+                    </p>
+                </article>
+            </section>
+
+          <section class="tiled-content target-offset" id="projects">
+            <div class="pl1">
+              <h2>Projects: Websites, Shops and Case Studies</h2>
+            </div>
+            <div class="grid-container grid-container--projects flip-box-container">
+              {% include './_includes/projects.liquid',
+                projectlist: 'kleiderordnung, shopwareplugin, twistedconnection',
+                showflipsides: 'showflipsides',
+                showtimestamps: 'showtimestamps'
+              %}
+              {% include './_includes/projects.liquid',
+                projectlist: 'kunnigkonsulting, dxastroreact, nativetheme, fractal, portfolio, reactapp',
+                showicons: 'showicons',
+                showtimestamps: 'showtimestamps'
+              %}
+            </div>
+          </section>
+
+          <section class="text-content-layout text-content-color semitransparent avoid-page-break">
+            <h2 class="target-offset" id="testimonials">
+              References and Testimonials: What my Customers say
+            </h2>
+            <div class="testimonials">
+              <figure class="testimonial">
+                <figcaption>
+                  {{ content.testimonialDanielaAuthor }}:
+                  <span class="stars" title="{{ content.testimonialsFiveStarRating }}"></span>
+                </figcaption>
+                <blockquote>{{ content.testimonialDanielaQuote }}</blockquote>
+              </figure>
+              <figure class="testimonial" lang="{{ content.  testimonialManuelaQuoteLang }}">
+                <figcaption>
+                  {{ content.testimonialManuelaAuthor }}:
+                  <span class="stars" title="{{ content.testimonialsFiveStarRating }}"></span>
+                </figcaption>
+                <blockquote lang="{{ content.  testimonialManuelaQuoteLang }}">{{ content.testimonialManuelaQuote }}</blockquote>
+              </figure>
+              <figure class="testimonial">
+                <figcaption>
+                  {{ content.testimonialPatriciaAuthor }}:
+                  <span class="stars" title="{{ content.testimonialsFiveStarRating }}"></span>
+                </figcaption>
+                <blockquote>{{ content.testimonialPatriciaQuote }}</blockquote>
+              </figure>
+            </div>
+
+            <a href="{{ content.testimonialsReadMoreLinkUrl1 }}" target="_blank" rel="noopener nofollow">
+              {{ content.testimonialsReadMoreText1 }}
+            </a>
+            <div class="cta-container">
+              <a href="../#contact" class="buttonlike contact-link">request project</a>
+            </div>
+          </section>
+
+        </main>
+      {% include '../_includes/page-footer-on-subpages.liquid' %}
+    </div>
+</div>
+</body>
+</html>

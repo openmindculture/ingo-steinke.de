@@ -2,7 +2,7 @@
   <div class="wrapper">
       <span class="raised-layer">
         <span class="scripted hideable" id="sticky-headline">
-          <a href="../">
+          <a href="/">
             <img
               src="../img/Ingo-Steinke-portrait-2020.jpg"
               width="25"
@@ -44,19 +44,26 @@
           </svg>
         </a>
         <ul>
-          {% if isaboutme %}
-            <li><a href="#about-me">{{ content.targetAboutMe }}</a></li>
-            <li><a href="#projects">{{ content.targetProjects }}</a></li>
-            <li><a href="#skills">{{ content.targetSkills }}</a></li>
-            <li><a href="#contact" class="contact-link">{{ content.targetContact }}</a></li>
-          {% else %}
-            <li><a href="../#projects">{{ content.targetRefs }}</a></li>
-            <li><a href="../#services">{{ content.targetServices }}</a></li>
-            <li><a href="../{{ content.targetAboutMeUrl }}">{{ content.targetAboutMe }}</a></li>
-            <li><a href="../#contact" class="contact-link">{{ content.targetContact }}</a></li>
-          {% endif %}
-          <li><a href="../#imprint">{{ content.targetImprint }}</a></li>
-          <li><a href="../#privacy">{{ content.targetPrivacy }}</a></li>
+          <li>
+            <a
+              {% if isservices %}class="active"{% endif %}
+              href="/{{ content.targetServicesUrl }}"
+            >{{ content.targetServices }}</a>
+          </li>
+          <li>
+            <a
+              {% if isprojects %}class="active"{% endif %}
+              href="/{{ content.targetProjectsUrl }}">{{ content.targetProjects }}</a>
+          </li>
+          <li>
+            <a
+              {% if isaboutme %}class="active"{% endif %}
+              href="/{{ content.targetAboutMeUrl }}">{{ content.targetAboutMe }}</a>
+          </li>
+          <li>
+            <a
+              href="/#contact" class="contact-link">{{ content.targetContact }}</a>
+          </li>
           <li>
             <a
               href="{{ alternatelink }}"

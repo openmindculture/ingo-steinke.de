@@ -17,6 +17,21 @@ This is a screenshot updated in 2025:
 
 ## Generate updated CV PDFs
 
+- `src/leistungen/cv-tabellarisch.liquid` && `npm run build` =>
+- `cv-tabellarisch.html` && print as PDF =>
+- `Ingo-Steinke-Frontend-Web-Entwickler-CV-YYYY-MM.pdf` &&
+- edit metadata using exiftool
+
+```
+exiftool -Title="CV Ingo Steinke - Frontend-Web-Entwickler" -Author="Ingo Steinke" -Subject="Freelance-Web-Entwickler mit Frontend-Fokus" -Keywords="Frontend-Entwickler, Web-Entwicklung, Webentwicklung, Web Development, JavaScript, TypeScript, React, HTML, CSS, SCSS, PHP, npm, Git, Cypress, Performance Optimierung, Accessibility, Barrierefreiheit, Freelancer, Remote" Ingo-Steinke-Frontend-Web-Entwickler-CV-YYYY-MM.pdf
+```
+
+- save output to `/src` && rebuild project
+- && repeat for the english version in
+- `src/services/cv-tabular.liquid` ...
+
+### classic verbose one-page website version
+
 Print the "about me page" to a PDF file to generate an updated CV. Optionally (and experimentally), add the query string
 parameter `pdf=embed` to the URL to embed a prepared PDF document, e.g. to append certifications. This seems to work
 in **Firefox** 130, but not in Chrome 128 or Vivaldi 6.9.
@@ -26,6 +41,14 @@ in **Firefox** 130, but not in Chrome 128 or Vivaldi 6.9.
 
 - `npm run serve` && open http://localhost:1974/ueber-mich.html?pdf=embed
 - `npm run serve:en` && open http://localhost:1974/about-me.html?pdf=embed
+
+### machine-readable compact CV
+
+* (TODO)
+
+## Utils, external SEO, and Marketing Material
+
+* (TODO)
 
 ## Development Requirements
 
@@ -62,14 +85,6 @@ Section to be added above "skills", replacing "skills" as a top navigation item,
  - [Website check](https://www.ingo-steinke.com/services/website-check.html) / [Web-Check](https://www.ingo-steinke.de/leistungen/website-check.html)
  - [Optimization](https://www.ingo-steinke.com/services/optimization.html) / [Optimierung](https://www.ingo-steinke.de/leistungen/optimierung.html)
 
-##### Campaign landing pages
-
-Keyword-centered additional landing pages, manually added in German only for specific campaigns and linked from the German footer only, should also be provided in all languages for more consistency.
-
-- [Sustainability](https://www.ingo-steinke.com/services/accessible-climate-website-optimization.html) / [Nachhaltigkeit](https://www.ingo-steinke.de/webseiten-klimafreundlich-barrierefrei-optimieren/)
-- [Freelancer web developer Berlin](https://www.ingo-steinke.com/services/freelance-webdeveloper-berlin.html) / [Web Freelancer Berlin](https://www.ingo-steinke.de/leistungen/webentwickler-berlin-freelancer.html)
-- [Certified Shopware Developer](https://www.ingo-steinke.com/services/certified-shopware-developer-berlin.html) / [Zertifizierter Shopware-Webentwickler](https://www.ingo-steinke.de/zertifizierter-shopware-6-frontend-webentwickler/)
-
 ### Localization / text snippets
 
 Text content can be edited in
@@ -78,12 +93,13 @@ Text content can be edited in
 
 to be used in liquid variables with the `content.` prefix.
 
-My localization setup does not match eleventy's front matter handling,
-but this proved a quick and maintainable way to get things done.
+My localization setup does not match eleventy's front matter handling, but this proved a quick and maintainable way to get things done when I did not find any official documentation how to internationalize eleventy projects in January 2021.
 
-When starting to work with eleventy, in January 2021, I had not been able to find an official documentation
-how to internationalize eleventy projects, and anything else I found seemed even more
-counter-intuitive to me, so here we go.
+### Image optimization
+
+Provide cwebp alternatives to jpg which can be created manually using the cwebp CLI:
+
+- `cwebp [options] src/img/input_file.jpg -o src/img/output_file.webp`
 
 ## Build
 
@@ -108,8 +124,7 @@ export / update local tests to Testomat.io:
 
 * `TESTOMATIO=__$APIKEY__ npx check-tests@latest CodeceptJS "**/*{.,_}{test,spec}.js"`
 
-#### About Testing Tools and the War on Europe
-🇺🇦 CodeceptJS and Testomat.io were created in Ukraine. #StandWithUkraine
+#### About Testing Tools and manual alternatives
 
 If the build process fails for any reason, edit `dist` files manually to reflect `src` changes!
 
@@ -121,7 +136,7 @@ Upload `dist` content to `ingo-steinke.de` and `dist_en` content to `ingo-steink
 
 ### Netlify CI (optional, currently deactivated)
 
-- Commits to the master branch will trigger a production deployment by netlify.
+- Commits to the main branch will trigger a production deployment by netlify.
 - Commits to pull requests will trigger preview builds to a preview domain.
 
 #### Distribution Directories

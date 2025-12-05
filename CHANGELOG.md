@@ -1,5 +1,16 @@
 # Changelog
 
+## [4.9.0] improve and extend content - 2025-12-04
+* add intermediate overview pages
+* more consistent and unsurprising navigation
+* replace outdated with up-to-date photography
+* rewrite existing content to improve SEO
+* improve existing landing page style
+* update project list
+* add project case study page: React/wao.io (pre-released 2025-06-23)
+* re-add link to fediverse (mastodon) profile
+* remove link to DEV developer blog from contact vcard
+
 ## [4.8.4] add anonymized tracking - 2025-11-27
 
 * add privacy-compliant Google Analytics integration

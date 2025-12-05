@@ -3,6 +3,9 @@ module.exports = function (eleventyConfig) {
   // all subdirectory/*.liquid are processed implicitly,
   // so we need to exclude the ones that don't match the current language
   eleventyConfig.ignores.add('src/services');
+  eleventyConfig.ignores.add('src/projects');
+  eleventyConfig.ignores.add('src/impact_de'); // TODO reactivate when ready
+  eleventyConfig.ignores.add('src/impact_en');
   eleventyConfig.ignores.add('src/_includes');
   eleventyConfig.ignores.add('src/_data');
   eleventyConfig.ignores.add('src/_data/de/projects');
@@ -12,14 +15,11 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/img');
   eleventyConfig.addPassthroughCopy('src/vcard');
   eleventyConfig.addPassthroughCopy('src/android-chrome-192x192.png');
+  eleventyConfig.addPassthroughCopy('src/android-chrome-512x512.png');
   eleventyConfig.addPassthroughCopy('src/apple-touch-icon.png');
-  eleventyConfig.addPassthroughCopy('src/browserconfig.xml');
   eleventyConfig.addPassthroughCopy('src/site.webmanifest');
   eleventyConfig.addPassthroughCopy('src/robots.txt');
   eleventyConfig.addPassthroughCopy('src/favicon.ico');
-  eleventyConfig.addPassthroughCopy('src/favicon-16x16.png');
-  eleventyConfig.addPassthroughCopy('src/favicon-32x32.png');
-  eleventyConfig.addPassthroughCopy('src/mstile-150x150.png');
   eleventyConfig.addPassthroughCopy('src/2022-4-19-www.ingo-steinke.de-1793046390-report.pdf');
   eleventyConfig.addPassthroughCopy('src/2022-5-27-www.ingo-steinke.com-1503125752-report.pdf');
   eleventyConfig.addPassthroughCopy('src/Shopware-6-Certified-Developer-Ingo-Steinke.pdf');
@@ -28,6 +28,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/Ingo-Steinke-CV-Projects-Skills-2025-sustainable-web-developer.pdf');
   eleventyConfig.addPassthroughCopy('src/Ingo-Steinke-CV-Projekte-Skills-2024-nachhaltiger-Webentwickler.pdf');
   eleventyConfig.addPassthroughCopy('src/Ingo-Steinke-CV-Projekte-Skills-2025-nachhaltiger-Webentwickler.pdf');
+  eleventyConfig.addPassthroughCopy('src/Ingo-Steinke-Frontend-Web-Entwickler-CV-2025-10.pdf');
   eleventyConfig.addPassthroughCopy('src/contact/send/index.php');
 
   // redirect rules and domain configuration for netlify

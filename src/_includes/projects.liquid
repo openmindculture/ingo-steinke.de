@@ -1,5 +1,5 @@
     {% if showallprojects %}
-      {%- assign projects = 'kleiderordnung, shopwareplugin, twistedconnection, portfolio, gemeva, kunnigkonsulting, foodtogether, fractal, daskannstdutun' | split: ', ' -%}
+      {%- assign projects = 'kleiderordnung, shopwareplugin, twistedconnection, portfolio, gemeva, kunnigkonsulting, foodtogether, fractal, reactapp' | split: ', ' -%}
     {% else %}
       {%- assign projects = projectlist | split: ', ' -%}
     {% endif %}
@@ -10,8 +10,12 @@
       {%- assign projectImgAlt = '' -%}
       {%- assign projectImgWidth = '' -%}
       {%- assign projectImgHeight = '' -%}
+      {%- assign projectIconSlug = '' -%}
       {%- assign projectLinkUrl = '' -%}
       {%- assign sourceLinkUrl = '' -%}
+      {%- assign customLinkUrl = '' -%}
+      {%- assign customLinkTarget = '' -%}
+      {%- assign customLinkTitle = '' -%}
       {%- assign projectTimestamp = '' -%}
       {%- assign projectDescription = '' -%}
       {%- assign contentfile = '../_data/'
@@ -44,7 +48,7 @@
             <div class="flip-box-front tile">
               <a target="_blank" rel="noopener" href="{{ projectLinkUrl }}" title="{{ projectHeadline }} {{ content.projectWebsite }}">
                 <img
-                  src="{{ 'img/screenshot-' | append: project | append: '.png' }}"
+                  src="{{ '/img/screenshot-' | append: project | append: '.png' }}"
                   alt="{{ projectImgAlt | default: content.projectImgAltDefault }}"
                   width="{{ projectImgWidth | default: '1265' }}"
                   height="{{ projectImgHeight | default: '1129' }}"
@@ -58,12 +62,12 @@
               <header>
                 <h3>{{ projectHeadline }}</h3>
               </header>
-              {% if projectTimestamp %}
+              {% if projectTimestamp and showtimestamps %}
                 <div class="timestamp">{{ projectTimestamp }}</div>
               {% endif %}
               <p>
                 {% if showicons %}
-                  <img src="img/icon-{{ project }}.svg"
+                  <img src="/img/icon-{{ projectIconSlug |  default: project }}.svg"
                        alt="{{ projectIconAlt | default: '' }}"
                        width="{{ projectIconWidth | default: '64' }}"
                        height="{{ projectIconHeight | default: '64' }}"
@@ -87,10 +91,17 @@
                   </a>
                 </div>
               {% endif %}
+              {% if customLinkUrl != '' %}
+                <div>
+                  <a class="print-display-block breakable" target="{{ customLinkTarget | default: '_blank' }}" rel="noopener" href="{{ customLinkUrl }}">
+                    {{ customLinkTitle }}
+                  </a>
+                </div>
+              {% endif %}
               <p>
                 {%- assign hashtagsArray = projectHashtags | split: ' ' -%}
                 {%- for hashtag in hashtagsArray %}
-                  <span class="hashtag">{{ hashtag }}</span>
+                  <span class="hashtag">{{ hashtag | replace: '_', ' ' }}</span>
                 {% endfor -%}
               </p>
             </div>
@@ -109,12 +120,12 @@
             <header>
               <h3>{{ projectHeadline }}</h3>
             </header>
-            {% if projectTimestamp %}
+            {% if projectTimestamp and showtimestamps %}
               <div class="timestamp">{{ projectTimestamp }}</div>
             {% endif %}
             <div class="description-group">
               {% if showicons %}
-                <img src="img/icon-{{ project }}.svg"
+                <img src="/img/icon-{{ projectIconSlug |  default: project }}.svg"
                      alt="{{ projectIconAlt | default: '' }}"
                      width="{{ projectIconWidth | default: '64' }}"
                      height="{{ projectIconHeight | default: '64' }}"
@@ -136,6 +147,13 @@
               <div class="project-link-wrapper">
                 <a class="code-link print-display-block breakable" target="_blank" rel="noopener" href="{{ sourceLinkUrl }}">
                   {{ sourceLinkUrl | unprefixedHumanReadableUrl }}
+                </a>
+              </div>
+            {% endif %}
+            {% if customLinkUrl != '' %}
+              <div>
+                <a class="print-display-block breakable" target="{{ customLinkTarget | default: '_blank' }}" rel="noopener" href="{{ customLinkUrl }}">
+                  {{ customLinkTitle }}
                 </a>
               </div>
             {% endif %}

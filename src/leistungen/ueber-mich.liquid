@@ -4,7 +4,7 @@ isaboutme: true
 imgdirectory: "../img"
 previewimage: "https://www.ingo-steinke.com/img/preview-creative-web-developer.png"
 previewtitle: "Über Ingo Steinke: CV, Projekte, Skills"
-previewdescription: "Ingo Steinke ist Webentwickler mit Frontend-Fokus und über 20 Jahren Berufserfahrung und Fokus auf Barrierefreiheit, Ladegeschwindigkeit und Wartbarkeit."
+previewdescription: "Ingo Steinke ist Webentwickler mit Frontend-Fokus und über 25 Jahren Berufserfahrung und Fokus auf Barrierefreiheit, Ladegeschwindigkeit und Wartbarkeit."
 permalink: "ueber-mich.html"
 canonicalhref: "https://www.ingo-steinke.de/ueber-mich.html"
 canonicalhreflang: "de"
@@ -24,8 +24,8 @@ alternatehreflang: "en"
     <header class="jumbotronHeader" id="jumbotronHeader">
       <br>
       {% include './_includes/jumbotron-image.liquid' %}
-      <h1>Ingo Steinke</h1>
-      <p class="tagline center">Über mich</p>
+      <div class="overline center">Ingo Steinke</div>
+      <h1 class="tagline center">Über mich</h1>
     </header>
     {% include '../_includes/navigation-on-subpages.liquid', headerClassName: 'wide' %}
     <main id="content-top" class="target-offset">
@@ -40,24 +40,23 @@ alternatehreflang: "en"
           {{ content.aboutMeHeading }}
         </h2>
         <article class="text-width">
-          <p>Ich bin Ingo Steinke, Webentwickler mit Frontend-Fokus und über 20 Jahren Berufserfahrung.
-            Bei der Entwicklung eleganter und einfach bedienbarer Websites achte ich auf Barrierefreiheit,
-            Ladegeschwindigkeit und Wartbarkeit. HTML, CSS, JavaScript, TypeScript und PHP zählen zu meinen
-            bevorzugten Technologien.
-            Seit 2024 bin ich <a href="/zertifizierter-shopware-6-frontend-webentwickler/">zertifizierter Shopware-Entwickler</a>.
+          <p>Ich bin Ingo Steinke, ein Berliner Webentwickler mit Frontend-Fokus und über 25 Jahren Berufserfahrung.
+            Bei der Entwicklung eleganter und einfach bedienbarer Websites und Web-Apps achte ich auf Barrierefreiheit, Ladegeschwindigkeit und Wartbarkeit. HTML, CSS, JavaScript, und TypeScript gehören zu meinen Skills als Webentwickler mit Frontend-Fokus. Seit 2024 bin ich <a href="/zertifizierter-shopware-6-frontend-webentwickler/">zertifizierter Shopware-Entwickler</a>.
           </p>
-          <p class="no-print">Lebenslauf, Projektliste und Skillmatrix als PDF-Download:</p>
+          <p class="no-print">Lebenslauf, Skills und Projektliste als PDF-Download:</p>
           <ul class="no-print">
-            <li><a href="../Ingo-Steinke-CV-Projekte-Skills-2025-nachhaltiger-Webentwickler.pdf" target="_blank"
-                   rel="noopener noreferrer nofollow">Ingo Steinke, Webentwickler, Berlin: CV, Skills, Projekte</a>
-              (deutsch, Stand: April 2025)
+            <li><a href="../Ingo-Steinke-Frontend-Web-Entwickler-CV-2025-10.pdf" target="_blank"
+                   rel="noopener noreferrer">Ingo Steinke, Frontend-Web-Entwickler, Berlin: CV, Skills, Projekte</a>
+              (deutsch)
             </li>
-            <li><a href="../Ingo-Steinke-CV-Projects-Skills-2025-sustainable-web-developer.pdf" target="_blank"
-                   rel="noopener noreferrer nofollow">Ingo Steinke, web developer, Berlin: CV, skills, projects</a>
-              (englisch, Stand: April 2025)
+            <li><a href="../Ingo-Steinke-Frontend-Web-Developer-CV-2025-10.pdf" target="_blank"
+                   rel="noopener noreferrer">Ingo Steinke, frontend web developer, Berlin: CV, skills, projects</a>
+              (englisch)
             </li>
           </ul>
-          <br>
+        </article>
+        {% include '../_includes/image-align-right-ingo-laptop.liquid' %}
+        <article class="text-width">
           <header>
             <h3>
               {{ content.aboutMeIntroHeading }}
@@ -68,52 +67,34 @@ alternatehreflang: "en"
           </p>
           <br class="only-print">
 
-          <section class="avoid-page-break">
-            <h3>Werdegang</h3>
+          <section class="avoid-page-break no-clear">
+            <h3>Werdegang: Webentwickler</h3>
             <p>
-              Interaktive Websites und Browserspiele waren die ersten Produkte meines 2000 mitgegründeten Startups in Münster. Suchmaschinenoptimierung und unsere eigene CMS- und Shop-Software bildeten später das Kerngeschäft.
+              Interaktive Websites und Browserspiele waren die ersten Produkte meines 2000 mitgegründeten Startups in Münster. Suchmaschinenoptimierung und unsere eigene CMS- und E-Commerce-Software bildeten später unser Kerngeschäft.
             </p>
             <p>
-              Als angestellter E-Commerce-Engineer bei Xsite in Düsseldorf entwickelte ich von 2010 bis 2014 Online-Shops
-              unter anderem für Shop-Apotheke.com und den Kunstversand Ars mundi. Als Technical Consultant bei Sevenval Technologies (später Avenga Germany) in Köln und Berlin optimierte ich die Ladezeit und Handytauglichkeit von Online-Shops und Websites der Frankfurter Allgemeinen Zeitung und der Otto Group und erstellte Frontend-Anwendungen mit ReactJS.
+              Als E-Commerce-Engineer bei Xsite in Düsseldorf entwickelte ich von 2010 bis 2014 Online-Shops
+              unter anderem für Shop-Apotheke.com und den Kunstversand Ars mundi. Als Webentwickler und Technical Consultant bei Sevenval Technologies (später Avenga Germany) in Köln und Berlin optimierte ich die Ladezeit und Handytauglichkeit von Online-Shops und Websites der Frankfurter Allgemeinen Zeitung, der ZEIT und der Otto Group und entwickelte Frontend-Anwendungen mit React, JavaScript und CSS.
             </p>
+            <h3>Frontend-Freelancer</h3>
             <p>
-              Seit Ende 2020 bin ich als selbstständiger Webentwickler und Freelancer für Agenturen und individuelle Kund:innen tätig. 2024 wurde ich als Shopware-Entwickler zertifiziert.
+              Seit Ende 2020 bin ich als selbstständiger Senior Frontend-Webentwickler (Freelancer) für Agenturen und individuelle Kundinnen und Kunden tätig. Seit 2022 lebe ich in Berlin, arbeite aber häufig online und bin bei Bedarf reisebereit.<br>
+              2024 wurde ich als Shopware-Entwickler zertifiziert.
             </p>
           </section>
 
-          <figure class="content-image">
-            <picture>
-              <source
-                type="image/webp"
-                srcset="img/Ingo-Steinke-NCA-TV-2021-800x443.webp,
-                    img/Ingo-Steinke-NCA-TV-2021-400x222.webp 400w,
-                    img/Ingo-Steinke-NCA-TV-2021-800x443.webp 800w"
-              >
-              <img
-                src="img/Ingo-Steinke-NCA-TV-2021-800x443.jpg"
-                srcset="img/Ingo-Steinke-NCA-TV-2021-400x222.jpg 400w,
-                          img/Ingo-Steinke-NCA-TV-2021-800x443.jpg 800w"
-                sizes="(min-width: 800px) 800px, 100vw"
-                width="800"
-                height="443"
-                alt="{{ content.talksImageAlt }}"
-                loading="lazy"
-              >
-            </picture>
-            <figcaption>
-              {{ content.talksImageCaption }}:
-              <a href="https://blog.nevercodealone.de/php-testing-refactoring-nca-conference-duisburg/" target="_blank" rel="noopener">
-                {{ content.talksImageLinkText }}
-              </a>
-            </figcaption>
-          </figure>
-          <br class="only-print">
-
           <section class="avoid-page-break">
-            <h3>Mitgliedschaften, Veranstaltungen und Vorträge</h3>
+            <h3 id="netzwerk" class="target-offset">Netzwerke und Geschäftspartner</h3>
             <p>
-              Von 2019 - 2021 war ich Mitveranstalter des Kölner Webperformance Meetups. Aktuell bin ich <a href="https://impact-hub-berlin.notion.site/Ingo-Steinke-2dd84e135fff4973ad8f06ddf9553890" target="_blank" rel="noopener">Mitglied im Impact Hub Berlin</a> und bei <a href="https://fairantwortung.org/uber-ingo-steinke/" target="_blank" rel="noopener">Fairantwortung</a>, beteilige mich aktiv an fachlichen Diskussionen und schreibe
+              Als selbstständiger Webentwickler bin ich gut vernetzt mit Designern, Entwicklern und anderen Experten. Ich bin Mitglied im Impact Hub Berlin. Ich bin freier Web Application Developer für <a href="https://defacto-ci.ch/projektteam/" target="_blank" rel="noopener">defacto|ci</a> und Freelance-Webentwickler für <a href="https://railslove.com/" target="_blank" rel="noopener">Railslove</a>.
+            </p>
+          </section>
+
+          <section class="avoid-page-break no-clear">
+            <h3>Veranstaltungen und Vorträge</h3>
+            <p>
+              Von 2019 bis 2021 war ich Mitveranstalter des Kölner Web-Performance Meetups. Zuvor engagierte ich mich ehrenamtlich im Arbeitskreis Neue Medien im Unterricht und als Veranstalter und  Vorsitzender der Skate Association Germany e.V.<br>
+              Ich beteilige mich aktiv an fachlichen Diskussionen und schreibe
               <a href="https://dev.to/ingosteinke" target="_blank" rel="noopener">Blogartikel</a> zu technischen Themen.
             </p>
             <p>
@@ -166,48 +147,42 @@ alternatehreflang: "en"
             </p>
           </section>
 
-          <section class="avoid-page-break">
-            <h4>Zukunftsthemen und nachhaltige Digitalisierung</h4>
+        </article>
+
+        {% include '../_includes/image-align-right-ingo-coworking.liquid' %}
+
+        <article class="text-width">
+
+          <section class="avoid-page-break no-clear">
+            <h4>Barrierefreiheit und nachhaltige Digitalisierung</h4>
             <p>
-              Digitalisierung kann sowohl wirtschaftlich, als auch sozial und ökologisch nachhaltig sein. Synergien ergeben sich beispielsweise, indem effiziente Entwicklung Energie und somit Kosten spart, oder indem inklusive und barrierefreie Angebote neue Kundenkreise erschließen. Gesetzlichen Vorgaben wie der Datenschutz-Grundverordnung oder dem Barrierefreiheits-Stärkungs-Gesetz können wir dank meiner Erfahrung auf elegante Weise entsprechen.
+              Digitalisierung kann sowohl wirtschaftlich, als auch sozial und ökologisch nachhaltig sein. Synergien ergeben sich beispielsweise, indem effiziente Entwicklung Energie und Kosten spart und barrierefreie Angebote neue Kundenkreise erschließen.</p>
+            <p>
+              Gesetzlichen Vorgaben wie der Datenschutz-Grundverordnung oder dem Barrierefreiheits-Stärkungs-Gesetz können wir dank meiner Erfahrung auf elegante Weise entsprechen.
+            </p>
+            <h4>Was kann ich für dich tun?</h4>
+            <p>Benötigst du Beratung, einen neuen Webauftritt oder einen Freelancer, der dein Entwickler-Team ergänzt?</p>
+            <p>
+              Melde dich gerne, um ein unverbindliches Gespräch zu vereinbaren!<br>
+              Du erreichst mich per E-Mail, Messenger, telefonisch oder über mein Kontaktformular.<br>
+              Falls ich einen Anruf nicht annehmen kann, hinterlasse mir bitte eine Sprachnachricht!<br>
+              <br>
+              Ich freue mich auf unsere Zusammenarbeit!
             </p>
           </section>
-
         </article>
-      </section>
-
-      <section class="tiled-content target-offset" id="projects">
-        <div class="pl1">
-          <h2>{{ content.projectsHeading }}</h2>
-          <p>
-            {{ content.projects }}
-          </p>
-        </div>
-        <div class="grid-container grid-container--projects">
-          {% include './_includes/projects.liquid', showallprojects: 'showallprojects', showicons: 'showicons'  %}
+        <div class="cta-container">
+          <a href="../#contact" class="buttonlike contact-link">Kontakt aufnehmen</a>
         </div>
       </section>
-
-      <br>
-      {% include './_includes/skills.liquid', showallskills: 'showallskills', skillsTitle: 'Fachkenntnisse (Skills)'  %}
-
-      <section class="tiled-content target-offset pl1">
-        <h3 id="interested">{{ content.interestedHeading }}</h3>
-        <p>
-          Melde dich gerne, um ein unverbindliches Gespräch zu vereinbaren!<br>
-          Falls ich einen Anruf nicht annehmen kann, hinterlasse mir gerne eine Sprachnachricht!
-          Ich melde mich dann zeitnah.
-        </p>
-      </section>
-      <br>
-
-      {% include '../_includes/section-imprint-contact.liquid' %}
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer"><aside>
       <p class="no-print">
         <button class="animation-toggle">{{ content.buttonToggleAnimation }}</button>
       </p>
       <p class="landingpage--links no-print">
+        <a href="../#imprint">{{ content.targetImprint }}</a>
+        <a href="../#privacy">{{ content.targetPrivacy }}</a>
         <a href="{{ content.landingLinkUrlSitemap }}">{{ content.landingLinkTextSitemap }}</a>
       </p>
       <div class="legal legal--copyright">
@@ -221,7 +196,7 @@ alternatehreflang: "en"
           {{ "now" | date: "%Y" }})
         </span>
       </div>
-    </footer>
+      </aside></footer>
     <div id="pdf-container" class="only-print initially-hidden pdf-container"></div>
   </div>
 </div>

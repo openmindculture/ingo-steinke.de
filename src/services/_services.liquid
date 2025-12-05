@@ -1,0 +1,103 @@
+---
+tags: addtositemap
+isaboutme: true
+imgdirectory: "../img"
+previewimage: "https://www.ingo-steinke.com/img/preview-creative-web-developer.png"
+previewtitle: "Services and Skills of Web Developer Ingo Steinke"
+previewdescription: "Ingo Steinke's services and offers: web development, consulting, and optimization"
+permalink: "services/index.html"
+canonicalhref: "https://www.ingo-steinke.com/services/"
+canonicalhreflang: "en"
+alternatelink: "https://www.ingo-steinke.de/leistungen/"
+alternatehreflang: "de"
+---
+<html lang="de">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Services and Skills - Web Developer Ingo Steinke</title>
+  {% include '../_includes/html-head-common.liquid' %}
+</head>
+<body class="high-contrast">
+<div class="page-container" id="top">
+  <div class="page-content">
+    <header class="jumbotronHeader" id="jumbotronHeader">
+      <br>
+      {% include './_includes/jumbotron-image.liquid' %}
+      <div class="overline center">Ingo Steinke</div>
+      <h1 class="tagline center">Services and Skills as a Web Developer</h1>
+    </header>
+    {% include '../_includes/navigation-on-subpages.liquid', headerClassName: 'wide' %}
+    <main id="content-top" class="target-offset">
+      <section class="text-content-layout text-content-color semitransparent avoid-page-break">
+        <div class="only-print timestamp top-timestamp">
+          Berlin,
+          {{ "now" | date: "%d" }}{{ content.dotIfGerman }}
+          {{ "now" | date: "%m" | customLocalizedMonthNameFilter }}
+          {{ "now" | date: "%Y" }}
+        </div>
+        <article class="text-width">
+          <h2>Senior Frontend Web Developer with more than 25 Years of professional Experience</h2>
+          <p>
+            My work as an experienced senior frontend web developer focuses on developing accessible, responsive and ecologically efficient websites and web apps using React, TypeScript, JavaScript, CSS and Astro.
+          </p>
+          <p>
+            Language skills: Englisch (C1, fluent), German (C2, native speaker)
+          </p>
+        </article>
+      </section>
+
+      {% include './_includes/skills.liquid', showallskills: 'showallskills', skillsTitle: 'Fachkenntnisse (Skills)'  %}
+
+      <section class="text-content-layout text-content-color semitransparent avoid-page-break">
+        <h2 class="target-offset" id="frontend-webentwicklung">
+          Frontend Web Development: HTML, CSS, TypeScript, React
+        </h2>
+        <article class="text-width">
+          <p>
+            Accessible web development using modern tools: HTML 5, CSS 3, TypeScript, JavaScript and React have proven themselves in front-end development. As a senior web developer, I know this from many years of experience..
+          </p>
+          <p>
+            I have used React in several projects, recently combined with Astro and Tailwind in a proof of concept at Dev-UX-Lesezeichen.de. I published the JavaScript and TypeScript code for optimizing the responsiven masonry layout as npm package <a href="https://www.npmjs.com/package/hexagonal-masonry-placement" target="_blank" rel="noopener">hexagonal-masonry-placement</a> at npmjs.com.
+          </p>
+        </article>
+
+        <h2 class="target-offset">
+          E-Commerce, AI and Full Stack Web Development
+        </h2>
+        <article class="text-width">
+          <p>
+            I use artificial intelligence where it helps and makes sense. To my customers, I offer human consulting and expertise based on more than 25 years of professional experience, including knowledge of backend and full-stack web development, accessibility (BFSG, EAA, WCAG), privacy (DSGVO, GDPR), quality assurance and agile methods.
+          </p>
+          <p>As shop software I currently prefer Shopware 6 or WooCommerce. Since 2024 I'm a <a href="/services/certified-shopware-developer-berlin/">certified Shopware developer and Shopware Extension Partner</a>.</p>
+          <p>Static site generation (SSG) can be done with React, Astro or Eleventy, usually improving efficiency and loading speed of websites significantly. For backend web development I work with PHP, TypeScript or JavaScript (Node.js), but my focus is frontend web development.</p>
+        </article>
+
+        <h2 class="target-offset">
+          Communication, Quality Assurance and Accessibility
+        </h2>
+        <article class="text-width">
+          <p>
+            Communication, documentation and quality assurance play an important role in web projects. Automatied audit and testing tools like Cypress, Playwright, Lighthouse, axe and WAVE make it easier to comply with customer requirements and legal regulations (GDPR/DSGVO, BFSG, WCAG etc.)
+          </p>
+          <p>
+            Collaboration is possible on a contractual basis as a freelancer, via a maintenance contract or according to an offer with a cost estimate.
+            Together with <a href="/ueber-mich.html#netzwerk">my network partners</a> I can implement larger projects as well.
+          </p>
+          <p>
+            Interested? Get in touch to schedule a non-binding appointment!<br>
+            You can reach me by phone, email, messenger or my contact form.<br>
+            If I can't take a call, please leave me a voice message!
+          </p>
+        </article>
+
+        <div class="cta-container">
+          <a href="../#contact" class="buttonlike contact-link">arrange appointment</a>
+        </div>
+
+      </section>
+    </main>
+    {% include '../_includes/page-footer-on-subpages.liquid' %}
+  </div>
+</div>
+</body>
+</html>

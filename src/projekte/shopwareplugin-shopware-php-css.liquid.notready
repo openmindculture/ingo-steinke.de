@@ -1,0 +1,61 @@
+{%- assign projectHeadline = 'Shopware-Plugin' -%}
+{%- assign projectHashtags = 'Shopware PHP Twig CSS JavaScript' -%}
+{%- assign projectImgAlt = 'Screenshot der Plugin-Website' -%}
+{%- assign projectImgWidth = '1109' -%}
+{%- assign projectImgHeight = '990' -%}
+{%- assign projectLinkUrl = 'https://store.shopware.com/en/ingos57544164693f/cost-transparency.html' -%}
+{%- assign sourceLinkUrl = 'https://github.com/openmindculture/sw-IngoSCostTransparency' -%}
+{%- assign projectTimestamp = '2024' -%}
+{% capture projectDescription -%}
+  Shopware-Plugin statt WooCommerce-Modul
+  TODO weiteres Case Study Stub zum Beleg dass SW günstiger als WC sein kann, allgemein formulieren Prelovedshop und/oder Kundenprojekt(e)
+
+
+  Preistransparenz schafft Vertrauen bei Kunden. Mein Plugin "Kostentransparenz" erweitert die Produktdetails in Shopware 6 um eine interaktive Grafik,
+  die verschiedene Anteile am Gesamtpreis veranschaulicht.
+
+  Price transparency before the supply chain law comes into effect
+  Easy integration into the existing storefront
+  No coding skills necessary
+  No hidden costs
+  100% open-source software
+  Features
+  Responsive and mobile-friendly layout
+  Accessible, semantic source code
+  Possibility to use HTML markup in titles and descriptions
+  Visibility in the storefront can be turned off to facilitate entering data
+  Colors can be adjusted using CSS variables (custom properties)
+
+
+  FT
+
+  Material- und Linksammlung
+
+  Hintergrund: FT ist ... und , wie ich, aktives Mitglied  im Impact Hub Berlin. Kontakt über reflecta Netzwerk, seitdem Geschäftsfreundschaft.
+
+  SEND alle incoming outlinks auch verlinken
+
+  Seit 2024 ist FoodTogether Mitglied im Sozialunternehmer:innennetzwerk SEND e.V. mit Hauptsitz im Impact Hub Berlin.
+
+  Aufgabe:
+
+  FT
+
+  Im Onlineshop auf foodtogether.de kaufen nicht nur die, denen der Weg zu unseren Marktständen zu weit ist — FoodTogether liefert deutschlandweit direkt nach Hause — sondern auch regelmäßige Marktbesucher:innen schätzen die Vorteile der beiden Alternativen.
+
+  Herausforderungen:
+
+  Legacy Shop kurz vor der Fertigstellung übernehmen, erweitern und optimieren. Aus zeitlichen und finanziellen Gründen entschieden wir uns zunächst gegen einen technischen Neustart, sondern blieben beim bestehenden WooCommerce-Shop-Theme und den dazu nötigen WordPress-Plugins.
+
+
+  Sichtbarkeit und sichtbare Erfolge:
+
+  <p>Im Rahmen des Programms <a href="https://berlin.impacthub.net/program/feeding-the-city/">Feeding the City</a> präsentierte der Impact Hub Berlin FoodTogether auf der <a href="https://berlin.impacthub.net/sustainable-food-stakeholder-map-2023/">Sustainable Food Stakeholder Map Berlin/Brandenburg 2023</a> unter "Innovations &amp; Corporates".<br> </p>
+
+  Das Event- und Coworking-Café The Loop verwendet Produkte von FoodTogether im Rahmen der ganzheitlichen Küche beim Impact Hub Community Lunch.
+
+  farm und sexy«, »Nachhaltisch« oder »Freiheit, Gleichheit, Mahlzeit«: Mit mehr als 40 knackigen Sprüchen der Agentur glow werben zehn nachhaltige Food-Marken auf Plaketen, Flyern und auf Social Media für eine zukunftsweisende Ernährung. Als eine von "10 Brands für Leute mit Geschmack" wird auch FoodTogether vorgestellt: Mehr zur Kampagne: www.berlin-isst-anders.de/
+
+
+
+{% endcapture %}
