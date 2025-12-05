@@ -159,7 +159,7 @@ module.exports = {
   "testimonialsReadMoreLinkUrl0": "/projekte/#testimonials",
   "testimonialsReadMoreText1": "Weitere Bewertungen bei Google lesen",
   "testimonialsReadMoreTitle1": "Google-Unternehmensprofil von Ingo Steinke",
-  "testimonialsReadMoreLinkUrl1": "https://www.google.com/maps/place/Ingo+Steinke/@51.175807,9.1867482,6z/data=!4m6!3m5!1s0x47b8cf81dc94e4ab:0x756104e1aec1a165!8m2!3d51.175807!4d9.1867482!16s%2Fg%2F11qsm5r_br?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D",
+  "testimonialsReadMoreLinkUrl1": "https://www.google.com/maps/place/Ingo+Steinke/@52.4784526,13.4428464,16.9z/data=!4m6!3m5!1s0x47b8cf81dc94e4ab:0x756104e1aec1a165!8m2!3d51.175807!4d9.1867482!16s%2Fg%2F11qsm5r_br?entry=ttu&g_ep=EgoyMDI1MTIwMi4wIKXMDSoASAFQAw%3D%3D",
   "testimonialsReadMoreLinkUrl2": "https://www.provenexpert.com/ingo-steinke-creative-web-developer/",
   "testimonialDanielaQuote": "Ich hatte das Vergnügen mit Ingo zusammenzuarbeiten und bin begeistert von seiner Kompetenz im Bereich Webentwicklung. Er ist nicht nur technisch versiert, sondern auch konzeptionell stark. Besonders eindrucksvoll finde ich, dass Ingo für jedes Problem eine Lösung erarbeiten kann. Nicht zuletzt zeichnet er sich durch sein starkes Engagement im Bereich Nachhaltigkeit aus.",
   "testimonialDanielaAuthor": "Daniela, Designerin",
