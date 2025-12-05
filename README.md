@@ -23,7 +23,7 @@ This is a screenshot updated in 2025:
 - edit metadata using exiftool
 
 ```
-exiftool -Title="CV Ingo Steinke -Frontend-Web-Entwickler" -Author="Ingo Steinke" -Subject="Freelance-Web-Entwickler mit Frontend-Fokus" -Keywords="Frontend-Entwickler, Web-Entwicklung, Webentwicklung, Web Development, JavaScript, TypeScript, React, HTML, CSS, SCSS, PHP, npm, Docker, Git, Cypress, Performance Optimierung, Accessibility, Barrierefreiheit, Freelancer, Remote" Ingo-Steinke-Frontend-Web-Entwickler-CV-YYYY-MM.pdf
+exiftool -Title="CV Ingo Steinke - Frontend-Web-Entwickler" -Author="Ingo Steinke" -Subject="Freelance-Web-Entwickler mit Frontend-Fokus" -Keywords="Frontend-Entwickler, Web-Entwicklung, Webentwicklung, Web Development, JavaScript, TypeScript, React, HTML, CSS, SCSS, PHP, npm, Git, Cypress, Performance Optimierung, Accessibility, Barrierefreiheit, Freelancer, Remote" Ingo-Steinke-Frontend-Web-Entwickler-CV-YYYY-MM.pdf
 ```
 
 - save output to `/src` && rebuild project
