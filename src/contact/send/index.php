@@ -128,6 +128,8 @@ if (
   strpos($post_msg, '//t.me') !== false ||
   strpos($post_msg, '//rb.gy') !== false ||
   strpos($post_msg, 'rb.gy/') !== false ||
+  strpos($post_msg, '-promocode.com') !== false ||
+  strpos($post_msg, '//yandex.com') !== false ||
   strpos($post_msg, '//yandex.ru') !== false ||
   strpos($post_msg, 'dublikat.ru') !== false ||
   strpos($post_msg, '.ru/') !== false ||
