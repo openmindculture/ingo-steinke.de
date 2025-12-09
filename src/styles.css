@@ -279,7 +279,7 @@ a.menu-toggle:hover {
 .page-footer {
   color: var(--primary-foreground);
   line-height: 1;
-  padding: 0 0 1vh 1em;
+  padding: 0 0 1vh 0;
   margin: 0 auto;
   text-align: center;
 }
@@ -572,6 +572,7 @@ a.vcard-digital-qr:hover {
 }
 
 .vcard-digital-qr-image {
+  display: block;
   width: 90%;
   height: auto;
 }
@@ -983,6 +984,12 @@ ul.grid-container.skills {
 
 .sitemap ul:last-child {
   margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .sitemap ul {
+    padding-left: 0.5rem;
+  }
 }
 
 .sitemap h2 {
@@ -1441,7 +1448,7 @@ body.high-contrast {
   margin-left: auto;
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 768px) {
   .grid-container.grid-container--projects {
     grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
   }
