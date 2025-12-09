@@ -358,7 +358,7 @@ small {
   }
 
   .tiled-content {
-    margin: 0 1em 2em 0;
+    margin: 0 0.5em 2em 0.5em;
   }
 
   .tiled-content#projects {
@@ -603,10 +603,6 @@ small {
    * reduce fixed spacing
    */
 
-  .tiled-content {
-    margin-right: 2px;
-  }
-
   .grid-container {
     grid-template-columns: 1fr;
     -ms-grid-columns: 1fr;
@@ -656,7 +652,7 @@ small {
 
   .text-content-layout {
     padding-right: 0.5em;
-    padding-left: 0.5em;
+    padding-left: 0.75em;
     margin-bottom: 1em;
   }
 
@@ -696,6 +692,7 @@ small {
   ul.skills > .tile ul,
   ul.skills > .tile li {
     padding-right: 0;
+    margin-left: 0.125rem;
   }
 
   .hashtags {
