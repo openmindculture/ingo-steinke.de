@@ -51,7 +51,7 @@ module.exports = {
   "targetHrCv": "CV, Projects, Skills",
   "targetHrCvUrl": "cv-projects-skills.html",
   "targetHrConciseCv": "CV, projects, skills frontend web developer Ingo Steinke",
-  "targetHConciserCvUrl": "/Ingo-Steinke-Frontend-Web-Entwickler-CV-2025-10.pdf",
+  "targetHrConciseCvUrl": "/Ingo-Steinke-Frontend-Web-Developer-CV-2025-10.pdf",
   "caseStudyAstroApp": "",
   "caseStudyAstroAppUrl": "",
   "caseStudyKleiderordnung": "",
