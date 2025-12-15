@@ -3,7 +3,7 @@ tags: addtositemap
 imgdirectory: "../img"
 previewimage: "https://www.ingo-steinke.com/img/preview-freelancer-berlin-de.png"
 previewtitle: "Fallstudie: Webentwicklung mit Astro, React, TypeScript, Tailwind, Playwright und Storybook"
-previewdescription: "Ingo Steinke ist ein Freelance Webentwickler aus Berlin mit über 20-jähriger Berufserfahrung."
+previewdescription: "Ingo Steinke ist ein Freelance Webentwickler aus Berlin mit über 25-jähriger Berufserfahrung."
 permalink: "leistungen/webentwickler-berlin-freelancer.html"
 canonicalhref: "https://www.ingo-steinke.de/leistungen/webentwickler-berlin-freelancer.html"
 canonicalhreflang: "de"
@@ -31,5 +31,5 @@ Herausforderung: begrenzte Zeit, keine kundenseitige Priorisierung, viele techni
 
 Als kreativer Webentwickler mit einem Gespür für Design liegt mein Fokus auf barrierefreier, responsiver und
 <a href="">nachhaltiger Frontend-Entwicklung</a>. Somit sollten Design und Backend einfach bleiben.
-Die <a href="">Inselarchitektur</a> von Astro erschien mir als vielversprechender Ansatz für 
+Die <a href="">Inselarchitektur</a> von Astro erschien mir als vielversprechender Ansatz für
 
