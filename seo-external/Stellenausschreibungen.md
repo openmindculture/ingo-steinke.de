@@ -1,5 +1,169 @@
 # Stellenausschreibungen und Firmenprofile
 
+TODO: merge new and reviewed older entries
+
+2025/12
+
+Senior Frontend Developer mit CRO/ UX-Fokus (m/w/d) gesucht // Spannender Kunde
+
+Senior Frontend Developer mit CRO/ UX-Fokus (m/w/d) zur Unterstützung des internen Teams. Das Projekt bietet die Möglichkeit auf hybrides Arbeiten.
+
+
+Hier die Eckdaten:
+- Position: Senior Frontend Developer mit CRO/ UX-Fokus (m/w/d)
+- Start: 01.01.2026
+- Auslastung: Vollzeit (ca. 70% remote, 30% on-site)
+- Laufzeit: 4 Monate mit Option auf Verlängerung
+- Standort: Berlin
+
+
+Aufgaben:
+Implementierung von Testvarianten und Feature Toggles direkt im Template-Code und Deployment in die Testumgebung
+Erstellung und Pflege automatisierter Test-Suites zur Sicherstellung der Code-Qualität und Vermeidung von Regressionen im Frontend
+Konfiguration und Debugging des Data Layers, um alle relevanten User-Interaktionen präzise für Analysesysteme erfassbar zu machen
+Kontinuierliche Analyse und Verbesserung der Frontend-Performance
+Enge Abstimmung mit UX-Designern zur Validierung der technischen Machbarkeit und zur Umsetzung von User Stories
+Code-Review und Dokumentation
+
+
+
+
+Anforderungen:
+Sicherer Umgang mit HTML5, CSS3 (inkl. Pre-Prozessoren/Frameworks) und JavaScript
+Erfahrung in der Konzeption und technischen Umsetzung von A/B-Tests, idealerweise in komplexen Template-Umgebungen
+Starke Kompetenz in der Implementierung und Wartung von automatisierten Testumgebungen
+Fähigkeit, User Stories und Design-Vorgaben in performanten Code zu übersetzen und Usability-Probleme zu erkennen
+Tiefes Verständnis für die Strukturierung eines Data Layers zur korrekten Übermittlung von Events an Analysesysteme
+Routinierter Umgang mit Responsive Design und Fokus auf Web Performance auf mobilen Geräten
+
+
+
+---
+
+2025/12
+
+Für ein internationales EdTech-Produkt suchen wir eine:n erfahrene:n
+Frontend Developer mit Fokus auf
+React und
+TypeScript.
+Das Projektteam arbeitet cross-funktional (Product, UX, Backend) an der Weiterentwicklung einer webbasierten Lernplattform mit Millionen Nutzern.
+Du bist verantwortlich für die Umsetzung moderner, performanter und gut testbarer UI-Komponenten sowie die Optimierung bestehender Frontend-Strukturen.
+
+Aufgaben
+Entwicklung neuer Features in
+React und
+TypeScript
+Erstellung und Pflege wiederverwendbarer UI-Komponenten
+Integration von APIs (REST/GraphQL) in das Frontend
+Performance-Optimierung und Sicherstellung von Cross-Browser-Kompatibilität
+Enge Zusammenarbeit mit Design- und Produktteams
+Schreiben automatisierter Tests (Jest, Testing Library o. Ä.)
+Code Reviews &amp; aktive Mitarbeit an Architektur- und UX-Verbesserungen
+
+Must-have Skills
+Sehr gute Kenntnisse in
+React,
+TypeScript,
+JavaScript (ES6+),
+HTML,
+CSS
+Erfahrung mit UI-Testing (z. B. Jest, Testing Library)
+Sicherer Umgang mit Git und modernen Build-Tools
+Verständnis von Responsive Design &amp; Web-Performance
+Erfahrung in der Arbeit in agilen, cross-funktionalen Teams
+Selbstständige, strukturierte Arbeitsweise und hohe Code-Qualität
+
+Nice-to-have Skills
+Erfahrung mit
+Storybook
+Kenntnisse im Bereich
+Internationalisierung (i18n)
+Erfahrung mit Design-Systemen oder Component Libraries
+Erfahrung mit API-Design oder GraphQL
+Grundkenntnisse in UX / UI-Patterns
+
+Projekt-Rahmendaten
+Start: asap
+
+Dauer: 3-6 (Verlängerung möglich)
+
+Auslastung: 100 %
+
+Remote Anteil: 100 %
+
+Sprache: Englisch
+
+
+Project Description
+
+For an international EdTech product, we are looking for an experienced Frontend Developer with a focus on React and TypeScript.
+The project team works in a cross-functional setup (Product, UX, Backend) to further develop a web-based learning platform used by millions of learners.
+You will be responsible for implementing modern, high-performance, and well-testable UI components, as well as optimizing existing frontend structures.
+
+
+Responsibilities
+
+Development of new features using React and TypeScript
+Creation and maintenance of reusable UI components
+Integration of APIs (REST/GraphQL) into the frontend
+Performance optimization and ensuring cross-browser compatibility
+Close collaboration with design and product teams
+Writing automated tests (Jest, Testing Library, or similar)
+Code reviews and active contribution to architecture and UX improvements
+
+Must-have Skills
+
+Strong knowledge of React, TypeScript, JavaScript (ES6+), HTML, CSS
+Experience with UI testing (e.g., Jest, Testing Library)
+Confident use of Git and modern build tools
+Understanding of responsive design and web performance
+Experience working in agile, cross-functional teams
+Independent, structured work style and high code quality
+
+Nice-to-have Skills
+
+Experience with Storybook
+Knowledge of internationalization (i18n)
+Experience with design systems or component libraries
+Experience with API design or GraphQL
+Basic understanding of UX/UI patterns
+
+Project Details
+Start: ASAP
+Duration: 3–6 months (extension possible)
+Workload: 100%
+Remote: 100%
+Language: English
+
+---
+
+2025/03
+
+erfahrenen Shopware 6 Entwickler (Freelancer) für ein Projekt. Der Einsatz beginnt ab April und kann remote oder hybrid erfolgen.
+
+Aufgaben:
+- Entwicklung, Anpassung und Optimierung von Shopware 6 Shops
+- Umsetzung von individuellen Plugins & Erweiterungen
+- Performance-Optimierung und Fehlerbehebung
+- Integration von Drittsystemen & Schnittstellen (z. B. ERP, Payment, PIM)
+- Technische Beratung & Zusammenarbeit mit Design- und Marketing-Teams
+
+Anforderungen:
+- Mehrjährige Erfahrung mit Shopware 6 Entwicklung (Theme-Entwicklung, Plugin-Programmierung)
+- Sehr gute Kenntnisse in PHP (Symfony), Twig, MySQL
+- Erfahrung mit REST- und GraphQL-APIs
+- Sicherer Umgang mit Shopware 6 Administration & Deployment
+- Nice-to-have: Erfahrung mit Ibexa (ehemals eZ Platform) für Content Management
+
+Rahmenbedingungen:
+Start: April
+Dauer: 3 Monate mit Option auf Verlängerung
+Remote oder Hybrid möglich
+
+Interessiert? Schicken Sie uns bitte Ihren CV und den Stundensatz per E-Mail zu.
+
+---
+
 TL;DR
 
 top keywords across all relevant job descriptions:
