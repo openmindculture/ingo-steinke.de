@@ -358,11 +358,18 @@ small {
   }
 
   .tiled-content {
-    margin: 0 0.5em 2em 0.5em;
+    margin: 0 0 2em 0;
   }
 
   .tiled-content#projects {
     margin-right: 0;
+  }
+
+  @media (max-width: 1500px) {
+    .tiled-content#projects {
+      max-width: calc(100% - 1em);
+      margin: 0 0.5em 2em 0.5em;
+    }
   }
 
   .clear {
