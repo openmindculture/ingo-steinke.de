@@ -470,15 +470,6 @@ small {
     margin: 1.5em 0 0.5em 1em;
   }
 
-  .tile img.project-thumb--planted,
-  .tile img.project-thumb--shopwareplugin {
-    margin-right: 0.5em;
-  }
-
-  .tile img.project-thumb--shopwareplugin {
-    margin-top: 3rem;
-  }
-
   .tile img.project-thumb--twistedconnection {
     margin-top: 2.5rem;
     margin-right: 1.5rem;
