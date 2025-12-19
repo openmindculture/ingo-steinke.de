@@ -1,5 +1,19 @@
 # Changelog
 
+## [4.9.4] improve and extend content - 2025-12-19
+
+* add SEO-optimized content:
+* add legacy code case study page
+* link legacy code case study page
+  * as a link for the NDA customer project
+  * from wp/woo landing page
+  * from sitemap
+* unclutter and update CV PDF
+* add Kunnig screenshot
+* swap project tiles
+* fix mobile margin projects width issue
+* remove external analytics integration unless needed
+
 ## [4.9.0] improve and extend content - 2025-12-04
 * add intermediate overview pages
 * more consistent and unsurprising navigation
