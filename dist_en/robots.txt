@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /*.pdf$
+Disallow: /404.html
+Disallow: /fonts
 Sitemap: https://www.ingo-steinke.de/sitemap.xml
