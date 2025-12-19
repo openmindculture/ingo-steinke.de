@@ -1,0 +1,162 @@
+<!doctype html><html lang="de"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><title>Fallstudie: Migration, Modernisierung und Wartung von Legacy-Code-Projekten</title><meta name="language" content="de"><meta name="viewport" content="width=device-width,initial-scale=1"><style>/*! Blackletra Dorival UI Extrabold is licensed to Ingo Steinke, Creative Web Developer, Invoice Number: 101191 */ @font-face{font-family:'DorivalUI';font-style:normal;font-weight:700;font-display:swap;src:local(''),
+  url('../fonts/DorivalUI-Extrabold.woff2') format('woff2'),url('../fonts/DorivalUI-Extrabold.woff') format('woff');
+  }
+  @font-face {font-family:'Montserrat';font-style:normal;font-weight:400;font-display:swap;src:local(''),
+  url('../fonts/montserrat-v15-latin-ext_latin-regular.woff2') format('woff2'),
+  url('../fonts/montserrat-v15-latin-ext_latin-regular.woff') format('woff');
+  }
+  html{box-sizing:border-box;font-size:100%}*,:after,:before{box-sizing:inherit}
+  body {
+    /* WORKAROUND #218 TODO update critical design tokens redundantly here */
+    --primary-background: #1d4950;
+    --primary-foreground: #ebeff2;
+    --primary-heading: #ebeff2;
+    --secondary-lighter-background: #d1d4d6;
+    --secondary-heading: #053245;
+    --secondary-foreground: #000;
+    --body-font-family: 'Montserrat', 'Helvetica', sans-serif;
+    --body-font-weight: 400;
+    --body-line-height: 1.75;
+    --heading-font-family: 'DorivalUI', serif;
+    --heading-font-weight: 700;
+    /* WORKAROUND END */
+
+    line-height: var(--body-line-height);
+    font-family: var(--body-font-family);
+    font-weight: var(--body-font-weight);
+    color: var(--primary-foreground);
+    background-color: var(--primary-background);
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  body.high-contrast .jumbotronHeader {
+    background: var(--primary-background);
+  }
+  @media screen and (min-width:950px){body,html{-webkit-text-size-adjust:none;-moz-text-size-adjust:none;text-size-adjust:none}}
+  #sticky-headline,#sticky-headline a,.aside-heading,h1,h2,h3,h4{color:var(--primary-foreground);font-family:DorivalUI,serif;font-weight:700;letter-spacing:.0125rem}.aside-heading,h2,h3,h4{font-size:1.5rem;line-height:1.5;margin-bottom:1.5rem;margin-top:1.5rem}.aside-heading,.hashtags,.tagline,.tile,h1,h2,h3,h4{max-width:99%}del{text-decoration:line-through}.jumbotronHeader .aside-heading{font-family: Montserrat,sans-serif;}small{font-size:.75rem}@media screen and (max-width:768px) and (-webkit-min-device-pixel-ratio:0){small{font-size:16px}}.nav-wrapper{display:flex;align-items:flex-start;}@media only screen{.only-print{display:none}.page-container{display:flex;flex-direction:row;width:100%}.jumbotronHeader{justify-content:center;align-items:center;text-align:center;background-color:rgba(29,73,80,.75);display:flex;flex-direction:column;height:auto;width:100%}
+  .jumbotronHeader h1{font-size: 3.5rem;letter-spacing:.125rem;line-height:1.25;margin:1rem 0 1rem 0;padding:0}
+  .jumbotronHeader p{font-size: 2.325rem;margin:1rem 2rem 2rem 1rem;padding:0;max-width:80%;color:#ebeff2;font-family:Montserrat,Helvetica,sans-serif;font-weight:400;}}
+  .jumbotronHeader.has-text-paragraphs{padding-top:1rem;margin:0 auto 4rem auto;max-width:1600px;}
+  .jumbotronHeader.has-text-paragraphs h1 {margin-top:2rem;margin-bottom:2rem;font-size:3.5rem;max-width:1200px;max-width: min(1200px, 98%);}
+  .jumbotronHeader.has-text-paragraphs h1+a {line-height: 1;margin:1rem 0 1rem 0;padding:0.25rem 0 0 0;}
+  .jumbotronHeader.has-text-paragraphs p {font-size:1.3125rem;}
+  .jumbotronHeader.has-text-paragraphs p:first-child {margin-top:2.5rem;}
+  .jumbotronHeader.has-text-paragraphs p:last-child {margin-bottom:4rem;}
+  .jumbotronHeader p:not(.center) {text-align:left;}
+  @media only screen and (min-width:950px){
+    .jumbotronHeader:not(.has-text-paragraphs) h1{font-size:3rem;margin-top:2rem;}
+    .jumbotronHeader:not(.has-text-paragraphs) p{font-size:2rem;margin-bottom:4rem;}
+  }
+  @media only screen{
+    img.avatar{border-radius:50%}
+    .jumbotronHeader-homeLink,
+    .jumbotronHeader-homeLink picture,
+    .jumbotronHeader-homeLink img {
+      display: block;
+    }
+    .sticky-header{background-color:var(--primary-background);height:2.25em;position:sticky;text-align:center;top:-1px;width:100%;z-index:10}.sticky-header>.wrapper{box-shadow:0 7px 14px 0 rgba(29,73,80,.75);display:flex;flex-direction:row;justify-content:space-between;margin:0 auto;max-width:1500px}.sticky-header.smaller-header>.wrapper{max-width:1300px;}.sticky-header>.wrapper img.avatar{margin:6px 6px -6px}.sticky-header .temporary-nav-wrapper{margin:6px 1em -6px 6px}.sticky-header.is-unstuck .unsticky-hidden{display:none}.raised-layer{z-index:2000}.target-offset:before{content:" ";display:block;height:45px;margin-top:-45px;pointer-events:none;visibility:hidden}main{margin:0 auto;max-width:1500px;width:100%;}.page-content{align-items:flex-start;display:flex;flex-direction:column;width:100%;margin: 0 auto;z-index:2}.decoration{animation:fadeIn 5s linear 10s 1 both;height:100vh;max-width:100%;opacity:0;overflow:hidden;position:fixed;width:100vw;z-index:1}
+    .jumbotronHeader h1,
+    .jumbotronHeader .overline {
+      font-size: 5rem;
+      line-height: 1.25;
+      letter-spacing: 0.125rem;
+      padding: 0;
+      margin: 0;
+      font-family: var(--heading-font-family);
+      font-weight: var(--heading-font-weight);
+    }
+    .jumbotronHeader .overline {
+      margin-top: 0.75rem;
+    }
+    .jumbotronHeader .overline + h1.tagline {
+      margin-top: 1.25rem;
+    }
+
+    /* Semantic SEO vs. visual appearance */
+    .jumbotronHeader h1.tagline {
+      font-size: 2rem;
+      margin-bottom: 4rem;
+      font-family: var(--body-font-family);
+      font-weight: 400;
+      animation: none;
+      background: unset;
+      -webkit-text-fill-color: var(--primary-foreground);
+    }
+  }
+  @media only screen and (prefers-reduced-transparency){.sticky-header>.wrapper{box-shadow:0 7px 14px 0 var(--primary-background)}}@media only screen{@keyframes fadeIn{0%{opacity:0}to{opacity:1}}.text-content-layout-children{padding:0}.privacy,.text-content-layout,.text-content-layout-children>*{line-height:1.75;margin:0 0 2em;padding:.5em 1em 1em 1em;text-align:left}.privacy{display:block}.privacy,.text-content-color{background-color:var(--secondary-lighter-background);color:#000}.privacy .aside-heading,.privacy h3,.privacy h4,.text-content-color .aside-heading,.text-content-color h2,.text-content-color h3,.text-content-color h4{color:#053245}.capitalized:first-letter{float:left;font-size:3.25rem;line-height:1;margin:0;padding:0}.tiled-content{margin:0 0 2em 0}@media (max-width: 1500px){.tiled-content#projects{max-width:calc(100% - 1em);margin: 0 0.5em 2em 0.5em;}}.clear,section:not(.no-clear){clear:both}.grid-container{grid-column-gap:3em;grid-row-gap:2em;clear:both;display:flex;display:grid;flex-wrap:wrap;grid-template-columns:repeat(auto-fit,minmax(440px,1fr));justify-content:space-between}.grid-container>*{flex-basis:49%;margin-bottom:2em}@supports (display:grid){.grid-container>*{margin-bottom:0}}
+    ul.grid-container{
+      grid-column-gap:1em;
+      grid-template-columns:repeat(auto-fit,minmax(100%,1fr));
+      list-style-type:none;
+      margin:0;
+      padding:0;
+      text-indent:0;
+    }
+    @media (min-width:410px) {
+      ul.grid-container{
+        grid-template-columns:repeat(auto-fit,minmax(410px,1fr));
+      }
+    }
+    .site-title {
+      display: none;
+    }
+    @media (min-width: 400px) {
+      .site-title {
+        display: inline;
+      }
+    }
+    .text-width,.text-width-children>*{max-width:1300px;width:90%}
+    .text-center{margin-left:auto;margin-right:auto}.semitransparent .text-width{width:70%}.tile img.project-thumb{float:right;height:4em;margin:1em 0 1em 1em;width:4em}.tile img.project-thumb--shrink{height:3.5em;width:3.5em}.tile img.project-thumb--grow{height:4.625em;margin-left:.5em;width:4.625em}
+    .tile img.project-thumb--kleiderordnung{margin: 0 .5em 2em 3em;}
+    .tile img.project-thumb--atomic-design-system{margin:2em 0 1em 1em}
+    .tile img.project-thumb--wordpress-woo{margin:0 0 1em 1em}
+    .tile img.project-thumb--daskannstdutun{height:5em;margin:1.5em 0 .5em 1em;width:5em}
+    .tile img.project-thumb--twistedconnection {
+      margin-top: 2.5rem;
+      margin-right: 1.5rem;
+    }
+    .tile img.project-thumb--portfolio {
+      margin-bottom: 1.5rem;
+    }
+    .row{display:block;display:flex;flex-direction:row}.row>*{float:left}.page-navigation{display:none;position:relative}.credits{font-size:.75rem}.initially-hidden,.visually-hidden{display:none}.initially-hidden:target{display:block}.mb0{margin-bottom:0}.pb3{padding-bottom:3em;}a.tw-btn,a.tw-btn:active,a.tw-btn:hover,a.tw-btn:link,a.tw-btn:visited{background-color:#0c7abf;border-radius:.25em;color:#fff;display:inline-block;margin:.0325em .25em .25em 0;padding:.2em .5em .2em .25em;text-decoration:none}a.gh-btn,a.gh-btn:active,a.gh-btn:hover,a.gh-btn:link,a.gh-btn:visited{background-color:#24292e;border-radius:.25em;color:#fff;display:inline-block;margin:.0325em .25em .25em 0;padding:.15em .5em .25em .2em;text-decoration:none}.social-btn svg{margin:0 .25em}.page-navigation a:active,.page-navigation a:link,.page-navigation a:visited,.sticky-header a:active,.sticky-header a:link,.sticky-header a:visited{color:#fff;text-decoration:none;letter-spacing:0.5px}.page-navigation a.active,.page-navigation a:active{font-weight:bold}}@media only screen and (max-width:768px){.semitransparent .text-width,.text-width{width:90%}.jumbotronHeader{height:auto;}@media only screen and (max-width:440px){.jumbotronHeader .overline,.jumbotronHeader h1:not(.tagline){font-size:2.5rem;padding-top:0.5rem;padding-bottom:0.5rem;}h2,h3,h4{font-size:1.3125rem}.pl1{padding-left:.5em}.text-content-layout{margin-bottom:1em;padding-left:.75em;padding-right:.5em;}.semitransparent .text-width,.text-width{width:95%}ul.social-links{max-width:99%;padding-left:0;padding-right:0}ul.social-links li{padding:0;min-height:70px;}ul.social-links a{padding:.5em}.skills-wrapper{padding-left:0}.skills-wrapper h3,.skills-wrapper h4{padding-left:.5em}ul.skills>.tile{padding-left:0}ul.skills>.tile li,ul.skills>.tile ul{padding-right:0;margin-left: 0.125rem;}.tile h3{margin-top:1em}.hashtags{overflow-x:hidden}}@media only screen and (max-width:375px){.jumbotronHeader .overline, .jumbotronHeader h1:not(.tagline){font-size:2rem;margin-bottom:.5em}.jumbotronHeader p{font-size:1.25rem;line-height:1.5}footer.page-footer{padding-left:0;}}}
+  .jumbotronHeader p a:active, .jumbotronHeader p a:focus, .jumbotronHeader p a:hover {color:#000;}
+  .imprint-contact {margin-top:2rem;}
+  .imprint-contact .aside-heading {font-family:Montserrat,sans-serif;font-size:1.5rem;font-weight:normal;}
+  ul.aside-heading {text-align:left;}
+  main section:last-child {
+    padding-bottom: 0.125em;
+    margin-bottom: 2em;
+  }
+  .headingless {
+    padding-top: 1em;
+  }
+  .image-right {
+    margin: 0;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .image-right img {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0.25rem;
+  }
+
+  @media (min-width: 768px) {
+    .image-right {
+      float: right;
+      margin-top: 2rem;
+      margin-left: 2rem;
+    }
+  }</style><link rel="stylesheet" media="screen" href="../styles.css?v=4.9.2"><link rel="stylesheet" media="print" href="../print.css?v=4.9.2"><script defer="defer" src="../js/scripts.js?v=4.9.2"></script><script>window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'analytics_storage': 'denied',
+    'ad_user_data': 'denied',
+    'ad_personalization': 'denied'
+  });</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-E26XNEKQK2"></script><script>gtag('js', new Date());
+  gtag('config', 'G-E26XNEKQK2');</script><meta name="author" content="Ingo Steinke"><meta name="p:domain_verify" content="4c4296e5835f4a47eb2c2e5488a99d71"><meta name="google-site-verification" content="Qs1p7JgqPLOGD3BYCMGe9EbyNJJEswyala44hnkO6d4"><meta name="robots" content="index,follow"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><meta name="theme-color" content="#ffffff"><meta property="og:image" content="https://www.ingo-steinke.com/img/preview-case-legacy-de.png"><meta property="og:title" content="Fallstudie: Migration, Modernisierung und Wartung von Legacy-Code-Projekten"><meta property="og:description" content="Ingo Steinke bietet als Freelance Webentwickler mit über 25 Jahren Berufserfahrung auch Migration, Modernisierung und Wartung von Legacy-Code-Projekten an."><meta name="description" content="Ingo Steinke bietet als Freelance Webentwickler mit über 25 Jahren Berufserfahrung auch Migration, Modernisierung und Wartung von Legacy-Code-Projekten an."><link rel="canonical" href="https://www.ingo-steinke.de/projekte/legacy-migration-modernisierung-wartung-fallstudie.html"><link rel="alternate" hreflang="de" href="https://www.ingo-steinke.de/projekte/legacy-migration-modernisierung-wartung-fallstudie.html"><link rel="alternate" hreflang="en" href="https://www.ingo-steinke.com/projects/legacy-migration-modernization-maintenance-case-study.html"></head><body class="high-contrast"><div class="page-container" id="top"><div class="page-content"><header class="jumbotronHeader has-text-paragraphs" id="jumbotronHeader"><a href="/" class="jumbotronHeader-homeLink transparent"><picture><source type="image/webp" srcset="../img/Ingo-Steinke-flower-shirt.webp, ../img/Ingo-Steinke-flower-shirt-496.webp 2x, ../img/Ingo-Steinke-flower-shirt-large.webp 4x"><img src="../img/Ingo-Steinke-flower-shirt.jpg" srcset="../img/Ingo-Steinke-flower-shirt-496.jpg 2x, ../img/Ingo-Steinke-flower-shirt-large.jpg 4x" width="248" height="248" alt="Portrait von Webentwickler Ingo Steinke in Berlin" class="avatar"></picture></a><h1>Fallstudie: Migration, Modernisierung und Wartung von Legacy-Code-Projekten</h1></header><div class="sticky-header smaller-header is-nav-closed is-unstuck" id="sticky-header"><div class="wrapper"><span class="raised-layer"><span class="scripted hideable" id="sticky-headline"><a href="/"><img src="../img/Ingo-Steinke-portrait-2020.jpg" width="25" height="25" alt="Zum Seitenanfang" class="avatar"> <span class="site-title">Ingo Steinke</span></a></span></span><div class="nav-wrapper"><a href="../#contact" class="extra-nav-link contact-link initially-hidden">Kontakt</a> <a href="#main-menu" id="main-menu-toggle" class="menu-toggle" aria-label="Inhaltsverzeichnis öffnen"><span class="sr-only">Inhaltsverzeichnis öffnen</span> Inhalt</a><nav id="main-menu" class="main-menu page-navigation" aria-label="Inhaltsverzeichnis"><a href="#main-menu-toggle" id="main-menuClose" class="menuClose" aria-label="Inhaltsverzeichnis schließen"><svg viewBox="0 0 512 512" width="16" height="16"><g><path d="m25 512a25 25 0 0 1 -17.68-42.68l462-462a25 25 0 0 1 35.36 35.36l-462 462a24.93 24.93 0 0 1 -17.68 7.32z" fill="currentColor"/><path d="m487 512a24.93 24.93 0 0 1 -17.68-7.32l-462-462a25 25 0 0 1 35.36-35.36l462 462a25 25 0 0 1 -17.68 42.68z" fill="currentColor"/></g></svg></a><ul><li><a href="/leistungen/">Fachkenntnisse</a></li><li><a href="/projekte/">Projekte</a></li><li><a href="/ueber-mich.html">Über mich</a></li><li><a href="/#contact" class="contact-link">Kontakt</a></li><li><a href="https://www.ingo-steinke.com/projects/legacy-migration-modernization-maintenance-case-study.html" hreflang="en" lang="en" title="Change language to English" id="language-switch">English</a></li></ul></nav><button class="animation-toggle no-print" title="Animation an/aus"><svg width="24" height="24" viewBox="0 0 24 24"><g><path fill="none" d="M0 0h24v24H0z"/><path fill="currentColor" d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM9 9h2v6H9V9zm4 0h2v6h-2V9z"/></g></svg></button> <button id="contrast-toggle" class="contrast-toggle no-print" title="" data-reducecaption="Kontrast verringern" data-increasecaption="Kontrast erhöhen"><svg viewBox="0 0 32 32" width="24" height="24"><path fill="currentColor" d="M15 2h2v3h-2zM27 15h3v2h-3zM15 27h2v3h-2zM2 15h3v2H2zM5.45 6.884l1.414-1.415 2.121 2.122-1.414 1.414zM23 7.58l2.121-2.12 1.414 1.414-2.121 2.121zM23.002 24.416l1.415-1.414 2.12 2.122-1.413 1.414zM5.47 25.13 7.59 23 9 24.42l-2.12 2.12-1.41-1.41zM16 8a8 8 0 1 0 8 8 8 8 0 0 0-8-8Zm0 14a6 6 0 0 1 0-12Z"/><path fill="none" style="fill:none" d="M0 0h32v32H0z"/></svg></button> <a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" title="Inhaltsverzeichnis schließen" hidden></a></div></div></div><main id="content-top" class="target-offset"><section class="text-content-layout text-content-color"><article class="text-width"><p>Als Web-Entwickler habe ich mit unterschiedlichen Arten von Legacy-Code-Projekten zu tun. Viele Web-Projekte erfüllen lange Zeit still und unverändert ihre Aufgaben, bis aktuelle Anforderungen entstehen, die sich nicht ohne Umprogrammierung umsetzen lassen. Das können Anforderungen geschäftlicher, gesetztlicher oder technischer Art sein, beispielsweise ein sicherheitsrelevantes Software-Update, das nicht mit dem vorhandenen Code kompatibel ist.</p><p>Aber auch in aktiven Projekten kann es durch veränderte Anforderungen nötig werden, im laufenden Betrieb Codebasis und Geschäftslogik zu verändern, ohne dabei die vorhandene Funktionalität zu gefährden. In den folgenden Fallstudie gehe ich konkret auf ein solches Projekt ein und vergleiche die Lösungsansätze mit anderen ähnlichen Fällen aus meiner beruflichen Praxis.</p><h2>Native Web Themes</h2><ul><li>Rolle: Senior Frontend Developer</li><li>Branche: Online-Dienstleistungen (B2B)</li><li>Zeitraum: 01/2025 – 06/2025</li><li>Projekt: Ablösung bestehender Legacy Themes und Plugins durch ein natives Theme mit dynamisch angepassten Designs und Tracking zwecks Conversion-Rate-Optimierung in einem komplexen Multi-Domain-Setup</li><li>Tech Stack: PHP, JavaScript, CSS, Cypress, WordPress, Docker</li></ul><strong>Herausforderung</strong><p>Der bereits von Endkunden genutzte Prototyp skalierte nicht wie erwartet. Die Abhängigkeit von zahlreichen Drittsystemen erhöhte Wartungsaufwand und Risiken durch häufige Updates und durch manuelle Konfigurationsschritte. Speicherverbrauch und Ladezeit waren ebenfalls noch nicht optimal.</p><p>Alle Einstellung sollten konfigurativ bzw. parametrisiert steuerbar sein, um die Entwicklung für eine große Anzahl an Domains und Portalen zu skalieren und durch automatisierte Tests absichern zu können. Bei Bedarf sollten kurzfristig zusätzliche Darstellungsvariaten und Slots für externe Inhalte ergänzt werden, und deren Aufrufe an ein bestehendes Tracking-Layer übermittelt werden.</p><ul><li>Abhängigkeiten reduzieren</li><li>Performance optimieren</li><li>Ladezeit beschleunigen</li><li>Speicherverbrauch minimieren</li><li>Wartung vereinfachen</li></ul><strong>Umsetzung</strong><p>Da die bestehende Lösung bereits mit WordPress in Docker-Containern umgesetzt wurde, entschieden wir uns, diese Plattform nicht zu verändern. So konnten vorhandene Inhalte weiter genutzt und einfach zwischen dem alten und neuen Frontend umgeschaltet werden.</p><p>Zusätzlich zum bestehenden Monitoring der veröffentlichten Websites haben wir Frontend-Tests mit Cypress ergänzt, um zentrale Anforderungen bereits während des Entwicklungsprozesses zu gewährleisten.</p><ul><li>Dokumentation bestehender und neuer Anforderungen</li><li>Entwicklung eines Native Web-Themes ohne Abhängigkeiten von zusätzlichen Plugins</li><li>Frontend-Tests zur Gewährleistung zentraler Anforderungen</li><li>Livegang neuer Websites mit dem neuen Web-Theme</li><li>schrittweise Umstellung bestehender Websites auf das neue Web-Theme</li></ul><strong>Erfolg</strong><p>Bereits nach vier Wochen konnten wir einen funktionsfähigen Prototypen des neuen Themes erfolgreich einsetzen. Dieser wurde in den kommenden Monaten um weitere Anforderungen ergänzt, die sich mit der bisherigen Lösung nicht mit der nötigen Effizienz hätten umsetzen lassen.</p><p>Im Vertrauen auf positive Testergebnisse und Geschäftszahlen konnte unser Kunde die neue Software auf allen bestehenden Portalen einsetzen und schnell und sicher weitere Websites erstellen.</p><p><a href="/projekte/">zurück zur Projektübersicht</a></p><h2>Vergleich mit anderen Modernisierungs- und Migrations-Projekten</h2><p>Auch in einem anderen Projekt hatte ich es mit funktionierender Softare im laufenden Betrieb zu tun, auch hier war ein vorhandes WordPress-Theme Teil einer komplexeren Software-Architektur, die in diesem Fall nicht mit Docker, sondern mit Ansible provisioniert wurde. Auch hier konnten wir Änderungen vor einem Deployment lokal entwickeln und auf Test-Instanzen prüfen.</p><p>Die ganzheitliche Analyse von vorhandenem Code, Dokumentation und Anforderungen, der funktionierenden Software und sinnvoll eingesetzter KI-Assistenten durch einen erfahrenen Experten führt zu einem Verständnis, das künstliche Intelligenz allein, besonders bei Legacy Code, auch in näherer Zukunft nicht erreichen wird.</p><p>Ein wichtiger Aspekt ist die Entscheidung zwischen Modernisierung und Migration. Auch in laufenden Projekten vor dem Livegang oder bei Prototypen (MVP) mit nur wenigen Kunden ist oft schon viel Arbeit in die bisherige Entwicklung und Abnahme geflossen und das Risiko neuer Fehler und zusätzlichem Aufwands oft schon zu hoch für einen Neustart. Andererseits sind manche Live-Systeme so veraltet, dass eine Neuentwicklung unausweichlich erscheint.</p><p>Sowohl als Dienstleister für Unternehmen, als auch als Freelancer im Team einer Agentur, gehört es zu meinen Aufgaben als Senior Web-Entwickler, geschäfltiche Anforderungen in technischer Sprache zu formulieren, die Vor- und Nachteiler verschiedener Lösungsalternativen für Menschen verständlich zu erklären und als Experte Verantwortung für meine Entscheidungsempfehlungen zu übernehmen.</p><p>Vorschau-Server und automatisierte Tests schützen vor vielen unliebsamen Überraschungen. Web-Performance im Sinne von Ladezeit-Optimierung kann durch verschiedene Maßnahhmen im Frontend und auf Serverseite geschehen. Wirtschaftliche Performance-Optimierung im Sinne von Conversion-Rate-Optimierung hat viel mit dem Nutzererlebnis (User Experience, UX) zu tun. Barrierefreiheit beginnt mit dem Einhalten bestimmter Kriterien wie ausreichender Lesbarkeit durch Struktur und Farbkontrast.</p><p>Auch bestehende Legacy-Code-Projekte lassen sich grundsätzlich nachträglich verbessern.</p><div class="cta-container"><a href="/#contact" class="buttonlike contact-link">Projekt anfragen</a></div></article></section></main><footer class="page-footer"><aside><p class="no-print"><button class="animation-toggle">Animation an/aus</button></p><p class="legal legal--links no-print"><a href="../#imprint">Impressum</a> <a href="../#privacy">Datenschutz</a> <a href="/sitemap.html">Sitemap</a></p><div class="only-print"><br></div><div class="legal legal--copyright"><span class="copyright-icon">&copy;</span> <span class="copright-date">2025</span> <span class="copyright-author">Ingo Steinke</span></div></aside></footer></div></div></body></html>

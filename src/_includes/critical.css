@@ -277,7 +277,7 @@ small {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 99%;
+    width: 100%;
     margin: 0 auto;
     z-index: 2;
   }
@@ -358,11 +358,18 @@ small {
   }
 
   .tiled-content {
-    margin: 0 0.5em 2em 0.5em;
+    margin: 0 0 2em 0;
   }
 
   .tiled-content#projects {
     margin-right: 0;
+  }
+
+  @media (max-width: 1500px) {
+    .tiled-content#projects {
+      max-width: calc(100% - 1em);
+      margin: 0 0.5em 2em 0.5em;
+    }
   }
 
   .clear {
@@ -468,15 +475,6 @@ small {
     width: 5em;
     height: 5em;
     margin: 1.5em 0 0.5em 1em;
-  }
-
-  .tile img.project-thumb--planted,
-  .tile img.project-thumb--shopwareplugin {
-    margin-right: 0.5em;
-  }
-
-  .tile img.project-thumb--shopwareplugin {
-    margin-top: 3rem;
   }
 
   .tile img.project-thumb--twistedconnection {

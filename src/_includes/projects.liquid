@@ -161,7 +161,7 @@
             <p>
               {%- assign hashtagsArray = projectHashtags | split: ' ' -%}
               {%- for hashtag in hashtagsArray %}
-                <span class="hashtag">{{ hashtag }}</span>
+                <span class="hashtag">{{ hashtag | replace: '_', ' ' }}</span>
               {% endfor -%}
             </p>
           </div>

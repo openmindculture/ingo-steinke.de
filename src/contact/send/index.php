@@ -267,7 +267,7 @@ if(!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
     }
 
   } else {
-    echo '<!DOCTYPE HTML><html lang=de><head><meta charset="utf-8"><title>Ingo Steinke - Contact Form</title></head>';
+    echo '<!doctype html><html lang=de><head><meta charset="utf-8"><title>Ingo Steinke - Contact Form</title></head>';
     echo '<body><h1>Thanks for your message!</h1>';
     echo '<a href="https://www.ingo-steinke.de/">Go to ingo-steinke.de</a>';
     echo '</body></html>';

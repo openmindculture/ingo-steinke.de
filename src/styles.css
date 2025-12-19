@@ -388,6 +388,15 @@ body.high-contrast .bg-peel {
   padding-left: 3rem;
 }
 
+@media (max-width: 768px) {
+  .vcard-block-fiscal {
+    font-size: 1.125rem;
+  }
+  .vcard-digital-wrapper {
+    margin-top: 0;
+  }
+}
+
 .vcard .adr {
   display: block;
   margin-bottom: 0.75em;

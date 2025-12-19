@@ -1,0 +1,136 @@
+---
+tags: addtositemap
+imgdirectory: "../img"
+previewimage: "https://www.ingo-steinke.com/img/preview-case-legacy-de.png"
+previewtitle: "Fallstudie: Migration, Modernisierung und Wartung von Legacy-Code-Projekten"
+previewdescription: "Ingo Steinke bietet als Freelance Webentwickler mit über 25 Jahren Berufserfahrung auch Migration, Modernisierung und Wartung von Legacy-Code-Projekten an."
+permalink: "projekte/legacy-migration-modernisierung-wartung-fallstudie.html"
+canonicalhref: "https://www.ingo-steinke.de/projekte/legacy-migration-modernisierung-wartung-fallstudie.html"
+canonicalhreflang: "de"
+alternatelink: "https://www.ingo-steinke.com/projects/legacy-migration-modernization-maintenance-case-study.html"
+alternatehreflang: "en"
+---
+<!doctype html>
+<html lang="de">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Fallstudie: Migration, Modernisierung und Wartung von Legacy-Code-Projekten</title>
+  {% include '../_includes/html-head-common.liquid' %}
+</head>
+<body class="high-contrast">
+<div class="page-container" id="top">
+  <div class="page-content">
+    <header class="jumbotronHeader has-text-paragraphs" id="jumbotronHeader">
+      {% include '../_includes/jumbotron-image.liquid' %}
+      <h1>Fallstudie: Migration, Modernisierung und Wartung von Legacy-Code-Projekten</h1>
+    </header>
+    {% include '../_includes/navigation-on-subpages.liquid' %}
+    <main id="content-top" class="target-offset">
+      <section class="text-content-layout text-content-color">
+        <article class="text-width">
+
+          <p>
+            Als Web-Entwickler habe ich mit unterschiedlichen Arten von Legacy-Code-Projekten zu tun. Viele Web-Projekte erfüllen lange Zeit still und unverändert ihre Aufgaben, bis aktuelle Anforderungen entstehen, die sich nicht ohne Umprogrammierung umsetzen lassen. Das können Anforderungen geschäftlicher, gesetztlicher oder technischer Art sein, beispielsweise ein sicherheitsrelevantes Software-Update, das nicht mit dem vorhandenen Code kompatibel ist.
+          </p>
+
+          <p>
+            Aber auch in aktiven Projekten kann es durch veränderte Anforderungen nötig werden, im laufenden Betrieb Codebasis und Geschäftslogik zu verändern, ohne dabei die vorhandene Funktionalität zu gefährden. In den folgenden Fallstudie gehe ich konkret auf ein solches Projekt ein und vergleiche die Lösungsansätze mit anderen ähnlichen Fällen aus meiner beruflichen Praxis.
+          </p>
+
+          <h2>Native Web Themes</h2>
+          <ul>
+            <li>Rolle: Senior Frontend Developer</li>
+            <li>Branche: Online-Dienstleistungen (B2B)</li>
+            <li>Zeitraum: 01/2025 – 06/2025</li>
+            <li>Projekt: Ablösung bestehender Legacy Themes und Plugins durch ein natives Theme mit dynamisch angepassten Designs und Tracking zwecks Conversion-Rate-Optimierung in einem komplexen Multi-Domain-Setup
+            </li>
+            <li>Tech Stack: PHP, JavaScript, CSS, Cypress, WordPress, Docker</li>
+          </ul>
+
+          <strong>Herausforderung</strong>
+          <p>
+            Der bereits von Endkunden genutzte Prototyp skalierte nicht wie erwartet. Die Abhängigkeit von zahlreichen Drittsystemen erhöhte Wartungsaufwand und Risiken durch häufige Updates und durch manuelle Konfigurationsschritte. Speicherverbrauch und Ladezeit waren ebenfalls noch nicht optimal.
+          </p>
+
+          <p>
+            Alle Einstellung sollten konfigurativ bzw. parametrisiert steuerbar sein, um die Entwicklung für eine  große Anzahl an Domains und Portalen zu skalieren und durch automatisierte Tests absichern zu können. Bei Bedarf sollten kurzfristig zusätzliche Darstellungsvariaten und Slots für externe Inhalte ergänzt werden, und deren Aufrufe an ein bestehendes Tracking-Layer übermittelt werden.
+          </p>
+
+          <ul>
+            <li>Abhängigkeiten reduzieren</li>
+            <li>Performance optimieren</li>
+            <li>Ladezeit beschleunigen</li>
+            <li>Speicherverbrauch minimieren</li>
+            <li>Wartung vereinfachen</li>
+          </ul>
+
+          <strong>Umsetzung</strong>
+
+          <p>
+            Da die bestehende Lösung bereits mit WordPress in Docker-Containern umgesetzt wurde, entschieden wir uns, diese Plattform nicht zu verändern. So konnten vorhandene Inhalte weiter genutzt und einfach zwischen dem alten und neuen Frontend umgeschaltet werden.
+          </p>
+
+          <p>
+            Zusätzlich zum bestehenden Monitoring der veröffentlichten Websites haben wir Frontend-Tests mit Cypress ergänzt, um zentrale Anforderungen bereits während des Entwicklungsprozesses zu gewährleisten.
+          </p>
+
+          <ul>
+            <li>Dokumentation bestehender und neuer Anforderungen</li>
+            <li>Entwicklung eines Native Web-Themes ohne Abhängigkeiten von zusätzlichen Plugins</li>
+            <li>Frontend-Tests zur Gewährleistung zentraler Anforderungen</li>
+            <li>Livegang neuer Websites mit dem neuen Web-Theme</li>
+            <li>schrittweise Umstellung bestehender Websites auf das neue Web-Theme</li>
+          </ul>
+
+          <strong>Erfolg</strong>
+
+          <p>
+            Bereits nach vier Wochen konnten wir einen funktionsfähigen Prototypen des neuen Themes erfolgreich einsetzen. Dieser wurde in den kommenden Monaten um weitere Anforderungen ergänzt, die sich mit der bisherigen Lösung nicht mit der nötigen Effizienz hätten umsetzen lassen.
+          </p>
+
+          <p>
+            Im Vertrauen auf positive Testergebnisse und Geschäftszahlen konnte unser Kunde die neue Software auf allen bestehenden Portalen einsetzen und schnell und sicher weitere Websites erstellen.
+          </p>
+
+          <p>
+            <a href="/projekte/">zurück zur Projektübersicht</a>
+          </p>
+
+          <h2>Vergleich mit anderen Modernisierungs- und Migrations-Projekten</h2>
+
+          <p>
+            Auch in einem anderen Projekt hatte ich es mit funktionierender Softare im laufenden Betrieb zu tun, auch hier war ein vorhandes WordPress-Theme Teil einer komplexeren Software-Architektur, die in diesem Fall nicht mit Docker, sondern mit Ansible provisioniert wurde. Auch hier konnten wir Änderungen vor einem Deployment lokal entwickeln und auf Test-Instanzen prüfen.
+          </p>
+
+          <p>
+            Die ganzheitliche Analyse von vorhandenem Code, Dokumentation und Anforderungen, der funktionierenden Software und sinnvoll eingesetzter KI-Assistenten durch einen erfahrenen Experten führt zu einem Verständnis, das künstliche Intelligenz allein, besonders bei Legacy Code, auch in näherer Zukunft nicht erreichen wird.
+          </p>
+
+          <p>
+            Ein wichtiger Aspekt ist die Entscheidung zwischen Modernisierung und Migration. Auch in laufenden Projekten vor dem Livegang oder bei Prototypen (MVP) mit nur wenigen Kunden ist oft schon viel Arbeit in die bisherige Entwicklung und Abnahme geflossen und das Risiko neuer Fehler und zusätzlichem Aufwands oft schon zu hoch für einen Neustart. Andererseits sind manche Live-Systeme so veraltet, dass eine Neuentwicklung unausweichlich erscheint.
+          </p>
+
+          <p>
+            Sowohl als Dienstleister für Unternehmen, als auch als Freelancer im Team einer Agentur, gehört es zu meinen Aufgaben als Senior Web-Entwickler, geschäfltiche Anforderungen in technischer Sprache zu formulieren, die Vor- und Nachteiler verschiedener Lösungsalternativen für Menschen verständlich zu erklären und als Experte Verantwortung für meine Entscheidungsempfehlungen zu übernehmen.
+          </p>
+
+          <p>
+            Vorschau-Server und automatisierte Tests schützen vor vielen unliebsamen Überraschungen. Web-Performance im Sinne von Ladezeit-Optimierung kann durch verschiedene Maßnahhmen im Frontend und auf Serverseite geschehen. Wirtschaftliche Performance-Optimierung im Sinne von Conversion-Rate-Optimierung hat viel mit dem Nutzererlebnis (User Experience, UX) zu tun. Barrierefreiheit beginnt mit dem Einhalten bestimmter Kriterien wie ausreichender Lesbarkeit durch Struktur und Farbkontrast.
+            </p>
+          <p>
+            Auch bestehende Legacy-Code-Projekte lassen sich grundsätzlich nachträglich verbessern.
+          </p>
+
+          <div class="cta-container">
+            <a href="/#contact" class="buttonlike contact-link">Projekt anfragen</a>
+          </div>
+
+        </article>
+      </section>
+    </main>
+    {% include '../_includes/page-footer-on-subpages.liquid' %}
+  </div>
+</div>
+</body>
+</html>
+</html>
