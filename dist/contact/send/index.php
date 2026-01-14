@@ -128,6 +128,7 @@ if (
   strpos($post_msg, '//t.me') !== false ||
   strpos($post_msg, '//rb.gy') !== false ||
   strpos($post_msg, 'rb.gy/') !== false ||
+  strpos($post_msg, '.short.gy/') !== false ||
   strpos($post_msg, '-promocode.com') !== false ||
   strpos($post_msg, '//yandex.com') !== false ||
   strpos($post_msg, '//yandex.ru') !== false ||
@@ -205,7 +206,9 @@ if (
   strpos($post_emailfon, 'rabatt.info') !== false ||
   strpos($post_emailfon, 'resend.dev') !== false ||
   strpos($post_emailfon, 'spar-highlight.de') !== false ||
+  strpos($post_emailfon, 'guestpostoutreach.top') !== false ||
   str_ends_with($post_emailfon, '.ru') ||
+  str_ends_with($post_emailfon, '.xyz') ||
   strpos($post_name, 'Ready for love') !== false ||
   strpos($post_name, 'Amandapeaceame') !== false ||
   strpos($post_name, 'AmeliaDog') !== false ||
