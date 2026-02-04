@@ -184,12 +184,15 @@ if (
   strpos($post_msg, 'Metavista') !== false ||
   strpos($post_msg, 'ohne Rezept') !== false ||
   strpos($post_msg, 'wkdwodkwkifjejr') !== false ||
+  strpos($post_msg, 'kofkosfjwgojfsjf') !== false ||
   strpos($post_msg, 'Ghost Pages') !== false ||
   strpos($post_msg, 'GhostPages') !== false ||
   strpos($post_msg, 'click here') !== false ||
   strpos($post_msg, 'accounts in bulk') !== false ||
   strpos($post_msg, 'AccStores.com') !== false ||
-  strpos($post_msg, 'SalesCloser') !== false ||
+  strpos($post_msg, 'gummies') !== false ||
+  strpos($post_msg, 'Tranquils') !== false ||
+  strpos($post_msg, 'pain relief') !== false ||
   strpos($post_msg, 'ë') !== false ||
   strpos($post_msg, 'ụ') !== false ||
   strpos($post_msg, 'ị') !== false ||
@@ -217,6 +220,7 @@ if (
   strpos($post_name, 'KevinKen') !== false ||
   strpos($post_name, 'Nataler') !== false ||
   strpos($post_name, 'Phillippoify') !== false ||
+  strpos($post_name, 'Robertsaups') !== false ||
   strpos($post_name, 'Tracyselty') !== false ||
   strpos($post_name, 'Isaacnuh') !== false ||
   strpos($post_name, 'Iyannacrigo') !== false ||
