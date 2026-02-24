@@ -23,6 +23,7 @@ $spamtrap2      = filter_var($_REQUEST['contactform-field-homepage'], FILTER_SAN
 $spamtrap3      = filter_var($_REQUEST['contactform-field-mousemove_activity'], FILTER_SANITIZE_STRING);
 $time_ip_stamp  = date("YmdHi") . '_';
 $remote_addr    = trim(filter_var($_SERVER['REMOTE_ADDR'], FILTER_SANITIZE_EMAIL));
+$user_agent     = filter_var($_SERVER['HTTP_USER_AGENT'], FILTER_SANITIZE_STRING);
 $time_ip_stamp .= $remote_addr;
 $stamp_filename = './latest/' . $time_ip_stamp . '.txt';
 $responseStatus = '200 OK';
@@ -71,6 +72,14 @@ if (
   strpos($post_msg, 'online reputation') !== false ||
   strpos($post_msg, 'Trustpilot') !== false ||
   strpos($post_msg, 'trustpilot') !== false ||
+  strpos($post_msg, 'Digital Marketing Agency') !== false ||
+  strpos($post_msg, 'cost-effective') !== false ||
+  strpos($post_msg, 'Facebook Ads') !== false ||
+  strpos($post_msg, 'addresses for sale') !== false ||
+  strpos($post_msg, 'High Conversion Leads') !== false ||
+  strpos($post_msg, 'contact me on Telegram') !== false ||
+  strpos($post_msg, 'Selling leads') !== false ||
+  strpos($post_msg, 'selling leads') !== false ||
   strpos($post_msg, 'replace harmful feedback') !== false ||
   strpos($post_msg, 'shipping options for your order') !== false ||
   strpos($post_msg, 'omplete your purchase from the cart') !== false ||
@@ -148,6 +157,7 @@ if (
   strpos($post_msg, 'bitcoin') !== false ||
   strpos($post_msg, 'Bi tc o i n') !== false ||
   strpos($post_msg, 'cryptocurrency') !== false ||
+  strpos($post_msg, 'Coinbase') !== false ||
   strpos($post_msg, 'cannabis') !== false ||
   strpos($post_msg, 'cbd ') !== false ||
   strpos($post_msg, 'CBD ') !== false ||
@@ -201,6 +211,7 @@ if (
   strpos($post_msg, '==>') !== false ||
   preg_match("/\bsex\b/i", $post_msg) ||
   preg_match("/\bdating\b/i", $post_msg) ||
+  strpos($user_agent, 'MSIE') !== false ||
   strpos($post_emailfon, '+48') !== false ||
   strpos($post_emailfon, '+91') !== false ||
   strpos($post_emailfon, 'anonmails.de') !== false ||
@@ -210,6 +221,7 @@ if (
   strpos($post_emailfon, 'resend.dev') !== false ||
   strpos($post_emailfon, 'spar-highlight.de') !== false ||
   strpos($post_emailfon, 'guestpostoutreach.top') !== false ||
+  str_starts_with($post_emailfon, 'xrumer') !== false ||
   str_ends_with($post_emailfon, '.ru') ||
   str_ends_with($post_emailfon, '.xyz') ||
   strpos($post_name, 'Ready for love') !== false ||
@@ -316,7 +328,7 @@ if ($config_verbose) {
   if (!empty($post_referrer)) {
     $message .= "Referrer: " . $post_referrer . "\r\n";
   }
-  $message .= filter_var($_SERVER['HTTP_USER_AGENT'], FILTER_SANITIZE_STRING);
+  $message .= $user_agent;
   $message .= $remote_addr;
   $message .= "\r\n";
 }
