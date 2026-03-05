@@ -55,6 +55,8 @@ if (
   strpos($post_msg, 'Kaixo, ') !== false ||
   strpos($post_msg, 'Sveiki, ') !== false ||
   strpos($post_msg, 'Dia duit, ') !== false ||
+  strpos($post_msg, 'Usnadni') !== false ||
+  strpos($post_msg, 'Cvbnifwjidhwfijwoj') !== false ||
   strpos($post_msg, 'Claim Your $') !== false ||
   strpos($post_msg, ' WIN') !== false ||
   strpos($post_msg, 'Passive Income') !== false ||
@@ -149,6 +151,8 @@ if (
   strpos($post_msg, '//tinyurl.com/') !== false ||
   strpos($post_msg, '//amazn.to/') !== false ||
   strpos($post_msg, '/wa.me/') !== false ||
+  strpos($post_msg, 'centrumzdravichrudim.it/') !== false ||
+  strpos($post_msg, 'heliosgravina.it/') !== false ||
   strpos($post_msg, '//trustedleadgeneration.com') !== false ||
   strpos($post_msg, '//goldsolutions.pro') !== false ||
   strpos($post_msg, '?unsubscribe') !== false ||
@@ -227,6 +231,7 @@ if (
   strpos($post_name, 'Ready for love') !== false ||
   strpos($post_name, 'Amandapeaceame') !== false ||
   strpos($post_name, 'AmeliaDog') !== false ||
+  strpos($post_name, 'Brentscoke') !== false ||
   strpos($post_name, 'GrantBib') !== false ||
   strpos($post_name, 'GregoryFub') !== false ||
   strpos($post_name, 'KevinKen') !== false ||
