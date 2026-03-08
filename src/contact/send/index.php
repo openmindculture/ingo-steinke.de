@@ -106,6 +106,8 @@ if (
   strpos($post_msg, '/exec') !== false ||
   strpos($post_msg, '//script.google.com') !== false ||
   strpos($post_msg, 'ønskede') !== false ||
+  strpos($post_msg, 'Et nyttigt') !== false ||
+  strpos($post_msg, 'Solucao rapida') !== false ||
   strpos($post_msg, 'ég') !== false ||
   strpos($post_msg, 'ə') !== false ||
   strpos($post_msg, 'ē') !== false ||
@@ -153,6 +155,9 @@ if (
   strpos($post_msg, '/wa.me/') !== false ||
   strpos($post_msg, 'centrumzdravichrudim.it/') !== false ||
   strpos($post_msg, 'heliosgravina.it/') !== false ||
+  strpos($post_msg, 'sagofro.it/') !== false ||
+  strpos($post_msg, 'balonykonice.cz/') !== false ||
+  strpos($post_msg, 'galashop.cz/') !== false ||
   strpos($post_msg, '//trustedleadgeneration.com') !== false ||
   strpos($post_msg, '//goldsolutions.pro') !== false ||
   strpos($post_msg, '?unsubscribe') !== false ||
