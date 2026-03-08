@@ -10,19 +10,6 @@ module.exports = function (eleventyConfig) {
     return content;
   });
 
-  eleventyConfig.addLiquidFilter("customLocalizedMonthNameFilter", function(monthParam) {
-    let monthIndex = parseInt(monthParam);
-    let monthNames = [
-      '', 'January', 'February', 'March', 'April', 'Mai', 'Juni',
-      'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'
-    ]
-    if (0 < monthIndex < 13) {
-      return monthNames[monthIndex];
-    } else {
-      return '';
-    }
-  });
-
   eleventyConfig.addLiquidFilter('svgIcon', function(slug) {
     let markup = '<img src="img/icon-' + slug + '.svg"';
     markup += 'width="24" height="24"';

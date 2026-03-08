@@ -44,6 +44,19 @@ module.exports = function (eleventyConfig) {
     return text + 'en';
   });
 
+  eleventyConfig.addLiquidFilter("customLocalizedMonthNameFilter", function(monthParam) {
+    let monthIndex = parseInt(monthParam);
+    let monthNames = [
+      '', 'January', 'February', 'March', 'April', 'May', 'June',
+      'July', 'August', 'September', 'October', 'November', 'December'
+    ]
+    if (0 < monthIndex < 13) {
+      return monthNames[monthIndex];
+    } else {
+      return '';
+    }
+  });
+
   return {
     dir: {
       input: 'src',
