@@ -1,5 +1,9 @@
 # Changelog
 
+## [5.0.0] improved canonical schema markup - 2026-03-08
+
+* improve canonical schema markup #304
+
 ## [4.9.4] improve and extend content - 2025-12-19
 
 * add SEO-optimized content:
