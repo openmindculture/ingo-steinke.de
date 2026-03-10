@@ -144,22 +144,22 @@ if (
   strpos($post_msg, '.short.gy/') !== false ||
   strpos($post_msg, '-promocode.com') !== false ||
   strpos($post_msg, '//yandex.com') !== false ||
-  strpos($post_msg, '//yandex.ru') !== false ||
-  strpos($post_msg, 'dublikat.ru') !== false ||
-  strpos($post_msg, '.ru/') !== false ||
-  strpos($post_msg, '/shorte.pro') !== false ||
   strpos($post_msg, '/circapress.com/redirect/') !== false ||
   strpos($post_msg, '//telegra.ph/') !== false ||
   strpos($post_msg, '//tinyurl.com/') !== false ||
   strpos($post_msg, '//amazn.to/') !== false ||
   strpos($post_msg, '/wa.me/') !== false ||
-  strpos($post_msg, 'centrumzdravichrudim.it/') !== false ||
-  strpos($post_msg, 'heliosgravina.it/') !== false ||
-  strpos($post_msg, 'sagofro.it/') !== false ||
-  strpos($post_msg, 'balonykonice.cz/') !== false ||
-  strpos($post_msg, 'galashop.cz/') !== false ||
+  (strpos($post_msg, 'https:/') !== false && (
+      strpos($post_msg, '.cz/') !== false ||
+      strpos($post_msg, '.gy/') !== false ||
+      strpos($post_msg, '.ly/') !== false ||
+      strpos($post_msg, '.ph/') !== false ||
+      strpos($post_msg, '.ru/') !== false ||
+      strpos($post_msg, '.pro/') !== false ||
+      strpos($post_msg, '.top/') !== false ||
+      strpos($post_msg, '.xyz/') !== false
+    )) ||
   strpos($post_msg, '//trustedleadgeneration.com') !== false ||
-  strpos($post_msg, '//goldsolutions.pro') !== false ||
   strpos($post_msg, '?unsubscribe') !== false ||
   strpos($post_msg, 'Unauthorized transaction') !== false ||
   strpos($post_msg, 'Bitcoin') !== false ||

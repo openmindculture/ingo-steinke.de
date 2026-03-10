@@ -1,8 +1,13 @@
 # Changelog
 
-## [5.0.0] improved canonical schema markup - 2026-03-08
+## [5.0.1] improved canonical schema markup - 2026-03-10
 
 * improve canonical schema markup #304
+* prevent unnecessary third party request
+* random fake re-captcha id for spam prevention
+* updated, stricter spam protection heuristics
+* add external social media material to GitHub
+* clean up obsolete analytics code
 
 ## [4.9.4] improve and extend content - 2025-12-19
 
