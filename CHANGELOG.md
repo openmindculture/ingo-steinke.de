@@ -1,8 +1,9 @@
 # Changelog
 
-## [5.0.1] improved canonical schema markup - 2026-03-10
+## [5.0.2] improved canonical schema markup - 2026-03-10
 
 * improve canonical schema markup #304
+* use recommended CID link to Google Maps + ratings
 * prevent unnecessary third party request
 * random fake re-captcha id for spam prevention
 * updated, stricter spam protection heuristics
