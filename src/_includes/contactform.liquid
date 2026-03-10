@@ -46,7 +46,8 @@
       <input type="text" name="contactform-field-homepage" id="contactform-field-homepage" class="contactform-field-homepage">
       <input type="hidden" name="contactform-field-mousemove_activity" value="">
       <input type="hidden" name="contactform-field-captcha" id="contactform-field-captcha" class="contactform-field-captcha">
-      <div class="g-recaptcha" data-sitekey="Qs1p7JgqPLOGD3BYCMGe9EbyNJJEswyala44hnkO6d4"></div>
+      {% comment %}random pseudo recaptcha as a weak heuristic signal to discourage spam attempts{% endcomment %}
+      <div class="g-recaptcha" data-sitekey="Qw3r7YuiPASDF6HJKL7337byNOmeansY0Up455kOn0O"></div>
     </div>
 
     <div class="contactform-row contactform-row-submit">
