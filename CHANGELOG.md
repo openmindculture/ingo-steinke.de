@@ -1,8 +1,9 @@
 # Changelog
 
-## [5.0.3] content update - 2026-03-24
+## [5.0.3] content updates - 2026-03-24
 
 * add link to a small business customer
+* improve projects subheadline keywords
 
 ## [5.0.2] improved canonical schema markup - 2026-03-10
 
