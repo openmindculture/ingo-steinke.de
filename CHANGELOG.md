@@ -1,5 +1,9 @@
 # Changelog
 
+## [5.0.3] content update - 2026-03-24
+
+* add link to a small business customer
+
 ## [5.0.2] improved canonical schema markup - 2026-03-10
 
 * improve canonical schema markup #304
