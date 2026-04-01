@@ -59,6 +59,10 @@ if (
   strpos($post_msg, 'Cvbnifwjidhwfijwoj') !== false ||
   strpos($post_msg, 'Claim Your $') !== false ||
   strpos($post_msg, ' WIN') !== false ||
+  strpos($post_msg, ' JACKPOT') !== false ||
+  strpos($post_msg, ' po*rn') !== false ||
+  strpos($post_msg, ' p0rn') !== false ||
+  strpos($post_msg, ' porn') !== false ||
   strpos($post_msg, 'Passive Income') !== false ||
   strpos($post_msg, 'Cryptocurrency') !== false ||
   strpos($post_msg, 'Kryptow') !== false ||
@@ -142,6 +146,8 @@ if (
   strpos($post_msg, '//rb.gy') !== false ||
   strpos($post_msg, 'rb.gy/') !== false ||
   strpos($post_msg, '.short.gy/') !== false ||
+  strpos($post_msg, 'is.gd/') !== false ||
+  strpos($post_msg, 'afpo.eu/') !== false ||
   strpos($post_msg, '-promocode.com') !== false ||
   strpos($post_msg, '//yandex.com') !== false ||
   strpos($post_msg, '/circapress.com/redirect/') !== false ||
