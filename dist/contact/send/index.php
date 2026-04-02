@@ -171,6 +171,7 @@ if (
   strpos($post_msg, 'Bitcoin') !== false ||
   strpos($post_msg, 'bitcoin') !== false ||
   strpos($post_msg, 'Bi tc o i n') !== false ||
+  strpos($post_msg, ' BTC') !== false ||
   strpos($post_msg, 'cryptocurrency') !== false ||
   strpos($post_msg, 'Coinbase') !== false ||
   strpos($post_msg, 'cannabis') !== false ||
@@ -182,6 +183,7 @@ if (
   strpos($post_msg, 'topcasworld.') !== false ||
   strpos($post_msg, 'thanksgiving') !== false ||
   strpos($post_msg, 'THANKSGIVING') !== false ||
+  strpos($post_msg, 'IMPORTANT') !== false ||
   strpos($post_msg, 'Hersteller von E Bikes') !== false ||
   strpos($post_msg, 'manufacturer of electric bicycles') !== false ||
   strpos($post_msg, 'artet drink') !== false ||
@@ -243,6 +245,7 @@ if (
   strpos($post_name, 'Amandapeaceame') !== false ||
   strpos($post_name, 'AmeliaDog') !== false ||
   strpos($post_name, 'Brentscoke') !== false ||
+  strpos($post_name, 'Daviddus') !== false ||
   strpos($post_name, 'GrantBib') !== false ||
   strpos($post_name, 'GregoryFub') !== false ||
   strpos($post_name, 'KevinKen') !== false ||
