@@ -7,13 +7,17 @@ export function initContrast() {
         const stored = localStorage.getItem('highContrast');
         activatedMoreContrast = stored === 'true';
     }
-    if (!prefersMoreContrast && !activatedMoreContrast) {
+    // Sync body class to match the resolved contrast state on load
+    if (prefersMoreContrast || activatedMoreContrast) {
+        document.body.classList.add(CLASS_NAME_HIGH_CONTRAST);
+    }
+    else {
         document.body.classList.remove(CLASS_NAME_HIGH_CONTRAST);
     }
     const contrastToggle = document.getElementById('contrast-toggle');
     if (contrastToggle) {
         contrastToggle.addEventListener('click', () => {
-            const isHighContrast = document.body.className.includes(CLASS_NAME_HIGH_CONTRAST);
+            const isHighContrast = document.body.classList.contains(CLASS_NAME_HIGH_CONTRAST);
             if (isHighContrast) {
                 document.body.classList.remove(CLASS_NAME_HIGH_CONTRAST);
                 localStorage?.removeItem('highContrast');
