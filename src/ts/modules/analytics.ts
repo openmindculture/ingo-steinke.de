@@ -1,4 +1,5 @@
 declare global {
+  /* eslint-disable no-unused-vars */
   interface Window {
     _paq?: Array<unknown[]>;
   }

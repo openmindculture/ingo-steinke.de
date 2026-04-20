@@ -1,29 +1,32 @@
-import globals from "globals";
-import path from "node:path";
-import { fileURLToPath } from "node:url";
-import js from "@eslint/js";
-import { FlatCompat } from "@eslint/eslintrc";
+import js from '@eslint/js';
+import ts from '@typescript-eslint/eslint-plugin';
+import tsParser from '@typescript-eslint/parser';
+import globals from 'globals';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const compat = new FlatCompat({
-    baseDirectory: __dirname,
-    recommendedConfig: js.configs.recommended,
-    allConfig: js.configs.all
-});
-
-export default [{
-    ignores: ["node_modules/**/*.js", "plugins/**/*.js"],
-}, ...compat.extends("eslint:recommended"), {
+export default [
+  {
+    ignores: [
+      "node_modules/",
+      "plugins/**/*.js",
+      "src/_data/**/*.js",
+    ],
+  },
+  js.configs.recommended,
+  {
+    files: ['**/*.ts'],
     languageOptions: {
-        globals: {
-            ...globals.browser,
-            ...globals.commonjs,
-        },
-
+      globals: {
+        ...globals.browser,
+      },
+      parser: tsParser,
+      parserOptions: {
+        sourceType: 'module',
         ecmaVersion: 13,
-        sourceType: "script",
+      },
     },
-
-    rules: {},
-}];
+    plugins: {
+      '@typescript-eslint': ts,
+    },
+    rules: {}
+  },
+];

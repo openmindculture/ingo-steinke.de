@@ -38,7 +38,7 @@
     <link rel="preload" href="fonts/DorivalUI-Extrabold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/montserrat-v15-latin-ext_latin-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" media="screen" href="styles.css?v=5.0.2">
-    <script defer src="js/scripts.js?v=5.0.2"></script>
+    <script defer src="js/main.js?v=5.0.2"></script>
     {% comment %}
     Defer non-critical CSS as suggested at https://web.dev/articles/defer-non-critical-css
     {% endcomment %}
@@ -199,7 +199,6 @@
                   </li>
                 </ul>
               </nav>
-              {% include '_includes/animation-toggle-button.liquid' %}
               <button
                 id="contrast-toggle"
                 class="contrast-toggle no-print"
@@ -520,10 +519,6 @@
         <footer class="page-footer"><aside>
 
           {% include '../_includes/eco-badges.liquid' %}
-
-          <p class="no-print">
-            <button class="animation-toggle">{{ content.buttonToggleAnimation }}</button>
-          </p>
 
           <p class="landingpage--links no-print">
             <a href="../#imprint">{{ content.targetImprint }}</a>
