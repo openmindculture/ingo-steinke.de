@@ -121,6 +121,7 @@ if (
   strpos($post_msg, 'գ') !== false ||
   strpos($post_msg, '&#39;') !== false ||
   strpos($post_msg, '&#34;') !== false ||
+  strpos($post_msg, 'jwjjwjj') !== false ||
   strpos($post_msg, 'tôi muốn biết') !== false ||
   strpos($post_msg, 'saber tu precio') !== false ||
   strpos($post_msg, 'arga Anda') !== false ||
@@ -203,6 +204,7 @@ if (
   strpos($post_msg, 'the price list') !== false ||
   strpos($post_msg, 'found your company') !== false ||
   strpos($post_msg, 'a company like yours') !== false ||
+  strpos($post_msg, 'ingo-steinke.de') !== false ||
   strpos($post_msg, 'rank on the first page') !== false ||
   strpos($post_msg, 'limited proposal') !== false ||
   strpos($post_msg, 'wir sind ein baltisches Unternehmen') !== false ||
@@ -252,6 +254,7 @@ if (
   strpos($post_name, 'Nataler') !== false ||
   strpos($post_name, 'Phillippoify') !== false ||
   strpos($post_name, 'Robertsaups') !== false ||
+  strpos($post_name, 'Ronaldslura') !== false ||
   strpos($post_name, 'Tracyselty') !== false ||
   strpos($post_name, 'Isaacnuh') !== false ||
   strpos($post_name, 'Iyannacrigo') !== false ||
