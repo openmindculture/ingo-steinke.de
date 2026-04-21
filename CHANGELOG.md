@@ -1,5 +1,12 @@
 # Changelog
 
+## [5.1.0] refactoring and content updates - 2026-04-21
+
+* refactor JavaScript to modular TypeScript to improve maintainability #241
+* reduce animation to scroll-linked front page animation to improve accessibility #293
+* remove obsolete animation stop button to improve UX #293
+* improve and extend content to improve SEO #298
+
 ## [5.0.3] content updates - 2026-03-24
 
 * add link to a small business customer
