@@ -1,76 +1,7 @@
-/* @import url('_includes/design-tokens.css'); */
-/* WORKAROUND #218
-   TODO reactivate import when postcssCustomProperties: preserve: false
-   defined in utils/transform-css.js is respected
- */
-
-/* decoration layer is styled in critical.css */
-
-/* extra transparency for below-the-fold paragraphs */
-@media screen and (min-width: 950px) {
-  .text-content-color.semitransparent {
-    background:
-      linear-gradient(
-        90deg,
-        rgba(187, 191, 194, 1),
-        rgba(187, 191, 194, 1),
-        rgba(187, 191, 194, 0.85)
-      );
-  }
-}
-
-@media (prefers-reduced-transparency) {
-  .text-content-color.semitransparent {
-    background-image: none;
-    background-color: var(--secondary-lighter-background);
-  }
-}
-
-#decoration {
-  /*
-   * random factors are optionally adjusted using JavaScript
-   * not in :root to prevent processing by postcssCustomProperties
-   * applied to output range using css calc:
-   * (factor * range-max) +- offset
-   */
-  --random-factor-grow-max: 1;
-  --decoration-grow-max: calc(0.5s * var(--random-factor-grow-max) + 1.5s); /* 1.5 .. 2 */
-
-  --random-factor-grow-delay-top-right: 0;
-  --decoration-grow-delay-top-right: calc(2s * var(--random-factor-grow-delay-top-right)); /* 0s .. 2s */
-
-  --random-factor-grow-delay-bottom-right: 0;
-  --decoration-grow-delay-bottom-right: calc(2s * var(--random-factor-grow-delay-bottom-right)); /* 0s .. 2s */
-
-  --random-factor-grow-delay-bottom-left: 0;
-  --decoration-grow-delay-bottom-left: calc(2s * var(--random-factor-grow-delay-bottom-left) + 2s); /* 2s .. 4s */
-
-  --random-factor-bottom-delay-bottom-left: 0;
-  --decoration-bottom-delay-bottom-left: calc(2s * var(--random-factor-bottom-delay-bottom-left) + 1s); /* 1s .. 3s */
-
-  --random-factor-left-delay-bottom-left: 0;
-  --decoration-left-delay-bottom-left: calc(2s * var(--random-factor-left-delay-bottom-left) + 1s); /* 1s .. 3s */
-
-  --random-factor-position-left: 0;
-  --decoration-left-position-bottom-left: calc(-20% * var(--random-factor-position-left) - 10%); /* -10% .. -30% */
-
-  --random-factor-position-bottom: 1;
-  --decoration-bottom-position-bottom-left: calc(-30% * var(--random-factor-position-bottom)); /* 0 .. -30% */
-}
-
-.animation-toggle {
-  cursor: pointer;
-}
-
 .animation-wrapper {
   min-height: 500px;
   overflow: clip;
   opacity: 1;
-  transition: opacity 5s ease-in;
-}
-
-.animation-wrapper,
-.flounder {
   position: absolute;
   top: 0;
   left: 0;
@@ -78,140 +9,95 @@
   height: 100%;
 }
 
+body:not(.home) {
+  .animation-wrapper {
+    display: none;
+  }
+}
+
 .flounder {
-  /* default radius 100% => same values as above */
-  width: var(--radius);
-  height: var(--radius);
-  top: calc(50% - (var(--radius)/2));
-  left: calc(50% - (var(--radius)/2));
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  border-radius: 100%;
   background: var(--primary-animation-color);
 }
 
-@media (prefers-reduced-motion) {
-  .flounder {
-    animation: none;
-  }
+.position--top-right {
+  top: -10%;
+  right: -10%;
+  transform: scale(0.75);
+}
+
+.position--bottom-right {
+  bottom: -20%;
+  right: -30%;
+  transform: scale(2);
+}
+
+.position--bottom-left {
+  bottom: -20%;
+  left: -10%;
+  transform: scale(2);
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .flounder {
-    transform: translate(0);
-    will-change: transform;
-  }
-  .flounder--pie {
-    width: 50%;
-    height: 50%;
-    border-radius: 100%;
-  }
-  .position {
-    position: absolute;
-    top: auto;
-    right: auto;
-    bottom: auto;
-    left: auto;
-  }
+  @supports (animation-timeline: scroll()) {
+    .position--top-right {
+      animation:
+        resize-grow both,
+        travel-top both;
+    }
+    .position--bottom-right {
+      animation:
+        resize-grow both,
+        travel-bottom both;
+    }
+    .position--bottom-left {
+      animation:
+        resize-grow both,
+        travel-bottom both,
+        travel-left both;
+    }
+    .flounder {
+      animation-timeline: scroll(root);
+      animation-duration: 1s;
+    }
 
-  .position--top-right {
-    top: -10%;
-    right: -10%;
-    animation:
-      resize-shrink 5s infinite alternate ease-in-out var(--decoration-grow-delay-top-right),
-      travel-top 7s infinite alternate ease-in-out;
-  }
-
-  .position--bottom-right {
-    bottom: -20%;
-    right: -20%;
-    transform: scale(1);
-    animation:
-      resize-grow 7s infinite alternate ease-in-out var(--decoration-grow-delay-bottom-right),
-      travel-bottom 9s infinite alternate ease-in-out;
-  }
-
-  .position--bottom-left {
-    bottom: -20%;
-    bottom: var(--decoration-left-position-bottom-left);
-    left: -10%;
-    left: var(--decoration-bottom-position-bottom-left);
-    animation:
-      resize-grow 7s infinite alternate ease-in-out var(--decoration-grow-delay-bottom-left),
-      travel-bottom 5s infinite alternate ease-in-out var(--decoration-bottom-delay-bottom-left),
-      travel-left 8s infinite alternate ease-in-out var(--decoration-left-delay-bottom-left);
-  }
-
-  @keyframes resize-grow {
-    0% {
-      transform: scale(1);
+    @keyframes resize-grow {
+      0% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(6);
+      }
     }
-    100% {
-      transform: scale(2);
-    }
-  }
 
-  @keyframes resize-shrink {
-    0% {
-      transform: scale(1);
+    @keyframes travel-bottom {
+      0% {
+        bottom: -20%;
+      }
+      100% {
+        bottom: 20%;
+      }
     }
-    100% {
-      transform: scale(0.75);
+
+    @keyframes travel-left {
+      0% {
+        left: -10%;
+      }
+      100% {
+        left: -30%;
+      }
+    }
+
+    @keyframes travel-top {
+      0% {
+        top: -10%;
+      }
+      100% {
+        top: 60%;
+      }
     }
   }
-
-  @keyframes travel-bottom {
-    0% {
-      bottom: -20%;
-    }
-    100% {
-      bottom: 20%;
-    }
-  }
-
-  @keyframes travel-left {
-    0% {
-      left: -10%;
-    }
-    100% {
-      left: -30%;
-    }
-  }
-
-  @keyframes travel-top {
-    0% {
-      top: -10%;
-    }
-    100% {
-      top: 60%;
-    }
-  }
-
-  @keyframes travel-top-left {
-    0% {
-      top: 0;
-    }
-    100% {
-      top: 60%;
-    }
-  }
-
-  @keyframes turn {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-
-  @keyframes punch {
-    0% {
-      width: 100%;
-    }
-    100% {
-      width: 80%;
-    }
-  }
-}
-
-.decoration--fade-out .animation-wrapper {
-  opacity: 0;
 }
