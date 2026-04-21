@@ -5,7 +5,7 @@
 * refactor JavaScript to modular TypeScript to improve maintainability #241
 * reduce animation to scroll-linked front page animation to improve accessibility #293
 * remove obsolete animation stop button to improve UX #293
-* improve and extend content to improve SEO #298
+* update skills section to improve SEO #298
 
 ## [5.0.3] content updates - 2026-03-24
 
