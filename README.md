@@ -206,7 +206,7 @@ including readable and clickable links, and that can be used as a CV document.
 DOM elements with visibility controlled by script, like `.sticky-header`,
 must always stay visible without javascript, so we hide them by script when the document is ready.
 
-Optional enhancements in `main.js`:
+Optional enhancements in `scripts.js`:
 - event handling to improve navigation UX
 - improve sticky header behavior
 - stop animation button
