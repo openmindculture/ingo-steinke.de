@@ -9,6 +9,12 @@
   height: 100%;
 }
 
+body:not(.home) {
+  .animation-wrapper {
+    display: none;
+  }
+}
+
 .flounder {
   position: absolute;
   width: 50%;
@@ -33,4 +39,65 @@
   bottom: -20%;
   left: -10%;
   transform: scale(2);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: scroll()) {
+    .position--top-right {
+      animation:
+        resize-grow both,
+        travel-top both;
+    }
+    .position--bottom-right {
+      animation:
+        resize-grow both,
+        travel-bottom both;
+    }
+    .position--bottom-left {
+      animation:
+        resize-grow both,
+        travel-bottom both,
+        travel-left both;
+    }
+    .flounder {
+      animation-timeline: scroll(root);
+      animation-duration: 1s;
+    }
+
+    @keyframes resize-grow {
+      0% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(6);
+      }
+    }
+
+    @keyframes travel-bottom {
+      0% {
+        bottom: -20%;
+      }
+      100% {
+        bottom: 20%;
+      }
+    }
+
+    @keyframes travel-left {
+      0% {
+        left: -10%;
+      }
+      100% {
+        left: -30%;
+      }
+    }
+
+    @keyframes travel-top {
+      0% {
+        top: -10%;
+      }
+      100% {
+        top: 60%;
+      }
+    }
+  }
 }
