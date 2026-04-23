@@ -87,7 +87,7 @@ module.exports = {
   "workReliable": "For me, it's important to explain technological facts in simple words, to understand my customers' requirements, to look ahead constructively and to implement sustainable solutions.",
   "workClientsBenefit": "You benefit from improved customer contact, transparent maintenance costs and optimised performance.",
   "pricingHeading": "Pricing",
-  "pricing": "You can choose a time-based fee, or we can agree on a fixed price rate before starting work.  I usually provide an estimate before starting time-based tasks. Contact me for an individiual quote.",
+  "pricing": "You can choose a time-based fee, or we can agree on a fixed price rate before starting work.  I usually provide an estimate before starting time-based tasks. Contact me for an individual quote.",
   "workFullstack": "When enhancing existing code, I benefit from professional experience and a pragmatic approach. With back-end and DevOps experience and a high willingness to learn, I can take charge or find a suitable partner for all web development tasks.",
   "workOwnFocus": "My focus is CSS based frontend development.",
   "workCertifiedHeading": "Certified and Transparent",
