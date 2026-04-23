@@ -2,9 +2,9 @@
 
 ## [5.1.1] content updates - 2026-04-23
 
-* proofreading: fix typos on all pages
+* proofreading: fix typos on all pages #298
+* improve selected image visibility #312
 * fix QR code in contact section
-* improve selected image style
 
 ## [5.1.0] refactoring and content updates - 2026-04-21
 
