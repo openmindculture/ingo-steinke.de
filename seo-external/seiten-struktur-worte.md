@@ -51,7 +51,7 @@ aus der oberen Navi raus solange niemand abmahnt
 
 nicht mehr lass uns reden lass uns zusammenarbeiten
 
-auch so nicht Fachlich bin ich bereit und in der Lage, mich schnell in neuen Technologien und Themen einzuarbeiten.
+auch so nicht Fachlich bin ich bereit und in der Lage, mich schnell in neue Technologien und Themen einzuarbeiten.
 
 
 nachhaltige Texte von Gute Seiten org unterbringen?

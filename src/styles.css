@@ -103,6 +103,10 @@ a::selection {
   color: var(--secondary-foreground);
 }
 
+img::selection {
+  background-color: var(--textmarker-blue-verytransparent);
+}
+
 .alternating-div-color > div:nth-child(2n-1):not(.no-alternating-color) {
   background-color: var(--cta-light-background);
   color: var(--secondary-foreground);
