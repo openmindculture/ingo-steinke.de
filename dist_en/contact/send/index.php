@@ -219,6 +219,8 @@ if (
   strpos($post_msg, 'click here') !== false ||
   strpos($post_msg, 'accounts in bulk') !== false ||
   strpos($post_msg, 'AccStores.com') !== false ||
+  strpos($post_msg, 'sendproud.com') !== false ||
+  strpos($post_msg, '/sendproud/') !== false ||
   strpos($post_msg, 'gummies') !== false ||
   strpos($post_msg, 'Tranquils') !== false ||
   strpos($post_msg, 'pain relief') !== false ||
