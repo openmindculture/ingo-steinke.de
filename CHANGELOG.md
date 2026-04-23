@@ -1,5 +1,10 @@
 # Changelog
 
+## [5.1.1] content updates - 2026-04-23
+
+* proof reading: check for typos on all pages
+* fix QR code in contact section
+
 ## [5.1.0] refactoring and content updates - 2026-04-21
 
 * refactor JavaScript to modular TypeScript to improve maintainability #241
