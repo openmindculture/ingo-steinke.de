@@ -285,16 +285,20 @@ if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQ
   header('Connection: close');
   if ($suspectedSpam) {
     if (file_exists($stamp_filename) || $randombool) {
+      http_response_code(403);
       echo '{"Status":"403 Forbidden"}';
       $response_status = '403 Forbidden';
     } else if ('POST' != $_SERVER['REQUEST_METHOD']) {
+      http_response_code(405);
       echo '{"Status":"405 Method Not Allowed"}';
       $response_status = '405 Method Not Allowed';
     } else {
+      http_response_code(503);
       echo '{"Status":"503 Service Unavailable"}';
       $response_status = '503 Service Unavailable';
     }
   } else {
+    http_response_code(200);
     echo '{"Status":"200 OK"}';
   }
 } else {
