@@ -200,7 +200,7 @@ module.exports = {
   "contactFormTitle": "Your Project Request",
   "contactFormMessageSending": "Sending your message...",
   "contactFormMessageSent": "Thanks! Your message has been sent.",
-  "contactFormMessageError": "Your message could not be sent!",
+  "contactFormMessageError": "Sorry, your message could not be sent!<br>Please check, retry, or send an email!",
   "contactFormLabelName": "name",
   "contactFormPlaceholderYourName": "your name",
   "contactFormLabelEmail": "email",
