@@ -158,6 +158,8 @@ if (
   strpos($post_msg, 'kisa.link/') !== false ||
   strpos($post_msg, '//amazn.to/') !== false ||
   strpos($post_msg, '/wa.me/') !== false ||
+  strpos($post_msg, 'goto.now/') !== false ||
+  strpos($post_msg, 'yt.vu/') !== false ||
   (strpos($post_msg, 'https:/') !== false && (
       strpos($post_msg, '.cz/') !== false ||
       strpos($post_msg, '.gy/') !== false ||
@@ -232,6 +234,7 @@ if (
   strpos($post_msg, 'ā') !== false ||
   strpos($post_msg, 'Ђ') !== false ||
   strpos($post_msg, '==>') !== false ||
+  preg_match('/\R{3,}/', $post_msg) ||
   strpos($user_agent, 'MSIE') !== false ||
   strpos($post_emailfon, '+48') !== false ||
   strpos($post_emailfon, '+91') !== false ||
@@ -248,11 +251,14 @@ if (
   strpos($post_name, 'Ready for love') !== false ||
   strpos($post_name, 'Amandapeaceame') !== false ||
   strpos($post_name, 'AmeliaDog') !== false ||
+  strpos($post_name, 'Andrewinild') !== false ||
   strpos($post_name, 'Brentscoke') !== false ||
   strpos($post_name, 'Cameronvom') !== false ||
   strpos($post_name, 'Daviddus') !== false ||
+  strpos($post_name, 'DevNexus') !== false ||
   strpos($post_name, 'GrantBib') !== false ||
   strpos($post_name, 'GregoryFub') !== false ||
+  strpos($post_name, 'Justin So') !== false ||
   strpos($post_name, 'KevinKen') !== false ||
   strpos($post_name, 'Nataler') !== false ||
   strpos($post_name, 'Phillippoify') !== false ||
@@ -274,6 +280,7 @@ if (
 
 if (!$suspectedSpam) {
   $linkless = preg_replace("#https?://\S+#i", '', $post_msg);
+  $linkless = str_replace(["\r", "\n"], '', $linkless);
   if (mb_strlen($linkless) < 20) {
     $suspectedSpam = true;
   }
