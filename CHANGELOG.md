@@ -1,5 +1,11 @@
 # Changelog
 
+## [5.1.2] content updates - unreleased
+
+* updated hybrid CV (topical-chronological order) variation(s)
+* more matching marketing content on website
+* update spam protection heuristics
+
 ## [5.1.1] content updates - 2026-04-23
 
 * proofreading: fix typos on all pages #298
