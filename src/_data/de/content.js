@@ -51,7 +51,7 @@ module.exports = {
   "targetHrCv": "Lebenslauf, Projekte, Skills",
   "targetHrCvUrl": "cv-projekte-skills.html",
   "targetHrConciseCv": "Lebenslauf, Projekte, Skills Frontend Web-Entwickler Ingo Steinke",
-  "targetHrConciseCvUrl": "/Ingo-Steinke-Frontend-Web-Entwickler-CV-2025-10.pdf",
+  "targetHrConciseCvUrl": "/Ingo-Steinke-Frontend-Web-Entwickler-CV-2026-05.pdf",
   "caseStudyAstroApp": "",
   "caseStudyAstroAppUrl": "",
   "caseStudyKleiderordnung": "",
