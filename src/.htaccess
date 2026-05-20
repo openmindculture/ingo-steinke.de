@@ -53,3 +53,5 @@ RewriteRule ^/Foto-Ingo-Steinke-Woodhack.jpg$ https://www.ingo-steinke.de/img/Fo
 RewriteRule ^/ingo-steinke-face-bw.jpg$ https://www.ingo-steinke.de/img/ingo-steinke-face-bw.jpg [L,R=301]
 RewriteRule ^/ingo-steinke-avenga-grayscale.jpg$ https://www.ingo-steinke.de/img/ingo-steinke-face-bw.jpg [L,R=301]
 RewriteRule ^/ingo-steinke-schwarzweissportrait-profilbild.jpg$ https://www.ingo-steinke.de/img/ingo-steinke-schwarzweissportrait-profilbild.jpg [L,R=301]
+
+RewriteRule ^/cv-projekte-skills.html$ https://www.ingo-steinke.de/img/ingo-steinke-schwarzweissportrait-profilbild.jpg [L,R=301]
