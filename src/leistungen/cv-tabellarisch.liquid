@@ -3,300 +3,114 @@ tags: dontaddtositemap
 isaboutme: false
 imgdirectory: "../img"
 previewimage: "https://www.ingo-steinke.de/img/preview-creative-web-developer.png"
-previewtitle: "Frontend-Web-Entwickler Ingo Steinke: CV, Projekte, Skills"
-previewdescription: "Ingo Steinke ist Frontend-Webentwickler mit 27 Jahren Berufserfahrung und den Schwerpunkten Barrierefreiheit, Ladegeschwindigkeit und Wartbarkeit."
+previewtitle: "Creative Web Developer Ingo Steinke: CV, Projekte, Skills"
+previewdescription: "Ingo Steinke ist Frontend-Webentwickler mit vielen Jahren Berufserfahrung und den Schwerpunkten Barrierefreiheit, Ladegeschwindigkeit und Wartbarkeit."
 permalink: "cv-tabellarisch.html"
 ---
 <!doctype html>
 <html lang="de">
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>Frontend-Web-Entwickler Ingo Steinke</title>
+  <title>Creative Web Developer Ingo Steinke</title>
   {% include '../_includes/html-head-common.liquid' %}
   <style>
-    @font-face {
-      font-display: swap;
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 400;
-      src: url('../fonts/inter-v19-latin-regular.woff2') format('woff2');
-    }
-    @font-face {
-      font-display: swap;
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 700;
-      src: url('../fonts/inter-v19-latin-700.woff2') format('woff2');
-    }
-
-    body.font-cv .page-container {
-      padding: 16pt 16pt 0 24pt;
-    }
-
-    body.font-cv, body.font-cv * {
-      font-family: 'Inter', 'Helvetica', 'Arial', sans-serif !important;
-      font-weight: 400 !important;
-      background-color: #fff !important;
-      color: #000 !important;
-    }
-
-    body.font-cv h1,
-    body.font-cv h2,
-    body.font-cv h3,
-    body.font-cv th,
-    body.font-cv th *{
-      font-weight: 700 !important;
-    }
-
-    .subheadline,
-    body.font-cv .subheadline {
-      font-weight: 700 !important;
-      font-size: 13pt;
-    }
-
-    .flex-columns {
-      display: flex;
-      flex-direction: row;
-    }
-
-    .flex-column-smaller img,
-    .flex-column-smaller svg {
-      width: 2.75cm;
-      max-width: unset;
-      height: auto;
-      margin-right: 0.75cm;
-    }
-
-    .flex-column-smaller ul,
-    .flex-column-smaller li {
-      margin-left: 0;
-      padding-left: 0;
-    }
-
-    .flex-column-smaller li {
-      padding-top: 9pt;
-    }
-
-    table {
-      border-collapse: collapse;
-    }
-
-    .full-width {
-      width: 100%;
-    }
-
-    td, th {
-      vertical-align: top;
-      padding-top: 0;
-    }
-
-    td ul {
-      margin-top: 0;
-      padding-left: 15pt;
-    }
-
-    th {
-      padding-top: 8pt;
-      padding-bottom: 4pt;
-      text-align: left;
-      font-size: 13pt;
-      page-break-after: avoid;
-    }
-
-    th time {
-      font-size: 12pt;
-    }
-
-    a, a:link, a:visited, a:active {
-      text-decoration: none;
-    }
-
-    @media print {
-      body.font-cv, body.font-cv * {
-        font-family: 'Inter', 'Helvetica', 'Arial', sans-serif !important;
-        font-weight: 400 !important;
-      }
-
-      body.font-cv h1,
-      body.font-cv h2,
-      body.font-cv h3 {
-        font-weight: 700 !important;
-        line-height: 1.2 !important;
-      }
-
-      body.font-cv h1 {
-        font-size: 20pt !important;
-        margin-top: 0 !important;
-      }
-
-      body.font-cv h2 {
-        font-size: 16pt !important;
-      }
-
-      body.font-cv .flex-column-smaller {
-        font-size: 12pt !important;
-      }
-
-      body.font-cv .flex-column-smaller small {
-        font-size: 11pt !important;
-      }
-
-      img.avatar {
-        border-radius: 50% !important;
-      }
-    }
+    {% include '../_includes/cv-style.css' %}
   </style>
 </head>
 <body class="high-contrast font-cv">
 <div class="page-container" id="top">
   <div class="page-content">
-    <h1>Ingo Steinke, Frontend-Web-Entwickler</h1>
-    <div class="flex-columns">
-      <div class="flex-column-smaller">
-        <picture>
-          <source type="image/webp"
-                  srcset="img/Ingo-Steinke-flower-shirt.webp, img/Ingo-Steinke-flower-shirt-496.webp 2x, img/Ingo-Steinke-flower-shirt-large.webp 4x">
-          <img src="img/Ingo-Steinke-flower-shirt.jpg"
-               srcset="img/Ingo-Steinke-flower-shirt-496.jpg 2x, img/Ingo-Steinke-flower-shirt-large.jpg 4x"
-               width="248" height="248" alt="Frontend-Web-Entwickler Ingo Steinke" class="avatar"></picture>
-      </div>
+    <h1>Ingo Steinke, Creative Web Developer</h1>
+    <div class="noflex full-width">
+        <img src="img/Ingo-Steinke-flower-shirt-large.jpg"
+               width="248" height="248" alt="Frontend-Web-Entwickler Ingo Steinke" class="avatar circled"
+               >
+        <div class="mb-min">
+          barrierefreie, schnelle Websites und Onlineshops seit 1997<br>
+          <br>
+          <b>Tech</b>: React, TypeScript, Astro,<br>
+          zertifizierter <b>Shopware 6 Experte.</b><br>
+        </div>
 
-      <div class="flex-column-bigger">
-        Senior Frontend-Web-Entwickler und zertifizierter Shopware 6 Experte,<br>
-        27 Jahre Berufserfahrung, barrierefreie Web-Entwicklung mit React, TypeScript, JavaScript, CSS, HTML, Astro.
-      </div>
     </div>
-    <div class="full-width">
-      <span class="vcard">
-      Berlin |
-        <span class="tel">Tel. <a class="transparent" href="tel:+491634684080">+491634684080</a></span> |
-        <a class="transparent" href="mailto:kontakt@ingo-steinke.de">kontakt@ingo-steinke.de</a> |
-        <a class="transparent" href="https://www.ingo-steinke.de/" target="_blank" rel="noopener">ingo-steinke.de</a> |<br>
-        <a class="transparent" href="https://github.com/openmindculture" target="_blank" rel="noopener">github.com/openmindculture</a> |
+    <div class="noflex full-width clear">
+
+      <div class="mb-min">
+        Berlin &nbsp;·&nbsp;
+        <span class="tel"><a class="transparent" href="tel:+491634684080">+491634684080</a></span> &nbsp;·&nbsp;
+        <a class="transparent" href="mailto:kontakt@ingo-steinke.de">kontakt@ingo-steinke.de</a>
+        <br>
+      </div>
+
+      <div>
+        <a class="transparent" href="https://www.ingo-steinke.de/?utm_source=cv&utm_term=cv_2026" target="_blank" rel="noopener"><b>ingo-steinke.de</b></a> &nbsp;·&nbsp;
+        <a class="transparent" href="https://github.com/openmindculture" target="_blank" rel="noopener">github.com/openmindculture</a> &nbsp;·&nbsp;
         <a class="transparent" href="https://linkedin.com/in/ingosteinke" target="_blank" rel="noopener">linkedin.com/in/ingosteinke</a><br>
-      </span>
+      </div>
+
+   </div>
+
+    <div class="full-width">
+
       <table>
-
         <tr>
-          <th>Frontend-Web-Entwicklung - dev-UX-Lesezeichen.de, <time>07/2025 - 09/2025</time></th>
+          <th><h2 class="heading--skills">Skills</h2></th>
         </tr>
         <tr>
           <td>
-            Branche: Web-Dienstleistungen<br>
-            Projekt: Web-App zur Präsentation von IT-Fachbüchern<br>
-            Astro, React, TypeScript, Tailwind, Playwright<br>
-            Frontend-Web-App-Entwickler<br>
-          </td>
-        </tr>
-
-        <tr>
-          <th>Frontend-Web-Entwicklung - namhafter Online-Dienstleister (NDA), <time>01/2025 - 06/2025</time></th>
-        </tr>
-        <tr>
-          <td>
-            Branche: Web-Dienstleistungen<br>
-            Projekt: Frontend-Web-Entwicklung zur Ablösung bestehender Legacy Themes und Plugins durch ein natives Theme mit dynamisch angepassten Designs und Tracking zwecks Conversion-Rate-Optimierung in einem komplexen Multi-Domain-Setup.<br>
-            PHP, JavaScript, CSS, Cypress, Docker<br>
-            Frontend-Web-Entwickler<br>
-          </td>
-        </tr>
-        <tr>
-          <th>Frontend-Web-Entwicklung - Finanzberatung, <time>02/2025 - 04/2025</time></th>
-        </tr>
-        <tr>
-          <td>
-            Branche: Finanzdienstleistungen<br>
-            Projekt: Barrierefreie responsive Portfolio-Website mit Content-Management-System (CMS)<br>
-            HTML, CSS, JavaScript, PHP<br>
-            Frontend-Web-Entwickler<br>
+            <b>Technologien</b>:<br>
             <ul>
-              <li>Website: <a class="transparent" href="https://kunnigkonsulting.com/" target="_blank" rel="noopener">kunnigkonsulting.com</a></li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <th>Full-Stack-Web-Entwicklung - Ingo Steinke, <time>01/2021 - 04/2025</time></th>
-        </tr>
-        <tr>
-          <td>
-            Projekt: mehrsprachige Portfolio-Website zur Neukundengewinnung<br>
-            Eleventy, Liquid, JavaScript, TypeScript, CSS, HTML<br>
-            Web-Entwickler, Web-Designer<br>
-            <ul>
-              <li>Website: <a class="transparent" href="https://www.ingo-steinke.de/?utm_source=CV_2025_11" target="_blank" rel="noopener">www.ingo-steinke.de</a>
+              <li>
+                <b>Frontend</b>: React, TypeScript, ES6+, JavaScript, Tailwind, SCSS, CSS, HTML
+              </li><li>
+                <b>E-Commerce</b>: Shopware 6 (zertifiziert 2024), Symfony, WooCommerce
+              </li><li>
+                <b>Testing und Tools</b>: Cypress, Vitest, Playwright, Git, npm, Docker
+              </li><li>
+                <b>Backend und Datenbanken</b>: Node.js, MongoDB, PHP, MySQL
+              </li><li>
+                <b>Methoden und Standards</b>: Barrierefreiheit (WCAG), Datenschutz (DSGVO), Agile (Scrum)
               </li>
             </ul>
-          </td>
-        </tr>
-
-        <tr style="page-break-before:always;">
-          <td><strong class="subheadline">Ältere Projekte (Auswahl):</strong><br><br></td>
-        </tr>
-
-        <tr>
-          <th>Frontend-Web-Entwicklung - Kleiderordnung Berlin, <time>04/2023 - 12/2024</time></th>
-        </tr>
-        <tr>
-          <td>
-            Branche: Mode, Beratung (nachhaltige Modeberaterin)<br>
-            Projekt: mehrsprachige, responsive Portfolio-Website als CMS<br>
-            HTML 5, CSS 3, JavaScript, PHP, WordPress<br>
-            Web-Entwickler<br>
+            <b>Sprachkenntnisse</b>:
             <ul>
-              <li>Website: <a class="transparent" href="https://kleiderordnung.berlin" target="_blank" rel="noopener">https://kleiderordnung.berlin</a>
-              </li>
+              <li><b>Englisch</b> (C1, fließend)</li>
+              <li><b>Deutsch</b> (C2, Muttersprache)</li>
+              <li><b>Französisch</b> (gutes Verständnis technischer Dokumentation und Fachsprache)</li>
             </ul>
           </td>
         </tr>
 
         <tr>
-          <th>E-Commerce- und Frontend-Entwicklung - FoodTogether, <time>07/2022 - 07/2024</time></th>
+          <th><h2 class="heading--has-subsections">Freelance- und Kundenprojekte (Auswahl)</h2></th>
+        </tr>
+
+        <tr class="subsection">
+          <td>
+            <h3 class="group group--corporate">Realisierung von Corporate Websites</h3>
+          </td>
+        </tr>
+
+        <tr>
+          <th>Web-Entwicklung: namhafter Dienstleister (NDA) · <time>01/2025 - 06/2025</time></th>
         </tr>
         <tr>
           <td>
-            Branche: Handel (Lebensmittel-Direktversand)<br>
-            Projekt: Online-Shop mit Abonnement-Bestellungen und Preistransparenzangaben<br>
-            WooCommerce, PHP, CSS, JavaScript, npm, git<br>
-            Frontend-Web-Entwickler, E-Commerce-Entwickler, Support<br>
             <ul>
-              <li>PayPal-Integration</li>
-              <li>wiederkehrende Bestellungen per Abo-Funktion</li>
-              <li>kontinuierliche Steigerung von Traffic und Umsatz</li>
-              <li>Website: <a class="transparent" href="https://www.foodtogether.de/" target="_blank" rel="noopener">www.foodtogether.de</a></li>
+              <li>Tech Stack: PHP, JavaScript, CSS, Cypress, Docker, WordPress</li>
+              <li>Projekt: Entwicklung eines parametrisierten WordPress-Whitelabel-Themes <br>mit Skinning- und Tracking-Logik</li>
+              <li>Erfolgreiche Migration bestehender und schnelle Erstellung neuer Portale</li>
             </ul>
           </td>
         </tr>
+
         <tr>
-          <th>Shopware E-Commerce-Entwicklung - FoodTogether, <time>02/2024 - 06/2024</time></th>
+          <th>Senior Frontend-Entwicklung: STRABAG SE Karriere · <time>10/2021 - 05/2022</time></th>
         </tr>
         <tr>
           <td>
-            Branche: Handel (Lebensmittel-Direktversand)<br>
-            Projekt: responsive Datenvisualisierung für mögliche Shopware-Migration<br>
-            Shopware 6, PHP 7, Twig, CSS, JavaScript<br>
-            Web-Entwickler, Shopware Extension Partner<br>
             <ul>
-              <li>Portierung einer WooCommerce-Erweiterung als Shopware-Plugin</li>
-              <li>von Shopware geprüft und als Extension im Shopware-Store veröffentlicht:<br>
-                <a
-                  href="https://store.shopware.com/en/ingos57544164693f/cost-transparency.html"
-                  class="transparent"
-                  target="_blank"
-                  rel="noopener">https://store.shopware.com/en/ingos57544164693f/cost-transparency.html</a>
-              </li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <th>Senior Frontend Entwicklung - STRABAG SE, <time>10/2021 - 05/2022</time></th>
-        </tr>
-        <tr>
-          <td>
-            Branche: Bauwesen, Straßen- und Hochbau<br>
-            Projekt: Modulares Design-System zum Relaunch der Karriere-Websites<br>
-            Fractal, Handlebars, HTML 5, SCSS, CSS, JavaScript, git<br>
-            Senior Frontend Entwickler<br>
-            <ul>
+              <li>Tech Stack: Fractal, Handlebars, HTML 5, SCSS, CSS, JavaScript, git</li>
               <li>Fachliche Leitung eines Frontend-Teams mit 3 Web-Entwicklern</li>
               <li>Aufbau eines skalierbaren Komponenten-Systems mit Fractal</li>
               <li>Livegang fristgerecht mit mehreren Länderversionen</li>
@@ -304,39 +118,123 @@ permalink: "cv-tabellarisch.html"
             </ul>
           </td>
         </tr>
-        <tr>
-          <th>React-Frontend-Entwicklung - Sevenval/Avenga, <time>07/2017 - 10/2020</time></th>
-        </tr>
-        <tr>
+
+        <tr class="subsection">
           <td>
-            Branche: SaaS / Internet-Dienstleistungen (B2B)<br>
-            Projekt: React-Web-App mit React-Komponentenbibliothek zur UI-Konfiguration und Datenvisualisierung von Website-Optimierungen<br>
-            React, JSX, JavaScript, Storybook, CSS in JS, git, GitLab<br>
-            React-Web-Entwickler als Teil des Frontend-Teams<br>
-            <ul>
-              <li>Entwicklung und Pflege modularer UI-Komponenten in React</li>
-              <li>Visualisierung von Live-Daten und Konfigurationen in Echtzeit (React State Management)</li>
-              <li>Aufbau und Pflege von Storybook-Dokumentation und modularer Testautomatisierung</li>
-              <li>Plattform wurde in über 20 Kundenprojekten eingesetzt und intern weiterentwickelt</li></li>
-            </ul>
-            <br><br>
+            <h3 class="group">E-Commerce-Entwicklung mit Shopware und WooCommerce</h3>
           </td>
         </tr>
+
         <tr>
-          <th><h2>Skills: Technologien, Methoden und Sprachen</h2></th>
+          <th>
+            Merchandise Shop: <a class="transparent" href="https://shop.open-mind-culture.org/" target="_blank" rel="noopener">shop.open-mind-culture.org</a>  · <time>04/2026 - 05/2026</time>
+          </th>
         </tr>
         <tr>
           <td>
             <ul>
-              <li>
-                Technologien:<br>
-                Frontend: HTML, CSS, SCSS, JavaScript, ES6+, TypeScript, React, Astro, Eleventy<br>
-                CMS/E-Commerce: Shopware 6 (zertifiziert 2024), WooCommerce, Wordpress, PHP 8<br>
-                Testing/Tools: Cypress, git, GitHub, GitLab, Docker, npm, esbuild<br>
-                Methoden: Responsive Web Design, Barrierefreiheit (WCAG), Agile, Scrum, Jira<br>
+              <li>Tech-Stack: Shopware 6, PHP 8, Twig, SCSS, JavaScript</li>
+              <li>Projekt: Aufbau einer E-Commerce-Plattform als Demo eigener Plugins und Themes</li>
+              <li>Erfolg: Einsatz im mehrsprachigen Produktivbetrieb mit Zahlungsabwicklung und Versand</li>
+            </ul>
+          </td>
+        </tr>
+
+        <tr>
+          <th>Shopware-Extension: Kostentransparenz  · <time>02/2024 - 06/2024</time></th>
+        </tr>
+        <tr>
+          <td>
+            <ul>
+              <li>Tech-Stack: Shopware 6, PHP 7, Twig, SCSS, JavaScript</li>
+              <li>Projekt: responsive Datenvisualisierung für mögliche Shopware-Migration</li>
+              <li>Erfolg: von Shopware geprüft und im Shopware-Store veröffentlicht:<br>
+                <a
+                  href="https://store.shopware.com/en/ingos57544164693f/cost-transparency.html"
+                  class="transparent"
+                  target="_blank"
+                  rel="noopener">store.shopware.com/en/ingos57544164693f/cost-transparency.html</a>
               </li>
-              <li>27 Jahre Berufserfahrung</li>
-              <li>Sprachkenntnisse: Englisch (C1, fließend), Deutsch (C2, Muttersprache)</li>
+            </ul>
+          </td>
+        </tr>
+
+        <tr>
+          <th>
+            Frontend und E-Commerce: <a class="transparent" href="https://www.foodtogether.de/" target="_blank" rel="noopener">FoodTogether.de</a>  · <time>07/2022 - 07/2024</time>
+          </th>
+        </tr>
+        <tr>
+          <td>
+            <ul>
+              <li>Tech-Stack: WooCommerce, PHP, CSS, JavaScript, npm, git</li>
+              <li>Projekt: Online-Shop mit Abonnement-Bestellungen und Preistransparenz</li>
+              <li>Erfolg: PayPal-Abo-Integration, Steigerung von Traffic und Umsatz</li>
+            </ul>
+          </td>
+        </tr>
+
+        <tr class="subsection">
+          <td>
+            <h3 class="group">Frontend- und Web-App-Entwicklung mit React</h3>
+          </td>
+        </tr>
+
+        <tr>
+          <th>Frontend-Web-Entwicklung: Machbarkeitsstudie · <time>07/2025 - 09/2025</time></th>
+        </tr>
+        <tr>
+          <td>
+            <ul>
+              <li>Tech-Stack: Astro 5, React 19, TypeScript, Tailwind, Playwright</li>
+              <li>Projekt: Konzeption und Entwicklung eines lauffähigen Prototyps für eine IT-Fachbuch-Plattform zur Evaluierung der Astro-Inslands-Architektur mit React 19</li>
+              <li>Erfolg: produktionsnah getestetes Live-System auf <a class="transparent" href="https://devux.ingo-steinke.de" target="_blank" rel="noopener">devux.ingo-steinke.de</a></li>
+            </ul>
+          </td>
+        </tr>
+
+        <tr>
+          <th>React-Frontend-Entwicklung: wao.io by Avenga  · <time>07/2017 - 10/2020</time></th>
+        </tr>
+        <tr>
+          <td>
+            <ul>
+              <li>Tech-Stack: React, JSX, JavaScript, Storybook, CSS in JS, GitLab</li>
+              <li>Projekt: Entwicklung modularer UI-Komponenten mit Datenvisualisierung in React</li>
+              <li>Erfolg: SaaS-B2B-Plattform wurde in über 20 Kundenprojekten eingesetzt</li>
+            </ul>
+          </td>
+        </tr>
+
+        <tr class="subsection">
+          <td>
+            <h3 class="group">Individuelle Web-Entwicklung</h3>
+          </td>
+        </tr>
+
+        <tr>
+          <th>Portfolio-Web-Entwicklung: Kleiderordnung Berlin · <time>2023 - 2024</time></th>
+        </tr>
+        <tr>
+          <td>
+            <ul>
+              <li>Tech Stack: HTML 5, CSS 3, JavaScript, PHP, WordPress</li>
+              <li>Projekt: mehrsprachige, responsive Portfolio-Website als CMS</li>
+              <li>Website: <a class="transparent" href="https://kleiderordnung.berlin" target="_blank" rel="noopener">kleiderordnung.berlin</a></li>
+            </ul>
+          </td>
+        </tr>
+
+        <tr>
+          <th><h2>Beruflicher Werdegang (2000–2020)</h2></th>
+        </tr>
+        <tr>
+          <td>
+            <ul>
+              <li>Avenga Germany — Senior Software Developer / Technical Consultant · 2014 - 2020</li>
+              <li>Lucom GmbH — Software Consultant · 2018</li>
+              <li>Xsite GmbH— Web Developer / E-Commerce Engineer · 2010 - 2014</li>
+              <li>Active-Websight GbR — Co-Founder / Web Developer · 2000 - 2010</li>
             </ul>
           </td>
         </tr>
@@ -344,13 +242,29 @@ permalink: "cv-tabellarisch.html"
 
       <h2>Über mich: Webentwickler mit Begeisterung für UX-Design</h2>
       <p>
-        Schöne, schnelle und barrierefreie Websites sollen allen Menschen Zugang zu diesem Netzwerk bieten. Diese Vision prägt meine Arbeit. Seit Ende 2020 bin ich als selbstständiger Senior Frontend-Webentwickler (Freelancer) für Agenturen und individuelle Kundinnen und Kunden tätig. Seit 2022 lebe ich in Berlin, arbeite aber häufig online und bin bei Bedarf reisebereit.
+        Schöne, schnelle und barrierefreie Websites für alle – diese Vision prägt meine Arbeit. Seit Ende 2020 begleite ich Agenturen und Unternehmen als selbstständiger Senior Frontend-Webentwickler (Freelancer).
       </p>
-      <p>
-        Als selbstständiger Webentwickler bin ich gut vernetzt mit Designern, Entwicklern und anderen Experten. Ich bin Mitglied im Impact Hub Berlin. Ich bin freier Web Application Developer für defacto|ci und Freelance-Webentwickler für Railslove. Von 2019 bis 2021 war ich Mitveranstalter des Kölner Web-Performance Meetups. Zuvor engagierte ich mich ehrenamtlich im Arbeitskreis Neue Medien im Unterricht und als Veranstalter und Vorsitzender der Skate Association Germany e.V.
-      </p>
+      <ul>
+        <li>
+          Netzwerk und Kooperation: Bestens vernetzt mit Designern und Entwicklern,<br>
+          freier Mitarbeiter bei defacto|ci und Berlingeschwister.</li>
+
+        <li>Engagement: Ehemaliger Mitveranstalter des Kölner Web-Performance Meetups (2019–2021) sowie langjähriger Vorsitzender der Skate Association Germany e.V.</li>
+
+        <li>Arbeitsweise: teamfähig, kommunikationsstark und flexibel.</li>
+
+        <li>Mobilität: wohnhaft in Berlin, unkompliziert reisebereit (Führerschein und PKW vorhanden).</li>
+
+      </ul>
       <p>
         Ich freue mich auf unsere Zusammenarbeit!
+      </p>
+      <p>
+        <b>Ingo Steinke</b><br>
+        Creative Web Developer
+      </p>
+      <p>
+        Berlin, Mai 2026
       </p>
     </div>
   </div>

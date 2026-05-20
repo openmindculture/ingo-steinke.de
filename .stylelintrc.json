@@ -2,6 +2,7 @@
   "extends": "stylelint-config-standard",
   "rules": {
     "alpha-value-notation": null,
+    "at-rule-empty-line-before": null,
     "color-function-notation": null,
     "color-hex-length": null,
     "comment-empty-line-before": null,
@@ -13,10 +14,12 @@
       }
     ],
     "declaration-block-no-redundant-longhand-properties": null,
+    "font-family-name-quotes": null,
     "keyframes-name-pattern": null,
     "media-feature-name-no-vendor-prefix": null,
     "media-feature-range-notation": null,
     "no-descending-specificity": null,
+    "no-empty-source": null,
     "property-no-vendor-prefix": null,
     "rule-empty-line-before": null,
     "selector-class-pattern": null,

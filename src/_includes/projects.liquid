@@ -66,7 +66,7 @@
                 <div class="timestamp">{{ projectTimestamp }}</div>
               {% endif %}
               <p>
-                {% if showicons %}
+                {% if showicons and projectIconSlug != empty %}
                   <img src="/img/icon-{{ projectIconSlug |  default: project }}.svg"
                        alt="{{ projectIconAlt | default: '' }}"
                        width="{{ projectIconWidth | default: '64' }}"
@@ -112,7 +112,7 @@
       {% else %}
 
         <article
-          class="tile{% if showicons %} has-icons{% endif %}"
+          class="tile{% if showicons and projectIconSlug != empty %} has-icons{% endif %}"
           id="project-{{ project }}"
           tabindex="0"
         >
@@ -124,7 +124,7 @@
               <div class="timestamp">{{ projectTimestamp }}</div>
             {% endif %}
             <div class="description-group">
-              {% if showicons %}
+              {% if showicons and projectIconSlug != empty %}
                 <img src="/img/icon-{{ projectIconSlug |  default: project }}.svg"
                      alt="{{ projectIconAlt | default: '' }}"
                      width="{{ projectIconWidth | default: '64' }}"

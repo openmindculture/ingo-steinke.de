@@ -3,300 +3,114 @@ tags: dontaddtositemap
 isaboutme: false
 imgdirectory: "../img"
 previewimage: "https://www.ingo-steinke.com/img/preview-creative-web-developer.png"
-previewtitle: "Frontend Web Developer Ingo Steinke: CV, Projects, Skills"
-previewdescription: "Ingo Steinke is a frontend web developer with 27 years of professional experience and a focus on accessibility, loading speed and maintainability."
+previewtitle: "Creative Web Developer Ingo Steinke: CV, Projects, Skills"
+previewdescription: "Ingo Steinke is a frontend web developer with many years of professional experience and a focus on accessibility, loading speed and maintainability."
 permalink: "cv-tabular.html"
 ---
 <!doctype html>
 <html lang="de">
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>Frontend Web Developer Ingo Steinke</title>
+  <title>Creative Web Developer Ingo Steinke</title>
   {% include '../_includes/html-head-common.liquid' %}
   <style>
-    @font-face {
-      font-display: swap;
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 400;
-      src: url('../fonts/inter-v19-latin-regular.woff2') format('woff2');
-    }
-    @font-face {
-      font-display: swap;
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 700;
-      src: url('../fonts/inter-v19-latin-700.woff2') format('woff2');
-    }
-
-    body.font-cv .page-container {
-      padding: 16pt 16pt 0 24pt;
-    }
-
-    body.font-cv, body.font-cv * {
-      font-family: 'Inter', 'Helvetica', 'Arial', sans-serif !important;
-      font-weight: 400 !important;
-      background-color: #fff !important;
-      color: #000 !important;
-    }
-
-    body.font-cv h1,
-    body.font-cv h2,
-    body.font-cv h3,
-    body.font-cv th,
-    body.font-cv th *{
-      font-weight: 700 !important;
-    }
-
-    .subheadline,
-    body.font-cv .subheadline {
-      font-weight: 700 !important;
-      font-size: 13pt;
-    }
-
-    .flex-columns {
-      display: flex;
-      flex-direction: row;
-    }
-
-    .flex-column-smaller img,
-    .flex-column-smaller svg {
-      width: 2.75cm;
-      max-width: unset;
-      height: auto;
-      margin-right: 0.75cm;
-    }
-
-    .flex-column-smaller ul,
-    .flex-column-smaller li {
-      margin-left: 0;
-      padding-left: 0;
-    }
-
-    .flex-column-smaller li {
-      padding-top: 9pt;
-    }
-
-    table {
-      border-collapse: collapse;
-    }
-
-    .full-width {
-      width: 100%;
-    }
-
-    td, th {
-      vertical-align: top;
-      padding-top: 0;
-    }
-
-    td ul {
-      margin-top: 0;
-      padding-left: 15pt;
-    }
-
-    th {
-      padding-top: 8pt;
-      padding-bottom: 4pt;
-      text-align: left;
-      font-size: 13pt;
-      page-break-after: avoid;
-    }
-
-    th time {
-      font-size: 12pt;
-    }
-
-    a, a:link, a:visited, a:active {
-      text-decoration: none;
-    }
-
-    @media print {
-      body.font-cv, body.font-cv * {
-        font-family: 'Inter', 'Helvetica', 'Arial', sans-serif !important;
-        font-weight: 400 !important;
-      }
-
-      body.font-cv h1,
-      body.font-cv h2,
-      body.font-cv h3 {
-        font-weight: 700 !important;
-        line-height: 1.2 !important;
-      }
-
-      body.font-cv h1 {
-        font-size: 20pt !important;
-        margin-top: 0 !important;
-      }
-
-      body.font-cv h2 {
-        font-size: 16pt !important;
-      }
-
-      body.font-cv .flex-column-smaller {
-        font-size: 12pt !important;
-      }
-
-      body.font-cv .flex-column-smaller small {
-        font-size: 11pt !important;
-      }
-
-      img.avatar {
-        border-radius: 50% !important;
-      }
-    }
+    {% include '../_includes/cv-style.css' %}
   </style>
 </head>
 <body class="high-contrast font-cv">
 <div class="page-container" id="top">
   <div class="page-content">
-    <h1>Ingo Steinke, Frontend Web Developer</h1>
-    <div class="flex-columns">
-      <div class="flex-column-smaller">
-        <picture>
-          <source type="image/webp"
-                  srcset="img/Ingo-Steinke-flower-shirt.webp, img/Ingo-Steinke-flower-shirt-496.webp 2x, img/Ingo-Steinke-flower-shirt-large.webp 4x">
-          <img src="img/Ingo-Steinke-flower-shirt.jpg"
-               srcset="img/Ingo-Steinke-flower-shirt-496.jpg 2x, img/Ingo-Steinke-flower-shirt-large.jpg 4x"
-               width="248" height="248" alt="Frontend-Web-Entwickler Ingo Steinke" class="avatar"></picture>
+    <h1>Ingo Steinke, Creative Web Developer</h1>
+    <div class="noflex full-width">
+      <img src="img/Ingo-Steinke-flower-shirt-large.jpg"
+           width="248" height="248" alt="frontend web developer Ingo Steinke" class="avatar circled"
+      >
+      <div class="mb-min">
+        accessible, fast websites and online shops since 1997<br>
+        <br>
+        <b>Tech</b>: React, TypeScript, Astro,<br>
+        certified <b>Shopware 6 expert.</b><br>
       </div>
 
-      <div class="flex-column-bigger">
-        Senior frontend web developer and certified Shopware 6 expert,<br>
-        27 years professional experience, accessible web development with React, TypeScript, JavaScript, CSS, HTML, Astro.
-      </div>
     </div>
-    <div class="full-width">
-      <span class="vcard">
-      Berlin |
-        <span class="tel">Tel. <a class="transparent" href="tel:+491634684080">+491634684080</a></span> |
-        <a class="transparent" href="mailto:kontakt@ingo-steinke.de">kontakt@ingo-steinke.de</a> |
-        <a class="transparent" href="https://www.ingo-steinke.de/" target="_blank" rel="noopener">ingo-steinke.de</a> |<br>
-        <a class="transparent" href="https://github.com/openmindculture" target="_blank" rel="noopener">github.com/openmindculture</a> |
+    <div class="noflex full-width clear">
+
+      <div class="mb-min">
+        Berlin &nbsp;·&nbsp;
+        <span class="tel"><a class="transparent" href="tel:+491634684080">+491634684080</a></span> &nbsp;·&nbsp;
+        <a class="transparent" href="mailto:contact@ingo-steinke.com">contact@ingo-steinke.com</a>
+        <br>
+      </div>
+
+      <div>
+        <a class="transparent" href="https://www.ingo-steinke.com/?utm_source=cv&utm_term=cv_2026" target="_blank" rel="noopener"><b>ingo-steinke.com</b></a> &nbsp;·&nbsp;
+        <a class="transparent" href="https://github.com/openmindculture" target="_blank" rel="noopener">github.com/openmindculture</a> &nbsp;·&nbsp;
         <a class="transparent" href="https://linkedin.com/in/ingosteinke" target="_blank" rel="noopener">linkedin.com/in/ingosteinke</a><br>
-      </span>
+      </div>
+
+    </div>
+
+    <div class="full-width">
+
       <table>
-
         <tr>
-          <th>Frontend Web Development - dev-UX-Lesezeichen.de, <time>07/2025 - 09/2025</time></th>
+          <th><h2 class="heading--skills">Skills</h2></th>
         </tr>
         <tr>
           <td>
-            Industry: web services<br>
-            Project: web app presenting IT textbooks<br>
-            Astro, React, TypeScript, Tailwind, Playwright<br>
-            Frontend web app developmer<br>
-          </td>
-        </tr>
-
-        <tr>
-          <th>Frontend Web Development - renowned online service provider (NDA), <time>01/2025 - 06/2025</time></th>
-        </tr>
-        <tr>
-          <td>
-            Industry: web services<br>
-            Project: Front-end web development to replace existing legacy themes and plugins with a native theme featuring dynamically adapted designs and tracking for conversion rate optimisation in a complex multi-domain setup.<br>
-            PHP, JavaScript, CSS, Cypress, Docker<br>
-            Frontend web developer<br>
-          </td>
-        </tr>
-        <tr>
-          <th>Frontend Web Development - Financial Consultant, <time>2025-02 – 2025-04</time></th>
-        </tr>
-        <tr>
-          <td>
-            Industry: Financial services<br>
-            Project: accessible responsive portfolio website with a content management system (CMS)<br>
-            HTML, CSS, JavaScript, PHP<br>
-            Frontend web developer<br>
+            <b>Technologies</b>:<br>
             <ul>
-              <li>website: <a class="transparent" href="https://kunnigkonsulting.com/" target="_blank" rel="noopener">kunnigkonsulting.com</a></li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <th>Full-Stack Web Development - Ingo Steinke, <time>01/2021 - 04/2025</time></th>
-        </tr>
-        <tr>
-          <td>
-            Project: multilingual portfolio website for acquiring new customers<br>
-            Eleventy, Liquid, JavaScript, TypeScript, CSS, HTML<br>
-            Web developer, web designer<br>
-            <ul>
-              <li>website: <a class="transparent" href="https://www.ingo-steinke.de/?utm_source=CV_2025_11" target="_blank" rel="noopener">www.ingo-steinke.de</a>
+              <li>
+                <b>Frontend</b>: React, TypeScript, ES6+, JavaScript, Tailwind, SCSS, CSS, HTML
+              </li><li>
+                <b>E-commerce</b>: Shopware 6 (certified 2024), Symfony, WooCommerce
+              </li><li>
+                <b>Testing and tools</b>: Cypress, Vitest, Playwright, Git, npm, Docker
+              </li><li>
+                <b>Backend and database</b>: Node.js, MongoDB, PHP, MySQL
+              </li><li>
+                <b>Methods and standards</b>: Accessibility (WCAG), GDPR, Agile (Scrum)
               </li>
             </ul>
-          </td>
-        </tr>
-
-        <tr style="page-break-before:always;">
-          <td><strong class="subheadline">Older Projects (Selection):</strong><br><br></td>
-        </tr>
-
-        <tr>
-          <th>Frontend Web Development - Kleiderordnung Berlin, <time>04/2023 - 12/2024</time></th>
-        </tr>
-        <tr>
-          <td>
-            Industry: Fashion, consulting (sustainable fashion consultant)<br>
-            Project: multilingual responsive portfolio website as a CMS<br>
-            HTML 5, CSS 3, JavaScript, PHP, WordPress<br>
-            Web developer<br>
+            <b>Language Skills</b>:
             <ul>
-              <li>website: <a class="transparent" href="https://kleiderordnung.berlin" target="_blank" rel="noopener">https://kleiderordnung.berlin</a>
-              </li>
+              <li><b>English</b> (C1, fluent)</li>
+              <li><b>German</b> (C2, native speaker)</li>
+              <li><b>French</b> (good understanding of technical documentation and technical terminology)</li>
             </ul>
           </td>
         </tr>
 
         <tr>
-          <th>E-Commerce- and Frontend Development · FoodTogether · <time>07/2022 - 07/2024</time></th>
+          <th><h2 class="heading--has-subsections">Freelance and Customer Projects (Selection)</h2></th>
+        </tr>
+
+        <tr class="subsection">
+          <td>
+            <h3 class="group group--corporate">Corporate Website Development</h3>
+          </td>
+        </tr>
+
+        <tr>
+          <th>Web Development: renowned service provider (NDA) · <time>01/2025 - 06/2025</time></th>
         </tr>
         <tr>
           <td>
-            Industry: Retail (direct food delivery)<br>
-            Project: online shop with subscription orders and price transparency information<br>
-            WooCommerce, PHP, CSS, JavaScript, npm, git<br>
-            Frontend web developer, e-commerce developer, support<br>
             <ul>
-              <li>PayPal integration</li>
-              <li>subscription options for recurring order</li>
-              <li>continuous increase in traffic and revenue</li>
-              <li>website: <a class="transparent" href="https://www.foodtogether.de/" target="_blank" rel="noopener">www.foodtogether.de</a></li>
+              <li>Tech Stack: PHP, JavaScript, CSS, Cypress, Docker, WordPress</li>
+              <li>Project: development of a parametrized WordPress white-label theme <br>with skinning and tracking logic</li>
+              <li>Successful migration of existing and quick setup of new portals</li>
             </ul>
           </td>
         </tr>
+
         <tr>
-          <th>Shopware E-Commerce Development - FoodTogether. <time>02/2024 - 06/2024</time></th>
+          <th>Senior Frontend Development: STRABAG SE Career · <time>10/2021 - 05/2022</time></th>
         </tr>
         <tr>
           <td>
-            Industry: Retail (direct food delivery)<br>
-            Project: responsive data visualization for a migration to Shopware<br>
-            Shopware 6, PHP 7, Twig, CSS, JavaScript<br>
-            Web developer, Shopware Extension Partner<br>
             <ul>
-              <li>Shopware plugin to replace a WooCommerce extension</li>
-              <li>Tested by Shopware and published as an extension in the Shopware store:<br>
-                <a
-                  href="https://store.shopware.com/en/ingos57544164693f/cost-transparency.html"
-                  class="transparent"
-                  target="_blank"
-                  rel="noopener">https://store.shopware.com/en/ingos57544164693f/cost-transparency.html</a>
-              </li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <th>Senior Frontend Development - STRABAG SE, <time>10/2021 - 05/2022</time></th>
-        </tr>
-        <tr>
-          <td>
-            Industry: construction and civil engineering<br>
-            Project: modular design system to relaunch carreer websites<br>
-            Fractal, Handlebars, HTML 5, SCSS, CSS, JavaScript, git<br>
-            Senior frontend developer<br>
-            <ul>
+              <li>Tech Stack: Fractal, Handlebars, HTML 5, SCSS, CSS, JavaScript, git</li>
               <li>technical management of a front-end team with 3 web developers</li>
               <li>development of a scalable component system using Fractal</li>
               <li>launched on schedule in multiple countries</li>
@@ -304,39 +118,123 @@ permalink: "cv-tabular.html"
             </ul>
           </td>
         </tr>
-        <tr>
-          <th>React Frontend Development - Sevenval/Avenga, <time>07/2017 - 10/2020</time></th>
-        </tr>
-        <tr>
+
+        <tr class="subsection">
           <td>
-            Industry: SaaS / internet services (B2B)<br>
-            Project: React web app with React component library for UI configuration and data visualization of website optimizations<br>
-            React, JSX, JavaScript, Storybook, CSS in JS, git, GitLab<br>
-            React web developer as part of the frontend team<br>
-            <ul>
-              <li>development and maintenance of modular UI components in React</li>
-              <li>live data visualization and configurationen in real time (React State Management)</li>
-              <li>development and maintenance of Storybook dokumentation and modular test automatization</li>
-              <li>The platform has been used in over 20 customer projects and further developed internally.</li></li>
-            </ul>
-            <br><br>
+            <h3 class="group">E-Commerce-Development with Shopware and WooCommerce</h3>
           </td>
         </tr>
+
         <tr>
-          <th><h2>Skills: Technologies, Methods and Languages</h2></th>
+          <th>
+            Merchandise Shop: <a class="transparent" href="https://shop.open-mind-culture.org/" target="_blank" rel="noopener">shop.open-mind-culture.org</a>  · <time>04/2026 - 05/2026</time>
+          </th>
         </tr>
         <tr>
           <td>
             <ul>
-              <li>
-                Technologies:<br>
-                Frontend: HTML, CSS, SCSS, JavaScript, ES6+, TypeScript, React, Astro, Eleventy<br>
-                CMS/E-Commerce: Shopware 6 (certified 2024), WooCommerce, Wordpress, PHP 8<br>
-                Testing/Tools: Cypress, git, GitHub, GitLab, Docker, npm, esbuild<br>
-                Methods: Responsive Web Design, Accessibility (WCAG), Agile, Scrum, Jira<br>
+              <li>Tech Stack: Shopware 6, PHP 8, Twig, SCSS, JavaScript</li>
+              <li>Project: developed a demo e-commerce platform showcasing custom plugins and themes</li>
+              <li>deployed in a multilingual production environment with live payments and shipping</li>
+            </ul>
+          </td>
+        </tr>
+
+        <tr>
+          <th>Shopware-Extension: Cost Transparency · <time>02/2024 - 06/2024</time></th>
+        </tr>
+        <tr>
+          <td>
+            <ul>
+              <li>Tech Stack: Shopware 6, PHP 7, Twig, SCSS, JavaScript</li>
+              <li>Project: responsive data visualization for a possible migration to Shopware</li>
+              <li>Result: tested by Shopware and published as an extension in the Shopware store:<br>
+                <a
+                  href="https://store.shopware.com/en/ingos57544164693f/cost-transparency.html"
+                  class="transparent"
+                  target="_blank"
+                  rel="noopener">store.shopware.com/en/ingos57544164693f/cost-transparency.html</a>
               </li>
-              <li>27 years of professional experience</li>
-              <li>language skills: Englisch (C1, fluent), German (C2, native speaker)</li>
+            </ul>
+          </td>
+        </tr>
+
+        <tr>
+          <th>
+            Frontend and E-Commerce: <a class="transparent" href="https://www.foodtogether.de/" target="_blank" rel="noopener">FoodTogether.de</a>  · <time>07/2022 - 07/2024</time>
+          </th>
+        </tr>
+        <tr>
+          <td>
+            <ul>
+              <li>Tech Stack: WooCommerce, PHP, CSS, JavaScript, npm, git</li>
+              <li>Project: online shop with subscription orders and price transparency information</li>
+              <li>Result: PayPal subscription integration, increase in traffic and revenue</li>
+            </ul>
+          </td>
+        </tr>
+
+        <tr class="subsection">
+          <td>
+            <h3 class="group">Frontend and Web App Development with React</h3>
+          </td>
+        </tr>
+
+        <tr>
+          <th>Frontend Web Development: Feasibility Study · <time>07/2025 - 09/2025</time></th>
+        </tr>
+        <tr>
+          <td>
+            <ul>
+              <li>Tech Stack: Astro 5, React 19, TypeScript, Tailwind, Playwright</li>
+              <li>Project: Conception and development of a working prototype for an IT technical book platform to evaluate the Astro Islands architecture using React 19</li>
+              <li>Result: live system tested in a production-like environment at <a class="transparent" href="https://devux.ingo-steinke.de" target="_blank" rel="noopener">devux.ingo-steinke.de</a></li>
+            </ul>
+          </td>
+        </tr>
+
+        <tr>
+          <th>React Frontend Development: wao.io by Avenga · <time>07/2017 - 10/2020</time></th>
+        </tr>
+        <tr>
+          <td>
+            <ul>
+              <li>Tech Stack: React, JSX, JavaScript, Storybook, CSS in JS, GitLab</li>
+              <li>Project: developed modular UI components with data visualization in React</li>
+              <li>Result: SaaS B2B platform used in over 20 customer projects</li>
+            </ul>
+          </td>
+        </tr>
+
+        <tr class="subsection">
+          <td>
+            <h3 class="group">Individual Web Development</h3>
+          </td>
+        </tr>
+
+        <tr>
+          <th>Portfolio Web Development: Kleiderordnung Berlin · <time>2023 - 2024</time></th>
+        </tr>
+        <tr>
+          <td>
+            <ul>
+              <li>Tech Stack: HTML 5, CSS 3, JavaScript, PHP, WordPress</li>
+              <li>Project: multilingual responsive portfolio website as a CMS</li>
+              <li>Website: <a class="transparent" href="https://kleiderordnung.berlin" target="_blank" rel="noopener">kleiderordnung.berlin</a></li>
+            </ul>
+          </td>
+        </tr>
+
+        <tr>
+          <th><h2>Professional Background (2000–2020)</h2></th>
+        </tr>
+        <tr>
+          <td>
+            <ul>
+              <li>Avenga Germany — Senior Software Developer / Technical Consultant · 2014 - 2020</li>
+              <li>Lucom GmbH — Software Consultant · 2018</li>
+              <li>Xsite GmbH— Web Developer / E-Commerce Engineer · 2010 - 2014</li>
+              <li>Active-Websight GbR — Co-Founder / Web Developer · 2000 - 2010</li>
             </ul>
           </td>
         </tr>
@@ -344,15 +242,30 @@ permalink: "cv-tabular.html"
 
       <h2>About me: Web Developer with a Passion for UX Design</h2>
       <p>
-        Websites designed to offer everyone access to this network must be attractive, fast, and accessible. This vision shapes my work. I'm a freelance senior frontend web developer since 2020, working for agencies and individual customers. I live in Berlin since 2022, but I often work online and I'm ready to travel.
+        Beautiful, fast, and accessible websites for everyone – this vision shapes my work. Since 2020, I have supported agencies and companies as a freelance senior frontend web developer.
       </p>
-      <p>
-        As a freelance web developer I am part of a network of designers, developers and other experts. I am a member of Impact Hub Berlin. I'm a freelance web application developer for defacto|ci and freelance web developer for Railslove. From 2019 to 2021, I co-hosted the Cologne Web Performance meetup. Previously, I volunteered in the New Media in Education Working Group and as organiser and chair of Skate Association Germany e.V.
-      </p>
-      <p>
-        I'm looking forward to working with you!
-      </p>
+      <ul>
+        <li>
+          Network and collaboration: well-connected with designers and developers,<br>
+          external team member at defacto|ci and Berlingeschwister.</li>
 
+        <li>Community Involvement: Former Co-organizer of the Cologne Web Performance Optimization Meetup (2019–2021) and long-serving chairman of Skate Association Germany e.V.</li>
+
+        <li>Working style: team-oriented, strong communication skills, and flexible.</li>
+
+        <li>Mobility: based in Berlin, flexible and willing to travel (full driving license and car).</li>
+
+      </ul>
+      <p>
+        I am looking forward to working together with you!
+      </p>
+      <p>
+        <b>Ingo Steinke</b><br>
+        Creative Web Developer
+      </p>
+      <p>
+        Berlin, May 2026
+      </p>
     </div>
   </div>
 </div>

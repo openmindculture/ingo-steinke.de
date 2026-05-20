@@ -1329,10 +1329,13 @@ ul.aside-heading > li:last-child {
   margin-bottom: 2rem;
 }
 
+.testimonials + a,
 .testimonial {
   margin: 0 0 2em 0.5em;
   max-width: 1080px;
 }
+
+
 
 .testimonial blockquote {
   position: relative;
@@ -1364,6 +1367,7 @@ figure.testimonial figcaption {
 }
 
 @media (min-width: 950px) {
+  .testimonials + a,
   .testimonial {
     margin: 0 2em 2em 2em;
   }

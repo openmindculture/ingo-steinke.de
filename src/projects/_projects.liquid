@@ -44,7 +44,7 @@ alternatehreflang: "en"
                       Selected work samples, customer testimonials and case studies demonstrate the added value of my work as a web developer: beautiful, efficient and successful websites, web apps and online shops that convert and inspire.
                     </p>
                   <p>
-                    I work as a freelancer for companies and agencies, but I generally also accept projects from startups and other freelancers. One example the website I did for the <a target="_blank" hreflang="de" href="https://www.samuelfelixsieber.de/">Berlin-based supervisor and coach Dr. Samuel Felix Sieber</a>.
+                    I work as a freelancer for companies and agencies, but I generally also accept projects from startups and other freelancers..
                   </p>
                 </article>
             </section>
@@ -60,7 +60,7 @@ alternatehreflang: "en"
                 showtimestamps: 'showtimestamps'
               %}
               {% include './_includes/projects.liquid',
-                projectlist: 'nativetheme, dxastroreact, shopwareplugin, fractal, portfolio, reactapp',
+                projectlist: 'shopwareplugin, fractal, reactapp, nativetheme, dxastroreact, coursebooking',
                 showicons: 'showicons',
                 showtimestamps: 'showtimestamps'
               %}
@@ -79,19 +79,21 @@ alternatehreflang: "en"
                 </figcaption>
                 <blockquote>{{ content.testimonialDanielaQuote }}</blockquote>
               </figure>
+
+              <figure class="testimonial">
+                <figcaption>
+                  {{ content.testimonialIngoAuthor }}:
+                  <span class="stars" title="{{ content.testimonialsFiveStarRating }}"></span>
+                </figcaption>
+                <blockquote>{{ content.testimonialIngoQuote }}</blockquote>
+              </figure>
+
               <figure class="testimonial" lang="{{ content.  testimonialManuelaQuoteLang }}">
                 <figcaption>
                   {{ content.testimonialManuelaAuthor }}:
                   <span class="stars" title="{{ content.testimonialsFiveStarRating }}"></span>
                 </figcaption>
                 <blockquote lang="{{ content.  testimonialManuelaQuoteLang }}">{{ content.testimonialManuelaQuote }}</blockquote>
-              </figure>
-              <figure class="testimonial">
-                <figcaption>
-                  {{ content.testimonialPatriciaAuthor }}:
-                  <span class="stars" title="{{ content.testimonialsFiveStarRating }}"></span>
-                </figcaption>
-                <blockquote>{{ content.testimonialPatriciaQuote }}</blockquote>
               </figure>
             </div>
 
