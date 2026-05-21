@@ -114,7 +114,8 @@ module.exports = {
   "workPluginsOther": "I also developed extensions and themes for Shopware, WebStorm, and IntelliJ IDEA, including the free",
   /* Skills */
   "SkillsHeading": "Professional Skills",
-  "SkillsWebdevHeading": "Frontend Web Development",
+  "SkillsWebdevHeading": "Web Development",
+  "SkillsWebdevFrontend": "Frontend Web Development",
   "SkillsWebdevMarkupHeading": "HTML, Markup",
   "SkillsBackDbHeading": "Backend and Database",
   "SkillsLibDesignSystems": "Design Systems",
