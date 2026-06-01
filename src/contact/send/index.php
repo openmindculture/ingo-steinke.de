@@ -64,7 +64,8 @@ if (
   strpos($post_msg, ' p0rn') !== false ||
   strpos($post_msg, ' porn') !== false ||
   strpos($post_msg, ' C!P') !== false ||
-  strpos($post_msg, 'Passive Income') !== false ||
+  strpos($post_msg, ' C!P') !== false ||
+  strpos($post_msg, 'addictive') !== false ||
   strpos($post_msg, 'Cryptocurrency') !== false ||
   strpos($post_msg, 'Kryptow') !== false ||
   strpos($post_msg, 'cannabidiol') !== false ||
@@ -98,6 +99,7 @@ if (
   strpos($post_msg, 'Zustellbenachrichtigung') !== false ||
   strpos($post_msg, 'Dringende Mitteilung') !== false ||
   strpos($post_msg, 'surl.li') !== false ||
+  strpos($post_msg, 'psee.io') !== false ||
   strpos($post_msg, 'porn.') !== false ||
   strpos($post_msg, 'lovevoyager.page') !== false ||
   strpos($post_msg, 'meet singles') !== false ||
