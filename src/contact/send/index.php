@@ -60,6 +60,8 @@ if (
   strpos($post_msg, 'Claim Your $') !== false ||
   strpos($post_msg, ' WIN') !== false ||
   strpos($post_msg, ' JACKPOT') !== false ||
+  strpos($post_msg, ' Jackpot') !== false ||
+  strpos($post_msg, ' sexy') !== false ||
   strpos($post_msg, ' po*rn') !== false ||
   strpos($post_msg, ' p0rn') !== false ||
   strpos($post_msg, ' porn') !== false ||
@@ -240,6 +242,7 @@ if (
   strpos($user_agent, 'MSIE') !== false ||
   strpos($post_emailfon, '+48') !== false ||
   strpos($post_emailfon, '+91') !== false ||
+  strpos($post_emailfon, ' sexy') !== false ||
   strpos($post_emailfon, 'anonmails.de') !== false ||
   strpos($post_emailfon, 'chinanameregistry.net') !== false ||
   strpos($post_emailfon, 'finanzselect-online.de') !== false ||
