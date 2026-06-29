@@ -93,6 +93,8 @@ if (
   strpos($post_msg, 'replace harmful feedback') !== false ||
   strpos($post_msg, 'shipping options for your order') !== false ||
   strpos($post_msg, 'omplete your purchase from the cart') !== false ||
+  strpos($post_msg, 'klicken zum Kaufen') !== false ||
+  strpos($post_msg, 'au? erdem') !== false ||
   strpos($post_msg, 'willst du abhängen') !== false ||
   strpos($post_msg, 'Ihr Abonnement') !== false ||
   strpos($post_msg, 'einmalige Gebühr') !== false ||
