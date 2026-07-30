@@ -165,6 +165,7 @@ if (
   strpos($post_msg, '//amazn.to/') !== false ||
   strpos($post_msg, '/wa.me/') !== false ||
   strpos($post_msg, 'goto.now/') !== false ||
+  strpos($post_msg, 'psce.pw/') !== false ||
   strpos($post_msg, 'yt.vu/') !== false ||
   (strpos($post_msg, 'https:/') !== false && (
       strpos($post_msg, '.cz/') !== false ||
@@ -212,6 +213,8 @@ if (
   strpos($post_msg, 'and pricing') !== false ||
   strpos($post_msg, 'your price list') !== false ||
   strpos($post_msg, 'the price list') !== false ||
+  strpos($post_msg, 'claim your prize') !== false ||
+  strpos($post_msg, 'nove moznosti') !== false ||
   strpos($post_msg, 'found your company') !== false ||
   strpos($post_msg, 'a company like yours') !== false ||
   strpos($post_msg, 'ingo-steinke.de') !== false ||
@@ -276,6 +279,7 @@ if (
   strpos($post_name, 'Iyannacrigo') !== false ||
   strpos($post_name, 'xrumer') !== false ||
   strpos($post_name, 'www.') !== false ||
+  strpos($post_name, '.cz') !== false ||
   str_ends_with($post_name, 'beids') ||
   str_ends_with($post_name, 'Mef') ||
   preg_match("/\bsex\b/i", $post_msg) ||
