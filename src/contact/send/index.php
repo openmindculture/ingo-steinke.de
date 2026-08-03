@@ -161,6 +161,7 @@ if (
   strpos($post_msg, '/circapress.com/redirect/') !== false ||
   strpos($post_msg, '//telegra.ph/') !== false ||
   strpos($post_msg, '//tinyurl.com/') !== false ||
+  strpos($post_msg, '//url.in.th/') !== false ||
   strpos($post_msg, 'kisa.link/') !== false ||
   strpos($post_msg, '//amazn.to/') !== false ||
   strpos($post_msg, '/wa.me/') !== false ||
@@ -196,6 +197,7 @@ if (
   strpos($post_msg, 'thanksgiving') !== false ||
   strpos($post_msg, 'THANKSGIVING') !== false ||
   strpos($post_msg, 'IMPORTANT') !== false ||
+  strpos($post_msg, 'PROMO CODE') !== false ||
   strpos($post_msg, 'Hersteller von E Bikes') !== false ||
   strpos($post_msg, 'manufacturer of electric bicycles') !== false ||
   strpos($post_msg, 'artet drink') !== false ||
@@ -223,6 +225,7 @@ if (
   strpos($post_msg, 'wir sind ein baltisches Unternehmen') !== false ||
   strpos($post_msg, 'mein Benutzername ist der gleiche') !== false ||
   strpos($post_msg, 'verfugt uber') !== false ||
+  strpos($post_msg, 'zu hacken') !== false ||
   strpos($post_msg, 'Metavista') !== false ||
   strpos($post_msg, 'ohne Rezept') !== false ||
   strpos($post_msg, 'wkdwodkwkifjejr') !== false ||
