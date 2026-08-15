@@ -224,9 +224,12 @@ if (
   strpos($post_msg, 'limited proposal') !== false ||
   strpos($post_msg, 'wir sind ein baltisches Unternehmen') !== false ||
   strpos($post_msg, 'mein Benutzername ist der gleiche') !== false ||
+  strpos($post_msg, 'ier klicken') !== false ||
+  strpos($post_msg, ' spurbare ') !== false ||
   strpos($post_msg, 'verfugt uber') !== false ||
   strpos($post_msg, 'zu hacken') !== false ||
   strpos($post_msg, 'Metavista') !== false ||
+  strpos($post_msg, 'Veniselle') !== false ||
   strpos($post_msg, 'ohne Rezept') !== false ||
   strpos($post_msg, 'wkdwodkwkifjejr') !== false ||
   strpos($post_msg, 'kofkosfjwgojfsjf') !== false ||
@@ -273,6 +276,7 @@ if (
   strpos($post_name, 'GregoryFub') !== false ||
   strpos($post_name, 'Justin So') !== false ||
   strpos($post_name, 'KevinKen') !== false ||
+  strpos($post_name, 'MartaDen') !== false ||
   strpos($post_name, 'Nataler') !== false ||
   strpos($post_name, 'Phillippoify') !== false ||
   strpos($post_name, 'Robertsaups') !== false ||
