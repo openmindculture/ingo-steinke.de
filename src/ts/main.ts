@@ -10,8 +10,8 @@ window.addEventListener('DOMContentLoaded', (): void => {
   initVisibility();
   initNavigation();
   initContrast();
-  initAnalytics();
-  initForms();
+  // initAnalytics();
+  // initForms();
   initAccessibility();
-  initPdf();
+  // initPdf();
 });
