@@ -32,7 +32,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/Ingo-Steinke-Frontend-Web-Developer-CV-2025-10.pdf');
   eleventyConfig.addPassthroughCopy('src/Ingo-Steinke-Frontend-Web-Entwickler-CV-2026-05.pdf');
   eleventyConfig.addPassthroughCopy('src/Ingo-Steinke-Frontend-Web-Developer-CV-2026-05.pdf');
-  eleventyConfig.addPassthroughCopy('src/contact/send/index.php');
+
+  // static failover without PHP files!
+  // eleventyConfig.addPassthroughCopy('src/contact/send/index.php');
 
   // redirect rules and domain configuration for netlify
   // eleventyConfig.addPassthroughCopy('src/netlify.toml');
