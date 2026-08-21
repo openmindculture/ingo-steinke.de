@@ -77,6 +77,11 @@ metanoindex: true
         <li><a href="/#imprint">{{ content.targetImprint }}</a></li>
         <li><a href="/#privacy">{{ content.targetPrivacy }}</a></li>
         <li><a href="/sitemap.xml">sitemap.xml</a></li>
+        <li>
+          {{ content.mirrorServer }}:
+          <a ref="duplicate" href="https://{{ content.mirrorHostname }}/">{{ content.mirrorHostname }}</a>
+          {{ content.whenNotAvailable }}
+        </li>
       </ul>
     </li>
   </ul>

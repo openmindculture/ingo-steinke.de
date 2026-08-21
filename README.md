@@ -1,7 +1,7 @@
 # Ingo-Steinke.de
 
 Portfolio website for [Ingo Steinke, creative web developer](https://www.ingo-steinke.com/).
-German version: <a hreflang="de" href="https://www.ingo-steinke.de/" target="_blank">Ingo-Steinke.de</a>
+German version: <a hreflang="de" href="https://www.ingo-steinke.de/" target="_blank">Ingo-Steinke.de</a>, failover mirror: https://ingo-steinke-com.netlify.app/.
 
 This is a simple, static, multilingual website using eleventy as a JAMstack tool to facilitate content editing and deployment.
 Accessibility and web performance are important non-functional requirements.

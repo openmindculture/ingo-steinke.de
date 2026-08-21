@@ -1,5 +1,9 @@
 # Changelog
 
+## [5.1.3] failover alternative - 2026-08-21
+
+* link to alternative mirror server
+
 ## [5.1.2] content updates - 2026-05-20
 
 * updated hybrid CV (topical-chronological order) variation(s)

@@ -336,6 +336,9 @@ module.exports = {
   "deviceLabImageAlt": "Website-Test auf diversen Geräten",
   "deviceLabImageCaption": "Website-Test auf diversen Geräten",
   "coworkingImageAlt": "Ingo mit Laptop im Coworking Space",
+  "mirrorServer": "Spiegelserver",
+  "mirrorHostname": "ingo-steinke-de.netlify.app",
+  "whenNotAvailable": "(bei Ausfall der Hauptseite)",
 };
 
 

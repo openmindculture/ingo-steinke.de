@@ -37,8 +37,8 @@
     </style>
     <link rel="preload" href="fonts/DorivalUI-Extrabold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/montserrat-v15-latin-ext_latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" media="screen" href="styles.css?v=5.1.2">
-    <script defer src="js/scripts.js?v=5.1.2"></script>
+    <link rel="stylesheet" media="screen" href="styles.css?v=5.1.3">
+    <script defer src="js/scripts.js?v=5.1.3"></script>
     {% comment %}
     Defer non-critical CSS as suggested at https://web.dev/articles/defer-non-critical-css
     {% endcomment %}
@@ -46,12 +46,12 @@
       rel="preload" as="style"
       onload="this.onload=null;this.rel='stylesheet'"
       media="screen and (prefers-reduced-motion: no-preference)"
-      href="decoration.css?v=5.1.2"
+      href="decoration.css?v=5.1.3"
     >
     <noscript>
-      <link rel="stylesheet" media="screen and (prefers-reduced-motion: no-preference)" href="decoration.css?v=5.1.2">
+      <link rel="stylesheet" media="screen and (prefers-reduced-motion: no-preference)" href="decoration.css?v=5.1.3">
     </noscript>
-    <link rel="stylesheet" media="print" href="print.css?v=5.1.2">
+    <link rel="stylesheet" media="print" href="print.css?v=5.1.3">
     <meta name=author content="{{ content.metaAuthor }}">
     <meta
       property="og:title"
@@ -87,6 +87,10 @@
       rel="alternate"
       hreflang="{{ content.alternateHreflang }}"
       href="{{ content.alternateHref }}"
+    >
+    <link
+      rel="duplicate"
+      href="https://{{ content.mirrorHostname }}/"
     >
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="manifest" href="/site.webmanifest">
