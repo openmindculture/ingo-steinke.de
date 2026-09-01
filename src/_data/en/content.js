@@ -58,7 +58,7 @@ module.exports = {
   "caseStudyKleiderordnung": "",
   "caseStudyKleiderordnungUrl": "",
   "caseStudyLegacy": "Case Study: Migration, Modernization, and Maintenance of Legacy Code Projects",
-  "caseStudyLegacyUrl": "projects/legacy-migration-modernization-maintenance-case-study.html",
+  "caseStudyLegacyUrl": "/projects/legacy-migration-modernization-maintenance-case-study.html",
   "caseStudyReactApp": "Case Study: Web App Development using React, JavaScript, JSX, CSS-in-JS, and Storybook",
   "caseStudyReactAppUrl": "/projects/reactapp-react-jsx-javascript-css.html",
   "caseStudyShopwarePlugin": "",
