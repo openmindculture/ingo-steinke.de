@@ -179,6 +179,7 @@
   <meta name="description" content="{{ previewdescription }}">
 {% endif %}
 {% if canonicalhref %}
+  <meta property="og:url" content="{{ canonicalhref }}">
   <link
     rel="canonical"
     href="{{ canonicalhref }}"
@@ -196,3 +197,4 @@
     href="{{ alternatelink }}"
   >
 {% endif %}
+<meta property="og:type" content="website">
