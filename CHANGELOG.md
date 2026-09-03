@@ -1,5 +1,11 @@
 # Changelog
 
+## [5.1.4] on-page seo marketing - 2026-09-xx
+
+* add case study page about Shopware shop, custom plugin, extension
+* link and cross-link with maintenance page
+* fix minor on-page SEO issues
+
 ## [5.1.3] failover alternative - 2026-08-21
 
 * link to alternative mirror server
