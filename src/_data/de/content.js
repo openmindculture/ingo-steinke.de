@@ -90,7 +90,7 @@ module.exports = {
   "workClientsBenefit": "Deine Vorteile: erfolgreiche Kundenansprache, transparente Wartungskosten und optimierte Performance.",
   "pricingHeading": "Preise",
   "workFullstack": "Bei der Weiterentwicklung bestehenden Codes kommt mir meine Berufserfahrung und meine pragmatische Einstellung zugute. Mit meinen Erfahrungen im Backend- und DevOps-Bereich und meiner hohen Lernbereitschaft übernehme ich bei Bedarf alle Aufgaben, die sich bei der Webentwicklung ergeben oder finde geeignete Partner:innen für die Umsetzung.",
-  "pricing": "Ich biete verschiedene Preismodelle an. Bei einer Abrechnung auf Stundenbasis gebe ich üblicherweise im Vorfeld eine Aufwandsschätzung ab. Festpreisangebote sind ebenfalls möglich. Erfrage gerne ein individuelles Angebot!",
+  "pricing": "Web ab 85,-, Shopware ab 95,- Euro pro Stunde. Wartungsverträge und individuelle Festpreisangebote sind ebenfalls möglich. Erfrage gerne ein individuelles Angebot!",
   "workOwnFocus": "Mein Schwerpunkt ist die Frontend-Entwicklung mit CSS.",
   "workCertifiedHeading": "Zertifiziert und transparent",
   "workCertifiedIam": "Ich bin",
