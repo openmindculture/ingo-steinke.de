@@ -61,8 +61,8 @@ module.exports = {
   "caseStudyLegacyUrl": "/projekte/legacy-migration-modernisierung-wartung-fallstudie.html",
   "caseStudyReactApp": "Fallstudie: Web-App-Entwicklung mit React, JavaScript, JSX, CSS-in-JS und Storybook",
   "caseStudyReactAppUrl": "projekte/reactapp-react-jsx-javascript-css.html",
-  "caseStudyShopwarePlugin": "",
-  "caseStudyShopwarePluginUrl": "",
+  "caseStudyShopwarePlugin": "Fallstudie: Shopware-Entwicklung und -Betriebskosten im Praxistest",
+  "caseStudyShopwarePluginUrl": "/projekte/shopware-entwicklung-plugin-kosten-fallstudie.html",
   /* page content */
   "intro": "Ich bin Ingo Steinke, kreativer Frontend-Webentwickler und Web Application Developer mit über 25 Jahren Berufserfahrung. Ich entwickle, teste und optimiere Websites, Web-Apps und Online-Shops. Aktuelle Anforderungen wie BFSG, DSGVO, Ladezeit und ökologische Nachhaltigkeit kann ich pragmatisch umsetzen und verständlich erklären.",
   "spacedAnd": " und",
