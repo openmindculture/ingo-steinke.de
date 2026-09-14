@@ -418,6 +418,8 @@ body.high-contrast .bg-peel {
   border: none;
   margin: 0 0 0 -0.25rem;
   padding: 0;
+  max-width: 100vw;
+  min-width: 0;
 }
 
 .contactform-row,
@@ -461,6 +463,7 @@ body.high-contrast .bg-peel {
 .contactform-row input {
   flex: 1 0 6em;
   max-width: 100%;
+  min-width: 0;
 }
 
 .contactform-row input::placeholder,
