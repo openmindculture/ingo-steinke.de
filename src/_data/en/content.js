@@ -122,7 +122,7 @@ module.exports = {
   "SkillsOther": "Testing, Developer Tools",
   "SkillsOtherQa": "Quality Assurance",
   "SkillsDevuxImg": "Methods, Standards, Collaboration",
-  "SkillsOtherSystems": "Page Builders and AI Software",
+  "SkillsOtherSystems": "AI",
   "SkillsAI": "AI",
   "SkillsA11y": "WCAG",
   "SkillsPrivacy": "GDPR",
