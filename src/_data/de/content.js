@@ -150,7 +150,7 @@ module.exports = {
   "talksImageCaption": "Bild",
   "talksImageLinkText": "Ingo, Frontend Web Developer, bei der Never Code Alone Conference",
   "talks": "Konferenzen, Kurse und Meetups bieten gelegenheit zu fachlichem und persönlichem Austausch.",
-  "talks2": "Als Webentwickler hielt ich unter anderem diese Vorträge:",
+  "talks2": "Auf Meetups hielt ich Vorträge zu Themen der Web-Performance, wie unter anderem „Core Web Vitals“ und „Performance-Optimierung ohne Code-Änderung“.",
   "talkMeetupWebVitals": "Core Web Vitals: Web Performance and Usability",
   "talkMeetupWebVitals2": "",
   "talkPerformanceNoCode": "Performance-Optimierung ohne Code-Änderung",

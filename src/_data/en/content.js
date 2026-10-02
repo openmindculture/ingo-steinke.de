@@ -149,7 +149,7 @@ module.exports = {
   "talksImageCaption": "Image",
   "talksImageLinkText": "Ingo, Frontend Web Developer, at Never Code Alone Conference",
   "talks": "At conferences, courses, and meetups I like to exchange ideas on a professional and personal level.",
-  "talks2": "A selection of my past talks as a web developer:",
+  "talks2": "At meetups, I gave presentations on web performance topics such as “Core Web Vitals“ and “erformance optimization without code changes,“ among others.",
   "talkMeetupWebVitals": "Core Web Vitals: Web Performance and Usability",
   "talkMeetupWebVitals2": "",
   "talkPerformanceNoCode": "Performance Optimization without Changing Code",
