@@ -34,7 +34,6 @@ export function initForms(): void {
     link.addEventListener('click', (): void => {
       const linkText = link.innerText || '';
       trackEvent('click', '#contact', linkText);
-      console.log('tracked button link click with text ' + linkText);
     });
   });
 }
@@ -73,7 +72,6 @@ function ajaxPost(form: HTMLFormElement): void {
     xhr.send(params);
     trackEvent('actions', 'contact', 'sent');
   } catch (e) {
-    console.error('form send error', e);
     setFormStatus(form, FORM_STATUS.error, FORM_STATUS.errorCatch);
 
     let errorText = 'error';
