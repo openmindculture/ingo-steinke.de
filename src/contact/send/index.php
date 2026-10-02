@@ -67,6 +67,7 @@ if (
   strpos($post_msg, ' porn') !== false ||
   strpos($post_msg, ' C!P') !== false ||
   strpos($post_msg, ' C!P') !== false ||
+  strpos($post_msg, 'boursobank') !== false ||
   strpos($post_msg, 'addictive') !== false ||
   strpos($post_msg, 'Cryptocurrency') !== false ||
   strpos($post_msg, 'Kryptow') !== false ||
@@ -126,6 +127,7 @@ if (
   strpos($post_msg, 'ფ') !== false ||
   strpos($post_msg, 'Ոা') !== false ||
   strpos($post_msg, 'գ') !== false ||
+  strpos($post_msg, 'â€”') !== false ||
   strpos($post_msg, '&#39;') !== false ||
   strpos($post_msg, '&#34;') !== false ||
   strpos($post_msg, 'jwjjwjj') !== false ||
@@ -168,6 +170,8 @@ if (
   strpos($post_msg, 'goto.now/') !== false ||
   strpos($post_msg, 'psce.pw/') !== false ||
   strpos($post_msg, 'yt.vu/') !== false ||
+  strpos($post_msg, 'betaflight.uk.com/') !== false ||
+  strpos($post_msg, 'leadsays.com/') !== false ||
   (strpos($post_msg, 'https:/') !== false && (
       strpos($post_msg, '.cz/') !== false ||
       strpos($post_msg, '.gy/') !== false ||
@@ -250,6 +254,7 @@ if (
   strpos($post_msg, 'Ђ') !== false ||
   strpos($post_msg, '==>') !== false ||
   preg_match('/\R{3,}/', $post_msg) ||
+  preg_match('/^(?![^\n]*[\p{L}\p{N}])[\s\p{P}\p{S}]+$/', $post_msg) || // misencoded like ??? ?? ???
   strpos($user_agent, 'MSIE') !== false ||
   strpos($post_emailfon, '+48') !== false ||
   strpos($post_emailfon, '+91') !== false ||
@@ -261,7 +266,9 @@ if (
   strpos($post_emailfon, 'resend.dev') !== false ||
   strpos($post_emailfon, 'spar-highlight.de') !== false ||
   strpos($post_emailfon, 'guestpostoutreach.top') !== false ||
+  strpos($post_emailfon, 'finance-and-investments@ukr.net') !== false ||
   str_starts_with($post_emailfon, 'xrumer') !== false ||
+  str_ends_with($post_emailfon, '@gmx.com') ||
   str_ends_with($post_emailfon, '.ru') ||
   str_ends_with($post_emailfon, '.xyz') ||
   strpos($post_name, 'Ready for love') !== false ||
@@ -274,6 +281,7 @@ if (
   strpos($post_name, 'DevNexus') !== false ||
   strpos($post_name, 'GrantBib') !== false ||
   strpos($post_name, 'GregoryFub') !== false ||
+  strpos($post_name, 'JerryNeota') !== false ||
   strpos($post_name, 'Justin So') !== false ||
   strpos($post_name, 'KevinKen') !== false ||
   strpos($post_name, 'MartaDen') !== false ||
@@ -282,6 +290,7 @@ if (
   strpos($post_name, 'Robertsaups') !== false ||
   strpos($post_name, 'Ronaldslura') !== false ||
   strpos($post_name, 'Tracyselty') !== false ||
+  strpos($post_name, 'Thurmanneinc') !== false ||
   strpos($post_name, 'Isaacnuh') !== false ||
   strpos($post_name, 'Iyannacrigo') !== false ||
   strpos($post_name, 'xrumer') !== false ||

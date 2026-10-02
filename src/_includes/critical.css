@@ -475,6 +475,14 @@ small {
     float: left;
   }
 
+  .row-wrap {
+    flex-wrap: wrap;
+  }
+
+  .gap1{
+    gap:1rem;
+  }
+
   .page-navigation {
     position: relative;
     display: none;
@@ -710,6 +718,7 @@ small {
   }
 }
 
+.image-auto,
 .image-right {
   margin: 0;
   max-width: 100%;

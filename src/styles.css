@@ -1578,6 +1578,12 @@ body.high-contrast {
   height: auto;
 }
 
+#project-kunnigkonsulting .flip-box-column .poster-image,
+#project-pacificdragonfilms .flip-box-column .poster-image {
+  height: 100%;
+  object-fit: cover;
+}
+
 @media (max-width: 1307px) {
   .flip-box-column .poster-image {
     max-width: 98vw;
