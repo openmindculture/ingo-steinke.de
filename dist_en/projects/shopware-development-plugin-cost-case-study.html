@@ -1,0 +1,154 @@
+<!doctype html><html lang="de"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><title>Case Study: Shopware Development and Operating Costs in Practice</title><meta name="language" content="en"><meta name="viewport" content="width=device-width,initial-scale=1"><style>/*! Blackletra Dorival UI Extrabold is licensed to Ingo Steinke, Creative Web Developer, Invoice Number: 101191 */ @font-face{font-family:'DorivalUI';font-style:normal;font-weight:700;font-display:swap;src:local(''),
+  url('../fonts/DorivalUI-Extrabold.woff2') format('woff2'),url('../fonts/DorivalUI-Extrabold.woff') format('woff');
+  }
+  @font-face {font-family:'Montserrat';font-style:normal;font-weight:400;font-display:swap;src:local(''),
+  url('../fonts/montserrat-v15-latin-ext_latin-regular.woff2') format('woff2'),
+  url('../fonts/montserrat-v15-latin-ext_latin-regular.woff') format('woff');
+  }
+  html{box-sizing:border-box;font-size:100%}*,:after,:before{box-sizing:inherit}
+  body {
+    /* WORKAROUND #218 TODO update critical design tokens redundantly here */
+    --primary-background: #1d4950;
+    --primary-foreground: #ebeff2;
+    --primary-heading: #ebeff2;
+    --secondary-lighter-background: #d1d4d6;
+    --secondary-heading: #053245;
+    --secondary-foreground: #000;
+    --body-font-family: 'Montserrat', 'Helvetica', sans-serif;
+    --body-font-weight: 400;
+    --body-line-height: 1.75;
+    --heading-font-family: 'DorivalUI', serif;
+    --heading-font-weight: 700;
+    /* WORKAROUND END */
+
+    line-height: var(--body-line-height);
+    font-family: var(--body-font-family);
+    font-weight: var(--body-font-weight);
+    color: var(--primary-foreground);
+    background-color: var(--primary-background);
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  body.high-contrast .jumbotronHeader {
+    background: var(--primary-background);
+  }
+  @media screen and (min-width:950px){body,html{-webkit-text-size-adjust:none;-moz-text-size-adjust:none;text-size-adjust:none}}
+  #sticky-headline,#sticky-headline a,.aside-heading,h1,h2,h3,h4{color:var(--primary-foreground);font-family:DorivalUI,serif;font-weight:700;letter-spacing:.0125rem}.aside-heading,h2,h3,h4{font-size:1.5rem;line-height:1.5;margin-bottom:1.5rem;margin-top:1.5rem}.aside-heading,.hashtags,.tagline,.tile,h1,h2,h3,h4{max-width:99%}del{text-decoration:line-through}.jumbotronHeader .aside-heading{font-family: Montserrat,sans-serif;}small{font-size:.75rem}@media screen and (max-width:768px) and (-webkit-min-device-pixel-ratio:0){small{font-size:16px}}.nav-wrapper{display:flex;align-items:flex-start;}@media only screen{.only-print{display:none}.page-container{display:flex;flex-direction:row;width:100%}.jumbotronHeader{justify-content:center;align-items:center;text-align:center;background-color:rgba(29,73,80,.75);display:flex;flex-direction:column;height:auto;width:100%}
+  .jumbotronHeader h1{font-size: 3.5rem;letter-spacing:.125rem;line-height:1.25;margin:1rem 0 1rem 0;padding:0}
+  .jumbotronHeader p{font-size: 2.325rem;margin:1rem 2rem 2rem 1rem;padding:0;max-width:80%;color:#ebeff2;font-family:Montserrat,Helvetica,sans-serif;font-weight:400;}}
+  .jumbotronHeader.has-text-paragraphs{padding-top:1rem;margin:0 auto 4rem auto;max-width:1600px;}
+  .jumbotronHeader.has-text-paragraphs h1 {margin-top:2rem;margin-bottom:2rem;font-size:3.5rem;max-width:1200px;max-width: min(1200px, 98%);}
+  .jumbotronHeader.has-text-paragraphs h1+a {line-height: 1;margin:1rem 0 1rem 0;padding:0.25rem 0 0 0;}
+  .jumbotronHeader.has-text-paragraphs p {font-size:1.3125rem;}
+  .jumbotronHeader.has-text-paragraphs p:first-child {margin-top:2.5rem;}
+  .jumbotronHeader.has-text-paragraphs p:last-child {margin-bottom:4rem;}
+  .jumbotronHeader p:not(.center) {text-align:left;}
+  @media only screen and (min-width:950px){
+    .jumbotronHeader:not(.has-text-paragraphs) h1{font-size:3rem;margin-top:2rem;}
+    .jumbotronHeader:not(.has-text-paragraphs) p{font-size:2rem;margin-bottom:4rem;}
+  }
+  @media only screen{
+    img.avatar{border-radius:50%}
+    .jumbotronHeader-homeLink,
+    .jumbotronHeader-homeLink picture,
+    .jumbotronHeader-homeLink img {
+      display: block;
+    }
+    .sticky-header{background-color:var(--primary-background);height:2.25em;position:sticky;text-align:center;top:-1px;width:100%;z-index:10}.sticky-header>.wrapper{box-shadow:0 7px 14px 0 rgba(29,73,80,.75);display:flex;flex-direction:row;justify-content:space-between;margin:0 auto;max-width:1500px}.sticky-header.smaller-header>.wrapper{max-width:1300px;}.sticky-header>.wrapper img.avatar{margin:6px 6px -6px}.sticky-header .temporary-nav-wrapper{margin:6px 1em -6px 6px}.sticky-header.is-unstuck .unsticky-hidden{display:none}.raised-layer{z-index:2000}.target-offset:before{content:" ";display:block;height:45px;margin-top:-45px;pointer-events:none;visibility:hidden}main{margin:0 auto;max-width:1500px;width:100%;}.page-content{align-items:flex-start;display:flex;flex-direction:column;width:100%;margin: 0 auto;z-index:2}.decoration{animation:fadeIn 5s linear 10s 1 both;height:100vh;max-width:100%;opacity:0;overflow:hidden;position:fixed;width:100vw;z-index:1}
+    .jumbotronHeader h1,
+    .jumbotronHeader .overline {
+      font-size: 5rem;
+      line-height: 1.25;
+      letter-spacing: 0.125rem;
+      padding: 0;
+      margin: 0;
+      font-family: var(--heading-font-family);
+      font-weight: var(--heading-font-weight);
+    }
+    .jumbotronHeader .overline {
+      margin-top: 0.75rem;
+    }
+    .jumbotronHeader .overline + h1.tagline {
+      margin-top: 1.25rem;
+    }
+
+    /* Semantic SEO vs. visual appearance */
+    .jumbotronHeader h1.tagline {
+      font-size: 2rem;
+      margin-bottom: 4rem;
+      font-family: var(--body-font-family);
+      font-weight: 400;
+      animation: none;
+      background: unset;
+      -webkit-text-fill-color: var(--primary-foreground);
+    }
+  }
+  @media only screen and (prefers-reduced-transparency){.sticky-header>.wrapper{box-shadow:0 7px 14px 0 var(--primary-background)}}@media only screen{@keyframes fadeIn{0%{opacity:0}to{opacity:1}}.text-content-layout-children{padding:0}.privacy,.text-content-layout,.text-content-layout-children>*{line-height:1.75;margin:0 0 2em;padding:.5em 1em 1em 1em;text-align:left}.privacy{display:block}.privacy,.text-content-color{background-color:var(--secondary-lighter-background);color:#000}.privacy .aside-heading,.privacy h3,.privacy h4,.text-content-color .aside-heading,.text-content-color h2,.text-content-color h3,.text-content-color h4{color:#053245}.capitalized:first-letter{float:left;font-size:3.25rem;line-height:1;margin:0;padding:0}.tiled-content{margin:0 0 2em 0}@media (max-width: 1500px){.tiled-content#projects{max-width:calc(100% - 1em);margin: 0 0.5em 2em 0.5em;}}.clear,section:not(.no-clear){clear:both}.grid-container{grid-column-gap:3em;grid-row-gap:2em;clear:both;display:flex;display:grid;flex-wrap:wrap;grid-template-columns:repeat(auto-fit,minmax(440px,1fr));justify-content:space-between}.grid-container>*{flex-basis:49%;margin-bottom:2em}@supports (display:grid){.grid-container>*{margin-bottom:0}}
+    ul.grid-container{
+      grid-column-gap:1em;
+      grid-template-columns:repeat(auto-fit,minmax(100%,1fr));
+      list-style-type:none;
+      margin:0;
+      padding:0;
+      text-indent:0;
+    }
+    @media (min-width:410px) {
+      ul.grid-container{
+        grid-template-columns:repeat(auto-fit,minmax(410px,1fr));
+      }
+    }
+    .site-title {
+      display: none;
+    }
+    @media (min-width: 400px) {
+      .site-title {
+        display: inline;
+      }
+    }
+    .text-width,.text-width-children>*{max-width:1300px;width:90%}
+    .text-center{margin-left:auto;margin-right:auto}.semitransparent .text-width{width:70%}.tile img.project-thumb{float:right;height:4em;margin:1em 0 1em 1em;width:4em}.tile img.project-thumb--shrink{height:3.5em;width:3.5em}.tile img.project-thumb--grow{height:4.625em;margin-left:.5em;width:4.625em}
+    .tile img.project-thumb--kleiderordnung{margin: 0 .5em 2em 3em;}
+    .tile img.project-thumb--atomic-design-system{margin:2em 0 1em 1em}
+    .tile img.project-thumb--wordpress-woo{margin:0 0 1em 1em}
+    .tile img.project-thumb--daskannstdutun{height:5em;margin:1.5em 0 .5em 1em;width:5em}
+    .tile img.project-thumb--twistedconnection {
+      margin-top: 2.5rem;
+      margin-right: 1.5rem;
+    }
+    .tile img.project-thumb--portfolio {
+      margin-bottom: 1.5rem;
+    }
+    .row{display:block;display:flex;flex-direction:row}.row>*{float:left}.page-navigation{display:none;position:relative}.credits{font-size:.75rem}.initially-hidden,.visually-hidden{display:none}.initially-hidden:target{display:block}.mb0{margin-bottom:0}.pb3{padding-bottom:3em;}a.tw-btn,a.tw-btn:active,a.tw-btn:hover,a.tw-btn:link,a.tw-btn:visited{background-color:#0c7abf;border-radius:.25em;color:#fff;display:inline-block;margin:.0325em .25em .25em 0;padding:.2em .5em .2em .25em;text-decoration:none}a.gh-btn,a.gh-btn:active,a.gh-btn:hover,a.gh-btn:link,a.gh-btn:visited{background-color:#24292e;border-radius:.25em;color:#fff;display:inline-block;margin:.0325em .25em .25em 0;padding:.15em .5em .25em .2em;text-decoration:none}.social-btn svg{margin:0 .25em}.page-navigation a:active,.page-navigation a:link,.page-navigation a:visited,.sticky-header a:active,.sticky-header a:link,.sticky-header a:visited{color:#fff;text-decoration:none;letter-spacing:0.5px}.page-navigation a.active,.page-navigation a:active{font-weight:bold}}@media only screen and (max-width:768px){.semitransparent .text-width,.text-width{width:90%}.jumbotronHeader{height:auto;}@media only screen and (max-width:440px){.jumbotronHeader .overline,.jumbotronHeader h1:not(.tagline){font-size:2.5rem;padding-top:0.5rem;padding-bottom:0.5rem;}h2,h3,h4{font-size:1.3125rem}.pl1{padding-left:.5em}.text-content-layout{margin-bottom:1em;padding-left:.75em;padding-right:.5em;}.semitransparent .text-width,.text-width{width:95%}ul.social-links{max-width:99%;padding-left:0;padding-right:0}ul.social-links li{padding:0;min-height:70px;}ul.social-links a{padding:.5em}.skills-wrapper{padding-left:0}.skills-wrapper h3,.skills-wrapper h4{padding-left:.5em}ul.skills>.tile{padding-left:0}ul.skills>.tile li,ul.skills>.tile ul{padding-right:0;margin-left: 0.125rem;}.tile h3{margin-top:1em}.hashtags{overflow-x:hidden}}@media only screen and (max-width:375px){.jumbotronHeader .overline, .jumbotronHeader h1:not(.tagline){font-size:2rem;margin-bottom:.5em}.jumbotronHeader p{font-size:1.25rem;line-height:1.5}footer.page-footer{padding-left:0;}}}
+  .jumbotronHeader p a:active, .jumbotronHeader p a:focus, .jumbotronHeader p a:hover {color:#000;}
+  .imprint-contact {margin-top:2rem;}
+  .imprint-contact .aside-heading {font-family:Montserrat,sans-serif;font-size:1.5rem;font-weight:normal;}
+  ul.aside-heading {text-align:left;}
+  main section:last-child {
+    padding-bottom: 0.125em;
+    margin-bottom: 2em;
+  }
+  .headingless {
+    padding-top: 1em;
+  }
+  .image-right {
+    margin: 0;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .image-right img {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0.25rem;
+  }
+
+  @media (min-width: 768px) {
+    .image-right {
+      float: right;
+      margin-top: 2rem;
+      margin-left: 2rem;
+    }
+  }</style><link rel="stylesheet" media="screen" href="../styles.css?v=5.1.3"><link rel="stylesheet" media="print" href="../print.css?v=5.1.3"><script defer="defer" src="../js/scripts.js?v=5.1.3"></script><meta name="author" content="Ingo Steinke"><meta name="p:domain_verify" content="4c4296e5835f4a47eb2c2e5488a99d71"><meta name="google-site-verification" content="Qs1p7JgqPLOGD3BYCMGe9EbyNJJEswyala44hnkO6d4"><meta name="robots" content="index,follow"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><meta name="theme-color" content="#ffffff"><meta property="og:image" content="https://www.ingo-steinke.com/img/preview-case-shopware-en.png"><meta property="og:title" content="Case Study: Shopware Development and Operating Costs in Practice"><meta property="og:description" content="What does a custom Shopware 6 store really cost? A certified developer demonstrates how low operating costs can be achieved, using a real-world case study."><meta name="description" content="What does a custom Shopware 6 store really cost? A certified developer demonstrates how low operating costs can be achieved, using a real-world case study."><meta property="og:url" content="https://www.ingo-steinke.com/projects/shopware-development-plugin-cost-case-study.html"><link rel="canonical" href="https://www.ingo-steinke.com/projects/shopware-development-plugin-cost-case-study.html"><link rel="alternate" hreflang="en" href="https://www.ingo-steinke.com/projects/shopware-development-plugin-cost-case-study.html"><link rel="alternate" hreflang="de" href="https://www.ingo-steinke.de/projekte/shopware-entwicklung-plugin-kosten-fallstudie.html"><meta property="og:type" content="website"></head><body class="high-contrast"><div class="page-container" id="top"><div class="page-content"><header class="jumbotronHeader has-text-paragraphs" id="jumbotronHeader"><a href="/" class="jumbotronHeader-homeLink transparent"><picture><source type="image/webp" srcset="../img/Ingo-Steinke-flower-shirt.webp, ../img/Ingo-Steinke-flower-shirt-496.webp 2x, ../img/Ingo-Steinke-flower-shirt-large.webp 4x"><img src="../img/Ingo-Steinke-flower-shirt.jpg" srcset="../img/Ingo-Steinke-flower-shirt-496.jpg 2x, ../img/Ingo-Steinke-flower-shirt-large.jpg 4x" width="248" height="248" alt="Portrait of web developer Ingo Steinke in Berlin" class="avatar"></picture></a><h1>Case Study: Shopware Development and Operating Costs in Practice</h1></header><div class="sticky-header smaller-header is-nav-closed is-unstuck" id="sticky-header"><div class="wrapper"><span class="raised-layer"><span class="scripted hideable" id="sticky-headline"><a href="/"><img src="../img/Ingo-Steinke-portrait-2020.jpg" width="25" height="25" alt="to top" class="avatar"> <span class="site-title">Ingo Steinke</span></a></span></span><div class="nav-wrapper"><a href="../#contact" class="extra-nav-link contact-link initially-hidden">contact</a> <a href="#main-menu" id="main-menu-toggle" class="menu-toggle" aria-label="open menu"><span class="sr-only">open menu</span> contents</a><nav id="main-menu" class="main-menu page-navigation" aria-label="table of contents"><a href="#main-menu-toggle" id="main-menuClose" class="menuClose" aria-label="close menu"><svg viewBox="0 0 512 512" width="16" height="16"><g><path d="m25 512a25 25 0 0 1 -17.68-42.68l462-462a25 25 0 0 1 35.36 35.36l-462 462a24.93 24.93 0 0 1 -17.68 7.32z" fill="currentColor"/><path d="m487 512a24.93 24.93 0 0 1 -17.68-7.32l-462-462a25 25 0 0 1 35.36-35.36l462 462a25 25 0 0 1 -17.68 42.68z" fill="currentColor"/></g></svg></a><ul><li><a href="/services/">skills</a></li><li><a href="/projects/">projects</a></li><li><a href="/about-me.html">about me</a></li><li><a href="/#contact" class="contact-link">contact</a></li><li><a href="https://www.ingo-steinke.de/projekte/shopware-entwicklung-plugin-kosten-fallstudie.html" hreflang="de" lang="de" title="zur deutschen Sprache wechseln" id="language-switch">deutsch</a></li></ul></nav><button id="contrast-toggle" class="contrast-toggle no-print" title="" data-reducecaption="reduce contrast" data-increasecaption="increase contrast"><svg viewBox="0 0 32 32" width="24" height="24"><path fill="currentColor" d="M15 2h2v3h-2zM27 15h3v2h-3zM15 27h2v3h-2zM2 15h3v2H2zM5.45 6.884l1.414-1.415 2.121 2.122-1.414 1.414zM23 7.58l2.121-2.12 1.414 1.414-2.121 2.121zM23.002 24.416l1.415-1.414 2.12 2.122-1.413 1.414zM5.47 25.13 7.59 23 9 24.42l-2.12 2.12-1.41-1.41zM16 8a8 8 0 1 0 8 8 8 8 0 0 0-8-8Zm0 14a6 6 0 0 1 0-12Z"/><path fill="none" style="fill:none" d="M0 0h32v32H0z"/></svg></button> <a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" title="close menu" hidden></a></div></div></div><main id="content-top" class="target-offset"><section class="text-content-layout text-content-color"><article class="text-width"><p>This case study about Shopware development and operating costs shows how an individually designed online shop also pays off for startups and small businesses, and how they can profit from my experience as an e-commerce developer.</p><p>First, a few words about myself: As a web developer, I have co-developed and successfully managed numerous e-commerce projects, including large online shops, over the long term, including Shop-Apotheke and clients from the OTTO group. Since 2024, I am a certified Shopware developer and extension partner. In this case study, I show how I apply my experience to small shops and the development of custom themes as well, and how that pays off for my customers.</p><h3>Case Study about E-commerce Development and Operating Costs at a Glance:</h3><ul dir="ltr"><li><strong>Role:</strong> Full-stack and certified Shopware developer</li><li><strong>Effort:</strong> ca. 3 weeks / 120 hours</li><li><strong>Time</strong>: 2024 to 2026 (as a research project parallel to other projects)</li><li><strong>Tech stack:</strong> Shopware 6.7, PHP 8.2, SCSS, Twig</li><li><strong>Client</strong>: me (open source reference project)</li><li><strong>Goal: determine the total costs of an individual shop installation.</strong></li><li><strong>Result: a two-figure, one-off four-figure budget achievable in principle.</strong></li></ul><h2>Challenges</h2><p>Founders, startups, and other small shop operators often struggle to run an online shop that is customized yet also accessible and legally compliant. In turn, major platforms' offerings can rarely be adapted sufficiently to one's own requirements, or they can become a long-term cost trap.</p><p>Between unsatisfying AI and construction set solutions on one hand, and high-price projects for major clients on the other, there are practical solutions at reasonable prices. However, it is difficult to present reliable figures on total costs based on a specific customer project, as such data are usually subject to confidentiality for good reason. Demo projects rarely get finished in favor of actual client projects in the day-to-day operations of an agency or a freelance developer.</p><h2>Implementation: from Research Project to Merchandise Shop</h2><p>I started the implementation as a professional development project to prepare for my certification as a Shopware developer. I didn't finish the custom theme until a good two years later, and I've been running it in production since 2026. This includes full responsibility for legal and software security, payments and deliverability, as well as regular maintenance. In a similar way, a good fifteen years earlier, my blog website had initially started out as a test installation for WordPress. From that angle, WooCommerce as an e-commerce software would have been the obvious choice. However, Shopware seemed superior to me for several reasons, especially concerning stability, loading time, and customizability. Furthermore, even the free and open-source Community Edition is already prepared for the German market.</p><p>First, I developed a custom theme on a test server, picking up the blog design using the same fonts and colors. Additionally, I integrated the <a href="https://store.shopware.com/en/ingos57544164693f/cost-transparency.html" target="_blank" rel="noopener">Shopware plugin for Cost Transparency</a>, which I had already released as a free extension in the official Shopware store. Thus, the costs for individual plugin development are not included in this case study's total cost calculation. The presented shop serves as a live demo for the plugin I developed and as a test environment under conditions that are at least comparable to the operations of a small startup.</p>The results obtained so far can be viewed in specific detail at <a href="https://shop.open-mind-culture.org/" target="_blank" rel="noopener">shop.open-mind-culture.org</a>.<p>All products are actually available for delivery. Unfortunately, the supply chain transparency ends from my perspective when I purchase goods from other manufacturers as a reseller. However, the price transparency chart clearly shows my slim margin and what proportion of the costs is estimated for logistics, such as shipping to my clients.</p>Honestly, and that also belongs to being transparent with such a project, there are unfinished issues, errors, and improvement suggestions. Those are, like the theme's source code, openly visible in the <a href="https://github.com/openmindculture/sw-IngoSOpenMindCultureTheme" target="_blank" rel="noopener">GitHub repository</a>. The same open source principle applies to my cost transparency plugin. Both are work in progress. For example, the Lighthouse Audit only shows 77 of 100 "best practices" points, and the accessibility check shows insufficient color contrast in one area.<h2>Screenshots</h2><div class="row row-wrap gap1"><picture><source type="image/webp" srcset="/img/screenshot-shopware-theme-blog.webp"><img src="/img/screenshot-shopware-theme-blog.png" width="589" height="378" class="image-auto" loading="lazy" alt="Screenshot of the product detail page with cost transparency chart, compared to the blog overview as its style template"></picture><picture><source type="image/webp" srcset="/img/screenshot-shopware-lighthouse-report.webp"><img src="/img/screenshot-shopware-lighthouse-report.png" width="589" height="378" class="image-auto" loading="lazy" alt="Screenshot: Lighthouse audit of the shop's product detail page with 97 of 100 points"></picture></div><h2><strong>Solution with Open Source Software and Individual Theme Development</strong></h2><p>The Open Mind Culture Shop goes along well visually with the blog website of the same name. It loads quickly, it is accessible, and it goes beyond the legal requirements thanks to the graphical visualization of price components. This builds trust, even among critical and ethically discerning customers. The online shop runs the free Community Edition and offers payments via Stripe and PayPal, both charging on a commission basis with no ongoing costs.</p><p>Maintenance: The shop software can be updated by non-tech-savvy shop owners, at least in theory. Typically, this is handled either by the hosting providers for an additional fee, or by a certified Shopware developer like myself as part of a <a href="https://www.ingo-steinke.com/projects/legacy-migration-modernization-maintenance-case-study.html">maintenance contract</a>. That guarantees cost transparency, even regarding ongoing costs. Maintaining product data, such as prices, product descriptions, and images, is actually easy enough for non-experts to handle themselves, after a brief introduction and with existing products serving as templates. Training sessions, as well as interfaces for importing and synchronizing data between the online shop and an inventory management system, are also available upon request.</p><h2><strong>Result: How Shopware pays off for small businesses as well</strong></h2><p>I estimate the total effort up to operational readiness in the case presented at around 3 weeks (120 hours) of individual Shopware development. In individual cases, this varies significantly depending on the extent to which we can rely on existing templates or whether there are specific design requests. Therefore, I prepare a personalized proposal for each client following a no-obligation, complimentary initial consultation. Answering the question "how much does a website cost with you?" this case study now offers a reasonable figure.</p><p>Monthly running costs remain in the double-digit range. There are also one-off costs estimated in the four-figure range for installation, theme development, and consulting. These figures demonstrate that it is possible to cost-effectively commission and operate a customized, accessible solution, even on the most affordable officially approved hosting.</p><p>It should be noted that the test explicitly covered only a small shop with a limited number of products and orders. As economic success grows, demands, and consequently operating costs, typically increase as well. However, with the operating model described here, they do not grow to the same extent as is the case with some Software-as-a-Service providers. And thanks to open source software, every shop owner has the freedom to switch to another service provider at any time.</p><p>By the way, anyone looking for a similarly transparent and cost-effective shop solution is welcome to get in touch with me.</p><div class="cta-container"><a href="/#contact" class="buttonlike contact-link">Projekt anfragen</a></div></article></section></main><footer class="page-footer"><aside><p class="legal legal--links no-print"><a href="../#imprint">imprint</a> <a href="../#privacy">privacy</a> <a href="https://www.ingo-steinke.com/sitemap.html">sitemap</a></p><div class="only-print"><br></div><div class="legal legal--copyright"><span class="copyright-icon">&copy;</span> <span class="copright-date">2026</span> <span class="copyright-author">Ingo Steinke</span></div></aside></footer></div></div></body></html>
