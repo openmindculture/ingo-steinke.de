@@ -80,6 +80,7 @@ module.exports = {
   "projectsHereAreSome": "This is a selection of my past projects.",
   "projectsScreenshots": "Screenshots",
   "projectWebsite": "website",
+  "projectLinkToWebsite": "link to the website",
   "projectSourceCode": "source code",
   /* work */
   "workHeading": "Web Development: Long-lasting, Accessible, and Ecological",

@@ -81,6 +81,7 @@ module.exports = {
   "projectsHereAreSome": "Eine Auswahl meiner Projekte",
   "projectsScreenshots": "Screenshots",
   "projectWebsite": "Website",
+  "projectLinkToWebsite": "Link zur Website",
   "projectSourceCode": "Quellcode",
   /* work */
   "workHeading": "Webentwicklung: Langlebig, barrierefrei und umweltfreundlich",
