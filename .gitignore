@@ -1,6 +1,7 @@
 .env
 docker-compose.override.yml
 node_modules
+vendor
 .vscode
 .idea
 Thumbs.db

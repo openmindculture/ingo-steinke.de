@@ -1,4 +1,6 @@
 <?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 // require_once __DIR__ . '/config.inc.php';
 $config_from = 'contact@ingo-steinke.com';
 $config_to = 'contact@ingo-steinke.com';
@@ -404,5 +406,11 @@ if (!empty($message) && !$suspectedSpam) {
     $config_custheader;
 
   mail($to, $subject, $message, $headers);
+  $mail = new PHPMailer(true);
+  $mail->setFrom($config_from);
+  $mail->addAddress($config_to);
+  $mail->Subject = $config_subject;
+  $mail->Body = $message;
+  $mail->send();
 }
 $message .= "\r\n";
