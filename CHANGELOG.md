@@ -1,6 +1,6 @@
 # Changelog
 
-## [5.1.4] on-page seo marketing - 2026-10-02
+## [5.1.4] on-page seo marketing - 2026-10-05
 
 * add case study page about Shopware shop, custom plugin, extension #318
 * showcase new film maker portfolio website #318
@@ -8,6 +8,7 @@
 * fix technical and content-related on-page SEO issues #318
 * smaller project image alternatives #323
 * prevent border below screenshots #324
+* swap showcase tiles #333
 
 ## [5.1.3] failover alternative - 2026-08-21
 
