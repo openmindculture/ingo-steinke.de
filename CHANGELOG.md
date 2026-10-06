@@ -1,5 +1,10 @@
 # Changelog
 
+## [5.1.5] user experience - 2026-10-06
+
+* fix button center position below landing page content #331
+* fix mobile tile height regression #332
+
 ## [5.1.4] on-page seo marketing - 2026-10-05
 
 * add case study page about Shopware shop, custom plugin, extension #318
