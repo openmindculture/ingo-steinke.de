@@ -1474,6 +1474,20 @@ body.high-contrast {
   }
 }
 
+@media only screen and (max-width: 840px) {
+  .grid-container--projects .tile {
+    margin: 0;
+    position: relative;
+    height: auto;
+    aspect-ratio: auto;
+  }
+  .grid-container--projects .flip-box-front.tile {
+    height: auto;
+    min-height: unset;
+    margin-bottom: 2rem;
+  }
+}
+
 .grid-container--projects .tile:not(.has-icons) .description-group,
 .grid-container--projects .tile:not(.has-icons) .project-link-wrapper {
   padding-top: 1em;
