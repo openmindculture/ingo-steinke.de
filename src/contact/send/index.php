@@ -52,6 +52,7 @@ if (
   strpos($post_msg, 'o seu prezo') !== false ||
   strpos($post_msg, 'Äre Präis') !== false ||
   strpos($post_msg, 'contact you about course') !== false ||
+  strpos($post_msg, ' hakkında, ') !== false ||
   strpos($post_msg, 'Kaixo, ') !== false ||
   strpos($post_msg, 'Sveiki, ') !== false ||
   strpos($post_msg, 'Dia duit, ') !== false ||
