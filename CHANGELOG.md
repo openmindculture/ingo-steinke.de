@@ -1,5 +1,11 @@
 # Changelog
 
+## [5.1.5.1] content - 2026-10-tbd.
+
+* add Astro case study paage #326
+* update project examples, skills #326
+* update spam protection heuristics #328
+
 ## [5.1.5] user experience - 2026-10-06
 
 * fix button center position below landing page content #331
