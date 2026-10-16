@@ -21,12 +21,13 @@ metanoindex: true
           <a href="{{ content.targetServicesUrl }}">{{ content.targetServicesTitle }}</a>
           <ul>
             <li><a href="{{ content.landingLinkUrlFreelanceBerlin }}">{{ content.landingLinkTitleFreelanceBerlin }}</a></li>
+            <!-- <li><a href="{{ content.landingLinkUrlFreelanceCologne }}">{{ content.landingLinkTitleFreelanceCologne }}</a></li> -->
             <li><a href="{{ content.landingLinkUrlShopware }}">{{ content.landingLinkTextShopware }}: {{ content.landingLinkTitleShopware }}</a></li>
             <li><a href="{{ content.landingLinkUrlWordPress }}">{{ content.landingLinkTitleWordPress }}</a></li>
-            <li><a href="{{ content.landingLinkUrlSustainability }}">{{ content.landingLinkTextSustainability }}: {{ content.landingLinkTitleSustainability }}</a></li>
-            <li><a href="/{{ content.servicesBuildMoreLinkPath }}" title="{{ content.servicesBuildMoreSubFooterLinkTitle }}">{{ content.servicesBuildMoreSubFooterLinkText }}</a>
-            <li><a href="/{{ content.servicesVerifyMoreLinkPath }}" title="{{ content.servicesVerifyMoreSubFooterLinkTitle }}">{{ content.servicesVerifyMoreSubFooterLinkText }}</a>
-            <li><a href="/{{ content.servicesImproveMoreLinkPath }}" title="{{ content.servicesImproveMoreSubFooterLinkTitle }}">{{ content.servicesImproveMoreSubFooterLinkText }}</a>
+            <li><a href="{{ content.landingLinkUrlSustainability }}">{{ content.landingLinkTitleSustainability }}</a></li>
+            <li><a href="/{{ content.servicesImproveMoreLinkPath }}" title="{{ content.servicesImproveMoreSubFooterLinkTitle }}">{{ content.servicesImproveMoreSubFooterLinkText }}{{ content.servicesImproveMoreAdditionalLinkText }}</a></li>
+            <li><a href="/{{ content.servicesVerifyMoreLinkPath }}" title="{{ content.servicesVerifyMoreSubFooterLinkTitle }}">{{ content.servicesVerifyMoreSubFooterLinkText }}{{ content.servicesVerifyMoreAdditionalLinkText }}</a></li>
+            <li><a href="/{{ content.servicesBuildMoreLinkPath }}" title="{{ content.servicesBuildMoreSubFooterLinkTitle }}">{{ content.servicesBuildSitemapLinkText }}</a></li>
           </ul>
         </li>
         <li class="sitemap--section--projects"><!-- Projekte, Referenzen, Fallstudien, Case Studies -->
