@@ -53,6 +53,7 @@ if (
   strpos($post_msg, 'Äre Präis') !== false ||
   strpos($post_msg, 'contact you about course') !== false ||
   strpos($post_msg, ' hakkında, ') !== false ||
+  strpos($post_msg, 'bonusu site, ') !== false ||
   strpos($post_msg, 'Kaixo, ') !== false ||
   strpos($post_msg, 'Sveiki, ') !== false ||
   strpos($post_msg, 'Dia duit, ') !== false ||
@@ -286,6 +287,7 @@ if (
   strpos($post_name, 'Justin So') !== false ||
   strpos($post_name, 'KevinKen') !== false ||
   strpos($post_name, 'MartaDen') !== false ||
+  strpos($post_name, 'MichaelLed') !== false ||
   strpos($post_name, 'Nataler') !== false ||
   strpos($post_name, 'Phillippoify') !== false ||
   strpos($post_name, 'Robertsaups') !== false ||

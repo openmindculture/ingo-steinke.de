@@ -3,13 +3,19 @@
       <span class="raised-layer">
         <span class="scripted hideable" id="sticky-headline">
           <a href="/">
-            <img
-              src="../img/Ingo-Steinke-portrait-2020.jpg"
-              width="25"
-              height="25"
-              alt="{{ content.linkToTop }}"
-              class="avatar"
-            />
+            <picture>
+                <source
+                  type="image/webp"
+                  srcset="/img/Ingo-Steinke-flower-shirt.webp"
+                >
+                <img
+                  src="/img/Ingo-Steinke-flower-shirt.jpg"
+                  width="25"
+                  height="25"
+                  alt="{{ content.linkToTop }}"
+                  class="avatar"
+                />
+              </picture>
             <span class="site-title">{{ content.jumbotronHeader }}</span>
           </a>
         </span>
