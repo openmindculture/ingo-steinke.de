@@ -255,6 +255,8 @@ if (
   strpos($post_msg, 'ā') !== false ||
   strpos($post_msg, 'Ђ') !== false ||
   strpos($post_msg, '==>') !== false ||
+  strpos($post_msg, '(SELECT') !== false ||
+  (strpos($post_msg, '(select') !== false && strpos($post_msg, ' from') !== false) ||
   preg_match('/\R{3,}/', $post_msg) ||
   preg_match('/^(?![^\n]*[\p{L}\p{N}])[\s\p{P}\p{S}]+$/', $post_msg) || // misencoded like ??? ?? ???
   strpos($user_agent, 'MSIE') !== false ||
