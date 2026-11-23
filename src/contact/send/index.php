@@ -67,6 +67,8 @@ if (
   strpos($post_msg, ' po*rn') !== false ||
   strpos($post_msg, ' p0rn') !== false ||
   strpos($post_msg, ' porn') !== false ||
+  strpos($post_msg, ' PORNHUB') !== false ||
+  strpos($post_msg, 'ONLYFANS') !== false ||
   strpos($post_msg, ' C!P') !== false ||
   strpos($post_msg, ' C!P') !== false ||
   strpos($post_msg, 'boursobank') !== false ||
@@ -107,7 +109,6 @@ if (
   strpos($post_msg, 'Dringende Mitteilung') !== false ||
   strpos($post_msg, 'surl.li') !== false ||
   strpos($post_msg, 'psee.io') !== false ||
-  strpos($post_msg, 'porn.') !== false ||
   strpos($post_msg, 'lovevoyager.page') !== false ||
   strpos($post_msg, 'meet singles') !== false ||
   strpos($post_msg, 'singles online') !== false ||
